@@ -472,7 +472,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets {
          protected IEnumerable<SoftwareIdentity> CheckMatchedDuplicates() {
             // if there are overmatched packages we need to know why:
             // are they found across multiple providers?
-            // are they found accross multiple sources?
+            // are they found across multiple sources?
             // are they all from the same source?
  
             foreach (var list in _resultsPerName.Values.Where(each => each != null && each.Any())) {

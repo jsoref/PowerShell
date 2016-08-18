@@ -317,7 +317,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets
 
                 // there are overmatched packages:
                 // are they found across multiple providers?
-                // are they found accross multiple sources?
+                // are they found across multiple sources?
                 // are they all from the same source?
 
                 var providers = pkgSet.Select(each => each.ProviderName).Distinct().ToArray();

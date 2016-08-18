@@ -152,7 +152,7 @@ namespace System.Management.Automation
         private readonly string[] _extensions = new string[] { ".ni.dll", ".dll" };
 
         /// <summary>
-        /// Assembly cache accross the AppDomain
+        /// Assembly cache across the AppDomain
         /// </summary>
         /// <remarks>
         /// We user the assembly short name (AssemblyName.Name) as the key.
