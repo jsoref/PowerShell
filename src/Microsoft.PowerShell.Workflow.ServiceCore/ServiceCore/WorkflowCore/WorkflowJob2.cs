@@ -58,7 +58,7 @@ namespace Microsoft.PowerShell.Workflow
         internal WaitHandle Running { get { return this.JobRunning; } }
 
         /// <summary>
-        /// Signaled when job finishes suspending or aboring
+        /// Signaled when job finishes suspending or aborting
         /// </summary>
         internal WaitHandle SuspendedOrAborted { get { return this.JobSuspendedOrAborted; } }
 
