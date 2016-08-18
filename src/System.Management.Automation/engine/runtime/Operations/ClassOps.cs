@@ -27,7 +27,7 @@ namespace System.Management.Automation.Internal
     /// In the former case, module can be imported from the different runspaces in the same process.
     /// And so runspaces will share RuntimeType. But in every runspace, Type is associated with just one SessionState.
     /// We want type methods to be able access $script: variables and module-specific methods.
-    /// To achive it, we preserve reference to SessionState that creates type in the private field 'SessionStateFieldName'.
+    /// To achieve it, we preserve reference to SessionState that creates type in the private field 'SessionStateFieldName'.
     /// Later, we use it to call scriptBlocks captured in ScriptBlockMemberMethodWrapper with the right sessionState.
     /// </summary>
     public class SessionStateKeeper
