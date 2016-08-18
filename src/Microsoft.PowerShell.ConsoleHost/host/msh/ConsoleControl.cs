@@ -866,7 +866,7 @@ namespace Microsoft.PowerShell
         /// </param>
         /// <returns>
         /// 
-        /// acutal number of input records peeked
+        /// actual number of input records peeked
         /// 
         /// </returns>
         /// <exception cref="HostException">

@@ -1529,7 +1529,7 @@ namespace System.Management.Automation.Runspaces
 
         /// <summary>
         /// Protected methods to be implemented by derived class.
-        /// This does the acutal work of setting variable.
+        /// This does the actual work of setting variable.
         /// </summary>
         /// <param name="name">Name of the variable to set</param>
         /// <param name="value">The value to set it to</param>
