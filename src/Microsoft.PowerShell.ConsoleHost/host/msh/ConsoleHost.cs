@@ -2030,7 +2030,7 @@ namespace Microsoft.PowerShell
 
         /// <summary>
         /// 
-        /// Reports an exception accoring to the exception reporting settings in effect.
+        /// Reports an exception according to the exception reporting settings in effect.
         /// 
         /// </summary>
         /// <param name="e">
