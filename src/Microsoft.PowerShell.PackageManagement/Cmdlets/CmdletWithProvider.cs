@@ -493,7 +493,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets {
                             Console.WriteLine("»»» Cancelled before we got finished doing dynamic parameters");
 #endif
                             // this happens if there is a serious failure early in the cmdlet
-                            // i.e. - if the SelectedProviders comes back empty (due to agressive filtering)
+                            // i.e. - if the SelectedProviders comes back empty (due to aggressive filtering)
 
                             // in this case, we just want to provide a catch-all for remaining arguments so that we can make
                             // output the error that we really want to (that the user specified conditions that filtered them all out)
