@@ -2762,7 +2762,7 @@ namespace System.Management.Automation.SecurityAccountsManager
                 // Bug: 7407413 :
                 // If accountname is in the format domain1\user1, 
                 //then AccountName.ToString() will return domain1\domain1\user1
-                // Ideally , accountname should be processed to hold only accout name (without domain)
+                // Ideally , accountname should be processed to hold only account name (without domain)
                 // as we are keeping the domain in 'DomainName' variable.
 
                 int index = accountName.IndexOf("\\", StringComparison.CurrentCultureIgnoreCase);
