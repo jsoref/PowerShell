@@ -771,7 +771,7 @@ Describe "ParserTests (admin\monad\tests\monad\src\engine\core\ParserTests.cs)" 
 		$result | should be "global"
     }
 	
-	It 'Test piping arguments to a script block. The objects should be accesible from "$input". (line 2870)'{
+	It 'Test piping arguments to a script block. The objects should be accessible from "$input". (line 2870)'{
 		ExecuteCommand '$script = { $input; };$results = @(0,0),-1 | &$script'
 		$result = ExecuteCommand '$results[0][0]'
         $result | Should be "0"

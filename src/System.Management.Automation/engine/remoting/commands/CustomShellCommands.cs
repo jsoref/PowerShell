@@ -1364,7 +1364,7 @@ else
         /// Checks if the current thread is running elevated. If not, throws an error.
         /// </summary>
         /// <exception cref="InvalidOperationException">
-        /// 1. Acess is denied. You need to run this cmdlet from an elevated process.
+        /// 1. Access is denied. You need to run this cmdlet from an elevated process.
         /// </exception>
         internal static void ThrowIfNotAdministrator()
         {

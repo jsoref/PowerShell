@@ -553,7 +553,7 @@ namespace Microsoft.PowerShell.Commands
                 {
                     //
                     // the pre-Win8 CAPI2 code does not provide an easy way
-                    // to directly acccess a specific certificate.
+                    // to directly access a specific certificate.
                     // We have to iterate through all certs to find
                     // what we want.
                     //
