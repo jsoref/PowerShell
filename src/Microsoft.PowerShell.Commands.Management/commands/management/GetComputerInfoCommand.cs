@@ -4973,7 +4973,7 @@ namespace Microsoft.PowerShell.Commands
     public enum ServerLevel
     {
         /// <summary>
-        /// An unknown or unrecognized level was dected
+        /// An unknown or unrecognized level was detected
         /// </summary>
         Unknown = 0,
 
