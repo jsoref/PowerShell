@@ -1027,7 +1027,7 @@ namespace Microsoft.PowerShell
         /// 
         /// Provided for clearing regions -- less chatty than passing an array of cells.
         /// Clear screen is:
-        ///    SetBufferContents(new Rectangle(-1, -1, -1, -1), ' ', ForgroundColor, BackgroundColor);
+        ///    SetBufferContents(new Rectangle(-1, -1, -1, -1), ' ', ForegroundColor, BackgroundColor);
         ///    CursorPosition = new Coordinates(0, 0);
         /// 
         /// fill.Type is ignored
