@@ -60,7 +60,7 @@ namespace Microsoft.PowerShell.Commands
         {
         }
 
-        #endregion Contructors
+        #endregion Constructors
 
         #region Input Parameters
 
