@@ -48,7 +48,7 @@ namespace Microsoft.PackageManagement.Msi.Internal.Deployment.WindowsInstaller.P
             if(parse.Length == 3)
             {
                 // Syntax was targetshort:sourceshort|targetlong:sourcelong.
-                // Chnage it to targetshort|targetlong:sourceshort|sourcelong.
+                // Change it to targetshort|targetlong:sourceshort|sourcelong.
                 parse = name.Split(new char[] { ':', '|' }, 4);
                 if(parse.Length == 4)
                     parse = new string[] { parse[0] + '|' + parse[2], parse[1] + '|' + parse[3] };
