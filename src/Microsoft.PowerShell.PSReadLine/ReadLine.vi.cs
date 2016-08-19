@@ -197,7 +197,7 @@ namespace Microsoft.PowerShell
         }
 
         /// <summary>
-        /// Read the next character and then find it, going backard, and then back off a character.
+        /// Read the next character and then find it, going backward, and then back off a character.
         /// This is for 'T' functionality.
         /// </summary>
         public static void SearchCharBackward(ConsoleKeyInfo? key = null, object arg = null)
@@ -219,7 +219,7 @@ namespace Microsoft.PowerShell
         }
 
         /// <summary>
-        /// Read the next character and then find it, going backard, and then back off a character.
+        /// Read the next character and then find it, going backward, and then back off a character.
         /// This is for 'T' functionality.
         /// </summary>
         public static void SearchCharBackwardWithBackoff(ConsoleKeyInfo? key = null, object arg = null)
