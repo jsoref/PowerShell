@@ -779,7 +779,7 @@ namespace Microsoft.PowerShell.Commands
                                 }
                             }
                             //if not success and if it is not already enabled (error code is 1056 in XP) 
-                            // Error 1717 - The interface is unknown. Eventhough this comes sometimes . The Drive is getting enabled.
+                            // Error 1717 - The interface is unknown. Even though this comes sometimes . The Drive is getting enabled.
                             if (!(retValue.Equals(0)) && !(retValue.Equals(ComputerWMIHelper.ErrorCode_Service)) && !(retValue.Equals(ComputerWMIHelper.ErrorCode_Interface)))
                             {
                                 Exception Ex = new ArgumentException(StringUtil.Format(ComputerResources.NotEnabled, drive));
@@ -940,7 +940,7 @@ namespace Microsoft.PowerShell.Commands
                     {
                         object[] input = { driveNew };
                         int retValue = Convert.ToInt32(WMIClass.InvokeMethod("Disable", input), System.Globalization.CultureInfo.CurrentCulture);
-                        // Error 1717 - The interface is unknown. Eventhough this comes sometimes . The Drive is getting disabled.
+                        // Error 1717 - The interface is unknown. Even though this comes sometimes . The Drive is getting disabled.
                         if (!(retValue.Equals(0)) && !(retValue.Equals(ComputerWMIHelper.ErrorCode_Interface)))
                         {
                             ErrorRecord er = new ErrorRecord(new ArgumentException(StringUtil.Format(ComputerResources.NotDisabled, drive)), null, ErrorCategory.InvalidOperation, null);
