@@ -904,7 +904,7 @@ namespace Microsoft.PowerShell.Workflow
                                                    "Shutting down WSMan server: Exception details: {0}",
                                                    exception));
 
-                Dbg.Assert(false, "Exception has happned during the shutdown API. [Message] " + exception.Message + "[StackTrace] " + exception.StackTrace);
+                Dbg.Assert(false, "Exception has happened during the shutdown API. [Message] " + exception.Message + "[StackTrace] " + exception.StackTrace);
 
             }
         }
