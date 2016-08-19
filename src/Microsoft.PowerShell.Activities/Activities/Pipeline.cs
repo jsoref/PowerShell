@@ -65,7 +65,7 @@ namespace Microsoft.PowerShell.Activities
 
         /// <summary>
         /// Validate the required number of activities of pipeline activity.
-        /// Setup the cachemetata with variables and activities.
+        /// Setup the cachemetadata with variables and activities.
         /// </summary>
         /// <param name="metadata"></param>
         protected override void CacheMetadata(NativeActivityMetadata metadata)
