@@ -27,7 +27,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
     /// context base class for cross operations
     /// for example, some cmdlets need to query instance first and then
     /// remove instance, those scenarios need context object transferred
-    /// from one operation to antoher.
+    /// from one operation to another.
     /// </summary>
     internal abstract class XOperationContextBase
     {
