@@ -472,7 +472,7 @@ namespace Microsoft.PowerShell.Commands
             bool isInternetExplorerConfigurationComplete = false;
             // Check for IE for both PS Full and PS Core on windows.
             // The registry key DisableFirstRunCustomize can exits at one of the following path.
-            // IE uses the same decending orider (as mentioned) to check for the presence of this key.
+            // IE uses the same descending orider (as mentioned) to check for the presence of this key.
             // If the value of DisableFirstRunCustomize key is set to greater than zero then Run first
             // is disabled.
             string[] disableFirstRunCustomizePaths = new string[] {
