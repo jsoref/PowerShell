@@ -1756,7 +1756,7 @@ namespace Microsoft.PowerShell {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Place all characters from before the cursor to the beginning of the previous word, as delimted by white space and common delimiters, into the local clipboard..
+        ///   Looks up a localized string similar to Place all characters from before the cursor to the beginning of the previous word, as delimited by white space and common delimiters, into the local clipboard..
         /// </summary>
         internal static string ViYankPreviousWordDescription {
             get {

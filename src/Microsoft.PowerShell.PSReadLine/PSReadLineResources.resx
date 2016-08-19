@@ -634,7 +634,7 @@ If there are other parse errors, unresolved commands, or incorrect parameters, s
     <value>Place all characters at and after the cursor into the local clipboard.</value>
   </data>
   <data name="ViYankPreviousWordDescription" xml:space="preserve">
-    <value>Place all characters from before the cursor to the beginning of the previous word, as delimted by white space and common delimiters, into the local clipboard.</value>
+    <value>Place all characters from before the cursor to the beginning of the previous word, as delimited by white space and common delimiters, into the local clipboard.</value>
   </data>
   <data name="ViYankPreviousGlobDescription" xml:space="preserve">
     <value>Place all characters from before the cursor to the beginning of the previous word, as delimited by white space, into the local clipboard.</value>
