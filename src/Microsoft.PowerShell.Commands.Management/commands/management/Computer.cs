@@ -3696,7 +3696,7 @@ $result
                         return;
                     }
                 }
-                //confrm with the user before restoring
+                //confirm with the user before restoring
                 string computerName = Environment.MachineName;
                 if (!ShouldProcess(computerName))
                 {
