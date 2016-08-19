@@ -254,7 +254,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets {
             //is expected. However when the install-module starts, the MessageResolver delegate stops responding. This is a PowerShell thing.
             //Once the delegate is blocked, it's blocked for the subsequence log message calls for the current cmdlet, find-module. Note that the
             //next cmdlet, install-module has no impact on the delegate blocking issue, meaning all messages are expected to be logged for install-module.
-            //_messageResolverNotResponding is for avoiding continuesly waiting for unresponsive MessageResolver delegate.
+            //_messageResolverNotResponding is for avoiding continuously waiting for unresponsive MessageResolver delegate.
             if (MessageResolver != null && !_messageResolverNotResponding) {
                 // if the consumer has specified a MessageResolver delegate, we need to call it on the main thread
                 // because powershell won't let us use the default runspace from another thread.
