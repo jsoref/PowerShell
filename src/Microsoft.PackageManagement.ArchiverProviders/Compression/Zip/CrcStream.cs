@@ -13,7 +13,7 @@ namespace Microsoft.PackageManagement.Archivers.Internal.Compression.Zip
     using System.IO;
 
     /// <summary>
-    /// Wraps a source stream and calcaluates a CRC over all bytes that are read or written.
+    /// Wraps a source stream and calculates a CRC over all bytes that are read or written.
     /// </summary>
     /// <remarks>
     /// The CRC algorithm matches that used in the standard ZIP file format.
