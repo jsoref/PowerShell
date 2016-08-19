@@ -310,7 +310,7 @@ namespace Microsoft.PowerShell.Workflow
             {
                 lock (_syncObject)
                 {
-                    // Start the shudown timer when there is no inprogess job, no pending job requests and no active sessions
+                    // Start the shudown timer when there is no inprogress job, no pending job requests and no active sessions
                     // Otherwise disable it
                     if (_activeSessionsCount == 0 && _inProgressCount == 0 && _pendingQueue.Count == 0)
                     {
@@ -395,7 +395,7 @@ namespace Microsoft.PowerShell.Workflow
 
                     if (_shutdownTimer != null)
                     {
-                        // Start the shudown timer when there is no inprogess job, no pending job requests and no active sessions
+                        // Start the shudown timer when there is no inprogress job, no pending job requests and no active sessions
                         // Otherwise disable it
                         if (_activeSessionsCount == 0 && _inProgressCount == 0 && _pendingQueue.Count == 0)
                         {
