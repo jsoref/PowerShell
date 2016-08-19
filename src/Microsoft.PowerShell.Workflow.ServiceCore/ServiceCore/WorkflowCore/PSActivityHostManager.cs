@@ -172,7 +172,7 @@ namespace Microsoft.PowerShell.Activities
         }
 
         /// <summary>
-        /// This property indentifies if the Activity controller is running in disconnected mode 
+        /// This property identifies if the Activity controller is running in disconnected mode 
         /// or not. If it is running in disconnected mode then all the output and data streams will be
         /// provied as new objects.
         /// </summary>

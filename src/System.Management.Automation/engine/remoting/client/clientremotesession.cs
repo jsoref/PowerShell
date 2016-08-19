@@ -43,7 +43,7 @@ namespace System.Management.Automation.Remoting
         internal RemoteSessionCapability ServerCapability { get; set; }
 
         /// <summary>
-        /// This is the shellName which indentifies the PowerShell configuration to launch
+        /// This is the shellName which identifies the PowerShell configuration to launch
         /// on remote machine.        
         /// </summary>
         internal string ShellName { get; set; }
