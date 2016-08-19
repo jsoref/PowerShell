@@ -322,7 +322,7 @@ namespace Microsoft.PowerShell {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete the character under the cusor.
+        ///   Looks up a localized string similar to Delete the character under the cursor.
         /// </summary>
         internal static string DeleteCharDescription {
             get {
@@ -331,7 +331,7 @@ namespace Microsoft.PowerShell {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete the character under the cusor, or if the line is empty, exit the process..
+        ///   Looks up a localized string similar to Delete the character under the cursor, or if the line is empty, exit the process..
         /// </summary>
         internal static string DeleteCharOrExitDescription {
             get {

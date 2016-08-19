@@ -154,7 +154,7 @@
     <value>Complete the input if there is a single completion, otherwise complete the input with common prefix for all completions.  Show possible completions if pressed a second time.</value>
   </data>
   <data name="DeleteCharDescription" xml:space="preserve">
-    <value>Delete the character under the cusor</value>
+    <value>Delete the character under the cursor</value>
   </data>
   <data name="ShellBackwardWordDescription" xml:space="preserve">
     <value>Move the cursor to the beginning of the current or previous token or start of the line</value>
@@ -412,7 +412,7 @@ Exception:
 If there are other parse errors, unresolved commands, or incorrect parameters, show the error and continue editing.</value>
   </data>
   <data name="DeleteCharOrExitDescription" xml:space="preserve">
-    <value>Delete the character under the cusor, or if the line is empty, exit the process.</value>
+    <value>Delete the character under the cursor, or if the line is empty, exit the process.</value>
   </data>
   <data name="CantTranslateKey" xml:space="preserve">
     <value>Unable to translate '{0}' to virtual key code: {1}.</value>
