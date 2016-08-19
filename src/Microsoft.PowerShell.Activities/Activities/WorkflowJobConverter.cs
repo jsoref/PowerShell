@@ -2944,7 +2944,7 @@ namespace Microsoft.PowerShell.Workflow
                                 return null;
                             }
 
-                            // This is now an interative pipeline, remember the nonIterativePipelineVariable as one that needs to be set.
+                            // This is now an interactive pipeline, remember the nonIterativePipelineVariable as one that needs to be set.
                             if (!String.IsNullOrEmpty(nonIterativePipelineVariable) &&
                                 !iterativePipelineVariables.Contains(nonIterativePipelineVariable, StringComparer.OrdinalIgnoreCase))
                             {
@@ -2952,7 +2952,7 @@ namespace Microsoft.PowerShell.Workflow
                             }
                         }
 
-                        // Verify that once they've started an interative pipeline, all commands are
+                        // Verify that once they've started an interactive pipeline, all commands are
                         // Foreach-Object -Sequence or Where-Object -Sequence.
                         if (isIterativePipeline && (! isIterativeCommand))
                         {
