@@ -336,7 +336,7 @@ namespace Microsoft.PowerShell.Workflow
                         }
 
                         // This method is first time called from OnResumeBookmark, if no resume required it's entry
-                        // needs to be removed fromt the collection as activity execution has finsihed.
+                        // needs to be removed fromt the collection as activity execution has finished.
                         // When an activity entry is removed, remoteActivityState will be persisted 
                         // as part of whole workflow application persistence at the end of activity completion
                         if (activityResumeRequired == false)
