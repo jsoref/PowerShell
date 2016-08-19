@@ -1344,7 +1344,7 @@ namespace Microsoft.PowerShell.Workflow
 
             lock (lockObjects.GetLockObject(instanceId))
             {
-                Tracer.WriteMessage(Facility + "Forgeting job instance with id: " + instanceId);
+                Tracer.WriteMessage(Facility + "Forgetting job instance with id: " + instanceId);
 
                 PSWorkflowJob job = GetJob(instanceId);
 
