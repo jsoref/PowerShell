@@ -406,7 +406,7 @@ function Expand-Archive
                     if($expandedItems.Count -gt 0)
                     {
                         # delete the expanded file/directory as the archive 
-                        # file was not completly expanded.
+                        # file was not completely expanded.
                         $expandedItems | % { Remove-Item $_ -Force -Recurse }
                     }
                 }
