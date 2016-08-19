@@ -1939,7 +1939,7 @@ namespace Microsoft.PowerShell.Commands
 #pragma warning restore 649
     #endregion Intermediate WMI classes
 
-    #region Other Imtermediate classes
+    #region Other Intermediate classes
     internal class RegWinNtCurrentVersion
     {
         public string BuildLabEx;
@@ -1953,7 +1953,7 @@ namespace Microsoft.PowerShell.Commands
         public string RegisteredOwner;
         public string SystemRoot;
     }
-    #endregion Other Intermediage classes
+    #endregion Other Intermediate classes
 
     #region Output components
     #region Classes comprising the output object
