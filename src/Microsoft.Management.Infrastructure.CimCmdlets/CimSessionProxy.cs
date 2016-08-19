@@ -1544,7 +1544,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         private Hashtable operationParameters = new Hashtable();
 
         /// <summary>
-        /// hanlder used to cancel operation
+        /// handler used to cancel operation
         /// </summary>
         private IDisposable _cancelOperation;
 

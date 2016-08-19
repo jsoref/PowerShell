@@ -417,7 +417,7 @@ namespace System.Management.Automation
                         break;
 
                     case TokenKind.Comma:
-                        // Hanlde array elements such as dir .\cd,<tab> || dir -Path: .\cd,<tab>
+                        // Handle array elements such as dir .\cd,<tab> || dir -Path: .\cd,<tab>
                         if (lastAst is ErrorExpressionAst &&
                             (lastAst.Parent is CommandAst || lastAst.Parent is CommandParameterAst))
                         {
@@ -1214,7 +1214,7 @@ namespace System.Management.Automation
                         replacementIndex = completionContext.ReplacementIndex;
                         replacementLength = completionContext.ReplacementLength;
                     }
-                    // Hanlde scenarios like this: "c:\wind"<tab>. Treat the StringLiteral/StringExpandable as path/command
+                    // Handle scenarios like this: "c:\wind"<tab>. Treat the StringLiteral/StringExpandable as path/command
                     else
                     {
                         // Handle path/commandname completion for quoted string

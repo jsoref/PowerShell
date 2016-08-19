@@ -226,7 +226,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
 
         /// <summary>
         /// <para>
-        /// Hanlder of new subscription result
+        /// Handler of new subscription result
         /// </para>
         /// </summary>
         /// <param name="src"></param>
