@@ -50,7 +50,7 @@ namespace Microsoft.PowerShell.Workflow
 
         /// <summary>
         /// Specifies that the System.Activities.WorkflowApplication should persist and unload the workflow.
-        /// The job will remain in running state because aysnc operation (out of proc or remote operation) is in progress.
+        /// The job will remain in running state because async operation (out of proc or remote operation) is in progress.
         /// The System.Activities.WorkflowApplication will be loaded when async operation gets completed.
         /// </summary>
         Unload = 3,

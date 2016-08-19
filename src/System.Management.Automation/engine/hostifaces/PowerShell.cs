@@ -1710,7 +1710,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Access to the EndInvoke AysncResult object.  Used by remote
+        /// Access to the EndInvoke AsyncResult object.  Used by remote
         /// debugging to invoke debugger commands on command thread.
         /// </summary>
         internal AsyncResult EndInvokeAsyncResult

@@ -5954,7 +5954,7 @@ namespace Microsoft.PowerShell.Activities
         /// <param name="bookmark">The bookmark where it will be resumed.</param>
         /// <param name="value">The value which need to be passed to the bookmark.</param>
         /// <param name="callback">The call back function when resuming the bookmark.</param>
-        /// <param name="state">The state of the aysn call.</param>
+        /// <param name="state">The state of the async call.</param>
         /// <returns>Returns the result of async call.</returns>
         public IAsyncResult BeginResumeBookmark(Bookmark bookmark, object value, AsyncCallback callback, object state)
         {
@@ -5964,7 +5964,7 @@ namespace Microsoft.PowerShell.Activities
         /// <summary>
         /// End resuming bookmark.
         /// </summary>
-        /// <param name="asyncResult">The result of asyc all.</param>
+        /// <param name="asyncResult">The result of async all.</param>
         /// <returns>Returns the bookmark resumption result.</returns>
         public BookmarkResumptionResult EndResumeBookmark(IAsyncResult asyncResult)
         {
