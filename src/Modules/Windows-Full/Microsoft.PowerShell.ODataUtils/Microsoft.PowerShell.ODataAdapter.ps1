@@ -1169,7 +1169,7 @@ function GenerateServiceActionProxyCmdlet
 # to generate a wrapper module manifest file. The
 # generated module manifest is persisted to the disk at
 # the specified OutPutModule path. When the module 
-# manifest is imported, the following comands will 
+# manifest is imported, the following commands will 
 # be imported:
 # 1. Get, Set, New & Remove proxy cmdlets.
 # 2. If the server side Odata endpoint exposes complex
