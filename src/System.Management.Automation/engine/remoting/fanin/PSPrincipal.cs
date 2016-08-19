@@ -327,7 +327,7 @@ namespace System.Management.Automation.Remoting
         /// Name of the user
         /// </param>
         /// <param name="cert">
-        /// Certificate details if Certifiate authentication is used.
+        /// Certificate details if Certificate authentication is used.
         /// </param>
         public PSIdentity(string authType, bool isAuthenticated, string userName, PSCertificateDetails cert)
         {

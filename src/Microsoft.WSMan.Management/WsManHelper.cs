@@ -619,7 +619,7 @@ namespace Microsoft.WSMan.Management
         /// Used to resolve authentication from the parameters chosen by the user.
         /// User has the following options:
         /// 1. AuthMechanism + Credential
-        /// 2. CertiticateThumbPrint
+        /// 2. CertificateThumbPrint
         /// 
         /// All the above are mutually exclusive.
         /// </summary>

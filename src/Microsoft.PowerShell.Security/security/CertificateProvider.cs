@@ -2074,7 +2074,7 @@ namespace Microsoft.PowerShell.Commands
                     }
                 }
 
-                //do remove certifiate
+                //do remove certificate
                 //should not use the original handle
 
                 if (!Security.NativeMethods.CertDeleteCertificateFromStore(
