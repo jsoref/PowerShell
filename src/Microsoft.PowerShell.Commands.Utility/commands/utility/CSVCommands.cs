@@ -1471,7 +1471,7 @@ namespace Microsoft.PowerShell.Commands
                 result.Add(current.ToString());
             }
 
-            //Trim all trailing blackspaces and delimiters ( single/multiple ).
+            //Trim all trailing blankspaces and delimiters ( single/multiple ).
             // If there is only one element in the row and if its a blankspace we dont trim it.
             // A trailing delimiter is represented as a blankspace while being added to result collection
             // which is getting trimmed along with blankspaces supplied through the CSV in the below loop.
