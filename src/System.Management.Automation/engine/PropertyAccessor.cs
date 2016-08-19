@@ -696,7 +696,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Reads a DWORD from the Registry. Excpetions are intentionally allowed to pass through to 
+        /// Reads a DWORD from the Registry. Exceptions are intentionally allowed to pass through to 
         /// the caller because different classes and methods within the code base handle Registry 
         /// exceptions differently. Some suppress exceptions and others pass them to the user.
         /// </summary>
@@ -730,7 +730,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Excpetions are intentionally allowed to pass through to 
+        /// Exceptions are intentionally allowed to pass through to 
         /// the caller because different classes and methods within the code base handle Registry 
         /// exceptions differently. Some suppress exceptions and others pass them to the user.
         /// </summary>
@@ -750,7 +750,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Excpetions are intentionally allowed to pass through to 
+        /// Exceptions are intentionally allowed to pass through to 
         /// the caller because different classes and methods within the code base handle Registry 
         /// exceptions differently. Some suppress exceptions and others pass them to the user.
         /// </summary>
@@ -787,7 +787,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Excpetions are intentionally allowed to pass through to 
+        /// Exceptions are intentionally allowed to pass through to 
         /// the caller because different classes and methods within the code base handle Registry 
         /// exceptions differently. Some suppress exceptions and others pass them to the user.
         /// </summary>

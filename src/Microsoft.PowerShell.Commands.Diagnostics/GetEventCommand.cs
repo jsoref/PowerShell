@@ -1899,7 +1899,7 @@ namespace Microsoft.PowerShell.Commands
         // AddLogsForProviderToInternalMap helper.
         // Retrieves log names to which _providerName writes.
         // NOTE: there are many misconfigured providers in the system.
-        // We therefore catch EventLogException excpetions and write them out as non-terminating errors.
+        // We therefore catch EventLogException exceptions and write them out as non-terminating errors.
         // The results are added to _providersByLogMap dictionary.  
         //
         private void AddLogsForProviderToInternalMap(EventLogSession eventLogSession, string providerName)
