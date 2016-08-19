@@ -159,7 +159,7 @@ function NormalizeNamespace
     {
         if ($NormalizedNamespaces.ContainsKey($MetadataNamespace))
         {
-            # It's possible we've already attemted to normalize that namespace. In that case we'll update normalized name.
+            # It's possible we've already attempted to normalize that namespace. In that case we'll update normalized name.
             $NormalizedNamespaces[$MetadataNamespace] = NormalizeNamespaceHelper $NormalizedNamespaces[$MetadataNamespace] $doesNamespaceContainsInvalidChars $DoesNamespaceConflictsWithClassName
         }
         else
