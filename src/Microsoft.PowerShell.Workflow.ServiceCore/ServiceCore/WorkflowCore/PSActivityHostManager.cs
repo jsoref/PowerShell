@@ -88,7 +88,7 @@ namespace Microsoft.PowerShell.Activities
         private readonly ConcurrentDictionary<string, bool> _inProcActivityLookup = new ConcurrentDictionary<string, bool>();
 
         /// <summary>
-        /// Runtime should be provided for excessing the runtime activity mode
+        /// Runtime should be provided for accessing the runtime activity mode
         /// </summary>
         protected PSActivityHostController(PSWorkflowRuntime runtime)
         {
