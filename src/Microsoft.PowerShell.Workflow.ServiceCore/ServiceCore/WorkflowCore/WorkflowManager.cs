@@ -987,7 +987,7 @@ namespace Microsoft.PowerShell.Workflow
         /// <returns>Returns the collection of workflow instances.</returns>
         internal IEnumerable<Job2> GetJobs(WorkflowFilterTypes type, Dictionary<string, object> filters)
         {
-            Tracer.WriteMessage(Facility + "Geting workflow instances based on filters");
+            Tracer.WriteMessage(Facility + "Getting workflow instances based on filters");
             return GetJobs(_wfJobTable.Values, type, filters);
         }
 
