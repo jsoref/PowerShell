@@ -242,7 +242,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         /// <summary>
         /// <para>
         /// Used to remember the set of parameterset were set
-        /// if any conflition occurred with current parameter,
+        /// if any conflict occurred with current parameter,
         /// throw exception
         /// </para>
         /// </summary>
@@ -256,7 +256,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         /// <summary>
         /// <para>
         /// Used to remember the set of parameterset were set before begin process
-        /// if any conflition occurred with current parameter,
+        /// if any conflict occurred with current parameter,
         /// throw exception
         /// </para>
         /// </summary>
