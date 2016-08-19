@@ -157,11 +157,11 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         /// <summary>
         /// Flag used to control generating message into powershell
         /// </summary>
-        private static bool genrateVerboseMessage = true;
-        internal static bool GenrateVerboseMessage
+        private static bool generateVerboseMessage = true;
+        internal static bool GenerateVerboseMessage
         {
-            get { return genrateVerboseMessage; }
-            set { genrateVerboseMessage = value; }
+            get { return generateVerboseMessage; }
+            set { generateVerboseMessage = value; }
         }
 
         /// <summary>
