@@ -2806,7 +2806,7 @@ namespace Microsoft.PowerShell.Commands
 
         /// <summary>
         /// Array of <see cref="HotFix"/> objects containing information about
-        /// any Quick-Fix Enginnering patches (Hot Fixes) applied to the operating
+        /// any Quick-Fix Engineering patches (Hot Fixes) applied to the operating
         /// system
         /// </summary>
         [SuppressMessage("Microsoft.Performance", "CA1819:PropertiesShouldNotReturnArrays")]
