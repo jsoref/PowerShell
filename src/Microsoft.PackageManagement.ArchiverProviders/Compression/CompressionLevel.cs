@@ -10,7 +10,7 @@
 namespace Microsoft.PackageManagement.Archivers.Internal.Compression
 {
     /// <summary>
-    /// Specifies the compression level ranging from minimum compresion to
+    /// Specifies the compression level ranging from minimum compression to
     /// maximum compression, or no compression at all.
     /// </summary>
     /// <remarks>
