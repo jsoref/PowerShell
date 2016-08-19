@@ -276,7 +276,7 @@ namespace Microsoft.PowerShell.Commands
         }
 
         /// <summary>
-        /// SetDebugPreferenceHelper is a helper method used to enable/disabe debug preference.
+        /// SetDebugPreferenceHelper is a helper method used to enable/disable debug preference.
         /// </summary>
         /// <param name="processName">Process Name</param>
         /// <param name="appDomainName">App Domain Name</param>
