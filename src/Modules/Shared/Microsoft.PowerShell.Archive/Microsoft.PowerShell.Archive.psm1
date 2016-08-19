@@ -964,8 +964,8 @@ function ExpandArchiveHelper
 
                     if(Test-Path -LiteralPath $currentArchiveEntryPath -PathType Container)
                     {
-                        $addEmptyDirectorytoExpandedPathMessage = ($LocalizedData.AddItemtoArchiveFile -f $currentArchiveEntryPath)
-                        Write-Verbose $addEmptyDirectorytoExpandedPathMessage
+                        $addEmptyDirectoryToExpandedPathMessage = ($LocalizedData.AddItemtoArchiveFile -f $currentArchiveEntryPath)
+                        Write-Verbose $addEmptyDirectoryToExpandedPathMessage
 
                         $expandedItems.Value += $currentArchiveEntryPath
                     }
