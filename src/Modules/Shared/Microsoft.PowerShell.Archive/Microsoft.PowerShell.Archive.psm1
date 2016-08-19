@@ -778,7 +778,7 @@ function ZipArchiveHelper
             $compression = CompressionLevelMapper $compressionLevel
 
             # If a directory needs to be added to an archive file, 
-            # by convention the .Net API's expect the path of the diretcory 
+            # by convention the .Net API's expect the path of the directory 
             # to end with '\' to detect the path as an directory.
             if(!$relativeFilePath.EndsWith(([io.path]::DirectorySeparatorChar), [StringComparison]::OrdinalIgnoreCase))
             {

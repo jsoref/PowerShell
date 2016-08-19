@@ -515,7 +515,7 @@ namespace Microsoft.PowerShell.ScheduledJob
         }
 
         /// <summary>
-        /// Returns a directory path for an existing ScheduledJob run result directroy.
+        /// Returns a directory path for an existing ScheduledJob run result directory.
         /// </summary>
         /// <param name="definitionName">Definition name</param>
         /// <param name="runStart">File name</param>

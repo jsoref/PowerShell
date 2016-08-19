@@ -300,7 +300,7 @@ namespace Microsoft.PowerShell.Commands
                         {
                             if (Directory.Exists(providerPaths[0]))
                             {
-                                errorRecord = GetValidationError(WebCmdletStrings.DirecotryPathSpecified,
+                                errorRecord = GetValidationError(WebCmdletStrings.DirectoryPathSpecified,
                                                                  "WebCmdletInFileNotFilePathException", InFile);
                             }
                             _originalFilePath = InFile;
