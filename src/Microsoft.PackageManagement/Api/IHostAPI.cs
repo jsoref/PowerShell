@@ -18,7 +18,7 @@ namespace Microsoft.PackageManagement.Internal.Api {
     using System.Net;
 
     /// <summary>
-    /// Functions implemented by the HOST to provide contexual information and control to for the current request.
+    /// Functions implemented by the HOST to provide contextual information and control to for the current request.
     /// </summary>
     public interface IHostApi {
 
