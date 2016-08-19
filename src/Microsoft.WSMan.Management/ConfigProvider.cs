@@ -4575,7 +4575,7 @@ namespace Microsoft.WSMan.Management
                         && attribute.Key.ToString().Equals("Port", StringComparison.OrdinalIgnoreCase))
                     {
                         // we add the Port number when generating the name in order 
-                        // be distinguish compatiblity listeners which might have the same
+                        // be distinguish compatibility listeners which might have the same
                         // real key (address and port) as a real listener
                         sbHashKey.Append(attribute.Key.ToString());
                         sbHashKey.Append(WSManStringLiterals.Equalto);
