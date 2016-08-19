@@ -31,7 +31,7 @@ namespace Microsoft.Management.UI.Internal
         /// <summary>
         /// The text spans that should be highlighted
         /// </summary>
-        private List<TextSpan> highlighedSpans;
+        private List<TextSpan> highlightedSpans;
 
         /// <summary>
         /// The text displayed
@@ -56,7 +56,7 @@ namespace Microsoft.Management.UI.Internal
 
             this.paragraph = paragraph;
             this.boldSpans = new List<TextSpan>();
-            this.highlighedSpans = new List<TextSpan>();
+            this.highlightedSpans = new List<TextSpan>();
             this.textBuilder = new StringBuilder();
         }
 
@@ -72,7 +72,7 @@ namespace Microsoft.Management.UI.Internal
         /// </summary>
         internal int HighlightCount
         {
-            get { return this.highlighedSpans.Count; }
+            get { return this.highlightedSpans.Count; }
         }
 
         /// <summary>
@@ -91,7 +91,7 @@ namespace Microsoft.Management.UI.Internal
         ///    2) spans in this.boldSpans
         ///    3) spans in this.highlightedSpans
         /// And adds the minimal number of Inlines to the paragraph so that all 
-        /// characters that should be bold and/or highlighed are.
+        /// characters that should be bold and/or highlighted are.
         /// </summary>
         internal void BuildParagraph()
         {
@@ -100,7 +100,7 @@ namespace Microsoft.Management.UI.Internal
             int currentBoldIndex = 0;
             TextSpan? currentBoldSpan = this.boldSpans.Count == 0 ? (TextSpan?)null : this.boldSpans[0];
             int currentHighlightedIndex = 0;
-            TextSpan? currentHighlightedSpan = this.highlighedSpans.Count == 0 ? (TextSpan?)null : this.highlighedSpans[0];
+            TextSpan? currentHighlightedSpan = this.highlightedSpans.Count == 0 ? (TextSpan?)null : this.highlightedSpans[0];
 
             bool currentBold = false;
             bool currentHighlighted = false;
@@ -115,7 +115,7 @@ namespace Microsoft.Management.UI.Internal
                 ParagraphBuilder.MoveSpanToPosition(ref currentBoldIndex, ref currentBoldSpan, i, this.boldSpans);
                 newBold = currentBoldSpan == null ? false : currentBoldSpan.Value.Contains(i);
 
-                ParagraphBuilder.MoveSpanToPosition(ref currentHighlightedIndex, ref currentHighlightedSpan, i, this.highlighedSpans);
+                ParagraphBuilder.MoveSpanToPosition(ref currentHighlightedIndex, ref currentHighlightedSpan, i, this.highlightedSpans);
                 newHighlighted = currentHighlightedSpan == null ? false : currentHighlightedSpan.Value.Contains(i);
 
                 if (newBold != currentBold || newHighlighted != currentHighlighted)
@@ -142,7 +142,7 @@ namespace Microsoft.Management.UI.Internal
         /// <param name="wholeWord">true if we should search whole word only</param>
         internal void HighlightAllInstancesOf(string search, bool caseSensitive, bool wholeWord)
         {
-            this.highlighedSpans.Clear();
+            this.highlightedSpans.Clear();
 
             if (search == null || search.Trim().Length == 0)
             {
@@ -216,7 +216,7 @@ namespace Microsoft.Management.UI.Internal
         internal void ResetAllText()
         {
             this.boldSpans.Clear();
-            this.highlighedSpans.Clear();
+            this.highlightedSpans.Clear();
             this.textBuilder.Clear();
         }
 
@@ -246,9 +246,9 @@ namespace Microsoft.Management.UI.Internal
         }
 
         /// <summary>
-        /// This is an auxiliar method in BuildParagraph to move the current bold or highlighed spans
+        /// This is an auxiliar method in BuildParagraph to move the current bold or highlighted spans
         /// according to the <paramref name="caracterPosition"/>
-        /// The current bold and higlighed span should be ending ahead of the current position.
+        /// The current bold and highlighted span should be ending ahead of the current position.
         /// Moves <paramref name="currentSpanIndex"/> and <paramref name="currentSpan"/> to the 
         /// propper span in <paramref name="allSpans"/> according to the <paramref name="caracterPosition"/>
         /// This is an auxiliar method in BuildParagraph. 
@@ -298,7 +298,7 @@ namespace Microsoft.Management.UI.Internal
                 throw new ArgumentOutOfRangeException("length");
             }
 
-            this.highlighedSpans.Add(new TextSpan(start, length));
+            this.highlightedSpans.Add(new TextSpan(start, length));
         }
 
         /// <summary>
@@ -315,7 +315,7 @@ namespace Microsoft.Management.UI.Internal
         }
 
         /// <summary>
-        /// A text span used to mark bold and highlighed segments 
+        /// A text span used to mark bold and highlighted segments 
         /// </summary>
         internal struct TextSpan
         {

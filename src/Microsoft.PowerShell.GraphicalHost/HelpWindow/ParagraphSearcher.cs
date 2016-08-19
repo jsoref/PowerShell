@@ -92,7 +92,7 @@ namespace Microsoft.Management.UI.Internal
             this.currentHighlightedMatch = currentRun;
             if (this.currentHighlightedMatch != null)
             {
-                // restore the current highligthed background to current highlighted
+                // restore the current highlighted background to current highlighted
                 this.currentHighlightedMatch.Background = ParagraphSearcher.CurrentHighlightBrush;
             }
 
