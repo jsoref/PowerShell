@@ -10142,14 +10142,14 @@ function Install-PackageUtility
         $packageName = $parts[1]
         $version = $parts[2]
         $sourceLocation= $parts[3]
-        $artfactType = $parts[4]
+        $artifactType = $parts[4]
 
         # The default destination location for Modules and Scripts is ProgramFiles path
         $scriptDestination = $script:ProgramFilesScriptsPath
         $moduleDestination = $script:programFilesModulesPath
         $Scope = 'AllUsers'
 
-        if($artfactType -eq $script:PSArtifactTypeScript)
+        if($artifactType -eq $script:PSArtifactTypeScript)
         {
             $AdminPreviligeErrorMessage = $LocalizedData.InstallScriptNeedsCurrentUserScopeParameterForNonAdminUser -f @($script:ProgramFilesScriptsPath, $script:MyDocumentsScriptsPath)
             $AdminPreviligeErrorId = 'InstallScriptNeedsCurrentUserScopeParameterForNonAdminUser'
@@ -10327,7 +10327,7 @@ function Install-PackageUtility
                 }
             }            
 
-            if($Scope -and ($artfactType -eq $script:PSArtifactTypeScript) -and (-not $installUpdate))
+            if($Scope -and ($artifactType -eq $script:PSArtifactTypeScript) -and (-not $installUpdate))
             {
                 ValidateAndSet-PATHVariableIfUserAccepts -Scope $Scope `
                                                          -ScopePath $scriptDestination `
@@ -10336,7 +10336,7 @@ function Install-PackageUtility
                                                          -Force:$Force
             }
 
-            if($artfactType -eq $script:PSArtifactTypeModule)
+            if($artifactType -eq $script:PSArtifactTypeModule)
             {
                 $message = $LocalizedData.ModuleDestination -f @($moduleDestination)
             }
@@ -10347,9 +10347,9 @@ function Install-PackageUtility
             Write-Verbose $message            
         }
 
-        Write-Debug "ArtfactType is $artfactType"
+        Write-Debug "ArtifactType is $artifactType"
 
-        if($artfactType -eq $script:PSArtifactTypeModule)
+        if($artifactType -eq $script:PSArtifactTypeModule)
         {
             # Test if module is already installed
             $InstalledModuleInfo = if(-not $IsSavePackage){ Test-ModuleInstalled -Name $packageName -RequiredVersion $RequiredVersion }
@@ -10410,7 +10410,7 @@ function Install-PackageUtility
             }
         }
 
-        if($artfactType -eq $script:PSArtifactTypeScript)
+        if($artifactType -eq $script:PSArtifactTypeScript)
         {
             # Test if script is already installed
             $InstalledScriptInfo = if(-not $IsSavePackage){ Test-ScriptInstalled -Name $packageName }
@@ -10501,7 +10501,7 @@ function Install-PackageUtility
                 $InstalledItemsList = Microsoft.PowerShell.Core\Get-Module -ListAvailable | 
                                         Microsoft.PowerShell.Core\ForEach-Object {"$($_.Name)!#!$($_.Version)".ToLower()}
 
-                if($artfactType -eq $script:PSArtifactTypeScript)
+                if($artifactType -eq $script:PSArtifactTypeScript)
                 {
                     $InstalledItemsList += $script:PSGetInstalledScripts.GetEnumerator() | 
                                                Microsoft.PowerShell.Core\ForEach-Object { 
@@ -10529,7 +10529,7 @@ function Install-PackageUtility
 
             $newRequest = $request.CloneRequest( $ProviderOptions, @($SourceLocation), $request.Credential )
 
-            if($artfactType -eq $script:PSArtifactTypeModule)
+            if($artifactType -eq $script:PSArtifactTypeModule)
             {
                 $message = $LocalizedData.DownloadingModuleFromGallery -f ($packageName, $version, $sourceLocation)
             }
@@ -10952,7 +10952,7 @@ function Uninstall-Package
         $packageName = $parts[1]
         $version = $parts[2]
         $sourceLocation= $parts[3]
-        $artfactType = $parts[4]
+        $artifactType = $parts[4]
 
         if($request.IsCanceled)
         {
@@ -10976,7 +10976,7 @@ function Uninstall-Package
             }
         }
 
-        if($artfactType -eq $script:PSArtifactTypeModule)
+        if($artifactType -eq $script:PSArtifactTypeModule)
         {
             $moduleName = $packageName
             $InstalledModuleInfo = $script:PSGetInstalledModules["$($moduleName)$($version)"] 
@@ -11117,7 +11117,7 @@ function Uninstall-Package
 
             Write-Output -InputObject $InstalledModuleInfo.SoftwareIdentity
         }
-        elseif($artfactType -eq $script:PSArtifactTypeScript)
+        elseif($artifactType -eq $script:PSArtifactTypeScript)
         {
             $scriptName = $packageName
             $InstalledScriptInfo = $script:PSGetInstalledScripts["$($scriptName)$($version)"] 
