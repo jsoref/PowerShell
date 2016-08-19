@@ -481,7 +481,7 @@ namespace Microsoft.PowerShell.Workflow
                 {
                     //ignoring the error message and just logging them into ETW
                     _tracer.WriteMessage(String.Format(CultureInfo.InvariantCulture,
-                                                       "WorkflowJobSourceAdapter: Ingnoring the exception. Exception details: {0}",
+                                                       "WorkflowJobSourceAdapter: Ignoring the exception. Exception details: {0}",
                                                        exception));
                     innerException = exception;
                     _structuredTracer.JobRemoveError(job.InstanceId,
@@ -499,7 +499,7 @@ namespace Microsoft.PowerShell.Workflow
             {
                 //ignoring the error message and just logging them into ETW
                 _tracer.WriteMessage(String.Format(CultureInfo.InvariantCulture,
-                                                   "WorkflowJobSourceAdapter: Ingnoring the exception. Exception details: {0}",
+                                                   "WorkflowJobSourceAdapter: Ignoring the exception. Exception details: {0}",
                                                    exception));
                 innerException = exception;
             }
@@ -547,7 +547,7 @@ namespace Microsoft.PowerShell.Workflow
                 {
                     //ignoring the error message and just logging them into ETW
                     _tracer.WriteMessage(String.Format(CultureInfo.InvariantCulture,
-                                                       "WorkflowJobSourceAdapter: Ingnoring the exception. Exception details: {0}",
+                                                       "WorkflowJobSourceAdapter: Ignoring the exception. Exception details: {0}",
                                                        exception));
 
                     _structuredTracer.JobRemoveError(job.InstanceId,
@@ -566,7 +566,7 @@ namespace Microsoft.PowerShell.Workflow
                     {
                         //ignoring the error message and just logging them into ETW
                         _tracer.WriteMessage(String.Format(CultureInfo.InvariantCulture,
-                                                           "WorkflowJobSourceAdapter: Ingnoring the exception. Exception details: {0}",
+                                                           "WorkflowJobSourceAdapter: Ignoring the exception. Exception details: {0}",
                                                            exception));
                     }
                     job.Dispose();
