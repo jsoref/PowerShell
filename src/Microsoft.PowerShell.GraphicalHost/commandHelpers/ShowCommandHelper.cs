@@ -681,7 +681,7 @@ Function PSGetSerializedShowCommandInfo
         /// <summary>
         /// Gets an error message to be displayed when failed to import a module
         /// </summary>
-        /// <param name="command">command belongiong to the module to import</param>
+        /// <param name="command">command belonging to the module to import</param>
         /// <param name="module">module to import</param>
         /// <param name="error">error importing the module</param>
         /// <returns>an error message to be displayed when failed to import a module</returns>
