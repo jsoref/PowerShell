@@ -115,7 +115,7 @@ namespace Microsoft.WSMan.Management
         /// Issues a PUT request with the ResourceUri provided.
         /// </summary>
         /// <param name="resourceUri">Resource URI to use.</param>
-        /// <returns>Fales, if operation is not succesful.</returns>
+        /// <returns>False, if operation is not succesful.</returns>
         public void PutConfigurationOnServer(string resourceUri)
         {
             if (String.IsNullOrEmpty(resourceUri))
