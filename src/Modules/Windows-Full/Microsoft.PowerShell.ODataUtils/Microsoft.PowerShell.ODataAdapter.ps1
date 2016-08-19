@@ -528,7 +528,7 @@ function GenerateClientSideProxyModule
 
     # This function performs the following set of tasks 
     # while creating the client side proxy module:
-    # 1. If the server side endpoint exposes comlex types,
+    # 1. If the server side endpoint exposes complex types,
     #    the client side proxy complex types are created
     #    as C# class in ComplexTypeDefinations.psm1 
     # 2. Creates proxy cmdlets for CRUD opreations.
@@ -592,7 +592,7 @@ function GenerateCRUDProxyCmdlet
         [string] $cmdletAdapter,
         [Hashtable] $resourceNameMapping,  
         [Hashtable] $customData,
-        [Hashtable] $compexTypeMapping,
+        [Hashtable] $complexTypeMapping,
         [string] $progressBarActivityName,
         [string] $progressBarStatus,
         [double] $previousSegmentWeight,
@@ -643,7 +643,7 @@ function GenerateCRUDProxyCmdlet
 
     $navigationProperties = GetAllProperties $entitySet.Type -IncludeOnlyNavigationProperties
 
-    GenerateGetProxyCmdlet $xmlWriter $metaData $keys $navigationProperties $cmdletAdapter $compexTypeMapping
+    GenerateGetProxyCmdlet $xmlWriter $metaData $keys $navigationProperties $cmdletAdapter $complexTypeMapping
 
     $nonKeyProperties = (GetAllProperties $entitySet.Type) | ? { -not $_.isKey }
     $nullableProperties = $nonKeyProperties | ? { $_.isNullable }
@@ -662,11 +662,11 @@ function GenerateCRUDProxyCmdlet
             $nonNullableProperties = UpdateNetworkControllerSpecificProperties $nonNullableProperties $additionalProperties $keyProperties $false
         }
 
-        GenerateNewProxyCmdlet $xmlWriter $metaData $keyProperties $nonNullableProperties $nullableProperties $navigationProperties $cmdletAdapter $compexTypeMapping
+        GenerateNewProxyCmdlet $xmlWriter $metaData $keyProperties $nonNullableProperties $nullableProperties $navigationProperties $cmdletAdapter $complexTypeMapping
 
         if ($CmdletAdapter -ne "NetworkControllerAdapter")
         {
-            GenerateSetProxyCmdlet $xmlWriter $keyProperties $nonKeyProperties $compexTypeMapping
+            GenerateSetProxyCmdlet $xmlWriter $keyProperties $nonKeyProperties $complexTypeMapping
         }
 
         if ($CmdletAdapter -eq "NetworkControllerAdapter")
@@ -674,7 +674,7 @@ function GenerateCRUDProxyCmdlet
     	    $keyProperties = GetKeys $entitySet $customData.$name 'Remove'
         }
 
-        GenerateRemoveProxyCmdlet $xmlWriter $metaData $keyProperties $navigationProperties $cmdletAdapter $compexTypeMapping
+        GenerateRemoveProxyCmdlet $xmlWriter $metaData $keyProperties $navigationProperties $cmdletAdapter $complexTypeMapping
 
         $entityActions = $metaData.Actions | Where-Object { ($_.EntitySet.Namespace -eq $entitySet.Namespace) -and ($_.EntitySet.Name -eq $entitySet.Name) }
 
@@ -1631,14 +1631,14 @@ function AddParametersCDXML
         [bool] $isMandatory,
         [string] $prefix,
         [string] $suffix,
-        [Hashtable] $compleTypeMapping
+        [Hashtable] $complexTypeMapping
     )
 
     $properties | ? { $_ -ne $null } | % {
         $xmlWriter.WriteStartElement('Parameter')
         $xmlWriter.WriteAttributeString('ParameterName', $_.Name + $suffix)
             $xmlWriter.WriteStartElement('Type')
-            $PSTypeName = Convert-ODataTypeToCLRType $_.TypeName $compleTypeMapping
+            $PSTypeName = Convert-ODataTypeToCLRType $_.TypeName $complexTypeMapping
             $xmlWriter.WriteAttributeString('PSType', $PSTypeName)
             $xmlWriter.WriteEndElement()
 
@@ -1661,7 +1661,7 @@ function AddParametersCDXML
 
 #########################################################
 # GenerateComplexTypeDefination is a helper function used 
-# to generate comlplex type defination from the metadata.
+# to generate complex type defination from the metadata.
 #########################################################
 function GenerateComplexTypeDefination 
 {

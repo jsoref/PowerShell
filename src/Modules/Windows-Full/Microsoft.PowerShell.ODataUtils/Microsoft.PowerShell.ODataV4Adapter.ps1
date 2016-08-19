@@ -214,7 +214,7 @@ function NormalizeNamespaceCollisionWithClassName
 
 #########################################################
 # This helper method is used by functions, 
-# writing directly to CDXML files or to .Net namespace/class definitions CompplexTypes file
+# writing directly to CDXML files or to .Net namespace/class definitions ComplexTypes file
 #########################################################
 function GetNamespace
 {
@@ -1300,7 +1300,7 @@ function SaveCDXML
         [string] $CmdletAdapter,
         [Hashtable] $resourceNameMappings,
         [Hashtable] $CustomData,
-        [Hashtable] $compexTypeMapping,
+        [Hashtable] $complexTypeMapping,
         [string] $UriResourcePathKeyFormat,
         $normalizedNamespaces
     )
@@ -1335,7 +1335,7 @@ function SaveCDXML
     
     $navigationProperties = $EntitySet.Type.NavigationProperties
 
-    SaveCDXMLInstanceCmdlets $xmlWriter $Metadata $GlobalMetadata $EntitySet.Type $keys $navigationProperties $CmdletAdapter $compexTypeMapping $false
+    SaveCDXMLInstanceCmdlets $xmlWriter $Metadata $GlobalMetadata $EntitySet.Type $keys $navigationProperties $CmdletAdapter $complexTypeMapping $false
 
     $nonKeyProperties = $EntitySet.Type.EntityProperties | ? { -not $_.isKey }
     $nullableProperties = $nonKeyProperties | ? { $_.isNullable }
@@ -1345,11 +1345,11 @@ function SaveCDXML
 
         $keyProperties = $keys
 
-        SaveCDXMLNewCmdlet $xmlWriter $Metadata $GlobalMetadata $keyProperties $nonNullableProperties $nullableProperties $navigationProperties $CmdletAdapter $compexTypeMapping
+        SaveCDXMLNewCmdlet $xmlWriter $Metadata $GlobalMetadata $keyProperties $nonNullableProperties $nullableProperties $navigationProperties $CmdletAdapter $complexTypeMapping
         
-        GenerateSetProxyCmdlet $xmlWriter $keyProperties $nonKeyProperties $compexTypeMapping
+        GenerateSetProxyCmdlet $xmlWriter $keyProperties $nonKeyProperties $complexTypeMapping
 
-        SaveCDXMLRemoveCmdlet $xmlWriter $Metadata $GlobalMetadata $keyProperties $navigationProperties $CmdletAdapter $compexTypeMapping
+        SaveCDXMLRemoveCmdlet $xmlWriter $Metadata $GlobalMetadata $keyProperties $navigationProperties $CmdletAdapter $complexTypeMapping
 
         $entityActions = $Metadata.Actions | Where-Object { ($_.EntitySet.Namespace -eq $EntitySet.Namespace) -and ($_.EntitySet.Name -eq $EntitySet.Name) }
 
@@ -1456,7 +1456,7 @@ function SaveCDXMLSingletonCmdlets
         [string] $CmdletAdapter,
         [Hashtable] $resourceNameMappings,
         [Hashtable] $CustomData,
-        [Hashtable] $compexTypeMapping,
+        [Hashtable] $complexTypeMapping,
         $normalizedNamespaces
     )
 
@@ -1508,7 +1508,7 @@ function SaveCDXMLSingletonCmdlets
 
 		$navigationProperties = $associatedEntityType.NavigationProperties
 
-		SaveCDXMLInstanceCmdlets $xmlWriter $Metadata $GlobalMetadata $associatedEntityType $keys $navigationProperties $CmdletAdapter $compexTypeMapping $true 
+		SaveCDXMLInstanceCmdlets $xmlWriter $Metadata $GlobalMetadata $associatedEntityType $keys $navigationProperties $CmdletAdapter $complexTypeMapping $true 
 
 		$nonKeyProperties = $associatedEntityType.EntityProperties | ? { -not $_.isKey }
 		$nullableProperties = $nonKeyProperties | ? { $_.isNullable }
@@ -1518,7 +1518,7 @@ function SaveCDXMLSingletonCmdlets
 
 			$keyProperties = $keys
 
-			GenerateSetProxyCmdlet $xmlWriter $keyProperties $nonKeyProperties $compexTypeMapping
+			GenerateSetProxyCmdlet $xmlWriter $keyProperties $nonKeyProperties $complexTypeMapping
 
 			$entityActions = $Metadata.Actions | Where-Object { $_.EntitySet.Name -eq $associatedEntityType.Name }
 
@@ -2350,7 +2350,7 @@ function GenerateModuleManifest
 }
 
 #########################################################
-# This is a helper function used to generate comlplex 
+# This is a helper function used to generate complex 
 # type defination from the metadata.
 #########################################################
 function GenerateComplexTypeDefinition 
