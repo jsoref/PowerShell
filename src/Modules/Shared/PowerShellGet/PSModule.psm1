@@ -11184,7 +11184,7 @@ function Uninstall-Package
             $scriptFilePath = Microsoft.PowerShell.Management\Join-Path -Path $scriptBase `
                                                                         -ChildPath "$($scriptName).ps1"
 
-            $installledScriptInfoFilePath = Microsoft.PowerShell.Management\Join-Path -Path $installedScriptInfoPath `
+            $installedScriptInfoFilePath = Microsoft.PowerShell.Management\Join-Path -Path $installedScriptInfoPath `
                                                                                       -ChildPath "$($scriptName)_$($script:InstalledScriptInfoFileName)" 
 
             # Remove the script file and it's corresponding InstalledScriptInfo.xml
@@ -11197,9 +11197,9 @@ function Uninstall-Package
                                                             -Confirm:$false -WhatIf:$false
             }
 
-            if(Microsoft.PowerShell.Management\Test-Path -Path $installledScriptInfoFilePath -PathType Leaf)
+            if(Microsoft.PowerShell.Management\Test-Path -Path $installedScriptInfoFilePath -PathType Leaf)
             {
-                Microsoft.PowerShell.Management\Remove-Item -Path $installledScriptInfoFilePath `
+                Microsoft.PowerShell.Management\Remove-Item -Path $installedScriptInfoFilePath `
                                                             -Force `
                                                             -ErrorAction SilentlyContinue `
                                                             -WarningAction SilentlyContinue `

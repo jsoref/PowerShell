@@ -1723,7 +1723,7 @@ int __cdecl
             pwrshExeOutput->DisplayMessage(false, g_NONSTANDARD_CLR_VERSION, wszRuntimeVersion);
         }
 
-        // On downlevel setups, verify that the CLR was present when PowerShell was intalled.
+        // On downlevel setups, verify that the CLR was present when PowerShell was installed.
         // If it wasn't, then PowerShell is in a bad state and needs to be installed after the
         // CLR.
         exitCode = ValidateDownlevelSetupHadClrWhenInstalled(
