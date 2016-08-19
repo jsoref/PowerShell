@@ -203,9 +203,9 @@ Describe "Test suite for NewFileCatalogAndTestFileCatalogCmdlets" -Tags "CI" {
             CompareHashTables $result.CatalogItems $expectedPathsAndHashes
         }
 
-        It "NewFileCatalogFolderWhenCatlogFileIsCreatedInsideSameFolder" {
+        It "NewFileCatalogFolderWhenCatalogFileIsCreatedInsideSameFolder" {
             
-            $catalogPath = "$env:TEMP\UserConfigProv\NewFileCatalogFolderWhenCatlogFileIsCreatedInsideSameFolder.cat"
+            $catalogPath = "$env:TEMP\UserConfigProv\NewFileCatalogFolderWhenCatalogFileIsCreatedInsideSameFolder.cat"
             try
             {
                 copy-item "$testDataPath\UserConfigProv" $env:temp -Recurse -ErrorAction SilentlyContinue             

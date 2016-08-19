@@ -126,7 +126,7 @@
   <data name="SkipValidationOfCatalogFile" xml:space="preserve">
     <value>Skipping validating file {0} from catalog. </value>
   </data>
-  <data name="FoundFileHashInCatlogItem" xml:space="preserve">
+  <data name="FoundFileHashInCatalogItem" xml:space="preserve">
     <value>Found file {0} in the catalog with hash of {1}. </value>
   </data>
   <data name="FoundDuplicateFilesRelativePath" xml:space="preserve">
