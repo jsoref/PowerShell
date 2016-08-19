@@ -553,7 +553,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
 
         /// <summary>
         /// The following is the definition of action queue.
-        /// The queue holding all actions to be exected in the context of either
+        /// The queue holding all actions to be executed in the context of either
         /// ProcessRecord or EndProcessing.
         /// </summary>
         private ConcurrentQueue<CimBaseAction> actionQueue;
