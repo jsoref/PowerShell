@@ -1366,7 +1366,7 @@ namespace Microsoft.WSMan.Management
         }
 
         /// <summary>
-        /// This method gives the names of child items. this is used for Tab compeletion.
+        /// This method gives the names of child items. this is used for Tab completion.
         /// </summary>
         /// <param name="path"></param>
         /// <param name="returnContainers"></param>

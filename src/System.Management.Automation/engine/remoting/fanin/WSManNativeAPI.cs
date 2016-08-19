@@ -1899,7 +1899,7 @@ namespace System.Management.Automation.Remoting.Client
             }
         }
         /// <summary>
-        /// Used in the shell compeletion function delegate to refer to the data.
+        /// Used in the shell completion function delegate to refer to the data.
         /// </summary>
         internal class WSManReceiveDataResult
         {
