@@ -165,7 +165,7 @@ Describe "ConsoleHost unit tests" -tags "Feature" {
         # even though it is redirected - we want to make sure we don't hang.
         # So none of these tests should close StandardInput
 
-        It "Redirected input w/ implict -Command w/ -NonInteractive" {
+        It "Redirected input w/ implicit -Command w/ -NonInteractive" {
             $si = NewProcessStartInfo "-NonInteractive -noprofile 1+1" -RedirectStdIn
             $process = RunPowerShell $si
             $process.StandardOutput.ReadToEnd() | Should Be 2

@@ -748,7 +748,7 @@ namespace System.Management.Automation.Remoting.Client
             }
 
             /// <summary>
-            /// implict IntPtr conversion
+            /// implicit IntPtr conversion
             /// </summary>
             /// <param name="data"></param>
             /// <returns></returns>
