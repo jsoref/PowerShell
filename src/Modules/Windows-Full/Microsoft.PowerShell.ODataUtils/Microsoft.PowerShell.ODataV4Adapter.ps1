@@ -266,7 +266,7 @@ function NormalizeNamespaceHelper
 
     # For example, following namespace: Service.1.0.0
     # Will change to: Service_1_0_0
-    # Ns postfix in Namespace name will allow to diffirintiate between this namespace 
+    # Ns postfix in Namespace name will allow to differentiate between this namespace 
     # and a colliding type name from different namespace
     $updatedNs = $Namespace
     if ($DoesNamespaceContainsInvalidChars)
