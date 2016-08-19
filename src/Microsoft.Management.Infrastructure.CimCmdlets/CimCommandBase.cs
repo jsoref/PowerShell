@@ -218,7 +218,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
             this.CloneParameterEntries(parameters, sets);
         }
 
-        #region Two dictionaryies used to determine the bound parameter set
+        #region Two dictionaries used to determine the bound parameter set
 
         /// <summary>
         /// Define the parameter definition entries,
