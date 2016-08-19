@@ -162,7 +162,7 @@ namespace Microsoft.PowerShell
                 { Keys.ucF,             MakeKeyHandler(SearchCharBackward,   "SearchCharBackward") },
                 { Keys.ucG,             MakeKeyHandler(Ding,                 "Ignore") },
                 { Keys.ucH,             MakeKeyHandler(Ding,                 "Ignore") },
-                { Keys.ucI,             MakeKeyHandler(ViInsertAtBegining,   "ViInsertAtBegining") },
+                { Keys.ucI,             MakeKeyHandler(ViInsertAtBeginning,   "ViInsertAtBeginning") },
                 { Keys.ucJ,             MakeKeyHandler(ViJoinLines,          "ViJoinLines") },
                 { Keys.ucK,             MakeKeyHandler(Ding,                 "Ignore") },
                 { Keys.ucL,             MakeKeyHandler(Ding,                 "Ignore") },

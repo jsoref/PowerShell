@@ -1488,9 +1488,9 @@ namespace Microsoft.PowerShell {
         /// <summary>
         ///   Looks up a localized string similar to Moves the cursor to the beginning of the line and switches to insert mode..
         /// </summary>
-        internal static string ViInsertAtBeginingDescription {
+        internal static string ViInsertAtBeginningDescription {
             get {
-                return ResourceManager.GetString("ViInsertAtBeginingDescription", resourceCulture);
+                return ResourceManager.GetString("ViInsertAtBeginningDescription", resourceCulture);
             }
         }
         

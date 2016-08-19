@@ -570,9 +570,9 @@ namespace Microsoft.PowerShell
         }
 
         /// <summary>
-        /// Switch to Insert mode and position the cursor at the begining of the line.
+        /// Switch to Insert mode and position the cursor at the beginning of the line.
         /// </summary>
-        public static void ViInsertAtBegining(ConsoleKeyInfo? key = null, object arg = null)
+        public static void ViInsertAtBeginning(ConsoleKeyInfo? key = null, object arg = null)
         {
             ViInsertMode(key, arg);
             BeginningOfLine(key, arg);

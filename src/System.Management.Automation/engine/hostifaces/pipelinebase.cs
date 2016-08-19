@@ -591,7 +591,7 @@ namespace System.Management.Automation.Runspaces
         /// In case of LocalPipeline, this is the thread of execution
         /// of LocalPipeline. In case of RemotePipeline, this is thread
         /// on which EnterNestedPrompt is called.
-        /// RemotePipeline proxy should set it on at the begining of 
+        /// RemotePipeline proxy should set it on at the beginning of 
         /// EnterNestedPrompt and clear it on return.
         /// </summary>
         internal Thread NestedPipelineExecutionThread { get; set; }

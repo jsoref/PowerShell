@@ -2849,7 +2849,7 @@ namespace Microsoft.PowerShell.Activities
             {
                 System.Management.Automation.PowerShell commandToRun = implementationContext.PowerShellInstance;
                 actionTracer.WriteMessage(String.Format(CultureInfo.InvariantCulture,
-                                                        "Begining action to run command {0}.", commandToRun));
+                                                        "Beginning action to run command {0}.", commandToRun));
 
                 if (CheckForCancel(psActivityContext)) return;
 

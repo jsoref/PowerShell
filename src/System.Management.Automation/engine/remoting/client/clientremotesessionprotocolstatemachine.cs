@@ -577,7 +577,7 @@ namespace System.Management.Automation.Remoting
         #region Event Handlers
 
         /// <summary>
-        /// This is the handler for CreateSession event of the FSM. This is the begining of everything
+        /// This is the handler for CreateSession event of the FSM. This is the beginning of everything
         /// else. From this moment on, the FSM will proceeds step by step to eventually reach
         /// Established state or Closed state.
         /// </summary>
@@ -612,7 +612,7 @@ namespace System.Management.Automation.Remoting
 
 
         /// <summary>
-        /// This is the handler for ConnectSession event of the FSM. This is the begining of everything
+        /// This is the handler for ConnectSession event of the FSM. This is the beginning of everything
         /// else. From this moment on, the FSM will proceeds step by step to eventually reach
         /// Established state or Closed state.
         /// </summary>

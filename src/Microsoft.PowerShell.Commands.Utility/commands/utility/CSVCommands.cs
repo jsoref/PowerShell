@@ -1383,7 +1383,7 @@ namespace Microsoft.PowerShell.Commands
                     }
                     else if (current.Length == 0)
                     {
-                        //We are at the begining of a new word.
+                        //We are at the beginning of a new word.
                         //This quote is the first quote.
                         seenBeginQuote = true;
                     }
@@ -1419,7 +1419,7 @@ namespace Microsoft.PowerShell.Commands
                     else
                     {
                         //We are not in quote and we are not at the 
-                        //begining of a word. We should not be seeing
+                        //beginning of a word. We should not be seeing
                         //spaces here. This is an error condition, however
                         //we will be linient here and do what excel does,
                         //that is read till next delimiter.

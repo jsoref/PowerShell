@@ -4547,7 +4547,7 @@ function Test-ScriptFileInfo
 
         if($ast)
         {
-            # Get the block/group comment begining with <#PSScriptInfo
+            # Get the block/group comment beginning with <#PSScriptInfo
             $CommentTokens = $tokens | Microsoft.PowerShell.Core\Where-Object {$_.Kind -eq 'Comment'}
 
             $psscriptInfoComments = $CommentTokens | 
