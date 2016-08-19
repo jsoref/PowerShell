@@ -95,7 +95,7 @@ namespace Microsoft.PackageManagement.Internal.Utility.Extensions {
                 }
 
                 if (File.Exists(location)) {
-                    // err("Unable to forcably remove file '{0}'. This can't be good.", location);
+                    // err("Unable to forcibly remove file '{0}'. This can't be good.", location);
                 }
             }
             return;
