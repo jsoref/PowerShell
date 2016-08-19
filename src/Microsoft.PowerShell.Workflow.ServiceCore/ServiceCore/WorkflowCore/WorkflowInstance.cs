@@ -876,7 +876,7 @@ namespace Microsoft.PowerShell.Workflow
 
             // there might be possible of race condition here in case of Winrm shutdown. if the activity is 
             // excuting on loop back winrm process so there might be possibility that the winrm shuts down the 
-            // activity process fist and cuasing the workflow to fail in the M3P process.
+            // activity process fist and causing the workflow to fail in the M3P process.
             // in order to avoid those situations we will ignore the remote exception if the shutdwon is in progress
             if (WorkflowJobSourceAdapter.GetInstance().IsShutdownInProgress)
             {
