@@ -535,7 +535,7 @@ namespace Microsoft.PowerShell.Commands
             if (pso == null)
                 return obj;
 
-            // when isPurePSObj is true, the obj is guaranteed to be a string convertted by LanguagePrimitives
+            // when isPurePSObj is true, the obj is guaranteed to be a string converted by LanguagePrimitives
             if (isPurePSObj)
                 return obj;
 
