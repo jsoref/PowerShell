@@ -3868,7 +3868,7 @@ $result
         /// <summary>
         /// The domain credential.
         /// In DomainParameterSet, it is for the domain to join to.
-        /// In WorkgroupParameterSet, it is for the doamin to disjoin from.
+        /// In WorkgroupParameterSet, it is for the domain to disjoin from.
         /// </summary>
         [Parameter(ParameterSetName = DomainParameterSet, Mandatory = true)]
         [Parameter(ParameterSetName = WorkgroupParameterSet)]
@@ -3971,7 +3971,7 @@ $result
         /// In the DomainParameterSet, the UnjoinDomainCredential is our first choice to unjoin a domain.
         /// But if the UnjoinDomainCredential is not specified, the DomainCredential will be our second 
         /// choice. This is to keep the backward compatibility. In Win7, we can do:
-        ///      Add-Computer -DomianName domain1 -Credential $credForDomain1AndDomain2
+        ///      Add-Computer -DomainName domain1 -Credential $credForDomain1AndDomain2
         /// to switch the local machine that is currently in domain2 to domain1.
         /// 
         /// Since DomainCredential has an alias "Credential", the same command should still work for the
