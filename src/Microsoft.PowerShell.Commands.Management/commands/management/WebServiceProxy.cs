@@ -309,7 +309,7 @@ namespace Microsoft.PowerShell.Commands
             if (_usedefaultcredential.IsPresent)
                 dcp.UseDefaultCredentials = true;
 
-            //if paramset is credential, assign the crdentials
+            //if paramset is credential, assign the credentials
             if (ParameterSetName.Equals("Credential", StringComparison.OrdinalIgnoreCase))
                 dcp.Credentials = _credential.GetNetworkCredential();
 
