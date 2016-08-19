@@ -4531,16 +4531,16 @@ function Test-ScriptFileInfo
 
         $notSupportedOnNanoErrorIds = @('WorkflowNotSupportedInPowerShellCore',
                                         'ConfigurationNotSupportedInPowerShellCore')
-        $errosAfterSkippingOneCoreErrors = $errors | Microsoft.PowerShell.Core\Where-Object { $notSupportedOnNanoErrorIds -notcontains $_.ErrorId}
+        $errorsAfterSkippingOneCoreErrors = $errors | Microsoft.PowerShell.Core\Where-Object { $notSupportedOnNanoErrorIds -notcontains $_.ErrorId}
 
-        if($errosAfterSkippingOneCoreErrors)
+        if($errorsAfterSkippingOneCoreErrors)
         {
             $errorMessage = ($LocalizedData.ScriptParseError -f $scriptFilePath)
             ThrowError  -ExceptionName "System.ArgumentException" `
                         -ExceptionMessage $errorMessage `
                         -ErrorId "ScriptParseError" `
                         -CallerPSCmdlet $PSCmdlet `
-                        -ExceptionObject $errosAfterSkippingOneCoreErrors `
+                        -ExceptionObject $errorsAfterSkippingOneCoreErrors `
                         -ErrorCategory InvalidArgument
             return
         }
