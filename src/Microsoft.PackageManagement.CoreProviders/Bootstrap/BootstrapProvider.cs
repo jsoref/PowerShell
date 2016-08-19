@@ -173,7 +173,7 @@ namespace Microsoft.PackageManagement.Providers.Internal.Bootstrap {
                 var wildcardPattern = new WildcardPattern(name, WildcardOptions);
 
                 if (request.GetOptionValue("AllVersions").IsTrue()) {
-                    // Feed.Query() can return an empty provider, so here we need to execlude it by checking p.Name !=null or empty.
+                    // Feed.Query() can return an empty provider, so here we need to exclude it by checking p.Name !=null or empty.
                     foreach (var p in request.Providers.Distinct(PackageEqualityComparer).Where(p => !string.IsNullOrWhiteSpace(p.Name) && (string.IsNullOrWhiteSpace(name) || wildcardPattern.IsMatch(p.Name)))) {
                         FindPackage(p.Name, null, "0.0", null, 0, request);
                     }
