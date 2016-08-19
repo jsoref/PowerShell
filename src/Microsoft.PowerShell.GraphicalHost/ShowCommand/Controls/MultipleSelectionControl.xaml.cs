@@ -34,7 +34,7 @@ namespace Microsoft.PowerShell.Commands.ShowCommandInternal
         {
             MultipleSelectionDialog multipleSelectionDialog = new MultipleSelectionDialog();
             multipleSelectionDialog.Title = this.multipleValueButton.ToolTip.ToString();
-            multipleSelectionDialog.listboxParameter.ItemsSource = comboxParameter.ItemsSource;
+            multipleSelectionDialog.listboxParameter.ItemsSource = comboboxParameter.ItemsSource;
             multipleSelectionDialog.ShowDialog();
 
             if (multipleSelectionDialog.DialogResult != true)
@@ -54,7 +54,7 @@ namespace Microsoft.PowerShell.Commands.ShowCommandInternal
                 newComboText.Remove(newComboText.Length - 1, 1);
             }
 
-            comboxParameter.Text = newComboText.ToString();
+            comboboxParameter.Text = newComboText.ToString();
         }
     }
 }

@@ -14,7 +14,7 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <ComboBox x:Name="comboxParameter" Margin="3" VerticalAlignment="Top" Grid.Column="0" IsEditable="True"  ItemsSource="{Binding ItemsSource}" AutomationProperties.AutomationId="comboxParameter">
+        <ComboBox x:Name="comboboxParameter" Margin="3" VerticalAlignment="Top" Grid.Column="0" IsEditable="True"  ItemsSource="{Binding ItemsSource}" AutomationProperties.AutomationId="comboboxParameter">
         </ComboBox>
         <Button x:Name="multipleValueButton" Padding="3,0,3,0" Margin="3" Grid.Column="1" Click="ButtonBrowse_Click" Content="{x:Static sc:ShowCommandResources.MultiParameter_Button_Browse}" AutomationProperties.AutomationId="ButtonBrowse"></Button>
     </Grid>

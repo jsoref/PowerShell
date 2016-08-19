@@ -28,7 +28,7 @@
                     <RowDefinition Height="Auto"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Label Content="{x:Static sc:ShowCommandResources.AllModulesControl_Label_Modules}" Grid.Row="0" Grid.Column="0" Margin="3"></Label>
-                <ComboBox x:Name="ModulesCombo" Grid.Row="0" Grid.Column="1" Margin="3" ItemsSource="{Binding Modules}" AutomationProperties.Name="{x:Static sc:ShowCommandResources.ModulesAutomationName}" DisplayMemberPath="DisplayName" SelectedItem="{Binding SelectedModule}" AutomationProperties.AutomationId="comboxModules">
+                <ComboBox x:Name="ModulesCombo" Grid.Row="0" Grid.Column="1" Margin="3" ItemsSource="{Binding Modules}" AutomationProperties.Name="{x:Static sc:ShowCommandResources.ModulesAutomationName}" DisplayMemberPath="DisplayName" SelectedItem="{Binding SelectedModule}" AutomationProperties.AutomationId="comboboxModules">
                     <ComboBox.ItemContainerStyle>
                         <Style TargetType="ComboBoxItem">
                             <Setter Property="AutomationProperties.Name" Value="{Binding DisplayName}"/>

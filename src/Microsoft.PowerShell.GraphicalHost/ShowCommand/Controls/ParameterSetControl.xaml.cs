@@ -105,7 +105,7 @@ namespace Microsoft.PowerShell.Commands.ShowCommandInternal
 
             string automationId = string.Format(
                     CultureInfo.CurrentCulture,
-                    "combox{0}",
+                    "combobox{0}",
                     parameterViewModel.Name);
 
             //// Add AutomationProperties.AutomationId for Ui Automation test.
@@ -135,17 +135,17 @@ namespace Microsoft.PowerShell.Commands.ShowCommandInternal
             multiControls.SetValue(Grid.ColumnProperty, 1);
             multiControls.SetValue(Grid.RowProperty, rowNumber);
             multiControls.Margin = new Thickness(2);
-            multiControls.comboxParameter.ItemsSource = itemsSource;
+            multiControls.comboboxParameter.ItemsSource = itemsSource;
             multiControls.SetBinding(TextBox.ToolTipProperty, new Binding("ToolTip"));
 
             Binding valueBinding = new Binding("Value");
             valueBinding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
-            multiControls.comboxParameter.SetBinding(ComboBox.TextProperty, valueBinding);
+            multiControls.comboboxParameter.SetBinding(ComboBox.TextProperty, valueBinding);
 
             // Add AutomationProperties.AutomationId for Ui Automation test.
-            multiControls.SetValue(System.Windows.Automation.AutomationProperties.AutomationIdProperty, string.Format("combox{0}", parameterViewModel.Name));
+            multiControls.SetValue(System.Windows.Automation.AutomationProperties.AutomationIdProperty, string.Format("combobox{0}", parameterViewModel.Name));
 
-            multiControls.comboxParameter.SetValue(
+            multiControls.comboboxParameter.SetValue(
                 System.Windows.Automation.AutomationProperties.NameProperty,
                 parameterViewModel.Name);
 
