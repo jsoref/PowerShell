@@ -89,7 +89,7 @@ namespace Microsoft.PackageManagement.Msi.Internal.Deployment.WindowsInstaller
 
         private static string GetProductCode(string component, string szUserSid, UserContexts dwContext)
         {
-            // TODO: We really need what would be MsiGetProductCodeEx, or at least a reasonable facimile thereof (something that restricts the search to the context defined by szUserSid & dwContext)
+            // TODO: We really need what would be MsiGetProductCodeEx, or at least a reasonable facsimile thereof (something that restricts the search to the context defined by szUserSid & dwContext)
             return GetProductCode(component);
         }
 
