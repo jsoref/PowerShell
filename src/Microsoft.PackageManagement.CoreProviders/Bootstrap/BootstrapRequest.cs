@@ -330,7 +330,7 @@ namespace Microsoft.PackageManagement.Providers.Internal.Bootstrap {
 
         private bool ValidateFileHash(string fileFullPath, Payload payload) {
 
-            Debug("BoostrapRequest::ValidateFileHash");
+            Debug("BootstrapRequest::ValidateFileHash");
             /* format: 
              * <Payload>
              *   <File name="nuget-anycpu-2.8.5.205.exe"  sha512:hash="a314fc2dc663ae7a6b6bc6787594057396e6b3f569cd50fd5ddb4d1bbafd2b6a" />
@@ -484,7 +484,7 @@ namespace Microsoft.PackageManagement.Providers.Internal.Bootstrap {
                     return !IsCanceled;
                 }
 
-                //installing a package from bootstrap site needs to prompt a user. Only auto-boostrap is not prompted.
+                //installing a package from bootstrap site needs to prompt a user. Only auto-bootstrap is not prompted.
                 var pm = PackageManagementService as PackageManagementService;
                 string isTrustedSource = pm.InternalPackageManagementInstallOnly ? "false" : "true";
                 if (AddMetadata(fastPackageReference, "FromTrustedSource", isTrustedSource) == null) {

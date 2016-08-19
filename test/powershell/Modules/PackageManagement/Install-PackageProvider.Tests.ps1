@@ -128,7 +128,7 @@ Describe "install-packageprovider" -Tags "Feature" {
     }
  }
 
-<# Don't need this test since we are not boostraping
+<# Don't need this test since we are not bootstraping
 Describe "install-packageprovider with local source" -Tags "Feature" {
 
     BeforeAll{
