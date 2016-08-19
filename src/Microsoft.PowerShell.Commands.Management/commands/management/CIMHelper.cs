@@ -228,7 +228,7 @@ namespace Microsoft.PowerShell.Commands
         /// A string that may contain backslash characters.
         /// </param>
         /// <returns>
-        /// A new string in which any backshlash characters have been "escaped"
+        /// A new string in which any backslash characters have been "escaped"
         /// by prefacing then with an additional backslash
         /// </returns>
         internal static string EscapePath(string path)
