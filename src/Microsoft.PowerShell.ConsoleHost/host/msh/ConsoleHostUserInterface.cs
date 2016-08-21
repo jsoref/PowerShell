@@ -1472,7 +1472,7 @@ namespace Microsoft.PowerShell
 
         /// <summary>
         /// 
-        /// Reads a line of input from the console.  Returns when the user hits enter, a break key, a break event occurrs.  In 
+        /// Reads a line of input from the console.  Returns when the user hits enter, a break key, a break event occurs.  In 
         /// the case that stdin has been redirected, reads from the stdin stream instead of the console.
         /// 
         /// </summary>
