@@ -479,7 +479,7 @@ namespace Microsoft.PowerShell.Commands.ShowCommandInternal
         /// </summary>
         /// <param name="module">Module to which the CommandViewModel will belong to</param>
         /// <param name="commandInfo">Will showing command</param>
-        /// <param name="noCommonParameters">true to ommit displaying common parameter</param>
+        /// <param name="noCommonParameters">true to omit displaying common parameter</param>
         /// <exception cref="ArgumentNullException">If commandInfo is null</exception>
         /// <exception cref="RuntimeException">
         /// If could not create the CommandViewModel. For instance the ShowCommandCommandInfo corresponding to
