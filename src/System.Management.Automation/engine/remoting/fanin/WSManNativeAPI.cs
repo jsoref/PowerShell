@@ -238,7 +238,7 @@ namespace System.Management.Automation.Remoting.Client
             /// </summary>
             WSMAN_FLAG_AUTH_DIGEST = 0x2,
             /// <summary>
-            /// Use negotiate authentication for a remote operation (may use kerboros or ntlm)
+            /// Use negotiate authentication for a remote operation (may use kerberos or ntlm)
             /// </summary>
             WSMAN_FLAG_AUTH_NEGOTIATE = 0x4,
             /// <summary>
