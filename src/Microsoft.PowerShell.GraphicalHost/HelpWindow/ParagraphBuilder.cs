@@ -134,7 +134,7 @@ namespace Microsoft.Management.UI.Internal
         }
 
         /// <summary>
-        /// Highlights all ocurrences of <paramref name="search"/>.
+        /// Highlights all occurrences of <paramref name="search"/>.
         /// This is called after all calls to AddText have been made
         /// </summary>
         /// <param name="search">search string</param>
