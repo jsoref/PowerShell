@@ -692,7 +692,7 @@ namespace Microsoft.PackageManagement.MetaProvider.PowerShell.Internal {
                 var providerName = provider.GetPackageProviderName();
                 if (!string.IsNullOrWhiteSpace(providerName)) {
                     request.Debug(string.Format(CultureInfo.CurrentCulture, Resources.Messages.SuccessfullyLoadedModule, modulePath));
-                    // looks good to me, let's add this to the list of moduels this meta provider can create.
+                    // looks good to me, let's add this to the list of modules this meta provider can create.
 
                     var packageProvider = new PackageProvider(provider.As<IPackageProvider>()) {
                         IsLoaded = true,
