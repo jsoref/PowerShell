@@ -1646,7 +1646,7 @@ namespace Microsoft.PowerShell.Workflow
         #region Overrides of Job2
 
         /// <summary>
-        /// Implementation of this method will allow the delayed loadig of streams.
+        /// Implementation of this method will allow the delayed loading of streams.
         /// </summary>
         protected override void DoLoadJobStreams()
         {
