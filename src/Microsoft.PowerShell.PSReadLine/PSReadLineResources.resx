@@ -565,16 +565,16 @@ If there are other parse errors, unresolved commands, or incorrect parameters, s
     <value>Repeat the last recorded character search.</value>
   </data>
   <data name="SearchCharBackwardDescription" xml:space="preserve">
-    <value>Move to the previous occurance of the specified character.</value>
+    <value>Move to the previous occurrence of the specified character.</value>
   </data>
   <data name="SearchCharBackwardWithBackoffDescription" xml:space="preserve">
-    <value>Move to the previous occurance of the specified character and then forward one character.</value>
+    <value>Move to the previous occurrence of the specified character and then forward one character.</value>
   </data>
   <data name="SearchCharDescription" xml:space="preserve">
-    <value>Move to the next occurance of the specified character.</value>
+    <value>Move to the next occurrence of the specified character.</value>
   </data>
   <data name="SearchCharWithBackoffDescription" xml:space="preserve">
-    <value>Move to he next occurance of the specified character and then back one character.</value>
+    <value>Move to he next occurrence of the specified character and then back one character.</value>
   </data>
   <data name="ViBackwardReplaceWordDescription" xml:space="preserve">
     <value>Replace the previous word.</value>

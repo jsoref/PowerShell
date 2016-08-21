@@ -813,7 +813,7 @@ namespace Microsoft.PowerShell
         /// <summary>
         /// 
         /// This is a poor-man's word-wrapping routine.  It breaks a single string into segments small enough to fit within a
-        /// given number of cells.  A break is determined by the last occurrance of whitespace that allows all prior characters 
+        /// given number of cells.  A break is determined by the last occurrence of whitespace that allows all prior characters 
         /// on a line to be written within a given number of cells.  If there is no whitespace found within that span, then the
         /// largest span that will fit in the bounds is used.
         /// 

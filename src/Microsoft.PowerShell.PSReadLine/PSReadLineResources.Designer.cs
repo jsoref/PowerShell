@@ -999,7 +999,7 @@ namespace Microsoft.PowerShell {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Move to the previous occurance of the specified character..
+        ///   Looks up a localized string similar to Move to the previous occurrence of the specified character..
         /// </summary>
         internal static string SearchCharBackwardDescription {
             get {
@@ -1008,7 +1008,7 @@ namespace Microsoft.PowerShell {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Move to the previous occurance of the specified character and then forward one character..
+        ///   Looks up a localized string similar to Move to the previous occurrence of the specified character and then forward one character..
         /// </summary>
         internal static string SearchCharBackwardWithBackoffDescription {
             get {
@@ -1017,7 +1017,7 @@ namespace Microsoft.PowerShell {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Move to the next occurance of the specified character..
+        ///   Looks up a localized string similar to Move to the next occurrence of the specified character..
         /// </summary>
         internal static string SearchCharDescription {
             get {
@@ -1026,7 +1026,7 @@ namespace Microsoft.PowerShell {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Move to he next occurance of the specified character and then back one character..
+        ///   Looks up a localized string similar to Move to he next occurrence of the specified character and then back one character..
         /// </summary>
         internal static string SearchCharWithBackoffDescription {
             get {

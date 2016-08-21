@@ -1576,7 +1576,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Returns the index of first occurece of <paramref name="item"/>
+        /// Returns the index of first occurrence of <paramref name="item"/>
         /// in the buffer. 
         /// This method is not thread safe.
         /// </summary>
