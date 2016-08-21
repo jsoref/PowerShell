@@ -200,7 +200,7 @@ namespace Microsoft.Management.UI.Internal
         /// <summary>
         /// Gets the text from a property of type PSObject[] where the first object has a text property
         /// </summary>
-        /// <param name="psObj">objhect to get text from</param>
+        /// <param name="psObj">object to get text from</param>
         /// <param name="propertyText">property with PSObject[] containing text</param>
         /// <returns>the text from a property of type PSObject[] where the first object has a text property</returns>
         private static string GetTextFromArray(PSObject psObj, string propertyText)
