@@ -1391,7 +1391,7 @@ namespace Microsoft.PowerShell.Commands
                     {
                         //We are seeing a quote after the start of 
                         //the word. This is error, however we will be 
-                        //lineient here and do what excel does:
+                        //lenient here and do what excel does:
                         //Ex: foo "ba,r"
                         //In above example word read is ->foo "ba<-
                         //Basically we read till next delimiter
@@ -1421,7 +1421,7 @@ namespace Microsoft.PowerShell.Commands
                         //We are not in quote and we are not at the 
                         //beginning of a word. We should not be seeing
                         //spaces here. This is an error condition, however
-                        //we will be linient here and do what excel does,
+                        //we will be lenient here and do what excel does,
                         //that is read till next delimiter.
                         //Ex: ->foo <- is read as ->foo<-
                         //Ex: ->foo bar<- is read as ->foo bar<-
