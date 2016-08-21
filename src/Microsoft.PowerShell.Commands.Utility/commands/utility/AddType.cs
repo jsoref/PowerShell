@@ -267,7 +267,7 @@ namespace Microsoft.PowerShell.Commands
                     Collection<string> newPaths = SessionState.Path.GetResolvedProviderPathFromPSPath(path, out provider);
 
                     // If it didn't resolve, add the original back
-                    // for a better error mesage.
+                    // for a better error message.
                     if (newPaths.Count == 0)
                     {
                         resolvedPaths.Add(path);
