@@ -702,7 +702,7 @@ namespace Microsoft.PowerShell.Workflow
                     }
                     catch (Exception e)
                     {
-                        // this may occure in the race condition if there are many persitable workflow and then you tried to shutdown them.
+                        // this may occur in the race condition if there are many persitable workflow and then you tried to shutdown them.
                         Tracer.WriteMessage("PSWorkflowApplicationInstance", "HandlePersistence", id, "There has been exception while persisting the workflow in the background thread.");
                         Tracer.TraceException(e);
                     }
@@ -718,7 +718,7 @@ namespace Microsoft.PowerShell.Workflow
             }
             catch (Exception e)
             {
-                // this may occure in the race condition if there is a persitable workflow which is getting stopped and at the same persit is called.
+                // this may occur in the race condition if there is a persitable workflow which is getting stopped and at the same persit is called.
                 Tracer.WriteMessage("PSWorkflowApplicationInstance", "SafelyHandleFaultedState", id, "There has been exception while marking the workflow in faulted state in the background thread.");
                 Tracer.TraceException(e);
             }
