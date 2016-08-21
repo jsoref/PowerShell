@@ -108,7 +108,7 @@ namespace System.Management.Automation
             get
             {
                 // Need to lookup the referenced command every time
-                // to ensure we get the lastest session state information
+                // to ensure we get the latest session state information
 
                 CommandInfo referencedCommand = null;
 

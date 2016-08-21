@@ -531,7 +531,7 @@ namespace Microsoft.PackageManagement.MetaProvider.PowerShell.Internal {
                 var tasks = modules.AsyncForEach(modulePath => AnalyzeModule(request, modulePath.Key, modulePath.Value.Version ?? new Version(0, 0), false, logWarning, modulePath.Value));
                 tasks.WaitAll();
             } else {
-                //find all providers but only load the lastest if no name nor version exists, e.g. get-pp -list 
+                //find all providers but only load the latest if no name nor version exists, e.g. get-pp -list 
 
                 //Scan for the all available providers
                 var results = ScanForModules(request, null, null, null, ProviderOption.AllProvider).ToArray();
