@@ -1466,7 +1466,7 @@ function GetEntitySetForEntityType
 #########################################################
 # ProcessStreamHelper is a helper function that performs 
 # the following utility tasks:
-# 1. Writes verobose messsages to the stream.
+# 1. Writes verobose messages to the stream.
 # 2. Writes FileInfo objects for the proxy modules 
 #    saved to the disk. This is done to keep the user 
 #    experience in consistent with Export-PSSession.
