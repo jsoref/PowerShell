@@ -18,7 +18,7 @@ namespace System.Diagnostics.Eventing
         // log events using WriteMessageEvent method. 
         // 
         // Because WriteMessageEvent takes a string as the event payload 
-        // all the overriden loging methods convert the arguments into strings.
+        // all the overriden logging methods convert the arguments into strings.
         // Event payload is "delimiter" separated, which can be configured
         // 
         // 
