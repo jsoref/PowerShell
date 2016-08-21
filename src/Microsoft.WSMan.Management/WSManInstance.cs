@@ -371,7 +371,7 @@ namespace Microsoft.WSMan.Management
             string[] Split = filter.Trim().Split(new Char[] { '=', ';' });
             if ((Split.Length)%2 != 0)
             {
-                //missmatched property name/value pair
+                //mismatched property name/value pair
                 return null;
             }
             filter = "<wsman:SelectorSet xmlns:wsman='http://schemas.dmtf.org/wbem/wsman/1/wsman.xsd'>";
