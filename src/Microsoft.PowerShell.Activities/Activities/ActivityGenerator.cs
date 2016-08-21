@@ -448,7 +448,7 @@ namespace {0}
         /// Generates a complete activity source file from a module.
         /// </summary>
         /// <param name="moduleToProcess"></param>
-        /// <param name="activityNamespace">The namesspace to use for the target classes</param>
+        /// <param name="activityNamespace">The namespace to use for the target classes</param>
         /// <returns>An array of code elements to compile into an assembly</returns>
         static public string[] GenerateFromModuleInfo(PSModuleInfo moduleToProcess, string activityNamespace)
         {

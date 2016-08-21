@@ -42,7 +42,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         /// <para>
         /// <see cref="XOperationContextBase"/> object that related to current action.
         /// It may used by action, such as <see cref="CimWriteResultObject"/>,
-        /// since later on action may require namspace, and proxy object to reuse
+        /// since later on action may require namespace, and proxy object to reuse
         /// <see cref="CimSession"/>, <see cref="CimOperationOptions"/> object.
         /// </para>
         /// </summary>

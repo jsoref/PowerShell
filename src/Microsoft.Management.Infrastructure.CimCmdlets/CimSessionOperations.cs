@@ -893,7 +893,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
             }
 
             /// <summary>
-            /// <para>namespce</para>
+            /// <para>namespace</para>
             /// </summary>
             internal CimSessionWrapper CimSessionWrapper
             {

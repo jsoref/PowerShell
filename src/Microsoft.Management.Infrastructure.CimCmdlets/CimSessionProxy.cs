@@ -32,7 +32,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
     internal abstract class XOperationContextBase
     {
         /// <summary>
-        /// <para>namespce</para>
+        /// <para>namespace</para>
         /// </summary>
         internal string Namespace
         {
