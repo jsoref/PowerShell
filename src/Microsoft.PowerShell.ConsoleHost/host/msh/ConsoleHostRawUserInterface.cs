@@ -318,7 +318,7 @@ namespace Microsoft.PowerShell
         /// </exception>
         /// <exception cref="HostException">
         /// 
-        /// If obaining information about the buffer failed
+        /// If obtaining information about the buffer failed
         ///    OR
         ///    Win32's SetConsoleWindowInfo failed
         /// 
