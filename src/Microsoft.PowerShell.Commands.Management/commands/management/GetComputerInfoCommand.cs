@@ -3348,7 +3348,7 @@ namespace Microsoft.PowerShell.Commands
         Alpha = 2,
 
         /// <summary>
-        /// Architecture is Motorolla PowerPC
+        /// Architecture is Motorola PowerPC
         /// </summary>
         PowerPC = 3,
 
