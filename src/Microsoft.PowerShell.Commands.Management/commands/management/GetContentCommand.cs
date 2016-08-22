@@ -315,7 +315,7 @@ namespace Microsoft.PowerShell.Commands
                     // Create and save the error record. The error record
                     // will be written outside the while loop.
                     // This is to make sure the accumulated results get written
-                    // out before the error recrod when the 'scanForwardForTail' is true.
+                    // out before the error record when the 'scanForwardForTail' is true.
                     error = new ErrorRecord(
                         providerException.ErrorRecord,
                         providerException);
