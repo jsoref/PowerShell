@@ -1621,7 +1621,7 @@ function SaveCDXMLInstanceCmdlets
             # to be used by GET cmdlet
             if (($keys.Length -gt 0) -or ($navigationProperties.Length -gt 0))
             { 
-                $querableNavProperties = @{} 
+                $queryableNavProperties = @{} 
                 
                 if ($isSingleton -eq $false)
                 {
@@ -1636,16 +1636,16 @@ function SaveCDXMLInstanceCmdlets
                             # Otherwise the Uri for associated navigation property won't be valid
                             if ($associatedTypeKeyProperties.Length -gt 0 -and (ShouldBeAssociatedParameter $GlobalMetadata $EntityType $associatedType $isSingleton))
                             {                            
-                                $querableNavProperties.Add($navProperty, $associatedTypeKeyProperties)
+                                $queryableNavProperties.Add($navProperty, $associatedTypeKeyProperties)
                             }
                         }
                     }
                 }
                 
                 $defaultCmdletParameterSet = 'Default'
-                if ($isSingleton -eq $true -and $querableNavProperties.Count -gt 0)
+                if ($isSingleton -eq $true -and $queryableNavProperties.Count -gt 0)
                 {
-                    foreach($item in $querableNavProperties.GetEnumerator()) 
+                    foreach($item in $queryableNavProperties.GetEnumerator()) 
                     {
                         $defaultCmdletParameterSet = $item.Key.Name
                         break
@@ -1683,9 +1683,9 @@ function SaveCDXMLInstanceCmdlets
                         }
                 }
     
-                if ($querableNavProperties.Count -gt 0)
+                if ($queryableNavProperties.Count -gt 0)
                 {
-                    foreach($item in $querableNavProperties.GetEnumerator()) 
+                    foreach($item in $queryableNavProperties.GetEnumerator()) 
                     {
                         $xmlWriter.WriteStartElement('Property')
                         $xmlWriter.WriteAttributeString('PropertyName', $item.Key.Name + ':' + $item.Value.Name + ':Key')
