@@ -5773,7 +5773,7 @@ namespace Microsoft.PowerShell.Activities
         }
 
         /// <summary>
-        /// The paththat the workflow was imported from.
+        /// The path that the workflow was imported from.
         /// </summary>
         public string PSWorkflowPath
         {
