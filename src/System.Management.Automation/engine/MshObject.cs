@@ -2464,7 +2464,7 @@ namespace Microsoft.PowerShell
                     {
                         if (typeinfo.IsNested)
                         {
-                            // For nested types, we should return OutterType+InnerType. For example,
+                            // For nested types, we should return OuterType+InnerType. For example,
                             //  System.Environment+SpecialFolder ->  Environment+SpecialFolder
                             string fullName = type.ToString();
                             result = type.Namespace == null

@@ -900,7 +900,7 @@ namespace Microsoft.Management.UI.Internal
         /// </summary>
         /// <param name="setting">true if it should add the segment</param>
         /// <param name="sectionTitle">title of the section</param>
-        /// <param name="inputOrOutputProperty">property with the outter object</param>
+        /// <param name="inputOrOutputProperty">property with the outer object</param>
         /// <param name="inputOrOutputInnerProperty">property with the inner object</param>
         private void AddInputOrOutputEntries(bool setting, string sectionTitle, string inputOrOutputProperty, string inputOrOutputInnerProperty)
         {
