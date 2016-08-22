@@ -721,7 +721,7 @@ namespace System.Management.Automation.Host
         /// Constructs a 'dialog' where the user is presented with a number of fields for which to supply values.
         /// </summary>
         /// <param name="caption">
-        /// Caption to preceed or title the prompt.  E.g. "Parameters for get-foo (instance 1 of 2)"
+        /// Caption to precede or title the prompt.  E.g. "Parameters for get-foo (instance 1 of 2)"
         /// </param>
         /// <param name="message">
         /// A text description of the set of fields to be prompt.
@@ -815,7 +815,7 @@ namespace System.Management.Automation.Host
         /// Presents a dialog allowing the user to choose an option from a set of options.
         /// </summary>
         /// <param name="caption">
-        /// Caption to preceed or title the prompt.  E.g. "Parameters for get-foo (instance 1 of 2)"
+        /// Caption to precede or title the prompt.  E.g. "Parameters for get-foo (instance 1 of 2)"
         /// </param>
         /// <param name="message">
         /// A message that describes what the choice is for.
@@ -1145,7 +1145,7 @@ namespace System.Management.Automation.Host
         /// Presents a dialog allowing the user to choose options from a set of options.
         /// </summary>
         /// <param name="caption">
-        /// Caption to preceed or title the prompt.  E.g. "Parameters for get-foo (instance 1 of 2)"
+        /// Caption to precede or title the prompt.  E.g. "Parameters for get-foo (instance 1 of 2)"
         /// </param>
         /// <param name="message">
         /// A message that describes what the choice is for.
