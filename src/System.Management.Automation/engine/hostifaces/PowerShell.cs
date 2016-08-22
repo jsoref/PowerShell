@@ -4271,7 +4271,7 @@ namespace System.Management.Automation
                         "Nested PowerShell can only work on a Runspace");
 
 
-                    // Peform work on the current thread. Nested Pipeline
+                    // Perform work on the current thread. Nested Pipeline
                     // should be invoked from the same thread that the parent
                     // pipeline is executing in.
                     _worker.ConstructPipelineAndDoWork(rsToUse, true);

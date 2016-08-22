@@ -153,7 +153,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets {
                 requests = requests.FilterWithFinalizer(each => each.packages.IsConsumed, each => each.packages.Dispose()).ToArray();
             } // end of WaitForActivity()
             
-            // Peform post-processing only if -AllVersions is not specified            
+            // Perform post-processing only if -AllVersions is not specified            
             if (!AllVersions)
             {
                 // post processing the potential packages as we have to display only
