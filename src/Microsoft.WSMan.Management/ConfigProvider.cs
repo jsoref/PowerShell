@@ -6371,7 +6371,7 @@ $_ | Start-WSManServiceD15A7957836142a18627D7E1D342DD82 -force $args[0] -caption
 
 
 
-#endregion "WsMan Outpu tObjects"
+#endregion "WsMan Output Objects"
 
 
 }
