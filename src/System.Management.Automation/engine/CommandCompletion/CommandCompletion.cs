@@ -891,7 +891,7 @@ namespace System.Management.Automation
 
                 // NTRAID#Windows Out Of Band Releases-927933-2006/03/13-JeffJon
                 // Need to detect when the path is a provider-direct path and make sure
-                // to remove the provider-qualifer when the resolved path is returned.
+                // to remove the provider-qualifier when the resolved path is returned.
                 bool isProviderDirectPath = lastWord.StartsWith(@"\\", StringComparison.Ordinal) ||
                                             lastWord.StartsWith("//", StringComparison.Ordinal);
 

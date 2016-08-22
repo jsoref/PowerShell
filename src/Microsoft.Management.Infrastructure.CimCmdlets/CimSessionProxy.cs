@@ -2139,7 +2139,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
 
                 if (!match)
                 {
-                    DebugHelper.WriteLog("Qualifer name does not match: {0}", 1, context.QualifierName);
+                    DebugHelper.WriteLog("Qualifier name does not match: {0}", 1, context.QualifierName);
                     return match;
                 }
             }
