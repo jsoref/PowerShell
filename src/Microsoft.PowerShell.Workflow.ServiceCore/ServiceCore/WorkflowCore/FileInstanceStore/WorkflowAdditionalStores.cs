@@ -1381,7 +1381,7 @@ namespace Microsoft.PowerShell.Workflow
             else
             {
                 // there is no point in hanging around partial data in the store so deleting the store.
-                // and no further persitence allowed after this point
+                // and no further persistence allowed after this point
                 this.InternalDelete();
                 serializationErrorHasOccured = true;
 

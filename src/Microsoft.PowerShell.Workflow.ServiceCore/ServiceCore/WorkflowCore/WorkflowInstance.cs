@@ -665,7 +665,7 @@ namespace Microsoft.PowerShell.Workflow
                 return;
 
             // this lock will ensure the synchronization between the persistence and the force suspend (abort) method.
-            // if persitence is going on then it will hold the execution of force suspend
+            // if persistence is going on then it will hold the execution of force suspend
             lock (ReactivateSync)
             {
                 if (Disposed)
