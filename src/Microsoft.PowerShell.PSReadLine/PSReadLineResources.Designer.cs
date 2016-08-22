@@ -502,7 +502,7 @@ namespace Microsoft.PowerShell {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Moves the cursor to the perscribed column..
+        ///   Looks up a localized string similar to Moves the cursor to the prescribed column..
         /// </summary>
         internal static string GotoColumnDescription {
             get {
@@ -990,7 +990,7 @@ namespace Microsoft.PowerShell {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Searches backward for the perscribed character..
+        ///   Looks up a localized string similar to Searches backward for the prescribed character..
         /// </summary>
         internal static string SearchBackwardCharDescription {
             get {
@@ -1035,7 +1035,7 @@ namespace Microsoft.PowerShell {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Searches for the perscribed character in the perscribed direction..
+        ///   Looks up a localized string similar to Searches for the prescribed character in the prescribed direction..
         /// </summary>
         internal static string SearchDescription {
             get {

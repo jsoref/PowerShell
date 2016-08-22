@@ -451,10 +451,10 @@ If there are other parse errors, unresolved commands, or incorrect parameters, s
     <value>Repeats the last search.</value>
   </data>
   <data name="SearchBackwardCharDescription" xml:space="preserve">
-    <value>Searches backward for the perscribed character.</value>
+    <value>Searches backward for the prescribed character.</value>
   </data>
   <data name="SearchDescription" xml:space="preserve">
-    <value>Searches for the perscribed character in the perscribed direction.</value>
+    <value>Searches for the prescribed character in the prescribed direction.</value>
   </data>
   <data name="ViAppendAtEndDescription" xml:space="preserve">
     <value>Switches to insert mode after positioning the cursor past the end of the line.</value>
@@ -496,7 +496,7 @@ If there are other parse errors, unresolved commands, or incorrect parameters, s
     <value>Moves the cursor forward to the end of the next word.</value>
   </data>
   <data name="GotoColumnDescription" xml:space="preserve">
-    <value>Moves the cursor to the perscribed column.</value>
+    <value>Moves the cursor to the prescribed column.</value>
   </data>
   <data name="ViInsertModeDescription" xml:space="preserve">
     <value>Switches to insert mode.</value>
