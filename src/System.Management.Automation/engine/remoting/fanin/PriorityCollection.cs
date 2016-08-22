@@ -518,7 +518,7 @@ namespace System.Management.Automation.Remoting
                         }
                     }
 
-                    // appears like stream doesn't have individual postion marker for read and write
+                    // appears like stream doesn't have individual position marker for read and write
                     // since we are going to read from now...
                     _pendingDataStream.Seek(0, SeekOrigin.Begin);
 
@@ -612,7 +612,7 @@ namespace System.Management.Automation.Remoting
                     {
                         try
                         {
-                            // appears like stream doesn't individual postion marker for read and write
+                            // appears like stream doesn't individual position marker for read and write
                             // since we are going to read from now..i am resetting position to 0.
                             _dataToProcessStream.Seek(0, SeekOrigin.Begin);
                             RemoteDataObject<PSObject> remoteObject = RemoteDataObject<PSObject>.CreateFrom(_dataToProcessStream, _defragmentor);

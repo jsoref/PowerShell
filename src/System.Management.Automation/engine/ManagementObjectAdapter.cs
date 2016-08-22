@@ -753,7 +753,7 @@ namespace System.Management.Automation
 
             foreach (PropertyData data in parameters.Properties)
             {
-                // parameter postion..
+                // parameter position..
                 int location = -1;
                 WMIParameterInformation pInfo = new WMIParameterInformation(data.Name, GetDotNetType(data));
 

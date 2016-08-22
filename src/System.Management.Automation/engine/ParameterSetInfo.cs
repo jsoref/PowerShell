@@ -129,7 +129,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// GenerateParameters parameters in display order 
-        /// ie., Postional followed by
+        /// ie., Positional followed by
         ///      Named Mandatory (in alpha numeric) followed by
         ///      Named (in alpha numeric).
         /// 
