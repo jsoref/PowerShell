@@ -117,7 +117,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
     }
     #endregion
 
-    #region Preprossessing of result object interface
+    #region Preprocessing of result object interface
     /// <summary>
     ///  Defines a method to preprocessing an result object before sending to
     ///  output pipeline.
