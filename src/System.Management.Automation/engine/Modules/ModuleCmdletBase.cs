@@ -1873,25 +1873,25 @@ namespace Microsoft.PowerShell.Commands
                 }
             }
 
-            // Test the required procesor architecture
-            ProcessorArchitecture requiredProcesorArchitecture;
+            // Test the required processor architecture
+            ProcessorArchitecture requiredProcessorArchitecture;
             if (
                 !GetScalarFromData(data, moduleManifestPath, "ProcessorArchitecture", manifestProcessingFlags,
-                    out requiredProcesorArchitecture))
+                    out requiredProcessorArchitecture))
             {
                 containedErrors = true;
                 if (bailOnFirstError) return null;
             }
-            else if ((requiredProcesorArchitecture != ProcessorArchitecture.None) &&
-                     (requiredProcesorArchitecture != ProcessorArchitecture.MSIL))
+            else if ((requiredProcessorArchitecture != ProcessorArchitecture.None) &&
+                     (requiredProcessorArchitecture != ProcessorArchitecture.MSIL))
             {
                 bool isRunningOnArm = false;
                 ProcessorArchitecture currentArchitecture = PsUtils.GetProcessorArchitecture(out isRunningOnArm);
 
                 // For ARM Architectures, we need to do additional string-level comparison
-                if ((currentArchitecture != requiredProcesorArchitecture && !isRunningOnArm) ||
+                if ((currentArchitecture != requiredProcessorArchitecture && !isRunningOnArm) ||
                     (isRunningOnArm &&
-                     !requiredProcesorArchitecture.ToString()
+                     !requiredProcessorArchitecture.ToString()
                          .Equals(PsUtils.ArmArchitecture, StringComparison.OrdinalIgnoreCase)))
                 {
                     containedErrors = true;
@@ -1901,7 +1901,7 @@ namespace Microsoft.PowerShell.Commands
                             ? PsUtils.ArmArchitecture
                             : currentArchitecture.ToString();
                         message = StringUtil.Format(Modules.InvalidProcessorArchitecture,
-                            actualCurrentArchitecture, moduleManifestPath, requiredProcesorArchitecture);
+                            actualCurrentArchitecture, moduleManifestPath, requiredProcessorArchitecture);
                         InvalidOperationException ioe = new InvalidOperationException(message);
                         ErrorRecord er = new ErrorRecord(ioe, "Modules_InvalidProcessorArchitecture",
                             ErrorCategory.ResourceUnavailable, moduleManifestPath);
@@ -2527,7 +2527,7 @@ namespace Microsoft.PowerShell.Commands
             manifestInfo.PowerShellHostName = requestedHostName;
             manifestInfo.PowerShellHostVersion = requestedHostVersion;
             manifestInfo.PowerShellVersion = powerShellVersion;
-            manifestInfo.ProcessorArchitecture = requiredProcesorArchitecture;
+            manifestInfo.ProcessorArchitecture = requiredProcessorArchitecture;
             manifestInfo.Prefix = resolvedCommandPrefix;
             if (assemblyList != null)
             {
@@ -3303,7 +3303,7 @@ namespace Microsoft.PowerShell.Commands
 
                 if (newManifestInfo.ProcessorArchitecture == ProcessorArchitecture.None)
                 {
-                    newManifestInfo.ProcessorArchitecture = requiredProcesorArchitecture;
+                    newManifestInfo.ProcessorArchitecture = requiredProcessorArchitecture;
                 }
 
                 if (newManifestInfo.RequiredAssemblies == null || newManifestInfo.RequiredAssemblies.LongCount() == 0)

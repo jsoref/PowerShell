@@ -228,7 +228,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Creates a command procesor for "get-help [helpTarget]"
+        /// Creates a command processor for "get-help [helpTarget]"
         /// </summary>
         /// <param name="context">context for the command processor</param>
         /// <param name="helpTarget">help target</param>
