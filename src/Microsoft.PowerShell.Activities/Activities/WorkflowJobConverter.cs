@@ -2058,7 +2058,7 @@ namespace Microsoft.PowerShell.Workflow
 
         /// <summary>
         /// Used to hold the CmdletBinding attribute string specified in the script workflow text.
-        /// This needs to be propigated to the synthesized driver function .
+        /// This needs to be propagated to the synthesized driver function .
         /// </summary>
         internal string CmdletAttributeText { get; set; }
         
