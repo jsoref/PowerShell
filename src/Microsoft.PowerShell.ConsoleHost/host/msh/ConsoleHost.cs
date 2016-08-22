@@ -1384,7 +1384,7 @@ namespace Microsoft.PowerShell
         }
 
         /// <summary>
-        /// This method is reatined to make V1 tests compatible with V2 as signature of this method
+        /// This method is retained to make V1 tests compatible with V2 as signature of this method
         /// is slighlty changed in v2.
         /// </summary>
         /// <param name="bannerText"></param>
