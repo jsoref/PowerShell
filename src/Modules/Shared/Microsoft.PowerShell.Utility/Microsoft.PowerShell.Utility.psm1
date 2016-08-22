@@ -384,7 +384,7 @@ function Format-Hex
                 elseif($InputObject -is [string])
                 {
                     # The ValidateSet attribute on the Encoding parameter makes sure that only
-                    # valid values (supported on all paltforms where Format-Hex is available)
+                    # valid values (supported on all platforms where Format-Hex is available)
                     # are allowed through user input.
                     $inputBytes = [Text.Encoding]::$Encoding.GetBytes($InputObject)
                     ConvertToHexadecimalHelper $inputBytes $null
