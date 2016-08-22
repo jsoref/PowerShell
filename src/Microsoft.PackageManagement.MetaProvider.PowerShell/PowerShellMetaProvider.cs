@@ -282,7 +282,7 @@ namespace Microsoft.PackageManagement.MetaProvider.PowerShell.Internal {
 
         private void AddToPowerShellProviderCacheTable(KeyValuePair<string, PSModuleInfo> moduleInfo) {
 
-            //some times when PrivateData in a provider's .psd1 meta file contains multiple providers (not recommanded way), 
+            //some times when PrivateData in a provider's .psd1 meta file contains multiple providers (not recommended way), 
             //they all reside under the same module path. So we extract each file name and add to the table as dictionary key
             //to indicate they are actually different providers. 
             if (moduleInfo.Key != null) {
