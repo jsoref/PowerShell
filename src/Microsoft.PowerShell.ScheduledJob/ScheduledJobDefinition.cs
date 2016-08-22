@@ -1984,7 +1984,7 @@ namespace Microsoft.PowerShell.ScheduledJob
                     // Wait for job to finish.
                     job.Finished.WaitOne();
 
-                    // Ensure that the job run results are presisted to store.
+                    // Ensure that the job run results are persisted to store.
                     jobManager.PersistJob(job, Definition);
 
                     // Perform a Receive-Job on the job object.  Output data will be dropped
