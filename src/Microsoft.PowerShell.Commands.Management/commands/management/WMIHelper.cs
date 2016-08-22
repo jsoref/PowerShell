@@ -1816,7 +1816,7 @@ namespace Microsoft.PowerShell.Commands
         }
 
         /// <summary>
-        /// it recieves Management objects
+        /// it receives Management objects
         /// </summary>
         private void NewObject(object sender, ObjectReadyEventArgs obj)
         {
