@@ -298,7 +298,7 @@ namespace Microsoft.PackageManagement.Msi.Internal.Deployment.WindowsInstaller
         /// <summary>
         /// Gets the set of registered qualifiers for the component.
         /// </summary>
-        /// <returns>Enumeration of the qulifiers for the component.</returns>
+        /// <returns>Enumeration of the qualifiers for the component.</returns>
         /// <exception cref="InstallerException">The installer configuration data is corrupt</exception>
         /// <remarks><p>
         /// Because qualifiers are not ordered, any new qualifier has an arbitrary index,
