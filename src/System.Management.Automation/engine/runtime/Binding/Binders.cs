@@ -6648,7 +6648,7 @@ namespace System.Management.Automation.Language
 
                 // If we're calling SteppablePipeline.{Begin|Process|End}, we don't want
                 // to wrap exceptions - this is very much a special case to help error
-                // propogation and ensure errors are attributed to the correct code (the
+                // propagation and ensure errors are attributed to the correct code (the
                 // cmdlet invoked, not the method call from some proxy.)
                 if (methodInfo.DeclaringType == typeof(SteppablePipeline)
                     && (methodInfo.Name.Equals("Begin", StringComparison.Ordinal))
