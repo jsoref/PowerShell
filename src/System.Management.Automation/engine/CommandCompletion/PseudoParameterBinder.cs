@@ -1118,7 +1118,7 @@ namespace System.Management.Automation.Language
         private CommandAst _commandAst;
         private ReadOnlyCollection<CommandElementAst> _commandElements;
 
-        // binding realted states
+        // binding related states
         private bool _function = false;
         private string _commandName = null;
         private CommandInfo _commandInfo = null;
@@ -1152,7 +1152,7 @@ namespace System.Management.Automation.Language
             _ignoredWorkflowParameters = new List<string>(Cmdlet.CommonParameters.Concat<string>(Cmdlet.OptionalCommonParameters));
             _ignoredWorkflowParameters.RemoveAll(item => supportedCommonParameters.Contains(item, StringComparer.OrdinalIgnoreCase));
 
-            // Initializing binding realted members
+            // Initializing binding related members
             _function = false;
             _commandName = null;
             _currentParameterSetFlag = uint.MaxValue;

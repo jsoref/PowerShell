@@ -2046,7 +2046,7 @@ namespace Microsoft.PowerShell.Workflow
                 _paramDefaults.Parameters[Constants.PrivateMetadata] = this.PSWorkflowContext.PrivateMetadata;
             }
 
-            // Job realted parameters
+            // Job related parameters
             if (this.PSWorkflowContext.JobMetadata.ContainsKey(Constants.JobMetadataName))
             {
                 _paramDefaults.Parameters[TranslateMetaDataName(Constants.JobMetadataName)] = 
