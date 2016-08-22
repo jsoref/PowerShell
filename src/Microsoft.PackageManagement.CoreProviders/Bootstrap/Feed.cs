@@ -34,7 +34,7 @@ namespace Microsoft.PackageManagement.Providers.Internal.Bootstrap {
         }
 
         /// <summary>
-        ///     Follows the feed to find all the *declared latest* versions of packgaes
+        ///     Follows the feed to find all the *declared latest* versions of packages
         /// </summary>
         /// <returns>A set of packages</returns>
         internal IEnumerable<Package> Query() {
