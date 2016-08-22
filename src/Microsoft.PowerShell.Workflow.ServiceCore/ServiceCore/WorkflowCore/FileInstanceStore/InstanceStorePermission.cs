@@ -19,7 +19,7 @@ namespace Microsoft.PowerShell.Workflow
         internal static void SetDirectoryPermissions(string folderName)
         {
             string account = WindowsIdentity.GetCurrent().Name;
-            RemoveInheritablePermissons(folderName);
+            RemoveInheritablePermissions(folderName);
             AddDirectorySecurity(folderName, account, FileSystemRights.Modify, InheritanceFlags.ContainerInherit | InheritanceFlags.ObjectInherit, PropagationFlags.None, AccessControlType.Allow);
         }
 
@@ -31,7 +31,7 @@ namespace Microsoft.PowerShell.Workflow
             info.SetAccessControl(dSecurity); 
         }
 
-        private static void RemoveInheritablePermissons(string folderName)
+        private static void RemoveInheritablePermissions(string folderName)
         {
             DirectoryInfo info = new DirectoryInfo(folderName);
             DirectorySecurity dSecurity = info.GetAccessControl();
