@@ -3308,12 +3308,12 @@ function Install-Script
         if(-not (Test-RunningAsElevated) -and ($Scope -ne "CurrentUser"))
         {
             # Throw an error when Install-Script is used as a non-admin user and '-Scope CurrentUser' is not specified
-            $AdminPreviligeErrorMessage = $LocalizedData.InstallScriptNeedsCurrentUserScopeParameterForNonAdminUser -f @($script:ProgramFilesScriptsPath, $script:MyDocumentsScriptsPath)
-            $AdminPreviligeErrorId = 'InstallScriptNeedsCurrentUserScopeParameterForNonAdminUser'
+            $AdminPrivilegeErrorMessage = $LocalizedData.InstallScriptNeedsCurrentUserScopeParameterForNonAdminUser -f @($script:ProgramFilesScriptsPath, $script:MyDocumentsScriptsPath)
+            $AdminPrivilegeErrorId = 'InstallScriptNeedsCurrentUserScopeParameterForNonAdminUser'
 
             ThrowError -ExceptionName "System.ArgumentException" `
-                        -ExceptionMessage $AdminPreviligeErrorMessage `
-                        -ErrorId $AdminPreviligeErrorId `
+                        -ExceptionMessage $AdminPrivilegeErrorMessage `
+                        -ErrorId $AdminPrivilegeErrorId `
                         -CallerPSCmdlet $PSCmdlet `
                         -ErrorCategory InvalidArgument
         }
@@ -10151,13 +10151,13 @@ function Install-PackageUtility
 
         if($artifactType -eq $script:PSArtifactTypeScript)
         {
-            $AdminPreviligeErrorMessage = $LocalizedData.InstallScriptNeedsCurrentUserScopeParameterForNonAdminUser -f @($script:ProgramFilesScriptsPath, $script:MyDocumentsScriptsPath)
-            $AdminPreviligeErrorId = 'InstallScriptNeedsCurrentUserScopeParameterForNonAdminUser'
+            $AdminPrivilegeErrorMessage = $LocalizedData.InstallScriptNeedsCurrentUserScopeParameterForNonAdminUser -f @($script:ProgramFilesScriptsPath, $script:MyDocumentsScriptsPath)
+            $AdminPrivilegeErrorId = 'InstallScriptNeedsCurrentUserScopeParameterForNonAdminUser'
         }
         else
         {
-            $AdminPreviligeErrorMessage = $LocalizedData.InstallModuleNeedsCurrentUserScopeParameterForNonAdminUser -f @($script:programFilesModulesPath, $script:MyDocumentsModulesPath)
-            $AdminPreviligeErrorId = 'InstallModuleNeedsCurrentUserScopeParameterForNonAdminUser'
+            $AdminPrivilegeErrorMessage = $LocalizedData.InstallModuleNeedsCurrentUserScopeParameterForNonAdminUser -f @($script:programFilesModulesPath, $script:MyDocumentsModulesPath)
+            $AdminPrivilegeErrorId = 'InstallModuleNeedsCurrentUserScopeParameterForNonAdminUser'
         }
 
         $installUpdate = $false
@@ -10190,8 +10190,8 @@ function Install-PackageUtility
                     {
                         # Throw an error when Install-Module/Script is used as a non-admin user and '-Scope CurrentUser' is not specified
                         ThrowError -ExceptionName "System.ArgumentException" `
-                                    -ExceptionMessage $AdminPreviligeErrorMessage `
-                                    -ErrorId $AdminPreviligeErrorId `
+                                    -ExceptionMessage $AdminPrivilegeErrorMessage `
+                                    -ErrorId $AdminPrivilegeErrorId `
                                     -CallerPSCmdlet $PSCmdlet `
                                     -ErrorCategory InvalidArgument
                     }
@@ -10209,8 +10209,8 @@ function Install-PackageUtility
             elseif(-not (Test-RunningAsElevated))
             {
                 ThrowError -ExceptionName "System.ArgumentException" `
-                           -ExceptionMessage $AdminPreviligeErrorMessage `
-                           -ErrorId $AdminPreviligeErrorId `
+                           -ExceptionMessage $AdminPrivilegeErrorMessage `
+                           -ErrorId $AdminPrivilegeErrorId `
                            -CallerPSCmdlet $PSCmdlet `
                            -ErrorCategory InvalidArgument
             }
