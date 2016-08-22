@@ -908,7 +908,7 @@ namespace Microsoft.PowerShell.Workflow
         /// <param name="referencedAssemblies">The list of additional assemblies to search for workflow activities.</param>
         /// <param name="parameterValidation">Any parameter validation applied to the parameters in the provided AST.</param>
         /// <param name="nestedWorkflows">Any nested workflows required by this PowerShell AST.</param>
-        /// <param name="requiredAssemblies">All assemblies, including provided at API or proiveded in workfow definition, required by this PowerShell Workflow.</param>
+        /// <param name="requiredAssemblies">All assemblies, including provided at API or provided in workfow definition, required by this PowerShell Workflow.</param>
         /// <param name="workflowAttributes">The attribute string for the workflow if these is one.</param>
         public static string Convert(FunctionDefinitionAst ast,
                                      PSModuleInfo definingModule,
