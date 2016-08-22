@@ -36,7 +36,7 @@ namespace Microsoft.PowerShell.Commands
                 if (ShouldWriteToPipeline)
                 {
                     // First see if it is an RSS / ATOM feed, in which case we can 
-                    // stream it - unless the user has overriden it with a return type of "XML"
+                    // stream it - unless the user has overridden it with a return type of "XML"
                     if (TryProcessFeedStream(responseStream))
                     {
                         // Do nothing, content has been processed.

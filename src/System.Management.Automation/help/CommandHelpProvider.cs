@@ -401,7 +401,7 @@ namespace System.Management.Automation
         /// </summary>
         /// 
         /// <remarks>
-        /// ExactMatchHelp is overrided instead of DoExactMatchHelp to make sure 
+        /// ExactMatchHelp is overridden instead of DoExactMatchHelp to make sure 
         /// all help item retrival will go through command discovery. Because each 
         /// help file can contain multiple help items for different commands. Directly
         /// retrieve help cache can result in a invalid command to contain valid

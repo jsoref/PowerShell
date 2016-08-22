@@ -109,7 +109,7 @@ namespace Microsoft.PowerShell.Cmdletization
 
         #endregion Common CIM-related parameters
 
-        #region Abstract methods to be overriden in derived classes
+        #region Abstract methods to be overridden in derived classes
 
         /// <summary>
         /// Creates a <see cref="System.Management.Automation.Job"/> object that performs a query against the wrapped object model.

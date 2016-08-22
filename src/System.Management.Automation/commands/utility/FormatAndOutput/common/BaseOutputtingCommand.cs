@@ -839,7 +839,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
             internal virtual void Initialize() { }
 
             /// <summary>
-            /// called when a group of data is started, overrided will do
+            /// called when a group of data is started, overridden will do
             /// things such as headers, etc...
             /// </summary>
             internal virtual void GroupStart() { }

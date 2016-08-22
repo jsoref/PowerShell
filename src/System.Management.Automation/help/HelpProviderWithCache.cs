@@ -93,8 +93,8 @@ namespace System.Management.Automation
         /// </summary>
         /// <remarks>
         /// Derived class can choose to either override ExactMatchHelp method to DoExactMatchHelp method.
-        /// If ExactMatchHelp is overriden, initial cache checking will be disabled by default.
-        /// If DoExactMatchHelp is overriden, cache check will be done first in ExactMatchHelp before the 
+        /// If ExactMatchHelp is overridden, initial cache checking will be disabled by default.
+        /// If DoExactMatchHelp is overridden, cache check will be done first in ExactMatchHelp before the 
         /// logic in DoExactMatchHelp is in place.
         /// </remarks>
         /// <param name="helpRequest">help request object</param>

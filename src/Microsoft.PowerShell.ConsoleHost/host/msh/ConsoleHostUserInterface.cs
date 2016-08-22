@@ -1745,7 +1745,7 @@ namespace Microsoft.PowerShell
                         Coordinates c = RawUI.CursorPosition;
 
                         // before cleaning up the screen, read the active screen buffer to retrieve the character that
-                        // is overriden by the tab
+                        // is overridden by the tab
                         char charUnderCursor = GetCharacterUnderCursor(c);
 
                         Write(new string(' ', leftover));

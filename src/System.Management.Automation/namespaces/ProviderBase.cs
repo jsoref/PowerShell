@@ -110,7 +110,7 @@ namespace System.Management.Automation.Provider
 
         /// <summary>
         /// Checks whether the filter of the provider is set. 
-        /// Can be overriden by derived class when additional filters are defined.
+        /// Can be overridden by derived class when additional filters are defined.
         /// </summary>
         /// <returns>
         /// Whether the filter of the provider is set. 
