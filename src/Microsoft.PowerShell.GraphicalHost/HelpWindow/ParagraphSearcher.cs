@@ -153,7 +153,7 @@ namespace Microsoft.Management.UI.Internal
         }
 
         /// <summary>
-        /// Gets the run of an inline. Inlines in a ParagrahBuilder are either a Run or a Bold
+        /// Gets the run of an inline. Inlines in a ParagraphBuilder are either a Run or a Bold
         /// which contains a Run
         /// </summary>
         /// <param name="inline">inline to get the run from</param>
