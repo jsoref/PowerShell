@@ -444,7 +444,7 @@ namespace System.Management.Automation.Runspaces
         /// On V1, the global error output pipe is redirected to the command's error output pipe only when 
         /// it has already been redirected. The command-line host achieves this redirection by merging the
         /// error output into the output pipe so it checks $ErrorActionPreference all right. However, when 
-        /// the Pipeline class is used programatically the global error output pipe is not set and the first
+        /// the Pipeline class is used programmatically the global error output pipe is not set and the first
         /// error terminates the pipeline.
         /// 
         /// This flag is used to force the redirection. By default it is false to maintain compatibility with
