@@ -1093,7 +1093,7 @@ namespace System.Management.Automation
         private string _serializedFullyQualifiedErrorId = null;
 
         /// <summary>
-        /// Message overidee for CategoryInfo.GetMessage method
+        /// Message overridee for CategoryInfo.GetMessage method
         /// </summary>
         internal string _serializedErrorCategoryMessageOverride = null;
 

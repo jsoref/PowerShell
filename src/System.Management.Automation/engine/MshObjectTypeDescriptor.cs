@@ -562,7 +562,7 @@ namespace System.Management.Automation
             return this.Instance;
         }
 
-        #region Overides Forwarded To BaseObject
+        #region Overrides Forwarded To BaseObject
 
         #region ReadMe
         // This region contains methods implemented like:

@@ -1025,7 +1025,7 @@ namespace Microsoft.PowerShell.Commands
 
         # endregion private
 
-        #region overrdies
+        #region override
 
         /// <summary>
         /// ProcessRecord method.
