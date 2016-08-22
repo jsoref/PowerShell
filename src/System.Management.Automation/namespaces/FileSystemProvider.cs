@@ -4737,7 +4737,7 @@ namespace Microsoft.PowerShell.Commands
                 // Since UNC paths must have "\\server\share" as the base of
                 // the path, you cannot get a parent path higher than this.
                 // So this looks for the path separator between server\share and
-                // ensures that it is in a position where it is preceeded by
+                // ensures that it is in a position where it is preceded by
                 // "\\s" at a minimum.
 
                 int indexOfLastPathSeparator = parentPath.LastIndexOf('\\');
