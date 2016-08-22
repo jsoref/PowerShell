@@ -1072,7 +1072,7 @@ namespace Microsoft.PowerShell
 
             int nodesCompressed = 0;
 
-            // This algorithm potentially makes many, many passeses over the tree.  It might be possible to optimize 
+            // This algorithm potentially makes many, many passes over the tree.  It might be possible to optimize 
             // that some, but I'm not trying to be too clever just yet.
 
             if (
