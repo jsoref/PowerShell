@@ -1470,7 +1470,7 @@ function GetEntitySetForEntityType
 # 2. Writes FileInfo objects for the proxy modules 
 #    saved to the disk. This is done to keep the user 
 #    experience in consistent with Export-PSSession.
-# 3. Updates progess bar.
+# 3. Updates progress bar.
 #########################################################
 function ProcessStreamHelper 
 {
