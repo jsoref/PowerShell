@@ -123,7 +123,7 @@ namespace Microsoft.PowerShell.Cmdletization
         /// </para>
         /// <para>
         /// <see cref="Job.WriteObject" /> (and other methods returning job results) will block to support throttling and flow-control.
-        /// Implementations of Job instance returned from this method should make sure that implementation-specific flow-control mechanism pauses further procesing,
+        /// Implementations of Job instance returned from this method should make sure that implementation-specific flow-control mechanism pauses further processing,
         /// until calls from <see cref="Job.WriteObject" /> (and other methods returning job results) return.
         /// </para>
         /// </remarks>
@@ -174,7 +174,7 @@ namespace Microsoft.PowerShell.Cmdletization
         /// </para>
         /// <para>
         /// <see cref="Job.WriteObject" /> (and other methods returning job results) will block to support throttling and flow-control.
-        /// Implementations of Job instance returned from this method should make sure that implementation-specific flow-control mechanism pauses further procesing,
+        /// Implementations of Job instance returned from this method should make sure that implementation-specific flow-control mechanism pauses further processing,
         /// until calls from <see cref="Job.WriteObject" /> (and other methods returning job results) return.
         /// </para>
         /// </remarks>
@@ -209,7 +209,7 @@ namespace Microsoft.PowerShell.Cmdletization
         /// </para>
         /// <para>
         /// <see cref="Job.WriteObject" /> (and other methods returning job results) will block to support throttling and flow-control.
-        /// Implementations of Job instance returned from this method should make sure that implementation-specific flow-control mechanism pauses further procesing,
+        /// Implementations of Job instance returned from this method should make sure that implementation-specific flow-control mechanism pauses further processing,
         /// until calls from <see cref="Job.WriteObject" /> (and other methods returning job results) return.
         /// </para>
         /// </remarks>

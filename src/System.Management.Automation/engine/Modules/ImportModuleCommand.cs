@@ -1523,7 +1523,7 @@ namespace Microsoft.PowerShell.Commands
                     moduleInfo.OnRemove = onRemoveScriptBlock;
 
                     //
-                    // Some procesing common for local and remote modules
+                    // Some processing common for local and remote modules
                     //
                     AddModuleToModuleTables(
                         this.Context,
