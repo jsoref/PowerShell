@@ -601,7 +601,7 @@ namespace System.Management.Automation.Remoting
         /// <summary>
         /// Sets the application's current working directory to <paramref name="applicationBase"/> and 
         /// loads the assembly <paramref name="assemblyName"/>. Once the assembly is loaded, the application's
-        /// current working directory is set back to the orginal value.
+        /// current working directory is set back to the original value.
         /// </summary>
         /// <param name="applicationBase"></param>
         /// <param name="assemblyName"></param>

@@ -2159,7 +2159,7 @@ namespace System.Management.Automation
         {
             #region Private Data
 
-            // orginal adapter like Xml, ManagementClass, DirectoryEntry etc.
+            // original adapter like Xml, ManagementClass, DirectoryEntry etc.
             // .net adapter
 
             #endregion

@@ -399,7 +399,7 @@ namespace System.Management.Automation
                     break;
             }
 
-            //An object which is orignially enumerable becomes an PSObject 
+            //An object which is original enumerable becomes an PSObject 
             //with arraylist on deserialization. So on roundtrip it will show up
             //as List. 
             //We serialize properties of enumerable and on deserialization mark the object

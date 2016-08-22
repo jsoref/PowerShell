@@ -971,8 +971,8 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
 
             CimTestCimSessionContext testCimSessionContext = context as CimTestCimSessionContext;
             UInt32 sessionId = this.sessionState.GenerateSessionId();
-            string orginalSessioName = testCimSessionContext.CimSessionWrapper.Name;
-            string sessionName = (orginalSessioName != null) ? orginalSessioName : String.Format(CultureInfo.CurrentUICulture, @"{0}{1}", CimSessionState.CimSessionClassName, sessionId);
+            string originalSessioName = testCimSessionContext.CimSessionWrapper.Name;
+            string sessionName = (originalSessioName != null) ? originalSessioName : String.Format(CultureInfo.CurrentUICulture, @"{0}{1}", CimSessionState.CimSessionClassName, sessionId);
 
             // detach CimSession from the proxy object
             CimSession createdCimSession = testCimSessionContext.Proxy.Detach();

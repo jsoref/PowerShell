@@ -1243,7 +1243,7 @@ namespace System.Management.Automation
 
             if (depth != 0)
             {
-                // An object which is orignially enumerable becomes an PSObject with ArrayList on deserialization. 
+                // An object which is original enumerable becomes an PSObject with ArrayList on deserialization. 
                 // So on roundtrip it will show up as List.
                 // We serialize properties of enumerable and on deserialization mark the object as Deserialized. 
                 // So if object is marked deserialized, we should write properties.
