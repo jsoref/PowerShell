@@ -6,7 +6,7 @@ Copyright (c) Microsoft Corporation.  All rights reserved.
 // defined here to call Diagnostics.Assert when only ASSERTIONS_TRACE is defined
 // Any #if DEBUG is pointless (always true) in this file because of this declaration.
 // The presence of the define will cause the System.Diagnostics.Debug.Asser calls
-// allways to be compiled in for this file. What can be compiled out are the calls to
+// always to be compiled in for this file. What can be compiled out are the calls to
 // System.Management.Automation.Diagnostics.Assert in other files when neither DEBUG
 // nor ASSERTIONS_TRACE is defined.
 #define DEBUG

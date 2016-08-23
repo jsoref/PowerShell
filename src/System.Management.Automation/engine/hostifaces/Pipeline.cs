@@ -397,7 +397,7 @@ namespace System.Management.Automation.Runspaces
 
         /// <summary>
         /// True if pipeline execution encountered and error.
-        /// It will alwys be true if _reason is non-null
+        /// It will always be true if _reason is non-null
         /// since an exception occurred. For other error types,
         /// It has to be set manually.
         /// </summary>

@@ -24,7 +24,7 @@ namespace Microsoft.PowerShell.Commands
     {
         #region Private Fields
         /// <summary>
-        /// Set to true when ProcessRecord is reached, since it will allways open a window
+        /// Set to true when ProcessRecord is reached, since it will always open a window
         /// </summary>
         private bool _hasOpenedWindow;
 
