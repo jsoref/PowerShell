@@ -1191,7 +1191,7 @@ namespace Microsoft.WSMan.Management
                                         WSManStringLiterals.containerShell,
                                         adjustedChileName);
 
-                                warningMessage.Add(String.Format(helper.GetResourceMsgFromResourcetext("SetItemWarnigForPPQ"), pathForGlobalQuota));
+                                warningMessage.Add(String.Format(helper.GetResourceMsgFromResourcetext("SetItemWarningForPPQ"), pathForGlobalQuota));
                             }
                         }
 
