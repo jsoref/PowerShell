@@ -596,7 +596,7 @@ namespace System.Management.Automation
                     //   new-object System.Drawing.Point -prop @{ X = 100; Y =      <- Incomplete line
                     //   new-object new-object System.Drawing.Point -prop @{ X =    <- Tab will yield hash properties.
                     if (hashTableAst != null &&
-                        CheckForPendingAssigment(hashTableAst))
+                        CheckForPendingAssignment(hashTableAst))
                     {
                         return result;
                     }
@@ -837,7 +837,7 @@ namespace System.Management.Automation
         }
 
         // Helper method to look for an incomplete assignment pair in hash table.
-        private bool CheckForPendingAssigment(HashtableAst hashTableAst)
+        private bool CheckForPendingAssignment(HashtableAst hashTableAst)
         {
             foreach (var keyValue in hashTableAst.KeyValuePairs)
             {

@@ -5435,7 +5435,7 @@ namespace System.Management.Automation.Language
     #region Pipelines
 
     /// <summary>
-    /// An abstract base class for statements that include command invocations, pipelines, expressions, and assignements.
+    /// An abstract base class for statements that include command invocations, pipelines, expressions, and assignments.
     /// Any statement that does not begin with a keyword is derives from PipelineBastAst.
     /// </summary>
     public abstract class PipelineBaseAst : StatementAst
@@ -6290,7 +6290,7 @@ namespace System.Management.Automation.Language
     public class AssignmentStatementAst : PipelineBaseAst
     {
         /// <summary>
-        /// Construct an assignement statement.
+        /// Construct an assignment statement.
         /// </summary>
         /// <param name="extent">The extent of the assignment statement.</param>
         /// <param name="left">The value being assigned.</param>

@@ -1723,7 +1723,7 @@ namespace System.Management.Automation.Language
                     argIndex += 1;
                 }
 
-                // We wrap the block of assignements in a try/catch and issue a general error message whenever the assignment fails.
+                // We wrap the block of assignments in a try/catch and issue a general error message whenever the assignment fails.
                 var exception = Expression.Parameter(typeof(Exception));
                 var block = Expression.Block(
                     Expression.Assign(tmp, result),
