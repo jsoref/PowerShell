@@ -332,7 +332,7 @@ namespace Microsoft.PowerShell.Commands
                 }
             }
 
-            // If the csv file is empty then even append is treated as regualr export (i.e., both header & values are added to the CSV file).
+            // If the csv file is empty then even append is treated as regular export (i.e., both header & values are added to the CSV file).
             _isActuallyAppending = this.Append && File.Exists(resolvedFilePath) && !isCsvFileEmpty;
 
             if (_isActuallyAppending)
