@@ -975,7 +975,7 @@ namespace Microsoft.PowerShell.Commands
                 if (destElements.Length == 3 &&
                    (String.Equals(pathElements[2], destElements[2], StringComparison.OrdinalIgnoreCase)))
                 {
-                    //in this case we think of destination path as vaild 
+                    //in this case we think of destination path as valid 
                     //and strip the thumbprint part
                     destination = Path.GetDirectoryName(destination);
                 }
