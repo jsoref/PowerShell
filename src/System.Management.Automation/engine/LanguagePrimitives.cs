@@ -1305,7 +1305,7 @@ namespace System.Management.Automation
                     // This assumption holds for System.Collections.Generic.Dictionary<TKey,TValue>.
 
                     // If we did not make this assumption, we would be forced to generate code
-                    // to call the generic indexer directly, somewhat analgous to what we do
+                    // to call the generic indexer directly, somewhat analogous to what we do
                     // in GetEnumeratorFromIEnumeratorT.
 
                     Type[] genericArguments = i.GetGenericArguments();
