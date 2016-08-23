@@ -591,7 +591,7 @@ namespace System.Management.Automation.Runspaces
         /// <summary>
         ///  Define an alias entry to add to the initial session state
         /// </summary>
-        /// <param name="name">Name of the aliase</param>
+        /// <param name="name">Name of the alias</param>
         /// <param name="definition">The name of the command it resolves to</param>
         public SessionStateAliasEntry(string name, string definition)
             : base(name, SessionStateEntryVisibility.Public)
@@ -603,7 +603,7 @@ namespace System.Management.Automation.Runspaces
         /// <summary>
         ///  Define an alias entry to add to the initial session state
         /// </summary>
-        /// <param name="name">Name of the aliase</param>
+        /// <param name="name">Name of the alias</param>
         /// <param name="definition">The name of the command it resolves to</param>
         /// <param name="description">A descripion of the purpose of the alias.</param>
         public SessionStateAliasEntry(string name, string definition, string description)
@@ -617,7 +617,7 @@ namespace System.Management.Automation.Runspaces
         /// <summary>
         ///  Define an alias entry to add to the initial session state
         /// </summary>
-        /// <param name="name">Name of the aliase</param>
+        /// <param name="name">Name of the alias</param>
         /// <param name="definition">The name of the command it resolves to</param>
         /// <param name="description">A descripion of the purpose of the alias.</param>
         /// <param name="options">Options defining the scope visiblity, readonly and constant</param>
@@ -633,7 +633,7 @@ namespace System.Management.Automation.Runspaces
         /// <summary>
         ///  Define an alias entry to add to the initial session state
         /// </summary>
-        /// <param name="name">Name of the aliase</param>
+        /// <param name="name">Name of the alias</param>
         /// <param name="definition">The name of the command it resolves to</param>
         /// <param name="description">A descripion of the purpose of the alias.</param>
         /// <param name="options">Options defining the scope visiblity, readonly and constant</param>
