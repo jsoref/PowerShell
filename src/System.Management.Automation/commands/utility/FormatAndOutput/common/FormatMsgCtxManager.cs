@@ -14,7 +14,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
     /// A predefined set of events allows the host of this class to process the information
     /// as it comes trough the finite state machine (push model)
     /// 
-    /// IMPORTANT: The code using this class will have to provide ALL the callabacks.
+    /// IMPORTANT: The code using this class will have to provide ALL the callbacks.
     /// </summary>
     internal class FormatMessagesContextManager
     {

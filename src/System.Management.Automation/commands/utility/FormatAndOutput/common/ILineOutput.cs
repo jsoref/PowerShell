@@ -223,7 +223,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
     /// <summary>
     /// helper class to provide line breaking (based on device width) 
     /// and embedded newline processing
-    /// It needs to be provided with two callabacks for line processing
+    /// It needs to be provided with two callbacks for line processing
     /// </summary>
     internal class WriteLineHelper
     {
