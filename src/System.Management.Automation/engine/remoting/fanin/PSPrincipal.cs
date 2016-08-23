@@ -276,7 +276,7 @@ namespace System.Management.Automation.Remoting
 
         /// <summary>
         /// Gets the type of authentication used.
-        /// For a WSMan service autheticated user this will be one of the following:
+        /// For a WSMan service authenticated user this will be one of the following:
         ///  WSMAN_DEFAULT_AUTHENTICATION
         ///  WSMAN_NO_AUTHENTICATION 
         ///  WSMAN_AUTH_DIGEST           
@@ -310,7 +310,7 @@ namespace System.Management.Automation.Remoting
         /// </summary>
         /// <param name="authType">
         /// Type of authentication used to authenticate this user.
-        /// For a WSMan service autheticated user this will be one of the following:
+        /// For a WSMan service authenticated user this will be one of the following:
         ///  WSMAN_DEFAULT_AUTHENTICATION
         ///  WSMAN_NO_AUTHENTICATION 
         ///  WSMAN_AUTH_DIGEST           
