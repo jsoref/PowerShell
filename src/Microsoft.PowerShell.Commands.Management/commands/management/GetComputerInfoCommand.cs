@@ -2677,7 +2677,7 @@ namespace Microsoft.PowerShell.Commands
         public string CsPrimaryOwnerName { get; internal set; }
 
         /// <summary>
-        /// Indicates if the computer system can be resut.
+        /// Indicates if the computer system can be reset.
         /// </summary>
         public ResetCapability? CsResetCapability { get; internal set; }
 
