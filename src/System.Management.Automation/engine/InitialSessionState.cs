@@ -2255,7 +2255,7 @@ namespace System.Management.Automation.Runspaces
 
         /// <summary>
         /// Specifies the authorization manager to be used for this session state instance.
-        /// If no authorization manager is specified, then the default authroization manager
+        /// If no authorization manager is specified, then the default authorization manager
         /// for PowerShell will be used which checks the ExecutionPolicy before running a command.
         /// </summary>
         public virtual AuthorizationManager AuthorizationManager { get; set; } = new Microsoft.PowerShell.PSAuthorizationManager(Utils.DefaultPowerShellShellID);
