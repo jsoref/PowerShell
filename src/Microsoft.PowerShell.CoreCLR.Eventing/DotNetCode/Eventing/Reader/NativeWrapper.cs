@@ -6,7 +6,7 @@
 ** This internal class contains wrapper methods over the Native
 ** Methods of the Eventlog API.   Unlike the raw Native Methods,
 ** these methods throw EventLogExceptions, check platform 
-** availablity and perform additional helper functionality 
+** availability and perform additional helper functionality 
 ** specific to function.  Also, all methods of this class expose
 ** the Link Demand for Unmanaged Permission to callers.
 ** 

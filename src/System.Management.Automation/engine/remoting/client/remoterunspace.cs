@@ -703,7 +703,7 @@ namespace System.Management.Automation
         /// accidental dependencies on prior runspace state.
         /// </summary>
         /// <exception cref="PSInvalidOperationException">
-        /// Thrown when runspace is not in proper state or avaialablity or if the
+        /// Thrown when runspace is not in proper state or availability or if the
         /// reset operation fails in the remote session.
         /// </exception>
         public override void ResetRunspaceState()
