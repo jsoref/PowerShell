@@ -605,7 +605,7 @@ namespace Microsoft.PowerShell.Workflow
             _structuredTracer.Correlate();
             Tracer.WriteMessage("Workflow Application is completed in Aborted state.");
 
-            // if the supend in progress and there is some error it result in the aborted event
+            // if the suspend in progress and there is some error it result in the aborted event
             // explicit faulting the workflow.
             if (this.callSuspendDelegate)
             {
