@@ -708,7 +708,7 @@ namespace System.Management.Automation.Remoting.Client
                 }
 
                 // dont let the writer write new data as the process is exited.
-                // Not asssigning null to stdInWriter to fix the race condition between OnExited() and CloseAsync() methods.
+                // Not assigning null to stdInWriter to fix the race condition between OnExited() and CloseAsync() methods.
                 // 
                 stdInWriter.StopWriting();
             }
