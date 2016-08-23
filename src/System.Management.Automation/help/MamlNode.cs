@@ -17,7 +17,7 @@ namespace System.Management.Automation
     /// etc, which needs to be taken care of during display. As a result, xml node in Maml schema can't be 
     /// converted into PSObject directly with XmlNodeAdapter. 
     /// 
-    /// MamlNode class provides logic in converting formatting tags into the format accetable by monad format
+    /// MamlNode class provides logic in converting formatting tags into the format acceptable by monad format
     /// and output engine. 
     /// 
     /// Following three kinds of formating tags are supported per our agreement with Maml team, 
