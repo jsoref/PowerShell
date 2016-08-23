@@ -598,7 +598,7 @@ function CompressArchiveHelper
     # The Soure Path contains one or more files and one or more directories (this directory can have files under it) to be compressed.
     elseif($sourceFilePaths.Count -gt 0 -and $sourceDirPaths.Count -gt 0)
     {
-        # each directory is considered as an individual segments & all the individual files are clubed in to a separate sgemnet.
+        # each directory is considered as an individual segments & all the individual files are clubed in to a separate segment.
         $currentSegmentWeight = 100/[double]($sourceDirPaths.Count +1)
         $previousSegmentWeight = 0
 
