@@ -1255,7 +1255,7 @@ namespace System.Management.Automation
                             UpdateDisconnectExpiresOn();
 
                             // Application private data containing server debug state is updated on
-                            // a *reconstruct* connect operation when _applicatPrivateData is null.  
+                            // a *reconstruct* connect operation when _applicationPrivateData is null.  
                             // Pass new information to the debugger.
                             if (_applicationPrivateData == null)
                             {

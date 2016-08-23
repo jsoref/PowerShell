@@ -304,7 +304,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Send applicaiton private data to client
+        /// Send application private data to client
         /// will be called during runspace creation 
         /// and each time a new client connects to the server session
         /// </summary>

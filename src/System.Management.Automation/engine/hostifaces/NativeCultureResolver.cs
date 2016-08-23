@@ -451,7 +451,7 @@ namespace Microsoft.PowerShell
         /// <returns>
         /// Returns the size of the buffer containing the locale name, including 
         /// the terminating null character, if successful. The function returns 0 
-        /// if it does not succeed. To get extended error information, the applciation
+        /// if it does not succeed. To get extended error information, the application
         /// can call GetLastError. Possible returns from GetLastError
         /// include ERR_INSUFFICIENT_BUFFER.
         /// </returns>
