@@ -144,7 +144,7 @@
   <data name="RestoreFailed" xml:space="preserve">
     <value>The last attempt to restore the computer failed.</value>
   </data>
-  <data name="RestoreSuceess" xml:space="preserve">
+  <data name="RestoreSuccess" xml:space="preserve">
     <value>The computer has been restored to the specified restore point.</value>
   </data>
   <data name="RestoreInterrupted" xml:space="preserve">

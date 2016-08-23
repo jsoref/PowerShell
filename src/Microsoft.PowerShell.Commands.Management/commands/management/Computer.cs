@@ -1481,7 +1481,7 @@ namespace Microsoft.PowerShell.Commands
                     if (restoreStatus.Equals(0))
                         WriteObject(ComputerResources.RestoreFailed);
                     else if (restoreStatus.Equals(1))
-                        WriteObject(ComputerResources.RestoreSuceess);
+                        WriteObject(ComputerResources.RestoreSuccess);
                     else if (restoreStatus.Equals(2))
                         WriteObject(ComputerResources.RestoreInterrupted);
                 }
