@@ -93,7 +93,7 @@ function Compress-Archive
             $destinationParentDir = '.'
         }
 
-        $achiveFileName = [system.IO.Path]::GetFileName($DestinationPath)
+        $archiveFileName = [system.IO.Path]::GetFileName($DestinationPath)
         $destinationParentDir = GetResolvedPathHelper $destinationParentDir $false $PSCmdlet
         
         if($destinationParentDir.Count -gt 1)
@@ -103,7 +103,7 @@ function Compress-Archive
         }
 
         IsValidFileSystemPath $destinationParentDir | Out-Null
-        $DestinationPath = Join-Path -Path $destinationParentDir -ChildPath $achiveFileName
+        $DestinationPath = Join-Path -Path $destinationParentDir -ChildPath $archiveFileName
 
         # GetExtension API does not validate for the actual existance of the path.
         $extension = [system.IO.Path]::GetExtension($DestinationPath)
@@ -175,7 +175,7 @@ function Compress-Archive
     END 
     {
         # If archive file already exists and if -Force is specified, we delete the 
-        # existing artchive file and create a brand new one.
+        # existing archive file and create a brand new one.
         if(($PsCmdlet.ParameterSetName -eq "PathWithForce" -or 
         $PsCmdlet.ParameterSetName -eq "LiteralPathWithForce") -and $archiveFileExist)
         {

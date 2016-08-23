@@ -38,7 +38,7 @@ namespace System.Management.Automation
     {
         /// <summary>
         /// We need it to avoid calling lookups inside dynamic assemblies with PS Types, so we exclude it from GetAssemblies().
-        /// We use this convention for names to achive it.
+        /// We use this convention for names to archive it.
         /// </summary>
         internal static readonly char FIRST_CHAR_PSASSEMBLY_MARK = (char)0x29f9;
 
