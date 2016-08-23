@@ -751,7 +751,7 @@ namespace System.Management.Automation
 
     /// <summary>
     /// A class to view and modify the type accelerators used by the PowerShell engine.  Builtin
-    /// type accelerators are read only, but user defined type accerators may be added.
+    /// type accelerators are read only, but user defined type accelerators may be added.
     /// </summary>
     internal static class TypeAccelerators
     {
