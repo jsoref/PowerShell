@@ -10550,7 +10550,7 @@ function Install-PackageUtility
 
                 $destinationModulePath = Microsoft.PowerShell.Management\Join-Path -Path $moduleDestination -ChildPath $pkg.Name
 
-                # Side-by-Side module version is avialable on PowerShell 5.0 or later versions only
+                # Side-by-Side module version is available on PowerShell 5.0 or later versions only
                 # By default, PowerShell module versions will be installed/updated Side-by-Side.
                 if(Test-ModuleSxSVersionSupport)
                 {
@@ -12232,7 +12232,7 @@ function Save-ModuleSources
 
 function Test-ModuleSxSVersionSupport
 {
-    # Side-by-Side module version is avialable on PowerShell 5.0 or later versions only
+    # Side-by-Side module version is available on PowerShell 5.0 or later versions only
     # By default, PowerShell module versions will be installed/updated Side-by-Side.
     $PSVersionTable.PSVersion -ge '5.0.0'
 }

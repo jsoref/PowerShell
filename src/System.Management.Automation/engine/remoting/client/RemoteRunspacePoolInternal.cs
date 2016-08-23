@@ -261,7 +261,7 @@ namespace System.Management.Automation.Runspaces.Internal
                     // same way it is set for runspaces.
                     availability = (AvailableForConnection) ?
                             RunspacePoolAvailability.None :     // Disconnected runspacepool available for connection.
-                            RunspacePoolAvailability.Busy;      // Disconnected runspacepool unavailble for connection.
+                            RunspacePoolAvailability.Busy;      // Disconnected runspacepool unavailable for connection.
                 }
                 else
                 {

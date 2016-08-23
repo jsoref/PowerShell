@@ -296,7 +296,7 @@ namespace System.Management.Automation
         Ignore = 1,
 
         /// <summary>
-        /// Wait on unhandled breakpoint events until a handler is avaialable.
+        /// Wait on unhandled breakpoint events until a handler is available.
         /// </summary>
         Wait
     }

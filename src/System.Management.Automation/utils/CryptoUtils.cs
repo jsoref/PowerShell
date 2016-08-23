@@ -1032,7 +1032,7 @@ namespace System.Management.Automation.Internal
             } // if (rsa != null...
             else
             {
-                Dbg.Assert(false, "Session key not availble to encrypt secure string");
+                Dbg.Assert(false, "Session key not available to encrypt secure string");
             }
 
             return encryptedDataAsString;

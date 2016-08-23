@@ -733,7 +733,7 @@ namespace System.Management.Automation.Host
         /// A Dictionary object with results of prompting.  The keys are the field names from the FieldDescriptions, the values
         /// are objects representing the values of the corresponding fields as collected from the user. To the extent possible, 
         /// the host should return values of the type(s) identified in the FieldDescription.  When that is not possible (for 
-        /// example, the type is not avaiable to the host), the host should return the value as a string.
+        /// example, the type is not available to the host), the host should return the value as a string.
         /// </returns>
         /// <seealso cref="System.Management.Automation.Host.PSHostUserInterface.ReadLine"/>
         /// <seealso cref="System.Management.Automation.Host.PSHostUserInterface.ReadLineAsSecureString"/>

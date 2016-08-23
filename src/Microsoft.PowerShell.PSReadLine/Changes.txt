@@ -227,7 +227,7 @@ Bugs fixed:
 * Ctrl+R with long search lines no longer causes big problems
 
 Behavior change:
-* Word functions now use delimiters.  The previous behavior is availble 
+* Word functions now use delimiters.  The previous behavior is available 
   via a Shell*Word function, e.g. instead of KillWord, use ShellKillWord.
 
 ### Version 1.0.0.4

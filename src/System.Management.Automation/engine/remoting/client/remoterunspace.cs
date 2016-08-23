@@ -176,7 +176,7 @@ namespace System.Management.Automation
             SetRunspaceState(RunspaceState.Disconnected, null);
 
             // Normal Availability for a disconnected runspace is "None", which means it can be connected.
-            // However, we can also have disconnected runspace objects that are *not* avaialable for 
+            // However, we can also have disconnected runspace objects that are *not* available for 
             // connection and in this case the Availability is set to "Busy".
             _runspaceAvailability = RunspacePool.RemoteRunspacePoolInternal.AvailableForConnection ?
                 Runspaces.RunspaceAvailability.None : Runspaces.RunspaceAvailability.Busy;

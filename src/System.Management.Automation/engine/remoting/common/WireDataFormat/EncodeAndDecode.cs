@@ -896,7 +896,7 @@ namespace System.Management.Automation
         /// --------------------------------------------------------------------------
         /// | D |    TI     |  RPID  |   PID   |      Data     |        Type          |
         /// ---------------------------------------------------------------------------
-        /// | S | Runspace  | CRPID  |    0    |     null      |GetAvailalbeRunspaces |
+        /// | S | Runspace  | CRPID  |    0    |     null      |GetAvailableRunspaces |
         /// |   |   Pool    |        |         |               |                      |
         /// --------------------------------------------------------------------------
         internal static RemoteDataObject GenerateGetAvailableRunspaces(Guid clientRunspacePoolId,

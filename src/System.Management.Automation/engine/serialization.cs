@@ -241,7 +241,7 @@ namespace System.Management.Automation
         /// <summary>
         /// Used by Remoting infrastructure. This TypeTable instance
         /// will be used by Serializer if ExecutionContext is not
-        /// avaliable (to get the ExecutionContext's TypeTable)
+        /// available (to get the ExecutionContext's TypeTable)
         /// </summary>
         internal TypeTable TypeTable
         {
@@ -517,7 +517,7 @@ namespace System.Management.Automation
         /// <summary>
         /// Used by Remoting infrastructure. This TypeTable instance
         /// will be used by Deserializer if ExecutionContext is not
-        /// avaliable (to get the ExecutionContext's TypeTable)
+        /// available (to get the ExecutionContext's TypeTable)
         /// </summary>
         internal TypeTable TypeTable
         {
@@ -806,7 +806,7 @@ namespace System.Management.Automation
 
         /// Used by Remoting infrastructure. This TypeTable instance
         /// will be used by Serializer if ExecutionContext is not
-        /// avaliable (to get the ExecutionContext's TypeTable)
+        /// available (to get the ExecutionContext's TypeTable)
         private TypeTable _typeTable;
 
         /// <summary>
@@ -843,7 +843,7 @@ namespace System.Management.Automation
         /// <summary>
         /// Used by Remoting infrastructure. This TypeTable instance
         /// will be used by Serializer if ExecutionContext is not
-        /// avaliable (to get the ExecutionContext's TypeTable)
+        /// available (to get the ExecutionContext's TypeTable)
         /// </summary>
         internal TypeTable TypeTable
         {
@@ -2929,7 +2929,7 @@ namespace System.Management.Automation
 
         /// Used by Remoting infrastructure. This TypeTable instance
         /// will be used by Serializer if ExecutionContext is not
-        /// avaliable (to get the ExecutionContext's TypeTable)
+        /// available (to get the ExecutionContext's TypeTable)
         private TypeTable _typeTable;
 
         /// <summary>
@@ -2997,7 +2997,7 @@ namespace System.Management.Automation
         /// <summary>
         /// Used by Remoting infrastructure. This TypeTable instance
         /// will be used by Deserializer if ExecutionContext is not
-        /// avaliable (to get the ExecutionContext's TypeTable)
+        /// available (to get the ExecutionContext's TypeTable)
         /// </summary>
         internal TypeTable TypeTable
         {
