@@ -86,7 +86,7 @@ namespace Microsoft.Management.UI.Internal
         /// <summary>
         /// Called after all the AddText calls have been made to build the paragraph
         /// based on the current text.
-        /// This method goes over 3 collections simultaneouslly:
+        /// This method goes over 3 collections simultaneously:
         ///    1) characters in this.textBuilder
         ///    2) spans in this.boldSpans
         ///    3) spans in this.highlightedSpans
