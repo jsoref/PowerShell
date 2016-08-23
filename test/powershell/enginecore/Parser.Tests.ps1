@@ -467,7 +467,7 @@ Describe "ParserTests (admin\monad\tests\monad\src\engine\core\ParserTests.cs)" 
         }
     }
 	
-	It "Test that if an exception is thrown from the try block it will be caught in the apprpropriate catch block and that the finally block will run regardless of whether an exception is thrown. (line 1317)" {
+	It "Test that if an exception is thrown from the try block it will be caught in the appropropriate catch block and that the finally block will run regardless of whether an exception is thrown. (line 1317)" {
         $result = ExecuteCommand 'try { try { throw (new-object System.ArgumentException) } catch [System.DivideByZeroException] { } finally { "Finally" } } catch { $_.Exception.GetType().FullName }'
 		$result | should be "Finally", "System.ArgumentException"
     }
