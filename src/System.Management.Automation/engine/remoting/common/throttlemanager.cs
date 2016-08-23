@@ -139,7 +139,7 @@ namespace System.Management.Automation.Remoting
     /// <summary>
     /// Class which handles the throttling operations. This class is singleton and therefore
     /// when used either across cmdlets or at the infrastructure level it will ensure that
-    /// there aren't more operations by way of accumalation than what is intended by design.
+    /// there aren't more operations by way of accumulation than what is intended by design.
     /// 
     /// This class contains a queue of items, each of which has the 
     /// <see cref="System.Management.Automation.Remoting.IThrottleOperation">
