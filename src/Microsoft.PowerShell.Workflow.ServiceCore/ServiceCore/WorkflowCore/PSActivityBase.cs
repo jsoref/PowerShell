@@ -1199,7 +1199,7 @@ namespace Microsoft.PowerShell.Activities
             }
 
             // bookmarking will only be enabled when the PSPersist variable is set to 'true' by the author.
-            // so we are retriveing the information before host overrides.
+            // so we are retrieving the information before host overrides.
             // if the value is false or not provided then we will not go into the unloaded mode.
 
             bool intBookmarking = InternalBookmarkingRequired(context);

@@ -3292,7 +3292,7 @@ namespace Microsoft.WSMan.Management
         /// Given wsman config path, gets the value of the leaf present.
         /// If path is not valid or not present throws an exception.
         /// 
-        /// Currently this supports only retreiving Resource_XXXX dir contents.
+        /// Currently this supports only retrieving Resource_XXXX dir contents.
         /// if you need support at other levels implement them.
         /// Example resource dir: WSMan:\localhost\Plugin\someplugin\Resources\Resource_XXXXXXX
         /// </summary>
@@ -3381,7 +3381,7 @@ namespace Microsoft.WSMan.Management
                     }
                     else
                     {
-                        // Currently this supports only retreiving Resource_XXXX dir contents.
+                        // Currently this supports only retrieving Resource_XXXX dir contents.
                         // if you need support at other levels implement them.
                         // Example resource dir: WSMan:\localhost\Plugin\someplugin\Resources\Resource_67830040
                         string filter = uri + "?Name=" + currentpluginname;

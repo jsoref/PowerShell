@@ -794,7 +794,7 @@ namespace System.Management.Automation
             HelpInfo result = GetFromCommandCache(helpFileIdentifier, commandInfo.Name, commandInfo.HelpCategory);
             if (null == result)
             {
-                // check if the command is prefixed and try retreiving help by removing the prefix
+                // check if the command is prefixed and try retrieving help by removing the prefix
                 if ((commandInfo.Module != null) && (!string.IsNullOrEmpty(commandInfo.Prefix)))
                 {
                     MamlCommandHelpInfo newMamlHelpInfo = GetFromCommandCacheByRemovingPrefix(helpFileIdentifier, commandInfo);
@@ -824,7 +824,7 @@ namespace System.Management.Automation
             HelpInfo result = GetFromCommandCache(cmdletInfo.ModuleName, cmdletInfo.Name, cmdletInfo.HelpCategory);
             if (result == null)
             {
-                // check if the command is prefixed and try retreiving help by removing the prefix
+                // check if the command is prefixed and try retrieving help by removing the prefix
                 if ((cmdletInfo.Module != null) && (!string.IsNullOrEmpty(cmdletInfo.Prefix)))
                 {
                     MamlCommandHelpInfo newMamlHelpInfo = GetFromCommandCacheByRemovingPrefix(cmdletInfo.ModuleName, cmdletInfo);
