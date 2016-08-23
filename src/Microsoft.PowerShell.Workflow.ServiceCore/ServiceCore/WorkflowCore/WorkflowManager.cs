@@ -1118,7 +1118,7 @@ namespace Microsoft.PowerShell.Workflow
 
                     if ((filter.Value is string || filter.Value is WildcardPattern) && value is string)
                     {
-                        // at this point we are guaranteed that the key exists somewehere                    
+                        // at this point we are guaranteed that the key exists somewhere                    
                         WildcardPattern pattern;
                         string stringValue = filter.Value as string;
                         if (stringValue != null)
