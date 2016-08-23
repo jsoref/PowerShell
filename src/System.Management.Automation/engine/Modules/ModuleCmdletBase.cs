@@ -2540,8 +2540,8 @@ namespace Microsoft.PowerShell.Commands
             {
                 foreach (var f in fileList)
                 {
-                    string absuluteFilePath = GetAbsolutePath(moduleBase, f);
-                    manifestInfo.AddToFileList(absuluteFilePath);
+                    string absoluteFilePath = GetAbsolutePath(moduleBase, f);
+                    manifestInfo.AddToFileList(absoluteFilePath);
                 }
             }
             if (moduleList != null)
