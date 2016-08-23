@@ -2351,7 +2351,7 @@ namespace Microsoft.PowerShell.Workflow
         {
             // Workflow is currently in booked marked state
             // we will try to cancel all async operations 
-            // and then perform the termial tasks related to stop workflow
+            // and then perform the terminal tasks related to stop workflow
 
             if (Disposed)
                 return;
