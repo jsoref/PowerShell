@@ -45,7 +45,7 @@
         private string _destinationPath = null;
 
         internal Lazy<bool> SkipValidate;  //??? Seems to be a design choice. Why let a user to decide?
-        // we cannot enable skipdepedencies because this will break downlevel psget which sets skipdependencies to true
+        // we cannot enable skipdependencies because this will break downlevel psget which sets skipdependencies to true
         //internal Lazy<bool> SkipDependencies;     
         //internal ImplictLazy<bool> ContinueOnFailure;
         //internal ImplictLazy<bool> FindByCanonicalId;
