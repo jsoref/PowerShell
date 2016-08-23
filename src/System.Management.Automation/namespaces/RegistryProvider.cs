@@ -1109,7 +1109,7 @@ namespace Microsoft.PowerShell.Commands
         /// </param>
         ///
         /// <param name="recurse">
-        /// Ignored. All removes are recursive becuase the
+        /// Ignored. All removes are recursive because the
         /// registry provider does not support filters.
         /// </param>
         protected override void RemoveItem(

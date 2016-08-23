@@ -564,7 +564,7 @@ namespace Microsoft.PowerShell.Commands
 
             if (As.Equals("Stream", StringComparison.OrdinalIgnoreCase))
             {
-                // Omit xml declaration in this case becuase we will write out the declaration string in BeginProcess.
+                // Omit xml declaration in this case because we will write out the declaration string in BeginProcess.
                 xmlSettings.OmitXmlDeclaration = true;
             }
 

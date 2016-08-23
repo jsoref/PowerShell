@@ -501,7 +501,7 @@ namespace System.Management.Automation.Remoting
         /// </summary>
         /// <param name="connectData"></param>
         /// <param name="connectResponseData"></param>
-        /// The operation is being outside the statemachine becuase of multiple reasons associated with design simplicity
+        /// The operation is being outside the statemachine because of multiple reasons associated with design simplicity
         /// - Support automatic disconnect and let wsman server stack take care of connection state
         /// - The response data should not travel in transports output stream but as part of connect response
         /// - We want this operation to be synchronous

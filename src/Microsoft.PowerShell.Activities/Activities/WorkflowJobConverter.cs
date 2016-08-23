@@ -1901,7 +1901,7 @@ namespace Microsoft.PowerShell.Workflow
         /// Block variable scope prefix like "$GLOBAL:" and "$SCRIPT:". In script workflow,
         /// the only valid scope prefix is "$WORKFLOW:". When generating expression for the
         /// PowerShellValue activity, we need to remove the $WORKFLOW part. Otherwise it will
-        /// generate error during execution, becuase the prefix "WORKFLOW" is not actually 
+        /// generate error during execution, because the prefix "WORKFLOW" is not actually 
         /// supported in the PowerShell.
         /// </summary>
         /// <param name="expression"></param>

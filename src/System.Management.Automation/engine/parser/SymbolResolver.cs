@@ -70,7 +70,7 @@ namespace System.Management.Automation.Language
                 {
                     // Duplicate members are an error, but we catch that later after all types
                     // have been resolved.  We could report errors for properties here, but
-                    // we couldn't compare methods becaues overloads can't be compared until types
+                    // we couldn't compare methods because overloads can't be compared until types
                     // are resolved.
                     if (!_variableTable.ContainsKey(propertyMember.Name))
                     {

@@ -122,7 +122,7 @@ namespace System.Management.Automation.Remoting.Client
             PSRemotingTransportException e;
 
             //For the first two special error conditions, it is remotely possible that the wsmanSessionTM is null when the failures are returned 
-            //as part of command TM operations (could be returned becuase of RC retries under the hood)
+            //as part of command TM operations (could be returned because of RC retries under the hood)
             //Not worth to handle these cases seperately as there are very corner scenarios, but need to make sure wsmanSessionTM is not referenced
 
 

@@ -2600,7 +2600,7 @@ $result
             }
             catch (PipelineStoppedException)
             {
-                // powershell.Stop() is invoked becaue timeout expires, or Ctrl+C is pressed
+                // powershell.Stop() is invoked because timeout expires, or Ctrl+C is pressed
             }
             catch (ObjectDisposedException)
             {

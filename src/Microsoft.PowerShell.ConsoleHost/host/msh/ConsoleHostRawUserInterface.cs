@@ -1144,7 +1144,7 @@ namespace Microsoft.PowerShell
                 }
                 else
                 {
-                    // use ReadConsoleOutputCJK becaue checking the left and right edges of the existing output
+                    // use ReadConsoleOutputCJK because checking the left and right edges of the existing output
                     // is NOT needed
                     BufferCell[,] rightExisting = new BufferCell[existingRegion.Bottom + 1, 2];
                     ConsoleControl.ReadConsoleOutputCJK(handle, codePage,
