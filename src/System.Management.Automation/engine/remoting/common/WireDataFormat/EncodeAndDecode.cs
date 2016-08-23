@@ -914,7 +914,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// This method generates a remoting data structure handler message for
-        /// transfering a roles public key to the other side
+        /// transferring a roles public key to the other side
         /// </summary>
         /// <param name="runspacePoolId">runspace pool id</param>
         /// <param name="publicKey">public key to send across</param>

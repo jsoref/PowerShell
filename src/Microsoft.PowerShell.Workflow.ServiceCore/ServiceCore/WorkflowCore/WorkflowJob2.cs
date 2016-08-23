@@ -1716,7 +1716,7 @@ namespace Microsoft.PowerShell.Workflow
             catch (Exception e)
             {
                 // Catching all exceptions is valid here because
-                // Transfering exception with event arguments.
+                // Transferring exception with event arguments.
                 OnStartJobCompleted(new AsyncCompletedEventArgs(e, false, null));
             }
 #pragma warning restore 56500
@@ -2037,7 +2037,7 @@ namespace Microsoft.PowerShell.Workflow
             catch (Exception e)
             {
                 // Catching all exceptions is valid here because
-                // Transfering exception with event arguments.
+                // Transferring exception with event arguments.
                 OnResumeJobCompleted(new AsyncCompletedEventArgs(e, false, null));
             }
 #pragma warning restore 56500
@@ -2075,7 +2075,7 @@ namespace Microsoft.PowerShell.Workflow
             catch (Exception e)
             {
                 // Catching all exceptions is valid here because
-                // Transfering exception with event arguments.
+                // Transferring exception with event arguments.
                 OnResumeJobCompleted(new AsyncCompletedEventArgs(e, false, null));
             }
 #pragma warning restore 56500
