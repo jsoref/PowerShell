@@ -683,7 +683,7 @@ namespace Microsoft.PowerShell.Commands
         ///// <summary>
         ///// Takes a collection of file names and returns the collection
         ///// quoted.  It does not expand wildcard to actual files (as QuoteFiles does).
-        ///// It throws an error when the entered filename is different than the alllowedExtension.
+        ///// It throws an error when the entered filename is different than the allowedExtension.
         ///// If any file name falls outside the directory tree basPath a warning is issued.
         ///// </summary>
         ///// <param name="basePath">This is the path which will be used to determine whether a warning is to be displayed.</param>
