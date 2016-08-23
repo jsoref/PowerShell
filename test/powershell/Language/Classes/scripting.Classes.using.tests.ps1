@@ -324,7 +324,7 @@ using module Foo
             New-TestModule -Manifest -Name FooWithManifest -Content 'class Foo { [string] GetModuleName() { return "Foo345" } }' -Version '3.4.5' -ModulePathPrefix 'Modules2'
         }
 
-        # 'using module' behavior must be alligned with Import-Module.
+        # 'using module' behavior must be aligned with Import-Module.
         # Import-Module does the following:
         # 1) find the first directory from $env:PSMODULEPATH that contains the module
         # 2) Import highest available version of the module
