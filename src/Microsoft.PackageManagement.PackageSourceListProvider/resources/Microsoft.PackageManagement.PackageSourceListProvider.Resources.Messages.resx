@@ -371,7 +371,7 @@
   <data name="UnknownMediaType" xml:space="preserve">
     <value>Package '{0}' with Source '{1}' has unknown media type '{2}'.</value>
   </data>
-  <data name="UnsuportedUriFormat" xml:space="preserve">
+  <data name="UnsupportedUriFormat" xml:space="preserve">
     <value>The provider '{0}' does not support the Uri format: '{1}'.</value>
   </data>
   <data name="UnsupportedPackageSource" xml:space="preserve">
