@@ -198,7 +198,7 @@ namespace Microsoft.PowerShell.Workflow
                 System.Management.Automation.PowerShell currentPowerShellInstance = implementationContext.PowerShellInstance;
                 PSActivityContext psActivityContext = args.PSActivityContext;
 
-                // Non-empty guid represtents that args.ImplementationContext.EnableRemotingActivityAutoResume is true
+                // Non-empty guid represents that args.ImplementationContext.EnableRemotingActivityAutoResume is true
                 if (!runspaceId.Equals(Guid.Empty))
                 {
                     Runspace[] runspaces = null;
