@@ -13237,7 +13237,7 @@ function Update-ModuleManifest
         }
         $PrivateDataInput = Get-PrivateData -PrivateData $Data
         
-        #Repleace the PrivateData section by first locating the linenumbers of start line and endline.  
+        #Replace the PrivateData section by first locating the linenumbers of start line and endline.  
         $PrivateDataBegin = Select-String -Path $tempPath -Pattern "PrivateData ="
         $PrivateDataBeginLine = $PrivateDataBegin.LineNumber
     
