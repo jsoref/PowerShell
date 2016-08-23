@@ -188,7 +188,7 @@ namespace System.Management.Automation.Language
 
         /// <summary>
         /// Remove a single entry from the dynamic keyword collection
-        /// and clean up any assoicated data.
+        /// and clean up any associated data.
         /// </summary>
         /// <param name="name"></param>
         public static void RemoveKeyword(string name)

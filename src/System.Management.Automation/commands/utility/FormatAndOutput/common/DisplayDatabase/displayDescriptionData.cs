@@ -290,7 +290,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
         internal ComplexControlItemDefinition itemDefinition = new ComplexControlItemDefinition();
 
         /// <summary>
-        /// frame info assocated with this frame definition
+        /// frame info associated with this frame definition
         /// </summary>
         internal FrameInfoDefinition frameInfoDefinition = new FrameInfoDefinition();
     }

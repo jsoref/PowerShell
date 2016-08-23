@@ -486,7 +486,7 @@ namespace System.Management.Automation.Internal.Host
         /// </param>
         /// <remarks>
         /// This method is not thread safe. Caller should make sure of the
-        /// assosciated risks. 
+        /// associated risks. 
         /// </remarks>
         internal void SetInformationalMessageBuffers(PSInformationalBuffers informationalBuffers)
         {

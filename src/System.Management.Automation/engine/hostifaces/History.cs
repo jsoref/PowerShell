@@ -86,7 +86,7 @@ namespace Microsoft.PowerShell.Commands
         }
 
         /// <summary>
-        /// Execution status of assoicated pipeline
+        /// Execution status of associated pipeline
         /// </summary>
         /// <value></value>
         public PipelineState ExecutionStatus
