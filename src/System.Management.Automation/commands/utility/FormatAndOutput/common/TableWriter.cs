@@ -167,7 +167,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
                         count = labelDisplayCells;
                 }
                 // NOTE: we can do this because "-" is a single cell character
-                // on all devices. If changed to some other character, this assuption
+                // on all devices. If changed to some other character, this assumption
                 // would be invalidated
                 breakLine[k] = new string('-', count);
             }
