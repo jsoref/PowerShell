@@ -466,7 +466,7 @@ namespace Microsoft.PowerShell.Commands
         }
 
         /// <summary>
-        /// Do the actual connection to remote machine for Invokd-WMIMethod cmdlet and raise operation complete event.
+        /// Do the actual connection to remote machine for Invoke-WMIMethod cmdlet and raise operation complete event.
         /// </summary>
         private void ConnectInvokeWmi()
         {

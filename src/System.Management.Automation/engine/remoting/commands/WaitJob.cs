@@ -103,7 +103,7 @@ namespace Microsoft.PowerShell.Commands
                 endProcessingAction = _endProcessingAction;
             }
 
-            // Inovke action outside lock.
+            // Invoke action outside lock.
             if (endProcessingAction != null)
             {
                 endProcessingAction();
