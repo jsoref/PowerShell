@@ -135,7 +135,7 @@ namespace Microsoft.PowerShell
                                     }
                                 }
 
-                                // There is atlease 1 duplicate in m_fallbacks which was not added to
+                                // There is atleast 1 duplicate in m_fallbacks which was not added to
                                 // fallbacksForTheParent array. Resize the array to take care of  this.
                                 if (_fallbacks.Length != currentIndex)
                                 {

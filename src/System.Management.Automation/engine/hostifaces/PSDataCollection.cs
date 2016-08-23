@@ -1525,7 +1525,7 @@ namespace System.Management.Automation
                 {
                     InsertItem(psInstanceId, _data.Count, (T)o);
 
-                    // set raise events if atlease one item is
+                    // set raise events if atleast one item is
                     // added.
                     raiseEvents = true;
                 }
