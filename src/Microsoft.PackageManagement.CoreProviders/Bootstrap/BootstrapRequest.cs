@@ -373,7 +373,7 @@ namespace Microsoft.PackageManagement.Providers.Internal.Bootstrap {
                     hashAlgorithm = MD5.Create();
                     packageHash = fileTag.GetAttribute(Iso19770_2.Hash.Md5);
                 } else {
-                    //hash alroghtme not supported, we support 512, 256, md5 only 
+                    //hash algorithm not supported, we support 512, 256, md5 only 
                     Error(ErrorCategory.InvalidData, "Payload", Constants.Messages.UnsupportedHashAlgorithm, hashtag,
                         new[] {Iso19770_2.HashAlgorithm.Sha512, Iso19770_2.HashAlgorithm.Sha256, Iso19770_2.HashAlgorithm.Md5}.JoinWithComma());
                     return false;

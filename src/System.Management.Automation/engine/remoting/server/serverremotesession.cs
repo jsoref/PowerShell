@@ -495,7 +495,7 @@ namespace System.Management.Automation.Remoting
         /// If negotiation is successful and max and min runspaces in connect_runspacepool
         /// match the assiciated runspace pool parameters, it builds up server capability
         /// and runspace_initinfo in connectResponseData.
-        /// This is a version of Connect that executes the whole connect alogirithm in one single
+        /// This is a version of Connect that executes the whole connect algorithm in one single
         /// hop. 
         /// This algorithm is being executed synchronously without associating with state machine. 
         /// </summary>
