@@ -2153,7 +2153,7 @@ function Get-InstalledModule
 
 #endregion *-Module cmdlets
 
-#region Find-DscResouce cmdlet
+#region Find-DscResource cmdlet
 
 function Find-DscResource
 {
@@ -2259,7 +2259,7 @@ function Find-DscResource
     }
 }
 
-#endregion Find-DscResouce cmdlet
+#endregion Find-DscResource cmdlet
 
 #region Find-Command cmdlet
 

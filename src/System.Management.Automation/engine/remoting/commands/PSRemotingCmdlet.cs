@@ -110,7 +110,7 @@ namespace Microsoft.PowerShell.Commands
         /// </summary>
         /// <param name="resourceString">resource String which holds the message
         /// </param>
-        /// <returns>Error message loaded from appropriate resouce cache</returns>
+        /// <returns>Error message loaded from appropriate resource cache</returns>
         internal String GetMessage(string resourceString)
         {
             String message = GetMessage(resourceString, null);

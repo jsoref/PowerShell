@@ -28,7 +28,7 @@ namespace System.Management.Automation
         // Take the 'en-US' culture as an example. When retrieving resource string to construct an exception, ResourceManager calls Assembly.Load(..) in the following order to load the resource dll:
         //     1. Load assembly with culture 'en-US' (Microsoft.PowerShell.CoreCLR.AssemblyLoadContext.resources, Version=3.0.0.0, Culture=en-US, PublicKeyToken=31bf3856ad364e35)
         //     2. Load assembly with culture 'en'    (Microsoft.PowerShell.CoreCLR.AssemblyLoadContext.resources, Version=3.0.0.0, Culture=en, PublicKeyToken=31bf3856ad364e35) 
-        // When the first attempt fails, we again need to retrieve the resouce string to construct another exception, which ends up with an infinite loop.
+        // When the first attempt fails, we again need to retrieve the resource string to construct another exception, which ends up with an infinite loop.
         private const string BaseFolderDoesNotExist = "The base directory '{0}' does not exist.";
         private const string ManifestDefinitionDoesNotMatch = "Could not load file or assembly '{0}' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference.";
         private const string AssemblyPathDoesNotExist = "Could not load file or assembly '{0}' or one of its dependencies. The system cannot find the file specified.";
