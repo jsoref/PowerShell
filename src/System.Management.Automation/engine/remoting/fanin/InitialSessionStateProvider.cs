@@ -2802,7 +2802,7 @@ namespace System.Management.Automation.Remoting
         }
 
         /// <summary>
-        /// Attemps to get a string array from a hashtable
+        /// Attempts to get a string array from a hashtable
         /// </summary>
         /// <param name="hashObj"></param>
         /// <returns></returns>

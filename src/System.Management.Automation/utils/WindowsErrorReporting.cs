@@ -653,7 +653,7 @@ namespace System.Management.Automation
         /// to a defined exception. If the HRESULT maps to a defined exception, ThrowExceptionForHR
         /// creates an instance of the exception and throws it. Otherwise, it creates an instance 
         /// of System.Runtime.InteropServices.COMException, initializes the error code field with 
-        /// the HRESULT, and throws that exception. When this method is invoked, it attemps to
+        /// the HRESULT, and throws that exception. When this method is invoked, it attempts to
         /// retrieve extra information regarding the error by using the unmanaged GetErrorInfo
         /// function.
         /// </exception>
@@ -772,7 +772,7 @@ namespace System.Management.Automation
         /// to a defined exception. If the HRESULT maps to a defined exception, ThrowExceptionForHR
         /// creates an instance of the exception and throws it. Otherwise, it creates an instance 
         /// of System.Runtime.InteropServices.COMException, initializes the error code field with 
-        /// the HRESULT, and throws that exception. When this method is invoked, it attemps to
+        /// the HRESULT, and throws that exception. When this method is invoked, it attempts to
         /// retrieve extra information regarding the error by using the unmanaged GetErrorInfo
         /// function.
         /// </exception>
@@ -813,7 +813,7 @@ namespace System.Management.Automation
         /// to a defined exception. If the HRESULT maps to a defined exception, ThrowExceptionForHR
         /// creates an instance of the exception and throws it. Otherwise, it creates an instance 
         /// of System.Runtime.InteropServices.COMException, initializes the error code field with 
-        /// the HRESULT, and throws that exception. When this method is invoked, it attemps to
+        /// the HRESULT, and throws that exception. When this method is invoked, it attempts to
         /// retrieve extra information regarding the error by using the unmanaged GetErrorInfo
         /// function.
         /// </exception>
