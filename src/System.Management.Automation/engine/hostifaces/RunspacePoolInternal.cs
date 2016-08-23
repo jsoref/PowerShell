@@ -937,7 +937,7 @@ namespace System.Management.Automation.Runspaces.Internal
         }
 
         /// <summary>
-        /// Waits for the pending asynchronous BegineGetRunspace to complete. 
+        /// Waits for the pending asynchronous BeginGetRunspace to complete. 
         /// </summary>
         /// <param name="asyncResult">
         /// </param>
