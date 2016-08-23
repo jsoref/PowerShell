@@ -4313,7 +4313,7 @@ namespace System.Management.Automation
             if (parentStackFrame == null) { return null; }
 
             // Attempt to find parent script file create script block with Ast to 
-            // find correct line and offset adjustements.
+            // find correct line and offset adjustments.
             if ((_parentScriptBlockAst == null) &&
                 !string.IsNullOrEmpty(parentStackFrame.ScriptName) &&
                 System.IO.File.Exists(parentStackFrame.ScriptName))
