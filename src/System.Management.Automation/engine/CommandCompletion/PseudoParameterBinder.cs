@@ -1867,7 +1867,7 @@ namespace System.Management.Automation.Language
                         break;
                     }
 
-                    // The positional pseudo binding is processed in two different approches for parameter completion and parameter argument completion.
+                    // The positional pseudo binding is processed in two different approaches for parameter completion and parameter argument completion.
                     // - For parameter completion, we do NOT honor the default parameter set, so we can preserve potential parameters as many as possible.
                     //   Example:  
                     //           Where-Object PropertyA -<tab>
