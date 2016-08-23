@@ -5893,7 +5893,7 @@ $result
                     ThrowOutLsaError(ret, cmdlet);
                 }
 
-                // Initialize sercret key, new secret
+                // Initialize secret key, new secret
                 SAMAPI.InitLsaString(SecretKey, ref key);
                 SAMAPI.InitLsaString(newPassword, ref newData);
                 bool secretCreated = false;
