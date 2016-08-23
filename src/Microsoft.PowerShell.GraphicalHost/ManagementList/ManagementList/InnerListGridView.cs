@@ -257,7 +257,7 @@ namespace Microsoft.Management.UI.Internal
         }
 
         /// <summary>
-        /// Syncronizes AvailableColumns and Columns preserving the order from Columns that
+        /// Synchronizes AvailableColumns and Columns preserving the order from Columns that
         /// comes from the user moving Columns around.
         /// </summary>
         private void SynchronizeColumns()
