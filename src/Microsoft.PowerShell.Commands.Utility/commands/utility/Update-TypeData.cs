@@ -1412,7 +1412,7 @@ namespace Microsoft.PowerShell.Commands
 
     /// <summary>
     /// To make it easier to specify a TypeName, we add an ArgumentTransformationAttribute here.
-    /// * string: retrun the string
+    /// * string: return the string
     /// * Type: return the Type.ToString()
     /// * instance: return instance.GetType().ToString()
     /// </summary>
