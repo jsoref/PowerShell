@@ -212,7 +212,7 @@ namespace System.Management.Automation
         /// start a job. The job will be started with the parameters
         /// specified in StartParameters
         /// </summary>
-        /// <remarks>It is redudant to have a method named StartJob
+        /// <remarks>It is redundant to have a method named StartJob
         /// on a job class. However, this is done so as to avoid
         /// an FxCop violation "CA1716:IdentifiersShouldNotMatchKeywords"
         /// Stop and Resume are reserved keyworks in C# and hence cannot
