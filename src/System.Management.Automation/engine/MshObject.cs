@@ -206,7 +206,7 @@ namespace System.Management.Automation
         private static Collection<CollectionEntry<PSPropertyInfo>> s_propertyCollection = GetPropertyCollection(PSMemberViewTypes.All);
 
         /// <summary>
-        /// A collection of delegates to get Extended/Adapated/Dotnet members based on the 
+        /// A collection of delegates to get Extended/Adapted/Dotnet members based on the 
         /// <paramref name="viewType"/>
         /// </summary>
         /// <param name="viewType">
@@ -219,7 +219,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// A collection of delegates to get Extended/Adapated/Dotnet members based on the 
+        /// A collection of delegates to get Extended/Adapted/Dotnet members based on the 
         /// <paramref name="viewType"/>
         /// </summary>
         /// <param name="viewType">
@@ -293,7 +293,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// A collection of delegates to get Extended/Adapated/Dotnet properties based on the 
+        /// A collection of delegates to get Extended/Adapted/Dotnet properties based on the 
         /// <paramref name="viewType"/>
         /// </summary>
         /// <param name="viewType">
@@ -307,7 +307,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// A collection of delegates to get Extended/Adapated/Dotnet properties based on the 
+        /// A collection of delegates to get Extended/Adapted/Dotnet properties based on the 
         /// <paramref name="viewType"/>
         /// </summary>
         /// <param name="viewType">
