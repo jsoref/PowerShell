@@ -276,7 +276,7 @@ namespace Microsoft.Management.UI.Internal
             }
 
             // there is no span ending ahead of current position, so
-            // we set the current span to null to prevent unecessary comparisons against the currentSpan
+            // we set the current span to null to prevent unnecessary comparisons against the currentSpan
             currentSpan = null;
         }
 
