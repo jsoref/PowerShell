@@ -694,7 +694,7 @@ namespace Microsoft.PowerShell.Commands
                 // By default buffer size is set to 300 which would generally be sufficient in most of the cases.
                 int bufferSize = 300;
 #if DEBUG
-                // In Debug mode buffer size is initially set to 3 and if additial buffer is required, the 
+                // In Debug mode buffer size is initially set to 3 and if additional buffer is required, the 
                 // required buffer size is allocated and the WNetGetConnection API is executed with the newly 
                 // allocated buffer size.
                 bufferSize = 3;

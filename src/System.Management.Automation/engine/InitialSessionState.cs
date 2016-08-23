@@ -144,7 +144,7 @@ namespace System.Management.Automation.Runspaces
 
     /// <summary>
     /// Command class so that all the commands can derive off this one.
-    /// Adds the flexibility of adding addditional derived class,
+    /// Adds the flexibility of adding additional derived class,
     /// such as ProxyCommand for Exchange.
     /// Derived classes - Alias, Application, Cmdlet, Function, Script.
     /// </summary>
