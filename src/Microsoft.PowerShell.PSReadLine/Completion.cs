@@ -356,8 +356,8 @@ namespace Microsoft.PowerShell
             ConsoleBufferBuilder cb;
             if (Options.ShowToolTips)
             {
-                const string seperator = "- ";
-                var maxTooltipWidth = bufferWidth - minColWidth - seperator.Length;
+                const string separator = "- ";
+                var maxTooltipWidth = bufferWidth - minColWidth - separator.Length;
 
                 displayRows = matches.Count;
                 cb = new ConsoleBufferBuilder(displayRows * bufferWidth, _console);
@@ -371,7 +371,7 @@ namespace Microsoft.PowerShell
                     {
                         cb.Append(' ', spacesNeeded);
                     }
-                    cb.Append(seperator);
+                    cb.Append(separator);
                     var toolTip = HandleNewlinesForPossibleCompletions(match.ToolTip);
                     toolTip = toolTip.Length <= maxTooltipWidth
                                   ? toolTip
