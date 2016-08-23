@@ -668,7 +668,7 @@ private:
         wchar_t* wszMonadVersion = NULL;    // Allocated via ConstructPowerShellVersion || GetRegistryInfo
         wchar_t* wszTempCLRVersion = NULL;  // Allocated via GetRegistryInfo
         wchar_t* wszTempAppBase = NULL;     // Allocated via GetRegistryInfo
-        PWSTR wszMgdPlugInFileName = NULL;  // Allocted in CreateMgdPluginFileName
+        PWSTR wszMgdPlugInFileName = NULL;  // Allocated in CreateMgdPluginFileName
         unsigned int exitCode = EXIT_CODE_SUCCESS;
         PlugInException* pErrorMsg = NULL;
 
