@@ -396,7 +396,7 @@ namespace Microsoft.PowerShell.Commands
                 this.WriteWarning(warning);
             }
 
-            // add the refernces to the required assemblies
+            // add the references to the required assemblies
             options.ReferencedAssemblies.Add("System.dll");
             options.ReferencedAssemblies.Add("System.Data.dll");
             options.ReferencedAssemblies.Add("System.Xml.dll");
