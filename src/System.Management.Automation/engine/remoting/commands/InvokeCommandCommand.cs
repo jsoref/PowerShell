@@ -882,7 +882,7 @@ namespace Microsoft.PowerShell.Commands
                                     // be using protocol version 2.2. Otherwise, we skip this and assume the old behavior.
                                     if (version >= RemotingConstants.ProtocolVersionWin8RTM)
                                     {
-                                        // Supress collection behavior
+                                        // Suppress collection behavior
                                         _needToCollect = false;
                                         _needToStartSteppablePipelineOnServer = true;
                                         break;

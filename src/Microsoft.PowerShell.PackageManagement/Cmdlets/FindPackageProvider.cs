@@ -58,7 +58,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets
         public SwitchParameter IncludeDependencies { get; set; }
     
         protected override void GenerateCmdletSpecificParameters(Dictionary<string, object> unboundArguments) {
-            //this will supress the dynamic parameters from the parent classes
+            //this will suppress the dynamic parameters from the parent classes
             //Noop       
         }
 

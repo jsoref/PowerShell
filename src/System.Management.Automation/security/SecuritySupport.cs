@@ -37,7 +37,7 @@ namespace Microsoft.PowerShell
     {
         /// Unrestricted - No files must be signed.  If a file originates from the
         ///    internet, Monad provides a warning prompt to alert the user.  To
-        ///    supress this warning message, right-click on the file in File Explorer,
+        ///    suppress this warning message, right-click on the file in File Explorer,
         ///    select "Properties," and then "Unblock."
         Unrestricted = 0,
 
