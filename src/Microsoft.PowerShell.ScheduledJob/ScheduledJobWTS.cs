@@ -99,7 +99,7 @@ namespace Microsoft.PowerShell.ScheduledJob
         }
 
         /// <summary>
-        /// Retrives options for the provided task Id.
+        /// Retrieves options for the provided task Id.
         /// </summary>
         /// <param name="taskId">Task Id</param>
         /// <exception cref="ScheduledJobException">Task not found.</exception>
