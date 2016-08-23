@@ -709,7 +709,7 @@ namespace System.Management.Automation.Runspaces
 
         /// <summary>
         /// Specifies that no encryption will be used when doing remote operations over 
-        /// http. Unencrypted traffix is not allowed by default and must be enabled in 
+        /// http. Unencrypted traffic is not allowed by default and must be enabled in 
         /// the local configuration
         /// </summary>
         public bool NoEncryption { get; set; }
