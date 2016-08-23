@@ -16,7 +16,7 @@ namespace Microsoft.PowerShell.Activities
     /// <summary>
     /// The implementation of pipeline activity.
     /// This similar concept which we have in PowerShell today like Get-Process | Stop-Process.
-    /// Pipline activity will make sure the piped execution of its child acitities.
+    /// Pipline activity will make sure the piped execution of its child activities.
     /// </summary>
 #if _NOTARMBUILD_
     [Designer (typeof (PipelineDesigner))]

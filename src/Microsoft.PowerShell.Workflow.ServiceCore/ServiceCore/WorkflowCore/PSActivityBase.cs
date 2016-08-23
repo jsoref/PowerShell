@@ -2613,7 +2613,7 @@ namespace Microsoft.PowerShell.Activities
         /// <summary>
         /// The method for derived activities to return a configured instance of System.Management.Automation.PowerShell.
         /// The implementor should have added all of the commands and parameters required to launch their command through
-        /// the standard AddCommand() and AddParameter() methods. Derived activites should not manage the Runspace property
+        /// the standard AddCommand() and AddParameter() methods. Derived activities should not manage the Runspace property
         /// directly, as the PSActivity class configures the runspace afterward to enable remote connections.
         /// </summary>
         /// <param name="context">The NativeActivityContext for the currently running activity.</param>

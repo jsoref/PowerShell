@@ -2398,7 +2398,7 @@ namespace Microsoft.PowerShell.Workflow
             // Generate debug symbol information for variable assignments.
             GenerateSymbolicInformation(value.Extent);
 
-            // Visit the right-hand side of the expression for activitities
+            // Visit the right-hand side of the expression for activities
             PipelineAst rightPipeline = value as PipelineAst;
             if (rightPipeline != null)
             {
