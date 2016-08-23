@@ -3970,17 +3970,17 @@ function Register-PSRepository
     {
         if (Get-Variable -Name SourceLocation -ErrorAction SilentlyContinue)
         {
-            Set-Variable -Name selctedProviderName -value $null -Scope 1
+            Set-Variable -Name selectedProviderName -value $null -Scope 1
 
             if(Get-Variable -Name PackageManagementProvider -ErrorAction SilentlyContinue)
             {
-                $selctedProviderName = $PackageManagementProvider
-                $null = Get-DynamicParameters -Location $SourceLocation -PackageManagementProvider ([REF]$selctedProviderName)
+                $selectedProviderName = $PackageManagementProvider
+                $null = Get-DynamicParameters -Location $SourceLocation -PackageManagementProvider ([REF]$selectedProviderName)
             }
             else
             {
-                $dynamicParameters = Get-DynamicParameters -Location $SourceLocation -PackageManagementProvider ([REF]$selctedProviderName)
-                Set-Variable -Name PackageManagementProvider -Value $selctedProviderName -Scope 1
+                $dynamicParameters = Get-DynamicParameters -Location $SourceLocation -PackageManagementProvider ([REF]$selectedProviderName)
+                Set-Variable -Name PackageManagementProvider -Value $selectedProviderName -Scope 1
                 $null = $dynamicParameters
             }
         }
@@ -4062,9 +4062,9 @@ function Register-PSRepository
             {            
                 $providerName = $PackageManagementProvider
             }
-            elseif($selctedProviderName)
+            elseif($selectedProviderName)
             {
-                $providerName = $selctedProviderName
+                $providerName = $selectedProviderName
             }
             else
             {
