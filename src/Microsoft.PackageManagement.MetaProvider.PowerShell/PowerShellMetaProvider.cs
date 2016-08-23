@@ -112,7 +112,7 @@ namespace Microsoft.PackageManagement.MetaProvider.PowerShell.Internal {
         private static string _powershellProviderFunctionsPath;
     
         //The reason of using 'object' instead of' PowerShellPackageProvider' is that PowerShellPackageProvider is a provider
-        //that is not visiable to the PackageManagement.
+        //that is not visible to the PackageManagement.
         private readonly IDictionary<string, object> _availableProviders = new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
         private readonly IDictionary<string, List<ProviderItem>> _psProviderCacheTable = new Dictionary<string, List<ProviderItem>>(StringComparer.OrdinalIgnoreCase);
         internal const string PowerShellGet = "PowerShellGet";
