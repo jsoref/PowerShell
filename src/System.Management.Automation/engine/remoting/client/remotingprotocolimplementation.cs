@@ -575,7 +575,7 @@ namespace System.Management.Automation.Remoting
                     //Non Session messages do not change the state of the statemachine. 
                     //However instead of forwarding them to Runspace/pipeline here, an
                     //event is raised in state machine which verified that state is
-                    //suitable for accpeting these messages. if state is suitable statemachine
+                    //suitable for accepting these messages. if state is suitable statemachine
                     //will call DoMessageForwading which will forward the messages appropriately
                     RemoteSessionStateMachineEventArgs msgRcvArg = new RemoteSessionStateMachineEventArgs(RemoteSessionEvent.MessageReceived, null);
                     if (StateMachine.CanByPassRaiseEvent(msgRcvArg))
