@@ -3421,7 +3421,7 @@ namespace Microsoft.PowerShell.Activities
                 commandToRun.Runspace.StateChanged += psActivityContext.HandleRunspaceStateChanged;
 
                 // Invocation state can be in running or final state in reconnect scenario
-                // Command should be invoked only when invocation state is not strted,
+                // Command should be invoked only when invocation state is not started,
                 // during the normal scenario, invocation state is always NotStarted as runspace is just assigned
                 if (commandToRun.InvocationStateInfo.State == PSInvocationState.NotStarted)
                 {
