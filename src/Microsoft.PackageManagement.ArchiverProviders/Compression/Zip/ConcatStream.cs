@@ -155,7 +155,7 @@ namespace Microsoft.PackageManagement.Archivers.Internal.Compression.Zip
 
 #if !CORECLR
         /// <summary>
-        /// Closes underying stream
+        /// Closes underlying stream
         /// </summary>
         public override void Close()
         {
