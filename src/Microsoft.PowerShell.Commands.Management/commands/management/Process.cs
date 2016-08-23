@@ -970,7 +970,7 @@ namespace Microsoft.PowerShell.Commands
         }
 
         /// <summary>
-        /// Name of the processes to wait on for termintation
+        /// Name of the processes to wait on for termination
         /// </summary>
         [Parameter(
             ParameterSetName = "Name",
@@ -1570,7 +1570,7 @@ namespace Microsoft.PowerShell.Commands
         }
 
         /// <summary>
-        /// Name of the processes to wait on for termintation
+        /// Name of the processes to wait on for termination
         /// </summary>
         [Parameter(
             ParameterSetName = "Name",
