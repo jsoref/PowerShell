@@ -170,7 +170,7 @@ namespace System.Management.Automation.Runspaces
                         }
                         else
                         {
-                            apartmentState = this.LocalRunspace.ApartmentState; // use the Runspace apartmet state
+                            apartmentState = this.LocalRunspace.ApartmentState; // use the Runspace apartment state
                         }
 
                         if (apartmentState != ApartmentState.Unknown)
