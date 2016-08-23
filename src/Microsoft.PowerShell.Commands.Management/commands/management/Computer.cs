@@ -1533,9 +1533,9 @@ namespace Microsoft.PowerShell.Commands
                         {
                             foreach (int id in sequenceList.Keys)
                             {
-                                string message = StringUtil.Format(ComputerResources.NoResorePoint, id);
+                                string message = StringUtil.Format(ComputerResources.NoRestorePoint, id);
                                 ArgumentException e = new ArgumentException(message);
-                                ErrorRecord errorrecord = new ErrorRecord(e, "NoResorePoint", ErrorCategory.InvalidArgument, null);
+                                ErrorRecord errorrecord = new ErrorRecord(e, "NoRestorePoint", ErrorCategory.InvalidArgument, null);
                                 WriteError(errorrecord);
                             }
                         }
