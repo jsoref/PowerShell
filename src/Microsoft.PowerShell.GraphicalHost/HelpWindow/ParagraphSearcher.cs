@@ -203,7 +203,7 @@ namespace Microsoft.Management.UI.Internal
         {
             Bold parentBold = run.Parent as Bold;
             Paragraph parentParagraph = (parentBold != null ? parentBold.Parent : run.Parent) as Paragraph;
-            Debug.Assert(parentParagraph != null, "the documents we are saerching are built with ParagraphBuilder, which builds the document like this");
+            Debug.Assert(parentParagraph != null, "the documents we are searching are built with ParagraphBuilder, which builds the document like this");
             return parentParagraph;
         }
 
