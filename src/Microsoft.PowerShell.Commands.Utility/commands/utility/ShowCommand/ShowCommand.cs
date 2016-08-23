@@ -532,7 +532,7 @@ namespace Microsoft.PowerShell.Commands
                     return false;
                 }
 
-                // Enter is written separetely, because if this is a command, and one of the characters in the command was not written
+                // Enter is written separately, because if this is a command, and one of the characters in the command was not written
                 // (written != strLen) it is desireable to fail (return false) before typing enter and running the command
                 if (newLine)
                 {

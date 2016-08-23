@@ -1018,7 +1018,7 @@ namespace Microsoft.PowerShell.Commands
         private static string s_frameworkFolder = System.IO.Path.GetDirectoryName(typeof(object).GetTypeInfo().Assembly.Location);
 
         // there are two different assemblies: framework contract and framework implementation.
-        // Version 1.1.1 of Microsoft.CodeAnalysis doesn't provide a good way to handle contract separetely from implementation.
+        // Version 1.1.1 of Microsoft.CodeAnalysis doesn't provide a good way to handle contract separately from implementation.
         // To simplify user experience we always add both of them to references.
         // 1) It's a legitimate scenario, when user provides a custom referenced assembly that was built against the contract assembly 
         // (i.e. System.Management.Automation), so we need the contract one.
