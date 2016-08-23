@@ -141,7 +141,7 @@ namespace Microsoft.PowerShell.Commands
                 {
                     Job2 job2 = job as Job2;
                     // if it is a Job2, then async is supported
-                    // stop the job asynchornously
+                    // stop the job asynchronously
                     if (job2 != null)
                     {
                         _cleanUpActions.Add(job2, HandleStopJobCompleted);

@@ -2056,7 +2056,7 @@ namespace System.Management.Automation.Runspaces
         /// <summary>
         /// Create a process through native Win32 APIs and return StdIn, StdOut, StdError reader/writers
         /// This needs to be done via Win32 APIs because managed code creates anonymous synchronous pipes 
-        /// for redirected StdIn/Out and SSH (and PSRP) require asynchrous (overlapped) pipes, which must
+        /// for redirected StdIn/Out and SSH (and PSRP) require asynchronous (overlapped) pipes, which must
         /// be through named pipes.  Managed code for named pipes is unreliable and so this is done via
         /// P-Invoking native APIs.
         /// </summary>

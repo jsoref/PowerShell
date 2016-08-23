@@ -45,7 +45,7 @@ namespace System.Management.Automation
     /// <remarks>The following are some of the notes about
     /// why the asynchronous operations are provided this way
     /// in this class. There are two possible options in which
-    /// asynchornous support can be provided:
+    /// asynchronous support can be provided:
     ///     1. Classical pattern (Begin and End)
     ///     2. Event based pattern
     ///     

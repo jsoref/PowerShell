@@ -1313,7 +1313,7 @@ namespace Microsoft.PowerShell.Commands
         Host = 1,
 
         /// <summary>
-        /// Asyncronous mode.  Receive-PSSession ouput data goes to returned job object.
+        /// Asynchronous mode.  Receive-PSSession ouput data goes to returned job object.
         /// </summary>
         Job = 2
     }

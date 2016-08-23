@@ -884,7 +884,7 @@ namespace Microsoft.PowerShell.Commands
                 if (!job.IsFinishedState(job.JobStateInfo.State))
                 {
                     // if it is a Job2, then async is supported
-                    // stop the job asynchornously
+                    // stop the job asynchronously
                     if (job2 != null)
                     {
                         _cleanUpActions.Add(job2, HandleStopJobCompleted);
