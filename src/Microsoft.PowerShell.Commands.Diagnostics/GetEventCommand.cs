@@ -816,7 +816,7 @@ namespace Microsoft.PowerShell.Commands
 
         //
         // CreateSession creates an EventLogSession connected to a target machine or localhost.
-        // If _credential argment is PSCredential.Empty, the session will be created for the current context.
+        // If _credential argument is PSCredential.Empty, the session will be created for the current context.
         //
         private EventLogSession CreateSession()
         {

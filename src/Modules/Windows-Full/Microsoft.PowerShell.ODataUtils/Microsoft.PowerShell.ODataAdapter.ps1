@@ -55,7 +55,7 @@ function ParseMetaData
     )
 
     # $metaDataUri is already validated at the cmdlet layer.
-    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArguementNullError -f "PSCmdlet", "ParseMetadata") }
+    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArgumentNullError -f "PSCmdlet", "ParseMetadata") }
 
     if($metadataXml -eq $null)
     {
@@ -341,9 +341,9 @@ function VerifyMetaData
     )
 
     # $metaDataUri & $cmdletAdapter is already validated at the cmdlet layer.
-    if($metaData -eq $null) { throw ($LocalizedData.ArguementNullError -f "metadata", "VerifyMetaData") }
-    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArguementNullError -f "PSCmdlet", "VerifyMetaData") }
-    if($progressBarStatus -eq $null) { throw ($LocalizedData.ArguementNullError -f "ProgressBarStatus", "VerifyMetaData") }
+    if($metaData -eq $null) { throw ($LocalizedData.ArgumentNullError -f "metadata", "VerifyMetaData") }
+    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArgumentNullError -f "PSCmdlet", "VerifyMetaData") }
+    if($progressBarStatus -eq $null) { throw ($LocalizedData.ArgumentNullError -f "ProgressBarStatus", "VerifyMetaData") }
 
     Write-Verbose $LocalizedData.VerboseVerifyingMetadata
 
@@ -522,9 +522,9 @@ function GenerateClientSideProxyModule
     )
 
     # $uri, $outputModule, $metaDataUri, $createRequestMethod, $updateRequestMethod, & $cmdletAdapter is already validated at the cmdlet layer.
-    if($metaData -eq $null) { throw ($LocalizedData.ArguementNullError -f "metadata", "GenerateClientSideProxyModule") }
-    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArguementNullError -f "PSCmdlet", "GenerateClientSideProxyModule") }
-    if($progressBarStatus -eq $null) { throw ($LocalizedData.ArguementNullError -f "ProgressBarStatus", "GenerateClientSideProxyModule") }
+    if($metaData -eq $null) { throw ($LocalizedData.ArgumentNullError -f "metadata", "GenerateClientSideProxyModule") }
+    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArgumentNullError -f "PSCmdlet", "GenerateClientSideProxyModule") }
+    if($progressBarStatus -eq $null) { throw ($LocalizedData.ArgumentNullError -f "ProgressBarStatus", "GenerateClientSideProxyModule") }
 
     # This function performs the following set of tasks 
     # while creating the client side proxy module:
@@ -603,10 +603,10 @@ function GenerateCRUDProxyCmdlet
     )
 
     # $uri, $outputModule, $metaDataUri, $createRequestMethod, $updateRequestMethod, & $cmdletAdapter is already validated at the cmdlet layer.
-    if($entitySet -eq $null) { throw ($LocalizedData.ArguementNullError -f "EntitySet", "GenerateClientSideProxyModule") }
-    if($metaData -eq $null) { throw ($LocalizedData.ArguementNullError -f "metadata", "GenerateClientSideProxyModule") }
-    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArguementNullError -f "PSCmdlet", "GenerateClientSideProxyModule") }
-    if($progressBarStatus -eq $null) { throw ($LocalizedData.ArguementNullError -f "ProgressBarStatus", "GenerateClientSideProxyModule") }
+    if($entitySet -eq $null) { throw ($LocalizedData.ArgumentNullError -f "EntitySet", "GenerateClientSideProxyModule") }
+    if($metaData -eq $null) { throw ($LocalizedData.ArgumentNullError -f "metadata", "GenerateClientSideProxyModule") }
+    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArgumentNullError -f "PSCmdlet", "GenerateClientSideProxyModule") }
+    if($progressBarStatus -eq $null) { throw ($LocalizedData.ArgumentNullError -f "ProgressBarStatus", "GenerateClientSideProxyModule") }
 
     $entitySetName = $entitySet.Name 
     if(($resourceNameMapping -ne $null) -and 
@@ -744,8 +744,8 @@ function GenerateGetProxyCmdlet
     )
     
     # $cmdletAdapter is already validated at the cmdlet layer.
-    if($xmlWriter -eq $null) { throw ($LocalizedData.ArguementNullError -f "xmlWriter", "GenerateGetProxyCmdlet") }
-    if($metaData -eq $null) { throw ($LocalizedData.ArguementNullError -f "metadata", "GenerateGetProxyCmdlet") }
+    if($xmlWriter -eq $null) { throw ($LocalizedData.ArgumentNullError -f "xmlWriter", "GenerateGetProxyCmdlet") }
+    if($metaData -eq $null) { throw ($LocalizedData.ArgumentNullError -f "metadata", "GenerateGetProxyCmdlet") }
 
     $xmlWriter.WriteStartElement('InstanceCmdlets')
         $xmlWriter.WriteStartElement('GetCmdletParameters')
@@ -898,8 +898,8 @@ function GenerateNewProxyCmdlet
     )
 
     # $cmdletAdapter is already validated at the cmdlet layer.
-    if($xmlWriter -eq $null) { throw ($LocalizedData.ArguementNullError -f "xmlWriter", "GenerateNewProxyCmdlet") }
-    if($metaData -eq $null) { throw ($LocalizedData.ArguementNullError -f "metadata", "GenerateNewProxyCmdlet") }
+    if($xmlWriter -eq $null) { throw ($LocalizedData.ArgumentNullError -f "xmlWriter", "GenerateNewProxyCmdlet") }
+    if($metaData -eq $null) { throw ($LocalizedData.ArgumentNullError -f "metadata", "GenerateNewProxyCmdlet") }
 
     $xmlWriter.WriteStartElement('Cmdlet')
         $xmlWriter.WriteStartElement('CmdletMetadata')
@@ -955,8 +955,8 @@ function GenerateRemoveProxyCmdlet
     )
 
     # $metaData, $cmdletAdapter & $cmdletAdapter are already validated at the cmdlet layer.
-    if($xmlWriter -eq $null) { throw ($LocalizedData.ArguementNullError -f "xmlWriter", "GenerateRemoveProxyCmdlet") }
-    if($metaData -eq $null) { throw ($LocalizedData.ArguementNullError -f "metadata", "GenerateRemoveProxyCmdlet") }
+    if($xmlWriter -eq $null) { throw ($LocalizedData.ArgumentNullError -f "xmlWriter", "GenerateRemoveProxyCmdlet") }
+    if($metaData -eq $null) { throw ($LocalizedData.ArgumentNullError -f "metadata", "GenerateRemoveProxyCmdlet") }
 
     $xmlWriter.WriteStartElement('Cmdlet')
         $xmlWriter.WriteStartElement('CmdletMetadata')
@@ -1030,10 +1030,10 @@ function GenerateActionProxyCmdlet
     )
 
     # $metaData is already validated at the cmdlet layer.
-    if($xmlWriter -eq $null) { throw ($LocalizedData.ArguementNullError -f "xmlWriter", "GenerateActionProxyCmdlet") }
-    if($metaData -eq $null) { throw ($LocalizedData.ArguementNullError -f "metadata", "GenerateActionProxyCmdlet") }
-    if($action -eq $null) { throw ($LocalizedData.ArguementNullError -f "Action", "GenerateActionProxyCmdlet") }
-    if($noun -eq $null) { throw ($LocalizedData.ArguementNullError -f "Noun", "GenerateActionProxyCmdlet") }
+    if($xmlWriter -eq $null) { throw ($LocalizedData.ArgumentNullError -f "xmlWriter", "GenerateActionProxyCmdlet") }
+    if($metaData -eq $null) { throw ($LocalizedData.ArgumentNullError -f "metadata", "GenerateActionProxyCmdlet") }
+    if($action -eq $null) { throw ($LocalizedData.ArgumentNullError -f "Action", "GenerateActionProxyCmdlet") }
+    if($noun -eq $null) { throw ($LocalizedData.ArgumentNullError -f "Noun", "GenerateActionProxyCmdlet") }
 
     $xmlWriter.WriteStartElement('Cmdlet')
 
@@ -1127,7 +1127,7 @@ function GenerateServiceActionProxyCmdlet
     )
 
     # $uri is already validated at the cmdlet layer.
-    if($metaData -eq $null) { throw ($LocalizedData.ArguementNullError -f "metadata", "GenerateServiceActionProxyCmdlet") }
+    if($metaData -eq $null) { throw ($LocalizedData.ArgumentNullError -f "metadata", "GenerateServiceActionProxyCmdlet") }
 
     $xmlWriter = New-Object System.XMl.XmlTextWriter($path,$Null)
 
@@ -1189,9 +1189,9 @@ function GenerateModuleManifest
         [System.Management.Automation.PSCmdlet] $callerPSCmdlet
     )
 
-    if($metaData -eq $null) { throw ($LocalizedData.ArguementNullError -f "metadata", "GenerateModuleManifest") }
-    if($modulePath -eq $null) { throw ($LocalizedData.ArguementNullError -f "ModulePath", "GenerateModuleManifest") }
-    if($progressBarStatus -eq $null) { throw ($LocalizedData.ArguementNullError -f "ProgressBarStatus", "GenerateModuleManifest") }
+    if($metaData -eq $null) { throw ($LocalizedData.ArgumentNullError -f "metadata", "GenerateModuleManifest") }
+    if($modulePath -eq $null) { throw ($LocalizedData.ArgumentNullError -f "ModulePath", "GenerateModuleManifest") }
+    if($progressBarStatus -eq $null) { throw ($LocalizedData.ArgumentNullError -f "ProgressBarStatus", "GenerateModuleManifest") }
 
     $NestedModules = @()
     foreach ($entitySet in $metaData.EntitySets)
@@ -1260,9 +1260,9 @@ function AddDerivedTypes
     )
 
     # $metaData is already validated at the cmdlet layer.
-    if($baseType -eq $null) { throw ($LocalizedData.ArguementNullError -f "BaseType", "AddDerivedTypes") }
-    if($entityAndComplexTypesQueue -eq $null) { throw ($LocalizedData.ArguementNullError -f "EntityAndComplexTypesQueue", "AddDerivedTypes") }
-    if($namespace -eq $null) { throw ($LocalizedData.ArguementNullError -f "Namespace", "AddDerivedTypes") }
+    if($baseType -eq $null) { throw ($LocalizedData.ArgumentNullError -f "BaseType", "AddDerivedTypes") }
+    if($entityAndComplexTypesQueue -eq $null) { throw ($LocalizedData.ArgumentNullError -f "EntityAndComplexTypesQueue", "AddDerivedTypes") }
+    if($namespace -eq $null) { throw ($LocalizedData.ArgumentNullError -f "Namespace", "AddDerivedTypes") }
 
     $baseTypeFullName = $baseType.Namespace + '.' + $baseType.Name
 
@@ -1303,8 +1303,8 @@ function ParseMetadataTypeDefinition
     )
 
     # $metaData is already validated at the cmdlet layer.
-    if($metadataEntityDefinition -eq $null) { throw ($LocalizedData.ArguementNullError -f "MetadataEntityDefinition", "ParseMetadataTypeDefinition") }
-    if($namespace -eq $null) { throw ($LocalizedData.ArguementNullError -f "Namespace", "ParseMetadataTypeDefinition") }
+    if($metadataEntityDefinition -eq $null) { throw ($LocalizedData.ArgumentNullError -f "MetadataEntityDefinition", "ParseMetadataTypeDefinition") }
+    if($namespace -eq $null) { throw ($LocalizedData.ArgumentNullError -f "Namespace", "ParseMetadataTypeDefinition") }
 
     $newEntityType = [ODataUtils.EntityType] @{
         "Namespace" = $namespace;
@@ -1371,7 +1371,7 @@ function GetAllProperties
         [switch] $IncludeOnlyNavigationProperties 
     )
 
-    if($entityType -eq $null) { throw ($LocalizedData.ArguementNullError -f "EntityType", "GetAllProperties") }
+    if($entityType -eq $null) { throw ($LocalizedData.ArgumentNullError -f "EntityType", "GetAllProperties") }
 
     $requestedProperties = @()
 
@@ -1410,7 +1410,7 @@ function SplitNamespaceAndName
         [string] $fullyQualifiedName
     )
 
-    if($fullyQualifiedName -eq $null) { throw ($LocalizedData.ArguementNullError -f "FUllyQualifiedName", "SplitNamespaceAndName") }
+    if($fullyQualifiedName -eq $null) { throw ($LocalizedData.ArgumentNullError -f "FUllyQualifiedName", "SplitNamespaceAndName") }
 
     $sa = $fullyQualifiedName -split "(.*)\.(.*)"
 
@@ -1447,7 +1447,7 @@ function GetEntitySetForEntityType
     )
 
     # $metaData is already validated at the cmdlet layer.
-    if($entityType -eq $null) { throw ($LocalizedData.ArguementNullError -f "EntityType", "GetEntitySetForEntityType") }
+    if($entityType -eq $null) { throw ($LocalizedData.ArgumentNullError -f "EntityType", "GetEntitySetForEntityType") }
 
     $result = $metaData.EntitySets | ? { ($_.Type.Namespace -eq $entityType.Namespace) -and ($_.Type.Name -eq $entityType.Name) }
 
@@ -1511,7 +1511,7 @@ function GetAssociatedType
     )
 
     # $metaData is already validated at the cmdlet layer.
-    if($navProperty -eq $null) { throw ($LocalizedData.ArguementNullError -f "NavigationProperty", "GetAssociatedType") }
+    if($navProperty -eq $null) { throw ($LocalizedData.ArgumentNullError -f "NavigationProperty", "GetAssociatedType") }
 
     $associationName = $navProperty.AssociationName
     $association = $Metadata.Associations | ? { $_.Name -eq $associationName }
@@ -1565,7 +1565,7 @@ function AddParametersNode
         [Hashtable] $complexTypeMapping
     )
 
-    if($xmlWriter -eq $null) { throw ($LocalizedData.ArguementNullError -f "xmlWriter", "AddParametersNode") }
+    if($xmlWriter -eq $null) { throw ($LocalizedData.ArgumentNullError -f "xmlWriter", "AddParametersNode") }
 
     if(($keyProperties.Length -gt 0) -or 
        ($mandatoryProperties.Length -gt 0) -or 
@@ -1676,9 +1676,9 @@ function GenerateComplexTypeDefination
     )
 
     #metadataUri, $OutputModule & $cmdletAdapter are already validated at the cmdlet layer.
-    if($typeDefinationFileName -eq $null) { throw ($LocalizedData.ArguementNullError -f "TypeDefinationFileName", "GenerateComplexTypeDefination") }
-    if($metaData -eq $null) { throw ($LocalizedData.ArguementNullError -f "metadata", "GenerateComplexTypeDefination") }
-    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArguementNullError -f "PSCmdlet", "GenerateComplexTypeDefination") }
+    if($typeDefinationFileName -eq $null) { throw ($LocalizedData.ArgumentNullError -f "TypeDefinationFileName", "GenerateComplexTypeDefination") }
+    if($metaData -eq $null) { throw ($LocalizedData.ArgumentNullError -f "metadata", "GenerateComplexTypeDefination") }
+    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArgumentNullError -f "PSCmdlet", "GenerateComplexTypeDefination") }
 
     $Path = "$OutputModule\$typeDefinationFileName"
 
@@ -1803,7 +1803,7 @@ function ValidateComplexTypeIdentifier
         [System.Management.Automation.PSCmdlet] $callerPSCmdlet
     )
 
-    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArguementNullError -f "PSCmdlet", "ValidateComplexTypeIdentifier") }
+    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArgumentNullError -f "PSCmdlet", "ValidateComplexTypeIdentifier") }
 
     if($isNameSpaceName)
     {

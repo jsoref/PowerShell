@@ -1805,7 +1805,7 @@ namespace System.Management.Automation
             NativeCommandArgumentCompletion(commandName, parameter.Parameter, result, commandAst, context, boundArguments);
         }
 
-        private static IEnumerable<PSTypeName> NativeCommandArgumentCompletion_InferTypesOfArugment(
+        private static IEnumerable<PSTypeName> NativeCommandArgumentCompletion_InferTypesOfArgument(
             Dictionary<string, AstParameterArgumentPair> boundArguments,
             CommandAst commandAst,
             CompletionContext context,
@@ -2527,7 +2527,7 @@ namespace System.Management.Automation
             else if (boundArguments != null && boundArguments.ContainsKey("InputObject"))
             {
                 gotInstance = true;
-                cimClassTypeNames = NativeCommandArgumentCompletion_InferTypesOfArugment(boundArguments, commandAst, context, "InputObject");
+                cimClassTypeNames = NativeCommandArgumentCompletion_InferTypesOfArgument(boundArguments, commandAst, context, "InputObject");
             }
 
             if (cimClassTypeNames != null)

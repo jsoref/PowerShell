@@ -1948,7 +1948,7 @@ namespace Microsoft.PowerShell.Activities
 
             // this is expected when there would be a disconnected execution
             // here we expects the PSActivityHostArguments to be passed
-            // agrument contains the result from the execution
+            // argument contains the result from the execution
             PSResumableActivityContext arguments = null;
             if (value != null && value.GetType() == typeof(PSResumableActivityContext))
             {

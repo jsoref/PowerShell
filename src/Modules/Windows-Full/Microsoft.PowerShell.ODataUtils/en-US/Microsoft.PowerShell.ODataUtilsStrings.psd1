@@ -4,7 +4,7 @@ ConvertFrom-StringData @'
 ###PSLOC
 SelectedAdapter=Dot sourcing '{0}'.
 ArchitectureNotSupported=This module is not supported on your processor architecture ({0}).
-ArguementNullError=Failed to generate proxy as '{0}' is pointing to $null in '{1}'.
+ArgumentNullError=Failed to generate proxy as '{0}' is pointing to $null in '{1}'.
 EmptyMetadata=Read metadata was empty. Url: {0}.
 InvalidEndpointAddress=Invalid endpoint address ({0}). Web response with status code '{1}' was obtained while accessing this endpoint address.
 NoEntitySets=Metadata from URI '{0}' does not contain Entity Sets. No output will be written.

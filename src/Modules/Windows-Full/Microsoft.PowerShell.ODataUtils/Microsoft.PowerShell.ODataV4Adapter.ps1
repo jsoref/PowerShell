@@ -84,7 +84,7 @@ function GetTypeInfo
         [Hashtable] $Headers
     )
 
-    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArguementNullError -f "callerPSCmdlet", "GetTypeInfo") }
+    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArgumentNullError -f "callerPSCmdlet", "GetTypeInfo") }
 
     $metadataSet = New-Object System.Collections.ArrayList
     $metadataXML = GetMetaData $MetadataUri $callerPSCmdlet $ODataEndpointProxyParameters.Credential $Headers $ODataEndpointProxyParameters.AllowUnsecureConnection
@@ -116,7 +116,7 @@ function AddMetadataToMetadataSet
         $NewMetadata
     )
 
-    if($NewMetadata -eq $null) { throw ($LocalizedData.ArguementNullError -f "NewMetadata", "AddMetadataToMetadataSet") }
+    if($NewMetadata -eq $null) { throw ($LocalizedData.ArgumentNullError -f "NewMetadata", "AddMetadataToMetadataSet") }
 
     if ($NewMetadata.GetType().Name -eq 'MetadataV4')
     {
@@ -298,7 +298,7 @@ function ParseEntityTypes
         [string] $Alias
     )
 
-    if($SchemaXML -eq $null) { throw ($LocalizedData.ArguementNullError -f "SchemaXML", "ParseEntityTypes") }
+    if($SchemaXML -eq $null) { throw ($LocalizedData.ArgumentNullError -f "SchemaXML", "ParseEntityTypes") }
 
     foreach ($entityType in $SchemaXML.EntityType)
     {
@@ -340,7 +340,7 @@ function ParseComplexTypes
         [string] $Alias
     )
 
-    if($SchemaXML -eq $null) { throw ($LocalizedData.ArguementNullError -f "SchemaXML", "ParseComplexTypes") }
+    if($SchemaXML -eq $null) { throw ($LocalizedData.ArgumentNullError -f "SchemaXML", "ParseComplexTypes") }
     
     foreach ($complexType in $SchemaXML.ComplexType)
     {
@@ -382,7 +382,7 @@ function ParseTypeDefinitions
         [string] $Alias
     )
     
-    if($SchemaXML -eq $null) { throw ($LocalizedData.ArguementNullError -f "SchemaXML", "ParseTypeDefinitions") }
+    if($SchemaXML -eq $null) { throw ($LocalizedData.ArgumentNullError -f "SchemaXML", "ParseTypeDefinitions") }
     
 
     foreach ($typeDefinition in $SchemaXML.TypeDefinition)
@@ -409,7 +409,7 @@ function ParseEnumTypes
         [ODataUtils.MetadataV4] $Metadata
     )
 
-    if($SchemaXML -eq $null) { throw ($LocalizedData.ArguementNullError -f "SchemaXML", "ParseEnumTypes") }
+    if($SchemaXML -eq $null) { throw ($LocalizedData.ArgumentNullError -f "SchemaXML", "ParseEnumTypes") }
     
     foreach ($enum in $SchemaXML.EnumType)
     {        
@@ -486,7 +486,7 @@ function ParseSingletonTypes
         [ODataUtils.MetadataV4] $Metadata
     )
 
-    if($SchemaEntityContainerXML -eq $null) { throw ($LocalizedData.ArguementNullError -f "SchemaEntityContainerXML", "ParseSingletonTypes") }
+    if($SchemaEntityContainerXML -eq $null) { throw ($LocalizedData.ArgumentNullError -f "SchemaEntityContainerXML", "ParseSingletonTypes") }
     
     foreach ($singleton in $SchemaEntityContainerXML.Singleton)
     {
@@ -529,7 +529,7 @@ function ParseEntitySets
         [string] $Alias
     )
     
-    if($SchemaEntityContainerXML -eq $null) { throw ($LocalizedData.ArguementNullError -f "SchemaEntityContainerXML", "ParseEntitySets") }
+    if($SchemaEntityContainerXML -eq $null) { throw ($LocalizedData.ArgumentNullError -f "SchemaEntityContainerXML", "ParseEntitySets") }
 
     $entityTypeToEntitySetMapping = @{};
     foreach ($entitySet in $SchemaEntityContainerXML.EntitySet)
@@ -570,7 +570,7 @@ function ParseActions
         [ODataUtils.MetadataV4] $Metadata
     )
 
-    if($SchemaActionsXML -eq $null) { throw ($LocalizedData.ArguementNullError -f "SchemaActionsXML", "ParseActions") }
+    if($SchemaActionsXML -eq $null) { throw ($LocalizedData.ArgumentNullError -f "SchemaActionsXML", "ParseActions") }
     
     foreach ($action in $SchemaActionsXML)
     {
@@ -627,7 +627,7 @@ function ParseFunctions
         [ODataUtils.MetadataV4] $Metadata
     )
 
-    if($SchemaFunctionsXML -eq $null) { throw ($LocalizedData.ArguementNullError -f "SchemaFunctionsXML", "ParseFunctions") }
+    if($SchemaFunctionsXML -eq $null) { throw ($LocalizedData.ArgumentNullError -f "SchemaFunctionsXML", "ParseFunctions") }
     
     foreach ($function in $SchemaFunctionsXML)
     {
@@ -699,7 +699,7 @@ function ParseMetadata
         [System.Collections.ArrayList] $MetadataSet
     )
 
-    if($MetadataXML -eq $null) { throw ($LocalizedData.ArguementNullError -f "MetadataXML", "ParseMetadata") }
+    if($MetadataXML -eq $null) { throw ($LocalizedData.ArgumentNullError -f "MetadataXML", "ParseMetadata") }
 
     # This is a processing queue for those types that require base types that haven't been defined yet
     $entityAndComplexTypesQueue = @{}
@@ -770,8 +770,8 @@ function VerifyMetadata
         [string] $progressBarStatus
     )
 
-    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArguementNullError -f "PSCmdlet", "VerifyMetaData") }
-    if($progressBarStatus -eq $null) { throw ($LocalizedData.ArguementNullError -f "ProgressBarStatus", "VerifyMetaData") }
+    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArgumentNullError -f "PSCmdlet", "VerifyMetaData") }
+    if($progressBarStatus -eq $null) { throw ($LocalizedData.ArgumentNullError -f "ProgressBarStatus", "VerifyMetaData") }
 
     Write-Verbose $LocalizedData.VerboseVerifyingMetadata
 
@@ -979,9 +979,9 @@ function AddDerivedTypes {
     [string] $namespace
     )
 
-    if($baseType -eq $null) { throw ($LocalizedData.ArguementNullError -f "BaseType", "AddDerivedTypes") }
-    if($entityAndComplexTypesQueue -eq $null) { throw ($LocalizedData.ArguementNullError -f "EntityAndComplexTypesQueue", "AddDerivedTypes") }
-    if($namespace -eq $null) { throw ($LocalizedData.ArguementNullError -f "Namespace", "AddDerivedTypes") }
+    if($baseType -eq $null) { throw ($LocalizedData.ArgumentNullError -f "BaseType", "AddDerivedTypes") }
+    if($entityAndComplexTypesQueue -eq $null) { throw ($LocalizedData.ArgumentNullError -f "EntityAndComplexTypesQueue", "AddDerivedTypes") }
+    if($namespace -eq $null) { throw ($LocalizedData.ArgumentNullError -f "Namespace", "AddDerivedTypes") }
 
     $baseTypeFullName = $baseType.Namespace + '.' + $baseType.Name
     $baseTypeShortName = $baseType.Alias + '.' + $baseType.Name
@@ -1025,8 +1025,8 @@ function ParseMetadataTypeDefinitionHelper
         [bool] $isEntity
     )
     
-    if($metadataEntityDefinition -eq $null) { throw ($LocalizedData.ArguementNullError -f "MetadataEntityDefinition", "ParseMetadataTypeDefinition") }
-    if($namespace -eq $null) { throw ($LocalizedData.ArguementNullError -f "Namespace", "ParseMetadataTypeDefinition") }
+    if($metadataEntityDefinition -eq $null) { throw ($LocalizedData.ArgumentNullError -f "MetadataEntityDefinition", "ParseMetadataTypeDefinition") }
+    if($namespace -eq $null) { throw ($LocalizedData.ArgumentNullError -f "Namespace", "ParseMetadataTypeDefinition") }
 
     [ODataUtils.EntityTypeV4] $newEntityType = CreateNewEntityType -metadataEntityDefinition $metadataEntityDefinition -baseType $baseType -baseTypeStr $baseTypeStr -namespace $namespace -alias $alias -isEntity $isEntity
 
@@ -1195,8 +1195,8 @@ function ParseMetadataTypeDefinition
         [string] $baseTypeStr
     )
 
-    if($metadataEntityDefinition -eq $null) { throw ($LocalizedData.ArguementNullError -f "MetadataEntityDefinition", "ParseMetadataTypeDefinition") }
-    if($namespace -eq $null) { throw ($LocalizedData.ArguementNullError -f "Namespace", "ParseMetadataTypeDefinition") }
+    if($metadataEntityDefinition -eq $null) { throw ($LocalizedData.ArgumentNullError -f "MetadataEntityDefinition", "ParseMetadataTypeDefinition") }
+    if($namespace -eq $null) { throw ($LocalizedData.ArgumentNullError -f "Namespace", "ParseMetadataTypeDefinition") }
 
     [ODataUtils.EntityTypeV4] $newEntityType = ParseMetadataTypeDefinitionHelper -metadataEntityDefinition $metadataEntityDefinition -baseType $baseType -baseTypeStr $baseTypeStr -metadata $metadata -namespace $namespace -alias $alias -isEntity $isEntity
     ParseMetadataTypeDefinitionNavigationProperties -metadataEntityDefinition $metadataEntityDefinition -entityType $newEntityType
@@ -1225,7 +1225,7 @@ function GenerateClientSideProxyModule
         $NormalizedNamespaces
     )
 
-    if($progressBarStatus -eq $null) { throw ($LocalizedData.ArguementNullError -f "ProgressBarStatus", "GenerateClientSideProxyModule") }
+    if($progressBarStatus -eq $null) { throw ($LocalizedData.ArgumentNullError -f "ProgressBarStatus", "GenerateClientSideProxyModule") }
 
     Write-Verbose ($LocalizedData.VerboseSavingModule -f $OutputModule)
     
@@ -1305,8 +1305,8 @@ function SaveCDXML
         $normalizedNamespaces
     )
 
-    if($EntitySet -eq $null) { throw ($LocalizedData.ArguementNullError -f "EntitySet", "GenerateClientSideProxyModule") }
-    if($Metadata -eq $null) { throw ($LocalizedData.ArguementNullError -f "metadata", "GenerateClientSideProxyModule") }
+    if($EntitySet -eq $null) { throw ($LocalizedData.ArgumentNullError -f "EntitySet", "GenerateClientSideProxyModule") }
+    if($Metadata -eq $null) { throw ($LocalizedData.ArgumentNullError -f "metadata", "GenerateClientSideProxyModule") }
 
     $entitySetName = $EntitySet.Name 
     if(($null -ne $resourceNameMappings) -and 
@@ -1460,8 +1460,8 @@ function SaveCDXMLSingletonCmdlets
         $normalizedNamespaces
     )
 
-    if($Singleton -eq $null) { throw ($LocalizedData.ArguementNullError -f "Singleton", "SaveCDXMLSingletonCmdlets") }
-    if($Metadata -eq $null) { throw ($LocalizedData.ArguementNullError -f "Metadata", "SaveCDXMLSingletonCmdlets") }
+    if($Singleton -eq $null) { throw ($LocalizedData.ArgumentNullError -f "Singleton", "SaveCDXMLSingletonCmdlets") }
+    if($Metadata -eq $null) { throw ($LocalizedData.ArgumentNullError -f "Metadata", "SaveCDXMLSingletonCmdlets") }
 
     $singletonName = $singleton.Name
     $singletonType = $singleton.Type
@@ -1612,8 +1612,8 @@ function SaveCDXMLInstanceCmdlets
         [bool] $isSingleton
     )
 
-    if($xmlWriter -eq $null) { throw ($LocalizedData.ArguementNullError -f "xmlWriter", "SaveCDXMLInstanceCmdlets") }
-    if($Metadata -eq $null) { throw ($LocalizedData.ArguementNullError -f "Metadata", "SaveCDXMLInstanceCmdlets") }
+    if($xmlWriter -eq $null) { throw ($LocalizedData.ArgumentNullError -f "xmlWriter", "SaveCDXMLInstanceCmdlets") }
+    if($Metadata -eq $null) { throw ($LocalizedData.ArgumentNullError -f "Metadata", "SaveCDXMLInstanceCmdlets") }
 
     $xmlWriter.WriteStartElement('InstanceCmdlets')
         $xmlWriter.WriteStartElement('GetCmdletParameters')
@@ -1845,8 +1845,8 @@ function SaveCDXMLNewCmdlet
         $complexTypeMapping
     )
 
-    if($xmlWriter -eq $null) { throw ($LocalizedData.ArguementNullError -f "xmlWriter", "SaveCDXMLNewCmdlet") }
-    if($Metadata -eq $null) { throw ($LocalizedData.ArguementNullError -f "Metadata", "SaveCDXMLNewCmdlet") }
+    if($xmlWriter -eq $null) { throw ($LocalizedData.ArgumentNullError -f "xmlWriter", "SaveCDXMLNewCmdlet") }
+    if($Metadata -eq $null) { throw ($LocalizedData.ArgumentNullError -f "Metadata", "SaveCDXMLNewCmdlet") }
     
     $xmlWriter.WriteStartElement('Cmdlet')
         $xmlWriter.WriteStartElement('CmdletMetadata')
@@ -1890,7 +1890,7 @@ function GetEntitySetForEntityType {
     [ODataUtils.EntityTypeV4] $entityType
     )
 
-    if($entityType -eq $null) { throw ($LocalizedData.ArguementNullError -f "EntityType", "GetEntitySetForEntityType") }
+    if($entityType -eq $null) { throw ($LocalizedData.ArgumentNullError -f "EntityType", "GetEntitySetForEntityType") }
 
     $result = $Metadata.EntitySets | ? { ($_.Type.Namespace -eq $entityType.Namespace) -and ($_.Type.Name -eq $entityType.Name) }
 
@@ -1922,8 +1922,8 @@ function SaveCDXMLRemoveCmdlet
         $complexTypeMapping
     )
 
-    if($xmlWriter -eq $null) { throw ($LocalizedData.ArguementNullError -f "xmlWriter", "SaveCDXMLRemoveCmdlet") }
-    if($Metadata -eq $null) { throw ($LocalizedData.ArguementNullError -f "Metadata", "SaveCDXMLRemoveCmdlet") }
+    if($xmlWriter -eq $null) { throw ($LocalizedData.ArgumentNullError -f "xmlWriter", "SaveCDXMLRemoveCmdlet") }
+    if($Metadata -eq $null) { throw ($LocalizedData.ArgumentNullError -f "Metadata", "SaveCDXMLRemoveCmdlet") }
     
     $xmlWriter.WriteStartElement('Cmdlet')
         $xmlWriter.WriteStartElement('CmdletMetadata')
@@ -2022,8 +2022,8 @@ function SaveCDXMLAction
         [Hashtable] $complexTypeMapping
     )
 
-    if($xmlWriter -eq $null) { throw ($LocalizedData.ArguementNullError -f "xmlWriter", "SaveCDXMLAction") }
-    if($action -eq $null) { throw ($LocalizedData.ArguementNullError -f "action", "SaveCDXMLAction") }
+    if($xmlWriter -eq $null) { throw ($LocalizedData.ArgumentNullError -f "xmlWriter", "SaveCDXMLAction") }
+    if($action -eq $null) { throw ($LocalizedData.ArgumentNullError -f "action", "SaveCDXMLAction") }
 
     $xmlWriter.WriteStartElement('Cmdlet')
 
@@ -2110,8 +2110,8 @@ function SaveCDXMLFunction
         [Hashtable] $complexTypeMapping
     )
     
-    if($xmlWriter -eq $null) { throw ($LocalizedData.ArguementNullError -f "xmlWriter", "SaveCDXMLFunction") }
-    if($function -eq $null) { throw ($LocalizedData.ArguementNullError -f "function", "SaveCDXMLFunction") }
+    if($xmlWriter -eq $null) { throw ($LocalizedData.ArgumentNullError -f "xmlWriter", "SaveCDXMLFunction") }
+    if($function -eq $null) { throw ($LocalizedData.ArgumentNullError -f "function", "SaveCDXMLFunction") }
 
     $xmlWriter.WriteStartElement('Cmdlet')
 
@@ -2312,7 +2312,7 @@ function GenerateModuleManifest
         [string] $progressBarStatus
     )
 
-    if($progressBarStatus -eq $null) { throw ($LocalizedData.ArguementNullError -f "progressBarStatus", "GenerateModuleManifest") }
+    if($progressBarStatus -eq $null) { throw ($LocalizedData.ArgumentNullError -f "progressBarStatus", "GenerateModuleManifest") }
 
     $NestedModules = @()
 

@@ -1483,7 +1483,7 @@ HRESULT AddPowerShellTasksToList(ICustomDestinationList *pCustDestList, STARTUPI
 
 /*********************************************************************
 * FileExists is a helper function used to check if the file path 
-* provided as arguement to this function exists or not.
+* provided as argument to this function exists or not.
 *********************************************************************/
 BOOL FileExists(LPCWSTR  fileName)
 {

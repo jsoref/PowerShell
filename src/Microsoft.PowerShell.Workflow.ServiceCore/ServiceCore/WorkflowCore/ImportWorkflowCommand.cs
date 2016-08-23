@@ -1239,7 +1239,7 @@ namespace Microsoft.PowerShell.Commands
                     // Scriptworkflow ALSO comes through this path.
                     else
                     {
-                        // If the parameter is an In parameter with the RequiredArguement attribute then make it mandatory
+                        // If the parameter is an In parameter with the RequiredArgument attribute then make it mandatory
                         if (typeof(System.Activities.InArgument).IsAssignableFrom(p.Type))
                         {
                             if (p.Attributes != null)

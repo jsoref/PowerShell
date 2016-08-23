@@ -6854,7 +6854,7 @@ namespace Microsoft.PowerShell.Commands
             }
             else
             {
-                // Avoid trying to import a PowerShell assembly as Snapin as it results in PSArgementException
+                // Avoid trying to import a PowerShell assembly as Snapin as it results in PSArgumentException
                 if ((moduleName != null) && Utils.IsPowerShellAssembly(moduleName))
                 {
                     trySnapInName = false;
