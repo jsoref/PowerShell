@@ -7426,7 +7426,7 @@ namespace Microsoft.PowerShell.Workflow
             if (tryStatementAst.Finally != null)
             {
                 // Close the original try / catch. Since we're bringing the original
-                // finally into a new catch statement, we need to sythesize a dummy one here.
+                // finally into a new catch statement, we need to synthesize a dummy one here.
                 if (tryStatementAst.CatchClauses.Count == 0)
                 {
                     WriteLine("<TryCatch.Finally><Sequence /></TryCatch.Finally>");
