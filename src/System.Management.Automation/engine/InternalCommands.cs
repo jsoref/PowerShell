@@ -338,7 +338,7 @@ namespace Microsoft.PowerShell.Commands
 
                             if (members.Count > 1)
                             {
-                                // write error record: property method ambigious
+                                // write error record: property method ambiguous
                                 StringBuilder possibleMatches = new StringBuilder();
                                 foreach (PSMemberInfo item in members)
                                 {
@@ -505,7 +505,7 @@ namespace Microsoft.PowerShell.Commands
             Dbg.Assert(methods != null, "The return value of Members.Match should never be null.");
             if (methods.Count > 1)
             {
-                // write error record: method ambigious
+                // write error record: method ambiguous
                 StringBuilder possibleMatches = new StringBuilder();
                 foreach (PSMemberInfo item in methods)
                 {
