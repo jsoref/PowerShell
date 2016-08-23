@@ -318,7 +318,7 @@ namespace Microsoft.PackageManagement.Archivers.Internal.Compression
             Predicate<string> fileFilter);
 
         /// <summary>
-        /// Called by sublcasses to distribute a packing or unpacking progress
+        /// Called by subclasses to distribute a packing or unpacking progress
         /// event to listeners.
         /// </summary>
         /// <param name="e">Event details.</param>
