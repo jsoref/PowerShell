@@ -5142,7 +5142,7 @@ end
                         "Stop-Service",    "", ScopedItemOptions.ReadOnly | ScopedItemOptions.AllScope),
                     new SessionStateAliasEntry("sv",
                         "Set-Variable",    "", ScopedItemOptions.ReadOnly | ScopedItemOptions.AllScope),
-// Porting note: #if !UNIX is used to disable alises for cmdlets which conflict with Linux / OS X
+// Porting note: #if !UNIX is used to disable aliases for cmdlets which conflict with Linux / OS X
 #if !UNIX
                     // ac is a native command on OS X
                     new SessionStateAliasEntry("ac",

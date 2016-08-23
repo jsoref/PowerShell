@@ -2349,7 +2349,7 @@ namespace System.Management.Automation
         private Dictionary<string, List<string>> _commandsToAliasesCache = new Dictionary<string, List<string>>(StringComparer.OrdinalIgnoreCase);
 
         /// <summary>
-        /// Gets the alises by command name (used by metadata-driven help)
+        /// Gets the aliases by command name (used by metadata-driven help)
         /// </summary>
         /// <param name="command"></param>
         /// <returns></returns>

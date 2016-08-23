@@ -670,7 +670,7 @@ namespace System.Management.Automation
         } // RemoveAlias
 
         /// <summary>
-        /// Gets the alises by command name (used by metadata-driven help)
+        /// Gets the aliases by command name (used by metadata-driven help)
         /// </summary>
         /// <param name="command"></param>
         /// <returns></returns>
