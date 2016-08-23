@@ -200,7 +200,7 @@ function Compress-Archive
         $sourcePath = $resolvedPaths;
 
         # CSVHelper: This is a helper function used to append comma after each path specifid by
-        # the $sourcePath array. The comma saperated paths are displayed in the -WhatIf message.
+        # the $sourcePath array. The comma separated paths are displayed in the -WhatIf message.
         $sourcePathInCsvFormat = CSVHelper $sourcePath
         if($pscmdlet.ShouldProcess($sourcePathInCsvFormat))
         {

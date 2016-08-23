@@ -132,7 +132,7 @@ namespace System.Diagnostics.Eventing
 
         //
         // For all the methods below the string to be logged contains:
-        // m_delimiter seperated data converted to string
+        // m_delimiter separated data converted to string
         //
         // The source parameter is ignored.
         // 

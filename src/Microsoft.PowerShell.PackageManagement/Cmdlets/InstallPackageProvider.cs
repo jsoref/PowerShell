@@ -109,7 +109,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets
             // only generate these parameters if there is an actual call happening. it won't show in get-command -syntax
             if (IsInvocation) {
                 //Use the InternalPackageManagementInstallOnly flag to indicate we are installing a provider right now.
-                //This will seperate a case from auto-bootstrapping.
+                //This will separate a case from auto-bootstrapping.
                 var packageManagementService = PackageManagementService as PackageManagementService;
                 if (packageManagementService != null) {
                     packageManagementService.InternalPackageManagementInstallOnly = true;

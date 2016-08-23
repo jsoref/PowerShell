@@ -5599,7 +5599,7 @@ namespace Microsoft.WSMan.Management
         private PSCredential runAsCredentials;
 
         /// <summary>
-        /// Parameter for Plugin Host Process configuration (Shared or Saperate).
+        /// Parameter for Plugin Host Process configuration (Shared or Separate).
         /// </summary>
         [Parameter()]
         public SwitchParameter UseSharedProcess
@@ -6177,7 +6177,7 @@ namespace Microsoft.WSMan.Management
         internal const string ConfigRunAsUserName = "RunAsUser";
 
         /// <summary>
-        /// Name of the configuration which represents if HostProcess is shared or saperate.
+        /// Name of the configuration which represents if HostProcess is shared or separate.
         /// </summary>
         internal const string ConfigUseSharedProcess = "UseSharedProcess";
 

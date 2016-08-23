@@ -1206,7 +1206,7 @@ namespace System.Management.Automation.Language
                                "Caller makes sure the section is within the ScriptBlockAst");
 
             List<VariableExpressionAst> usingVars = usingVariablesTuple.Item1; // A list of using variables
-            string newParams = usingVariablesTuple.Item2; // The new parameters are seperated by the comma
+            string newParams = usingVariablesTuple.Item2; // The new parameters are separated by the comma
 
             // astElements contains
             //  -- UsingVariable

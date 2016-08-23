@@ -1546,7 +1546,7 @@ namespace Microsoft.PowerShell.Commands
 
             // For inner function, don't add -PSParameterCollection param. AsJob and JobName are needed in the inner function for
             // parameter validation in non-PSParameterCollection cases. For PSParameterCollection, they will be checked for
-            // with a seperate check.
+            // with a separate check.
             // We want it at workflow function, but not in the subfunction that validates the parameter for PSParameterCollection
             if (!innerfunction)
             {

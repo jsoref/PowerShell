@@ -758,7 +758,7 @@ namespace System.Management.Automation
         // builtins are not exposed publicly in a direct manner so they can't be changed at all
         internal static Dictionary<string, Type> builtinTypeAccelerators = new Dictionary<string, Type>(64, StringComparer.OrdinalIgnoreCase);
 
-        // users can add to user added accelerators (but not currently remove any.)  Keeping a seperate
+        // users can add to user added accelerators (but not currently remove any.)  Keeping a separate
         // list allows us to add removing in the future w/o worrying about breaking the builtins.
         internal static Dictionary<string, Type> userTypeAccelerators = new Dictionary<string, Type>(64, StringComparer.OrdinalIgnoreCase);
 
