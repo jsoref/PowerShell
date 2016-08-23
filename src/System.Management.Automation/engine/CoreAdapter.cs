@@ -4277,7 +4277,7 @@ namespace System.Management.Automation
                 return property as T;
             }
 
-            // In order to not break v1..base dotnet adpater should not return methods
+            // In order to not break v1..base dotnet adapter should not return methods
             // when accessed with T as PSMethod.. accessing method with PSMemberInfo
             // is ok as property always gets precedence over methods and duplicates
             // are ignored.
@@ -5187,7 +5187,7 @@ namespace System.Management.Automation
             Dbg.Assert(typeParameter != null, "Caller should verify typeParameter != null");
             Dbg.Assert(
                 _typeParametersOfTheMethod.Contains(typeParameter),
-                "Caller should verify that typeParameter is actuall a generic type parameter of the method");
+                "Caller should verify that typeParameter is actually a generic type parameter of the method");
 #endif
 
             ICollection<Type> inferenceCandidates =

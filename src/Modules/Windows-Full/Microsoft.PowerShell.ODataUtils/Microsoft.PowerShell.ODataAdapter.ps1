@@ -69,7 +69,7 @@ function ParseMetaData
 
     # Check the OData version in the fetched metadata to make sure that
     # OData version (and hence the protocol) used in the metadata is
-    # supported by the adatapter used for executing the generated
+    # supported by the adapter used for executing the generated
     # proxy cmdlets.
     if(($metadataXML -ne $null) -and ($metadataXML.Edmx -ne $null))
     {
@@ -364,7 +364,7 @@ function VerifyMetaData
     }
     
     # All the generated proxy cmdlets would have the following paramters added.
-    # The ODataAdpter has the default implementation on how to handle the 
+    # The ODataAdapter has the default implementation on how to handle the 
     # scenario when these parameters are used during proxy invocations.
     # The default implementaion can be overridden using adapter derivation model. 
     $reservedProperties = @("Filter", "IncludeTotalResponseCount", "OrderBy", "Select", "Skip", "Top", "ConnectionUri", "CertificateThumbprint", "Credential")

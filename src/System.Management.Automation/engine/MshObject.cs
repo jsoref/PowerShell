@@ -632,7 +632,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// This is the adapter set that will contain the adapter of the baseObject 
-        /// and the ultimate .net member lookup adater.
+        /// and the ultimate .net member lookup adapter.
         /// See <see cref="PSObject.AdapterSet"/> for explanation.
         /// </summary>
         private AdapterSet InternalAdapterSet

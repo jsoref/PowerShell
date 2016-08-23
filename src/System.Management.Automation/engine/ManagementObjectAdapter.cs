@@ -724,7 +724,7 @@ namespace System.Management.Automation
                 // and also null ints to 0. But WMI providers do not like these
                 // conversions. So dont convert input arguments if they are null.
                 // We could have done this in the base adapter but the change would be
-                // costly for other adpaters which dont mind the conversion.
+                // costly for other adapters which dont mind the conversion.
                 if ((i < arguments.Length) && (arguments[i] == null))
                 {
                     verifiedArguments[i] = null;

@@ -3038,7 +3038,7 @@ namespace System.Management.Automation
             //Versioning Note:Future version of serialization can add new known types.
             //This version will ignore those known types, if they are base object.
             //It is expected that future version will still put information in base
-            //and adpater properties which this serializer can read and use. 
+            //and adapter properties which this serializer can read and use. 
             //For example, assume the version 2 serialization engine supports a new known 
             //type IPAddress. The version 1 deserializer doesn't know IPAddress as known 
             //type and it must retrieve it as an PSObject. The version 2 serializer 
