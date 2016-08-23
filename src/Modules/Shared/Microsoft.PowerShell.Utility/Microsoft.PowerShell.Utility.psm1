@@ -383,7 +383,7 @@ function Format-Hex
                 # If the input data is of string type then directly get bytes out of it.
                 elseif($InputObject -is [string])
                 {
-                    # The ValidateSet arribute on the Encoding paramter makes sure that only
+                    # The ValidateSet attribute on the Encoding paramter makes sure that only
                     # valid values (supported on all paltforms where Format-Hex is avaliable)
                     # are allowed through user input.
                     $inputBytes = [Text.Encoding]::$Encoding.GetBytes($InputObject)
