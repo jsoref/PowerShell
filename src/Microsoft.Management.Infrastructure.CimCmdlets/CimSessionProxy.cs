@@ -716,7 +716,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
 
             lock (this.stateLock)
             {
-                Debug.Assert(this.operation == operation, "Caller should verify that the operation to reomove is the operation in progress");
+                Debug.Assert(this.operation == operation, "Caller should verify that the operation to remove is the operation in progress");
 
                 this.DisposeCancelOperation();
 
