@@ -263,7 +263,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         private List<string> parametersetNamesListAtBeginProcess = new List<string>();
 
         /// <summary>
-        /// Parameter names list befre begin process
+        /// Parameter names list before begin process
         /// </summary>
         private List<string> parameterNamesListAtBeginProcess = new List<string>();
 

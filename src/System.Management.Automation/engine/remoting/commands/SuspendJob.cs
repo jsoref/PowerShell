@@ -201,7 +201,7 @@ namespace Microsoft.PowerShell.Commands
                         }
                     }
 
-                    // there could be possiblility that the job gets completed befor or after the 
+                    // there could be possiblility that the job gets completed before or after the 
                     // subscribing to nowait_job2_statechanged event so checking it again.
                     if (!_wait && (job2.IsFinishedState(job2.JobStateInfo.State) || job2.JobStateInfo.State == JobState.Suspending || job2.JobStateInfo.State == JobState.Suspended))
                     {
