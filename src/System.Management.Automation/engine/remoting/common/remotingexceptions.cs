@@ -241,7 +241,7 @@ namespace System.Management.Automation.Remoting
         PSDefaultSessionOptionDescription = 1002,
         PSSenderInfoDescription = 1004,
 
-        // IPC for Backgroud jobs related errors: 2000
+        // IPC for Background jobs related errors: 2000
         IPCUnknownNodeType = 2001,
         IPCInsufficientDataforElement = 2002,
         IPCWrongAttributeCountForDataElement = 2003,
