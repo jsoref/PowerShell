@@ -550,7 +550,7 @@ namespace Microsoft.PowerShell.Cmdletization
         private TSession GetImpliedSession()
         {
             TSession sessionFromImportModule;
-            // When being called from a CIM actiivty, this will be invoked as
+            // When being called from a CIM activity, this will be invoked as
             // a function so there will be no module info
             if (this.PSModuleInfo != null)
             {
