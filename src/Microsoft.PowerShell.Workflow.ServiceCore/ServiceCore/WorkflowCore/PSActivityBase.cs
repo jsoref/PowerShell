@@ -4322,7 +4322,7 @@ namespace Microsoft.PowerShell.Activities
                 catch (Exception)
                 {
                     // Exception setting variables, try using proxy
-                    tracer.WriteMessage("Setting varibles in remote runspace failed using script, trying with proxy");
+                    tracer.WriteMessage("Setting variables in remote runspace failed using script, trying with proxy");
 
                     try
                     {                        
