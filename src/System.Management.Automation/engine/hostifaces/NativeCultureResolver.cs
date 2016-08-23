@@ -290,7 +290,7 @@ namespace Microsoft.PowerShell
                     // filter out languages that console cannot display..
                     // Sometimes GetConsoleFallbackUICulture returns neutral cultures
                     // like "en" on "ar-SA". However neutral culture cannot be 
-                    // asssigned as CurrentCulture. CreateSpecificCulture fixes
+                    // assigned as CurrentCulture. CreateSpecificCulture fixes
                     // this problem.
                     returnValue = CultureInfo.CreateSpecificCulture(
                         returnValue.GetConsoleFallbackUICulture().Name);
