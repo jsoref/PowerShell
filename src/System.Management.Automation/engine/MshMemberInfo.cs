@@ -3501,7 +3501,7 @@ namespace System.Management.Automation
 
     #endregion PSMemberInfo
 
-    #region Member collection classes and its auxilliary classes
+    #region Member collection classes and its auxiliary classes
 
     /// <summary>
     /// /// This class is used in PSMemberInfoInternalCollection and ReadOnlyPSMemberInfoCollection
@@ -4812,7 +4812,7 @@ namespace System.Management.Automation
         }
     }
 
-    #endregion Member collection classes and its auxilliary classes
+    #endregion Member collection classes and its auxiliary classes
 }
 
 #pragma warning restore 56503

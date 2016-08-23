@@ -1670,7 +1670,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Auxilliary method in MethodInvoke to set newArguments[index] with the propper value
+        /// Auxiliary method in MethodInvoke to set newArguments[index] with the propper value
         /// </summary>
         /// <param name="methodName">used for the MethodException that might be thrown</param>
         /// <param name="arguments">the complete array of arguments</param>
@@ -2317,7 +2317,7 @@ namespace System.Management.Automation
     /// </summary>
     internal class DotNetAdapter : Adapter
     {
-        #region auxilliary methods and classes
+        #region auxiliary methods and classes
 
         private const BindingFlags instanceBindingFlags = (BindingFlags.FlattenHierarchy | BindingFlags.Public |
                                                               BindingFlags.IgnoreCase | BindingFlags.Instance);
@@ -3541,7 +3541,7 @@ namespace System.Management.Automation
             return entry.isStatic;
         }
 
-        #endregion auxilliary methods and classes
+        #endregion auxiliary methods and classes
 
         #region virtual
 
@@ -3770,7 +3770,7 @@ namespace System.Management.Automation
 
         #region method
 
-        #region auxilliary to method calling
+        #region auxiliary to method calling
 
         /// <summary>
         /// Calls constructor using the arguments and catching the appropriate exception
@@ -4088,7 +4088,7 @@ namespace System.Management.Automation
             return builder.ToString();
         }
 
-        #endregion auxilliary to method calling
+        #endregion auxiliary to method calling
 
         /// <summary>
         /// Called after a non null return from GetMember to try to call
@@ -4996,7 +4996,7 @@ namespace System.Management.Automation
 
 
         /// <summary>
-        /// Auxilliary in GetProperty to perform case sensitive and case insensitve searches
+        /// Auxiliary in GetProperty to perform case sensitive and case insensitve searches
         /// in the child nodes
         /// </summary>
         /// <param name="obj">XmlNode to extract property from</param>

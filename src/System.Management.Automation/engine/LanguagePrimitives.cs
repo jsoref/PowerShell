@@ -965,7 +965,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Auxilliary for the cases where we want a new PSObject or null
+        /// Auxiliary for the cases where we want a new PSObject or null
         /// </summary>
         internal static PSObject AsPSObjectOrNull(object obj)
         {
@@ -2121,7 +2121,7 @@ namespace System.Management.Automation
         /// <summary>
         /// There might be many cast operators in a Type A that take Type A. Each operator will have a 
         /// different return type. Because of that we cannot call GetMethod since it would cause a 
-        /// AmbiguousMatchException. This auxilliar method calls GetMember to find the right method
+        /// AmbiguousMatchException. This auxiliary method calls GetMember to find the right method
         /// </summary>
         /// <param name="methodName">Either op_Excplicit or op_Implicit, at the moment</param>
         /// <param name="targetType">the type to look for an operator</param>
