@@ -411,7 +411,7 @@ namespace Microsoft.PowerShell
             set
             {
                 // looking in windows/core/ntcon/server/output.c, it looks like the minimum size is 1 row X however many 
-                // charcters will fit in the minimum window size system metric (SM_CXMIN).  Instead of going to the effort of
+                // characters will fit in the minimum window size system metric (SM_CXMIN).  Instead of going to the effort of
                 // computing that minimum here, it is cleaner and cheaper to make the call to SetConsoleScreenBuffer and just
                 // translate any exception that might get thrown.
                 try

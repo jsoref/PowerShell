@@ -106,7 +106,7 @@ namespace Microsoft.PowerShell {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete the charcter before the cursor.
+        ///   Looks up a localized string similar to Delete the character before the cursor.
         /// </summary>
         internal static string BackwardDeleteCharDescription {
             get {

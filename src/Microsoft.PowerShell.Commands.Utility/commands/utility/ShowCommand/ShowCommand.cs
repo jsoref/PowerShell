@@ -526,7 +526,7 @@ namespace Microsoft.PowerShell.Commands
                 uint written;
                 if (!ConsoleInputWithNativeMethods.WriteConsoleInput(handle, records, strLen, out written) || written != strLen)
                 {
-                    // I do not know of a case where written is not going to be strlen. Maybe for some charcater that
+                    // I do not know of a case where written is not going to be strlen. Maybe for some character that
                     // is not supported in the console. The API suggests this can happen, 
                     // so we handle it by returning false
                     return false;

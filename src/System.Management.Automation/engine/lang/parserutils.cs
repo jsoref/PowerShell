@@ -73,7 +73,7 @@ namespace System.Management.Automation
             return (c == '{' || c == '}');
         }
         /// <summary>
-        /// Canonicalize the quote charater - map all of the aliases for " or '
+        /// Canonicalize the quote character - map all of the aliases for " or '
         /// into their ascii equivalent.
         /// </summary>
         /// <param name="c">The character to map</param>
