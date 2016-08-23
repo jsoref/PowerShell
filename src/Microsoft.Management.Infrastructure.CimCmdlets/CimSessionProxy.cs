@@ -572,7 +572,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         }        
 
         /// <summary>
-        /// Enable/Disable the method result streming,
+        /// Enable/Disable the method result streaming,
         /// it is enabled by default.
         /// </summary>
         public bool EnableMethodResultStreaming
@@ -589,7 +589,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         }
 
         /// <summary>
-        /// Enable/Disable prompt user streming,
+        /// Enable/Disable prompt user streaming,
         /// it is enabled by default.
         /// </summary>
         public bool EnablePromptUser
