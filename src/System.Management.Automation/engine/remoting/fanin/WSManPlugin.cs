@@ -135,7 +135,7 @@ namespace System.Management.Automation.Remoting
 
         /// <summary>
         /// Enables dependency injection after the static constructor is called.
-        /// This may be overridden in unit tests to enable different behavoir.
+        /// This may be overridden in unit tests to enable different behavior.
         /// It is static because static instances of this class use the facade. Otherwise,
         /// it would be passed in via a parameterized constructor.
         /// </summary>
