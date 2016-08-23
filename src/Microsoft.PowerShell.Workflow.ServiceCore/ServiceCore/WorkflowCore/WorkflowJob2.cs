@@ -429,7 +429,7 @@ namespace Microsoft.PowerShell.Workflow
         /// </summary>
         /// <param name="state"></param>
         /// <param name="reason"></param>
-        /// <returns>returns false if state tranition is not possible. Return value is required to update SQM perf counters</returns>
+        /// <returns>returns false if state transition is not possible. Return value is required to update SQM perf counters</returns>
         private bool DoSetJobState(JobState state, Exception reason = null)
         {
             if (IsFinishedState(_previousState) || _isDisposed) return false;
@@ -1123,7 +1123,7 @@ namespace Microsoft.PowerShell.Workflow
             _tracer.WriteMessage(ClassNameTrace, "OnWorkflowSuspended", WorkflowGuidForTraces, this, "BEGIN");
 
             // CheckStopping() was not thread safe.
-            // Now DoSetJobState handles the invalid state transion from stopping to suspended
+            // Now DoSetJobState handles the invalid state transition from stopping to suspended
             if (DoSetJobState(JobState.Suspended))
             {
                 StructuredTracer.WorkflowUnloaded(_workflowInstance.Id);
