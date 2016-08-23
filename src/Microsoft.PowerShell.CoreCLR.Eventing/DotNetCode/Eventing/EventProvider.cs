@@ -134,7 +134,7 @@ namespace System.Diagnostics.Eventing
 
             if (Interlocked.Exchange(ref _disposed, 1) != 0)
             {
-                // somebody is allready disposing the provider
+                // somebody is already disposing the provider
                 return;
             }
 

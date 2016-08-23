@@ -484,7 +484,7 @@ namespace System.Management.Automation.Interpreter
         {
             // If _pendingContinuation == -1 then we were getting into the finally block because an exception was thrown
             //      in this case we need to set the stack depth
-            // Else we were getting into this finnaly block from a 'Goto' jump, and the stack depth is alreayd set properly
+            // Else we were getting into this finnaly block from a 'Goto' jump, and the stack depth is already set properly
             if (!frame.IsJumpHappened())
             {
                 frame.SetStackDepth(GetLabel(frame).StackDepth);

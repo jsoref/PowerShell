@@ -1082,10 +1082,10 @@ function Publish-Module
                                             Microsoft.PowerShell.Utility\Select-Object -Last 1 -ErrorAction Ignore
             if($scriptPSGetItemInfo)
             {
-                $message = $LocalizedData.SpecifiedNameIsAlearyUsed -f ($moduleName, $Repository, 'Find-Script')
+                $message = $LocalizedData.SpecifiedNameIsAlreadyUsed -f ($moduleName, $Repository, 'Find-Script')
                 ThrowError -ExceptionName "System.InvalidOperationException" `
                            -ExceptionMessage $message `
-                           -ErrorId "SpecifiedNameIsAlearyUsed" `
+                           -ErrorId "SpecifiedNameIsAlreadyUsed" `
                            -CallerPSCmdlet $PSCmdlet `
                            -ErrorCategory InvalidOperation `
                            -ExceptionObject $moduleName
@@ -2721,10 +2721,10 @@ function Publish-Script
                                             Microsoft.PowerShell.Utility\Select-Object -Last 1 -ErrorAction Ignore
             if($modulePSGetItemInfo)
             {
-                $message = $LocalizedData.SpecifiedNameIsAlearyUsed -f ($scriptName, $Repository, 'Find-Module')
+                $message = $LocalizedData.SpecifiedNameIsAlreadyUsed -f ($scriptName, $Repository, 'Find-Module')
                 ThrowError -ExceptionName "System.InvalidOperationException" `
                            -ExceptionMessage $message `
-                           -ErrorId "SpecifiedNameIsAlearyUsed" `
+                           -ErrorId "SpecifiedNameIsAlreadyUsed" `
                            -CallerPSCmdlet $PSCmdlet `
                            -ErrorCategory InvalidOperation `
                            -ExceptionObject $scriptName
