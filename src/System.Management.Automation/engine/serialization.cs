@@ -3046,14 +3046,14 @@ namespace System.Management.Automation
             //<PSObject Version=1.2 Was=Deserialized.IPAddress >
             //  <TypeNames>...</TypeNames>
             //  <BaseObject>
-            //      <IPAddress>120.23.35.53</IPAdddress>
+            //      <IPAddress>120.23.35.53</IPAddress>
             //  </BaseObject>
             //  <Properties>
             //      <string name=Address>120.23.34.53</string>
             //      <string name=class>A</string>
             //  </Properties>
             //</PSObject>
-            // In above example, V1 serializer will ingore <IPAdresss> element and read
+            // In above example, V1 serializer will ingore <IPAddress> element and read
             // properties from <Properties>
             // V2 serializer can read <IPAddress> tag and ignore properties.
             // Read serializion note doc for information.
