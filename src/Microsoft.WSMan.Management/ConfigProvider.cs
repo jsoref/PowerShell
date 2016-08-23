@@ -4871,11 +4871,11 @@ namespace Microsoft.WSMan.Management
             // ArrayList SecurityLvl = null;
             if (xmlSecurity != null)
             {
-                XmlNodeList nodelistSecutiry = xmlSecurity.GetElementsByTagName(WSManStringLiterals.containerSecurity);
-                if (nodelistSecutiry.Count > 0)
+                XmlNodeList nodelistSecurity = xmlSecurity.GetElementsByTagName(WSManStringLiterals.containerSecurity);
+                if (nodelistSecurity.Count > 0)
                 {
                     //SecurityLvl = new ArrayList();
-                    foreach (XmlElement xe in nodelistSecutiry)
+                    foreach (XmlElement xe in nodelistSecurity)
                     {
                         bool ExactMatchFound = false;
                         PSObject objSecurity = new PSObject();

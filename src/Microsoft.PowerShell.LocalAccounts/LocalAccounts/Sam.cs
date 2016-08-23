@@ -2397,7 +2397,7 @@ namespace System.Management.Automation.SecurityAccountsManager
                     present = true;
                 }
 
-                // set the DACL into our new sescurity descriptor
+                // set the DACL into our new security descriptor
                 var ok = Win32.SetSecurityDescriptorDacl(ipsd, present, ipDacl, false);
                 if (!ok)
                 {
