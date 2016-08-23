@@ -228,7 +228,7 @@ namespace Microsoft.PowerShell.Commands
         }
         private bool _noElement;
         /// <summary>
-        /// the Ashashtable parameter
+        /// the AsHashTable parameter
         /// </summary>
         /// <value></value>
         [Parameter(ParameterSetName = "HashTable")]
