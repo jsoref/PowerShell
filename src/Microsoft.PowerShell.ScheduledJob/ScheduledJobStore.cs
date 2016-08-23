@@ -187,7 +187,7 @@ namespace Microsoft.PowerShell.ScheduledJob
         /// <summary>
         /// Returns a FileStream object for a new scheduled job definition run.
         /// </summary>
-        /// <param name="definitionOutputPath">Scheudled job definition path.</param>
+        /// <param name="definitionOutputPath">Scheduled job definition path.</param>
         /// <param name="runStart">DateTime of job run start time.</param>
         /// <param name="runItem">Job run item.</param>
         /// <returns>FileStream object.</returns>
