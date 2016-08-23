@@ -1916,7 +1916,7 @@ namespace System.Management.Automation.Remoting.Client
             /// Constructs a WSManReceiveDataResult from the unmanaged pointer.
             /// This involves copying data from unmanaged memory to managed heap.
             /// Currently PowerShell supports only text data on the wire, so this
-            /// method asserst if the data is not text.
+            /// method asserts if the data is not text.
             /// </summary>
             /// <param name="unmanagedData">
             /// Pointer to unmanaged data.
