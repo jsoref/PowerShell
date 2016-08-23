@@ -18,7 +18,7 @@ Copyright (c) Microsoft Corporation.  All rights reserved.
 // representation that mig have been introduced by serialization.
 // 
 // There is also the need to preserve type information across serialization
-// boudaries, therefore the objects provide a GUID based machanism to
+// boundaries, therefore the objects provide a GUID based machanism to
 // preserve the information.
 //
 

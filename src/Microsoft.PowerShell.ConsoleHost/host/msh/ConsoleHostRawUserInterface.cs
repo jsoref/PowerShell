@@ -1098,7 +1098,7 @@ namespace Microsoft.PowerShell
             // The FillConsoleOutputXxx functions wrap at the end of a line.  So we need to convert our rectangular region
             // into line segments that don't extend past the end of a line.  We will also clip the rectangle so that the semantics
             // are the same as SetBufferContents(Coordinates, BufferCell[,]), which clips if the rectangle extends past the 
-            // screen buffer bounarides.
+            // screen buffer boundaries.
             if (region.Left >= bufferWidth || region.Top >= bufferHeight || region.Right < 0 || region.Bottom < 0)
             {
                 // region is entirely outside the buffer boundaries

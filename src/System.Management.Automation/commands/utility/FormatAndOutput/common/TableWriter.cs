@@ -10,7 +10,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
     internal class TableWriter
     {
         /// <summary>
-        /// Information about each column boudaries
+        /// Information about each column boundaries
         /// </summary>
         private class ColumnInfo
         {
