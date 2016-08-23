@@ -2643,7 +2643,7 @@ namespace System.Management.Automation.Remoting.Client
         /// <param name="flags"> </param>
         /// <param name="desiredStreamSet"></param>
         /// <param name="asyncCallback">
-        /// callback which receives the data asynchronoulsy.
+        /// callback which receives the data asynchronously.
         /// </param>
         /// <param name="receiveOperationHandle">
         /// handle to use to cancel the operation.
