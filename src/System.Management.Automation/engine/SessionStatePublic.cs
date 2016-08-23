@@ -154,7 +154,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Public proxy for the list of appications that are allowed to be run. If the name "*"
+        /// Public proxy for the list of applications that are allowed to be run. If the name "*"
         /// is in the list, then all applications can be run. (This is the default.)
         /// </summary>
         public List<string> Applications
