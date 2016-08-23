@@ -539,7 +539,7 @@ namespace Microsoft.PowerShell.Workflow
                             {
                                 // If we're self-remoting, location becomes the default computer
                                 // and the PSComputerNames is passed in as an argument instead
-                                // of going to the ubiquitious parameters
+                                // of going to the ubiquitous parameters
                                 _location = Constants.DefaultComputerName;
                                 string parameterName = dynamicActivity.Properties.First(x => x.Name.Equals(Constants.ComputerName, StringComparison.CurrentCultureIgnoreCase)).Name;
                                 _workflowParameters[parameterName] = LanguagePrimitives.ConvertTo<string[]>(parameter.Value);

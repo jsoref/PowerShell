@@ -6130,7 +6130,7 @@ namespace Microsoft.PowerShell.Activities
                 var authLevel = GetUbiquitousParameter<AuthenticationLevel>("PSAuthenticationLevel", parameterDefaults);
                 command.AddParameter("Authentication", authLevel);
                 Tracer.WriteMessage(String.Format(CultureInfo.InvariantCulture,
-                    "PowerShell activity ID={0}: Setting parameter {1} to {2} from ubiquitious parameters.",
+                    "PowerShell activity ID={0}: Setting parameter {1} to {2} from ubiquitous parameters.",
                         context.ActivityInstanceId, "AuthenticationLevel", authLevel));
             }
 
