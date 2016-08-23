@@ -1047,7 +1047,7 @@ namespace System.Management.Automation.Provider
         /// 
         /// <returns>
         /// A stack containing the tokenized path with leaf elements on the bottom
-        /// of the stack and the most ancestoral parent at the top.
+        /// of the stack and the most ancestral parent at the top.
         /// </returns>
         /// 
         private Stack<string> TokenizePathToStack(string path, string basePath)
@@ -1092,7 +1092,7 @@ namespace System.Management.Automation.Provider
         /// 
         /// <param name="tokenizedPathStack">
         /// A stack containing path elements where the leaf most element is at
-        /// the bottom of the stack and the most ancestoral parent is on the top.
+        /// the bottom of the stack and the most ancestral parent is on the top.
         /// Generally this stack comes from TokenizePathToStack().
         /// </param>
         /// 
