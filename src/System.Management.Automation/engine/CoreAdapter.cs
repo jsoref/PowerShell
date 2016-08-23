@@ -2969,7 +2969,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// This method is necessary becausean overridden property in a specific class derived from a generic one will
+        /// This method is necessary because an overridden property in a specific class derived from a generic one will
         /// appear twice. The second time, it should be ignored.
         /// </summary>
         private static bool PropertyAlreadyPresent(List<PropertyInfo> previousProperties, PropertyInfo property)
