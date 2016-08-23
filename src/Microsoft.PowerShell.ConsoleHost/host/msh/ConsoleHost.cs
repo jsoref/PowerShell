@@ -332,7 +332,7 @@ namespace Microsoft.PowerShell
                 case ConsoleControl.ConsoleBreakSignal.Logoff:
                     // Just ignore the logoff signal. This signal is sent to console
                     // apps running as service anytime *any* user logs off which means
-                    // that PowerShell couldn't be used in servces/tasks if we didn't
+                    // that PowerShell couldn't be used in services/tasks if we didn't
                     // suppress this signal...
                     return true;
 
