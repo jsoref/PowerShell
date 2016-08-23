@@ -329,7 +329,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Load assemlby from byte stream.
+        /// Load assembly from byte stream.
         /// </summary>
         internal Assembly LoadFrom(Stream assembly)
         {

@@ -326,7 +326,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Load assemlby from byte stream.
+        /// Load assembly from byte stream.
         /// </summary>
         internal static Assembly LoadFrom(Stream assembly)
         {

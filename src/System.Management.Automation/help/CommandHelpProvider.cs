@@ -591,7 +591,7 @@ namespace System.Management.Automation
                     if (String.IsNullOrEmpty(location))
                     {
                         // If the help file could not be found, then it is possible that the actual assembly name is something like
-                        // <Name>.ni.dll, e.g., MyAsembly.ni.dll, so let’s try to find the original help file in the cmdlet metadata.
+                        // <Name>.ni.dll, e.g., MyAssembly.ni.dll, so let’s try to find the original help file in the cmdlet metadata.
                         location = GetHelpFile(helpFile, cmdletInfo);
                     }
                 }
