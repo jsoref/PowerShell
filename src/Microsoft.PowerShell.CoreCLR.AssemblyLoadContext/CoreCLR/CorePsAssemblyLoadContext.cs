@@ -161,7 +161,7 @@ namespace System.Management.Automation
         /// 
         /// MVID is Module Version Identifier, which is a guid. Its purpose is solely to be unique for each time the module is compiled, and
         /// it gets regenerated for every compilation. That means AssemblyLoadContext cannot handle loading two assemblies with the same name
-        /// but different veresions, not even two asssemblies with the exactly same code and version but built by two separate compilations.
+        /// but different veresions, not even two assemblies with the exactly same code and version but built by two separate compilations.
         /// 
         /// Therefore, there is no need to use the full assembly name as the key. Short assembly name is sufficient.
         /// </remarks>

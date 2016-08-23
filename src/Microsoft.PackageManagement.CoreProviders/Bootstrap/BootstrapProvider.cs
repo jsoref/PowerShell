@@ -245,7 +245,7 @@ namespace Microsoft.PackageManagement.Providers.Internal.Bootstrap {
 
             request.Debug("Calling '{0}::GetInstalledPackages' '{1}','{2}','{3}','{4}'", PackageProviderName, name, requiredVersion, minimumVersion, maximumVersion);
 
-            //search under the providerAssembies folder for the installed providers
+            //search under the providerAssemblies folder for the installed providers
             var providers = PackageManagementService.AllProvidersFromProviderAssembliesLocation(request).Select(providerFileAssembly => {
                           
                 //get the provider's name\version

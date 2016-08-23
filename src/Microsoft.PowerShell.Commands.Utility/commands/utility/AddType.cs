@@ -959,7 +959,7 @@ namespace Microsoft.PowerShell.Commands
         {
             foreach (string assemblyName in assemblies)
             {
-                // CoreCLR doesn't allow re-load TPA assemblis with different API (i.e. we load them by name and now want to load by path).
+                // CoreCLR doesn't allow re-load TPA assemblies with different API (i.e. we load them by name and now want to load by path).
                 // LoadAssemblyHelper helps us avoid re-loading them, if they already loaded.
                 Assembly assembly = LoadAssemblyHelper(assemblyName);
                 if (assembly == null)
@@ -1042,7 +1042,7 @@ namespace Microsoft.PowerShell.Commands
             MetadataReference.CreateFromFile(typeof(System.Security.SecureString).GetTypeInfo().Assembly.Location);
 
 
-        // These assemlbies are always automatically added to ReferencedAssemblies.
+        // These assemblies are always automatically added to ReferencedAssemblies.
         private static PortableExecutableReference[] s_autoReferencedAssemblies = new PortableExecutableReference[]
         {
             s_mscorlibAssemblyReference,
@@ -1051,7 +1051,7 @@ namespace Microsoft.PowerShell.Commands
             s_objectImplementationAssemblyReference
         };
 
-        // These assemlbies are used, when ReferencedAssemblies parameter is not specified.
+        // These assemblies are used, when ReferencedAssemblies parameter is not specified.
         private static PortableExecutableReference[] s_defaultAssemblies = new PortableExecutableReference[]
         {
             s_mscorlibAssemblyReference,

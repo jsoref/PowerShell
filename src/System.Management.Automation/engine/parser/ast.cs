@@ -749,7 +749,7 @@ namespace System.Management.Automation.Language
         public ReadOnlyCollection<PSSnapInSpecification> RequiresPSSnapIns { get; internal set; }
 
         /// <summary>
-        /// The aseemblies this script requires, specified like:
+        /// The assemblies this script requires, specified like:
         ///     <code>#requires -Assembly path\to\foo.dll</code>
         ///     <code>#requires -Assembly "System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"</code>
         /// If no assemblies are required, this property is an empty collection.

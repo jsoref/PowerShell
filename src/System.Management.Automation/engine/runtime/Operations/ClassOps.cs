@@ -13,7 +13,7 @@ using System.Management.Automation.Language;
 using System.Threading;
 
 // These APIs are not part of the public contract.
-// They are implementation details and intendent to be called from generated assemlbies for PS classes.
+// They are implementation details and intendent to be called from generated assemblies for PS classes.
 //
 // Because they are called from other assemblies, we have to make them public. 
 // We put them in Internal namespace to emphasise that despite the fact that they are public, it's not part of API contract.
