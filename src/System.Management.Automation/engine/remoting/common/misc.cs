@@ -392,7 +392,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// In the presence of ambient remoting, the command assumes
-        /// all responsibility for targetting the remote computer;
+        /// all responsibility for targeting the remote computer;
         /// PowerShell Remoting is not supported.
         /// </summary>
         OwnedByCommand

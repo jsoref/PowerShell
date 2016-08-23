@@ -682,7 +682,7 @@ namespace System.Management.Automation
         /// 
         /// This method is used when handling a script block that contains $using for Invoke-Command.
         /// 
-        /// When run Invoke-Command targetting a machine that runs PSv3 or above, we pass a dictionary
+        /// When run Invoke-Command targeting a machine that runs PSv3 or above, we pass a dictionary
         /// to the remote end that contains the key of each UsingExpressionAst and its value. This method
         /// is used to generate the key.
         /// </summary>

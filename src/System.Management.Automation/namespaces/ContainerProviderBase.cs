@@ -19,7 +19,7 @@ namespace System.Management.Automation.Provider
     /// the use of a set of core commands against the objects that the provider
     /// gives access to. By deriving from this class users can take advantage of
     /// all the features of the <see cref="ItemCmdletProvider"/> as well as
-    /// globbing and the following commands when targetting this provider:
+    /// globbing and the following commands when targeting this provider:
     ///     get-childitem
     ///     rename-item
     ///     new-item

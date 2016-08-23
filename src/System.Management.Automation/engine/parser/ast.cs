@@ -2268,7 +2268,7 @@ namespace System.Management.Automation.Language
         /// A parameter name cannot be a using variable, but its default value could contain any number of UsingExpressions, for example:
         ///     function bar ($x = (Get-X @using:defaultSettings.Parameters)) { ... }
         /// This method goes through the ParameterAst text and replace each $using variable with its new synthetic name (remove the $using prefix).
-        /// This method is used when we call Invoke-Command targetting a PSv2 remote machine. In that case, we might need to call this method
+        /// This method is used when we call Invoke-Command targeting a PSv2 remote machine. In that case, we might need to call this method
         /// to process the script block text, since $using prefix cannot be recognized by PSv2.
         /// </summary>
         /// <param name="orderedUsingVar">A sorted enumerator of using variable asts, ascendingly sorted based on StartOffSet</param>
