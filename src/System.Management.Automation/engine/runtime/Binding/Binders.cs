@@ -2933,7 +2933,7 @@ namespace System.Management.Automation.Language
 
                 // Figure out the smallest type necessary so we don't lose information.
                 // For uint, V2 promoted to long, but it's more correct to use uint.
-                // For ulong, V2 incorreclty used long, this is fixed here.
+                // For ulong, V2 incorrectly used long, this is fixed here.
                 // For float, double, and decimal operands, we used to use long because V2 did.
                 // Because we use unsigned for -bnot, to be consistent, we promote to unsigned here too (-band,-bor,-xor)
                 opType = GetBitwiseOpType((int)leftTypeCode >= (int)rightTypeCode ? leftTypeCode : rightTypeCode);
