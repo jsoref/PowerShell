@@ -181,7 +181,7 @@ namespace System.Management.Automation.Provider
         /// </returns>
         /// 
         /// <remarks>
-        /// Providers override this method if they support a native filteing syntax that
+        /// Providers override this method if they support a native filtering syntax that
         /// can offer performance improvements over wildcard matching done by the PowerShell
         /// engine.
         /// If the provider can handle a portion (or all) of the PowerShell wildcard with
@@ -785,7 +785,7 @@ namespace System.Management.Automation.Provider
         /// </returns>
         /// 
         /// <remarks>
-        /// Providers override this method if they support a native filteing syntax that
+        /// Providers override this method if they support a native filtering syntax that
         /// can offer performance improvements over wildcard matching done by the PowerShell
         /// engine.
         /// If the provider can handle a portion (or all) of the PowerShell wildcard with
