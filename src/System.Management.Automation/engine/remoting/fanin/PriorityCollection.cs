@@ -293,7 +293,7 @@ namespace System.Management.Automation.Remoting
         private int _totalReceivedObjectSizeSoFar;
         private bool _isCreateByClientTM;
 
-        // this indicates if any off sync fragments canbe ignored
+        // this indicates if any off sync fragments can be ignored
         // this gets reset (to false) upon receiving the next "start" fragment along the stream
         private bool _canIgnoreOffSyncFragments = false;
 
