@@ -46,7 +46,7 @@ namespace Microsoft.PackageManagement.Internal.Packaging {
         }
 
         /// <summary>
-        ///     All Swidtag elements can explicity support the xml:lang attribute.
+        ///     All Swidtag elements can explicitly support the xml:lang attribute.
         /// </summary>
         public string Culture {
             get {

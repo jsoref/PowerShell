@@ -2324,7 +2324,7 @@ namespace System.Management.Automation.Remoting.Client
         /// <summary>
         /// This API deinitializes the Winrm client stack; all operations will 
         /// finish before this API will return; this is a sync call;
-        /// it is highly recommended that all operations are explictly cancelled 
+        /// it is highly recommended that all operations are explicitly cancelled 
         /// and all sessions are closed before calling this API
         /// Returns non zero error code upon failure.
         /// </summary>

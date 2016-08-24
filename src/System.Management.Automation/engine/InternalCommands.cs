@@ -210,7 +210,7 @@ namespace Microsoft.PowerShell.Commands
             _end = _scripts.Count;
             _start = _scripts.Count > 1 ? 1 : 0;
 
-            // and set the end script if it wasn't explicilty set with a named parameter.
+            // and set the end script if it wasn't explicitly set with a named parameter.
             if (!_setEndScript)
             {
                 if (_scripts.Count > 2)

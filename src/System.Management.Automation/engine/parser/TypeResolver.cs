@@ -202,7 +202,7 @@ namespace System.Management.Automation.Language
             try
             {
                 // We shouldn't really bother looking for the type in System namespace, but
-                // we've always done that.  We explictily are not supporting arbitrary
+                // we've always done that.  We explicitly are not supporting arbitrary
                 // 'using namespace' here because there is little value, if you need the assembly
                 // qualifier, it's best to just fully specify the type.
                 var result = Type.GetType(typeName.FullName, false, true) ??

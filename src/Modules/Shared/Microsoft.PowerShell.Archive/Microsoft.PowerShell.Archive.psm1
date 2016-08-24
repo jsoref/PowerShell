@@ -683,7 +683,7 @@ function CompressSingleDirHelper
         {
             # The currentContent points to a directory.
             # We need to check if the directory is an empty directory, if so such a
-            # directory has to be explictly added to the archive file.
+            # directory has to be explicitly added to the archive file.
             # if there are no files in the directory the GetFiles() API returns an empty array.
             $files = $currentContent.GetFiles()
             if($files.Count -eq 0)

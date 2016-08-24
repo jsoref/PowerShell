@@ -1812,7 +1812,7 @@ namespace Microsoft.PowerShell.Activities
             {
                 activityProgMsg = this.PSProgressMessage.Get(context);
 
-                // there is no need to write the progress message since the value of psprogressmessage is explicityly provided with null
+                // there is no need to write the progress message since the value of psprogressmessage is explicitly provided with null
                 if (this.PSProgressMessage.Expression != null && string.IsNullOrEmpty(activityProgMsg))
                     return;
             }

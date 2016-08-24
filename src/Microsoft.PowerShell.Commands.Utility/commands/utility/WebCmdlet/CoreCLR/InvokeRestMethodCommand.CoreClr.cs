@@ -54,7 +54,7 @@ namespace Microsoft.PowerShell.Commands
                         string str = StreamHelper.DecodeStream(responseStream, encoding);
                         bool convertSuccess = false;
 
-                        // On CoreCLR, we need to explicity load Json.NET
+                        // On CoreCLR, we need to explicitly load Json.NET
                         JsonObject.ImportJsonDotNetModule(this);
                         if (returnType == RestReturnType.Json)
                         {
