@@ -33,7 +33,7 @@ namespace System.Management.Automation.ComInterop
     /// "dressing up" like other classes and hence successfully respond to QIs 
     /// for interfaces that it does not really support( it is OK to say 
     /// "I implement this interface" for event sinks only since the common 
-    /// practice is to use IDistpach.Invoke when calling into event sinks). 
+    /// practice is to use IDispatch.Invoke when calling into event sinks). 
     /// </summary>
     internal sealed class ComEventSinkProxy : RealProxy
     {
