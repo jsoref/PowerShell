@@ -408,7 +408,7 @@ namespace Microsoft.WSMan.Management
                     string parameters = null, nilns = null;
                     string xmlns = GetXmlNs(resourceUri.ResourceUri);
 
-                    //if valueset is given, i.e hastable
+                    //if valueset is given, i.e hashtable
                     if (valueset != null)
                     {
                         foreach (DictionaryEntry entry in valueset)

@@ -442,7 +442,7 @@ namespace Microsoft.PowerShell.Commands
 
         /// <summary>
         /// Executes an instance of the workflow object graph identified by the passed
-        /// GUID, binding parameters from the Parameters hastable.
+        /// GUID, binding parameters from the Parameters hashtable.
         /// </summary>
         /// <param name="command">The powershell command.</param>
         /// <param name="workflowGuid">The GUID used to identify the workflow to run.</param>
@@ -459,7 +459,7 @@ namespace Microsoft.PowerShell.Commands
 
         /// <summary>
         /// Executes an instance of the workflow object graph identified by the passed
-        /// GUID, binding parameters from the Parameters hastable.
+        /// GUID, binding parameters from the Parameters hashtable.
         /// </summary>
         /// <param name="command">The powershell command.</param>
         /// <param name="workflowGuid">The GUID used to identify the workflow to run.</param>
@@ -477,7 +477,7 @@ namespace Microsoft.PowerShell.Commands
 
         /// <summary>
         /// Executes an instance of the workflow object graph identified by the passed
-        /// GUID, binding parameters from the Parameters hastable.
+        /// GUID, binding parameters from the Parameters hashtable.
         /// </summary>
         /// <param name="command">The powershell command.</param>
         /// <param name="workflowGuid">The GUID used to identify the workflow to run.</param>

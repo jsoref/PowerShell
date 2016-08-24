@@ -380,7 +380,7 @@ namespace System.Management.Automation
         /// "attrib1" will be lost. This seems to be OK with current practice of authoring 
         /// monad command help. 
         /// </summary>
-        /// <param name="properties">property hastable</param>
+        /// <param name="properties">property hashtable</param>
         /// <param name="name">property name</param>
         /// <param name="mshObject">property value</param>
         private static void AddProperty(Hashtable properties, string name, PSObject mshObject)

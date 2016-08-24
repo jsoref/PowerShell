@@ -117,7 +117,7 @@ $script:NuGetProviderName = "NuGet"
 $script:NuGetProviderVersion  = [Version]'2.8.5.201'
 
 $script:SupportsPSModulesFeatureName="supports-powershell-modules"
-$script:FastPackRefHastable = @{}
+$script:FastPackRefHashtable = @{}
 $script:NuGetBinaryProgramDataPath=if(IsWindows) {"$env:ProgramFiles\PackageManagement\ProviderAssemblies"}
 $script:NuGetBinaryLocalAppDataPath=if(IsWindows) {"$env:LOCALAPPDATA\PackageManagement\ProviderAssemblies"}
 # go fwlink for 'https://nuget.org/nuget.exe'
@@ -10048,7 +10048,7 @@ function Find-Package
 																	-Type $artifactType `
 																	-request $request
 				
-								$script:FastPackRefHastable[$fastPackageReference] = $pkg
+								$script:FastPackRefHashtable[$fastPackageReference] = $pkg
 	
 								Write-Output -InputObject $sid
 							}
@@ -10490,7 +10490,7 @@ function Install-PackageUtility
             Write-Verbose ($LocalizedData.SpecifiedLocationAndOGP -f ($provider.ProviderName, $providerName))
 
             $InstalledItemsList = $null
-            $pkg = $script:FastPackRefHastable[$fastPackageReference]
+            $pkg = $script:FastPackRefHashtable[$fastPackageReference]
 
             # If an item has dependencies, prepare the list of installed items and 
             # pass it to the NuGet provider to not download the already installed items.
@@ -10539,7 +10539,7 @@ function Install-PackageUtility
             }
             Write-Verbose $message
 
-            $installedPkgs = $provider.InstallPackage($script:FastPackRefHastable[$fastPackageReference], $newRequest)
+            $installedPkgs = $provider.InstallPackage($script:FastPackRefHashtable[$fastPackageReference], $newRequest)
 
             foreach($pkg in $installedPkgs)
             {

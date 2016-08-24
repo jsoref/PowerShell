@@ -2758,7 +2758,7 @@ namespace System.Management.Automation.Remoting
         }
 
         /// <summary>
-        /// Attempts to get a hastable array from an object
+        /// Attempts to get a hashtable array from an object
         /// </summary>
         /// <param name="hashObj"></param>
         /// <returns></returns>

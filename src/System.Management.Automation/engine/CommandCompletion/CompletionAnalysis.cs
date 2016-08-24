@@ -777,7 +777,7 @@ namespace System.Management.Automation
             return result;
         }
 
-        // Helper method to auto complete hashtale key
+        // Helper method to auto complete hashtable key
         private List<CompletionResult> GetResultForHashtable(CompletionContext completionContext)
         {
             var lastAst = completionContext.RelatedAsts.Last();
