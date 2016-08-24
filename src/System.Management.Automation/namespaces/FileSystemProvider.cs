@@ -7054,7 +7054,7 @@ namespace Microsoft.PowerShell.Commands
             /// <summary>
             /// WNetAddConnection2 API makes a connection to a network resource 
             /// and can redirect a local device to the network resource.
-            /// This API simulates the "new Use" funcationality used to connect to 
+            /// This API simulates the "new Use" functionality used to connect to 
             /// network resource.
             /// </summary>
             /// <param name="netResource">
