@@ -1629,7 +1629,7 @@ namespace Microsoft.PowerShell
 
         private void OpenConsoleRunspace(Runspace runspace, bool staMode)
         {
-            // staMode will have folowing values:
+            // staMode will have following values:
             // On FullPS: 'true'/'false' = default('true'=STA) + possibility of overload through cmdline parameter '-mta'
             // On NanoPS: always 'false' = default('false'=MTA) + NO possibility of overload through cmdline parameter '-mta'
             // ThreadOptions should match on FullPS and NanoPS for corresponding ApartmentStates.
