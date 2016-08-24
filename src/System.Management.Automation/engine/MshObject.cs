@@ -1817,7 +1817,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Used in the serialization dupplicate entry hashtable to detect when an PSObject has been serialized
+        /// Used in the serialization duplicate entry hashtable to detect when an PSObject has been serialized
         /// </summary>
         /// <returns>The System.Object implementation of GetHashCode</returns>
         internal int GetReferenceHashCode()
