@@ -452,7 +452,7 @@ namespace System.Management.Automation
                 try
                 {
                     // try to populate method table..if there is any exception
-                    // generati.ng the method metadata..suppress the exception
+                    // generating the method metadata..suppress the exception
                     // but dont store the info in the cache. This is to allow
                     // for method look up again in future (after the wmi object
                     // is fixed)
