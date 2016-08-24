@@ -3893,7 +3893,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Find the location where 'tab' is typed based on the line and colum.
+        /// Find the location where 'tab' is typed based on the line and column.
         /// </summary>
         private static ArgumentLocation FindTargetArgumentLocation(Collection<AstParameterArgumentPair> parsedArguments, Token token)
         {
