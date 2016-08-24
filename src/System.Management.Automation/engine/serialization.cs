@@ -5595,7 +5595,7 @@ namespace System.Management.Automation
                 {
                     // collected object doesn't have a hash code
                     // return an arbitrary hashcode here and fall back on Equal method for comparison
-                    return RuntimeHelpers.GetHashCode(obj); // RuntimeHelpers.GetHashCode(null) returns 0 - this would cause many hashtable colisions for WeakReferences to dead objects
+                    return RuntimeHelpers.GetHashCode(obj); // RuntimeHelpers.GetHashCode(null) returns 0 - this would cause many hashtable collisions for WeakReferences to dead objects
                 }
                 else
                 {

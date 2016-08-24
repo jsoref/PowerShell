@@ -491,7 +491,7 @@ namespace System.Management.Automation.ComInterop
 
                     // Sometimes coclass has multiple source interfaces. Usually this is caused by
                     // adding new events and putting them on new interfaces while keeping the
-                    // old interfaces around. This may cause name collisioning which we are
+                    // old interfaces around. This may cause name collisions which we are
                     // resolving by keeping only the first event with the same name.
                     if (events.ContainsKey(name) == false)
                     {

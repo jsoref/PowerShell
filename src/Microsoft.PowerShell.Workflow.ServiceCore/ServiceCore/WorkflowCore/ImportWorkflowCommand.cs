@@ -1164,7 +1164,7 @@ namespace Microsoft.PowerShell.Commands
                         continue;
                     }
 
-                    // If the parameter name is one of the expected collisons, don't add it to the list. 
+                    // If the parameter name is one of the expected collisions, don't add it to the list. 
                     if (p.Name.Equals(Constants.ComputerName, StringComparison.OrdinalIgnoreCase) || p.Name.Equals(Constants.PrivateMetadata, StringComparison.OrdinalIgnoreCase))
                     {
                         continue;
