@@ -39,7 +39,7 @@ namespace Microsoft.Management.UI.Internal
         private bool canChangeColumns = false;
 
         /// <summary>
-        /// Instanctiates a new object of this class.
+        /// Instantiates a new object of this class.
         /// </summary>
         public InnerListGridView()
             : this(new ObservableCollection<InnerListColumn>())

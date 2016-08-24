@@ -102,7 +102,7 @@ namespace System.Management.Automation.Remoting
         #region Constructors
 
         /// <summary>
-        /// This constructor inistantiates a ServerRemoteSession object and 
+        /// This constructor instantiates a ServerRemoteSession object and 
         /// a ServerRemoteSessionDataStructureHandler object.
         /// </summary>
         /// <param name="senderInfo">
