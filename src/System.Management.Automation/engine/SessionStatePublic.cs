@@ -128,7 +128,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Get/set constraints for this execution environemnt
+        /// Get/set constraints for this execution environment
         /// </summary>
         public PSLanguageMode LanguageMode
         {

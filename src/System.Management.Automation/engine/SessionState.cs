@@ -188,7 +188,7 @@ namespace System.Management.Automation
         internal Dictionary<string, PSModuleInfo> ModuleTable { get; } = new Dictionary<string, PSModuleInfo>(StringComparer.OrdinalIgnoreCase);
 
         /// <summary>
-        /// Get/set constraints for this execution environemnt
+        /// Get/set constraints for this execution environment
         /// </summary>
         internal PSLanguageMode LanguageMode
         {
