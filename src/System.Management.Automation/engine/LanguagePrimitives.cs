@@ -1644,7 +1644,7 @@ namespace System.Management.Automation
         /// <param name="resultType">type to convert psobject.</param>
         /// <param name="recursion">Indicates if inner properties have to be recursively converted.</param>
         /// <param name="formatProvider">To be used in custom type conversions, to call parse and to call Convert.ChangeType</param>
-        /// <param name="ignoreUnknownMembers">Indiacates if Unknown members in the psobject have to be ignored if the corresponding members in resultType do not exist.</param>
+        /// <param name="ignoreUnknownMembers">Indicates if Unknown members in the psobject have to be ignored if the corresponding members in resultType do not exist.</param>
         /// <returns>converted value.</returns>
         public static object ConvertPSObjectToType(PSObject valueToConvert, Type resultType, bool recursion, IFormatProvider formatProvider, bool ignoreUnknownMembers)
         {
