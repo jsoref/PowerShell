@@ -1207,7 +1207,7 @@ namespace System.Management.Automation
         /// enumerating and if that fails we call obj.ToString.
         /// If this is an PSObject, we look for a brokered ToString. 
         /// If it is not present, and the BaseObject is null we try listing the properties.
-        /// If the BaseObject is not null we try enumerationg. If that fails we try the BaseObject's ToString.
+        /// If the BaseObject is not null we try enumerating. If that fails we try the BaseObject's ToString.
         /// </param>
         /// <returns>A string representation of the object</returns>
         /// <exception cref="ExtendedTypeSystemException">
@@ -1239,7 +1239,7 @@ namespace System.Management.Automation
         /// enumerating and if that fails we call obj.ToString.
         /// If this is an PSObject, we look for a brokered ToString. 
         /// If it is not present, and the BaseObject is null we try listing the properties.
-        /// If the BaseObject is not null we try enumerationg. If that fails we try the BaseObject's ToString.
+        /// If the BaseObject is not null we try enumerating. If that fails we try the BaseObject's ToString.
         /// </param>
         /// <param name="separator">The separator between elements, if this is an enumeration</param>
         /// <param name="format">the format to be passed to ToString</param>
