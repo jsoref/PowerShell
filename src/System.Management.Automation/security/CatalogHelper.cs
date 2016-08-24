@@ -213,7 +213,7 @@ namespace System.Management.Automation
         /// <param name="relativePaths"> working set of relative paths of all files. </param>   
         /// <param name="cdfHeaderContent"> content to be added in CatalogHeader section of cdf File</param>   
         /// <param name="cdfFilesContent"> content to be added in CatalogFiles section of cdf File </param>   
-        /// <param name="catAttributeCount"> indictaing the current no of catalog header level attributes </param>   
+        /// <param name="catAttributeCount"> indicating the current no of catalog header level attributes </param>   
         /// <returns> void </returns>
         internal static void ProcessFileToBeAddedInCatalogDefinitionFile(FileInfo fileToHash, DirectoryInfo dirInfo, ref HashSet<string> relativePaths, ref string cdfHeaderContent, ref string cdfFilesContent, ref int catAttributeCount)
         {

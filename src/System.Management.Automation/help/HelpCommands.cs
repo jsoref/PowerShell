@@ -201,7 +201,7 @@ namespace Microsoft.PowerShell.Commands
 
         private bool _showWindow;
         /// <summary>
-        /// Gets and sets a value indicatuing whether the help should be displayed in a separate window
+        /// Gets and sets a value indicating whether the help should be displayed in a separate window
         /// </summary>
         [Parameter(ParameterSetName = "ShowWindow", Mandatory = true)]
         public SwitchParameter ShowWindow
