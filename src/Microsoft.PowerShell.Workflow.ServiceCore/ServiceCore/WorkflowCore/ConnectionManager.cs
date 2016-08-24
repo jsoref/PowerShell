@@ -946,7 +946,7 @@ namespace Microsoft.PowerShell.Workflow
 
             AssertNotDisposed();
 
-            // this will throw an exeption when a runspace is not successfully
+            // this will throw an exception when a runspace is not successfully
             // available
             result.EndInvoke();
 

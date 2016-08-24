@@ -65,7 +65,7 @@ namespace Microsoft.PackageManagement.NuGetProvider
         }
 
         /// <summary>
-        /// This is just here as to give us some possibility of knowing when an unexception happens...
+        /// This is just here as to give us some possibility of knowing when an exception happens...
         /// At the very least, we'll write it to the system debug channel, so a developer can find it if they are looking for it.
         /// </summary>
         public void OnUnhandledException(string methodName, Exception exception) {

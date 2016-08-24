@@ -230,7 +230,7 @@ namespace Microsoft.PowerShell
                         {
                             //This exception can occurs when input is closed. This can happen 
                             //for various reasons. For ex:Command in the pipeline is invalid and 
-                            //command discovery throws excecption which closes the pipeline and 
+                            //command discovery throws exception which closes the pipeline and 
                             //hence the Input pipe.
                             break;
                         }

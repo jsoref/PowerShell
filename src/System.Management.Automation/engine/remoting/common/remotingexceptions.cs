@@ -350,7 +350,7 @@ namespace System.Management.Automation.Remoting
         /// This constuctor takes an inner exception and an error id.
         /// </summary>
         /// <param name="innerException">
-        /// Inner excetion.
+        /// Inner exception.
         /// </param>
         /// <param name="resourceString">
         /// The resource string in the base resource file.
@@ -460,7 +460,7 @@ namespace System.Management.Automation.Remoting
         /// This constuctor takes an inner exception and an error id.
         /// </summary>
         /// <param name="innerException">
-        /// Inner excetion.
+        /// Inner exception.
         /// </param>
         /// <param name="resourceString">
         /// The resource string in the base resource file.
@@ -602,7 +602,7 @@ namespace System.Management.Automation.Remoting
         /// This constuctor takes an inner exception and an error id.
         /// </summary>
         /// <param name="innerException">
-        /// Inner excetion.
+        /// Inner exception.
         /// </param>
         /// <param name="resourceString">
         /// The resource string in the base resource file.

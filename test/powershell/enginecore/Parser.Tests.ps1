@@ -210,7 +210,7 @@ Describe "ParserTests (admin\monad\tests\monad\src\engine\core\ParserTests.cs)" 
         }
     }
 	
-	It "Throws an incomplete parse exeception when a comma follows an expression (line 247)" {
+	It "Throws an incomplete parse exception when a comma follows an expression (line 247)" {
         try {
             ExecuteCommand "(1+ 1)," 
             throw "Execution OK"
