@@ -49,7 +49,7 @@ namespace System.Management.Automation.Language
         }
 
         /// <summary>
-        /// Inherited from InvalidCastException, because it happens in [string] -> [Type] convertion.
+        /// Inherited from InvalidCastException, because it happens in [string] -> [Type] conversion.
         /// </summary>
         internal class AmbiguousTypeException : InvalidCastException
         {

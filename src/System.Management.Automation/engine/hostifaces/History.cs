@@ -1508,7 +1508,7 @@ namespace Microsoft.PowerShell.Commands
         /// mshObject to be converted to HistoryInfo.
         /// </param>
         /// <returns>
-        /// HistoryInfo object if coversion is successful else null.
+        /// HistoryInfo object if conversion is successful else null.
         /// </returns>
 #pragma warning disable 0162
         private
