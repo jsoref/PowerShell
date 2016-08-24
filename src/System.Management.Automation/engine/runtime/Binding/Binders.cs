@@ -2483,7 +2483,7 @@ namespace System.Management.Automation.Language
             //     tmp = Parser.ScanNumber(arg)
             //     if (tmp == null) { throw new RuntimeError("BadNumericConstant") }
             //     dynamic op target tmp
-            // For equality comparision operators, if the conversion fails, we shouldn't raise
+            // For equality comparison operators, if the conversion fails, we shouldn't raise
             // an exception, so those must be wrapped in try/catch, like:
             //     try { /* as above */ }
             //     catch (InvalidCastException) { true or false (depending on Operation type) }
@@ -3120,7 +3120,7 @@ namespace System.Management.Automation.Language
             }
 
             return BinaryComparisonCommon(enumerable, target, arg)
-                ?? BinaryComparision(target, arg, e => Expression.LessThan(e, ExpressionCache.Constant(0)));
+                ?? BinaryComparison(target, arg, e => Expression.LessThan(e, ExpressionCache.Constant(0)));
         }
 
         private DynamicMetaObject CompareLE(DynamicMetaObject target,
@@ -3140,7 +3140,7 @@ namespace System.Management.Automation.Language
             }
 
             return BinaryComparisonCommon(enumerable, target, arg)
-                ?? BinaryComparision(target, arg, e => Expression.LessThanOrEqual(e, ExpressionCache.Constant(0)));
+                ?? BinaryComparison(target, arg, e => Expression.LessThanOrEqual(e, ExpressionCache.Constant(0)));
         }
 
         private DynamicMetaObject CompareGT(DynamicMetaObject target,
@@ -3162,7 +3162,7 @@ namespace System.Management.Automation.Language
             }
 
             return BinaryComparisonCommon(enumerable, target, arg)
-                ?? BinaryComparision(target, arg, e => Expression.GreaterThan(e, ExpressionCache.Constant(0)));
+                ?? BinaryComparison(target, arg, e => Expression.GreaterThan(e, ExpressionCache.Constant(0)));
         }
 
         private DynamicMetaObject CompareGE(DynamicMetaObject target,
@@ -3184,10 +3184,10 @@ namespace System.Management.Automation.Language
             }
 
             return BinaryComparisonCommon(enumerable, target, arg)
-                ?? BinaryComparision(target, arg, e => Expression.GreaterThanOrEqual(e, ExpressionCache.Constant(0)));
+                ?? BinaryComparison(target, arg, e => Expression.GreaterThanOrEqual(e, ExpressionCache.Constant(0)));
         }
 
-        private DynamicMetaObject BinaryComparision(DynamicMetaObject target, DynamicMetaObject arg, Func<Expression, Expression> toResult)
+        private DynamicMetaObject BinaryComparison(DynamicMetaObject target, DynamicMetaObject arg, Func<Expression, Expression> toResult)
         {
             if (target.LimitType == typeof(string))
             {

@@ -1691,7 +1691,7 @@ namespace System.Management.Automation
             }
 
             // The above check validates if we are comparing with the same object references
-            // This check "shortcuts" the comparision if the first object is a CustomObject
+            // This check "shortcuts" the comparison if the first object is a CustomObject
             // since 2 custom objects are not equal.
             if (Object.ReferenceEquals(this.BaseObject, PSCustomObject.SelfInstance))
             {
@@ -1748,7 +1748,7 @@ namespace System.Management.Automation
         /// The name of the member set for adapted members
         /// </summary>
         /// <remarks>
-        /// This needs to be Lower cased as it saves some comparision time elsewhere.
+        /// This needs to be Lower cased as it saves some comparison time elsewhere.
         /// </remarks>
         public const string AdaptedMemberSetName = "psadapted";
 
@@ -1756,7 +1756,7 @@ namespace System.Management.Automation
         /// The name of the member set for extended members
         /// </summary>
         /// <remarks>
-        /// This needs to be Lower cased as it saves some comparision time elsewhere.
+        /// This needs to be Lower cased as it saves some comparison time elsewhere.
         /// </remarks>
         public const string ExtendedMemberSetName = "psextended";
 
@@ -1764,7 +1764,7 @@ namespace System.Management.Automation
         /// The name of the member set for the BaseObject's members
         /// </summary>
         /// <remarks>
-        /// This needs to be Lower cased as it saves some comparision time elsewhere.
+        /// This needs to be Lower cased as it saves some comparison time elsewhere.
         /// </remarks>
         public const string BaseObjectMemberSetName = "psbase";
 
@@ -1773,7 +1773,7 @@ namespace System.Management.Automation
         /// The PSObject's properties
         /// </summary>
         /// <remarks>
-        /// This needs to be Lower cased as it saves some comparision time elsewhere.
+        /// This needs to be Lower cased as it saves some comparison time elsewhere.
         /// </remarks>
         internal const string PSObjectMemberSetName = "psobject";
 
@@ -1781,7 +1781,7 @@ namespace System.Management.Automation
         /// a shortcut to .PSObject.TypeNames
         /// </summary>
         /// <remarks>
-        /// This needs to be Lower cased as it saves some comparision time elsewhere.
+        /// This needs to be Lower cased as it saves some comparison time elsewhere.
         /// </remarks>
         internal const string PSTypeNames = "pstypenames";
 

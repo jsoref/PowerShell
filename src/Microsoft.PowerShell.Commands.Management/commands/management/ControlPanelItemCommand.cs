@@ -205,7 +205,7 @@ $result
 
         /// <summary>
         /// CompareVerbActionOpen is a helper function used to perform locale specific
-        /// comparision of the verb action Open exposed by various control panel items.
+        /// comparison of the verb action Open exposed by various control panel items.
         /// </summary>
         /// <param name="verbActionName">Locale spcific verb action exposed by the control panel item.</param>
         /// <returns>True if the control panel item supports verb action open or else returns false.</returns>

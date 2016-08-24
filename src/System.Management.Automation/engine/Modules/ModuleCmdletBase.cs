@@ -515,7 +515,7 @@ namespace Microsoft.PowerShell.Commands
             }
 
             // MSFT:873446 Create a case insensitive comparer based hashtable to help
-            // with case-insenstive comparision of keys.
+            // with case-insenstive comparison of keys.
             data = new Hashtable(data, StringComparer.OrdinalIgnoreCase);
             if (validMembers != null && !ValidateManifestHash(data, validMembers, moduleManifestPath, manifestProcessingFlags))
             {
