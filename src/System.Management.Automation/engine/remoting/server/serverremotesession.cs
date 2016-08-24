@@ -464,13 +464,13 @@ namespace System.Management.Automation.Remoting
 
         /// <summary>
         /// This property returns the ServerRemoteSessionContext object created inside
-        /// this object's contructor.
+        /// this object's constructor.
         /// </summary>
         internal ServerRemoteSessionContext Context { get; }
 
         /// <summary>
         /// This property returns the ServerRemoteSessionDataStructureHandler object created inside
-        /// this object's contructor.
+        /// this object's constructor.
         /// </summary>
         internal ServerRemoteSessionDataStructureHandler SessionDataStructureHandler { get; }
 

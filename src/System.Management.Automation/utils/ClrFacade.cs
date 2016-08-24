@@ -602,7 +602,7 @@ namespace System.Management.Automation
         /// 
         /// In CORECLR, there are two peculiarities with its implementation that affect our own:
         /// 1. Structures cannot be instantiated using GetConstructor, so they must be filtered out.
-        /// 2. Classes must have a default constructor implemented for GetContructor to work.
+        /// 2. Classes must have a default constructor implemented for GetConstructor to work.
         /// 
         /// See RemoteHostEncoder.IsEncodingAllowedForClassOrStruct for a list of the required types.
         /// </summary>

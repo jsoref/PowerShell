@@ -940,7 +940,7 @@ namespace System.Management.Automation.Tracing
         private bool disposed;
 
         /// <summary>
-        /// Consturctor
+        /// Constructor
         /// </summary>
         internal PowerShellTraceSource(PowerShellTraceTask task, PowerShellTraceKeywords keywords)
         {

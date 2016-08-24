@@ -296,7 +296,7 @@ namespace System.Management.Automation.Remoting
         #region Constructors
 
         /// <summary>
-        /// Default construtor.
+        /// Default constructor.
         /// </summary>
         public PSRemotingDataStructureException()
             : base(PSRemotingErrorInvariants.FormatResourceString(RemotingErrorIdStrings.DefaultRemotingExceptionMessage, typeof(PSRemotingDataStructureException).FullName))

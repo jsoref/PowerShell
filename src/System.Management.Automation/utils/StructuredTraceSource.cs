@@ -36,7 +36,7 @@ namespace System.Management.Automation
         /// Constructors will be traced
         /// </summary>
         /// <!--
-        /// The TraceConstrutor methods are enabled
+        /// The TraceConstructor methods are enabled
         /// -->
         Constructor = 0x00000001,
 

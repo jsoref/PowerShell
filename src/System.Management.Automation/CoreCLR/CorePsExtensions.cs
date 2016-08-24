@@ -420,10 +420,10 @@ namespace System.Management.Automation
             do
             {
                 // Use 'for' loop to avoid construct new ArrayEnumerator object
-                for (int constorIndex = 0; constorIndex < constructors.Length; constorIndex++)
+                for (int constructorIndex = 0; constructorIndex < constructors.Length; constructorIndex++)
                 {
-                    var constor = constructors[constorIndex];
-                    ParameterInfo[] parameters = constor.GetParameters();
+                    var constructor = constructors[constructorIndex];
+                    ParameterInfo[] parameters = constructor.GetParameters();
                     if (types.Length == parameters.Length)
                     {
                         bool success = true;
@@ -438,7 +438,7 @@ namespace System.Management.Automation
 
                         if (success)
                         {
-                            matchConstructors.Add(constor);
+                            matchConstructors.Add(constructor);
                         }
                     }
                 }
