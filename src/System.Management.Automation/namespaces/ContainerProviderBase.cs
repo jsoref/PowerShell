@@ -100,7 +100,7 @@ namespace System.Management.Automation.Provider
         /// parsing attributes similar to a cmdlet class or a 
         /// <see cref="System.Management.Automation.RuntimeDefinedParameterDictionary"/>.
         /// 
-        /// The default implemenation returns null. (no additional parameters)
+        /// The default implementation returns null. (no additional parameters)
         /// </returns>
         /// 
         internal object GetChildItemsDynamicParameters(
@@ -229,7 +229,7 @@ namespace System.Management.Automation.Provider
         /// parsing attributes similar to a cmdlet class or a 
         /// <see cref="System.Management.Automation.RuntimeDefinedParameterDictionary"/>.
         /// 
-        /// The default implemenation returns null. (no additional parameters)
+        /// The default implementation returns null. (no additional parameters)
         /// </returns>
         /// 
         internal object GetChildNamesDynamicParameters(
@@ -701,7 +701,7 @@ namespace System.Management.Automation.Provider
         /// parsing attributes similar to a cmdlet class or a 
         /// <see cref="System.Management.Automation.RuntimeDefinedParameterDictionary"/>.
         /// 
-        /// The default implemenation returns null. (no additional parameters)
+        /// The default implementation returns null. (no additional parameters)
         /// </returns>
         protected virtual object GetChildItemsDynamicParameters(string path, bool recurse)
         {
@@ -830,7 +830,7 @@ namespace System.Management.Automation.Provider
         /// parsing attributes similar to a cmdlet class or a 
         /// <see cref="System.Management.Automation.RuntimeDefinedParameterDictionary"/>.
         /// 
-        /// The default implemenation returns null. (no additional parameters)
+        /// The default implementation returns null. (no additional parameters)
         /// </returns>
         protected virtual object GetChildNamesDynamicParameters(string path)
         {
@@ -908,7 +908,7 @@ namespace System.Management.Automation.Provider
         /// parsing attributes similar to a cmdlet class or a 
         /// <see cref="System.Management.Automation.RuntimeDefinedParameterDictionary"/>.
         /// 
-        /// The default implemenation returns null. (no additional parameters)
+        /// The default implementation returns null. (no additional parameters)
         /// </returns>
         protected virtual object RenameItemDynamicParameters(string path, string newName)
         {
@@ -995,7 +995,7 @@ namespace System.Management.Automation.Provider
         /// parsing attributes similar to a cmdlet class or a 
         /// <see cref="System.Management.Automation.RuntimeDefinedParameterDictionary"/>.
         /// 
-        /// The default implemenation returns null. (no additional parameters)
+        /// The default implementation returns null. (no additional parameters)
         /// </returns>
         protected virtual object NewItemDynamicParameters(
             string path,
@@ -1077,7 +1077,7 @@ namespace System.Management.Automation.Provider
         /// parsing attributes similar to a cmdlet class or a 
         /// <see cref="System.Management.Automation.RuntimeDefinedParameterDictionary"/>.
         /// 
-        /// The default implemenation returns null. (no additional parameters)
+        /// The default implementation returns null. (no additional parameters)
         /// </returns>
         protected virtual object RemoveItemDynamicParameters(
             string path,
@@ -1205,7 +1205,7 @@ namespace System.Management.Automation.Provider
         /// parsing attributes similar to a cmdlet class or a 
         /// <see cref="System.Management.Automation.RuntimeDefinedParameterDictionary"/>.
         /// 
-        /// The default implemenation returns null. (no additional parameters)
+        /// The default implementation returns null. (no additional parameters)
         /// </returns>
         protected virtual object CopyItemDynamicParameters(
             string path,

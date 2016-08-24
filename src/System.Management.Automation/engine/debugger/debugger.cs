@@ -1330,7 +1330,7 @@ namespace System.Management.Automation
         #region enabling/disabling breakpoints
 
         /// <summary>
-        /// Implmentation of Enable-PSBreakpoint cmdlet.
+        /// Implementation of Enable-PSBreakpoint cmdlet.
         /// </summary>
         internal void EnableBreakpoint(Breakpoint bp)
         {

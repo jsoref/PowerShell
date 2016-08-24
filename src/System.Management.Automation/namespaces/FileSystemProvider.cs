@@ -3269,7 +3269,7 @@ namespace Microsoft.PowerShell.Commands
         /// parsing attributes similar to a cmdlet class or a 
         /// <see cref="System.Management.Automation.RuntimeDefinedParameterDictionary"/>.
         /// 
-        /// The default implemenation returns null. (no additional parameters)
+        /// The default implementation returns null. (no additional parameters)
         /// </returns>
         protected override object ItemExistsDynamicParameters(string path)
         {
@@ -5058,7 +5058,7 @@ namespace Microsoft.PowerShell.Commands
         /// is encouraged that the provider actually use the path to lookup in its store
         /// and create a relative path that matches the casing, and standardized path syntax.
         /// 
-        /// Note, the base class implemenation uses GetParentPath, GetChildName, and MakePath
+        /// Note, the base class implementation uses GetParentPath, GetChildName, and MakePath
         /// to normalize the path and then make it relative to basePath. All string comparisons
         /// are done using StringComparison.InvariantCultureIgnoreCase.
         /// </remarks>
