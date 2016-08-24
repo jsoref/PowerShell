@@ -23,7 +23,7 @@ namespace Microsoft.PowerShell.Commands
     internal sealed class MshExpressionFilter
     {
         /// <summary>
-        /// construnt the class, using an array of patterns
+        /// construct the class, using an array of patterns
         /// </summary>
         /// <param name="wildcardPatternsStrings">array of pattern strings to use</param>
         internal MshExpressionFilter(string[] wildcardPatternsStrings)

@@ -306,7 +306,7 @@ namespace System.Management.Automation.Remoting
         #region Public Constructor
 
         /// <summary>
-        /// Constructor used to construt a PSIdentity object
+        /// Constructor used to construct a PSIdentity object
         /// </summary>
         /// <param name="authType">
         /// Type of authentication used to authenticate this user.
@@ -367,7 +367,7 @@ namespace System.Management.Automation.Remoting
         #region Constructor
 
         /// <summary>
-        /// Constructor used to construt a PSCertificateDetails object
+        /// Constructor used to construct a PSCertificateDetails object
         /// </summary>
         /// <param name="subject">
         /// Subject of the certificate.
