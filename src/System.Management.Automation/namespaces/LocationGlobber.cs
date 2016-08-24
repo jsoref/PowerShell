@@ -1330,7 +1330,7 @@ namespace System.Management.Automation
         /// Returns a provider specific path for given PowerShell path.
         /// </summary>
         /// <param name="path">Path to resolve</param>
-        /// <param name="context">Cmdlet contet</param>
+        /// <param name="context">Cmdlet context</param>
         /// <param name="isTrusted">When true bypass trust check</param>
         /// <param name="provider">Provider</param>
         /// <param name="drive">Drive</param>

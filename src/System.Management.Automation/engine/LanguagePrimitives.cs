@@ -2472,7 +2472,7 @@ namespace System.Management.Automation
 
         /// backupTypeTable:
         /// Used by Remoting Rehydration Logic. While Deserializing a remote object, 
-        /// LocalPipeline.ExecutionCotextFromTLS() might return null..In which case this
+        /// LocalPipeline.ExecutionContextFromTLS() might return null..In which case this
         /// TypeTable will be used to do the conversion.
         private static bool IsCustomTypeConversion(object valueToConvert,
                                                    Type resultType,
@@ -4547,7 +4547,7 @@ namespace System.Management.Automation
         /// <param name="formatProvider">governing conversion of types</param>
         /// <param name="backupTypeTable">
         /// Used by Remoting Rehydration Logic. While Deserializing a remote object, 
-        /// LocalPipeline.ExecutionCotextFromTLS() might return null..In which case this
+        /// LocalPipeline.ExecutionContextFromTLS() might return null..In which case this
         /// TypeTable will be used to do the conversion.
         /// </param>
         /// <returns>the value converted</returns>
