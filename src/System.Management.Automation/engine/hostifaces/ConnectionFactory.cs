@@ -480,7 +480,7 @@ namespace System.Management.Automation.Runspaces
 
         /// <summary>
         /// Creates a RunspacePool 
-        /// on the specified remote runspace compuer.
+        /// on the specified remote runspace computer.
         /// <paramref name="maxRunspaces"/>
         /// limits the number of Runspaces that can exist in this
         /// pool. The minimum pool size is set to 
@@ -527,7 +527,7 @@ namespace System.Management.Automation.Runspaces
 
         /// <summary>
         /// Creates a RunspacePool 
-        /// on the specified remote runspace compuer.
+        /// on the specified remote runspace computer.
         /// <paramref name="maxRunspaces"/>
         /// limits the number of Runspaces that can exist in this
         /// pool. The minimum pool size is set to 

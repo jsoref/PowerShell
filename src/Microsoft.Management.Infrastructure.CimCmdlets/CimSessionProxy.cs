@@ -388,7 +388,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         /// <param name="cimInstance"></param>
         public CimSessionProxy(string computerName, CimInstance cimInstance)
         {
-            DebugHelper.WriteLogEx("ComptuerName {0}; cimInstance.CimSessionInstanceID = {1}; cimInstance.CimSessionComputerName = {2}.",
+            DebugHelper.WriteLogEx("ComputerName {0}; cimInstance.CimSessionInstanceID = {1}; cimInstance.CimSessionComputerName = {2}.",
                 0,
                 computerName,
                 cimInstance.GetCimSessionInstanceId(),

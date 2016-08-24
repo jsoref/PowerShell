@@ -6199,7 +6199,7 @@ namespace Microsoft.PowerShell.Activities
                 ActivityImplementationContext implementationContext = GetPowerShell(context);
                 System.Management.Automation.PowerShell invoker = implementationContext.PowerShellInstance;
 
-                // Don't add the conputer if it's empty or localhost...
+                // Don't add the computer if it's empty or localhost...
                 if (!String.IsNullOrEmpty(computername) && !String.Equals(computername, "localhost", StringComparison.OrdinalIgnoreCase))
                 {
                     invoker.AddParameter("ComputerName", computername);
