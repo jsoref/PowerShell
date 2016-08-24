@@ -203,7 +203,7 @@ namespace Microsoft.WSMan.Management
 
 
         /// <summary>
-        /// add a session to dictioanry
+        /// add a session to dictionary
         /// </summary>
         /// <param name="key">connection string</param>
         /// <param name="value">session object</param>

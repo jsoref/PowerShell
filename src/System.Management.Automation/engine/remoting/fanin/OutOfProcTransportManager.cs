@@ -2242,7 +2242,7 @@ namespace System.Management.Automation.Remoting.Server
 
             lock (_syncObject)
             {
-                // the dictinoary is cleared by ServerPowershellDataStructure handler
+                // the dictionary is cleared by ServerPowershellDataStructure handler
                 // once the clean up is complete for the transport manager
                 Dbg.Assert(!_cmdTransportManagers.ContainsKey(powerShellCmdId), "key already exists");
                 _cmdTransportManagers.Add(powerShellCmdId, cmdTM);
