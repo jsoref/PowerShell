@@ -801,7 +801,7 @@ namespace System.Management.Automation
                 catch (Exception e)
                 {
                     // These exceptions are thrown by third party code. Adding them here to the collection
-                    // of execution errors to present consistant behavior of the object.
+                    // of execution errors to present consistent behavior of the object.
 
                     ExecutionError.Add(new ErrorRecord(e, "ContainerParentJobStartError",
                                                        ErrorCategory.InvalidResult, child));
@@ -985,7 +985,7 @@ namespace System.Management.Automation
                 catch (Exception e)
                 {
                     // These exceptions are thrown by third party code. Adding them here to the collection
-                    // of execution errors to present consistant behavior of the object.
+                    // of execution errors to present consistent behavior of the object.
 
                     ExecutionError.Add(new ErrorRecord(e, "ContainerParentJobResumeError",
                                                        ErrorCategory.InvalidResult, child));
@@ -1221,7 +1221,7 @@ namespace System.Management.Automation
                 catch (Exception e)
                 {
                     // These exceptions are thrown by third party code. Adding them here to the collection
-                    // of execution errors to present consistant behavior of the object.
+                    // of execution errors to present consistent behavior of the object.
 
                     ExecutionError.Add(new ErrorRecord(e, "ContainerParentJobUnblockError",
                         ErrorCategory.InvalidResult, child));
@@ -1390,7 +1390,7 @@ namespace System.Management.Automation
                 catch (Exception e)
                 {
                     // These exceptions are thrown by third party code. Adding them here to the collection
-                    // of execution errors to present consistant behavior of the object.
+                    // of execution errors to present consistent behavior of the object.
 
                     ExecutionError.Add(new ErrorRecord(e, "ContainerParentJobSuspendError",
                                                        ErrorCategory.InvalidResult, child));
@@ -1563,7 +1563,7 @@ namespace System.Management.Automation
                 catch (Exception e)
                 {
                     // These exceptions are thrown by third party code. Adding them here to the collection
-                    // of execution errors to present consistant behavior of the object.
+                    // of execution errors to present consistent behavior of the object.
 
                     ExecutionError.Add(new ErrorRecord(e, "ContainerParentJobStopError",
                                                        ErrorCategory.InvalidResult, child));
