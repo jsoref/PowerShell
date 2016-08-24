@@ -208,7 +208,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// Gets or sets the UNC path of the drive. This property would be populated only
-        /// if the cereated PSDrive is targeting a network drive or else this property
+        /// if the created PSDrive is targeting a network drive or else this property
         /// would be null.
         /// </summary>
         public string DisplayRoot { get; internal set; } = null;
