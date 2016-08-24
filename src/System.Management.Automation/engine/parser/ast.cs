@@ -6564,7 +6564,7 @@ namespace System.Management.Automation.Language
         internal List<DynamicKeyword> DefinedKeywords { get; set; }
 
         /// <summary>
-        /// Generate ast that definies a function for this <see cref="ConfigurationDefinitionAst"/> object
+        /// Generate ast that defines a function for this <see cref="ConfigurationDefinitionAst"/> object
         /// </summary>
         /// <returns>
         /// The <see cref="PipelineAst"/> that defines a function for this <see cref="ConfigurationDefinitionAst"/> object
