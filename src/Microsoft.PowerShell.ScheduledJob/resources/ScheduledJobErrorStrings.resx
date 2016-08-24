@@ -331,7 +331,7 @@
   <data name="CannotSerializeData" xml:space="preserve">
     <value>The scheduled job definition {0} could not be saved because one of the values in the ArgumentList parameter cannot be converted to XML. If possible, change the ArgumentList values to types that are easily converted to XML, such as strings, integers, and hash tables. {1}</value>
     <comment>{0} is the name of the scheduled job definition that cannot be registered
-{1} is the inner exception message from .Net serialization, or emtpy if no exception message.</comment>
+{1} is the inner exception message from .Net serialization, or empty if no exception message.</comment>
   </data>
   <data name="UnsupportedHostFunction" xml:space="preserve">
     <value>Commands that interact with the host program, such as Write-Host, cannot be included in Windows PowerShell scheduled jobs because scheduled jobs do not interact with the host program.  Use an alternate command that does not interact with the host program, such as Write-Output or Out-File.</value>

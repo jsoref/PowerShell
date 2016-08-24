@@ -411,7 +411,7 @@ namespace System.Management.Automation
         /// <param name="helpInfo"></param>
         /// <param name="helpRequest">Help request object</param>        
         /// <returns>Never returns null.</returns>
-        /// <remarks>helpInfos is not null or emtpy.</remarks>
+        /// <remarks>helpInfos is not null or empty.</remarks>
         private IEnumerable<HelpInfo> ForwardHelp(HelpInfo helpInfo, HelpRequest helpRequest)
         {
             Collection<HelpInfo> result = new Collection<HelpInfo>();
