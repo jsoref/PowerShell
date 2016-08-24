@@ -605,7 +605,7 @@ namespace System.Management.Automation.Runspaces
         /// </summary>
         /// <param name="name">Name of the alias</param>
         /// <param name="definition">The name of the command it resolves to</param>
-        /// <param name="description">A descripion of the purpose of the alias.</param>
+        /// <param name="description">A description of the purpose of the alias.</param>
         public SessionStateAliasEntry(string name, string definition, string description)
             : base(name, SessionStateEntryVisibility.Public)
         {
@@ -619,7 +619,7 @@ namespace System.Management.Automation.Runspaces
         /// </summary>
         /// <param name="name">Name of the alias</param>
         /// <param name="definition">The name of the command it resolves to</param>
-        /// <param name="description">A descripion of the purpose of the alias.</param>
+        /// <param name="description">A description of the purpose of the alias.</param>
         /// <param name="options">Options defining the scope visiblity, readonly and constant</param>
         public SessionStateAliasEntry(string name, string definition, string description, ScopedItemOptions options)
             : base(name, SessionStateEntryVisibility.Public)
@@ -635,7 +635,7 @@ namespace System.Management.Automation.Runspaces
         /// </summary>
         /// <param name="name">Name of the alias</param>
         /// <param name="definition">The name of the command it resolves to</param>
-        /// <param name="description">A descripion of the purpose of the alias.</param>
+        /// <param name="description">A description of the purpose of the alias.</param>
         /// <param name="options">Options defining the scope visiblity, readonly and constant</param>
         /// <param name="visibility"></param>
         internal SessionStateAliasEntry(string name, string definition, string description,

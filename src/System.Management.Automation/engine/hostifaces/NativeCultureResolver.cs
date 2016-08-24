@@ -1,7 +1,7 @@
 /********************************************************************++
 Copyright (c) Microsoft Corporation.  All rights reserved.
  
-Descripton: 
+Description: 
  
 Windows Vista and later support non-traditional UI fallback ie., a 
 user on an Arabic machine can choose either French or English(US) as
