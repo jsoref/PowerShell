@@ -1139,7 +1139,7 @@ namespace Microsoft.PowerShell.Commands
 
                 //
                 // If none of the logs/paths/providers were valid, queriedLogsQueryMap is empty.
-                // Simply conitnue to the next hashtable since all the errors have been written already.
+                // Simply continue to the next hashtable since all the errors have been written already.
                 //
                 if (queriedLogsQueryMap.Count == 0)
                 {

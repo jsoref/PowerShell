@@ -350,7 +350,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets {
 #if DEBUG
                             Log("ERROR",errorMessage);
 #endif
-                            //Replaced Wait() with ConintueWith(Cancel) to avoid hang if the error message comes in too early, e.g. GetDyanamicParameters(), etc.
+                            //Replaced Wait() with ContinueWith(Cancel) to avoid hang if the error message comes in too early, e.g. GetDyanamicParameters(), etc.
                             WriteError(new ErrorRecord(new Exception(errorMessage), DropMsgPrefix(id), errorCategory, string.IsNullOrWhiteSpace(targetObjectValue) ? (object)this : targetObjectValue)).Wait(3000);
                         } catch {
                             // this will throw if the provider thread abends before we get back our result.

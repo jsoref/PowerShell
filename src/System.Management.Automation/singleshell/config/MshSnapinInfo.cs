@@ -630,7 +630,7 @@ namespace System.Management.Automation
                 {
                     mshsnapins.Add(ReadOne(mshsnapinRoot, id));
                 }
-                //If we cannot read some mshsnapins, we should contiune
+                //If we cannot read some mshsnapins, we should continue
                 catch (SecurityException)
                 {
                 }
