@@ -1447,7 +1447,7 @@ All WinRM sessions connected to Windows PowerShell session configurations, such 
     <value>The supplied plugin context is not valid.</value>
   </data>
   <data name="WSManPluginInvalidArgSet" xml:space="preserve">
-    <value>Powershell plugin encounterd a fatal error while processing {0} arguments.</value>
+    <value>Powershell plugin encountered a fatal error while processing {0} arguments.</value>
   </data>
   <data name="WSManPluginInvalidCommandContext" xml:space="preserve">
     <value>The supplied command context is not valid.</value>
@@ -1495,13 +1495,13 @@ All WinRM sessions connected to Windows PowerShell session configurations, such 
     <value>&lt;PSProtocolVersionError ServerProtocolVersion="{0}" ServerBuildVersion="{1}"&gt;Powershell plugin does not support the protocol version {2} requested by client.&lt;/PSProtocolVersionError&gt;</value>
   </data>
   <data name="WSManPluginReportContextFailed" xml:space="preserve">
-    <value>Powershell plugin encounterd a fatal error while reporting context to WSMan service.</value>
+    <value>Powershell plugin encountered a fatal error while reporting context to WSMan service.</value>
   </data>
   <data name="WSManPluginSessionCreationFailed" xml:space="preserve">
     <value>Unable to create managed server session.</value>
   </data>
   <data name="WSManPluginShutdownRegistrationFailed" xml:space="preserve">
-    <value>Powershell plugin encounterd a fatal error registering a wait handle for shutdown notification.</value>
+    <value>Powershell plugin encountered a fatal error registering a wait handle for shutdown notification.</value>
   </data>
   <data name="ServerDriverRemoteHostAlreadyPushed" xml:space="preserve">
     <value>Cannot enter Runspace because a Runspace is already pushed in this session.</value>
