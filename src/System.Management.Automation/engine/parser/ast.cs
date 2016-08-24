@@ -4098,7 +4098,7 @@ namespace System.Management.Automation.Language
     public abstract class LabeledStatementAst : StatementAst
     {
         /// <summary>
-        /// Initialize the properties commmon to labeled statements.
+        /// Initialize the properties common to labeled statements.
         /// </summary>
         /// <param name="extent">The extent of the statement.</param>
         /// <param name="label">The optionally null label for the statement.</param>
