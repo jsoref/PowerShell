@@ -4229,7 +4229,7 @@ namespace System.Management.Automation
         private class DelayedScriptBlockArgument
         {
             // Remember the parameter binder so we know when to invoke the script block
-            // and when to use the evaluted argument.
+            // and when to use the evaluated argument.
             internal CmdletParameterBinderController _parameterBinder;
             internal CommandParameterInternal _argument;
             internal Collection<PSObject> _evaluatedArgument;

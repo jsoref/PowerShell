@@ -2427,7 +2427,7 @@ namespace System.Management.Automation.Language
             exprs.Add(Expression.Assign(LocalVariablesParameter,
                                         Expression.Field(_functionContext, CachedReflectionInfo.FunctionContext__localsTuple).Cast(this.LocalVariablesTupleType)));
 
-            // Compiling a single expression (a default argument, or an locally evalutated argument in a ScriptBlock=>PowerShell conversion)
+            // Compiling a single expression (a default argument, or an locally evaluated argument in a ScriptBlock=>PowerShell conversion)
             // does not support debugging, so skip calling EnterScriptFunction.
             if (!_compilingSingleExpression)
             {
