@@ -255,7 +255,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// Get the module base directory for this module. For modules loaded via a module
-        /// manifest, this will be the directory containting the manifest file rather than
+        /// manifest, this will be the directory containing the manifest file rather than
         /// the directory containing the actual module file. This is particularly useful
         /// when loading a GAC'ed assembly.
         /// </summary>

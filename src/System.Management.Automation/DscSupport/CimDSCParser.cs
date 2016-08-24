@@ -1179,7 +1179,7 @@ namespace Microsoft.PowerShell.DesiredStateConfiguration.Internal
         }
 
         /// <summary>
-        /// A routine that validates a string contining MOF instances against the
+        /// A routine that validates a string containing MOF instances against the
         /// current set of cached classes.
         /// </summary>
         /// <param name="instanceText"></param>

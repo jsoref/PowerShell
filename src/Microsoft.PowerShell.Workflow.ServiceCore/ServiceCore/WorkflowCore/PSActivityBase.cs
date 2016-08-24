@@ -5989,7 +5989,7 @@ namespace Microsoft.PowerShell.Activities
     }
 
     /// <summary>
-    /// Abstract base contining the common members and invocation code for the WMI cmdlets.
+    /// Abstract base containing the common members and invocation code for the WMI cmdlets.
     /// </summary>
     public abstract class WmiActivity : PSActivity
     {
