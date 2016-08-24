@@ -271,7 +271,7 @@ namespace System.Management.Automation.Remoting
         /// If fragmentBytes is null.
         /// </exception>
         /// <exception cref="ArgumentException">
-        /// If startIndex is negative or fragmentBytes is not large enought to hold the entire header of
+        /// If startIndex is negative or fragmentBytes is not large enough to hold the entire header of
         /// a binary encoded FragmentedRemoteObject.
         /// </exception>
         internal static long GetObjectId(byte[] fragmentBytes, int startIndex)
@@ -305,7 +305,7 @@ namespace System.Management.Automation.Remoting
         /// If fragmentBytes is null.
         /// </exception>
         /// <exception cref="ArgumentException">
-        /// If startIndex is negative or fragmentBytes is not large enought to hold the entire header of
+        /// If startIndex is negative or fragmentBytes is not large enough to hold the entire header of
         /// a binary encoded FragmentedRemoteObject.
         /// </exception>
         internal static long GetFragmentId(byte[] fragmentBytes, int startIndex)
@@ -340,7 +340,7 @@ namespace System.Management.Automation.Remoting
         /// If fragmentBytes is null.
         /// </exception>
         /// <exception cref="ArgumentException">
-        /// If startIndex is negative or fragmentBytes is not large enought to hold the entire header of
+        /// If startIndex is negative or fragmentBytes is not large enough to hold the entire header of
         /// a binary encoded FragmentedRemoteObject.
         /// </exception>
         internal static bool GetIsStartFragment(byte[] fragmentBytes, int startIndex)
@@ -369,7 +369,7 @@ namespace System.Management.Automation.Remoting
         /// If fragmentBytes is null.
         /// </exception>
         /// <exception cref="ArgumentException">
-        /// If startIndex is negative or fragmentBytes is not large enought to hold the entire header of
+        /// If startIndex is negative or fragmentBytes is not large enough to hold the entire header of
         /// a binary encoded FragmentedRemoteObject.
         /// </exception>
         internal static bool GetIsEndFragment(byte[] fragmentBytes, int startIndex)
@@ -398,7 +398,7 @@ namespace System.Management.Automation.Remoting
         /// If fragmentBytes is null.
         /// </exception>
         /// <exception cref="ArgumentException">
-        /// If startIndex is negative or fragmentBytes is not large enought to hold the entire header of
+        /// If startIndex is negative or fragmentBytes is not large enough to hold the entire header of
         /// a binary encoded FragmentedRemoteObject.
         /// </exception>
         internal static int GetBlobLength(byte[] fragmentBytes, int startIndex)
