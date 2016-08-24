@@ -154,7 +154,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         /// <summary>
         /// The following is the definition of the input parameter "Encoding".
         /// Defined the message encoding. 
-        /// The allowed encodings are { Defauolt | Utf8 | Utf16 }. The default value 
+        /// The allowed encodings are { Default | Utf8 | Utf16 }. The default value 
         /// should be Utf8.
         /// </summary>
         [Parameter(ValueFromPipelineByPropertyName = true,

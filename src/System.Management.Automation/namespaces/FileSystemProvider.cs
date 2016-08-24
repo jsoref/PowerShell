@@ -509,7 +509,7 @@ namespace Microsoft.PowerShell.Commands
                 const int RESOURCEDISPLAYTYPE_GENERIC = 0x00000000;
                 const int RESOURCEUSAGE_CONNECTABLE = 0x00000001;
 
-                // By deafult the connection is not persisted.
+                // By default the connection is not persisted.
                 int CONNECT_TYPE = CONNECT_NOPERSIST;
 
                 string driveName = null;

@@ -1056,7 +1056,7 @@ namespace Microsoft.PowerShell.Commands
             }
             else
             {
-                // The defualt value for _count is the size of the history buffer.
+                // The default value for _count is the size of the history buffer.
                 if (!_countParameterSpecified)
                 {
                     _count = history.Buffercapacity();

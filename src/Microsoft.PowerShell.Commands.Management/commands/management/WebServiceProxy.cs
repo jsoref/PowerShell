@@ -305,7 +305,7 @@ namespace Microsoft.PowerShell.Commands
         {
             DiscoveryClientProtocol dcp = new DiscoveryClientProtocol();
 
-            //if paramset is defualtcredential, set the flag in wcclient
+            //if paramset is defaultcredential, set the flag in wcclient
             if (_usedefaultcredential.IsPresent)
                 dcp.UseDefaultCredentials = true;
 

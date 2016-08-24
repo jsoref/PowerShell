@@ -172,7 +172,7 @@
   <data name="ParameterAcceptWildcard" xml:space="preserve">
     <value>Accept wildcard characters?</value>
   </data>
-  <data name="ParameterDefautValue" xml:space="preserve">
+  <data name="ParameterDefaultValue" xml:space="preserve">
     <value>Default value</value>
   </data>
   <data name="ParameterPipelineInput" xml:space="preserve">

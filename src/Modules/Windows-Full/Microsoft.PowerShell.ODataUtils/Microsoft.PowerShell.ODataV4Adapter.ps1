@@ -60,7 +60,7 @@ function ExportODataEndpointProxy
     VerifyMetadata $GlobalMetadata $AllowClobber.IsPresent $PSCmdlet $ProgressBarStatus
 
     # Get Uri Resource path key format. It can be either 'EmbeddedKey' or 'SeparateKey'. 
-    # If not provided, deault value will be set to 'EmbeddedKey'.
+    # If not provided, default value will be set to 'EmbeddedKey'.
     $UriResourcePathKeyFormat = 'EmbeddedKey'
     if ($CustomData -and $CustomData.ContainsKey("UriResourcePathKeyFormat"))
     {

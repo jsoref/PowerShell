@@ -110,7 +110,7 @@ namespace System.Management.Automation
         /// </summary>
         private void CommonInitialization()
         {
-            // Assume external scripts are untrusted by defult (for Get-Command, etc)
+            // Assume external scripts are untrusted by default (for Get-Command, etc)
             // until we've actually parsed their script block.
             if (SystemPolicy.GetSystemLockdownPolicy() != SystemEnforcementMode.None)
             {

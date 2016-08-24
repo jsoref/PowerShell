@@ -363,7 +363,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Apply the binding for the defualt parameter defined by the user 
+        /// Apply the binding for the default parameter defined by the user 
         /// </summary>
         /// <param name="bindingStage">
         /// Dictate which binding stage this default binding happens

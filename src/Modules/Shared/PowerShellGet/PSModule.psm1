@@ -2936,7 +2936,7 @@ function Find-Script
             $psgalleryRepo = Get-PSRepository -Name $Script:PSGalleryModuleSource `
                                               -ErrorAction SilentlyContinue `
                                               -WarningAction SilentlyContinue
-            # And check for IsDeafult?
+            # And check for IsDefault?
             if($psgalleryRepo)
             {
                 $isRepositoryNullOrPSGallerySpecified = $true

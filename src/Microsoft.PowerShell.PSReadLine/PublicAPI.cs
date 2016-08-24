@@ -224,7 +224,7 @@ namespace Microsoft.PowerShell
 
         /// <summary>
         /// A helper method when your function expects an optional int argument (e.g. from DigitArgument)
-        /// If there is not argument (it's null), returns true and sets numericArg to derfaultNumericArg.
+        /// If there is not argument (it's null), returns true and sets numericArg to defaultNumericArg.
         /// Dings and returns false if the argument is not an int (no conversion is attempted)
         /// Otherwise returns true, and numericArg has the result.
         /// </summary>

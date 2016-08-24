@@ -933,7 +933,7 @@ namespace System.Management.Automation.Runspaces
 
 
         /// <summary>
-        /// Constructs a new list of mshsnapins from defualt mshsnapins and external mshsnapins.
+        /// Constructs a new list of mshsnapins from default mshsnapins and external mshsnapins.
         /// </summary>
         /// <returns>A list of mshsnapins represented by the current console file</returns>
         private Collection<PSSnapInInfo> MergeDefaultExternalMshSnapins()

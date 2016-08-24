@@ -787,7 +787,7 @@ namespace Microsoft.Management.UI.Internal
                 int largestSize = HelpParagraphBuilder.LargestSize(
                     HelpWindowResources.ParameterRequired,
                     HelpWindowResources.ParameterPosition,
-                    HelpWindowResources.ParameterDefautValue,
+                    HelpWindowResources.ParameterDefaultValue,
                     HelpWindowResources.ParameterPipelineInput,
                     HelpWindowResources.ParameterAcceptWildcard);
 
@@ -821,7 +821,7 @@ namespace Microsoft.Management.UI.Internal
                     tableLine = String.Format(
                         CultureInfo.CurrentCulture,
                         formatString,
-                        HelpWindowResources.ParameterDefautValue,
+                        HelpWindowResources.ParameterDefaultValue,
                         defaultValue);
                     this.AddText(HelpParagraphBuilder.AddIndent(tableLine, 2), false);
                     this.AddText("\r\n", false);
