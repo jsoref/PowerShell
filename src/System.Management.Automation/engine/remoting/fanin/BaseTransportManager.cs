@@ -1266,7 +1266,7 @@ namespace System.Management.Automation.Remoting.Server
         /// </param>
         internal void SendDataToClient<T>(RemoteDataObject<T> data, bool flush, bool reportPending = false)
         {
-            // make sure only one data packet can be sent in its entirity at any 
+            // make sure only one data packet can be sent in its entirety at any 
             // given point of time using this transport manager.
             lock (_syncObject)
             {
@@ -1290,7 +1290,7 @@ namespace System.Management.Automation.Remoting.Server
                 // 4. Notice the ascending order of propery names. This is because seralizer seralizes properties in sort order
                 // ******************** End of repro ******************************************
                 // To fix the issue, I am creating a Queue and enqueuing the data objects if we are already serializaing another data object
-                // Notice this is in lock() above. An object is serialized in its entirity in one thread. So, in my example above "name",
+                // Notice this is in lock() above. An object is serialized in its entirety in one thread. So, in my example above "name",
                 // "verbose","zname" properties are serialized in one thread. So lock() estenially protects from serialing other objects
                 // and not this (parent)object.
                 RemoteDataObject dataToBeSent = RemoteDataObject.CreateFrom(data.Destination, data.DataType,
