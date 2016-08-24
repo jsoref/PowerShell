@@ -3167,7 +3167,7 @@ namespace Microsoft.PowerShell.DesiredStateConfiguration.Internal
                             if (classes != null)
                             {
                                 //
-                                // search if class'es friendly name is the given resourceName
+                                // search if class's friendly name is the given resourceName
                                 //
                                 foreach (var c in classes)
                                 {
