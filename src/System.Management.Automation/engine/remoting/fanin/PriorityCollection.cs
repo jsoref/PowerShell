@@ -375,7 +375,7 @@ namespace System.Management.Automation.Remoting
 
         /// <summary>
         /// Prepares the collection for a stream connect
-        ///     When reconneting from same client, its possible that fragment stream get interrupted if server is dropping data
+        ///     When reconnecting from same client, its possible that fragment stream get interrupted if server is dropping data
         ///     When connecting from a new client, its possible to get trailing fragments of a previously partially transmitted object
         ///     Logic based on this flag, ensures such offsync/trailing fragments get ignored until the next full object starts flowing
         /// </summary>
