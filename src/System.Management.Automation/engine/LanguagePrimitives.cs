@@ -2123,7 +2123,7 @@ namespace System.Management.Automation
         /// different return type. Because of that we cannot call GetMethod since it would cause a 
         /// AmbiguousMatchException. This auxiliary method calls GetMember to find the right method
         /// </summary>
-        /// <param name="methodName">Either op_Excplicit or op_Implicit, at the moment</param>
+        /// <param name="methodName">Either op_Explicit or op_Implicit, at the moment</param>
         /// <param name="targetType">the type to look for an operator</param>
         /// <param name="originalType">Type of the only parameter the operator method should have</param>
         /// <param name="resultType">Return type of the operator method</param>

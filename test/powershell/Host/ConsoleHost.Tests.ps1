@@ -179,7 +179,7 @@ Describe "ConsoleHost unit tests" -tags "Feature" {
             EnsureChildHasExited $process
         }
 
-        It "Redirected input w/ explict -Command w/ -NonInteractive" {
+        It "Redirected input w/ explicit -Command w/ -NonInteractive" {
             $si = NewProcessStartInfo "-NonInteractive -noprofile -Command 1+1" -RedirectStdIn
             $process = RunPowerShell $si
             $process.StandardOutput.ReadToEnd() | Should Be 2
