@@ -1238,7 +1238,7 @@ namespace System.Management.Automation
         private TypeInfoDataBaseManager _formatDBManager;
 
         /// <summary>
-        /// Gets the TransactionManager instance that controlls transactions in the current
+        /// Gets the TransactionManager instance that controls transactions in the current
         /// instance.
         /// </summary>
         internal PSTransactionManager TransactionManager
