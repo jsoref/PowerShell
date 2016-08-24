@@ -1641,7 +1641,7 @@ else
             sb.Append(prologue);
 
             //
-            // Convert to condtional ACE
+            // Convert to conditional ACE
             // Beginning (Regular) ACE has exactly 6 required fields and one (optional) field.
             // We only manipulate ACEs that we create and we currently do not use the optional resource field,
             // so we always expect a beginning ACE with exactly 6 fields.

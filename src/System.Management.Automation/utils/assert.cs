@@ -115,7 +115,7 @@ namespace System.Management.Automation
         /// Basic assertion with logical condition and message
         /// </summary>
         /// <param name="condition">
-        /// logical condtion that should be true for program to proceed
+        /// logical condition that should be true for program to proceed
         /// </param>
         /// <param name="whyThisShouldNeverHappen">
         /// Message to explain why condition should always be true
@@ -144,7 +144,7 @@ namespace System.Management.Automation
         /// Basic assertion with logical condition, message and detailed message
         /// </summary>
         /// <param name="condition">
-        /// logical condtion that should be true for program to proceed
+        /// logical condition that should be true for program to proceed
         /// </param>
         /// <param name="whyThisShouldNeverHappen">
         /// Message to explain why condition should always be true

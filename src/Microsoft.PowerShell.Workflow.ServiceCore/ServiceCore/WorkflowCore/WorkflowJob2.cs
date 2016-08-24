@@ -792,7 +792,7 @@ namespace Microsoft.PowerShell.Workflow
                     throw new InvalidJobStateException(JobStateInfo.State, Resources.ResumeNotValidState);
                 }
 
-                // this will avoid the race codition between two resume requests and both are trying to load instance and loadstreams.
+                // this will avoid the race condition between two resume requests and both are trying to load instance and loadstreams.
                 _resuming = true;
             }
 

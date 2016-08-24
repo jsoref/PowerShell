@@ -262,7 +262,7 @@ namespace Microsoft.PowerShell.Commands
                 }
                 else
                 {
-                    // there could be a possiblity of race condiftion where this fucntion is getting called twice
+                    // there could be a possiblity of race condition where this fucntion is getting called twice
                     // so if job doesn't present in the _pendingJobs then just return
                     return;
                 }
