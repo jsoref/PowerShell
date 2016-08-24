@@ -181,9 +181,9 @@ namespace System.Management.Automation
         /// <summary>
         /// for Server - Have sent a request to the remote end to 
         /// send a public key 
-        /// for Cleint - have received a PK request from server
+        /// for Client - have received a PK request from server
         /// </summary>
-        /// <remarks>Applicable to both cleint and server</remarks>
+        /// <remarks>Applicable to both client and server</remarks>
         EstablishedAndKeyRequested = 14,
 
         /// <summary>

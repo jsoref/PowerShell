@@ -53,7 +53,7 @@ namespace System.Management.Automation.Remoting
         internal RemoteSessionCapability ServerCapability { get; set; }
 
         /// <summary>
-        /// True if negotiation from client is succeeded...in which case ClienCapability
+        /// True if negotiation from client is succeeded...in which case ClientCapability
         /// is the capability that server agreed with.
         /// </summary>
         internal bool IsNegotiationSucceeded { get; set; }
