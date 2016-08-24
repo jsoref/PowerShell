@@ -660,7 +660,7 @@ namespace System.Management.Automation
         #region Process cleanup with Child Process cleanup
 
         /// <summary>
-        /// Utility routine to kill a process, discarding non-critial exceptions.
+        /// Utility routine to kill a process, discarding non-critical exceptions.
         /// This utility makes two passes at killing a process. In the first pass,
         /// if the process handle is invalid (as seems to be the case with an ntvdm)
         /// then we try to get a fresh handle based on the original process id.
