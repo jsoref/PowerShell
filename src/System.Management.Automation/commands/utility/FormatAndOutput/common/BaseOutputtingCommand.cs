@@ -318,7 +318,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
 
         private void ValidateCurrentFormattingState(FormattingState expectedFormattingState, object obj)
         {
-            // chec if we are in the expected formatting state
+            // check if we are in the expected formatting state
             if (_currentFormattingState != expectedFormattingState)
             {
                 // we are not in the expected state, some message is out of sequence,
