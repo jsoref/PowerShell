@@ -155,7 +155,7 @@ namespace Microsoft.PowerShell.ScheduledJob
         }
 
         /// <summary>
-        /// Returns the PowerShell commond line execution path.
+        /// Returns the PowerShell command line execution path.
         /// </summary>
         public string PSExecutionPath
         {

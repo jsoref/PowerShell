@@ -167,7 +167,7 @@ namespace Microsoft.PowerShell.Commands
 
             if (ParameterSetName == "commandSet")
             {
-                // Create the CommmandProcessor and add it to a pipeline
+                // Create the CommandProcessor and add it to a pipeline
 
                 CommandProcessorBase commandProcessor =
                     this.Context.CommandDiscovery.LookupCommandProcessor(Command, CommandOrigin.Runspace, false);

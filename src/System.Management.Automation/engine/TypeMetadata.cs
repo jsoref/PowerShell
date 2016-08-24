@@ -467,7 +467,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// An internal constructor which constructs a ParameterMetadata object
-        /// from compiled commmand parameter metadata. ParameterMetadata
+        /// from compiled command parameter metadata. ParameterMetadata
         /// is a proxy written on top of CompiledCommandParameter
         /// </summary>
         /// <param name="cmdParameterMD">

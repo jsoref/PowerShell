@@ -459,7 +459,7 @@ namespace System.Management.Automation
         /// </param>
         /// 
         /// <param name="origin">
-        /// Specifies the origin of the comannd setting the alias.
+        /// Specifies the origin of the command setting the alias.
         /// </param>
         /// 
         /// <returns>

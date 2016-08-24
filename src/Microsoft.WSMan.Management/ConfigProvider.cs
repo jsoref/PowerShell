@@ -1314,7 +1314,7 @@ namespace Microsoft.WSMan.Management
         }
 
         /// <summary>
-        /// This commad is used to clear the value of a item.
+        /// This command is used to clear the value of a item.
         /// </summary>
         /// <param name="path"></param>
         protected override void ClearItem(string path)

@@ -333,7 +333,7 @@ namespace System.Management.Automation.Language
             PseudoBindingInfo pseudoBinding = null;
             if (Runspace.DefaultRunspace == null)
             {
-                lock (s_bindCommandlLock)
+                lock (s_bindCommandLock)
                 {
                     if (s_bindCommandPowerShell == null)
                     {
@@ -360,7 +360,7 @@ namespace System.Management.Automation.Language
 
             return new StaticBindingResult(commandAst, pseudoBinding);
         }
-        private static Object s_bindCommandlLock = new Object();
+        private static Object s_bindCommandLock = new Object();
         private static PowerShell s_bindCommandPowerShell = null;
     }
 

@@ -1697,7 +1697,7 @@ namespace System.Management.Automation
     /// and processes them appropriately.
     /// </summary>
     /// <remarks>
-    /// This class is not thread safe. It is assumed that NativeCommnadProcessor
+    /// This class is not thread safe. It is assumed that NativeCommandProcessor
     /// class will synchronize access to this class between different threads.
     /// </remarks>
     internal class ProcessStreamReader

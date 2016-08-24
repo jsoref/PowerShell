@@ -791,7 +791,7 @@ namespace System.Management.Automation.Remoting
                 return;
             }
 
-            // this connect is on a commad
+            // this connect is on a command
             WSManPluginCommandSession mgdCmdSession = mgdShellSession.GetCommandSession(commandContext);
             if (null == mgdCmdSession)
             {
