@@ -129,7 +129,7 @@ namespace System.Management.Automation.Remoting
 
 
         /// <summary>
-        /// Creates a RemoteDataObject by deserialzing <paramref name="data"/>.
+        /// Creates a RemoteDataObject by deserializing <paramref name="data"/>.
         /// </summary>
         /// <param name="serializedDataStream"></param>
         /// <param name="defragmentor">
