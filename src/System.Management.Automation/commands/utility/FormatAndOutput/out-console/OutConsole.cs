@@ -38,7 +38,7 @@ namespace Microsoft.PowerShell.Commands
 
     /// <summary>
     /// implementation for the out-default command
-    /// this command it impicitely inject by the
+    /// this command it implicitly inject by the
     /// powershell.exe host at the end of the pipeline as the
     /// default sink (display to console screen)
     /// </summary>
