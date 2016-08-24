@@ -1267,7 +1267,7 @@ namespace System.Management.Automation.Help
 
             string cabDir = Path.GetDirectoryName(srcPath);
 
-            // Cabinet API doens't handle the trailing back slash
+            // Cabinet API doesn't handle the trailing back slash
             if (!cabDir.EndsWith("\\", StringComparison.Ordinal))
             {
                 cabDir += "\\";

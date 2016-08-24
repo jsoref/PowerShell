@@ -1706,7 +1706,7 @@ function script:Start-NativeExecution([scriptblock]$sb)
     $script:ErrorActionPreference = "Continue"
     try {
         & $sb
-        # note, if $sb doens't have a native invocation, $LASTEXITCODE will
+        # note, if $sb doesn't have a native invocation, $LASTEXITCODE will
         # point to the obsolete value
         if ($LASTEXITCODE -ne 0) {
             throw "Execution of {$sb} failed with exit code $LASTEXITCODE"
