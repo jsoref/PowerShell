@@ -4126,7 +4126,7 @@ namespace System.Management.Automation.Language
                 {
                     // Incompleted input like:
                     // class foo { $private: }
-                    // Error message already emmited by tokenizer ScanVariable
+                    // Error message already emitted by tokenizer ScanVariable
 
                     RecordErrorAsts(attributeList, ref astsOnError);
                     RecordErrorAsts(typeConstraint, ref astsOnError);
