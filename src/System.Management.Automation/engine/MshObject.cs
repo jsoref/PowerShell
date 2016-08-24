@@ -1652,7 +1652,7 @@ namespace System.Management.Automation
         /// </exception>
         public int CompareTo(object obj)
         {
-            // This ReferenceEqulas is not just an optimization. 
+            // This ReferenceEquals is not just an optimization. 
             // It is necessary so that mshObject.Equals(mshObject) returns 0. 
             // Please see the comments inside the Equals implementation.
             if (Object.ReferenceEquals(this, obj))
