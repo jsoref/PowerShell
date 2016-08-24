@@ -962,7 +962,7 @@ namespace System.Management.Automation.Remoting
 
         /// <summary>
         /// Connect to named pipe server.  This is a blocking call until a 
-        /// connection occurs or the timeout time has ellapsed.
+        /// connection occurs or the timeout time has elapsed.
         /// </summary>
         /// <param name="timeout">Connection attempt timeout in milliseconds</param>
         public void Connect(
