@@ -1839,7 +1839,7 @@ namespace System.Management.Automation.Language
                 catch (InvalidOperationException)
                 {
                     // This exception is thrown because the binder found two positional parameters
-                    // from the same parameter set with the same position defined. The parameter denition
+                    // from the same parameter set with the same position defined. The parameter definition
                     // is ambiguous. We give up binding in this case
                     _bindingEffective = false;
                     return result;

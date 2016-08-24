@@ -152,14 +152,14 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Generate the Catalog Defintion File representing files and folders 
+        /// Generate the Catalog Definition File representing files and folders 
         /// </summary>
         /// 
         /// <param name="Path"> Path of expected output .cdf file </param>        
         ///          
         /// <param name="catalogFilePath"> Path of the output catalog file </param>        
         /// 
-        /// <param name="cdfFilePath"> Path of the catalog definiton file </param>        
+        /// <param name="cdfFilePath"> Path of the catalog definition file </param>        
         /// 
         /// <param name="catalogVersion"> Version of catalog</param>
         ///  
@@ -252,7 +252,7 @@ namespace System.Management.Automation
             }
         }
         /// <summary>
-        /// Generate the Catalog file for Input Catalog Defintion File 
+        /// Generate the Catalog file for Input Catalog Definition File 
         /// </summary>
         ///
         /// <param name="cdfFilePath"> Path to the Input .cdf file </param>        
@@ -346,7 +346,7 @@ namespace System.Management.Automation
 
             if (!String.IsNullOrEmpty(hashAlgorithm))
             {
-                // Generate Path for Catalog Defintion File 
+                // Generate Path for Catalog Definition File 
                 string cdfFilePath = System.IO.Path.Combine(System.IO.Path.GetTempPath(), System.IO.Path.GetRandomFileName());
                 cdfFilePath = cdfFilePath + ".cdf";
                 try
@@ -355,9 +355,9 @@ namespace System.Management.Automation
 
                     if (!File.Exists(cdfFilePath))
                     {
-                        // If we are not able to generate catalog defintion file we can not continue generating catalog 
-                        // throw PSTraceSource.NewInvalidOperationException("catalog", CatalogStrings.CatalogDefintionFileNotGenerated);                    
-                        ErrorRecord errorRecord = new ErrorRecord(new InvalidOperationException(CatalogStrings.CatalogDefintionFileNotGenerated), "CatalogDefintionFileNotGenerated", ErrorCategory.InvalidOperation, null);
+                        // If we are not able to generate catalog definition file we can not continue generating catalog 
+                        // throw PSTraceSource.NewInvalidOperationException("catalog", CatalogStrings.CatalogDefinitionFileNotGenerated);                    
+                        ErrorRecord errorRecord = new ErrorRecord(new InvalidOperationException(CatalogStrings.CatalogDefinitionFileNotGenerated), "CatalogDefinitionFileNotGenerated", ErrorCategory.InvalidOperation, null);
                         _cmdlet.ThrowTerminatingError(errorRecord);
                     }
 

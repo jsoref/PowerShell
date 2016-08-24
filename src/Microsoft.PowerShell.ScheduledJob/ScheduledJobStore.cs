@@ -282,8 +282,8 @@ namespace Microsoft.PowerShell.ScheduledJob
         /// Renames the directory containing the old job definition name
         /// to the new name provided.
         /// </summary>
-        /// <param name="oldDefName">Existing job defintion directory</param>
-        /// <param name="newDefName">Renamed job defintion directory</param>
+        /// <param name="oldDefName">Existing job definition directory</param>
+        /// <param name="newDefName">Renamed job definition directory</param>
         public static void RenameScheduledJobDefDir(
             string oldDefName,
             string newDefName)

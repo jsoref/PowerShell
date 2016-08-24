@@ -186,7 +186,7 @@ namespace System.Management.Automation
                     if (result == null)
                     {
                         // Since we couldn't resolve the command that the alias
-                        // points to, remember the defintion so that we can
+                        // points to, remember the definition so that we can
                         // provide better error reporting.
 
                         UnresolvedCommandName = commandNameToResolve;

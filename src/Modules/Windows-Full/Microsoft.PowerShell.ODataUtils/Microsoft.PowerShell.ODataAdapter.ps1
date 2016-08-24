@@ -530,23 +530,23 @@ function GenerateClientSideProxyModule
     # while creating the client side proxy module:
     # 1. If the server side endpoint exposes complex types,
     #    the client side proxy complex types are created
-    #    as C# class in ComplexTypeDefinations.psm1 
+    #    as C# class in ComplexTypeDefinitions.psm1 
     # 2. Creates proxy cmdlets for CRUD opreations.
     # 3. Creates proxy cmdlets for Serice action opreations.
     # 4. Creates module manifest.
 
     Write-Verbose ($LocalizedData.VerboseSavingModule -f $outputModule)
 
-    $typeDefinationFileName = "ComplexTypeDefinitions.psm1"
-    $complexTypeMapping = GenerateComplexTypeDefination $metaData $metaDataUri $outputModule $typeDefinationFileName $cmdletAdapter $callerPSCmdlet
+    $typeDefinitionFileName = "ComplexTypeDefinitions.psm1"
+    $complexTypeMapping = GenerateComplexTypeDefinition $metaData $metaDataUri $outputModule $typeDefinitionFileName $cmdletAdapter $callerPSCmdlet
 
     ProgressBarHelper "Export-ODataEndpointProxy" $progressBarStatus 20 20 1  1
 
-    $complexTypeFileDefinationPath = Join-Path -Path $outputModule -ChildPath $typeDefinationFileName
+    $complexTypeFileDefinitionPath = Join-Path -Path $outputModule -ChildPath $typeDefinitionFileName
 
-    if(Test-Path -Path $complexTypeFileDefinationPath)
+    if(Test-Path -Path $complexTypeFileDefinitionPath)
     {
-        $proxyFile = New-Object -TypeName System.IO.FileInfo -ArgumentList $complexTypeFileDefinationPath | Get-Item
+        $proxyFile = New-Object -TypeName System.IO.FileInfo -ArgumentList $complexTypeFileDefinitionPath | Get-Item
         if($callerPSCmdlet -ne $null)
         { 
             $callerPSCmdlet.WriteObject($proxyFile)
@@ -570,7 +570,7 @@ function GenerateClientSideProxyModule
 
     $moduleDirInfo = [System.IO.DirectoryInfo]::new($outputModule)
     $moduleManifestName = $moduleDirInfo.Name + ".psd1"
-    GenerateModuleManifest $metaData $outputModule\$moduleManifestName @($typeDefinationFileName, 'ServiceActions.cdxml') $resourceNameMapping $progressBarStatus $callerPSCmdlet
+    GenerateModuleManifest $metaData $outputModule\$moduleManifestName @($typeDefinitionFileName, 'ServiceActions.cdxml') $resourceNameMapping $progressBarStatus $callerPSCmdlet
 }
 
 #########################################################
@@ -1660,30 +1660,30 @@ function AddParametersCDXML
 }
 
 #########################################################
-# GenerateComplexTypeDefination is a helper function used 
-# to generate complex type defination from the metadata.
+# GenerateComplexTypeDefinition is a helper function used 
+# to generate complex type definition from the metadata.
 #########################################################
-function GenerateComplexTypeDefination 
+function GenerateComplexTypeDefinition 
 {
     param
     (
         [ODataUtils.Metadata] $metaData,
         [string] $metaDataUri,
         [string] $OutputModule,
-        [string] $typeDefinationFileName,
+        [string] $typeDefinitionFileName,
         [string] $cmdletAdapter,
         [System.Management.Automation.PSCmdlet] $callerPSCmdlet
     )
 
     #metadataUri, $OutputModule & $cmdletAdapter are already validated at the cmdlet layer.
-    if($typeDefinationFileName -eq $null) { throw ($LocalizedData.ArgumentNullError -f "TypeDefinationFileName", "GenerateComplexTypeDefination") }
-    if($metaData -eq $null) { throw ($LocalizedData.ArgumentNullError -f "metadata", "GenerateComplexTypeDefination") }
-    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArgumentNullError -f "PSCmdlet", "GenerateComplexTypeDefination") }
+    if($typeDefinitionFileName -eq $null) { throw ($LocalizedData.ArgumentNullError -f "TypeDefinitionFileName", "GenerateComplexTypeDefinition") }
+    if($metaData -eq $null) { throw ($LocalizedData.ArgumentNullError -f "metadata", "GenerateComplexTypeDefinition") }
+    if($callerPSCmdlet -eq $null) { throw ($LocalizedData.ArgumentNullError -f "PSCmdlet", "GenerateComplexTypeDefinition") }
 
-    $Path = "$OutputModule\$typeDefinationFileName"
+    $Path = "$OutputModule\$typeDefinitionFileName"
 
     # We are currently generating classes for EntityType & ComplexType 
-    # defination exposed in the metadata.
+    # definition exposed in the metadata.
     $typesToBeGenerated = $metaData.EntityTypes+$metadata.ComplexTypes
 
     if($typesToBeGenerated -ne $null -and $typesToBeGenerated.Count -gt 0)
@@ -1729,7 +1729,7 @@ using System.Management.Automation;
                 foreach ($entityType in $entityTypes)
                 {
                     $entityTypeFullName = (ValidateComplexTypeIdentifier $entityType.Namespace $true $metaDataUri $callerPSCmdlet) + '.' + $entityType.Name
-                    Write-Verbose ($LocalizedData.VerboseAddingTypeDefinationToGeneratedModule -f $entityTypeFullName, "$OutputModule\$typeDefinationFileName")
+                    Write-Verbose ($LocalizedData.VerboseAddingTypeDefinitionToGeneratedModule -f $entityTypeFullName, "$OutputModule\$typeDefinitionFileName")
 
                     if($entityType.BaseType -ne $null)
                     {
@@ -1772,7 +1772,7 @@ using System.Management.Automation;
 
             $output += "Add-Type -TypeDefinition `$typeDefinitions `r`n"
             $output | Out-File -FilePath $Path
-            Write-Verbose ($LocalizedData.VerboseSavedTypeDefinationModule -f $typeDefinationFileName, $OutputModule)
+            Write-Verbose ($LocalizedData.VerboseSavedTypeDefinitionModule -f $typeDefinitionFileName, $OutputModule)
         }
      }
 

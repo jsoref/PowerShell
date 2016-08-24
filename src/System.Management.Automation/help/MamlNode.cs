@@ -61,10 +61,10 @@ namespace System.Management.Automation
     ///             <tag>*</tag>
     ///             <text>text for list item 2</text>
     ///         </textItem>
-    ///     3. definitionList => a list of defintionTextItem's
+    ///     3. definitionList => a list of definitionTextItem's
     ///         <definitionListItem>
     ///             <term>definition term here</term>
-    ///             <definition>defintion text here</definition>
+    ///             <definition>definition text here</definition>
     ///         </definitionListItem>
     /// </summary>
     /// 
@@ -977,16 +977,16 @@ namespace System.Management.Automation
         /// Convert an definitionListItem node into an PSObject
         /// 
         /// For example
-        ///        <defintionListItem>
+        ///        <definitionListItem>
         ///            <term>
         ///                term text
         ///            </term>
         ///            <definition>
         ///                <para>
-        ///                    definiton text
+        ///                    definition text
         ///                </para>
         ///            </definition>
-        ///        </defintionListItem>
+        ///        </definitionListItem>
         /// In this case, an PSObject of type "definitionListText" will be created with following 
         /// properties
         ///        a. term="term text"

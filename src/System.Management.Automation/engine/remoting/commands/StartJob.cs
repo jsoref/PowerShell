@@ -31,7 +31,7 @@ namespace Microsoft.PowerShell.Commands
         private const string DefinitionNameParameterSet = "DefinitionName";
 
         /// <summary>
-        /// JobDefintion Name.
+        /// JobDefinition Name.
         /// </summary>
         [Parameter(Position = 0, Mandatory = true,
                    ParameterSetName = StartJobCommand.DefinitionNameParameterSet)]

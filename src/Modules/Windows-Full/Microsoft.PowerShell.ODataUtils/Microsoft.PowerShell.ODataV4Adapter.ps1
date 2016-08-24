@@ -1230,8 +1230,8 @@ function GenerateClientSideProxyModule
     Write-Verbose ($LocalizedData.VerboseSavingModule -f $OutputModule)
     
     # Save ComplexTypes for all metadata schemas in single file
-    $typeDefinationFileName = "ComplexTypeDefinitions.psm1"
-    $complexTypeMapping = GenerateComplexTypeDefinition $GlobalMetadata $OutputModule $typeDefinationFileName $NormalizedNamespaces
+    $typeDefinitionFileName = "ComplexTypeDefinitions.psm1"
+    $complexTypeMapping = GenerateComplexTypeDefinition $GlobalMetadata $OutputModule $typeDefinitionFileName $NormalizedNamespaces
 
     ProgressBarHelper "Export-ODataEndpointProxy" $progressBarStatus 20 20 1  1
 
@@ -1273,11 +1273,11 @@ function GenerateClientSideProxyModule
 
     if ($actions.Count -gt 0 -or $functions.Count -gt 0)
     {
-        $additionalModules = @($typeDefinationFileName, 'ServiceActions.cdxml')
+        $additionalModules = @($typeDefinitionFileName, 'ServiceActions.cdxml')
     }
     else
     {
-        $additionalModules = @($typeDefinationFileName)
+        $additionalModules = @($typeDefinitionFileName)
     }
 
     GenerateModuleManifest $GlobalMetadata $OutputModule\$moduleManifestName $additionalModules $resourceNameMappings $progressBarStatus
@@ -2351,7 +2351,7 @@ function GenerateModuleManifest
 
 #########################################################
 # This is a helper function used to generate complex 
-# type defination from the metadata.
+# type definition from the metadata.
 #########################################################
 function GenerateComplexTypeDefinition 
 {
@@ -2359,11 +2359,11 @@ function GenerateComplexTypeDefinition
     (
         [System.Collections.ArrayList] $GlobalMetadata,
         [string] $OutputModule,
-        [string] $typeDefinationFileName,
+        [string] $typeDefinitionFileName,
         $normalizedNamespaces
     )
 
-    $Path = "$OutputModule\$typeDefinationFileName"
+    $Path = "$OutputModule\$typeDefinitionFileName"
     $date = Get-Date
 
     $output = @"
@@ -2376,7 +2376,7 @@ using System.ComponentModel;
 
 "@
     # We are currently generating classes for EntityType & ComplexType 
-    # defination exposed in the metadata.
+    # definition exposed in the metadata.
     
     $complexTypeMapping = @{}
 
@@ -2500,7 +2500,7 @@ namespace $($dotNetNamespace)
             {
                 if ($typeDefinition -ne $null)
                 {
-                    Write-Verbose ($LocalizedData.VerboseAddingTypeDefinationToGeneratedModule -f $typeDefinitionFullName, "$OutputModule\$typeDefinationFileName")
+                    Write-Verbose ($LocalizedData.VerboseAddingTypeDefinitionToGeneratedModule -f $typeDefinitionFullName, "$OutputModule\$typeDefinitionFileName")
 
                     $output += "`n  public class $($typeDefinition.Name)`n  {"
                     $typeName = Convert-ODataTypeToCLRType $typeDefinition.BaseTypeStr $complexTypeMapping
@@ -2520,7 +2520,7 @@ namespace $($dotNetNamespace)
                 {
                     $enumTypeFullName = $enumType.Namespace + '.' + $enumType.Name
                 
-                    Write-Verbose ($LocalizedData.VerboseAddingTypeDefinationToGeneratedModule -f $enumTypeFullName, "$OutputModule\$typeDefinationFileName")
+                    Write-Verbose ($LocalizedData.VerboseAddingTypeDefinitionToGeneratedModule -f $enumTypeFullName, "$OutputModule\$typeDefinitionFileName")
 
                     $output += "`n  public enum $($enumType.Name)`n  {"
                     
@@ -2577,7 +2577,7 @@ namespace $($dotNetNamespace)
                 {
                     $entityTypeFullName = $entityType.Namespace + '.' + $entityType.Name
                 
-                    Write-Verbose ($LocalizedData.VerboseAddingTypeDefinationToGeneratedModule -f $entityTypeFullName, "$OutputModule\$typeDefinationFileName")
+                    Write-Verbose ($LocalizedData.VerboseAddingTypeDefinitionToGeneratedModule -f $entityTypeFullName, "$OutputModule\$typeDefinitionFileName")
 
                     if ($entityType.BaseTypeStr -ne $null -and $entityType.BaseTypeStr -ne '' -and $entityType.BaseType -eq $null)
                     {
@@ -2662,7 +2662,7 @@ namespace $($dotNetNamespace)
     $output += """@`n"
     $output += "Add-Type -TypeDefinition `$typeDefinitions -IgnoreWarnings`n"
     $output | Out-File -FilePath $Path
-    Write-Verbose ($LocalizedData.VerboseSavedTypeDefinationModule -f $typeDefinationFileName, $OutputModule)
+    Write-Verbose ($LocalizedData.VerboseSavedTypeDefinitionModule -f $typeDefinitionFileName, $OutputModule)
 
     return $complexTypeMapping
 }

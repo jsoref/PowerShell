@@ -1195,7 +1195,7 @@ namespace Microsoft.PowerShell.Commands
                             var attributeAst = attribute as AttributeAst;
                             if (attributeAst == null || !string.Equals(attribute.TypeName.Name, "Parameter", StringComparison.OrdinalIgnoreCase))
                             {
-                                // If we have a Credential Attribute, it has been added to the inner function, it does not need to be added to the outer definiton.
+                                // If we have a Credential Attribute, it has been added to the inner function, it does not need to be added to the outer definition.
                                 // This will prevent prompting for the cred twice.
                                 if (!string.Equals(attribute.TypeName.FullName, "System.Management.Automation.CredentialAttribute", StringComparison.OrdinalIgnoreCase))
                                 {

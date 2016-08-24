@@ -323,7 +323,7 @@ namespace Microsoft.PowerShell.Workflow
                 invoker = System.Management.Automation.PowerShell.Create(initialSessionState);
                 var scopeFromIss = GetScopeFromIss(initialSessionState, invoker, out processedActivityLibraries, out activityMap);
 
-                // Add functionDefinitions, if any, from scopeFromIss to parent scope, so that they will be available for all FunctionDefintionAsts
+                // Add functionDefinitions, if any, from scopeFromIss to parent scope, so that they will be available for all FunctionDefinitionAsts
                 foreach(var entry in scopeFromIss.functionDefinitions)
                 {
                     scope.functionDefinitions.Add(entry.Key, entry.Value);
