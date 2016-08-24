@@ -111,7 +111,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets {
                     var filteredproviders = registeredSources.Any() ? registeredSources.Select(source => source.Provider).Distinct().ReEnumerable() : potentialSources.Select(source => source.Provider).Distinct().ReEnumerable();
 
                     if (!filteredproviders.Any()) {
-                        // we've filtered out everthing!
+                        // we've filtered out everything!
 
                         if (!didUserSpecifyProviders) {
                             // if cmdlet is generating parameter, we have to log error that source is wrong
