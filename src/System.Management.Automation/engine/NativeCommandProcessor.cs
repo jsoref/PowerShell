@@ -1113,7 +1113,7 @@ namespace System.Management.Automation
             // redirecting anything. This is a bit tricky as we always run redirected so
             // we have to see if the redirection is actually being done at the topmost level or not.
 
-            // If we're eligable to be running standalone, that is, without redirection
+            // If we're eligible to be running standalone, that is, without redirection
             // use our pipeline position to determine if we really want to redirect
             // input and error or not. If we're first in the pipeline, then we don't
             // redirect input. If we're last in the pipeline, we don't redirect output.
