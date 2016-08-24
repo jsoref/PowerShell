@@ -497,7 +497,7 @@ namespace Microsoft.PowerShell.Commands
                     long index, SmallestID = 0;
                     //if we change the defaulthistory size and when no of entries exceed the size, then 
                     //we need to get the smallest entry in the buffer when we want to clear the oldest entry
-                    //eg if size is 5 and then the enrties can be 7,6,1,2,3
+                    //eg if size is 5 and then the entries can be 7,6,1,2,3
                     if (_capacity != DefaultHistorySize)
                         SmallestID = SmallestIDinBuffer();
                     if (!newest.IsPresent)
