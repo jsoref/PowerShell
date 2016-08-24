@@ -1521,8 +1521,8 @@ namespace System.Management.Automation
         /// CodeMethod or ScriptMethod will be used, if available. Enumerations items are
         /// concatenated using $ofs.
         /// </summary>
-        /// <param name="format">repassed to baseObject's IFormatable if present</param>
-        /// <param name="formatProvider">repassed to baseObject's IFormatable if present</param>
+        /// <param name="format">repassed to baseObject's IFormattable if present</param>
+        /// <param name="formatProvider">repassed to baseObject's IFormattable if present</param>
         /// <returns>the string representation for baseObject</returns>
         /// <exception cref="ExtendedTypeSystemException">if an exception was thrown by the BaseObject's ToString</exception>
         public string ToString(string format, IFormatProvider formatProvider)

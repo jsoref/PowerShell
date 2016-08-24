@@ -94,7 +94,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <param name="sourceValue">value supposedly *not* of the types supported by this converted to be converted to the <paramref name="destinationType"/> parameter</param>
         /// <param name="destinationType">one of the types supported by this converter to which the <paramref name="sourceValue"/> parameter should be converted to</param>
-        /// <param name="formatProvider">The format provider to use like in IFormatable's ToString</param>
+        /// <param name="formatProvider">The format provider to use like in IFormattable's ToString</param>
         /// <param name="ignoreCase">true if case should be ignored</param>
         /// <returns>the <paramref name="sourceValue"/> parameter converted to the <paramref name="destinationType"/> parameter using formatProvider and ignoreCase</returns>
         /// <exception cref="InvalidCastException">if no conversion was possible</exception>
@@ -105,7 +105,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <param name="sourceValue">value supposedly *not* of the types supported by this converted to be converted to the <paramref name="destinationType"/> parameter</param>
         /// <param name="destinationType">one of the types supported by this converter to which the <paramref name="sourceValue"/> parameter should be converted to</param>
-        /// <param name="formatProvider">The format provider to use like in IFormatable's ToString</param>
+        /// <param name="formatProvider">The format provider to use like in IFormattable's ToString</param>
         /// <param name="ignoreCase">true if case should be ignored</param>
         /// <returns>the <paramref name="sourceValue"/> parameter converted to the <paramref name="destinationType"/> parameter using formatProvider and ignoreCase</returns>
         /// <exception cref="InvalidCastException">if no conversion was possible</exception>
@@ -138,7 +138,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <param name="sourceValue">value supposedly from one of the types supported by this converter to be converted to the <paramref name="destinationType"/> parameter</param>
         /// <param name="destinationType">type to convert the <paramref name="sourceValue"/> parameter, supposedly not one of the types supported by the converter</param>
-        /// <param name="formatProvider">The format provider to use like in IFormatable's ToString</param>
+        /// <param name="formatProvider">The format provider to use like in IFormattable's ToString</param>
         /// <param name="ignoreCase">true if case should be ignored</param>
         /// <returns>sourceValue converted to the <paramref name="destinationType"/> parameter using formatProvider and ignoreCase</returns>
         /// <exception cref="InvalidCastException">if no conversion was possible</exception>
@@ -149,7 +149,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <param name="sourceValue">value supposedly from one of the types supported by this converter to be converted to the <paramref name="destinationType"/> parameter</param>
         /// <param name="destinationType">type to convert the <paramref name="sourceValue"/> parameter, supposedly not one of the types supported by the converter</param>
-        /// <param name="formatProvider">The format provider to use like in IFormatable's ToString</param>
+        /// <param name="formatProvider">The format provider to use like in IFormattable's ToString</param>
         /// <param name="ignoreCase">true if case should be ignored</param>
         /// <returns>sourceValue converted to the <paramref name="destinationType"/> parameter using formatProvider and ignoreCase</returns>
         /// <exception cref="InvalidCastException">if no conversion was possible</exception>
