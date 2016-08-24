@@ -487,7 +487,7 @@ namespace System.Management.Automation.Remoting
         /// Verifies the negotiation packet received from the server
         /// </summary>
         /// <param name="serverRemoteSessionCapability">
-        /// Capablities of remote session
+        /// Capabilities of remote session
         /// </param>
         /// <returns> 
         /// The method returns true if the capability negotiation is successful.

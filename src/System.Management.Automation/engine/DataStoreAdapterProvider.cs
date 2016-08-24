@@ -146,7 +146,7 @@ namespace System.Management.Automation
         public String Description { get; set; }
 
         /// <summary>
-        /// Gets the capabilies that are implemented by the provider.
+        /// Gets the capabilities that are implemented by the provider.
         /// </summary>
         public Provider.ProviderCapabilities Capabilities
         {
@@ -172,7 +172,7 @@ namespace System.Management.Automation
                     catch (Exception e) // Catch-all OK, 3rd party callout
                     {
                         CommandProcessorBase.CheckForSevereException(e);
-                        // Assume no capabilites for now
+                        // Assume no capabilities for now
                     }
                 }
                 return _capabilities;

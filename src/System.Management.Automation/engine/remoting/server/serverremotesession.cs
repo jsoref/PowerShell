@@ -674,7 +674,7 @@ namespace System.Management.Automation.Remoting
             }
 
             // all client messages are validated
-            // now build up the server capabilites and connect response messages to be piggybacked on connect response
+            // now build up the server capabilities and connect response messages to be piggybacked on connect response
             RemoteDataObject capability = RemotingEncoder.GenerateServerSessionCapability(Context.ServerCapability, _runspacePoolDriver.InstanceId);
             RemoteDataObject runspacepoolInitData = RemotingEncoder.GenerateRunspacePoolInitData(_runspacePoolDriver.InstanceId,
                                                                                                _runspacePoolDriver.RunspacePool.GetMaxRunspaces(),

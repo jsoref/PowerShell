@@ -35,7 +35,7 @@ namespace System.Management.Automation
         RemoteServer = 0x1,
 
         /// <summary>
-        /// Session with <see cref="WorkflowServer"/> capabibilities can be made available on 
+        /// Session with <see cref="WorkflowServer"/> capabilities can be made available on 
         /// a server that wants to provide workflow hosting capabilities in the
         /// specified end points. All jobs commands as well as commands for
         /// implicit remoting and interactive remoting will be made available

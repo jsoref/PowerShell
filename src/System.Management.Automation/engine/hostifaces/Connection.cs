@@ -419,7 +419,7 @@ namespace System.Management.Automation.Runspaces
     public enum RunspaceCapability
     {
         /// <summary>
-        /// No additional capabilites beyond a default runspace.
+        /// No additional capabilities beyond a default runspace.
         /// </summary>
         Default = 0x0,
 
