@@ -943,7 +943,7 @@ namespace System.Management.Automation
             // Porting note: only Windows supports the SecurityPrincipal API of .NET. Due to
             // advanced privilege models, the correct approach on Unix is to assume the user has
             // permissions, attempt the task, and error gracefully if the task fails due to
-            // permissions. To fit into PowerShell's existing model of pre-emptively checking
+            // permissions. To fit into PowerShell's existing model of preemptively checking
             // permissions (which cannot be assumed on Unix), we "assume" the user is an
             // administrator by returning true, thus nullifying this check on Unix.
 #if UNIX
