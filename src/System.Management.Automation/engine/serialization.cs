@@ -1039,7 +1039,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// Handles primitive known type by first converting it to a PSObject.In W8, extended
-        /// property data is stored external to PSObject. By coverting to PSObject, we will
+        /// property data is stored external to PSObject. By converting to PSObject, we will
         /// be able to retrieve and serialize the extended properties. This is tracked by
         /// Win8: 414042
         /// </summary>
