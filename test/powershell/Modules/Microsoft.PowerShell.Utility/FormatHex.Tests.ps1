@@ -5,7 +5,7 @@
 
 <#
     Purpose:
-        Verify that Format-Hex display the Hexa decmial value for the input data.
+        Verify that Format-Hex display the Hexa decimal value for the input data.
                 
     Action:
         Run Format-Fex.
