@@ -197,7 +197,7 @@ namespace Microsoft.PowerShell.Commands
 
             if (_force || (ShouldProcess(clearRecycleBinShouldProcessTarget, "Clear-RecycleBin")))
             {
-                // If driveName is null, then clear the recyclebin for all drives; otherwise, just for the specified drivename. 
+                // If driveName is null, then clear the recyclebin for all drives; otherwise, just for the specified driveName. 
 
                 string activity = String.Format(CultureInfo.InvariantCulture, ClearRecycleBinResources.ClearRecycleBinProgressActivity);
                 string statusDescription;
