@@ -516,7 +516,7 @@ namespace Microsoft.PackageManagement.Providers.Internal.Bootstrap {
                 return null;
             }
 
-            // support providers with .dll file extention only
+            // support providers with .dll file extension only
             if (!Path.GetExtension(filePath).EqualsIgnoreCase(".dll")) {
                 if (!suppressErrorsAndWarnings)
                 {

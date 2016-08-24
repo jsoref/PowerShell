@@ -336,7 +336,7 @@ namespace System.Management.Automation.Language
 #endif
     }
 
-    internal static class DynamicMetaObjectBinderExtentions
+    internal static class DynamicMetaObjectBinderExtensions
     {
         internal static DynamicMetaObject DeferForPSObject(this DynamicMetaObjectBinder binder,
                                                            params DynamicMetaObject[] args)

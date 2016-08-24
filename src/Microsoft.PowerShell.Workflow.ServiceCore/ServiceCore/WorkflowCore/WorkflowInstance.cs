@@ -2009,22 +2009,22 @@ namespace Microsoft.PowerShell.Workflow
             this.workflowApplication.Extensions.Add(this.GetTrackingParticipant());
 
             // adding the custom extensions
-            IEnumerable<object> extentions = this.Runtime.Configuration.CreateWorkflowExtensions();
-            if (extentions != null)
+            IEnumerable<object> extensions = this.Runtime.Configuration.CreateWorkflowExtensions();
+            if (extensions != null)
             {
-                foreach (object extention in extentions)
+                foreach (object extension in extensions)
                 {
-                    this.workflowApplication.Extensions.Add(extention);
+                    this.workflowApplication.Extensions.Add(extension);
                 }
             }
 
             // adding the custom extension creation functions
-            IEnumerable<Func<object>> extentionFunctions = this.Runtime.Configuration.CreateWorkflowExtensionCreationFunctions<object>();
-            if (extentionFunctions != null)
+            IEnumerable<Func<object>> extensionFunctions = this.Runtime.Configuration.CreateWorkflowExtensionCreationFunctions<object>();
+            if (extensionFunctions != null)
             {
-                foreach(Func<object> extentionFunc in extentionFunctions)
+                foreach(Func<object> extensionFunc in extensionFunctions)
                 {
-                    this.workflowApplication.Extensions.Add<object>(extentionFunc);
+                    this.workflowApplication.Extensions.Add<object>(extensionFunc);
                 }
             }
             
