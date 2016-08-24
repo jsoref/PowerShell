@@ -1328,7 +1328,7 @@ namespace System.Management.Automation
     }
 
     /// <summary>
-    /// Used by modules to provide a hooko to the engine for cleanup on removal
+    /// Used by modules to provide a hook to the engine for cleanup on removal
     /// w.r.t. compiled assembly being removed.
     /// </summary>
     public interface IModuleAssemblyCleanup
