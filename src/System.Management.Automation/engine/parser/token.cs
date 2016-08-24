@@ -598,7 +598,7 @@ namespace System.Management.Automation.Language
 
         /// <summary>
         /// The precedence of comparison operators including: '-eq', '-ne', '-ge', '-gt', '-lt', '-le', '-like', '-notlike',
-        /// '-match', '-notmatch', '-replace', '-containts', '-notcontains', '-in', '-notin', '-split', '-join', '-is', '-isnot', '-as',
+        /// '-match', '-notmatch', '-replace', '-contains', '-notcontains', '-in', '-notin', '-split', '-join', '-is', '-isnot', '-as',
         /// and all of the case sensitive variants of these operators, if they exists.
         /// </summary>
         BinaryPrecedenceComparison = 3,

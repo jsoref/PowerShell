@@ -603,7 +603,7 @@ namespace System.Management.Automation.Remoting
         /// targetted for session
         /// </summary>
         /// <param name="arg">
-        /// argument containg the data object
+        /// argument contains the data object
         /// </param>
         private void ProcessSessionMessages(RemoteDataEventArgs arg)
         {

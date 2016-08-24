@@ -2660,7 +2660,7 @@ namespace System.Management.Automation.SecurityAccountsManager
         /// to look up.
         /// </param>
         /// <returns>
-        /// A <see cref="AccountInfo"/> object containg information about the
+        /// A <see cref="AccountInfo"/> object contains information about the
         /// account, or null if no matching account was found.
         /// </returns>
         private AccountInfo LookupAccountInfo(SecurityIdentifier sid)
@@ -2718,7 +2718,7 @@ namespace System.Management.Automation.SecurityAccountsManager
         /// A string containing the name of the account to look up.
         /// </param>
         /// <returns>
-        /// A <see cref="AccountInfo"/> object containg information about the
+        /// A <see cref="AccountInfo"/> object contains information about the
         /// account, or null if no matching account was found.
         /// </returns>
         private AccountInfo LookupAccountInfo(string accountName)

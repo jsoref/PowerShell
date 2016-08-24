@@ -183,7 +183,7 @@ function Compress-Archive
         }
 
         # Validate Source Path depeding on parameter set being used.
-        # The specified source path conatins one or more files or directories that needs
+        # The specified source path contains one or more files or directories that needs
         # to be compressed.
         $isLiteralPathUsed = $false
         if($PsCmdlet.ParameterSetName -eq "LiteralPath" -or 
