@@ -30,7 +30,7 @@ LPCWSTR g_MAIN_BINARY_NAME = L"pwrshplugin.dll";
 // gets the error message from the resources section of the current module.
 // the caller should free pwszErrorMessage using LocalFree().
 // returns: If the function succeeds the return value is the number of CHARs stored int the output
-// buffer, excluding the terminating null character. If the function failes the return value is zero.
+// buffer, excluding the terminating null character. If the function fails the return value is zero.
 #pragma prefast(push)
 #pragma prefast (disable: 28196)
 DWORD GetFormattedErrorMessage(__deref_out PWSTR * pwszErrorMessage, DWORD dwMessageId, va_list* arguments)
