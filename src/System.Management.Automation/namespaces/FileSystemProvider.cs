@@ -484,7 +484,7 @@ namespace Microsoft.PowerShell.Commands
         /// <summary>
         /// MapNetworkDrive facilitates to map the newly created PS Drive to a network share.
         /// </summary>
-        /// <param name="drive">The PSDrive infor that would be used to create a new PS drive.</param>
+        /// <param name="drive">The PSDrive info that would be used to create a new PS drive.</param>
         private void MapNetworkDrive(PSDriveInfo drive)
         {
             // Porting note: mapped network drives are only supported on Windows
