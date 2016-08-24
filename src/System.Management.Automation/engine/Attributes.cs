@@ -582,7 +582,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Initiailizes a new instance of the AliasAttribute class
+        /// Initializes a new instance of the AliasAttribute class
         /// </summary>
         /// <param name="aliasNames">The name for this alias</param>
         /// <exception cref="ArgumentException">for invalid arguments</exception>

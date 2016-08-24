@@ -1246,7 +1246,7 @@ namespace System.Management.Automation
         internal object noteValue;
 
         /// <summary>
-        /// Initiializes a new instance of the PSNoteProperty class.
+        /// Initializes a new instance of the PSNoteProperty class.
         /// </summary>
         /// <param name="name">name of the property</param>
         /// <param name="value">value of the property</param>
@@ -1413,7 +1413,7 @@ namespace System.Management.Automation
         internal PSVariable _variable;
 
         /// <summary>
-        /// Initiializes a new instance of the PSVariableProperty class. This is
+        /// Initializes a new instance of the PSVariableProperty class. This is
         /// a subclass of the NoteProperty that wraps a variable instead of a simple value.
         /// </summary>
         /// <param name="variable">The variable to wrap</param>

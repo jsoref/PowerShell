@@ -180,7 +180,7 @@ public:
             {
                 if (!singletonInstance.bIsPluginLoaded)
                 {
-                    // process extra info initializies the pwrshplugin
+                    // process extra info initializes the pwrshplugin
                     // by initializing the CLR version and obtaining access
                     // pointers for the plugin worker or for System.Management.Automation.dll.
                     singletonInstance.ProcessExtraInfo(extraInfo, NULL);
