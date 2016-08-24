@@ -541,7 +541,7 @@ namespace System.Management.Automation.Runspaces
         }
 
         /// <summary>
-        /// Createa a pipeline froma command string
+        /// Create a pipeline froma command string
         /// </summary>
         /// <param name="command">A valid command string</param>
         /// <returns>
