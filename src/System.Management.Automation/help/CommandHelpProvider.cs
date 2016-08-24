@@ -862,7 +862,7 @@ namespace System.Management.Automation
         /// original command name (without prefix) as the key.
         /// 
         /// This method retrieves the help content by suppressing the prefix and then making a copy
-        /// of the help contnet + change the name and then returns the copied help content.
+        /// of the help content + change the name and then returns the copied help content.
         /// </summary>
         /// <param name="helpIdentifier"></param>
         /// <param name="cmdInfo"></param>

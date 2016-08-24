@@ -352,7 +352,7 @@ namespace Microsoft.PowerShell.Commands
                 }
                 else if (ReadCount == 1)
                 {
-                    // Write out the contnet as single object
+                    // Write out the content as single object
                     while (tailResultQueue.Count > 0)
                         WriteContentObject(tailResultQueue.Dequeue(), count++, holder.PathInfo, currentContext);
                 }

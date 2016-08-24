@@ -869,7 +869,7 @@ namespace System.Management.Automation.Help
         }
 
         /// <summary>
-        /// Downloads the help cotent
+        /// Downloads the help content
         /// </summary>
         /// <param name="commandType">command type</param>
         /// <param name="path">destination path</param>
