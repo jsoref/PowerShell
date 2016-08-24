@@ -1019,7 +1019,7 @@ namespace Microsoft.PowerShell.Commands
 
         // there are two different assemblies: framework contract and framework implementation.
         // Version 1.1.1 of Microsoft.CodeAnalysis doesn't provide a good way to handle contract separetely from implementation.
-        // To simplify user expirience we always add both of them to references.
+        // To simplify user experience we always add both of them to references.
         // 1) It's a legitimate scenario, when user provides a custom referenced assembly that was built against the contract assembly 
         // (i.e. System.Management.Automation), so we need the contract one.
         // 2) We have to provide implementation assembly explicitly, Roslyn doesn't have a way to figure out implementation by itself.

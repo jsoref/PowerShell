@@ -882,7 +882,7 @@ namespace System.Management.Automation
             if (null != originalHelpInfo)
             {
                 result = originalHelpInfo.Copy();
-                // command's name can be changed using -Prefix while importing module.To give better user expereience for
+                // command's name can be changed using -Prefix while importing module.To give better user experience for
                 // get-help (on par with get-command), it was decided to use the prefixed command name
                 // for the help content.
                 if (result.FullHelp.Properties["Name"] != null)
