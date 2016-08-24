@@ -802,7 +802,7 @@ namespace System.Management.Automation
                     return;
             }
 
-            // 1045384-2004/12/14-JonN impementing $MaximumErrorCount
+            // 1045384-2004/12/14-JonN implementing $MaximumErrorCount
             object maxcountobj = EngineSessionState.CurrentScope.ErrorCapacity.FastValue;
             if (null != maxcountobj)
             {

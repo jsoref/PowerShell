@@ -38,7 +38,7 @@ namespace Microsoft.PowerShell.Commands
 {
     #region Register-PSSessionConfiguration cmdlet
     /// <summary>
-    /// Class implemeting Register-PSSessionConfiguration
+    /// Class implementing Register-PSSessionConfiguration
     /// </summary>
     [Cmdlet(VerbsLifecycle.Register, RemotingConstants.PSSessionConfigurationNoun,
         DefaultParameterSetName = PSSessionConfigurationCommandBase.NameParameterSetName,
@@ -2446,7 +2446,7 @@ else
     #region Unregister-PSSessionConfiguration cmdlet
 
     /// <summary>
-    /// Class implemeting Unregister-PSSessionConfiguration
+    /// Class implementing Unregister-PSSessionConfiguration
     /// </summary>
     [Cmdlet(VerbsLifecycle.Unregister, RemotingConstants.PSSessionConfigurationNoun,
         SupportsShouldProcess = true, ConfirmImpact = ConfirmImpact.Low, HelpUri = "http://go.microsoft.com/fwlink/?LinkID=144308")]
@@ -2668,7 +2668,7 @@ else
     #region Get-PSSessionConfiguration cmdlet
 
     /// <summary>
-    /// Class implemeting Get-PSSessionConfiguration
+    /// Class implementing Get-PSSessionConfiguration
     /// </summary>
     [Cmdlet(VerbsCommon.Get, RemotingConstants.PSSessionConfigurationNoun, HelpUri = "http://go.microsoft.com/fwlink/?LinkID=144304")]
     [OutputType("Microsoft.PowerShell.Commands.PSSessionConfigurationCommands#PSSessionConfiguration")]
@@ -2904,7 +2904,7 @@ $args[0] | foreach {{
     #region Set-PSSessionConfiguration cmdlet
 
     /// <summary>
-    /// Class implemeting Set-PSSessionConfiguration
+    /// Class implementing Set-PSSessionConfiguration
     /// </summary>
     [Cmdlet(VerbsCommon.Set, RemotingConstants.PSSessionConfigurationNoun,
        DefaultParameterSetName = PSSessionConfigurationCommandBase.NameParameterSetName,
