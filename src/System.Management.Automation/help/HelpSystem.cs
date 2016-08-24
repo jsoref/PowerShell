@@ -290,7 +290,7 @@ namespace System.Management.Automation
         /// <summary>
         /// Get help based on the target, help type, etc
         /// 
-        /// Help eninge retrieve help based on following schemes,
+        /// Help engine retrieve help based on following schemes,
         /// 
         ///     1. if help target is empty, get default help
         ///     2. if help target is not a search pattern, try to retrieve exact help
