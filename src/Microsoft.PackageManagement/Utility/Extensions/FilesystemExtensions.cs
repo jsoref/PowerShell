@@ -146,7 +146,7 @@ namespace Microsoft.PackageManagement.Internal.Utility.Extensions {
                     catch { }
                 }
 
-                // delete all filese that is older than 2 days
+                // delete all files that is older than 2 days
                 foreach (var filePath in Directory.EnumerateFiles(TempPath))
                 {
                     try
