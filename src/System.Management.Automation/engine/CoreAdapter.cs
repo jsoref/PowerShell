@@ -33,7 +33,7 @@ namespace System.Management.Automation
     /// This is the place to look every time you create a new Adapter. Consider if you 
     /// should implement each of the virtual methods here.
     /// The base class deals with errors and performs additional operations before and after
-    /// calling the drived virtual methods.
+    /// calling the derived virtual methods.
     /// </summary>
     internal abstract class Adapter
     {

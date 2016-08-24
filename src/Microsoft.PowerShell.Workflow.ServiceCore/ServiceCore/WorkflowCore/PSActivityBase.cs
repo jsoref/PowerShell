@@ -2129,7 +2129,7 @@ namespace Microsoft.PowerShell.Activities
         }
 
         /// <summary>
-        /// The method is override-able by the drived classes in case they would like to implement different logic at the end of persistence.
+        /// The method is override-able by the derived classes in case they would like to implement different logic at the end of persistence.
         /// The default behavior would be to schedule the 'Persist' activity if the PSPersist flag is true or Host is asking for it.
         /// </summary>
         /// <param name="context">The native activity context of execution engine.</param>

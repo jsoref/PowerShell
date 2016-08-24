@@ -2040,7 +2040,7 @@ else
         /// <summary>
         /// This parameter should be specified with AssemblyName. This supplies
         /// the type to load to get the InitialSessionState. The type should
-        /// be derivided from <see cref="PSSessionConfiguration"/>.
+        /// be derived from <see cref="PSSessionConfiguration"/>.
         /// </summary>
         [Parameter(Position = 2, Mandatory = true, ParameterSetName = PSSessionConfigurationCommandBase.AssemblyNameParameterSetName)]
         public string ConfigurationTypeName
