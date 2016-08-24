@@ -150,7 +150,7 @@ Describe "Get-Random" -Tags "CI" {
 	$randomNumber | Should Be ("red" -or "yellow" -or "blue")
     }
 
-    It "Should return a number for hexdecimal " {
+    It "Should return a number for hexadecimal " {
 	$randomNumber = Get-Random 0x07FFFFFFFFF
 	$randomNumber | Should BeLessThan 549755813887
 	$randomNumber | Should BeGreaterThan 0
@@ -162,12 +162,12 @@ Describe "Get-Random" -Tags "CI" {
 	$firstRandomNumber | Should Not Be $secondRandomNumber
     }
 
-    It "Should return the same number for hexidemical number and regular number when the switch SetSeed it used " {
+    It "Should return the same number for hexadecimal number and regular number when the switch SetSeed it used " {
 	$firstRandomNumber = Get-Random 0x07FFFFFFFF -SetSeed 20
 	$secondRandomNumber = Get-Random 34359738367 -SetSeed 20
 	$firstRandomNumber | Should Be @secondRandomNumber
     }
-    It "Should throw an error because the hexidecial number is to large " {
+    It "Should throw an error because the hexadecimal number is to large " {
 	{ Get-Random 0x07FFFFFFFFFFFFFFFF } | Should Throw "Value was either too large or too small for a UInt32"
     }
 }

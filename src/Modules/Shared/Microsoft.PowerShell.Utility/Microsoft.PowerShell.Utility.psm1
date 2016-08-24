@@ -224,7 +224,7 @@ function Format-Hex
         $inputStreamArray = [System.Collections.ArrayList]::New()
         <############################################################################################ 
         # The ConvertToHexadecimalHelper is a helper method used to fetch unicode bytes from the 
-        # input data and display the hexadecimial representaion of the of the input data in bytes.
+        # input data and display the hexadecimal representaion of the of the input data in bytes.
         ############################################################################################>
         function ConvertToHexadecimalHelper
         {
