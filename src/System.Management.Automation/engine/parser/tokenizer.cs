@@ -3394,7 +3394,7 @@ namespace System.Management.Automation.Language
         internal Token GetLBracket()
         {
             // We know we want a '[' token or no token.  We are in a context where we expect an attribute/type constraint
-            // and allow any whitespace/commments before the '[', but nothing else (the caller has already skipped newlines
+            // and allow any whitespace/comments before the '[', but nothing else (the caller has already skipped newlines
             // if appropriate.)  This is handled specially because in command mode, a generic token may begin with '[', but
             // we don't want anything more than the '['.
 
