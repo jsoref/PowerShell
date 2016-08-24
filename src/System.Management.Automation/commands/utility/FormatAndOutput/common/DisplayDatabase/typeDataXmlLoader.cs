@@ -914,7 +914,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
         #region Load WideControl
 
         /// <summary>
-        /// Load the WideControl into the WideContolBody
+        /// Load the WideControl into the WideControlBody
         /// </summary>
         /// <param name="wide"></param>
         /// <param name="viewIndex"></param>
