@@ -1778,7 +1778,7 @@ namespace System.Management.Automation
                         int throttleLimit, string name)
             : base(remoteCommand, name)
         {
-            // Create chiild jobs for each object in the list
+            // Create child jobs for each object in the list
             for (int i = 0; i < remoteRunspaceInfos.Length; i++)
             {
                 ExecutionCmdletHelperRunspace helper = (ExecutionCmdletHelperRunspace)runspaceHelpers[i];
