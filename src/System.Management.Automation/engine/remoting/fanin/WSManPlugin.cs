@@ -1471,7 +1471,7 @@ namespace System.Management.Automation.Remoting
         /// Sets thread properties like UI Culture, Culture etc..This is needed as code is transitioning from
         /// unmanaged heap to managed heap...and thread properties are not set correctly during this 
         /// transition.
-        /// Currently WSMan provider supplies only UI Culture related data..so only UI Cutlure is set.
+        /// Currently WSMan provider supplies only UI Culture related data..so only UI Culture is set.
         /// </summary>
         /// <param name="requestDetails"></param>
         internal static void SetThreadProperties(
