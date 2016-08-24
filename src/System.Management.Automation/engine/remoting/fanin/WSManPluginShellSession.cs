@@ -481,7 +481,7 @@ namespace System.Management.Automation.Remoting
                                     WSManNativeApi.PS_XML_NAMESPACE,
                                     Convert.ToBase64String(outputData));
 
-                    //TODO: curretly using OperationComplete to report back the responseXml. This will need to change to use WSManReportObject
+                    //TODO: currently using OperationComplete to report back the responseXml. This will need to change to use WSManReportObject
                     //that is currently internal.
                     WSManPluginInstance.ReportOperationComplete(requestDetails, WSManPluginErrorCodes.NoError, responseData);
                 }
