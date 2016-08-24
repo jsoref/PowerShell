@@ -288,7 +288,7 @@ namespace System.Management.Automation.Remoting
         private MemoryStream _dataToProcessStream;
         private long _currentObjectId;
         private long _currentFrgId;
-        // max deseriazlied object size in bytes
+        // max deserialized object size in bytes
         private Nullable<int> _maxReceivedObjectSize;
         private int _totalReceivedObjectSizeSoFar;
         private bool _isCreateByClientTM;
