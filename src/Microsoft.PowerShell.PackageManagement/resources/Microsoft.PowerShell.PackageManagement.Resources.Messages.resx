@@ -126,7 +126,7 @@
     <comment>query</comment>
   </data>
   <data name="DestinationPathInvalid" xml:space="preserve">
-    <value>The desintation path '{0}' for package '{1}' is invalid.</value>
+    <value>The destination path '{0}' for package '{1}' is invalid.</value>
     <comment>{0} - path
 {1} - package name</comment>
   </data>

@@ -193,7 +193,7 @@ namespace System.Management.Automation.Remoting
 
         /// <summary>
         /// Serializes only the header portion of the object. ie., runspaceId,
-        /// powerShellId, destinaion and dataType.
+        /// powerShellId, destination and dataType.
         /// </summary>
         /// <param name="streamToWriteTo">
         /// place where the serialized data is stored into.

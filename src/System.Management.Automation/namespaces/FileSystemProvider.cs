@@ -7211,7 +7211,7 @@ namespace Microsoft.PowerShell.Commands
             /// </summary>
             /// <param name="name">Path of the symbolic link.</param>
             /// <param name="destination">Path of the target of the symbolic link.</param>
-            /// <param name="destinationType">0 for destionation as file and 1 for destination as directory.</param>
+            /// <param name="destinationType">0 for destination as file and 1 for destination as directory.</param>
             /// <returns>1 on successful creation.</returns>
             [DllImport(PinvokeDllNames.CreateSymbolicLinkDllName, CharSet = CharSet.Unicode, SetLastError = true)]
             internal static extern int CreateSymbolicLink(string name, string destination, int destinationType);
