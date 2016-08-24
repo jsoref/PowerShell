@@ -1139,7 +1139,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// If the parameter binder might use the value more than once, this it can save the value to avoid
-        /// re-evalauting complicated expressions.
+        /// re-evaluating complicated expressions.
         /// </summary>
         protected virtual void SaveDefaultScriptParameterValue(string name, object value)
         {

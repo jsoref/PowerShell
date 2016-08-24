@@ -270,7 +270,7 @@ namespace System.Management.Automation
     public enum SplitOptions
     {
         /// <summary>
-        /// Use simple string comparison when evaluting the delimiter.
+        /// Use simple string comparison when evaluating the delimiter.
         /// Cannot be used with RegexMatch.
         /// </summary>
         SimpleMatch = 0x01,
@@ -280,7 +280,7 @@ namespace System.Management.Automation
         /// </summary>
         RegexMatch = 0x02,
         /// <summary>
-        /// CultureInvariant: Ignores cultural differences in language when evaluting the delimiter.
+        /// CultureInvariant: Ignores cultural differences in language when evaluating the delimiter.
         /// Valid only with RegexMatch.
         /// </summary>
         CultureInvariant = 0x04,
