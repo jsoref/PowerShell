@@ -3712,7 +3712,7 @@ namespace Microsoft.PowerShell.DesiredStateConfiguration.Internal
 # This routine also adds the resource to the global node resources table.
             Test-DependsOn
 
-# Check if PsDscRunCredetial is being specified as Arguments to Configuration
+# Check if PsDscRunCredential is being specified as Arguments to Configuration
         if($PsDscRunAsCredential -ne $null)
         {
 # Check if resource is also trying to set the value for RunAsCred
