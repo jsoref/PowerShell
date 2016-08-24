@@ -325,7 +325,7 @@ namespace Microsoft.PowerShell.Commands
         /// </remarks>
         protected override void StopProcessing()
         {
-            // close the outputStream so that futher writes to the outputStream
+            // close the outputStream so that further writes to the outputStream
             // are not possible
             _stream.ObjectWriter.Close();
 

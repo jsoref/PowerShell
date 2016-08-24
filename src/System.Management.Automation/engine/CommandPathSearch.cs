@@ -568,7 +568,7 @@ namespace System.Management.Automation
         private bool _justReset;
 
         /// <summary>
-        /// If not null, called with the enumerated files for futher processing
+        /// If not null, called with the enumerated files for further processing
         /// </summary>
         private Func<string[], IEnumerable<string>> _postProcessEnumeratedFiles;
 
