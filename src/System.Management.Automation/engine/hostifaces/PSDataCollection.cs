@@ -1822,7 +1822,7 @@ namespace System.Management.Automation
 
     /// <summary>
     /// Enumerator for PSDataCollection. This enumerator blocks until 
-    /// either all the PowerShell operations are compeleted or the
+    /// either all the PowerShell operations are completed or the
     /// PSDataCollection is closed.
     /// </summary>
     /// <typeparam name="W"></typeparam>
