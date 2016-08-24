@@ -586,7 +586,7 @@ namespace System.Management.Automation
             }
 #else
             // Important:
-            // this functiona has a clone in Workflow.ServiceCore in admin\monad\src\m3p\product\ServiceCore\WorkflowCore\WorkflowRuntimeCompilation.cs
+            // this function has a clone in Workflow.ServiceCore in admin\monad\src\m3p\product\ServiceCore\WorkflowCore\WorkflowRuntimeCompilation.cs
             // if you are making any changes specific to this function then update the clone as well.
 
             var sysInfo = new NativeMethods.SYSTEM_INFO();

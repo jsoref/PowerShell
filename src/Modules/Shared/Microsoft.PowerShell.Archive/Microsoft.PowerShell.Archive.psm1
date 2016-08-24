@@ -1122,7 +1122,7 @@ function CSVHelper
         [string[]] $sourcePath
     )
 
-    # SourcePath has already been validated by the calling funcation.
+    # SourcePath has already been validated by the calling function.
     if($sourcePath.Count -gt 1)
     {
         $sourcePathInCsvFormat = "`n"
