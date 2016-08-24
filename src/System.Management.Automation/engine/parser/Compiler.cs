@@ -3233,7 +3233,7 @@ namespace System.Management.Automation.Language
                 exprs.Add(Compile(subExpr.SubExpression));
                 if (resultList != null)
                 {
-                    // If there is no resultList, we wrote our results of the subexperssion directly to the pipe
+                    // If there is no resultList, we wrote our results of the subexpression directly to the pipe
                     // instead of being collected to be written here.
                     result = Expression.Call(CachedReflectionInfo.PipelineOps_PipelineResult, resultList);
                 }

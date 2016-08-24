@@ -971,7 +971,7 @@ Possible matches are</value>
     <value>Exception parsing MOF file '{0}':{1}.</value>
   </data>
   <data name="MissingConfigurationName" xml:space="preserve">
-    <value>The name for the configuration is missing. Provide the missing name as a simple name, string, or string-valued expresson.</value>
+    <value>The name for the configuration is missing. Provide the missing name as a simple name, string, or string-valued expression.</value>
   </data>
   <data name="MissingRequiredResourcesArgument" xml:space="preserve">
     <value>Missing argument to -Resources. The argument to the -Resource parameter must be a comma-separated list of names or constant strings naming modules to reference for resource type definitions.</value>

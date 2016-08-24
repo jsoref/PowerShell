@@ -6911,7 +6911,7 @@ namespace System.Management.Automation.Language
         /// <param name="target">The target to operate against</param>
         /// <param name="args">
         ///     Arguments to the operator. The first argument must be either a scriptblock
-        ///     or a string representing a 'simple where' expresson. The second is an enum that controls
+        ///     or a string representing a 'simple where' expression. The second is an enum that controls
         ///     the matching behaviour returning the first, last or all matching elements. 
         /// </param>
         /// <param name="argRestrictions">The binding restrictions for the arguments.</param>

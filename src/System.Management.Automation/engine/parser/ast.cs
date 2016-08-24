@@ -4363,7 +4363,7 @@ namespace System.Management.Automation.Language
         public PipelineBaseAst Initializer { get; private set; }
 
         /// <summary>
-        /// The ast for the iteration experssion of a for statement, or null if none was specified.
+        /// The ast for the iteration expression of a for statement, or null if none was specified.
         /// </summary>
         public PipelineBaseAst Iterator { get; private set; }
 
