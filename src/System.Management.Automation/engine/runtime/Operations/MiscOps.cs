@@ -2488,8 +2488,8 @@ namespace System.Management.Automation
             var context = Runspace.DefaultRunspace.ExecutionContext;
 
             // If expression argument is a .Net type then convert the collection to that type
-            // if the target type is a collecton or array, then the result will be a collection of exactly
-            // that type. If the target type is not a collectiom type then return a generic collection of that type.
+            // if the target type is a collection or array, then the result will be a collection of exactly
+            // that type. If the target type is not a collection type then return a generic collection of that type.
             Type targetType = expression as Type;
             if (targetType != null)
             {

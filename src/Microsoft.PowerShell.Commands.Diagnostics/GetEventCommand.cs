@@ -1672,7 +1672,7 @@ namespace Microsoft.PowerShell.Commands
         // ValidateAndResolveFilePath helper.
         // Returns a string collection of resolved file paths.
         // Writes non-terminating errors for invalid paths
-        // and returns an empty colleciton.
+        // and returns an empty collection.
         // 
         private StringCollection ValidateAndResolveFilePath(string path)
         {

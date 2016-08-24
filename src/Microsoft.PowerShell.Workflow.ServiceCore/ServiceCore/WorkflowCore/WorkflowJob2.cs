@@ -603,7 +603,7 @@ namespace Microsoft.PowerShell.Workflow
                             break;
 
                         case Constants.PSParameterCollection:
-                            // Remove this one from the parameter collecton...
+                            // Remove this one from the parameter collection...
                             break;
                         case Constants.PSRunningTime:
                         case Constants.PSElapsedTime:

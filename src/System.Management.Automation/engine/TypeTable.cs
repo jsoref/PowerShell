@@ -1564,7 +1564,7 @@ namespace System.Management.Automation.Runspaces
         }
 
         /// <summary>
-        /// This constructor takes a colletion of errors occurred during construction
+        /// This constructor takes a collection of errors occurred during construction
         /// time.
         /// </summary>
         /// <param name="loadErrors">

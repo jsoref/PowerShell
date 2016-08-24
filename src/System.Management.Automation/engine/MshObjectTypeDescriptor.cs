@@ -725,7 +725,7 @@ namespace System.Management.Automation
             // It would be nice to throw an exception for the case 2) instructing the user to use 
             // an ArrayList, but since we have case 1) and maybe others we haven't found we return
             // an PSObjectTypeDescriptor(null). PSObjectTypeDescriptor's GetProperties 
-            // checks for null instance and returns an empty property colection. 
+            // checks for null instance and returns an empty property collection. 
             // All other overrides also check for null and return some default result.
             // Case 1), which is using a PropertyGrid seems to be unafected by these results returned
             // by PSObjectTypeDescriptor overrides when the Instance is null, so we must conclude

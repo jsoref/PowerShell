@@ -72,7 +72,7 @@ namespace Microsoft.PackageManagement.Internal.Providers {
         /// Expected behavior:
         ///     If request.Sources is null or empty, the provider should return the list of registered sources.
         ///     Otherwise, the provider should return package sources that match the strings in the request.Sources  
-        ///     collction. If the string doesn't match a registered source (either by name or by location) and the 
+        ///     collection. If the string doesn't match a registered source (either by name or by location) and the 
         ///     string can be construed as a package source (ie, passing in a valid URL to a provider that uses URLs 
         ///     for their package sources), then the provider should return a package source for that URL, but marked
         ///     as 'unregistered' (and 'untrusted')

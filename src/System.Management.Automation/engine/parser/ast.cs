@@ -4679,7 +4679,7 @@ namespace System.Management.Automation.Language
 
         /// <summary>
         /// A possibly empty collection of conditions and statement blocks representing the cases of the switch statement.
-        /// If the colleciton is empty, the default clause is not null.
+        /// If the collection is empty, the default clause is not null.
         /// </summary>
         [SuppressMessage("Microsoft.Design", "CA1006:DoNotNestGenericTypesInMemberSignatures")]
         public ReadOnlyCollection<SwitchClause> Clauses { get; private set; }
