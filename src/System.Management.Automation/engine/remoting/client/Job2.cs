@@ -257,7 +257,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Method which can be exteded or called by derived 
+        /// Method which can be extended or called by derived 
         /// classes to raise the event when suspending a 
         /// job is completed
         /// </summary>
