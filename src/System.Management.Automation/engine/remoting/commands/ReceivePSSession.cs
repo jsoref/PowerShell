@@ -23,7 +23,7 @@ namespace Microsoft.PowerShell.Commands
     ///    until the running command completes and all output data is received on 
     ///    the client.
     /// b) To a job object.  This is the asynchronous mode of the cmdlet which will
-    ///    return immmediately providing the job object that is collecting the 
+    ///    return immediately providing the job object that is collecting the 
     ///    running command output data.
     ///    
     /// The running command becomes disconnected when the associated runspace is 
