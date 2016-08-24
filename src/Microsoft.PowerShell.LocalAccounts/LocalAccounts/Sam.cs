@@ -62,7 +62,7 @@ namespace System.Management.Automation.SecurityAccountsManager
         }
 
         /// <summary>
-        /// Defines a set of flags, each coresponding to a member of LocalUser,
+        /// Defines a set of flags, each corresponding to a member of LocalUser,
         /// which indicate fields to be updated.
         /// </summary>
         /// <remarks>

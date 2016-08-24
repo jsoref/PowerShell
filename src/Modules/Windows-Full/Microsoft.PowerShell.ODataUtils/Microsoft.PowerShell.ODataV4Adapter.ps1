@@ -1774,7 +1774,7 @@ function SaveCDXMLInstanceCmdlets
 }
 
 # Helper Method
-# Returns true if navigation property of $AssociatedType has coresponding EntitySet or Singleton
+# Returns true if navigation property of $AssociatedType has corresponding EntitySet or Singleton
 # If yes, then it should become an associated parameter in CDXML
 function ShouldBeAssociatedParameter
 {

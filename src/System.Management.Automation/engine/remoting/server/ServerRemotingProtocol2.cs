@@ -589,7 +589,7 @@ namespace System.Management.Automation
         /// <summary>
         /// called when session is connected from a new client
         /// calls into observers of this event. 
-        /// observers include corrensponding driver that shutsdown
+        /// observers include corresponding driver that shutsdown
         /// input stream is present
         /// </summary>
         internal void ProcessConnect()

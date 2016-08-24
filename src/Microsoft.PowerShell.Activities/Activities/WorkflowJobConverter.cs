@@ -102,7 +102,7 @@ namespace Microsoft.PowerShell.Workflow
         /// the AST before compilation. This stage should be light-weight and as efficient
         /// as possible.
         /// </summary>
-        /// <param name="ast">The PowerShell AST correpsponding to the job's definition.</param>
+        /// <param name="ast">The PowerShell AST corresponding to the job's definition.</param>
         /// <returns>A collection of PSParseErrors corresponding to any semantic issues in the AST.</returns>
         public List<ParseError> ValidateAst(FunctionDefinitionAst ast)
         {
@@ -113,7 +113,7 @@ namespace Microsoft.PowerShell.Workflow
         /// Converts a PowerShell AST into a script block that represents
         /// the workflow to run.
         /// </summary>
-        /// <param name="ast">The PowerShell AST correpsponding to the job's definition.</param>
+        /// <param name="ast">The PowerShell AST corresponding to the job's definition.</param>
         /// <param name="definingModule">The module that is defining this command (if any)</param>
         /// <returns>
         /// A PowerShell script block that invokes an underlying job,
@@ -138,7 +138,7 @@ namespace Microsoft.PowerShell.Workflow
         /// Converts a PowerShell AST into a script block that represents
         /// the workflow to run.
         /// </summary>
-        /// <param name="ast">The PowerShell AST correpsponding to the job's definition.</param>
+        /// <param name="ast">The PowerShell AST corresponding to the job's definition.</param>
         /// <param name="definingModule">The module that is defining this command (if any)</param>
         /// <param name="rootWorkflowName">Only root Workflow will be compiled</param>
         /// <returns>
@@ -163,7 +163,7 @@ namespace Microsoft.PowerShell.Workflow
         /// Converts a PowerShell AST into a script block that represents
         /// the workflow to run.
         /// </summary>
-        /// <param name="ast">The PowerShell AST correpsponding to the job's definition.</param>
+        /// <param name="ast">The PowerShell AST corresponding to the job's definition.</param>
         /// <param name="definingModule">The module that is defining this command (if any)</param>
         /// <param name="initialSessionState">The initial session state of a runspace.</param>
         /// <param name="parsingErrors">parsing errors</param>
@@ -188,7 +188,7 @@ namespace Microsoft.PowerShell.Workflow
         /// Converts a PowerShell AST into a script block that represents
         /// the workflow to run.
         /// </summary>
-        /// <param name="ast">The PowerShell AST correpsponding to the job's definition.</param>
+        /// <param name="ast">The PowerShell AST corresponding to the job's definition.</param>
         /// <param name="definingModule">The module that is defining this command (if any)</param>
         /// <param name="initialSessionState">The initial session state of a runspace.</param>
         /// <param name="parsingErrors">parsing errors</param>
@@ -206,7 +206,7 @@ namespace Microsoft.PowerShell.Workflow
         /// Converts a PowerShell AST into a script block that represents
         /// the workflow to run.
         /// </summary>
-        /// <param name="ast">The PowerShell AST correpsponding to the job's definition.</param>
+        /// <param name="ast">The PowerShell AST corresponding to the job's definition.</param>
         /// <param name="definingModule">The module that is defining this command (if any).</param>
         /// <param name="initialSessionState">The initial session state of a runspace.</param>
         /// <param name="sourceLanguageMode">Language mode of source that is creating the workflow.</param>
@@ -224,7 +224,7 @@ namespace Microsoft.PowerShell.Workflow
         /// Converts a PowerShell AST into a script block that represents
         /// the workflow to run.
         /// </summary>
-        /// <param name="ast">The PowerShell AST correpsponding to the job's definition.</param>
+        /// <param name="ast">The PowerShell AST corresponding to the job's definition.</param>
         /// <param name="definingModule">The module that is defining this command (if any)</param>
         /// <param name="initialSessionState">The initial session state of a runspace.</param>
         /// <param name="sourceLanguageMode">Language mode of source that is creating the workflow.</param>
