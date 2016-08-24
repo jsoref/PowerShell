@@ -37,7 +37,7 @@ namespace System.Management.Automation.PerformanceData
 
         #endregion
 
-        #region Desctructor
+        #region Destructor
 
         /// <summary>
         /// Destructor which will trigger the cleanup of internal data structures and
