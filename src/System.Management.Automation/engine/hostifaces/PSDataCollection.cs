@@ -534,7 +534,7 @@ namespace System.Management.Automation
                     {
                         _isOpen = false;
                         raiseEvents = true;
-                        // release any threads to notify an event. Enumertor
+                        // release any threads to notify an event. Enumerator
                         // blocks on this syncObject.
                         Monitor.PulseAll(SyncObject);
 
@@ -1363,7 +1363,7 @@ namespace System.Management.Automation
                         _readWaitHandle.Reset();
                     }
                 }
-                // release any threads to notify an event. Enumertor
+                // release any threads to notify an event. Enumerator
                 // blocks on this syncObject.
                 Monitor.PulseAll(SyncObject);
 
@@ -1568,7 +1568,7 @@ namespace System.Management.Automation
                     _readWaitHandle.Set();
                 }
 
-                // release any threads to notify refCount is 0. Enumertor
+                // release any threads to notify refCount is 0. Enumerator
                 // blocks on this syncObject and it needs to be notified
                 // when the count becomes 0. 
                 Monitor.PulseAll(SyncObject);
