@@ -240,7 +240,7 @@ namespace System.Management.Automation.Host
         /// 
         /// <!--Was: ExecuteSubShell.  "subshell" inplies a new child engine, which is not the case here.  This is called during the 
         /// interruption of a pipeline to allow nested pipeline(s) to be run as a way to the user to suspend execution while he
-        /// evalautes other commands.  It does not create a truly new engine instance with new session state.-->
+        /// evaluates other commands.  It does not create a truly new engine instance with new session state.-->
         /// 
         /// </remarks>
         /// <seealso cref="System.Management.Automation.Host.PSHost.ExitNestedPrompt"/>
