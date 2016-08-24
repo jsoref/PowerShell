@@ -786,7 +786,7 @@ namespace System.Management.Automation
             // using the copyStateInfo here as this piece of code is 
             // outside of lock and _pipelineStateInfo might get changed
             // by two threads running concurrently..so its value is 
-            // not gauranteed to be the same for this entire method call.
+            // not guaranteed to be the same for this entire method call.
             // copyStateInfo is a local variable.
             if (copyStateInfo.State == PipelineState.Completed ||
                 copyStateInfo.State == PipelineState.Failed ||

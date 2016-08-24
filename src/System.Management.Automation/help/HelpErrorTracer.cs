@@ -47,7 +47,7 @@ namespace System.Management.Automation
         /// similiar to call stacks of normal C# functions. This is why we call this class
         /// a "TraceFrame"
         /// 
-        /// TraceFrame itself implements IDisposable interface to guarrentee a chance to 
+        /// TraceFrame itself implements IDisposable interface to guarantee a chance to 
         /// write errors into system error pool when execution gets out of its scope. During
         /// disposal time, errorRecords accumulated will be written to system error pool 
         /// together with error context information collected at instance creation.
