@@ -273,7 +273,7 @@ namespace System.Management.Automation.Language
             //                  [Q2] # caching Q2 type
             //                  Add-Type 'public class Q2 { }' # get error about the same name
             //                  [Q2] # we don't get an error about ambiguous type, because it's cached already
-            //          2) NuGet (VS Package Management console) uses MEF extensability model. 
+            //          2) NuGet (VS Package Management console) uses MEF extensibility model. 
             //             Different assemblies includes same interface (i.e. NuGet.VisualStudio.IVsPackageInstallerServices), 
             //             where they include only methods that they are interested in the interface declaration (result interfaces are different!).
             //             Then, at runtime VS provides an instance. Everything work as far as instance has compatible API.
