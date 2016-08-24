@@ -39,7 +39,7 @@ Describe "Get-Random DRT Unit Tests" -Tags "CI" {
         @{ Name = 'max set to a special double number'; Maximum = 20.; Minimum = 0.0; GreaterThan = -1.0; LessThan = 20.0; Type = 'System.Double' }
         @{ Name = 'max is double with quote'; Maximum = '20.'; Minimum = 0.0; GreaterThan = -1.0; LessThan = 20.0; Type = 'System.Double' }
         @{ Name = 'max is double with plus sign'; Maximum = +100.0; Minimum = 0; GreaterThan = -1.0; LessThan = 100.0; Type = 'System.Double' }
-        @{ Name = 'max is doulbe with plus sign and enclosed in quote'; Maximum = '+100.0'; Minimum = 0; GreaterThan = -1.0; LessThan = 100.0; Type = 'System.Double' }
+        @{ Name = 'max is double with plus sign and enclosed in quote'; Maximum = '+100.0'; Minimum = 0; GreaterThan = -1.0; LessThan = 100.0; Type = 'System.Double' }
         @{ Name = 'both set to the special numbers as 1.0e+xx '; Maximum = $null; Minimum = 1.0e+100; GreaterThan = 1.0e+99; LessThan = ([double]::MaxValue); Type = 'System.Double' }
         @{ Name = 'max is Double.MaxValue, min is Double.MinValue'; Maximum = ([double]::MaxValue); Minimum = ([double]::MinValue); GreaterThan = ([double]::MinValue); LessThan = ([double]::MaxValue); Type = 'System.Double' }
 
