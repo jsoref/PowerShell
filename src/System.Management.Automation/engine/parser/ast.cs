@@ -7062,7 +7062,7 @@ namespace System.Management.Automation.Language
             //
             // The second type, where the DirectCall flag is set to true, simply calls the command directly.
             // In the original source, the keyword body will be a property collection where the allowed properties
-            // in the collection corresond to the parameters on the actual called function.
+            // in the collection correspond to the parameters on the actual called function.
             //
             var cea = new Collection<CommandElementAst>();
 
