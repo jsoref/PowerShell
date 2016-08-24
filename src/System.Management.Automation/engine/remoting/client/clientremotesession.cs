@@ -108,7 +108,7 @@ namespace System.Management.Automation.Remoting
         #region URI Redirection
 
         /// <summary>
-        /// Deleagate used to report connecion URI redirections to the application
+        /// Deleagate used to report connection URI redirections to the application
         /// </summary>
         /// <param name="newURI">
         /// New URI to which the connection is being redirected to.

@@ -400,7 +400,7 @@ namespace System.Management.Automation.Internal
         internal event EventHandler<RemoteDataEventArgs<PSObject>> SetMaxMinRunspacesResponseRecieved;
 
         /// <summary>
-        /// EventHandler used to report connecion URI redirections to the application
+        /// EventHandler used to report connection URI redirections to the application
         /// </summary>
         internal event EventHandler<RemoteDataEventArgs<Uri>> URIRedirectionReported;
 

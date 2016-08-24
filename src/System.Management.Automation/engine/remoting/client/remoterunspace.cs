@@ -1770,7 +1770,7 @@ namespace System.Management.Automation
         internal RunspacePool RunspacePool { get; }
 
         /// <summary>
-        /// EventHandler used to report connecion URI redirections to the application
+        /// EventHandler used to report connection URI redirections to the application
         /// </summary>
         internal event EventHandler<RemoteDataEventArgs<Uri>> URIRedirectionReported;
 
