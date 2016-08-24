@@ -278,7 +278,7 @@
     <value>Unregister Package Source.</value>
     <comment>action unregister package source</comment>
   </data>
-  <data name="NotImplemmented" xml:space="preserve">
+  <data name="NotImplemented" xml:space="preserve">
     <value>Not Implemented.</value>
     <comment>This should only show in DEBUG builds</comment>
   </data>

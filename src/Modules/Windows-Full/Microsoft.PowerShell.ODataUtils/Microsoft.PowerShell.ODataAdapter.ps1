@@ -493,7 +493,7 @@ function VerifyMetaData
 # to generate a PowerShell module that serves as a client
 # side proxy for interacting with the server side 
 # OData endpoint. The proxy module contains proxy cmdlets
-# implemneted in CDXML modules and they are exposed 
+# implemented in CDXML modules and they are exposed 
 # through module manifest as nested modules.
 # One CDXML module is created for each EntitySet 
 # described in the metadata. Each CDXML module contains
