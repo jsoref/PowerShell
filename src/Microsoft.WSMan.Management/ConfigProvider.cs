@@ -5810,7 +5810,7 @@ namespace Microsoft.WSMan.Management
 #region Listener Dynamic Parameters
 
     /// <summary>
-    /// Listener Dyanamic parameters
+    /// Listener Dynamic parameters
     /// Path - WsMan:\Localhost\Listener>
     /// </summary>
     public class WSManProvidersListenerParameters

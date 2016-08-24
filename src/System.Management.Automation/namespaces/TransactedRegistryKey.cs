@@ -1907,7 +1907,7 @@ namespace Microsoft.PowerShell.Commands.Internal
         {
             if (_checkMode == RegistryKeyPermissionCheck.Default)
             {
-                // only need to check for default mode (dynamice check)
+                // only need to check for default mode (dynamic check)
                 new RegistryPermission(RegistryPermissionAccess.Read, _keyName + "\\" + valueName).Demand();
             }
         }
@@ -1918,7 +1918,7 @@ namespace Microsoft.PowerShell.Commands.Internal
         {
             if (_checkMode == RegistryKeyPermissionCheck.Default)
             {
-                // only need to check for default mode (dynamice check)                
+                // only need to check for default mode (dynamic check)                
                 new RegistryPermission(RegistryPermissionAccess.Read, _keyName + "\\.").Demand();
             }
         }
