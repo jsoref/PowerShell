@@ -3903,7 +3903,7 @@ namespace System.Management.Automation
             Dbg.Assert(ct == ContainerType.Enumerable ||
                        ct == ContainerType.List ||
                        ct == ContainerType.Queue ||
-                       ct == ContainerType.Stack, "ct should be queue, stack, enumberable or list");
+                       ct == ContainerType.Stack, "ct should be queue, stack, enumerable or list");
 
             ArrayList list = new ArrayList();
             if (ReadStartElementAndHandleEmpty(_reader.LocalName))
