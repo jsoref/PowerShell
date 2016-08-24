@@ -3581,7 +3581,7 @@ namespace Microsoft.PowerShell.DesiredStateConfiguration.Internal
         }
 
         /// <summary>
-        /// The scriptblock that implementes the CIM keyword functionality.
+        /// The scriptblock that implements the CIM keyword functionality.
         /// </summary>
         private static ScriptBlock CimKeywordImplementationFunction
         {
