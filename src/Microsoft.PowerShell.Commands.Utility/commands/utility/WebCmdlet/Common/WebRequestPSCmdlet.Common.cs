@@ -465,7 +465,7 @@ namespace Microsoft.PowerShell.Commands
         /// needed if an HtmlDocument will be created shortly.</param>
         protected bool VerifyInternetExplorerAvailable(bool checkComObject)
         {
-            // TODO: Remove this code once the dependecy on mshtml has been resolved.
+            // TODO: Remove this code once the dependency on mshtml has been resolved.
 #if CORECLR
             return false;
 #else
