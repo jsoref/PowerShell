@@ -33,7 +33,7 @@ namespace Microsoft.WSMan.Management
         private PSObject objPluginNames = null;
 
         /// <summary>
-        /// Determinies if Set-Item user input type validateion is required or not.
+        /// Determines if Set-Item user input type validateion is required or not.
         /// It is True by default, Clear-Item will set it to false so that it can 
         /// pass Empty String as value for Set-Item.
         /// </summary>
