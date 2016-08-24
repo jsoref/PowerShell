@@ -1067,7 +1067,7 @@ namespace System.Management.Automation.Remoting.Client
                 uIdleTimeout,
                 _sessionName);
 
-            // additional content with create shell call. Piggy back first fragement from
+            // additional content with create shell call. Piggy back first fragment from
             // the dataToBeSent buffer.
             if (null == _openContent)
             {
@@ -3802,7 +3802,7 @@ namespace System.Management.Automation.Remoting.Client
             if (serializedPipeline.Length > 0)
             {
                 data = serializedPipeline.ReadOrRegisterCallback(null);
-                // if there are no command / parameter fragements need to be sent
+                // if there are no command / parameter fragments need to be sent
                 // start receiving data. Reason: Command will start its execution
                 // once command string + parameters are sent.
                 if (serializedPipeline.Length == 0)

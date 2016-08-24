@@ -17,7 +17,7 @@ namespace System.Management.Automation.Remoting
     /// <summary>
     /// This class is used to hold a fragment of remoting PSObject for transporting to remote computer.
     /// 
-    /// A large remoting PSObject will be broken into fragments. Each fragment has a ObjectId and a FragementId.
+    /// A large remoting PSObject will be broken into fragments. Each fragment has a ObjectId and a FragmentId.
     /// The first fragment has a StartFragment marker. The last fragment also an EndFragment marker. 
     /// These fragments can be reassembled on the receiving
     /// end by sequencing the fragment ids.
@@ -955,7 +955,7 @@ namespace System.Management.Automation.Remoting
     /// <summary>
     /// This class performs the fragmentation as well as defragmentation operations of large objects to be sent 
     /// to the other side. A large remoting PSObject will be broken into fragments. Each fragment has a ObjectId 
-    /// and a FragementId. The last fragment also has an end of fragment marker. These fragments can be reassembled 
+    /// and a FragmentId. The last fragment also has an end of fragment marker. These fragments can be reassembled 
     /// on the receiving end by sequencing the fragment ids.
     /// </summary>
     internal class Fragmentor
@@ -1005,7 +1005,7 @@ namespace System.Management.Automation.Remoting
         /// The object to be fragmented. Caller should make sure this is not null.
         /// </param>
         /// <param name="dataToBeSent">
-        /// Caller specified dataToStore to which the fragements are added 
+        /// Caller specified dataToStore to which the fragments are added 
         /// one-by-one
         /// </param>
         internal void Fragment<T>(RemoteDataObject<T> obj, SerializedDataStream dataToBeSent)

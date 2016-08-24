@@ -1044,7 +1044,7 @@ namespace System.Management.Automation.Remoting.Client
                 return;
             }
 
-            // Send one fragement
+            // Send one fragment
             SendOneItem();
         }
 

@@ -67,7 +67,7 @@ namespace System.Management.Automation.Remoting
         MissingIsStartFragment = 409,
         MissingProperty = 410,
         ObjectIdsNotMatching = 411,
-        FragmetIdsNotInSequence = 412,
+        FragmentIdsNotInSequence = 412,
         ObjectIsTooBig = 413,
         MissingIsEndFragment = 414,
         DeserializedObjectIsNull = 415,

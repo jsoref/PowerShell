@@ -1252,8 +1252,8 @@ namespace System.Management.Automation.Remoting.Server
         #region Helper Methods
 
         /// <summary>
-        /// Sends an object from the server end. The object is fragmented and each fragement is sent
-        /// separately. The call blocks until all the fragements are sent to the client. If there
+        /// Sends an object from the server end. The object is fragmented and each fragment is sent
+        /// separately. The call blocks until all the fragments are sent to the client. If there
         /// is a failure sending any of the fragments WSManTransportErrorOccured event is raised.
         /// </summary>
         /// <typeparam name="T"></typeparam>
@@ -1362,8 +1362,8 @@ namespace System.Management.Automation.Remoting.Server
         }
 
         /// <summary>
-        /// Sends an object to the server end. The object is fragmented and each fragement is sent
-        /// separately. The call blocks until all the fragements are sent to the client. If there
+        /// Sends an object to the server end. The object is fragmented and each fragment is sent
+        /// separately. The call blocks until all the fragments are sent to the client. If there
         /// is a failure sending any of the fragments WSManTransportErrorOccured event is raised.
         /// </summary>
         /// <param name="psObjectData"></param>

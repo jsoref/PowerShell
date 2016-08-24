@@ -227,7 +227,7 @@
   <data name="ObjectIdCannotBeLessThanZero" xml:space="preserve">
     <value>ObjectId cannot be less than or equal to 0. This can happen if the fragments are not properly constructed by the remote computer, or the data has been changed by unauthorized users.</value>
   </data>
-  <data name="FragmetIdsNotInSequence" xml:space="preserve">
+  <data name="FragmentIdsNotInSequence" xml:space="preserve">
     <value>The FragmentIDs of the same object must be in sequence, incrementally changing by 1. This can happen if the fragments are not properly constructed by the remote computer. The data might also have been corrupted or changed.</value>
   </data>
   <data name="ObjectIsTooBig" xml:space="preserve">

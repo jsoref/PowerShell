@@ -62,7 +62,7 @@ namespace System.Management.Automation.Remoting
         /// Callback that is called once a fragmented data is available to send.
         /// </summary>
         /// <param name="data">
-        /// Fragemented object that can be sent to the remote end.
+        /// Fragmented object that can be sent to the remote end.
         /// </param>
         /// <param name="priorityType">
         /// Priority stream to which <paramref name="data"/> belongs to.
@@ -124,7 +124,7 @@ namespace System.Management.Automation.Remoting
             Dbg.Assert(null != _dataToBeSent, "Serialized streams are not initialized");
 
             // make sure the only one object is fragmented and added to the collection
-            // at any give time. This way the order of fragmenets is maintained
+            // at any give time. This way the order of fragment is maintained
             // in the SendDataCollection(s).
             lock (_syncObjects[(int)priority])
             {
@@ -172,7 +172,7 @@ namespace System.Management.Automation.Remoting
         /// synchronized way.
         /// 
         /// While getting a fragment the following algorithm is used:
-        /// 1. If this is the first time or if the last fragement read is an EndFragment,
+        /// 1. If this is the first time or if the last fragment read is an EndFragment,
         ///    then a new set of fragments is chosen based on the implicit priority.
         ///    PromptResponse is higher in priority order than default.
         /// 2. If last fragment read is not an EndFragment, then next fragment is chosen from
@@ -189,7 +189,7 @@ namespace System.Management.Automation.Remoting
         /// is undefined.
         /// </param>
         /// <returns>
-        /// A FragementRemoteObject if available, otherwise null.
+        /// A FragmentRemoteObject if available, otherwise null.
         /// </returns>
         internal byte[] ReadOrRegisterCallback(OnDataAvailableCallback callback,
             out DataPriorityType priorityType)
@@ -284,7 +284,7 @@ namespace System.Management.Automation.Remoting
         private MemoryStream _pendingDataStream;
         // the idea is to maintain 1 whole object.
         // 1 whole object may contain any number of fragments. blob from
-        // each fragement is written to this stream.
+        // each fragment is written to this stream.
         private MemoryStream _dataToProcessStream;
         private long _currentObjectId;
         private long _currentFrgId;
@@ -401,7 +401,7 @@ namespace System.Management.Automation.Remoting
         /// Defragmented Object if any, otherwise null.
         /// </returns>
         /// <exception cref="PSRemotingTransportException">
-        /// 1. Fragmet Ids not in sequence
+        /// 1. Fragment Ids not in sequence
         /// 2. Object Ids does not match
         /// 3. The current deserialized object size of the received data exceeded 
         /// allowed maximum object size. The current deserialized object size is {0}.
@@ -477,7 +477,7 @@ namespace System.Management.Automation.Remoting
                     }
                     catch (System.OverflowException)
                     {
-                        s_baseTracer.WriteLine("Fragement too big.");
+                        s_baseTracer.WriteLine("Fragment too big.");
                         ResetRecieveData();
                         PSRemotingTransportException e = new PSRemotingTransportException(RemotingErrorIdStrings.ObjectIsTooBig);
                         throw e;
@@ -592,7 +592,7 @@ namespace System.Management.Automation.Remoting
                             ResetRecieveData();
                             if (!_canIgnoreOffSyncFragments)
                             {
-                                PSRemotingTransportException e = new PSRemotingTransportException(RemotingErrorIdStrings.FragmetIdsNotInSequence);
+                                PSRemotingTransportException e = new PSRemotingTransportException(RemotingErrorIdStrings.FragmentIdsNotInSequence);
                                 throw e;
                             }
                             else
@@ -820,7 +820,7 @@ namespace System.Management.Automation.Remoting
         /// Defragmented Object if any, otherwise null.
         /// </returns>
         /// <exception cref="PSRemotingTransportException">
-        /// 1. Fragmet Ids not in sequence
+        /// 1. Fragment Ids not in sequence
         /// 2. Object Ids does not match
         /// 3. The current deserialized object size of the received data exceeded 
         /// allowed maximum object size. The current deserialized object size is {0}.
