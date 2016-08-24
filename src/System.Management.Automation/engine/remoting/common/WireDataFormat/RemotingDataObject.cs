@@ -133,7 +133,7 @@ namespace System.Management.Automation.Remoting
         /// </summary>
         /// <param name="serializedDataStream"></param>
         /// <param name="defragmentor">
-        /// Defragmetor used to deserialize an object.
+        /// Defragmentor used to deserialize an object.
         /// </param>
         /// <returns></returns>
         internal static RemoteDataObject<T> CreateFrom(Stream serializedDataStream, Fragmentor defragmentor)
