@@ -61,8 +61,8 @@ namespace Microsoft.PowerShell
         {
             get
             {
-                // First traverse the parent heirarchy as established by CLR.
-                // This is required because there is difference in the parent heirarchy
+                // First traverse the parent hierarchy as established by CLR.
+                // This is required because there is difference in the parent hierarchy
                 // between CLR and Windows for Chinese. Ex: Native windows has
                 // zh-CN->zh-Hans->neutral whereas CLR has zh-CN->zh-CHS->zh-Hans->neutral
                 if ((null != base.Parent) && (!string.IsNullOrEmpty(base.Parent.Name)))
@@ -120,7 +120,7 @@ namespace Microsoft.PowerShell
                         {
                             string parentCulture = base.Parent.Name;
                             // remove the parentCulture from the m_fallbacks list.
-                            // ie., remove duplicates from the parent heirarchy.
+                            // ie., remove duplicates from the parent hierarchy.
                             string[] fallbacksForTheParent = null;
                             if (null != _fallbacks)
                             {
