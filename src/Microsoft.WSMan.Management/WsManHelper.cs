@@ -982,7 +982,7 @@ namespace Microsoft.WSMan.Management
         /// Verifies all the registry keys are set as expected. In case of failure .. try ecery second for 60 seconds before returning false.
         /// </summary>
         /// <param name="AllowFreshCredentialsValueShouldBePresent">True if trying to Enable CredSSP.</param>
-        /// <param name="DelegateComputer">Names of the degate computer.</param>
+        /// <param name="DelegateComputer">Names of the delegate computer.</param>
         /// <param name="applicationname">Name of the application.</param>
         /// <returns>True if valid.</returns>
         internal bool ValidateCreadSSPRegistryRetry(bool AllowFreshCredentialsValueShouldBePresent, string[] DelegateComputer, string applicationname)

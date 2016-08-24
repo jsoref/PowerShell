@@ -1857,7 +1857,7 @@ namespace System.Management.Automation.Language
             exprs.Add(Expression.Call(oldPipe, CachedReflectionInfo.Pipe_SetVariableListForTemporaryPipe, s_getCurrentPipe));
             if (generateRedirectExprs != null)
             {
-                // Add merge redirection expressions if delgate is provided.
+                // Add merge redirection expressions if delegate is provided.
                 generateRedirectExprs(exprs, finallyExprs);
             }
             exprs.Add(Compile(ast));

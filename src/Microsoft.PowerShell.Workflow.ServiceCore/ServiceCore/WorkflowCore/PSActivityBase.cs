@@ -2727,7 +2727,7 @@ namespace Microsoft.PowerShell.Activities
         /// <param name="implementationContext">The activity context to use</param>
         /// <param name="psActivityContext">The powershell activity context.</param>
         /// <param name="ActivityType">The activity type.</param>
-        /// <param name="PrepareSession">The prepare session delgate.</param>
+        /// <param name="PrepareSession">The prepare session delegate.</param>
         /// <param name="activityObject">This object representing activity.</param>
         private static void UpdatePowerShell(ActivityImplementationContext implementationContext, PSActivityContext psActivityContext, Type ActivityType, PrepareSessionDelegate PrepareSession, object activityObject)
         {
@@ -3121,13 +3121,13 @@ namespace Microsoft.PowerShell.Activities
                             }
                             else
                             {
-                                PSOutOfProcessActivityController delgateController = workflowHost.PSActivityHostController as PSOutOfProcessActivityController;
-                                if (delgateController != null)
+                                PSOutOfProcessActivityController delegateController = workflowHost.PSActivityHostController as PSOutOfProcessActivityController;
+                                if (delegateController != null)
                                 {
                                     AddHandlersToStreams(commandToRun, args);
 
                                     IAsyncResult asyncResult =
-                                        delgateController.BeginInvokePowerShell(commandToRun, input,
+                                        delegateController.BeginInvokePowerShell(commandToRun, input,
                                                                                                output,
                                                                                                implementationContext.PSActivityEnvironment,
                                                                                                ActivityHostManagerCallback,
