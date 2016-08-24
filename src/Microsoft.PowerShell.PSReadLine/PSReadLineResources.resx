@@ -622,7 +622,7 @@ If there are other parse errors, unresolved commands, or incorrect parameters, s
     <value>Delete to the beginning of the next word, as delimited by white space, and enter insert mode.</value>
   </data>
   <data name="ViReplaceEndOfWordDescription" xml:space="preserve">
-    <value>Delete to the end of the word, as delimited by white space and common delimters, and enter insert mode.</value>
+    <value>Delete to the end of the word, as delimited by white space and common delimiters, and enter insert mode.</value>
   </data>
   <data name="ViReplaceEndOfGlobDescription" xml:space="preserve">
     <value>Delete to the end of the word, as delimited by white space, and enter insert mode.</value>

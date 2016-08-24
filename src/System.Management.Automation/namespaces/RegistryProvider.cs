@@ -3519,7 +3519,7 @@ namespace Microsoft.PowerShell.Commands
 
             // If the main path existed, we must do a semantic analysis
             // to find the parent -- since path elements may contain
-            // path delemiters. We only need to do this comparison
+            // path delimiters. We only need to do this comparison
             // if the base implementation returns something in our namespace.
             if (!String.Equals(parentPath, root, StringComparison.OrdinalIgnoreCase))
             {

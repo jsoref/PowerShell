@@ -1585,7 +1585,7 @@ namespace Microsoft.PowerShell {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete to the end of the word, as delimited by white space and common delimters, and enter insert mode..
+        ///   Looks up a localized string similar to Delete to the end of the word, as delimited by white space and common delimiters, and enter insert mode..
         /// </summary>
         internal static string ViReplaceEndOfWordDescription {
             get {
