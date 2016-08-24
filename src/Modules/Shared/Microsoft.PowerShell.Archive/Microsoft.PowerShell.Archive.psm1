@@ -182,7 +182,7 @@ function Compress-Archive
             Remove-Item -Path $DestinationPath -Force -ErrorAction Stop
         }
 
-        # Validate Source Path depeding on parameter set being used.
+        # Validate Source Path depending on parameter set being used.
         # The specified source path contains one or more files or directories that needs
         # to be compressed.
         $isLiteralPathUsed = $false
