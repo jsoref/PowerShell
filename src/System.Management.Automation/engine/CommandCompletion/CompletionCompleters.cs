@@ -5857,8 +5857,8 @@ namespace System.Management.Automation
 
             #region Process_LoadedAssemblies
 
-            var assembliesExludingPSGenerated = ClrFacade.GetAssemblies();
-            var allPublicTypes = assembliesExludingPSGenerated.SelectMany(assembly => assembly.GetTypes().Where(TypeResolver.IsPublic));
+            var assembliesExcludingPSGenerated = ClrFacade.GetAssemblies();
+            var allPublicTypes = assembliesExcludingPSGenerated.SelectMany(assembly => assembly.GetTypes().Where(TypeResolver.IsPublic));
 
             foreach (var type in allPublicTypes)
             {
