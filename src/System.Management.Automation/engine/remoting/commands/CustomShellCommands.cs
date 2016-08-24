@@ -5191,7 +5191,7 @@ Disable-PSRemoting -force:$args[0] -queryForSet $args[1] -captionForSet $args[2]
         #region Cmdlet Override
 
         /// <summary>
-        /// Check for prerequisites and eleveation mode
+        /// Check for prerequisites and elevation mode
         /// </summary>
         protected override void BeginProcessing()
         {
