@@ -67,7 +67,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
             internal const string EnumerableExpansionNode = "EnumerableExpansion";
             internal const string ExpandNode = "Expand";
 
-            // entries indentifying the various control types definitions
+            // entries identifying the various control types definitions
             internal const string ControlNode = "Control";
             internal const string ComplexControlNameNode = "CustomControlName";
 
@@ -81,7 +81,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
 
             internal const string ViewNode = "View";
 
-            // entries indentifying the various control types
+            // entries identifying the various control types
             internal const string TableControlNode = "TableControl";
             internal const string ListControlNode = "ListControl";
             internal const string WideControlNode = "WideControl";
