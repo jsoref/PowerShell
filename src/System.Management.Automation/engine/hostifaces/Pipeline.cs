@@ -413,7 +413,7 @@ namespace System.Management.Automation.Runspaces
         }
 
         /// <summary>
-        /// gets the unique identifier for this pipeline. This indentifier is unique with in
+        /// gets the unique identifier for this pipeline. This identifier is unique with in
         /// the scope of Runspace.
         /// </summary>
         public long InstanceId { get; }
