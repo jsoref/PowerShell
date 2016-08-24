@@ -5060,7 +5060,7 @@ namespace Microsoft.PowerShell.Commands
         /// 
         /// Note, the base class implemenation uses GetParentPath, GetChildName, and MakePath
         /// to normalize the path and then make it relative to basePath. All string comparisons
-        /// are done using StringComparison.InvariantCultureIngoreCase.
+        /// are done using StringComparison.InvariantCultureIgnoreCase.
         /// </remarks>
         /// 
         private string NormalizeRelativePathHelper(string path, string basePath)

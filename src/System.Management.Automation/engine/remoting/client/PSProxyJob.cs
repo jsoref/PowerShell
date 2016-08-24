@@ -1792,7 +1792,7 @@ namespace System.Management.Automation
                                                                       ChildJobs.Count,
                                                                       out computedJobState))
                 return;
-            if (computedJobState == JobState.Suspending) return; // Ignor for proxy job
+            if (computedJobState == JobState.Suspending) return; // Ignore for proxy job
 
             _tracer.WriteMessage(ClassNameTrace, "HandleChildProxyJobStateChanged", Guid.Empty, this,
                                  "storing job state to {0}", computedJobState.ToString());

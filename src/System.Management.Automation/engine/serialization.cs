@@ -3053,7 +3053,7 @@ namespace System.Management.Automation
             //      <string name=class>A</string>
             //  </Properties>
             //</PSObject>
-            // In above example, V1 serializer will ingore <IPAddress> element and read
+            // In above example, V1 serializer will ignore <IPAddress> element and read
             // properties from <Properties>
             // V2 serializer can read <IPAddress> tag and ignore properties.
             // Read serializion note doc for information.
