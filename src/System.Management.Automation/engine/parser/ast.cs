@@ -9302,7 +9302,7 @@ namespace System.Management.Automation.Language
         }
 
         /// <summary>
-        /// Construct a variable reference with an exising VariablePath (rather than construct a new one.)
+        /// Construct a variable reference with an existing VariablePath (rather than construct a new one.)
         /// </summary>
         /// <exception cref="PSArgumentNullException">
         /// If <paramref name="extent"/> or <paramref name="variablePath"/> is null.

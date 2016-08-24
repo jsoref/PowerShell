@@ -498,7 +498,7 @@ namespace Microsoft.PowerShell.DesiredStateConfiguration.Internal
             StringComparer.OrdinalIgnoreCase);
 
         //a collection to hold current importing script based resource file
-        //this prevent circular importing case when the script resource exising in the same module with resources it import-dscresource
+        //this prevent circular importing case when the script resource existing in the same module with resources it import-dscresource
         private static readonly HashSet<string> s_currentImportingScriptFiles = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
         /// <summary>
