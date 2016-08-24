@@ -2366,7 +2366,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Blocks DebugerStop event thread until exit debug mode is 
+        /// Blocks DebuggerStop event thread until exit debug mode is 
         /// received from the client.
         /// </summary>
         private void OnEnterDebugMode(ManualResetEventSlim debugModeCompletedEvent)
