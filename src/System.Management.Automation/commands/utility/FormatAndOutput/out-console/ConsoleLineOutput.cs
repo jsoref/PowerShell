@@ -471,7 +471,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
             }
 
             /// <summary>
-            /// detemine how many rows the prompt should take.
+            /// determine how many rows the prompt should take.
             /// </summary>
             /// <param name="cols">current number of columns on the screen</param>
             /// <param name="displayCells">string manipupation helper</param>
