@@ -426,7 +426,7 @@ namespace Microsoft.PowerShell.Commands
         }
 
         /// <summary>
-        /// Determine whether a module info matches a given module specification table and specified PSEditon value.
+        /// Determine whether a module info matches a given module specification table and specified PSEdition value.
         /// </summary>
         /// <param name="moduleInfo"></param>
         /// <param name="moduleSpecTable"></param>
