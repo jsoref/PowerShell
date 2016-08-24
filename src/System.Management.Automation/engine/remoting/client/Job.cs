@@ -570,7 +570,7 @@ namespace System.Management.Automation
         /// <summary>
         /// Wait Handle which is signaled when job is finished.
         /// This is set when state of the job is set to Completed,
-        /// Stopped or Failied.
+        /// Stopped or Failed.
         /// </summary>
         public WaitHandle Finished
         {
