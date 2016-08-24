@@ -356,7 +356,7 @@ namespace System.Management.Automation.Provider
         /// </returns>
         /// 
         /// <remarks>
-        /// This test should not verify the existance of the item at the path. It should
+        /// This test should not verify the existence of the item at the path. It should
         /// only perform syntactic and semantic validation of the path.  For instance, for
         /// the file system provider, that path should be canonicalized, syntactically verified,
         /// and ensure that the path does not refer to a device.
@@ -742,7 +742,7 @@ namespace System.Management.Automation.Provider
         /// </returns>
         /// 
         /// <remarks>
-        /// This test should not verify the existance of the item at the path. It should
+        /// This test should not verify the existence of the item at the path. It should
         /// only perform syntactic and semantic validation of the path.  For instance, for
         /// the file system provider, that path should be canonicalized, syntactically verified,
         /// and ensure that the path does not refer to a device.

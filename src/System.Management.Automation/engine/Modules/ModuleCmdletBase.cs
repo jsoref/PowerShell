@@ -2378,7 +2378,7 @@ namespace Microsoft.PowerShell.Commands
                 !GetListOfFilesFromData(data, moduleManifestPath, "FileList", manifestProcessingFlags, moduleBase, ""
                     /*extension*/,
                     false
-                    /* don't check file existance - don't want to change current behavior without feature team discussion */,
+                    /* don't check file existence - don't want to change current behavior without feature team discussion */,
                     out fileList))
             {
                 containedErrors = true;

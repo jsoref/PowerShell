@@ -938,7 +938,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// If a VHD is mounted to a drive prior to the PowerShell session being launched, 
-        /// then such a drive has to be validated for its existance before performing 
+        /// then such a drive has to be validated for its existence before performing 
         /// any operations on that drive to make sure that the drive is not unmounted.
         /// </summary>
         /// <param name="drive"></param>

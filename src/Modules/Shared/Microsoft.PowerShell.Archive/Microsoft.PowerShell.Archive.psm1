@@ -105,7 +105,7 @@ function Compress-Archive
         IsValidFileSystemPath $destinationParentDir | Out-Null
         $DestinationPath = Join-Path -Path $destinationParentDir -ChildPath $archiveFileName
 
-        # GetExtension API does not validate for the actual existance of the path.
+        # GetExtension API does not validate for the actual existence of the path.
         $extension = [system.IO.Path]::GetExtension($DestinationPath)
 
         # If user does not specify .Zip extension, we append it.
@@ -924,7 +924,7 @@ function ExpandArchiveHelper
 
     try
     {
-        # The existance of archive file has already been validated by ValidateArchivePathHelper 
+        # The existence of archive file has already been validated by ValidateArchivePathHelper 
         # before calling this helper function.
         $archiveFileStreamArgs = @($archiveFile, [System.IO.FileMode]::Open, [System.IO.FileAccess]::Read)
         $archiveFileStream = New-Object -TypeName System.IO.FileStream -ArgumentList $archiveFileStreamArgs
