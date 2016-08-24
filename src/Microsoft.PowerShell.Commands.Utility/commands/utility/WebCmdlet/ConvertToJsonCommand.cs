@@ -470,7 +470,7 @@ namespace Microsoft.PowerShell.Commands
                     {
                         if (pso != null && pso.immediateBaseObjectIsEmpty)
                         {
-                            // The obj is a pure PSObject, we convet the original PSObject to a string, 
+                            // The obj is a pure PSObject, we convert the original PSObject to a string, 
                             // instead of its base object in this case
                             rv = LanguagePrimitives.ConvertTo(pso, typeof(string),
                                 CultureInfo.InvariantCulture);
