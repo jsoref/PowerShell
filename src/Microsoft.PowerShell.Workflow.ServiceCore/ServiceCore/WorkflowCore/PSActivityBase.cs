@@ -4101,13 +4101,13 @@ namespace Microsoft.PowerShell.Activities
             {
                 Dbg.Assert(activityEnvironment.Modules.Count > 0,
                            "When PSActivityEnvironment is specified and modules are imported, PSActivityEnvironment.Modules need to be populated");
-                // Setting erroaction to stop for import-module since they are required modules. If not present, stop the execution
+                // Setting erroraction to stop for import-module since they are required modules. If not present, stop the execution
                 ps.AddCommand("Import-Module").AddParameter("Name", activityEnvironment.Modules).AddParameter(
                     "ErrorAction", ActionPreference.Stop);
             }
             else
             {
-                // Setting erroaction to stop for import-module since they are required modules. If not present, stop the execution
+                // Setting erroraction to stop for import-module since they are required modules. If not present, stop the execution
                 ps.AddCommand("Import-Module").AddParameter("Name", args.ActivityParameters.PSRequiredModules).AddParameter(
                     "ErrorAction", ActionPreference.Stop);
             }

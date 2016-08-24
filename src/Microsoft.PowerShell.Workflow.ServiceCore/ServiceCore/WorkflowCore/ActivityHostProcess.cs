@@ -253,7 +253,7 @@ namespace Microsoft.PowerShell.Workflow
             using (System.Management.Automation.PowerShell ps = System.Management.Automation.PowerShell.Create())
             {
                 ps.Runspace = runspace;
-                // Setting erroaction to stop for import-module since they are required modules. If not present, stop the execution
+                // Setting erroraction to stop for import-module since they are required modules. If not present, stop the execution
                 ps.AddCommand("Import-Module").AddArgument(modules).AddParameter("ErrorAction",ActionPreference.Stop).AddParameter("Force");
                 ps.Invoke();
             }

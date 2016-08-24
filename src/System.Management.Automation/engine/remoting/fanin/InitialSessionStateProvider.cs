@@ -654,7 +654,7 @@ namespace System.Management.Automation.Remoting
                 }
             }
 
-            // Even if there is erro changing current working directory..try to load the assembly
+            // Even if there is error changing current working directory..try to load the assembly
             // This is to allow assembly loading from GAC
             Assembly result = null;
             try
