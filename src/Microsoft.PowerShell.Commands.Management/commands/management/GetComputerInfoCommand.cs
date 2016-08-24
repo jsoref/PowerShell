@@ -3865,17 +3865,17 @@ namespace Microsoft.PowerShell.Commands
     public enum OSEncryptionLevel
     {
         /// <summary>
-        /// 40-bit encription
+        /// 40-bit encryption
         /// </summary>
         Encrypt40Bits = 0,
 
         /// <summary>
-        /// 128-bit encription
+        /// 128-bit encryption
         /// </summary>
         Encrypt128Bits = 1,
 
         /// <summary>
-        /// n-bit encription
+        /// n-bit encryption
         /// </summary>
         EncryptNBits = 2
     }

@@ -642,7 +642,7 @@ namespace System.Management.Automation.Internal
 
         /// <summary>
         /// check to see if the specified cert is suitable to be
-        /// used as an encryption cert for PKI encyryption. Note
+        /// used as an encryption cert for PKI encryption. Note
         /// that this cert doesn't require the private key.
         /// </summary>
         ///

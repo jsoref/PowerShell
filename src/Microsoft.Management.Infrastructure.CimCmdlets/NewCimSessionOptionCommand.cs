@@ -58,7 +58,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         #region cmdlet parameters
 
         /// <summary>
-        /// The following is the definition of the input parameter "NoEncruption".
+        /// The following is the definition of the input parameter "NoEncryption".
         /// Switch indicating if WSMan can use no encryption in the given CimSession (there are also global client and server WSMan settings - AllowUnencrypted).
         /// </summary>
         [Parameter(ParameterSetName = WSManParameterSet)]
