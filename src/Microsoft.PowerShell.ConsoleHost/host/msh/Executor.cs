@@ -699,7 +699,7 @@ namespace Microsoft.PowerShell
         ///            restore p1 as current
         ///
         /// Summary: 
-        /// ExecuteCommand always saves/sets/restores CurrentExector
+        /// ExecuteCommand always saves/sets/restores CurrentExecutor
         /// Host.EnterNestedPrompt always saves/clears/restores CurrentExecutor
         /// 
         /// </remarks>
