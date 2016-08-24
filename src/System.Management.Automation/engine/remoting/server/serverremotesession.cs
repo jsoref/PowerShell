@@ -697,7 +697,7 @@ namespace System.Management.Automation.Remoting
             //we are done
             connectResponseData = outbuffer;
 
-            //enque a connect event in state machine to let session do any other post-connect operation
+            //enqueue a connect event in state machine to let session do any other post-connect operation
             // Do this outside of the sychronous connect operation, as otherwise connect can easily get deadlocked
             ThreadPool.QueueUserWorkItem(new WaitCallback(
                 delegate (object state)
