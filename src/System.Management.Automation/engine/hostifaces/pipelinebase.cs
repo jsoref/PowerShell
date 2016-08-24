@@ -526,7 +526,7 @@ namespace System.Management.Automation.Runspaces
                 RunspaceBase.DoConcurrentCheckAndAddToRunningPipelines(this, syncCall);
 
                 //Note: Set PipelineState to Running only after adding pipeline to list
-                //of pipelines in exectuion. AddForExecution checks that runspace is in
+                //of pipelines in execution. AddForExecution checks that runspace is in
                 //state where pipeline can be run.
                 //StartPipelineExecution raises this event. See Windows Bug 1160481 for
                 //more details.

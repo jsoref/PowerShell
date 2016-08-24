@@ -34,7 +34,7 @@ namespace System.Management.Automation
         /// </param>
         /// 
         /// <param name="context">
-        /// The exection context for the current engine instance.
+        /// The execution context for the current engine instance.
         /// </param>
         internal CommandPathSearch(
             IEnumerable<string> patterns,

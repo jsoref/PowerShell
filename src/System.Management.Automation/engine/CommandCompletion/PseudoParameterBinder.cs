@@ -1095,7 +1095,7 @@ namespace System.Management.Automation.Language
         }
 
         /// <summary>
-        /// Restores original ExceutionContext host state.
+        /// Restores original ExecutionContext host state.
         /// </summary>
         /// <param name="executionContext">ExecutionContext</param>
         private void RestoreHost(ExecutionContext executionContext)
