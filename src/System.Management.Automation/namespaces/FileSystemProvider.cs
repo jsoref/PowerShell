@@ -6894,7 +6894,7 @@ namespace Microsoft.PowerShell.Commands
                         FileStream fileStream = new FileStream(path, FileMode.Truncate, FileAccess.Write, FileShare.Write);
                         fileStream.Dispose();
 
-                        //For filesystem once content is cleare
+                        //For filesystem once content is cleared
                         WriteItemObject("", path, false);
                     }
                     catch (UnauthorizedAccessException failure)
