@@ -520,7 +520,7 @@ namespace System.Management.Automation.Remoting
             }
 
             //TODO: Follow up on comment from Krishna regarding having the serialization/deserialization separate for this 
-            // operation. This could be integrated as helper functions in fragmenter/serializer components
+            // operation. This could be integrated as helper functions in fragmentor/serializer components
             long fragmentId = FragmentedRemoteObject.GetFragmentId(connectData, 0);
             bool sFlag = FragmentedRemoteObject.GetIsStartFragment(connectData, 0);
             bool eFlag = FragmentedRemoteObject.GetIsEndFragment(connectData, 0);
