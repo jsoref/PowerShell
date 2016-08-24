@@ -102,7 +102,7 @@
 						<sequence>
 							<element name="synonym" type="maml:textType" maxOccurs="unbounded"/>
 						</sequence>
-						<!-- [gxie] ? what is usage of contentIdentficationsSharingAndConditionGroup-->
+						<!-- [gxie] ? what is usage of contentIdentificationSharingAndConditionGroup-->
 						<attributeGroup ref="maml:contentIdentificationSharingAndConditionGroup"/>
 					</complexType>
 				</element>
