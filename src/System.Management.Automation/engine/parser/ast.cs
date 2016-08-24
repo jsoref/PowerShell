@@ -10333,7 +10333,7 @@ namespace System.Management.Automation.Language
             yield return new PSTypeName(typeof(Hashtable));
         }
 
-        // Indicates that this ast was consructed as part of a schematized object instead of just a plain hash literal.
+        // Indicates that this ast was constructed as part of a schematized object instead of just a plain hash literal.
         internal bool IsSchemaElement { get; set; }
 
 
