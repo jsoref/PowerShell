@@ -46,13 +46,13 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
         /// <param name="formatValueList">list of FormatValue tokens to interpret</param>
         internal void WriteObject(List<FormatValue> formatValueList)
         {
-            // we always start with no identation
+            // we always start with no indentation
             _indentationManager.Clear();
 
             foreach (FormatEntry fe in formatValueList)
             {
                 // operate on each directive inside the list,
-                // carrying the identation from invocation to invocation
+                // carrying the indentation from invocation to invocation
                 GenerateFormatEntryDisplay(fe, 0);
             }
             // make sure that, if we have pending text in the buffer it gets flushed

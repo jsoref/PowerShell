@@ -1208,7 +1208,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Get indetation of a line, i.e., number of spaces
+        /// Get indentation of a line, i.e., number of spaces
         /// at the beginning of the line.
         /// </summary>
         /// <param name="line"></param>
