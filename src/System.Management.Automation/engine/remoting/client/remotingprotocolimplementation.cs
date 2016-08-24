@@ -309,7 +309,7 @@ namespace System.Management.Automation.Remoting
             }
 
             // Close the transport manager only after powershell's close their transports
-            // Powershell's close their transport using the ConnectionStateChaged event notification.
+            // Powershell's close their transport using the ConnectionStateChanged event notification.
             if (arg.SessionStateInfo.State == RemoteSessionState.ClosingConnection)
             {
                 CloseConnectionAsync();
