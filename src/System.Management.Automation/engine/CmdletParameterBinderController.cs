@@ -2037,7 +2037,7 @@ namespace System.Management.Automation
                         //
                         // We ignore those parameter sets that contain unbound mandatory parameters, but leave
                         // all other parameter sets remain valid. The other parameter sets contains the default
-                        // parameter set and have one characeristic: NONE of them contain unbound mandatory parameters
+                        // parameter set and have one characteristic: NONE of them contain unbound mandatory parameters
                         //
                         // Comparing to the old algorithm, we keep more possible parameter sets here, but
                         // we need to prioritize the default parameter set for pipeline binding, so as NOT to
