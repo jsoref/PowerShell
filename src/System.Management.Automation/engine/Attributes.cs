@@ -989,7 +989,7 @@ namespace System.Management.Automation
         /// <param name="maxRange">Maximum value of the range allowed. </param>
         /// <exception cref="ArgumentNullException">for invalid arguments</exception>
         /// <exception cref="ValidationMetadataException">
-        /// if maxRange has a differnet type than minRange
+        /// if maxRange has a different type than minRange
         /// if maxRange is smaller than minRange
         /// if maxRange, minRange are not IComparable
         /// </exception>
