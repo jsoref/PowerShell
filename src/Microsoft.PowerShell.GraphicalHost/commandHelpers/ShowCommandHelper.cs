@@ -414,7 +414,7 @@ Function PSGetSerializedShowCommandInfo
 
         #region public Dispose
         /// <summary>
-        /// Dispose method in IDisposeable
+        /// Dispose method in IDisposable
         /// </summary>
         public void Dispose()
         {
