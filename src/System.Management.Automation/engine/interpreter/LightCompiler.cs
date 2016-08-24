@@ -282,7 +282,7 @@ namespace System.Management.Automation.Interpreter
 
         private readonly Stack<ParameterExpression> _exceptionForRethrowStack = new Stack<ParameterExpression>();
 
-        // Set to true to force compiliation of this lambda.
+        // Set to true to force compilation of this lambda.
         // This disables the interpreter for this lambda. We still need to
         // walk it, however, to resolve variables closed over from the parent
         // lambdas (because they may be interpreted).
