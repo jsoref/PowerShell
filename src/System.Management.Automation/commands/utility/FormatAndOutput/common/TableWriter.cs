@@ -264,7 +264,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
                 }
             }
 
-            // now we processed all the rows colums and we need to find the cell that occupies the most
+            // now we processed all the rows columns and we need to find the cell that occupies the most
             // rows
             int screenRows = 0;
             for (int k = 0; k < scArray.Length; k++)
@@ -273,7 +273,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
                     screenRows = scArray[k].Count;
             }
 
-            // add padding for the colums that are shorter
+            // add padding for the columns that are shorter
             for (int col = 0; col < scArray.Length; col++)
             {
                 int paddingBlanks = _si.columnInfo[validColumnArray[col]].width;

@@ -920,7 +920,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
                     columnWidthsHint = tableHint.columnWidths;
                 }
 
-                int columsOnTheScreen = this.InnerCommand._lo.ColumnNumber;
+                int columnsOnTheScreen = this.InnerCommand._lo.ColumnNumber;
 
                 int columns = this.CurrentTableHeaderInfo.tableColumnInfoList.Count;
                 if (columns == 0)
@@ -939,7 +939,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
                     alignment[k] = tci.alignment;
                     k++;
                 }
-                this.Writer.Initialize(0, columsOnTheScreen, columnWidths, alignment, this.CurrentTableHeaderInfo.hideHeader);
+                this.Writer.Initialize(0, columnsOnTheScreen, columnWidths, alignment, this.CurrentTableHeaderInfo.hideHeader);
             }
 
             /// <summary>
