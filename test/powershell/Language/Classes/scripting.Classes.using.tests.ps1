@@ -106,7 +106,7 @@ class Bar : Foo {}
         $fooModuleName[3] | Should Be 'This'
     }
 
-    It "doesn't mess up two consequitive scripts" {
+    It "doesn't mess up two consecutive scripts" {
         $sb1 = [scriptblock]::Create(@"
 using module Foo
 class Bar : Foo {}
