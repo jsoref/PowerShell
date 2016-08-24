@@ -132,7 +132,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
                     break;
                 default:
                     {
-                        // do not eumerate at all (CoreOnly)
+                        // do not enumerate at all (CoreOnly)
                         ProcessObject(so);
                     }
                     break;

@@ -42,9 +42,9 @@ namespace Microsoft.WSMan.Management
         WSManHelper helper = new WSManHelper();
 
         /// <summary>
-        /// Object contains the cache of the enumarate results for the cmdlet to execute.
+        /// Object contains the cache of the enumerate results for the cmdlet to execute.
         /// </summary>
-        Dictionary<string, XmlDocument> enumarateMapping = new Dictionary<string, XmlDocument>();
+        Dictionary<string, XmlDocument> enumerateMapping = new Dictionary<string, XmlDocument>();
 
         /// <summary>
         /// Mapping of ResourceURI with the XML returned by the Get call.
@@ -2677,7 +2677,7 @@ namespace Microsoft.WSMan.Management
         {
             XmlDocument xmlEnumResources = null;
 
-            if (!this.enumarateMapping.TryGetValue(ResourceURI, out xmlEnumResources))
+            if (!this.enumerateMapping.TryGetValue(ResourceURI, out xmlEnumResources))
             {
                 try
                 {
@@ -2696,7 +2696,7 @@ namespace Microsoft.WSMan.Management
                         xmlEnumResources = new XmlDocument();
                         strXmlValue = "<WsManResults>" + strXmlValue + "</WsManResults>";
                         xmlEnumResources.LoadXml(strXmlValue);
-                        this.enumarateMapping.Add(ResourceURI, xmlEnumResources);
+                        this.enumerateMapping.Add(ResourceURI, xmlEnumResources);
                     }
 
                 }
