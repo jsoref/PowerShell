@@ -749,7 +749,7 @@ namespace Microsoft.PowerShell.Commands
             string associatedPath = null;
             if (!string.IsNullOrEmpty(driveName) && driveName.Length == 1)
             {
-                // By default buffer size is set to 300 which would generatlly be sufficient in most of the cases.
+                // By default buffer size is set to 300 which would generally be sufficient in most of the cases.
                 int bufferSize = 300;
                 var pathInfo = new StringBuilder(bufferSize);
                 driveName += ':';
