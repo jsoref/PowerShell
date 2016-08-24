@@ -6580,7 +6580,7 @@ $result
         }
 
         /// <summary>
-        /// Chacks whether string[] contains System Drive.
+        /// Checks whether string[] contains System Drive.
         /// </summary>
         /// <param name="drives"></param>
         /// <param name="sysdrive"></param>
