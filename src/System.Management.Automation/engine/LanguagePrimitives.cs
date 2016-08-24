@@ -934,7 +934,7 @@ namespace System.Management.Automation
                 case 1:
                     // A possible implementation would be just 
                     // return IsTrue(objectArray[0]);
-                    // but since we don't want this to recurse indefinately
+                    // but since we don't want this to recurse indefinitely
                     // we explicitly check the case where it would recurse
                     // and deal with it.
                     IList firstElement = objectArray[0] as IList;
