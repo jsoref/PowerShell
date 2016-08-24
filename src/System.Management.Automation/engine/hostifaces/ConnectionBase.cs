@@ -866,7 +866,7 @@ namespace System.Management.Automation.Runspaces
                     throw e;
                 }
 
-                //Add the pipeline to list of Excuting pipeline.
+                //Add the pipeline to list of Executing pipeline.
                 //Note:_runningPipelines is always accessed with the lock so
                 //there is no need to create a synchronized version of list
                 RunningPipelines.Add(pipeline);
@@ -892,7 +892,7 @@ namespace System.Management.Automation.Runspaces
                 Dbg.Assert(RunspaceState != RunspaceState.BeforeOpen,
                              "Runspace should not be before open when pipeline is running");
 
-                //Remove the pipeline to list of Excuting pipeline.
+                //Remove the pipeline to list of Executing pipeline.
                 //Note:_runningPipelines is always accessed with the lock so
                 //there is no need to create a synchronized version of list
                 RunningPipelines.Remove(pipeline);

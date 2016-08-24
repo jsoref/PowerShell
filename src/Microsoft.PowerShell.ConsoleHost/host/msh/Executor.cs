@@ -116,7 +116,7 @@ namespace Microsoft.PowerShell
 
 
         /// <summary>
-        /// This method handles the failure in excecuting pipeline asynchronously
+        /// This method handles the failure in executing pipeline asynchronously
         /// </summary>
         /// <param name="ex"></param>
         private void AsyncPipelineFailureHandler(Exception ex)
