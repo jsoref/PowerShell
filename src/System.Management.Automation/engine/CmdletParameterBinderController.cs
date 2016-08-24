@@ -554,7 +554,7 @@ namespace System.Management.Automation
                     continue;
                 }
 
-                // check if this param's set confilcts with other possible params.
+                // check if this param's set conflicts with other possible params.
                 if (param.Parameter.ParameterSetFlags != 0)
                 {
                     possibleParameterFlag &= param.Parameter.ParameterSetFlags;
