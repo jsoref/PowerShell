@@ -2505,7 +2505,7 @@ namespace System.Management.Automation
         CopyTargetContainer,
 
         /// <summary>
-        /// The children of the source contianer are copied.
+        /// The children of the source container are copied.
         /// </summary>
         CopyChildrenOfTargetContainer
     }

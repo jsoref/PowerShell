@@ -60,7 +60,7 @@ namespace System.Management.Automation
 
             Diagnostics.Assert(IO.Path.IsPathRooted(path), "Caller makes sure that 'path' is already resolved.");
 
-            // Path might contian short-name syntax such as 'DOCUME~1'. Use Path.GetFullPath to expand the short name
+            // Path might contain short-name syntax such as 'DOCUME~1'. Use Path.GetFullPath to expand the short name
             _path = IO.Path.GetFullPath(path);
             CommonInitialization();
         }
@@ -90,7 +90,7 @@ namespace System.Management.Automation
 
             Diagnostics.Assert(IO.Path.IsPathRooted(path), "Caller makes sure that 'path' is already resolved.");
 
-            // Path might contian short-name syntax such as 'DOCUME~1'. Use Path.GetFullPath to expand the short name
+            // Path might contain short-name syntax such as 'DOCUME~1'. Use Path.GetFullPath to expand the short name
             _path = IO.Path.GetFullPath(path);
             CommonInitialization();
         }

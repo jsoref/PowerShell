@@ -50,7 +50,7 @@ namespace System.Management.Automation
         private string _moduleName;
 
         /// <summary>
-        /// Module name for the module contianing
+        /// Module name for the module containing
         /// the source adapter implementation.
         /// </summary>
         public string ModuleName
