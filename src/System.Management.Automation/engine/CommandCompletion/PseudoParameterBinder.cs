@@ -809,7 +809,7 @@ namespace System.Management.Automation.Language
         /// </summary>
         /// <param name="commandInfo"></param>
         /// <param name="validParameterSetsFlags"></param>
-        /// <param name="defaultParameterSetFalg"></param>
+        /// <param name="defaultParameterSetFlag"></param>
         /// <param name="boundParameters"></param>
         /// <param name="unboundParameters"></param>
         /// <param name="boundArguments"></param>
@@ -823,7 +823,7 @@ namespace System.Management.Automation.Language
         internal PseudoBindingInfo(
             CommandInfo commandInfo,
             uint validParameterSetsFlags,
-            uint defaultParameterSetFalg,
+            uint defaultParameterSetFlag,
             Dictionary<string, MergedCompiledCommandParameter> boundParameters,
             List<MergedCompiledCommandParameter> unboundParameters,
             Dictionary<string, AstParameterArgumentPair> boundArguments,
@@ -838,7 +838,7 @@ namespace System.Management.Automation.Language
             CommandInfo = commandInfo;
             InfoType = PseudoBindingInfoType.PseudoBindingSucceed;
             ValidParameterSetsFlags = validParameterSetsFlags;
-            DefaultParameterSetFlag = defaultParameterSetFalg;
+            DefaultParameterSetFlag = defaultParameterSetFlag;
             BoundParameters = boundParameters;
             UnboundParameters = unboundParameters;
             BoundArguments = boundArguments;
