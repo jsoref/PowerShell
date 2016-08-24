@@ -248,12 +248,12 @@ namespace Microsoft.Management.UI.Internal
         /// Splits the string adding indentation before each line
         /// </summary>
         /// <param name="str">string to add indentation to</param>
-        /// <param name="numberOfIdents">number of indentations</param>
+        /// <param name="numberOfIndents">number of indentations</param>
         /// <returns>the string indented</returns>
-        private static string AddIndent(string str, int numberOfIdents)
+        private static string AddIndent(string str, int numberOfIndents)
         {
             StringBuilder indent = new StringBuilder();
-            indent.Append(' ', numberOfIdents * HelpParagraphBuilder.IndentSize);
+            indent.Append(' ', numberOfIndents * HelpParagraphBuilder.IndentSize);
             return HelpParagraphBuilder.AddIndent(str, indent.ToString());
         }
 
