@@ -1764,7 +1764,7 @@ else
         private const string MemberOfFormat = "Member_of {{SID({0})}}";
 
         /// <summary>
-        /// Parse RequiredGroups configruation and build conditional ACE string.
+        /// Parse RequiredGroups configuration and build conditional ACE string.
         /// </summary>
         /// <param name="configTable"></param>
         /// <returns></returns>

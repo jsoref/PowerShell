@@ -340,7 +340,7 @@ namespace System.Management.Automation.Remoting
     }
 
     /// <summary>
-    /// InitialSessionStateProvider is used by 3rd parties to provide shell configurtion
+    /// InitialSessionStateProvider is used by 3rd parties to provide shell configuration
     /// on the remote server.
     /// </summary>
     public abstract class PSSessionConfiguration : IDisposable

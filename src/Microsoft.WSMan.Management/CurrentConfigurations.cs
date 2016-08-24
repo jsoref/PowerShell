@@ -89,7 +89,7 @@ namespace Microsoft.WSMan.Management
 
         /// <summary>
         /// Refresh the CurrentConfiguration. This method calls GET operation for the given 
-        /// URI on the server and update the current configuraition. It also intialize some
+        /// URI on the server and update the current configuration. It also intialize some
         /// of required class members.
         /// </summary>
         /// <param name="responseOfGet">Plugin configuration.</param>
@@ -116,7 +116,7 @@ namespace Microsoft.WSMan.Management
         /// </summary>
         /// <param name="resourceUri">Resource URI to use.</param>
         /// <returns>Fales, if operation is not succesful.</returns>
-        public void PutConfiguraitonOnServer(string resourceUri)
+        public void PutConfigurationOnServer(string resourceUri)
         {
             if (String.IsNullOrEmpty(resourceUri))
             {

@@ -168,7 +168,7 @@ namespace System.Management.Automation.Remoting
 #region Creation Factory
 
         /// <summary>
-        /// Creates a server remote session for the supplied <paramref name="configuratioinProviderId"/>
+        /// Creates a server remote session for the supplied <paramref name="configurationProviderId"/>
         /// and <paramref name="transportManager"/>.
         /// </summary>
         /// <param name="senderInfo"></param>
