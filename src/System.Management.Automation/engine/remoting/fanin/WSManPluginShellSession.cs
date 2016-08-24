@@ -39,7 +39,7 @@ namespace System.Management.Automation.Remoting
         // request context passed by WSMan while sending Plugin data.
         internal WSManNativeApi.WSManPluginRequest sendRequestDetails;
         internal WSManPluginOperationShutdownContext shutDownContext;
-        // tracker used in conjunction with WSMan API to identigy a particular
+        // tracker used in conjunction with WSMan API to identify a particular
         // shell context.
         internal RegisteredWaitHandle registeredShutDownWaitHandle;
         internal WSManPluginServerTransportManager transportMgr;
