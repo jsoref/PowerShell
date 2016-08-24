@@ -490,7 +490,7 @@ namespace System.Management.Automation.Internal
 
                 lock (_syncObject)
                 {
-                    //We are doing this check because Establised event 
+                    //We are doing this check because Established event 
                     //is raised more than once
                     if (_createRunspaceCalled)
                     {
