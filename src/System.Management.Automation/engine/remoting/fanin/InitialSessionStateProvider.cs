@@ -426,7 +426,7 @@ namespace System.Management.Automation.Remoting
         #region IDisposable Overrides
 
         /// <summary>
-        /// Disose this configuration object. This will be called when a Runspace/RunspacePool
+        /// Dispose this configuration object. This will be called when a Runspace/RunspacePool
         /// created using InitialSessionState from this object is Closed.
         /// </summary>
         public void Dispose()

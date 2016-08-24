@@ -671,7 +671,7 @@ namespace Microsoft.PowerShell.Commands
             {
                 CloseAllInputStreams();
             }
-        } // Dipose
+        } // Dispose
 
         #endregion IDisposable Overrides
     }

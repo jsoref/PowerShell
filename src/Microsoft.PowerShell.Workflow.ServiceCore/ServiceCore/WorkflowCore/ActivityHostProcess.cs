@@ -522,7 +522,7 @@ namespace Microsoft.PowerShell.Workflow
         #region IDisposable
 
         /// <summary>
-        /// Dipose 
+        /// Dispose 
         /// </summary>
         public void Dispose()
         {

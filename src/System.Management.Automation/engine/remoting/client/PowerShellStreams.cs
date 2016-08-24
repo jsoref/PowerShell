@@ -98,7 +98,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Disope implementation.
+        /// Dispose implementation.
         /// </summary>
         public void Dispose()
         {

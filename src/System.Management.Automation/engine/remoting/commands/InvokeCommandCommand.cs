@@ -1948,7 +1948,7 @@ namespace Microsoft.PowerShell.Commands
                     }
                 }
             }
-        } // Dipose
+        } // Dispose
 
         #endregion IDisposable Overrides
     }

@@ -636,7 +636,7 @@ namespace System.Management.Automation
         /// <summary>
         /// Disposes the pipeline
         /// </summary>
-        /// <param name="disposing">true, when called on Dipose()</param>       
+        /// <param name="disposing">true, when called on Dispose()</param>       
         protected override void Dispose(bool disposing)
         {
             try

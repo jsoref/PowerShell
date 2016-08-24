@@ -320,7 +320,7 @@ namespace Microsoft.PowerShell.Activities
         }
 
         /// <summary>
-        /// Dipose of managed resources
+        /// Dispose of managed resources
         /// </summary>
         /// <param name="disposing">true if disposing</param>
         private void Dispose(bool disposing)

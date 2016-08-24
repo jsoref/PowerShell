@@ -1961,7 +1961,7 @@ namespace Microsoft.PowerShell.Workflow
         }
 
         /// <summary>
-        /// Dipose the connection manager
+        /// Dispose the connection manager
         /// </summary>
         /// <param name="isDisposing"></param>
         protected void Dispose(bool isDisposing)

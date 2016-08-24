@@ -860,7 +860,7 @@ namespace System.Management.Automation.Internal
         #region IDisposable
 
         /// <summary>
-        /// Dipose resources
+        /// Dispose resources
         /// </summary>
         public void Dispose()
         {

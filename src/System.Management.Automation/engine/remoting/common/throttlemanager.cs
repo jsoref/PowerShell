@@ -600,7 +600,7 @@ namespace System.Management.Automation.Remoting
         /// <summary>
         /// Dispose method of IDisposable. Any cmdlet that uses
         /// the throttle manager needs to call this method from its
-        /// Dipose method
+        /// Dispose method
         /// </summary>
         public void Dispose()
         {
