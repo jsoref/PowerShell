@@ -1311,7 +1311,7 @@ namespace Microsoft.PowerShell.Commands
         {
             //Collection of strings to return
             Collection<string> result = new Collection<string>();
-            //currect string
+            //current string
             StringBuilder current = new StringBuilder();
 
             bool seenBeginQuote = false;
