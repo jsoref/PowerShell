@@ -14,7 +14,7 @@ Describe "Help work with ExecutionPolicy Restricted " -Tags "Feature" {
     # From an internal bug - [Regression] Get-Help returns multiple matches when there is an exact match
 
     # Skip the test if Storage module is not available, return a pesudo result
-    # ExecutionPoliy only works on windows
+    # ExecutionPolicy only works on windows
     It "Test for Get-Help Get-Disk" -skip:(!(Test-Path (Join-Path -Path $PSHOME -ChildPath Modules\Storage\Storage.psd1)) -or -not $IsWindows) {
 
             try
