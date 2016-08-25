@@ -1487,7 +1487,7 @@ namespace Microsoft.PowerShell.Commands
             // Workflows specified in NestedModules from the manifest
             List<string> workflowsToProcess = new List<string>();
 
-            // Workflows specified in ReduiredAssemblies
+            // Workflows specified in RequiredAssemblies
             List<string> dependentWorkflows = new List<string>();
 
             string moduleToProcess = null;

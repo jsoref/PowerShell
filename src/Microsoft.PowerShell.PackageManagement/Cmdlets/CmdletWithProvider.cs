@@ -281,7 +281,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets {
             }
 
             // these warnings only show for providers that would have otherwise be selected.
-            // if not for the missing requrired parameter.
+            // if not for the missing required parameter.
             foreach (var mp in excluded.OrderBy(each => each.Key)) {
                 string optionsValue = mp.Value.JoinWithComma();
 

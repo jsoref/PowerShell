@@ -196,7 +196,7 @@ namespace Microsoft.WSMan.Management
         }
 
         /// <summary>
-        /// Adds the requird drive
+        /// Adds the required drive
         /// </summary>
         /// <returns></returns>
         protected override Collection<PSDriveInfo> InitializeDefaultDrives()
@@ -208,7 +208,7 @@ namespace Microsoft.WSMan.Management
         }
 
         /// <summary>
-        /// Removes the requird drive
+        /// Removes the required drive
         /// </summary>
         /// <returns></returns>
         protected override PSDriveInfo RemoveDrive(PSDriveInfo drive)
