@@ -1658,7 +1658,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Generic convertto that simplifies workfing with workflow.
+        /// Generic convertto that simplifies working with workflow.
         /// </summary>
         /// <typeparam name="T">The type of object to return</typeparam>
         /// <param name="valueToConvert"></param>
