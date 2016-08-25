@@ -170,7 +170,7 @@ namespace System.Management.Automation.Remoting
         #region Serialize / Deserialize
 
         /// <summary>
-        /// Seriliazes the object into the stream specified. The serialization mechanism uses
+        /// Serializes the object into the stream specified. The serialization mechanism uses
         /// UTF8 encoding to encode data.
         /// </summary>
         /// <param name="streamToWriteTo"></param>

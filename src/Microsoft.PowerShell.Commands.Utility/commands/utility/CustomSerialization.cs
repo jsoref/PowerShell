@@ -93,7 +93,7 @@ namespace System.Management.Automation
         private bool _firstCall = true;
 
         /// <summary>
-        /// Serialzies passed in object
+        /// Serializes passed in object
         /// </summary>
         /// <param name="source">
         /// object to be serialized
@@ -118,7 +118,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Serialzies passed in object
+        /// Serializes passed in object
         /// </summary>
         /// <param name="source">
         /// object to be serialized
