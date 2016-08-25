@@ -216,7 +216,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
         private LineOutput _lo;
 
         /// <summary>
-        /// nomber of columns for the output device
+        /// number of columns for the output device
         /// </summary>
         private int _textColumns;
 
