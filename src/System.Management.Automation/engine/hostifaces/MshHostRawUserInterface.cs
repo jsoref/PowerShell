@@ -880,7 +880,7 @@ namespace System.Management.Automation.Host
 
         /// <summary>
         /// 
-        /// Gets and sets the bottom of the rectanngle
+        /// Gets and sets the bottom of the rectangle
         /// 
         /// </summary>
 
@@ -909,7 +909,7 @@ namespace System.Management.Automation.Host
         /// </param>
         /// <param name="bottom">
         /// 
-        /// The bottom of the rectanngle
+        /// The bottom of the rectangle
         /// 
         /// </param>
         /// <exception cref="ArgumentException">
