@@ -463,7 +463,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
                             accumulator.AddLine(lines[k].Substring(offset, charactersToAdd));
                         }
 
-                        // increase the offest by the # of characters added
+                        // increase the offset by the # of characters added
                         offset += charactersToAdd;
                     }
                     else
