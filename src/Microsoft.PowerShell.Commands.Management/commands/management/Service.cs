@@ -1809,7 +1809,7 @@ namespace Microsoft.PowerShell.Commands
                         }
                         if (PassThru.IsPresent)
                         {
-                            //to display the service,refreshing the service would not show the display name after updation
+                            //to display the service,refreshing the service would not show the display name after updating
                             ServiceController displayservice = new ServiceController(Name, ServiceComputerName);
                             WriteObject(displayservice);
                         }
