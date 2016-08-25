@@ -5821,7 +5821,7 @@ namespace System.Management.Automation.Language
             }
             Expression transformedExpression = originalExpression.Convert(typeof(object));
             var engineIntrinsicsTempVar = Expression.Variable(typeof(EngineIntrinsics));
-            // apply tranformation attributes from right to left
+            // apply transformation attributes from right to left
             for (int i = attributesArray.Length - 1; i >= 0; i--)
             {
                 transformedExpression = Expression.Call(Expression.Constant(attributesArray[i]),

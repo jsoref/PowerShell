@@ -206,9 +206,9 @@
 	
 	<!-- If the context node is an entry or entrytbl, searches for the value of an
 	     inherited attribute by following the normal inheritance path.  If a
-	     value is found, calls tranformInheritedAttribute with attributeName
+	     value is found, calls transformInheritedAttribute with attributeName
 	     passes as is and attributeValue set to the found value; otherwise, calls
-	     tranformInheritedAttribute with attributeValue set to the empty string.
+	     transformInheritedAttribute with attributeValue set to the empty string.
 	     
 	     Parameter attributeName is the name of the attribute found.
      -->
