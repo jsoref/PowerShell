@@ -5013,7 +5013,7 @@ namespace Microsoft.PowerShell.Commands
             {
                 try
                 {
-                    filePaths = context.SessionState.Path.GetResolvedProviderPathFromPSPath(filePath, true /* allowNonExistantPaths */, out provider);
+                    filePaths = context.SessionState.Path.GetResolvedProviderPathFromPSPath(filePath, true /* allowNonExistentPaths */, out provider);
                 }
                 catch (Exception e)
                 {
@@ -5052,7 +5052,7 @@ namespace Microsoft.PowerShell.Commands
             {
                 try
                 {
-                    filePaths = context.SessionState.Path.GetResolvedProviderPathFromPSPath(filePath, true /* allowNonExistantPaths */, out provider);
+                    filePaths = context.SessionState.Path.GetResolvedProviderPathFromPSPath(filePath, true /* allowNonExistentPaths */, out provider);
                 }
                 catch (Exception e)
                 {
