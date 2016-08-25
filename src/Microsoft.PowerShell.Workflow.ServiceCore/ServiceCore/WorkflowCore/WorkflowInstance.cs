@@ -778,7 +778,7 @@ namespace Microsoft.PowerShell.Workflow
             _structuredTracer.Correlate();
             Tracer.WriteMessage("Workflow Application is idle.");
 
-            // there might be a possiblity that stop job is being called by wfApp is Idle handling it properly so all Async execution .
+            // there might be a possibility that stop job is being called by wfApp is Idle handling it properly so all Async execution .
             if (_job.JobStateInfo.State == JobState.Stopping)
             {
                 this.StopBookMarkedWorkflow();
@@ -2390,7 +2390,7 @@ namespace Microsoft.PowerShell.Workflow
             {
                 // This is not a full fix:
                 // there could be a race condition where we have taken the copy but context is removed from by activity and disposed in that case contextinstance.cancel will throw
-                // there could be one more possiblity that is if copy has been made and after that activity adds a new context and will not get canceled and streams will get closed so async execution might throw
+                // there could be one more possibility that is if copy has been made and after that activity adds a new context and will not get canceled and streams will get closed so async execution might throw
                 // the solution is make every these operation on async execution collection thread safe
 
                 foreach (PSActivityContext psActivityContextInstance in this.asyncExecutionCollection.Values.ToList())
@@ -2471,7 +2471,7 @@ namespace Microsoft.PowerShell.Workflow
                     SetInternalUnloaded(true);
 
                     // Check for the race condition.
-                    // There could be possibilibly workflow application is unloaded because of terminal state is reached.
+                    // There could be possibility workflow application is unloaded because of terminal state is reached.
                     if (this.workflowApplication != null)
                     {
                         try

@@ -173,7 +173,7 @@ namespace Microsoft.PowerShell.Workflow
                         psPersistValue = context.PSWorkflowCommonParameters[Constants.Persist] as bool?;
                     }
 
-                    // check for invocation time pspersist value if not true then there is a possiblility that workflow is not suspendable.
+                    // check for invocation time pspersist value if not true then there is a possibility that workflow is not suspendable.
                     if (psPersistValue == null || (psPersistValue == false))
                     {
                         // check for authoring time definition of persist activity 
