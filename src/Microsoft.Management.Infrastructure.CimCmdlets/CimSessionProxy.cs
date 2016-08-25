@@ -572,7 +572,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         }        
 
         /// <summary>
-        /// Enable/Disable the methos result streming,
+        /// Enable/Disable the method result streming,
         /// it is enabled by default.
         /// </summary>
         public bool EnableMethodResultStreaming

@@ -223,7 +223,7 @@ namespace Microsoft.WSMan.Management
         #region ItemCmdletProvider
 
         /// <summary>
-        /// Get a Child Name. This methos is called from MakePath method.
+        /// Get a Child Name. This method is called from MakePath method.
         /// This Method helps in getting the correct case of particular element in the provider path.
         /// XML is case senstive but Powershell is not. 
         /// </summary>

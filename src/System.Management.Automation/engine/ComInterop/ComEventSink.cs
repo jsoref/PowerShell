@@ -22,7 +22,7 @@ namespace System.Management.Automation.ComInterop
     /// Each ComEventSink contains a list of ComEventSinkMethod objects - which represent
     /// a single method on the source interface an a multicast delegate to redirect 
     /// the calls. Notice that we are chaining multicast delegates so that same 
-    /// ComEventSinkMedhod can invoke multiple event handlers).
+    /// ComEventSinkMethod can invoke multiple event handlers).
     /// 
     /// ComEventSink implements an IDisposable pattern to Unadvise from the connection point.
     /// Typically, when RCW is finalized the corresponding Dispose will be triggered by 
