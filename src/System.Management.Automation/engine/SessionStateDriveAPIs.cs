@@ -956,7 +956,7 @@ namespace System.Management.Automation
             // A VHD mounted drive gets detected  with a DriveType of DriveType.Fixed
             // when the VHD is mounted, however if the drive is unmounted, such a
             // stale drive is no longer valid and gets detected with DriveType.NoRootDirectory.
-            // We would hit this situaltion in the following scenario:
+            // We would hit this situation in the following scenario:
             //  1. Launch Powershell session 'A' and mount the VHD.
             //  2. Launch different powershell session 'B'.
             //  3. Unmount the VHD in session 'A'. 
