@@ -145,7 +145,7 @@ namespace System.Management.Automation
         NegotiationReceived = 7,
 
         /// <summary>
-        /// Used by server to wait for negotation from client.
+        /// Used by server to wait for negotiation from client.
         /// </summary>
         NegotiationPending = 8,
 

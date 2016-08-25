@@ -457,7 +457,7 @@ namespace System.Management.Automation.Remoting
                     throw PSTraceSource.NewArgumentNullException("fsmEventArg");
                 }
 
-                Dbg.Assert(_state == RemoteSessionState.NegotiationSent, "State must be NeogtiationReceived");
+                Dbg.Assert(_state == RemoteSessionState.NegotiationSent, "State must be NegotiationReceived");
                 Dbg.Assert(fsmEventArg.StateEvent == RemoteSessionEvent.NegotiationCompleted, "StateEvent must be NegotiationCompleted");
 
                 if (fsmEventArg.StateEvent != RemoteSessionEvent.NegotiationCompleted)

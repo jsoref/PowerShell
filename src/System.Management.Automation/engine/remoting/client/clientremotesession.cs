@@ -239,7 +239,7 @@ namespace System.Management.Automation.Remoting
         /// </summary>
         public override void CreateAsync()
         {
-            //Raise a CreateSession event in StateMachine. This start the process of connection and negotition to a new remote session
+            //Raise a CreateSession event in StateMachine. This start the process of connection and negotiation to a new remote session
             RemoteSessionStateMachineEventArgs startArg = new RemoteSessionStateMachineEventArgs(RemoteSessionEvent.CreateSession);
             SessionDataStructureHandler.StateMachine.RaiseEvent(startArg);
         }
@@ -249,7 +249,7 @@ namespace System.Management.Automation.Remoting
         /// </summary>
         public override void ConnectAsync()
         {
-            //Raise the connectsession event in statemachine. This start the process of connection and negotition to an existing remote session
+            //Raise the connectsession event in statemachine. This start the process of connection and negotiation to an existing remote session
             RemoteSessionStateMachineEventArgs startArg = new RemoteSessionStateMachineEventArgs(RemoteSessionEvent.ConnectSession);
             SessionDataStructureHandler.StateMachine.RaiseEvent(startArg);
         }
@@ -567,7 +567,7 @@ namespace System.Management.Automation.Remoting
             return true;
         }
 
-        #endregion negotioation
+        #endregion negotiation
 
         internal override RemotingDestination MySelf { get; }
 

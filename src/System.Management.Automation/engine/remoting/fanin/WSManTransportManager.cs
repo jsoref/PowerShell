@@ -931,7 +931,7 @@ namespace System.Management.Automation.Remoting.Client
                     _openContent = new WSManNativeApi.WSManData_ManToUn(base64EncodedDataInXml);
                 }
 
-                //THERE SHOULD BE NO ADDITIONAL DATA. If there is, it means we are not able to push all initial negotaion related data
+                //THERE SHOULD BE NO ADDITIONAL DATA. If there is, it means we are not able to push all initial negotiation related data
                 // as part of Connect SOAP. The connect algorithm is based on this assumption. So bail out.
                 additionalData = dataToBeSent.ReadOrRegisterCallback(null, out additionalDataType);
                 if (additionalData != null)
