@@ -545,7 +545,7 @@ namespace System.Management.Automation.Runspaces
         }
 
         /// <summary>
-        /// AuthenticationMaechanism converted to WSManAuthenticationMechanism type.
+        /// AuthenticationMechanism converted to WSManAuthenticationMechanism type.
         /// This is internal.
         /// </summary>
         internal WSManAuthenticationMechanism WSManAuthenticationMechanism { get; private set; } = WSManAuthenticationMechanism.WSMAN_FLAG_DEFAULT_AUTHENTICATION;
