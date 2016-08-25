@@ -4476,7 +4476,7 @@ namespace Microsoft.PowerShell.Commands
                     error = new ErrorRecord(mm, "Modules_InvalidManifest", ErrorCategory.ResourceUnavailable, mo.Path);
                     return true;
                 }
-                else // Go for the recusrive check for the RequiredModules of current module
+                else // Go for the recursive check for the RequiredModules of current module
                 {
                     // Add required Modules of m to the list
                     Collection<PSModuleInfo> availableModules = GetModuleIfAvailable(moduleSpecification);
