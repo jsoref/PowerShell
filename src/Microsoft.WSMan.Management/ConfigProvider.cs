@@ -225,7 +225,7 @@ namespace Microsoft.WSMan.Management
         /// <summary>
         /// Get a Child Name. This method is called from MakePath method.
         /// This Method helps in getting the correct case of particular element in the provider path.
-        /// XML is case senstive but Powershell is not. 
+        /// XML is case sensitive but Powershell is not. 
         /// </summary>
         /// <param name="path"></param>
         /// <returns></returns>

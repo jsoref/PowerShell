@@ -973,7 +973,7 @@ namespace System.Management.Automation.Remoting.Client
                 WSManNativeApi.WSManConnectShellEx(_wsManSessionHandle,
                     flags,
                     ConnectionInfo.ShellUri,
-                    RunspacePoolInstanceId.ToString().ToUpperInvariant(),  //wsman is case sensetive wrt shellId. so consistently using upper case
+                    RunspacePoolInstanceId.ToString().ToUpperInvariant(),  //wsman is case sensitive wrt shellId. so consistently using upper case
                     IntPtr.Zero,
                     _openContent,
                     _connectSessionCallback,
