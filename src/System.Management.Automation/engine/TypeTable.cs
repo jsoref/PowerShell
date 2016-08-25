@@ -4225,7 +4225,7 @@ namespace System.Management.Automation.Runspaces
 
             ConcurrentBag<string> errors = new ConcurrentBag<string>();
 
-            // Always clear the consolidate memebrs - they need to be recalculated
+            // Always clear the consolidate members - they need to be recalculated
             // anytime the types are updated...
             ClearConsolidatedMembers();
 
@@ -4252,7 +4252,7 @@ namespace System.Management.Automation.Runspaces
             TypeData typeData = new TypeData(typeName);
             ConcurrentBag<string> errors = new ConcurrentBag<string>();
 
-            // Always clear the consolidate memebrs - they need to be recalculated
+            // Always clear the consolidate members - they need to be recalculated
             // anytime the types are updated...
             ClearConsolidatedMembers();
 

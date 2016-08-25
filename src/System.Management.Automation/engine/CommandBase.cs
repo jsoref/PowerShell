@@ -237,7 +237,7 @@ namespace System.Management.Automation.Internal
 
         /// <summary>
         /// IDisposable implementation
-        /// When the command is complete, release the associated memmbers
+        /// When the command is complete, release the associated members
         /// </summary>
         /// <remarks>
         /// Using InternalDispose instead of Dispose pattern because this
