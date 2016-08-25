@@ -4756,7 +4756,7 @@ namespace System.Management.Automation
         /// When the name is not enclosed by quotes, the index returned should be the index of the separator;
         /// 
         /// For parameterName:
-        /// When the name is enclosed by quotes, the index returned should be the index of the seocnd quote plus 1 (the length of the key if the key is in a valid format);
+        /// When the name is enclosed by quotes, the index returned should be the index of the second quote plus 1 (the length of the key if the key is in a valid format);
         /// When the name is not enclosed by quotes, the index returned should be the length of the key.
         /// 
         /// </returns>
