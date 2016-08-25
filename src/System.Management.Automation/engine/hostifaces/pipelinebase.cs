@@ -604,7 +604,7 @@ namespace System.Management.Automation.Runspaces
         /// <param name="syncCall">True if method is called from Invoke, false
         /// if called from InvokeAsync</param>
         /// <param name="syncObject">The sync object on which the lock is acquired</param>
-        /// <param name="isInLock">True if the method is invoked in a critical secion</param>
+        /// <param name="isInLock">True if the method is invoked in a critical section</param>
         /// <exception cref="InvalidOperationException">
         /// 1) A pipeline is already executing. Pipeline cannot execute 
         /// concurrently.
