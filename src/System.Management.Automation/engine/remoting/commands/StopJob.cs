@@ -14,7 +14,7 @@ using System.Threading;
 namespace Microsoft.PowerShell.Commands
 {
     /// <summary>
-    /// This cmdlet stops the asynchronously invoked remote operaitons.
+    /// This cmdlet stops the asynchronously invoked remote operations.
     /// </summary>
     [Cmdlet(VerbsLifecycle.Stop, "Job", SupportsShouldProcess = true, DefaultParameterSetName = JobCmdletBase.SessionIdParameterSet,
         HelpUri = "http://go.microsoft.com/fwlink/?LinkID=113413")]
