@@ -261,7 +261,7 @@ namespace System.Management.Automation
                 if (sb != null)
                 {
                     helpFile = null;
-                    // serachOnlyContent == true means get-help is looking into the content, in this case we dont
+                    // searchOnlyContent == true means get-help is looking into the content, in this case we dont
                     // want to download the content from the remote machine. Reason: In Exchange scenario there
                     // are ~700 proxy commands, downloading help for all the commands and searching in that
                     // content takes a lot of time (in the order of 30 minutes) for their scenarios.
@@ -982,7 +982,7 @@ namespace System.Management.Automation
         /// <param name="helpRequest">help request object</param>
         /// <param name="searchOnlyContent">
         /// If true, searches for pattern in the help content of all cmdlets.
-        /// Otherwise, seraches for pattern in the cmdlet names.
+        /// Otherwise, searches for pattern in the cmdlet names.
         /// </param>
         /// <returns></returns>
         internal override IEnumerable<HelpInfo> SearchHelp(HelpRequest helpRequest, bool searchOnlyContent)

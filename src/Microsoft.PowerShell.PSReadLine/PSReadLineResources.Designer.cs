@@ -1639,7 +1639,7 @@ namespace Microsoft.PowerShell {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Starts a new seach backward in the history..
+        ///   Looks up a localized string similar to Starts a new search backward in the history..
         /// </summary>
         internal static string ViSearchHistoryBackwardDescription {
             get {

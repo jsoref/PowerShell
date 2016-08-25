@@ -547,7 +547,7 @@ If there are other parse errors, unresolved commands, or incorrect parameters, s
     <value>Delete the current character and insert the next character.</value>
   </data>
   <data name="ViSearchHistoryBackwardDescription" xml:space="preserve">
-    <value>Starts a new seach backward in the history.</value>
+    <value>Starts a new search backward in the history.</value>
   </data>
   <data name="ViTransposeCharsDescription" xml:space="preserve">
     <value>Transposes the current character with the next character in the line.</value>

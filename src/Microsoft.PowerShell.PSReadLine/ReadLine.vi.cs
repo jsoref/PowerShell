@@ -887,7 +887,7 @@ namespace Microsoft.PowerShell
         /// <summary>
         /// Prompts for a string for history searching.
         /// </summary>
-        /// <param name="backward">True for seaching backward in the history.</param>
+        /// <param name="backward">True for searching backward in the history.</param>
         private void StartSearch(bool backward)
         {
             _statusLinePrompt = "find: ";
