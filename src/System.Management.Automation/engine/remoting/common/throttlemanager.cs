@@ -67,7 +67,7 @@ namespace System.Management.Automation.Remoting
         /// This method should handle the actual operation whcih need to be
         /// controlled and performed. Examples of this can be Opening remote
         /// runspace, invoking expression in a remote runspace, etc. Once 
-        /// an event is successfully recieved as a result of this function,
+        /// an event is successfully received as a result of this function,
         /// the handler has to ensure that it raises an OperationComplete
         /// event with StartComplete or StopComplete for the throttle manager
         /// to handle
@@ -80,7 +80,7 @@ namespace System.Management.Automation.Remoting
         /// remote runspaces, the user might hit ctrl-C. In which case, the 
         /// pending runspaces to be opened will actually be signalled through
         /// this method to stop operation and return back. This method also
-        /// needs to be asynchronous. Once an event is successfully recieved
+        /// needs to be asynchronous. Once an event is successfully received
         /// as a result of this function, the handler has to ensure that it
         /// raises an OperationComplete event with StopComplete for the 
         /// throttle manager to handle. It is important that this function

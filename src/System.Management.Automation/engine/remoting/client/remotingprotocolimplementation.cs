@@ -535,7 +535,7 @@ namespace System.Management.Automation.Remoting
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="dataArg">
-        /// arg which contains the data recevied from input queue
+        /// arg which contains the data received from input queue
         /// </param>
         internal void DispatchInputQueueData(object sender, RemoteDataEventArgs dataArg)
         {

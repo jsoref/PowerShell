@@ -180,10 +180,10 @@ namespace System.Management.Automation.Internal
 
                 case RemotingDataType.RunspacePoolOperationResponse:
                     {
-                        Dbg.Assert(SetMaxMinRunspacesResponseRecieved != null,
+                        Dbg.Assert(SetMaxMinRunspacesResponseReceived != null,
                             "RemoteRunspacePoolInternal should subscribe to all data structure handler events");
 
-                        SetMaxMinRunspacesResponseRecieved.SafeInvoke(this, new RemoteDataEventArgs<PSObject>(receivedData.Data));
+                        SetMaxMinRunspacesResponseReceived.SafeInvoke(this, new RemoteDataEventArgs<PSObject>(receivedData.Data));
                     }
                     break;
 
@@ -397,7 +397,7 @@ namespace System.Management.Automation.Internal
         /// Event raised when a response to a SetMaxRunspaces or SetMinRunspaces call
         /// is received
         /// </summary>
-        internal event EventHandler<RemoteDataEventArgs<PSObject>> SetMaxMinRunspacesResponseRecieved;
+        internal event EventHandler<RemoteDataEventArgs<PSObject>> SetMaxMinRunspacesResponseReceived;
 
         /// <summary>
         /// EventHandler used to report connection URI redirections to the application
@@ -1174,7 +1174,7 @@ namespace System.Management.Automation.Internal
             {
                 // its possible that in client input data is written in a thread
                 // other than the current thread. Since we want to write input
-                // to the server in the order in which it was recieved, this
+                // to the server in the order in which it was received, this
                 // operation of writing to the server need to be synced
                 // Also we need to ensure that all the data currently available
                 // for enumeration are written out before any newly added data

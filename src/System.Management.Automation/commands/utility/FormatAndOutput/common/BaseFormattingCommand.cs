@@ -421,7 +421,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
         /// <summary>
         /// compute the group transition, given an input object
         /// </summary>
-        /// <param name="so">object receoved from the input pipeline</param>
+        /// <param name="so">object received from the input pipeline</param>
         /// <returns>GroupTransition enumeration</returns>
         private GroupTransition ComputeGroupTransition(PSObject so)
         {

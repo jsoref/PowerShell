@@ -506,7 +506,7 @@ namespace System.Management.Automation.Remoting
         {
             lock (_syncObject)
             {
-                s_trace.WriteLine("Event recieved : {0} for {1}", arg.StateEvent, _id);
+                s_trace.WriteLine("Event received : {0} for {1}", arg.StateEvent, _id);
                 if (clearQueuedEvents)
                 {
                     _processPendingEventsQueue.Clear();

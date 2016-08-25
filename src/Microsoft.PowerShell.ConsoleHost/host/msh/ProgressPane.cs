@@ -14,7 +14,7 @@ namespace Microsoft.PowerShell
 {
     /// <summary>
     /// 
-    /// ProgressPane is a class that represents the "window" in which outstanding activities for which the host has recevied 
+    /// ProgressPane is a class that represents the "window" in which outstanding activities for which the host has received 
     /// progress updates are shown. 
     /// 
     ///</summary>

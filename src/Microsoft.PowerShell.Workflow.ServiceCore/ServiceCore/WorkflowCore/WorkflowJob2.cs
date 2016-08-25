@@ -148,7 +148,7 @@ namespace Microsoft.PowerShell.Workflow
         private Dictionary<string, object> _jobMetadata = new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
         private Dictionary<string, object> _privateMetadata = new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
 
-        // Holds the collection of input objects recieved from the pipeline
+        // Holds the collection of input objects received from the pipeline
         private PSDataCollection<PSObject> _inputCollection;
 
         private ManualResetEvent _jobRunning;

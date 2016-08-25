@@ -1998,7 +1998,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Generates RunspacePoolInitInfo object from a recevied PSObject
+        /// Generates RunspacePoolInitInfo object from a received PSObject
         /// </summary>
         /// <param name="dataAsPSObject">data object to decode</param>
         /// <returns>RunspacePoolInitInfo generated</returns>

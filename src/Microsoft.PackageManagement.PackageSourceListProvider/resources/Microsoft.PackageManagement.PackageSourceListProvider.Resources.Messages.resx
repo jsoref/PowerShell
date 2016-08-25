@@ -210,7 +210,7 @@
     <value>Package '{0}' failed to install.</value>
   </data>
   <data name="PackagesReceived" xml:space="preserve">
-    <value>'{0}' packages recevied in the last request.</value>
+    <value>'{0}' packages received in the last request.</value>
   </data>
   <data name="ProviderNotFound" xml:space="preserve">
     <value>A required provider '{0}' does not exist. Try 'Find-PackageProvider' and 'Install-PackageProvider' to install the particular provider.</value>
@@ -350,7 +350,7 @@
   <data name="MinimumVersonCheck" xml:space="preserve">
     <value>Provider '{0}' is not used to perform this operation because it requires a minimum version of the PackageManagement module to be '{1}', but the current version of the PackageManagement module is '{2}'.</value>
   </data>
-  <data name="NumberOfPackagesRecevied" xml:space="preserve">
+  <data name="NumberOfPackagesReceived" xml:space="preserve">
     <value>'{0}' packages returned by the provider '{1}' for the '{2}' operation.</value>
   </data>
   <data name="RetryingDownload" xml:space="preserve">
