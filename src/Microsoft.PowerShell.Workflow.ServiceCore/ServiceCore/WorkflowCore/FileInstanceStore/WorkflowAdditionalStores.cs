@@ -2012,7 +2012,7 @@ namespace Microsoft.PowerShell.Workflow
                     }
                 }
             }
-                // It is safe of absorb an exception here because there might be a possiblity that the mulitiple 
+                // It is safe of absorb an exception here because there might be a possiblity that the multiple 
                 // processes are try work on the same endpoint or default end point store folder.
                 // There is a possibility that one process has deleted the a workflow store and the other one is trying to access it for calculating its store size.
                 // And we will set the flag to make sure we calculate the size next time.

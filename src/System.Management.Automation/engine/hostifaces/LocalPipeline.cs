@@ -1081,7 +1081,7 @@ namespace System.Management.Automation.Runspaces
         internal
         void AddHistoryEntryFromAddHistoryCmdlet()
         {
-            //This method can be called by mulitple times during a single
+            //This method can be called by multiple times during a single
             //pipeline execution. For ex: a script can execute add-history
             //command multiple times. However we should add entry only 
             //once.

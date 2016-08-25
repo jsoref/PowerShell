@@ -656,7 +656,7 @@ Describe "install-PackageProvider with Versions" -Tags "Feature" {
 }    
 
 
-Describe "Get-package with mulitiple providers" -Tags "Feature" {
+Describe "Get-package with multiple providers" -Tags "Feature" {
 
     It "Get-package with multiple providers" -Pending {
 
