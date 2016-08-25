@@ -585,7 +585,7 @@ namespace Microsoft.PowerShell.Commands
                 }
                 List<HistoryInfo> cmdlist = new List<HistoryInfo>();
                 long SmallestID = 1;
-                //if buffersize is changes,Get the smallest entry thts not cleared in the buffer
+                //if buffersize is changes,Get the smallest entry that's not cleared in the buffer
                 if (_capacity != DefaultHistorySize)
                     SmallestID = SmallestIDinBuffer();
                 if (count != 0)
