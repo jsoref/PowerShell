@@ -2422,7 +2422,7 @@ namespace System.Management.Automation
                 {
                     PropertyInfo property = properties[i];
                     // Properties can have different return types. If they do
-                    // we pretent it is System.Object
+                    // we pretend it is System.Object
                     if (property.PropertyType != this.propertyType)
                     {
                         this.propertyType = typeof(object);
