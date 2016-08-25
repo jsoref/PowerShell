@@ -17,7 +17,7 @@ namespace System.Management.Automation
     /// <summary>
     /// Monad help is an architecture made up of three layers: 
     ///     1. At the top is get-help commandlet from where help functionality is accessed. 
-    ///     2. At the middel is the help system which collects help objects based on user's request. 
+    ///     2. At the middle is the help system which collects help objects based on user's request. 
     ///     3. At the bottom are different help providers which provide help contents for different kinds of information requested.
     /// 
     /// Class HelpSystem implements the middle layer of Monad Help.
