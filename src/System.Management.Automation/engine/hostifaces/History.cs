@@ -326,7 +326,7 @@ namespace Microsoft.PowerShell.Commands
         }
 
         /// <summary>
-        /// Udpate the history entry corresponding to id.
+        /// Update the history entry corresponding to id.
         /// </summary>
         /// <param name="id">id of history entry to be updated</param>
         /// <param name="status">status to be updated</param>
