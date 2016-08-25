@@ -109,7 +109,7 @@ namespace {0}
         /// Returns a configured instance of System.Management.Automation.PowerShell, pre-populated with the command to run.
         /// </summary>
         /// <param name=""context"">The NativeActivityContext for the currently running activity.</param>
-        /// <returns>A populated instance of Sytem.Management.Automation.PowerShell</returns>
+        /// <returns>A populated instance of System.Management.Automation.PowerShell</returns>
         /// <remarks>The infrastructure takes responsibility for closing and disposing the PowerShell instance returned.</remarks>
         protected override ActivityImplementationContext GetPowerShell(NativeActivityContext context)
         {{

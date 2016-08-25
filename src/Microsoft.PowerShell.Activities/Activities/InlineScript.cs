@@ -195,7 +195,7 @@ namespace Microsoft.PowerShell.Activities
         /// Returns a configured instance of System.Management.Automation.PowerShell, pre-populated with the script to run.
         /// </summary>
         /// <param name="context">The NativeActivityContext for the currently running activity.</param>
-        /// <returns>A populated instance of Sytem.Management.Automation.PowerShell</returns>
+        /// <returns>A populated instance of System.Management.Automation.PowerShell</returns>
         /// <remarks>The infrastructure takes responsibility for closing and disposing the PowerShell instance returned.</remarks>
         [System.Diagnostics.CodeAnalysis.SuppressMessage(
             "Microsoft.Reliability",

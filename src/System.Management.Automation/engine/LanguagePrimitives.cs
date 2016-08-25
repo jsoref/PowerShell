@@ -2741,7 +2741,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// We need to add this built-in converter because in FullCLR, Syste.Uri has a TypeConverter attribute
+        /// We need to add this built-in converter because in FullCLR, System.Uri has a TypeConverter attribute
         /// declared: [TypeConverter(typeof(UriTypeConverter))], so the conversion from 'string' to 'Uri' is
         /// actually taken care of by 'UriTypeConverter'. However, the type 'UriTypeConverter' is not available
         /// in CoreCLR, and thus the conversion from 'string' to 'Uri' would show a different behavior.

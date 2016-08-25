@@ -86,7 +86,7 @@ Describe "Select-String" -Tags "CI" {
 	}
     }
 
-    Context "Filesytem actions" {
+    Context "Filesystem actions" {
 	$testDirectory = $TestDrive
 	$testInputFile = Join-Path -Path $testDirectory -ChildPath testfile1.txt
 

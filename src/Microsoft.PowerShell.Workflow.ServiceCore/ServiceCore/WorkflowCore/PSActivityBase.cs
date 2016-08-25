@@ -2617,7 +2617,7 @@ namespace Microsoft.PowerShell.Activities
         /// directly, as the PSActivity class configures the runspace afterward to enable remote connections.
         /// </summary>
         /// <param name="context">The NativeActivityContext for the currently running activity.</param>
-        /// <returns>A populated instance of Sytem.Management.Automation.PowerShell</returns>
+        /// <returns>A populated instance of System.Management.Automation.PowerShell</returns>
         /// <remarks>The infrastructure takes responsibility for closing and disposing the PowerShell instance returned.</remarks>
         protected abstract ActivityImplementationContext GetPowerShell(NativeActivityContext context);
 

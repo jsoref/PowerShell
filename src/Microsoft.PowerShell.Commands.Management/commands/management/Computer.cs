@@ -766,7 +766,7 @@ namespace Microsoft.PowerShell.Commands
                                 continue;
                             }
                             //parameter for Enable method
-                            //if the input drive is not sytem drive 
+                            //if the input drive is not system drive 
                             if (!driveNew.Equals(sysdrive, StringComparison.OrdinalIgnoreCase))
                             {
                                 object[] inputDrive = { driveNew };
