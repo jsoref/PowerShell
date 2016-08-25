@@ -999,13 +999,13 @@ namespace System.Management.Automation
         private void UpdatePoolDisconnectOptions()
         {
             WSManConnectionInfo runspaceWSManConnectionInfo = RunspacePool.ConnectionInfo as WSManConnectionInfo;
-            WSManConnectionInfo wsManconnectionInfo = ConnectionInfo as WSManConnectionInfo;
+            WSManConnectionInfo wsManConnectionInfo = ConnectionInfo as WSManConnectionInfo;
 
             Dbg.Assert(runspaceWSManConnectionInfo != null, "Disconnect-Connect feature is currently only supported for WSMan transport");
-            Dbg.Assert(wsManconnectionInfo != null, "Disconnect-Connect feature is currently only supported for WSMan transport");
+            Dbg.Assert(wsManConnectionInfo != null, "Disconnect-Connect feature is currently only supported for WSMan transport");
 
-            runspaceWSManConnectionInfo.IdleTimeout = wsManconnectionInfo.IdleTimeout;
-            runspaceWSManConnectionInfo.OutputBufferingMode = wsManconnectionInfo.OutputBufferingMode;
+            runspaceWSManConnectionInfo.IdleTimeout = wsManConnectionInfo.IdleTimeout;
+            runspaceWSManConnectionInfo.OutputBufferingMode = wsManConnectionInfo.OutputBufferingMode;
         }
 
         #endregion
