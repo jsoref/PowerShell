@@ -2394,7 +2394,7 @@ namespace System.Management.Automation.Runspaces
 
         /// <summary>
         /// If set to true, disables any updates to format table. This includes disabling
-        /// format table updates throught Update-FormatData, Import-Module etc.
+        /// format table updates through Update-FormatData, Import-Module etc.
         /// All the disabling happens silently ie., the user will not get any exception.
         /// By default, this is set to False.
         /// </summary>
