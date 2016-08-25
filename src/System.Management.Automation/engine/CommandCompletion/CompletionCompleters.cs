@@ -6064,7 +6064,7 @@ namespace System.Management.Automation
                 }
             }
 
-            //this is a temparary fix. Only the type defined in the same script get complete. Need to use using Module when that is available. 
+            //this is a temporary fix. Only the type defined in the same script get complete. Need to use using Module when that is available. 
             var scriptBlockAst = (ScriptBlockAst)context.RelatedAsts[0];
             var typeAsts = scriptBlockAst.FindAll(ast => ast is TypeDefinitionAst, false).Cast<TypeDefinitionAst>();
             foreach (var typeAst in typeAsts.Where(ast => pattern.IsMatch(ast.Name)))
