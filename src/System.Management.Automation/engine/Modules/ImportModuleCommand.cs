@@ -1430,7 +1430,7 @@ namespace Microsoft.PowerShell.Commands
 
                     //
                     // import the module 
-                    // (from memory - this avoids the authenticode singature problems 
+                    // (from memory - this avoids the authenticode signature problems 
                     // that would be introduced by rewriting the contents of the manifest)
                     //
                     moduleInfo = LoadModuleManifest(
