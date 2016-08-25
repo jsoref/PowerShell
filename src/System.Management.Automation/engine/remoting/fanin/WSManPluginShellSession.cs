@@ -641,7 +641,7 @@ namespace System.Management.Automation.Remoting
             while (cmdSessionEnumerator.MoveNext())
             {
                 WSManPluginCommandSession cmdSession = cmdSessionEnumerator.Current;
-                // we are not interested in session closed events anymore as we are intiating the close
+                // we are not interested in session closed events anymore as we are initiating the close
                 // anyway/
                 cmdSession.SessionClosed -= new EventHandler<EventArgs>(this.HandleCommandSessionClosed);
                 cmdSession.Close(reasonForClose);
