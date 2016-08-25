@@ -306,7 +306,7 @@ namespace System.Management.Automation.Language
         public bool MetaStatement { get; set; }
 
         /// <summary>
-        /// Indicate that the keyword is reservce for future use by powershell
+        /// Indicate that the keyword is reserved for future use by powershell
         /// </summary>
         public bool IsReservedKeyword { get; set; }
 
