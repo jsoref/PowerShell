@@ -489,7 +489,7 @@ namespace System.Management.Automation
         /// </param>
         /// 
         /// <param name="flags">
-        /// Flags for type coercion and valiation of the arguments.
+        /// Flags for type coercion and validation of the arguments.
         /// </param>
         /// 
         /// <returns>
