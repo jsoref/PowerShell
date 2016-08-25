@@ -3817,7 +3817,7 @@ $result
         JoinReadOnly = 0x800,
 
         /// <summary>
-        /// Invoke during insatll
+        /// Invoke during install
         /// </summary>
         InstallInvoke = 0x40000
     }
