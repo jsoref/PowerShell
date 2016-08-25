@@ -292,7 +292,7 @@ namespace System.Management.Automation
             MamlCommandHelpInfo result = (MamlCommandHelpInfo)this.MemberwiseClone();
 
             // We will need to use a deep clone of _fullHelpObject
-            // to avoid _fullHelpObject being get tarminated. 
+            // to avoid _fullHelpObject being get terminated. 
             result._fullHelpObject = this._fullHelpObject.Copy();
 
             if (cmdletHelp != null)
