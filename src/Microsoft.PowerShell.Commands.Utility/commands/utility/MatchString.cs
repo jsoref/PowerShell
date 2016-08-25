@@ -719,7 +719,7 @@ namespace Microsoft.PowerShell.Commands
             // A circular buffer tracking both precontext and postcontext.
             //
             // Essentially, the buffer is separated into regions:
-            // | prectxt region  (older entries, length = precontext)  |
+            // | precontext region  (older entries, length = precontext)  |
             // | match region    (length = 1)                          |
             // | postcontext region (newer entries, length = postcontext) |
             //
