@@ -603,7 +603,7 @@ namespace Microsoft.PowerShell.Commands
         public virtual Uri[] ConnectionUri { get; set; }
 
         /// <summary>
-        /// The AllowRediraction parameter enables the implicit redirection functionality
+        /// The AllowRedirection parameter enables the implicit redirection functionality
         /// </summary>
         [Parameter(ParameterSetName = PSRemotingBaseCmdlet.UriParameterSet)]
         public virtual SwitchParameter AllowRedirection

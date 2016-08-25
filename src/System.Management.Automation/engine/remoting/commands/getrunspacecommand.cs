@@ -134,7 +134,7 @@ namespace Microsoft.PowerShell.Commands
         public String ConfigurationName { get; set; }
 
         /// <summary>
-        /// The AllowRediraction parameter enables the implicit redirection functionality.
+        /// The AllowRedirection parameter enables the implicit redirection functionality.
         /// </summary>
         [Parameter(ParameterSetName = GetPSSessionCommand.ConnectionUriParameterSet)]
         [Parameter(ParameterSetName = GetPSSessionCommand.ConnectionUriInstanceIdParameterSet)]
