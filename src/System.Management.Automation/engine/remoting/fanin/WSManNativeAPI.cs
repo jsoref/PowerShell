@@ -712,7 +712,7 @@ namespace System.Management.Automation.Remoting.Client
             }
 
             /// <summary>
-            /// Gets the buffer lenfth of data.
+            /// Gets the buffer length of data.
             /// </summary>
             internal int BufferLength
             {

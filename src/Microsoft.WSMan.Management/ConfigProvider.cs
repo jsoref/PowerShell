@@ -4409,7 +4409,7 @@ namespace Microsoft.WSMan.Management
                     {
                         PluginNames.Properties.Add(new PSNoteProperty(e.Attributes[i].Value, WSManStringLiterals.ContainerChildValue));
 
-                        // If the path contains \plugin and splitLength is greater than 3 then splitLenght[2] will be plugin Name.
+                        // If the path contains \plugin and splitLength is greater than 3 then splitLength[2] will be plugin Name.
                         if (splitPath.Length >= 3 && splitPath[2].Equals(e.Attributes[i].Value, StringComparison.OrdinalIgnoreCase))
                         {
                             CurrentPluginName = e.Attributes[i].Value;

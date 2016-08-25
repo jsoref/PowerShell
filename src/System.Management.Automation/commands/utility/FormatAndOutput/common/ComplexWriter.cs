@@ -459,7 +459,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
                         }
                         else
                         {
-                            // of the given lenght, add it to the accumulator
+                            // of the given length, add it to the accumulator
                             accumulator.AddLine(lines[k].Substring(offset, charactersToAdd));
                         }
 

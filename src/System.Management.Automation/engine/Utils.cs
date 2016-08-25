@@ -95,7 +95,7 @@ namespace System.Management.Automation
             }
             //
             // we use AES algorithm which supports key
-            // lenghts of 128, 192 and 256 bits.
+            // lengths of 128, 192 and 256 bits.
             // We throw ArgumentException if the key is
             // of any other length
             //

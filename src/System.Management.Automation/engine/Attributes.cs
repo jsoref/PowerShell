@@ -1241,7 +1241,7 @@ namespace System.Management.Automation
         /// </param>
         /// <exception cref="ValidationMetadataException">
         /// if the element is none of ICollection, IEnumerable, IList, IEnumerator
-        /// if the element's lenght is not between MinLength and MAxLEngth
+        /// if the element's length is not between MinLength and MAxLEngth
         /// </exception>
         protected override void Validate(object arguments, EngineIntrinsics engineIntrinsics)
         {
