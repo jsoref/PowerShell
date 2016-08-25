@@ -119,7 +119,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <param name="property">PSProperty coming from a previous call to GetMember</param>
         /// <param name="setValue">value to set the property with</param>
-        /// <param name="convertIfPossible">instructs the adapter to convert before setting, if the adapter suports conversion</param>
+        /// <param name="convertIfPossible">instructs the adapter to convert before setting, if the adapter supports conversion</param>
         protected abstract void PropertySet(PSProperty property, object setValue, bool convertIfPossible);
 
         /// <summary>
@@ -3688,7 +3688,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <param name="property">PSProperty coming from a previous call to GetMember</param>
         /// <param name="setValue">value to set the property with</param>
-        /// <param name="convertIfPossible">instructs the adapter to convert before setting, if the adapter suports conversion</param>
+        /// <param name="convertIfPossible">instructs the adapter to convert before setting, if the adapter supports conversion</param>
         protected override void PropertySet(PSProperty property, object setValue, bool convertIfPossible)
         {
             PropertyCacheEntry adapterData = (PropertyCacheEntry)property.adapterData;
@@ -4372,7 +4372,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <param name="property">PSProperty coming from a previous call to GetMember</param>
         /// <param name="setValue">value to set the property with</param>
-        /// <param name="convertIfPossible">instructs the adapter to convert before setting, if the adapter suports conversion</param>
+        /// <param name="convertIfPossible">instructs the adapter to convert before setting, if the adapter supports conversion</param>
         protected override void PropertySet(PSProperty property, object setValue, bool convertIfPossible)
         {
             Diagnostics.Assert(false, "redirection adapter is not called for properties");
@@ -4908,7 +4908,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <param name="property">PSProperty coming from a previous call to DoGetProperty</param>
         /// <param name="setValue">value to set the property with</param>
-        /// <param name="convertIfPossible">instructs the adapter to convert before setting, if the adapter suports conversion</param>
+        /// <param name="convertIfPossible">instructs the adapter to convert before setting, if the adapter supports conversion</param>
         protected override void PropertySet(PSProperty property, object setValue, bool convertIfPossible)
         {
             string valueString = setValue as string;
