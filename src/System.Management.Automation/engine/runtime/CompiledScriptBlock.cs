@@ -259,7 +259,7 @@ namespace System.Management.Automation
         private bool _usesCmdletBinding;
         private bool _compiledOptimized;
         private bool _compiledUnoptimized;
-        private bool _hasSuspicousContent;
+        private bool _hasSuspiciousContent;
         internal bool DebuggerHidden { get; set; }
         internal bool DebuggerStepThrough { get; set; }
         internal Guid Id { get; private set; }
@@ -281,9 +281,9 @@ namespace System.Management.Automation
             get
             {
                 Diagnostics.Assert(_compiledOptimized || _compiledUnoptimized, "HasSuspiciousContent is not set correctly before being compiled");
-                return _hasSuspicousContent;
+                return _hasSuspiciousContent;
             }
-            set { _hasSuspicousContent = value; }
+            set { _hasSuspiciousContent = value; }
         }
 
         private MergedCommandParameterMetadata _parameterMetadata;
