@@ -600,7 +600,7 @@ namespace System.Management.Automation.Remoting
 
         /// <summary>
         /// This processes the object received from transport which are 
-        /// targetted for session
+        /// targeted for session
         /// </summary>
         /// <param name="arg">
         /// argument contains the data object
@@ -671,7 +671,7 @@ namespace System.Management.Automation.Remoting
 
         /// <summary>
         /// This processes the object received from transport which are 
-        /// not targetted for session
+        /// not targeted for session
         /// </summary>
         /// <param name="rcvdData">
         /// received data.

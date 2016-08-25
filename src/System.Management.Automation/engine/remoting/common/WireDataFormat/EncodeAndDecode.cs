@@ -919,7 +919,7 @@ namespace System.Management.Automation
         /// <param name="runspacePoolId">runspace pool id</param>
         /// <param name="publicKey">public key to send across</param>
         /// <param name="destination">destination that this message is
-        /// targetted to</param>
+        /// targeted to</param>
         /// <returns>data structure message</returns>
         /// The message format is as under for this message
         /// --------------------------------------------------------------------------
