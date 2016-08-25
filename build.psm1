@@ -1360,7 +1360,7 @@ function Get-Mappings
 
 <#
 .EXAMPLE Send-GitDiffToSd -diffArg1 32b90c048aa0c5bc8e67f96a98ea01c728c4a5be~1 -diffArg2 32b90c048aa0c5bc8e67f96a98ea01c728c4a5be -AdminRoot d:\e\ps_dev\admin
-Apply a signle commit to admin folder
+Apply a single commit to admin folder
 #>
 function Send-GitDiffToSd {
     param(

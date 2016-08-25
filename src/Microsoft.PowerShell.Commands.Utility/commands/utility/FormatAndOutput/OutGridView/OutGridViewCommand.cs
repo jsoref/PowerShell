@@ -25,7 +25,7 @@ namespace Microsoft.PowerShell.Commands
         /// </summary>
         None,
         /// <summary>
-        /// Allow selection of one sinlge item to be written to the pipeline.
+        /// Allow selection of one single item to be written to the pipeline.
         /// </summary>
         Single,
         /// <summary>
