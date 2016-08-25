@@ -129,7 +129,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
 
             // VALIDITY CHECKS:
 
-            // check the useful ("active") witdth
+            // check the useful ("active") width
             int usefulWidth = _textColumns - rightIndentation - leftIndentation;
             if (usefulWidth <= 0)
             {
