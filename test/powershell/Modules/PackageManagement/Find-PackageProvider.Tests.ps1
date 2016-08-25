@@ -194,7 +194,7 @@ Describe "find-packageprovider Error Cases" -Tags "Feature" {
         }
     }
 
-    It "EXPECTED:  returns an error when inputing a bad version format" {
+    It "EXPECTED:  returns an error when inputting a bad version format" {
         $Error.Clear()
         find-packageprovider -name Gistprovider -RequiredVersion BOGUSVERSION  -warningaction:silentlycontinue -ea silentlycontinue
         $ERROR[0].FullyQualifiedErrorId | should be "InvalidVersion,Microsoft.PowerShell.PackageManagement.Cmdlets.FindPackageProvider"

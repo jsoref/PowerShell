@@ -167,7 +167,7 @@ Describe "import-packageprovider Error Cases" -Tags "Feature" {
         $ERROR[0].FullyQualifiedErrorId | should be "InvalidParameter,Microsoft.PowerShell.PackageManagement.Cmdlets.ImportPackageProvider"     
     }
 
-  It "EXPECTED:  returns an error when inputing a bad version format" {
+  It "EXPECTED:  returns an error when inputting a bad version format" {
         $Error.Clear()
         import-packageprovider -name Gistprovider -RequiredVersion BOGUSVERSION -warningaction:silentlycontinue -ea silentlycontinue
         $ERROR[0].FullyQualifiedErrorId | should be "InvalidVersion,Microsoft.PowerShell.PackageManagement.Cmdlets.ImportPackageProvider"

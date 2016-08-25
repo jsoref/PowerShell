@@ -733,7 +733,7 @@ Describe "install-packageprovider Error Cases" -Tags "Feature" {
         $theError2.FullyQualifiedErrorId| should BeNullOrEmpty
     }
 
-    It "EXPECTED:  returns an error when inputing a bad version format" {
+    It "EXPECTED:  returns an error when inputting a bad version format" {
         $Error.Clear()
         install-packageprovider -name nuget -RequiredVersion BOGUSVERSION  -warningaction:silentlycontinue -ea silentlycontinue
         $ERROR[0].FullyQualifiedErrorId | should be "InvalidVersion,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackageProvider"
