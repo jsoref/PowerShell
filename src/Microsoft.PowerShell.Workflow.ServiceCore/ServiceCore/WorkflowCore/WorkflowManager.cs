@@ -1315,7 +1315,7 @@ namespace Microsoft.PowerShell.Workflow
                         }
                         catch (ObjectDisposedException)
                         {
-                            Tracer.WriteMessage(Facility, "RemoveJob", job.PSWorkflowInstance.Id, "Worklfow Job is already disposed. so removing it.");
+                            Tracer.WriteMessage(Facility, "RemoveJob", job.PSWorkflowInstance.Id, "Workflow Job is already disposed. so removing it.");
                         }
                     }
                 }

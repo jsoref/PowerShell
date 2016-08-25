@@ -236,7 +236,7 @@
   <data name="ExitReason" xml:space="preserve">
     <value>Workflow complete.</value>
   </data>
-  <data name="RemovingWrokflowInstance" xml:space="preserve">
+  <data name="RemovingWorkflowInstance" xml:space="preserve">
     <value>Removing workflow instance from the table.</value>
   </data>
   <data name="ElapsedTimeReached" xml:space="preserve">

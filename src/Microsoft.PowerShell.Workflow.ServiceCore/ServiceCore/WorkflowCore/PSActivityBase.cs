@@ -5940,7 +5940,7 @@ namespace Microsoft.PowerShell.Activities
         }
 
         /// <summary>
-        /// Set the instance of the worfkow.
+        /// Set the instance of the workflow.
         /// </summary>
         /// <param name="instance">The workflow instance proxy.</param>
         public void SetInstance(WorkflowInstanceProxy instance)

@@ -1620,7 +1620,7 @@ namespace Microsoft.PowerShell.Workflow
             {
                 // this flag ensures that the workflow application will not be loaded again since we are stopping the workflow instance
                 IsTerminalStateAction = true;
-                // this flag ensures that we don't unload the wfApplication instance since we are stopping the worklfow.
+                // this flag ensures that we don't unload the wfApplication instance since we are stopping the workflow.
                 PersistIdleTimerInProgressOrTriggered = false;
             }
 

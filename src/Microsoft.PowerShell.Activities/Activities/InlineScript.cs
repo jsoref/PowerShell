@@ -780,7 +780,7 @@ namespace Microsoft.PowerShell.Activities
     public class Suspend : NativeActivity
     {
         /// <summary>
-        /// Optional field used for resuming the worklfow for a specific label.
+        /// Optional field used for resuming the workflow for a specific label.
         /// </summary>
         public string Label { get; set; }
 

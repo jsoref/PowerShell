@@ -3958,7 +3958,7 @@ Set-PSSessionConfiguration $args[0] $args[1] $args[2] $args[3] $args[4] $args[5]
                                     }
                                 }
                                 // if ModulesToImport doesn't exist in the pssessionConfigurationData, we don't need to do anything.
-                                // in this case, if the current config is of type workfolw, it's not a valid config.
+                                // in this case, if the current config is of type workflow, it's not a valid config.
                             }
                             else
                             {
