@@ -4415,7 +4415,7 @@ namespace System.Management.Automation
                                 throw;
                             }
 
-                            // Ignore the exception if neccessary.
+                            // Ignore the exception if necessary.
                             if ((null != settings) && settings.ErrorActionPreference == ActionPreference.Ignore)
                             {
                                 continue;

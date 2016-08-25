@@ -3040,7 +3040,7 @@ namespace System.Management.Automation.Language
 
                 // The redirections are passed as a CommandRedirection[][] - one dimension for each command in the pipe,
                 // one dimension because each command may have multiple redirections.  Here we create the array for
-                // each command in the pipe, either a compile time constant or created at runtime if necesary.
+                // each command in the pipe, either a compile time constant or created at runtime if necessary.
                 Expression redirectionExpr;
                 if (commandRedirections.Any(r => r is Expression))
                 {

@@ -796,7 +796,7 @@ namespace System.Management.Automation.Runspaces
         /// Returns the thread that must be used to execute pipelines when CreateThreadOptions is ReuseThread
         /// </summary>
         /// <remarks>
-        /// The pipeline calls this function after ensuring there is a single thread in the pipeline, so no locking is neccesary
+        /// The pipeline calls this function after ensuring there is a single thread in the pipeline, so no locking is necessary
         /// </remarks>
         internal PipelineThread GetPipelineThread()
         {

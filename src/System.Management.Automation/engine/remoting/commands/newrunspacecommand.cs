@@ -1300,7 +1300,7 @@ namespace Microsoft.PowerShell.Commands
         /// Handler for handling runspace state changed events. This method will be
         /// registered in the StartOperation and StopOperation methods. This handler
         /// will in turn invoke the OperationComplete event for all events that are 
-        /// necesary - Opened, Closed, Disconnected, Broken. It will ignore all other state 
+        /// necessary - Opened, Closed, Disconnected, Broken. It will ignore all other state 
         /// changes.
         /// </summary>
         /// <remarks>
