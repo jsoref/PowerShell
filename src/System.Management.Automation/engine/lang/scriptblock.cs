@@ -1295,7 +1295,7 @@ namespace System.Management.Automation
         /// <summary>
         /// Recommended constructor for the class
         /// </summary>
-        /// <param name="errorId">String that uniquelly identifies each thrown Exception</param>
+        /// <param name="errorId">String that uniquely identifies each thrown Exception</param>
         /// <param name="innerException">The inner exception</param>
         /// <param name="message">The error message</param>
         /// <param name="arguments">Arguments to the resource string</param>
