@@ -92,7 +92,7 @@ namespace Microsoft.PowerShell.Commands
     #region CommonRunspaceCommandBase class
 
     /// <summary>
-    /// Abstract class that defines common Runpace Command parameters.
+    /// Abstract class that defines common Runspace Command parameters.
     /// </summary>
     public abstract class CommonRunspaceCommandBase : PSCmdlet
     {
@@ -140,7 +140,7 @@ namespace Microsoft.PowerShell.Commands
         }
 
         /// <summary>
-        /// Runpace
+        /// Runspace
         /// </summary>
         [Parameter(Position = 0,
                    Mandatory = true,

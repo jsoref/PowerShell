@@ -168,7 +168,7 @@ namespace Microsoft.PowerShell.Workflow
             catch (Exception e)
             {
                 // RemoteRunspace.Close can throw exceptions when Server process has exited or runspace is invalid.
-                // Ignoring all exceptions as this runpspace was used for previous OOP activity execution.
+                // Ignoring all exceptions as this runspace was used for previous OOP activity execution.
                 //
                 _tracer.TraceException(e);
 

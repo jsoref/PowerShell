@@ -925,7 +925,7 @@ namespace System.Management.Automation.Runspaces
         /// default server life time and default open
         /// timeout
         /// </summary>
-        /// <param name="uri">uri of remote runspae</param>
+        /// <param name="uri">uri of remote runspace</param>
         /// <exception cref="ArgumentException">When an
         /// uri representing an invalid path is specified</exception>
         public WSManConnectionInfo(Uri uri)

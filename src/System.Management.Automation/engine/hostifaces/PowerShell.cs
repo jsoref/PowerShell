@@ -5179,7 +5179,7 @@ namespace System.Management.Automation
             /// <summary>
             /// This method gets called from a ThreadPool thread.
             /// This method gets called from a RunspacePool thread when a
-            /// Runsapce is available.
+            /// Runspace is available.
             /// </summary>
             /// <param name="asyncResult">
             /// AsyncResult object which monitors the asyncOperation.

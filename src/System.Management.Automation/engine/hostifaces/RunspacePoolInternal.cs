@@ -224,7 +224,7 @@ namespace System.Management.Automation.Runspaces.Internal
         }
 
         /// <summary>
-        /// Gets State of the current runpsace pool.
+        /// Gets State of the current runspace pool.
         /// </summary>
         public RunspacePoolStateInfo RunspacePoolStateInfo
         {

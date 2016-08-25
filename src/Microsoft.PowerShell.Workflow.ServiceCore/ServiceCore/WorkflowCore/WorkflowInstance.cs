@@ -234,13 +234,13 @@ namespace Microsoft.PowerShell.Workflow
 
             lock (_syncObject)
             {
-                Dictionary<int, Tuple<object, string>> ruspaceIdCollection;
-                if (_remoteRunspaceIdCollection.TryGetValue(activityId, out ruspaceIdCollection))
+                Dictionary<int, Tuple<object, string>> runspaceIdCollection;
+                if (_remoteRunspaceIdCollection.TryGetValue(activityId, out runspaceIdCollection))
                 {
-                    if (ruspaceIdCollection != null)
+                    if (runspaceIdCollection != null)
                     {
                         Tuple<object, string> taskTuple;
-                        ruspaceIdCollection.TryGetValue(taskId, out taskTuple);
+                        runspaceIdCollection.TryGetValue(taskId, out taskTuple);
 
                         if (taskTuple != null)
                             taskRunspaceId = taskTuple.Item1;

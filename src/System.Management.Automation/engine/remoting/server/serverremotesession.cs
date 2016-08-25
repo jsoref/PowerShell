@@ -150,7 +150,7 @@ namespace System.Management.Automation.Remoting
             transportManager.Closing += HandleResourceClosing;
 
             // update the quotas from sessionState..start with default size..and
-            // when Custom Session Configuration is loaded (during runsapce creation) update this.
+            // when Custom Session Configuration is loaded (during runspace creation) update this.
             transportManager.ReceivedDataCollection.MaximumReceivedObjectSize =
                 BaseTransportManager.MaximumReceivedObjectSize;
 

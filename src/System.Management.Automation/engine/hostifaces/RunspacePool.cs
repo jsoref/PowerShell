@@ -689,7 +689,7 @@ namespace System.Management.Automation.Runspaces
         }
 
         /// <summary>
-        /// Gets State of the current runpsace pool.
+        /// Gets State of the current runspace pool.
         /// </summary>
         public RunspacePoolStateInfo RunspacePoolStateInfo
         {

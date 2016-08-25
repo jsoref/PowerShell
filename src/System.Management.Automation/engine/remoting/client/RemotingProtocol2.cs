@@ -359,7 +359,7 @@ namespace System.Management.Automation.Internal
         /// Event raised when RunspacePoolInitInfo is received. This is the first runspace pool message expected
         /// after connecting to an existing remote runspace pool. RemoteRunspacePoolInternal should use this 
         /// notification to set the state of a reconstructed runspace to "Opened State" and use the
-        /// minRusnpace and MaxRunspaces information to set its state
+        /// minRunspace and MaxRunspaces information to set its state
         /// </summary>
         internal event EventHandler<RemoteDataEventArgs<RunspacePoolInitInfo>> RSPoolInitInfoReceived;
 
