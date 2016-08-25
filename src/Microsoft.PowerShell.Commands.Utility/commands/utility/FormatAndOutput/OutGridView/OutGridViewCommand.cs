@@ -282,7 +282,7 @@ namespace Microsoft.PowerShell.Commands
                 _gridHeader.ProcessInputObject(input);
             }
 
-            // Some thread syncronization needed.
+            // Some thread synchronization needed.
             Exception exception = _windowProxy.GetLastException();
             if (exception != null)
             {
