@@ -1121,7 +1121,7 @@ namespace System.Management.Automation
             if (this.Command.MyInvocation.PipelinePosition == this.Command.MyInvocation.PipelineLength)
             {
                 // If the output pipe is the default outputter, for example, calling the native command from command-line host,
-                // then we're possiblly running standalone.
+                // then we're possibly running standalone.
                 //
                 // If the downstream cmdlet is explicitly Out-Default, for example: 
                 //    $powershell.AddScript('ipconfig.exe') 
@@ -1140,7 +1140,7 @@ namespace System.Management.Automation
             if (CommandRuntime.ErrorMergeTo != MshCommandRuntime.MergeDataStream.Output)
             {
                 // If the error output pipe is the default outputter, for example, calling the native command from command-line host,
-                // then we're possiblly running standalone.
+                // then we're possibly running standalone.
                 //
                 // If the downstream cmdlet is explicitly Out-Default, for example: 
                 //    $powershell.AddScript('ipconfig.exe') 

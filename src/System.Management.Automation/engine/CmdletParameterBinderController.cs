@@ -876,7 +876,7 @@ namespace System.Management.Automation
         /// Verify if all arguments from the command line are bound.
         /// </summary>
         /// <param name="originalBindingException">
-        /// Previous binding exceptions that possiblly causes the failure
+        /// Previous binding exceptions that possibly causes the failure
         /// </param>
         private void VerifyArgumentsProcessed(ParameterBindingException originalBindingException)
         {
