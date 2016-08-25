@@ -1545,7 +1545,7 @@ namespace Microsoft.PowerShell
         {
             get
             {
-                // Console can return zero when a pseduo-TTY is allocated, which
+                // Console can return zero when a pseudo-TTY is allocated, which
                 // is useless for us. Instead, map to the wrap size.
                 return Console.BufferWidth == 0 || Console.BufferHeight == 0
                     ? s_wrapSize
@@ -1618,7 +1618,7 @@ namespace Microsoft.PowerShell
         {
             get
             {
-                // Console can return zero when a pseduo-TTY is allocated, which
+                // Console can return zero when a pseudo-TTY is allocated, which
                 // is useless for us. Instead, map to the wrap size.
                 return Console.LargestWindowWidth == 0 || Console.LargestWindowHeight == 0
                     ? s_wrapSize
@@ -1646,7 +1646,7 @@ namespace Microsoft.PowerShell
         {
             get
             {
-                // Console can return zero when a pseduo-TTY is allocated, which
+                // Console can return zero when a pseudo-TTY is allocated, which
                 // is useless for us. Instead, map to the wrap size.
                 return Console.WindowWidth == 0 || Console.WindowHeight == 0
                     ? s_wrapSize
