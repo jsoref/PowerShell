@@ -462,7 +462,7 @@ namespace System.Management.Automation
         /// When 
         ///     the alias has not been added to an PSObject or
         ///     the alias has a cycle or
-        ///     an aliased member is not presen
+        ///     an aliased member is not present
         /// </exception>
         public override bool IsSettable
         {
