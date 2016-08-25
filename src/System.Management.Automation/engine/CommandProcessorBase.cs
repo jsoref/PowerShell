@@ -172,7 +172,7 @@ namespace System.Management.Automation
             // This goes both ways:
             //    - Can't dot something from a more permissive mode, since that would probably expose
             //      functions that were never designed to handle untrusted data.
-            //    - Can't dot something from a less permissive mode, since that might introduce tained
+            //    - Can't dot something from a less permissive mode, since that might introduce tainted
             //      data into the current scope.
             if ((scriptBlock.LanguageMode.HasValue) &&
                 (scriptBlock.LanguageMode != languageMode) &&
