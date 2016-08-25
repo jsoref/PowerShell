@@ -89,7 +89,7 @@ namespace Microsoft.WSMan.Management
 
         /// <summary>
         /// Refresh the CurrentConfiguration. This method calls GET operation for the given 
-        /// URI on the server and update the current configuration. It also intialize some
+        /// URI on the server and update the current configuration. It also initialize some
         /// of required class members.
         /// </summary>
         /// <param name="responseOfGet">Plugin configuration.</param>

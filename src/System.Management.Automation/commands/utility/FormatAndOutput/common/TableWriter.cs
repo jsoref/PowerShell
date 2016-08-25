@@ -69,7 +69,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
 
 
         /// <summary>
-        /// Initalize the table specifying the width of each column
+        /// Initialize the table specifying the width of each column
         /// </summary>
         /// <param name="leftMarginIndent">left margin indentation</param>
         /// <param name="screenColumns">number of character columns on the screen</param>

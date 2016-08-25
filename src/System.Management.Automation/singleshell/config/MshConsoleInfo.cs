@@ -419,7 +419,7 @@ namespace System.Management.Automation.Runspaces
             IsDirty = false;
             Filename = null;
 
-            // Intialize list of mshsnapins..
+            // Initialize list of mshsnapins..
             _defaultPSSnapIns = new Collection<PSSnapInInfo>();
             _externalPSSnapIns = new Collection<PSSnapInInfo>();
         }
@@ -814,7 +814,7 @@ namespace System.Management.Automation.Runspaces
         /// </exception>
         private Collection<PSSnapInInfo> Load(string path, out PSConsoleLoadException cle)
         {
-            // Intialize the out parameter..
+            // Initialize the out parameter..
             cle = null;
 
             s_mshsnapinTracer.WriteLine("Load mshsnapins from console file {0}", path);

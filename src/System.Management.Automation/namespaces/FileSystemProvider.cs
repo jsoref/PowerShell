@@ -3492,7 +3492,7 @@ namespace Microsoft.PowerShell.Commands
             {
                 ps.Runspace = fromSession.Runspace;
 
-                InitilizeFunctionPSCopyFileFromRemoteSession(ps);
+                InitializeFunctionPSCopyFileFromRemoteSession(ps);
 
                 try
                 {
@@ -3571,7 +3571,7 @@ namespace Microsoft.PowerShell.Commands
         {
             bool isContainer = IsItemContainer(path);
 
-            InitilizeFunctionsPSCopyFileToRemoteSession(ps);
+            InitializeFunctionsPSCopyFileToRemoteSession(ps);
 
             try
             {
@@ -3998,7 +3998,7 @@ namespace Microsoft.PowerShell.Commands
             return streams;
         }
 
-        private void InitilizeFunctionPSCopyFileFromRemoteSession(System.Management.Automation.PowerShell ps)
+        private void InitializeFunctionPSCopyFileFromRemoteSession(System.Management.Automation.PowerShell ps)
         {
             if ((ps == null) || !ValidRemoteSessionForScripting(ps.Runspace)) { return; }
 
@@ -4299,7 +4299,7 @@ namespace Microsoft.PowerShell.Commands
             return success;
         }
 
-        private void InitilizeFunctionsPSCopyFileToRemoteSession(System.Management.Automation.PowerShell ps)
+        private void InitializeFunctionsPSCopyFileToRemoteSession(System.Management.Automation.PowerShell ps)
         {
             if ((ps == null) || !ValidRemoteSessionForScripting(ps.Runspace)) { return; }
 

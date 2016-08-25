@@ -1943,7 +1943,7 @@ namespace System.Management.Automation.Language
     public abstract class AttributeBaseAst : Ast
     {
         /// <summary>
-        /// Initiale the common fields for an attribute.
+        /// Initialize the common fields for an attribute.
         /// </summary>
         /// <param name="extent">The extent of the attribute, from the opening '[' to the closing ']'.</param>
         /// <param name="typeName">The type named by the attribute.</param>
