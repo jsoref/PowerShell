@@ -264,7 +264,7 @@ namespace System.Management.Automation.Remoting
         #region Properties
 
         /// <summary>
-        /// Exception reson for listener end event.  Can be null
+        /// Exception reason for listener end event.  Can be null
         /// which indicates listener thread end is not due to an error.
         /// </summary>
         public Exception Reason
