@@ -11,7 +11,7 @@ namespace Microsoft.PowerShell.Commands.ShowCommandInternal
     using System.Windows.Input;
 
     /// <summary>
-    /// Control taht shows cmdlets in a module and details for a selected cmdlet
+    /// Control that shows cmdlets in a module and details for a selected cmdlet
     /// </summary>
     public partial class ShowModuleControl : UserControl
     {
