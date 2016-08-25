@@ -413,7 +413,7 @@ namespace System.Management.Automation
         /// <param name="validParameterSetFlag">validParameterSetFlag</param>
         /// <param name="defaultParameterValues">default value pairs</param>
         /// <returns>
-        /// true if there is at least one default parameter bound scucessfully
+        /// true if there is at least one default parameter bound successfully
         /// false if there is no default parameter bound successfully
         /// </returns>
         private bool BindDefaultParameters(uint validParameterSetFlag, Dictionary<MergedCompiledCommandParameter, object> defaultParameterValues)

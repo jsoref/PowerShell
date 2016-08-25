@@ -32,7 +32,7 @@ namespace System.Management.Automation.Language
 
     /// <summary>
     /// The parser that parses PowerShell script and returns a <see cref="ScriptBlockAst"/>, tokens, and error messages
-    /// if the script cannot be parsed successfullly.
+    /// if the script cannot be parsed successfully.
     /// </summary>
     public sealed class Parser
     {
