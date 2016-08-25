@@ -93,7 +93,7 @@ private:
     bool isCSInitSucceeded; 
 
     // Abstraction of the differences between CLR hosting environments with
-    // repsect to the interface with pspluginwkr.
+    // respect to the interface with pspluginwkr.
     IPowerShellClrHost* powerShellClrHost;
 
     // Default no-op implementation used for the output functions.
