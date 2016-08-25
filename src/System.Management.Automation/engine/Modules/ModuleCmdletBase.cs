@@ -2981,7 +2981,7 @@ namespace Microsoft.PowerShell.Commands
                             ModuleIntrinsics.GetModuleName(moduleManifestPath));
                     throw workflowModuleNotSupported;
 #else
-                    // Depending on current execution policy, check the signature of Module manfiest file if required.
+                    // Depending on current execution policy, check the signature of Module manifest file if required.
                     // Reusing already created ScriptInfo object to avoid race condition when modulemanifest was not signed during first check and signed before this step.
                     //
                     scriptInfo.ValidateScriptInfo(Host);
@@ -3395,7 +3395,7 @@ namespace Microsoft.PowerShell.Commands
                 }
 
                 // If there are types/formats entries in the ModuleToProcess use them
-                // only if there are no entries from the manifst. The manifest entries
+                // only if there are no entries from the manifest. The manifest entries
                 // completely override the module's entries.
                 if (manifestInfo.ExportedTypeFiles.Count > 0)
                 {

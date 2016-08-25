@@ -833,7 +833,7 @@ namespace Microsoft.PowerShell.Commands
         }
 
         /// <summary>
-        /// Generate the module manfest...
+        /// Generate the module manifest...
         /// </summary>
         protected override void EndProcessing()
         {
