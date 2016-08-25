@@ -1603,7 +1603,7 @@ namespace System.Management.Automation.Runspaces
         /// ThumbPrint of a certificate used for connecting to a remote machine.
         /// When this is specified, you dont need to supply credential and authentication
         /// mechanism.
-        /// Will always be empty to signfy that this is not supported.
+        /// Will always be empty to signify that this is not supported.
         /// </summary>
         public override string CertificateThumbprint
         {
@@ -2362,7 +2362,7 @@ namespace System.Management.Automation.Runspaces
         /// ThumbPrint of a certificate used for connecting to a remote machine.
         /// When this is specified, you dont need to supply credential and authentication
         /// mechanism.
-        /// Will always be null to signfy that this is not supported.
+        /// Will always be null to signify that this is not supported.
         /// </summary>
         public override string CertificateThumbprint
         {
@@ -2483,7 +2483,7 @@ namespace System.Management.Automation.Runspaces
         /// ThumbPrint of a certificate used for connecting to a remote machine.
         /// When this is specified, you dont need to supply credential and authentication
         /// mechanism.
-        /// Will always be null to signfy that this is not supported.
+        /// Will always be null to signify that this is not supported.
         /// </summary>
         public override string CertificateThumbprint
         {
