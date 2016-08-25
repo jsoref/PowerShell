@@ -920,7 +920,7 @@ namespace System.Management.Automation
         /// <param name="publicKey">public key to send across</param>
         /// <param name="destination">destination that this message is
         /// targetted to</param>
-        /// <returns>data strucutre message</returns>
+        /// <returns>data structure message</returns>
         /// The message format is as under for this message
         /// --------------------------------------------------------------------------
         /// | D |    TI     |  RPID  |   PID   |      Data     |        Type          |
@@ -946,7 +946,7 @@ namespace System.Management.Automation
         /// requesting a public key from the client to the server
         /// </summary>
         /// <param name="runspacePoolId">runspace pool id</param>
-        /// <returns>data strucutre message</returns>
+        /// <returns>data structure message</returns>
         /// The message format is as under for this message
         /// --------------------------------------------------------------------------
         /// | D |    TI     |  RPID  |   PID   |      Data     |        Type          |
@@ -969,7 +969,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <param name="runspacePoolId">runspace pool id</param>
         /// <param name="encryptedSessionKey">encrypted session key</param>
-        /// <returns>data strucutre message</returns>
+        /// <returns>data structure message</returns>
         /// The message format is as under for this message
         /// --------------------------------------------------------------------------
         /// | D |    TI     |  RPID  |   PID   |      Data     |        Type          |
