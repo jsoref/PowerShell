@@ -5163,7 +5163,7 @@ end
                         "Tee-Object",      "", ScopedItemOptions.ReadOnly | ScopedItemOptions.AllScope),
                     new SessionStateAliasEntry("write",
                         "Write-Output",    "", ScopedItemOptions.ReadOnly | ScopedItemOptions.AllScope),
-                    // These were traqnsferred from the "transferred from the profile" section
+                    // These were transferred from the "transferred from the profile" section
                     new SessionStateAliasEntry("cat",
                         "Get-Content",     "", ScopedItemOptions.AllScope),
                     new SessionStateAliasEntry("cp",
