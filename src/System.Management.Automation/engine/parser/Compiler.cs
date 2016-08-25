@@ -3093,7 +3093,7 @@ namespace System.Management.Automation.Language
                 return null;
             }
 
-            // Most redirections will be instannces of CommandRedirection, but non-constant filenames
+            // Most redirections will be instances of CommandRedirection, but non-constant filenames
             // will generated a Linq.Expression, so we store objects.
             object[] compiledRedirections = new object[count];
             for (int i = 0; i < count; ++i)
