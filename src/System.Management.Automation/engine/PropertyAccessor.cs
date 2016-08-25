@@ -44,7 +44,7 @@ namespace System.Management.Automation
 #endif
         }
         /// <summary>
-        /// The instance of the ConfigPropertyAccessor to use to iteract with properties.
+        /// The instance of the ConfigPropertyAccessor to use to interact with properties.
         /// Derived classes should not be directly instantiated.
         /// </summary>
         internal static readonly ConfigPropertyAccessor Instance;

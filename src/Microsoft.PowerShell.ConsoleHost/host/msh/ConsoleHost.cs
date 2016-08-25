@@ -1520,7 +1520,7 @@ namespace Microsoft.PowerShell
             // Don't load PSReadline if:
             //   * we don't think the process will be interactive, e.g. -command or -file
             //     - exception: when -noexit is specified, we will be interactive after the command/file finishes
-            //   * -noniteractive: this should be obvious, they've asked that we don't every prompt
+            //   * -noninteractive: this should be obvious, they've asked that we don't every prompt
             //
             // Note that PSReadline doesn't support redirected stdin/stdout, but we don't check that here because
             // a future version might, and we should automatically load it at that unknown point in the future.
