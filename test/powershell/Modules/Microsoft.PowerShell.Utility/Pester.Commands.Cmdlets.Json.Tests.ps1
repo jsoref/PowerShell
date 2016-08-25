@@ -223,7 +223,7 @@ Describe "Json Tests" -Tags "Feature" {
             # add a NoteProperty member called Note with a text note
             $versionObject | Add-Member -MemberType NoteProperty -Name Note -Value "a version object"
 
-            # add an AliasProperty called Rev as an alias to the Revison property
+            # add an AliasProperty called Rev as an alias to the Revision property
             $versionObject | Add-Member -MemberType AliasProperty -Name Rev -Value Revision
 
             # add a ScriptProperty called IsOld which returns whether the version is an older version  
