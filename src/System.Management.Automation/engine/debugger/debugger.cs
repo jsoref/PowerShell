@@ -594,7 +594,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <param name="command">Command string</param>
         /// <param name="output">Output collection</param>
-        /// <returns>DebuggerCommand containing information on whether and how the command was procssed.</returns>
+        /// <returns>DebuggerCommand containing information on whether and how the command was processed.</returns>
         internal virtual DebuggerCommand InternalProcessCommand(string command, IList<PSObject> output)
         {
             throw new PSNotImplementedException();
@@ -2337,7 +2337,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <param name="command">Command string</param>
         /// <param name="output">output</param>
-        /// <returns>DebuggerCommand containing information on whether and how the command was procssed.</returns>
+        /// <returns>DebuggerCommand containing information on whether and how the command was processed.</returns>
         internal override DebuggerCommand InternalProcessCommand(string command, IList<PSObject> output)
         {
             if (!DebuggerStopped)

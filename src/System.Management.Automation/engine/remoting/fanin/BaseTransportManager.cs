@@ -198,7 +198,7 @@ namespace System.Management.Automation.Remoting
         internal event EventHandler<RemoteDataEventArgs> DataReceived;
 
         /// <summary>
-        /// Listen to this event to observe the PowerShell guid of the process'ed object.
+        /// Listen to this event to observe the PowerShell guid of the processed object.
         /// </summary>
         public event EventHandler PowerShellGuidObserver;
 
