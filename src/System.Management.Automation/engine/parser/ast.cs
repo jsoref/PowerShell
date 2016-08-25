@@ -5462,7 +5462,7 @@ namespace System.Management.Automation.Language
     }
 
     /// <summary>
-    /// The ast that repesents a PowerShell pipeline, e.g. <c>gci -re . *.cs | select-string Foo</c> or <c> 65..90 | % { [char]$_ }</c>.
+    /// The ast that represents a PowerShell pipeline, e.g. <c>gci -re . *.cs | select-string Foo</c> or <c> 65..90 | % { [char]$_ }</c>.
     /// A pipeline must have at least 1 command.  The first command may be an expression or a command invocation.
     /// </summary>
     public class PipelineAst : PipelineBaseAst
@@ -9950,7 +9950,7 @@ namespace System.Management.Automation.Language
     }
 
     /// <summary>
-    /// The ast that repesents a double quoted string (here string or normal string) and can have nested variable
+    /// The ast that represents a double quoted string (here string or normal string) and can have nested variable
     /// references or sub-expressions, e.g. <c>"Name: $name`nAge: $([DateTime]::Now.Year - $dob.Year)"</c>.
     /// </summary>
     public class ExpandableStringExpressionAst : ExpressionAst
