@@ -75,7 +75,7 @@ namespace System.Management.Automation.Remoting
 
         /// <summary>
         /// Close the connection to the remote computer in an asynchronous manner.
-        /// Client side user can register an event handler with ConnectionClosed to minitor
+        /// Client side user can register an event handler with ConnectionClosed to monitor
         /// the connection state.
         /// </summary>
         public abstract void CloseAsync();
