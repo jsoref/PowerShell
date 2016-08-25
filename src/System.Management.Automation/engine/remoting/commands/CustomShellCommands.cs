@@ -4410,7 +4410,7 @@ $_ | Enable-PSSessionConfiguration -force $args[0] -sddl $args[1] -isSDDLSpecifi
 
             string qcCaptionMessage = StringUtil.Format(RemotingErrorIdStrings.EcsWSManQCCaption);
             string qcQueryMessage = StringUtil.Format(RemotingErrorIdStrings.EcsWSManQCQuery, setWSManConfigCommand);
-            string qcShoudProcessDesc = StringUtil.Format(RemotingErrorIdStrings.EcsWSManShouldProcessDesc, setWSManConfigCommand);
+            string qcShouldProcessDesc = StringUtil.Format(RemotingErrorIdStrings.EcsWSManShouldProcessDesc, setWSManConfigCommand);
             string setCaptionMessage = StringUtil.Format(RemotingErrorIdStrings.CSShouldProcessAction,
                 "Set-PSSessionConfiguration");
             string setQueryMessage = RemotingErrorIdStrings.EcsShouldProcessTarget;
@@ -4434,7 +4434,7 @@ $_ | Enable-PSSessionConfiguration -force $args[0] -sddl $args[1] -isSDDLSpecifi
                                                qcCaptionMessage,
                                                whatIf,
                                                confirm,
-                                               qcShoudProcessDesc,
+                                               qcShouldProcessDesc,
                                                setEnabledTarget,
                                                setEnabledAction,
                                                _skipNetworkProfileCheck,

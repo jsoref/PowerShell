@@ -895,7 +895,7 @@ namespace System.Management.Automation
             }
             catch (Exception)
             {
-                // this method shoud not throw exceptions; warn about any violations on checked builds and re-throw
+                // this method should not throw exceptions; warn about any violations on checked builds and re-throw
                 Diagnostics.Assert(false, "This method should not throw exceptions!");
                 throw;
             }
