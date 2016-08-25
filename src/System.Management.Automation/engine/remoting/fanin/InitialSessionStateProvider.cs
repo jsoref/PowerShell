@@ -975,7 +975,7 @@ namespace System.Management.Automation.Remoting
             new ConfigTypeEntry(FunctionDefinitions,            new ConfigTypeEntry.TypeValidationCallback(FunctionDefinitionsTypeValidationCallback)),
             new ConfigTypeEntry(GMSAAccount,                    new ConfigTypeEntry.TypeValidationCallback(StringTypeValidationCallback)),
             new ConfigTypeEntry(Guid,                           new ConfigTypeEntry.TypeValidationCallback(StringTypeValidationCallback)),
-            new ConfigTypeEntry(LanguageMode,                   new ConfigTypeEntry.TypeValidationCallback(LanugageModeValidationCallback)),
+            new ConfigTypeEntry(LanguageMode,                   new ConfigTypeEntry.TypeValidationCallback(LanguageModeValidationCallback)),
             new ConfigTypeEntry(ModulesToImport,                new ConfigTypeEntry.TypeValidationCallback(StringOrHashtableArrayTypeValidationCallback)),
             new ConfigTypeEntry(MountUserDrive,                 new ConfigTypeEntry.TypeValidationCallback(BooleanTypeValidationCallback)),
             new ConfigTypeEntry(PowerShellVersion,              new ConfigTypeEntry.TypeValidationCallback(StringTypeValidationCallback)),
@@ -1070,7 +1070,7 @@ namespace System.Management.Automation.Remoting
         /// <param name="cmdlet"></param>
         /// <param name="path"></param>
         /// <returns></returns>
-        private static bool LanugageModeValidationCallback(string key, object obj, PSCmdlet cmdlet, string path)
+        private static bool LanguageModeValidationCallback(string key, object obj, PSCmdlet cmdlet, string path)
         {
             string value = obj as string;
 

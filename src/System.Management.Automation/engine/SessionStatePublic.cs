@@ -386,7 +386,7 @@ namespace System.Management.Automation
     public enum PSLanguageMode
     {
         /// <summary>
-        /// All PowerShell langugage elements are available
+        /// All PowerShell language elements are available
         /// </summary>
         FullLanguage = 0,
 

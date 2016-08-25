@@ -1586,7 +1586,7 @@ int __cdecl
     // Change the thread user interface to a language that the
     // windows console can display. This is important as starting
     // from windows vista and later, the OS support thread user
-    // interface lanaguage separate from thread locale.
+    // interface language separate from thread locale.
     // Setting this will enable OS resource loader to load correct
     // resource that can display properly in a console window.
     // Note: If the language identifier is 0, the function always 

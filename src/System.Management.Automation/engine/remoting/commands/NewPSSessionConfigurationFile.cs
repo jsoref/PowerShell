@@ -285,7 +285,7 @@ namespace Microsoft.PowerShell.Commands
         private IDictionary _requiredGroups;
 
         /// <summary>
-        /// Languange mode
+        /// Language mode
         /// </summary>
         [Parameter()]
         public PSLanguageMode LanguageMode
