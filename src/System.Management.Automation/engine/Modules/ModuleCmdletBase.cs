@@ -5381,7 +5381,7 @@ namespace Microsoft.PowerShell.Commands
                     }
 
                     this.RemoveTypesAndFormatting(module.ExportedFormatFiles, module.ExportedTypeFiles);
-                    // reseting the help caches. This is needed as the help content cached is cached in process.
+                    // resetting the help caches. This is needed as the help content cached is cached in process.
                     // When a module is removed there is no need to cache the help content for the commands in
                     // the module. The HelpSystem is not designed to track per module help content...so resetting
                     // all of the cache. HelpSystem knows how to build this cache back when needed.
