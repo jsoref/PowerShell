@@ -3871,7 +3871,7 @@ namespace System.Management.Automation.Language
             if (dataStatementAst.CommandsAllowed.Count > 0)
             {
                 // If CommandsAllowed was specified, we need to check the language mode - the data section runs
-                // in restriced language mode and we don't want to allow disallowed commands to run if we were in
+                // in restricted language mode and we don't want to allow disallowed commands to run if we were in
                 // constrained language mode.
                 exprs.Add(
                     Expression.Call(
