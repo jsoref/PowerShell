@@ -3818,7 +3818,7 @@ namespace System.Management.Automation
         /// <summary>
         /// Process debugger or PowerShell command/script.
         /// </summary>
-        /// <param name="command">PowreShell command</param>
+        /// <param name="command">PowerShell command</param>
         /// <param name="output">Output collection</param>
         /// <returns>DebuggerCommandResults</returns>
         public override DebuggerCommandResults ProcessCommand(PSCommand command, PSDataCollection<PSObject> output)

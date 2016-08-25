@@ -350,7 +350,7 @@ namespace System.Management.Automation.Tracing
         Exception = 0xB002,
 
         /// <summary>
-        /// PoweShellObject
+        /// PowerShellObject
         /// </summary>
         PowerShellObject = 0xB003,
 
