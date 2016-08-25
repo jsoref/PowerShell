@@ -1935,10 +1935,10 @@ namespace System.Management.Automation.Remoting
             // Create the initial session state
             string initialSessionState = TryGetValue(_configHash, ConfigFileConstants.SessionType);
             SessionType sessionType = SessionType.Default;
-            bool cmdletVisibilityApplied = IsNonDefaultVisibiltySpecified(ConfigFileConstants.VisibleCmdlets);
-            bool functionVisiblityApplied = IsNonDefaultVisibiltySpecified(ConfigFileConstants.VisibleFunctions);
-            bool aliasVisibilityApplied = IsNonDefaultVisibiltySpecified(ConfigFileConstants.VisibleAliases);
-            bool providerVisibiltyApplied = IsNonDefaultVisibiltySpecified(ConfigFileConstants.VisibleProviders);
+            bool cmdletVisibilityApplied = IsNonDefaultVisibilitySpecified(ConfigFileConstants.VisibleCmdlets);
+            bool functionVisibilityApplied = IsNonDefaultVisibilitySpecified(ConfigFileConstants.VisibleFunctions);
+            bool aliasVisibilityApplied = IsNonDefaultVisibilitySpecified(ConfigFileConstants.VisibleAliases);
+            bool providerVisibilityApplied = IsNonDefaultVisibilitySpecified(ConfigFileConstants.VisibleProviders);
             bool processDefaultSessionStateVisibility = false;
 
             if (!String.IsNullOrEmpty(initialSessionState))
@@ -1965,8 +1965,8 @@ namespace System.Management.Automation.Remoting
                 processDefaultSessionStateVisibility = true;
             }
 
-            if (cmdletVisibilityApplied || functionVisiblityApplied || aliasVisibilityApplied || providerVisibiltyApplied ||
-                IsNonDefaultVisibiltySpecified(ConfigFileConstants.VisibleExternalCommands))
+            if (cmdletVisibilityApplied || functionVisibilityApplied || aliasVisibilityApplied || providerVisibilityApplied ||
+                IsNonDefaultVisibilitySpecified(ConfigFileConstants.VisibleExternalCommands))
             {
                 iss.DefaultCommandVisibility = SessionStateEntryVisibility.Private;
 
@@ -1982,7 +1982,7 @@ namespace System.Management.Automation.Remoting
             }
 
             // Add providers
-            if (providerVisibiltyApplied)
+            if (providerVisibilityApplied)
             {
                 string[] providers = TryGetStringArray(_configHash[ConfigFileConstants.VisibleProviders]);
 
@@ -2167,7 +2167,7 @@ namespace System.Management.Automation.Remoting
                 {
                     foreach (Hashtable function in functions)
                     {
-                        SessionStateFunctionEntry entry = CreateSessionStateFunctionEntry(function, functionVisiblityApplied);
+                        SessionStateFunctionEntry entry = CreateSessionStateFunctionEntry(function, functionVisibilityApplied);
 
                         if (entry != null)
                         {
@@ -2316,8 +2316,8 @@ namespace System.Management.Automation.Remoting
                 }
             }
 
-            // Now apply visibilty logic
-            if (cmdletVisibilityApplied || functionVisiblityApplied || aliasVisibilityApplied || providerVisibiltyApplied)
+            // Now apply visibility logic
+            if (cmdletVisibilityApplied || functionVisibilityApplied || aliasVisibilityApplied || providerVisibilityApplied)
             {
                 if (sessionType == SessionType.Default)
                 {
@@ -2723,7 +2723,7 @@ namespace System.Management.Automation.Remoting
         /// </summary>
         /// <param name="configFileKey"></param>
         /// <returns></returns>
-        private bool IsNonDefaultVisibiltySpecified(string configFileKey)
+        private bool IsNonDefaultVisibilitySpecified(string configFileKey)
         {
             if (_configHash.ContainsKey(configFileKey))
             {

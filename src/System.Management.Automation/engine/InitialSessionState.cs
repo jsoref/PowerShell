@@ -555,7 +555,7 @@ namespace System.Management.Automation.Runspaces
         }
 
         /// <summary>
-        /// Create a session state command entry instance with the specified visiblity.
+        /// Create a session state command entry instance with the specified visibility.
         /// </summary>
         /// <param name="path">The path to the script</param>
         /// <param name="visibility">Visibility of the script.</param>
@@ -620,7 +620,7 @@ namespace System.Management.Automation.Runspaces
         /// <param name="name">Name of the alias</param>
         /// <param name="definition">The name of the command it resolves to</param>
         /// <param name="description">A description of the purpose of the alias.</param>
-        /// <param name="options">Options defining the scope visiblity, readonly and constant</param>
+        /// <param name="options">Options defining the scope visibility, readonly and constant</param>
         public SessionStateAliasEntry(string name, string definition, string description, ScopedItemOptions options)
             : base(name, SessionStateEntryVisibility.Public)
         {
@@ -636,7 +636,7 @@ namespace System.Management.Automation.Runspaces
         /// <param name="name">Name of the alias</param>
         /// <param name="definition">The name of the command it resolves to</param>
         /// <param name="description">A description of the purpose of the alias.</param>
-        /// <param name="options">Options defining the scope visiblity, readonly and constant</param>
+        /// <param name="options">Options defining the scope visibility, readonly and constant</param>
         /// <param name="visibility"></param>
         internal SessionStateAliasEntry(string name, string definition, string description,
             ScopedItemOptions options, SessionStateEntryVisibility visibility)
@@ -669,7 +669,7 @@ namespace System.Management.Automation.Runspaces
         public string Description { get; } = String.Empty;
 
         /// <summary>
-        /// Options controling scope visiblity and setability for this entry.
+        /// Options controling scope visibility and setability for this entry.
         /// </summary>
         public ScopedItemOptions Options { get; } = ScopedItemOptions.None;
     }
@@ -696,7 +696,7 @@ namespace System.Management.Automation.Runspaces
         /// "*", then any path is permitted.
         /// </summary>
         /// <param name="path">The full path to the application</param>
-        /// <param name="visibility">Sets the external visibilty of the path.</param>
+        /// <param name="visibility">Sets the external visibility of the path.</param>
         internal SessionStateApplicationEntry(string path, SessionStateEntryVisibility visibility)
             : base(path, visibility)
         {
@@ -823,7 +823,7 @@ namespace System.Management.Automation.Runspaces
         internal ScriptBlock ScriptBlock { get; set; }
 
         /// <summary>
-        /// Options controling scope visiblity and setability for this entry.
+        /// Options controling scope visibility and setability for this entry.
         /// </summary>
         public ScopedItemOptions Options { get; } = ScopedItemOptions.None;
 
@@ -918,7 +918,7 @@ namespace System.Management.Automation.Runspaces
         internal WorkflowInfo WorkflowInfo { get; set; }
 
         /// <summary>
-        /// Options controling scope visiblity and setability for this entry.
+        /// Options controling scope visibility and setability for this entry.
         /// </summary>
         public ScopedItemOptions Options { get; } = ScopedItemOptions.None;
 
