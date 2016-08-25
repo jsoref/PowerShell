@@ -267,7 +267,7 @@ namespace System.Management.Automation.Remoting
         }
 
         /// <summary>
-        /// Temporaritly suspends connection to a connected remote session
+        /// Temporarily suspends connection to a connected remote session
         /// </summary>
         public override void DisconnectAsync()
         {
