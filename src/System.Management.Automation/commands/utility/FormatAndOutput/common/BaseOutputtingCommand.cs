@@ -275,7 +275,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
             }
             else if (o is FormatStartData)
             {
-                // when encountering FormatStartDate out of sequemce,
+                // when encountering FormatStartDate out of sequence,
                 // pretend that the previous formatting directives were properly closed
                 if (_currentFormattingState == FormattingState.InsideGroup)
                 {
