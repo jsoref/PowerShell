@@ -347,7 +347,7 @@
   <data name="InstallingPackage" xml:space="preserve">
     <value>Installing a package from '{0}'</value>
   </data>
-  <data name="MininumVersonCheck" xml:space="preserve">
+  <data name="MinimumVersonCheck" xml:space="preserve">
     <value>Provider '{0}' is not used to perform this operation because it requires a minimum version of the PackageManagement module to be '{1}', but the current version of the PackageManagement module is '{2}'.</value>
   </data>
   <data name="NumberOfPackagesRecevied" xml:space="preserve">

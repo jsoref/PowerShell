@@ -1185,7 +1185,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Get mininum indentation of a paragraph
+        /// Get minimum indentation of a paragraph
         /// </summary>
         /// <param name="lines"></param>
         /// <returns></returns>

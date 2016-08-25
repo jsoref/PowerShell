@@ -1268,7 +1268,7 @@ All WinRM sessions connected to Windows PowerShell session configurations, such 
   <data name="InvalidIdleTimeoutOption" xml:space="preserve">
     <value>The specified IdleTimeout session option {0} (seconds) is not a valid period.  Specify an IdleTimeout value that is greater than or equal to the minimum allowed {1} (seconds).</value>
     <comment>{0} is a placeholder for the provided idletimeout
-{1} is a placeholder for the miniumum allowed idletimeout value</comment>
+{1} is a placeholder for the minimum allowed idletimeout value</comment>
   </data>
   <data name="DISCVisibilityAndAutoLoadingCannotBeBothSpecified" xml:space="preserve">
     <value>The cmdlet "{0}" or the alias "{1}" cannot be present when "{2}","{3}","{4}" or "{5}" keys are specified in the session configuration file.</value>

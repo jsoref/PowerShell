@@ -15,7 +15,7 @@ Describe "Get-Random DRT Unit Tests" -Tags "CI" {
         @{ Name = 'maximum is Int64.MaxValue'; Maximum = ([int64]::MaxValue); Minimum = $null; GreaterThan = ([int64]-1); LessThan = ([int64]::MaxValue); Type = 'System.Int64' }
         @{ Name = 'maximum is a 64-bit integer'; Maximum = ([int64]100); Minimum = $null; GreaterThan = ([int64]-1); LessThan = ([int64]100); Type = 'System.Int64' }
         @{ Name = 'maximum set to a large integer greater than int32.MaxValue'; Maximum = 100000000000; Minimum = $null; GreaterThan = ([int64]-1); LessThan = ([int64]100000000000); Type = 'System.Int64' }
-        @{ Name = 'maximum set to 0, Minumum set to a negative 64-bit integer'; Maximum = ([int64]0); Minimum = ([int64]-100); GreaterThan = ([int64]-101); LessThan = ([int64]0); Type = 'System.Int64' }
+        @{ Name = 'maximum set to 0, Minimum set to a negative 64-bit integer'; Maximum = ([int64]0); Minimum = ([int64]-100); GreaterThan = ([int64]-101); LessThan = ([int64]0); Type = 'System.Int64' }
         @{ Name = 'maximum set to positive 64-bit number, min set to negative 64-bit number'; Maximum = ([int64]100); Minimum = ([int64]-100); GreaterThan = ([int64]-101); LessThan = ([int64]100); Type = 'System.Int64' }
         @{ Name = 'both are negative 64-bit number'; Maximum = ([int64]-100); Minimum = ([int64]-200); GreaterThan = ([int64]-201); LessThan = ([int64]-100); Type = 'System.Int64' }
         @{ Name = 'both are negative 64-bit number with parentheses'; Maximum = ([int64](-100)); Minimum = ([int64](-200)); GreaterThan = ([int64]-201); LessThan = ([int64]-100); Type = 'System.Int64' }

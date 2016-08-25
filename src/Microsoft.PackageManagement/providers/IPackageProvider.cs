@@ -115,7 +115,7 @@ namespace Microsoft.PackageManagement.Internal.Providers {
         ///     that match sources (either by name or location) in the list of specified strings.
         /// </summary>
         /// <param name="name">matches against the name of a package. If this is null or empty, should return all matching packages.</param>
-        /// <param name="requiredVersion">an exact version of the package to match. If this is specified, miniumum and maximum should be ignored.</param>
+        /// <param name="requiredVersion">an exact version of the package to match. If this is specified, minimum and maximum should be ignored.</param>
         /// <param name="minimumVersion">the minimum version of the package to match. If requiredVersion is specified, this should be ignored.</param>
         /// <param name="maximumVersion">the maximum version of the package to match. If requiredVersion is specified, this should be ignored.</param>
         /// <param name="id">the batch id. If the provider supports batch searches, and this is non-zero,
@@ -226,7 +226,7 @@ namespace Microsoft.PackageManagement.Internal.Providers {
         /// Returns Software Identities for installed packages
         /// </summary>
         /// <param name="name">matches against the name of a package. If this is null or empty, should return all matching packages.</param>
-        /// <param name="requiredVersion">an exact version of the package to match. If this is specified, miniumum and maximum should be ignored.</param>
+        /// <param name="requiredVersion">an exact version of the package to match. If this is specified, minimum and maximum should be ignored.</param>
         /// <param name="minimumVersion">the minimum version of the package to match. If requiredVersion is specified, this should be ignored.</param>
         /// <param name="maximumVersion">the maximum version of the package to match. If requiredVersion is specified, this should be ignored.</param>
         /// <param name="requestObject">The request context passed to the provider.</param>

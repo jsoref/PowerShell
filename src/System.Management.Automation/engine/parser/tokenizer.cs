@@ -1497,7 +1497,7 @@ namespace System.Management.Automation.Language
                     }
                     else
                     {
-                        // Otherwise, the edit distance is the minumum
+                        // Otherwise, the edit distance is the minimum
                         // of doing an addition of a character, a deletion
                         // of a character, or a substitution of a character
                         distanceMap[row, column] = Math.Min(

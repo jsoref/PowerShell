@@ -198,7 +198,7 @@ namespace Microsoft.PackageManagement.Internal.Api {
         /// </summary>
         /// <param name="requestor">the name of the provider or component requesting the provider.</param>
         /// <param name="providerName">the name of the requested provider</param>
-        /// <param name="providerVersion">the miniumum version of the provider required</param>
+        /// <param name="providerVersion">the minimum version of the provider required</param>
         /// <param name="providerType"></param>
         /// <param name="location">the remote location that the provider is being bootstrapped from</param>
         /// <param name="destination">the target folder where the provider is to be installed.</param>
