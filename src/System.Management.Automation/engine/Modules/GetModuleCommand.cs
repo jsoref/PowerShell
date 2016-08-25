@@ -62,7 +62,7 @@ namespace Microsoft.PowerShell.Commands
         public ModuleSpecification[] FullyQualifiedName { get; set; }
 
         /// <summary>
-        /// If specified, all loaded modules should be returne, otherwise only the visible
+        /// If specified, all loaded modules should be returned, otherwise only the visible
         /// modules should be returned.
         /// </summary>
         [Parameter(ParameterSetName = ParameterSet_Loaded)]

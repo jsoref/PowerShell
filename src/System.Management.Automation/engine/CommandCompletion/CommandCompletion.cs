@@ -1167,7 +1167,7 @@ namespace System.Management.Automation
             /// </param>
             /// <param name="closingQuote">
             /// Receives the quote character that would be needed to end the sentence with a balanced pair of quotes.  For 
-            /// instance, if sentence is "foo then " is returned, if sentence if "foo" then nothing is resturned, if sentence is
+            /// instance, if sentence is "foo then " is returned, if sentence if "foo" then nothing is returned, if sentence is
             /// 'foo then ' is returned, if sentence is 'foo' then nothing is returned.
             /// </param>
             /// <returns>The last word located, or the empty string if no word could be found.</returns>

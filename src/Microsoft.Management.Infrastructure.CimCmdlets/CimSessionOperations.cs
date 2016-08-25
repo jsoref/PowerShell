@@ -951,7 +951,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
                 }
                 else
                 {
-                    //CimSession will be retunred as part of TestConnection
+                    //CimSession will be returned as part of TestConnection
                     this.cimTestSession.TestCimSession(computerName, proxy); 
                 }
             }
