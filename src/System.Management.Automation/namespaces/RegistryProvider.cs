@@ -4877,7 +4877,7 @@ namespace Microsoft.PowerShell.Commands
         /// </summary>
         /// <param name="key">RegistryKey containing property</param>
         /// <param name="valueName">Property for which RegistryValueKind is requested</param>
-        /// <returns>RegistryValueKind of the property. If the property does not exit,returns RegsitryValueKind.Unknown</returns>
+        /// <returns>RegistryValueKind of the property. If the property does not exit,returns RegistryValueKind.Unknown</returns>
         private static RegistryValueKind GetValueKindForProperty(IRegistryWrapper key, string valueName)
         {
             try
