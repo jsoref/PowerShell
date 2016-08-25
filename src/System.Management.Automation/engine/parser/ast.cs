@@ -2661,7 +2661,7 @@ namespace System.Management.Automation.Language
             // REVIEW: should old visitors completely skip the attributes and
             // bodies of methods, or should they get a chance to see them.  If
             // we want to skip them, the code below needs to move up into the
-            // above test 'vistitor2 != null'.
+            // above test 'visitor2 != null'.
             if (action == AstVisitAction.Continue)
             {
                 for (int index = 0; index < Attributes.Count; index++)
