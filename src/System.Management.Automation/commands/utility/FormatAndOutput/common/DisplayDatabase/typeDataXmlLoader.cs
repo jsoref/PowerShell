@@ -586,7 +586,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
                 TableColumnHeaderDefinition chd = new TableColumnHeaderDefinition();
 
                 // Contains:
-                //   Label     --- Lable     cardinality 0..1
+                //   Label     --- Label     cardinality 0..1
                 //   Width     --- Width     cardinality 0..1
                 //   Alignment --- Alignment cardinality 0..1
                 if (!String.IsNullOrEmpty(header.Label))
