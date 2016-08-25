@@ -937,7 +937,7 @@ namespace System.Management.Automation.Remoting.Client
 
         #endregion
 
-        #region Abstract / Virtural methods
+        #region Abstract / Virtual methods
 
         internal abstract void CreateAsync();
 
