@@ -148,7 +148,7 @@ namespace System.Management.Automation
 #if !CORECLR // .NET Framework Version is not applicable to CoreCLR
         /// <summary>
         /// Detects the installation of Framework Versions 1.1, 2.0, 3.0 and 3.5 and 4.0 through
-        /// the official registry instalation keys.
+        /// the official registry installation keys.
         /// </summary>
         internal static class FrameworkRegistryInstallation
         {
