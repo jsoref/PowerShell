@@ -159,7 +159,7 @@ namespace Microsoft.PowerShell.Activities
         /// <summary>
         /// Validates the contents of the script block for this command.
         /// </summary>
-        /// <param name="metadata">Metatdata for this activity</param>
+        /// <param name="metadata">Metadata for this activity</param>
         protected override void CacheMetadata(NativeActivityMetadata metadata)
         {
             base.CacheMetadata(metadata);

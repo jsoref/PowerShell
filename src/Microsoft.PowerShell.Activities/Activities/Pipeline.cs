@@ -101,7 +101,7 @@ namespace Microsoft.PowerShell.Activities
                 return;
             }
 #endif
-            // Adding variables into the CacheMetatdata of pipeline activity.
+            // Adding variables into the CacheMetadata of pipeline activity.
             metadata.AddImplementationVariable(this.lastIndexHint);
 
             // We use a GUID here to make this name hard to guess. It's not a security issue,
@@ -118,7 +118,7 @@ namespace Microsoft.PowerShell.Activities
                 appendOutput = true;
             }
 
-            // Adding activities into the CacheMetatdata of pipeline activity.
+            // Adding activities into the CacheMetadata of pipeline activity.
             if (count == 1)
             {
 
