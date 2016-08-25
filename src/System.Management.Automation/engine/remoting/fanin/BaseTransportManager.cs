@@ -1287,7 +1287,7 @@ namespace System.Management.Automation.Remoting.Server
                 // 1. The value of "name" property is huge 50kb and cannot fit in one fragment (with fragment size 32kb)   
                 // 2. The value of "Verbose" is actually writing a progress record
                 // 3. The value of "zname" property is also huge
-                // 4. Notice the ascending order of property names. This is because seralizer seralizes properties in sort order
+                // 4. Notice the ascending order of property names. This is because serializer serializes properties in sort order
                 // ******************** End of repro ******************************************
                 // To fix the issue, I am creating a Queue and enqueuing the data objects if we are already serializaing another data object
                 // Notice this is in lock() above. An object is serialized in its entirety in one thread. So, in my example above "name",

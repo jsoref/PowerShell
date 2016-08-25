@@ -1634,7 +1634,7 @@ namespace System.Management.Automation
         private ReadOnlyCollection<int> _pipelineIterationInfo = Utils.EmptyReadOnlyCollection<int>();
 
         /// <summary>
-        /// Whether to serizalize the InvocationInfo during remote calls
+        /// Whether to serialize the InvocationInfo during remote calls
         /// </summary>
         internal bool SerializeExtendedInfo
         {

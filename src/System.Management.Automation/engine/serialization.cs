@@ -7209,7 +7209,7 @@ namespace Microsoft.PowerShell
         /// of the DebuggerStopEventArgs type.
         /// </summary>
         /// <param name="instance">InvocationInfo instance.</param>
-        /// <returns>PSObject containing seralized InvocationInfo.</returns>
+        /// <returns>PSObject containing serialized InvocationInfo.</returns>
         public static PSObject GetInvocationInfo(PSObject instance)
         {
             if (instance == null)
