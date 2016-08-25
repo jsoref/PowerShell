@@ -811,7 +811,7 @@ namespace System.Management.Automation.Remoting
         /// Data to process.
         /// </param>
         /// <param name="priorityType">
-        /// Priorty stream this data belongs to.
+        /// Priority stream this data belongs to.
         /// </param>
         /// <param name="callback">
         /// Callback to call once a complete deserialized object is available.
