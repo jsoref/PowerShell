@@ -1254,7 +1254,7 @@ function Copy-MappedFiles {
             throw "$pslMonadRoot is not a valid folder"
         }
 
-        # Do some intelligence to prevent shouting us in the foot with CL management
+        # Do some intelligence to prevent shooting us in the foot with CL management
 
         # finding base-line CL
         $cl = git --git-dir="$PSScriptRoot/.git" tag | % {if ($_ -match 'SD.(\d+)$') {[int]$Matches[1]} } | Sort-Object -Descending | Select-Object -First 1
