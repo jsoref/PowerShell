@@ -1415,7 +1415,7 @@ namespace System.Management.Automation
                         // We only do this once, as the error will always be the same for a given certificate.
                         if (error != null)
                         {
-                            // If we got an error resoving the encryption certificate, log a warning and continue
+                            // If we got an error resolving the encryption certificate, log a warning and continue
                             // logging the (unencrypted) message anyways. Logging trumps protected logging -
                             // being able to detect that an attacker has compromised a box outweighs the danger of the
                             // attacker seeing potentially sensitive data. Because if they aren't detected, then
