@@ -332,7 +332,7 @@ namespace System.Management.Automation.Remoting
             {
             }
 
-            // if we are here, that means we are unble to load the type specified
+            // if we are here, that means we are unable to load the type specified
             // in the config xml.. notify the same.
             throw PSTraceSource.NewArgumentException("typeToLoad", RemotingErrorIdStrings.UnableToLoadType,
                     EndPointConfigurationTypeName, ConfigurationDataFromXML.INITPARAMETERSTOKEN);
@@ -587,7 +587,7 @@ namespace System.Management.Automation.Remoting
                 {
                 }
 
-                // if we are here, that means we are unble to load the type specified
+                // if we are here, that means we are unable to load the type specified
                 // in the config xml.. notify the same.
                 throw PSTraceSource.NewArgumentException("typeToLoad", RemotingErrorIdStrings.UnableToLoadType,
                         typeToLoad, ConfigurationDataFromXML.INITPARAMETERSTOKEN);

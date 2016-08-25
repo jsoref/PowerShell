@@ -451,7 +451,7 @@ namespace System.Management.Automation.Runspaces
             catch (PSArgumentException ae)
             {
                 string message = ConsoleInfoErrorStrings.CannotLoadDefaults;
-                // If we were unalbe to load default mshsnapins throw PSSnapInException
+                // If we were unable to load default mshsnapins throw PSSnapInException
 
                 s_mshsnapinTracer.TraceError(message);
 
@@ -460,7 +460,7 @@ namespace System.Management.Automation.Runspaces
             catch (System.Security.SecurityException se)
             {
                 string message = ConsoleInfoErrorStrings.CannotLoadDefaults;
-                // If we were unalbe to load default mshsnapins throw PSSnapInException
+                // If we were unable to load default mshsnapins throw PSSnapInException
 
                 s_mshsnapinTracer.TraceError(message);
 
