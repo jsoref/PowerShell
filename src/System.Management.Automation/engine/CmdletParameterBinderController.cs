@@ -3358,7 +3358,7 @@ namespace System.Management.Automation
             {
                 // Reset the default values
                 // This prevents the last pipeline object from being bound during EndProcessing
-                // if it failed some post binding varification step.
+                // if it failed some post binding verification step.
                 this.RestoreDefaultParameterValues(ParametersBoundThroughPipelineInput);
 
                 // Let the parameter binding errors propagate out
@@ -3374,7 +3374,7 @@ namespace System.Management.Automation
             {
                 // Reset the default values
                 // This prevents the last pipeline object from being bound during EndProcessing
-                // if it failed some post binding varification step.
+                // if it failed some post binding verification step.
                 this.RestoreDefaultParameterValues(ParametersBoundThroughPipelineInput);
 
                 throw;
@@ -3384,7 +3384,7 @@ namespace System.Management.Automation
             {
                 // Reset the default values
                 // This prevents the last pipeline object from being bound during EndProcessing
-                // if it failed some post binding varification step.
+                // if it failed some post binding verification step.
                 this.RestoreDefaultParameterValues(ParametersBoundThroughPipelineInput);
             }
             return result;
