@@ -258,7 +258,7 @@ namespace System.Management.Automation.Host
         /// </summary>
         /// <remarks>
         /// 
-        /// Typicalled called by the engine in response to some user action that resumes a suspended pipeline, such as with the
+        /// Typically called by the engine in response to some user action that resumes a suspended pipeline, such as with the
         /// 'continue-command' intrinsic cmdlet. Before calling this method, the engine should clear out the loop-specific 
         /// variables that were set when the loop was created.
         /// 
