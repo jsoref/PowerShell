@@ -177,7 +177,7 @@ namespace System.Management.Automation.Interpreter
     }
 
     /// <summary>
-    /// The re-throw instrcution will throw this exception
+    /// The re-throw instruction will throw this exception
     /// </summary>
     internal sealed class RethrowException : SystemException
     {
