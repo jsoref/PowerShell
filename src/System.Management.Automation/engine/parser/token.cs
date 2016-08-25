@@ -212,7 +212,7 @@ namespace System.Management.Automation.Language
         /// <summary>The subtraction assignment operator '-='.</summary>
         MinusEquals = 44,
 
-        /// <summary>The multiplcation assignment operator '*='.</summary>
+        /// <summary>The multiplication assignment operator '*='.</summary>
         MultiplyEquals = 45,
 
         /// <summary>The division assignment operator '/='.</summary>
