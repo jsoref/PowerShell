@@ -78,7 +78,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets {
                     // the user gave us provider names that we're not able to resolve.
 
                     if (IsInvocation) {
-                        // and we're in an actual cmdlet invocaton.
+                        // and we're in an actual cmdlet invocation.
                         QueueHeldMessage(() => Error(Constants.Errors.UnknownProviders, ProviderName.JoinWithComma()));
                         IsFailingEarly = true;
                     }
