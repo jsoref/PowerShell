@@ -482,7 +482,7 @@ namespace System.Management.Automation.Internal.Host
         /// </summary>
         /// <param name="informationalBuffers">
         /// Buffers to which Debug, Verbose, Warning, Progress, Information messages
-        /// will be writtern to.
+        /// will be written to.
         /// </param>
         /// <remarks>
         /// This method is not thread safe. Caller should make sure of the
