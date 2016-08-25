@@ -649,7 +649,7 @@ namespace System.Management.Automation.Runspaces
             PSHost host,
             TypeTable typeTable)
         {
-            // Disconnect-Connect semantics are currently only suppored in WSMan transport.
+            // Disconnect-Connect semantics are currently only supported in WSMan transport.
             if (!(connectionInfo is WSManConnectionInfo))
             {
                 throw new NotSupportedException();

@@ -607,7 +607,7 @@ namespace System.Management.Automation.Remoting.Client
 
         #region WSManData
         /// <summary>
-        /// types of suppored WSMan data.
+        /// types of supported WSMan data.
         /// PowerShell uses only Text and DWORD (in some places).
         /// </summary>
         internal enum WSManDataType : uint
