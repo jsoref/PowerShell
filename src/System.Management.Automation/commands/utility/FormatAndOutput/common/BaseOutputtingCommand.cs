@@ -1124,7 +1124,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
                 // set the hard wider default, to be used if no other info is available
                 int itemsPerRow = 2;
 
-                // get the header info and the wiew hint
+                // get the header info and the view hint
                 WideFormattingHint hint = this.InnerCommand.RetrieveFormattingHint() as WideFormattingHint;
 
                 // give a preference to the hint, if there
