@@ -3148,7 +3148,7 @@ namespace System.Management.Automation.Runspaces
 
         private string MakeUserNamePath()
         {
-            // Use the user name passsed to initial session state if available, or
+            // Use the user name passed to initial session state if available, or
             // otherwise use the current user name.
             var userName = (!string.IsNullOrEmpty(this.UserDriveUserName)) ?
                 this.UserDriveUserName :
