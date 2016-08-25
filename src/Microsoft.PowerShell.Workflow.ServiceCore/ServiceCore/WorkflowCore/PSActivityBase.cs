@@ -5933,7 +5933,7 @@ namespace Microsoft.PowerShell.Activities
         /// <summary>
         /// Get all additional extensions.
         /// </summary>
-        /// <returns>Retruns no extensions.</returns>
+        /// <returns>Returns no extensions.</returns>
         public IEnumerable<object> GetAdditionalExtensions()
         {
             return null;

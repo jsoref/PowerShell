@@ -8898,7 +8898,7 @@ namespace System.Management.Automation.Internal
             return $op
         }}
 
-        # Retuns a hashtable with the following members:
+        # Returns a hashtable with the following members:
         #    BytesWritten - number of bytes written to an alternate file stream
         #
         function PSCopyFileAlternateStreamToRemoteSession

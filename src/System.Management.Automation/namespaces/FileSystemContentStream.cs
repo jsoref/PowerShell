@@ -1469,7 +1469,7 @@ namespace Microsoft.PowerShell.Commands
                 // The BufferSize will be a multiple of 4, so we can just read toRead number of bytes
                 // if the current file is encoded by any of these formatting
 
-                // If IsSignleByteCharacterSet() reutrns true, we are sure that the given encoding is OEM 
+                // If IsSignleByteCharacterSet() returns true, we are sure that the given encoding is OEM 
                 // or Default, and it is SBCS(single byte character set) code page -- one byte per character
                 _currentPosition = _stream.Position;
                 _byteCount = _stream.Read(_byteBuff, 0, toRead);

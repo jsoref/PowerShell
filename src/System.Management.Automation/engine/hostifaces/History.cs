@@ -245,7 +245,7 @@ namespace Microsoft.PowerShell.Commands
         #region ICloneable Members
 
         /// <summary>
-        /// Retuns a clone of this object
+        /// Returns a clone of this object
         /// </summary>
         /// <returns></returns>
         public HistoryInfo Clone()

@@ -227,7 +227,7 @@ namespace System.Management.Automation
         public bool IsDefault { get; }
 
         /// <summary>
-        /// Retuns applicationbase for mshsnapin
+        /// Returns applicationbase for mshsnapin
         /// </summary>
         public string ApplicationBase { get; }
 
