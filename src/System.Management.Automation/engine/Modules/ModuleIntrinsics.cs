@@ -862,7 +862,7 @@ namespace System.Management.Automation
             else // The running powershell is Full PS or inbox Core PS
             {
                 // If there is no personal path key, then if the env variable doesn't match the system variable,
-                // the user modified it somewhere, else prepend the default personel module path
+                // the user modified it somewhere, else prepend the default personal module path
                 if (hklmMachineModulePath != null) // EVT.Machine exists
                 {
                     if (hkcuUserModulePath == null) // EVT.User does Not exist
