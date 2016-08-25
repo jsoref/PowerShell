@@ -110,7 +110,7 @@ namespace System.Management.Automation.Tracing
             private AsyncCallback asyncCallback;
 
             /// <summary>
-            /// parantActivityId
+            /// parentActivityId
             /// </summary>
             protected readonly Guid parentActivityId;
             private readonly EtwActivity tracer;
