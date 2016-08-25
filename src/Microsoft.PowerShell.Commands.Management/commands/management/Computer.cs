@@ -6250,7 +6250,7 @@ $result
         }
 
         /// <summary>
-        /// To Reset a passowrd for a computer in domain.
+        /// To Reset a password for a computer in domain.
         /// </summary>
         [DllImport("netapi32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
         internal static extern int I_NetLogonControl2(

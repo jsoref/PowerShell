@@ -572,7 +572,7 @@ namespace Microsoft.PowerShell.Commands
                 }
                 finally
                 {
-                    // Clear the passward in the memory.
+                    // Clear the password in the memory.
                     if (passwd != null)
                     {
                         Array.Clear(passwd, 0, passwd.Length - 1);
@@ -7061,7 +7061,7 @@ namespace Microsoft.PowerShell.Commands
             /// The The netResource structure contains information 
             /// about a network resource.</param>
             /// <param name="password">
-            /// The passward used to get connected to network resource.
+            /// The password used to get connected to network resource.
             /// </param>
             /// <param name="username">
             /// The username used to get connected to network resource.
