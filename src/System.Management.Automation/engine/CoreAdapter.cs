@@ -4996,7 +4996,7 @@ namespace System.Management.Automation
 
 
         /// <summary>
-        /// Auxiliary in GetProperty to perform case sensitive and case insensitve searches
+        /// Auxiliary in GetProperty to perform case sensitive and case insensitive searches
         /// in the child nodes
         /// </summary>
         /// <param name="obj">XmlNode to extract property from</param>
