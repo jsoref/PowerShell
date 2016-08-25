@@ -355,7 +355,7 @@ namespace System.Management.Automation.Remoting.Client
             }
 
             /// <summary>
-            /// gets a structure represenation (used for marshalling)
+            /// gets a structure representation (used for marshalling)
             /// </summary>
             internal WSManUserNameCredentialStruct CredentialStruct
             {
@@ -2104,7 +2104,7 @@ namespace System.Management.Automation.Remoting.Client
             }
 
             /// <summary>
-            /// Managed represenation of WSMAN_SENDER_DETAILS
+            /// Managed representation of WSMAN_SENDER_DETAILS
             /// </summary>
             [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
             private struct WSManSenderDetailsInternal

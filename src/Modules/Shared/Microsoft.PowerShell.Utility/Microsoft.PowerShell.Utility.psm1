@@ -224,7 +224,7 @@ function Format-Hex
         $inputStreamArray = [System.Collections.ArrayList]::New()
         <############################################################################################ 
         # The ConvertToHexadecimalHelper is a helper method used to fetch unicode bytes from the 
-        # input data and display the hexadecimal representaion of the of the input data in bytes.
+        # input data and display the hexadecimal representation of the of the input data in bytes.
         ############################################################################################>
         function ConvertToHexadecimalHelper
         {
@@ -236,7 +236,7 @@ function Format-Hex
             )
 
             # This section is used to display the hexadecimal 
-            # representaion of the of the input data in bytes.
+            # representation of the of the input data in bytes.
             if($inputBytes -ne $null)
             {
                 $byteCollectionObject =  [Microsoft.PowerShell.Commands.ByteCollection]::new($offset, $inputBytes, $path)

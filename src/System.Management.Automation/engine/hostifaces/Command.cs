@@ -874,7 +874,7 @@ namespace System.Management.Automation.Runspaces
         }
 
         /// <summary>
-        /// Gets the string represenation of the command collection to be used for history.
+        /// Gets the string representation of the command collection to be used for history.
         /// </summary>
         /// <returns>
         /// string representing the command(s)

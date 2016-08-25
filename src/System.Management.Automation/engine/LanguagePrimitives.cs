@@ -1447,7 +1447,7 @@ namespace System.Management.Automation
         /// If the string to convert is null or empty then the function returns "[object]" as the default typeless type.
         /// </summary>
         /// <param name="typeName">The typename string to convert.</param>
-        /// <returns>The equivalent PowerShell representatin of that type.</returns>
+        /// <returns>The equivalent PowerShell representation of that type.</returns>
         public static string ConvertTypeNameToPSTypeName(string typeName)
         {
             if (string.IsNullOrWhiteSpace(typeName))
