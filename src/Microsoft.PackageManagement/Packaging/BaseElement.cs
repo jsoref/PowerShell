@@ -21,7 +21,7 @@ namespace Microsoft.PackageManagement.Internal.Packaging {
 
     /// <summary>
     ///     The base element that is common to all elements in a Swidtag.
-    ///     Swidtag classes are intended to be constructed, but are not mutatable
+    ///     Swidtag classes are intended to be constructed, but are not mutable
     ///     (ie, can't be created and have values modified or removed)
     /// </summary>
     public class BaseElement {
