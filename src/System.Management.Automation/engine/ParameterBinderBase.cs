@@ -1479,7 +1479,7 @@ namespace System.Management.Automation
         /// </exception>
         /// 
         [SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode")]
-        [SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Consider Simplyfing it")]
+        [SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Consider Simplifying it")]
         private object EncodeCollection(
             CommandParameterInternal argument,
             string parameterName,
