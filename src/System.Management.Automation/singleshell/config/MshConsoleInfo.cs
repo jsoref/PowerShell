@@ -21,7 +21,7 @@ namespace System.Management.Automation.Runspaces
     /// 2. Data values for the content represented by Console file. Later this data
     /// is used by other components ( MshConsoleInfo ) to construct Monad Types ( like
     /// PSSnapInInfo ).
-    /// 3. Owns responsibilty to read/write Files.
+    /// 3. Owns responsibility to read/write Files.
     /// 
     /// Risk:
     /// File Acces related security issues.

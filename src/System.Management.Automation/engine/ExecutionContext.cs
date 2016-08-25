@@ -237,7 +237,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// The AppDomain currently being used for module analysis.  It should only be created if needed,
-        /// but various callers need to take responsbility for unloading the domain via
+        /// but various callers need to take responsibility for unloading the domain via
         /// the TakeResponsibilityForModuleAnalysisAppDomain.
         /// </summary>
         internal AppDomain AppDomainForModuleAnalysis { get; set; }
