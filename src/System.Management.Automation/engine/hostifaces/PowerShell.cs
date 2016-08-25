@@ -2212,7 +2212,7 @@ namespace System.Management.Automation
         /// <exception cref="System.Security.SecurityException">
         /// A CLR security violation occurred.  Typically, this happens
         /// because the current CLR permissions do not allow adequate
-        /// reflextion access to a cmdlet assembly.
+        /// reflection access to a cmdlet assembly.
         /// </exception>
         /// <exception cref="ThreadAbortException">
         /// The thread in which the command was executing was aborted.
@@ -2274,7 +2274,7 @@ namespace System.Management.Automation
         /// <exception cref="System.Security.SecurityException">
         /// A CLR security violation occurred.  Typically, this happens
         /// because the current CLR permissions do not allow adequate
-        /// reflextion access to a cmdlet assembly.
+        /// reflection access to a cmdlet assembly.
         /// </exception>
         /// <exception cref="ThreadAbortException">
         /// The thread in which the command was executing was aborted.
@@ -2339,7 +2339,7 @@ namespace System.Management.Automation
         /// <exception cref="System.Security.SecurityException">
         /// A CLR security violation occurred.  Typically, this happens
         /// because the current CLR permissions do not allow adequate
-        /// reflextion access to a cmdlet assembly.
+        /// reflection access to a cmdlet assembly.
         /// </exception>
         /// <exception cref="ThreadAbortException">
         /// The thread in which the command was executing was aborted.
@@ -2401,7 +2401,7 @@ namespace System.Management.Automation
         /// <exception cref="System.Security.SecurityException">
         /// A CLR security violation occurred.  Typically, this happens
         /// because the current CLR permissions do not allow adequate
-        /// reflextion access to a cmdlet assembly.
+        /// reflection access to a cmdlet assembly.
         /// </exception>
         /// <exception cref="ThreadAbortException">
         /// The thread in which the command was executing was aborted.
@@ -2467,7 +2467,7 @@ namespace System.Management.Automation
         /// <exception cref="System.Security.SecurityException">
         /// A CLR security violation occurred.  Typically, this happens
         /// because the current CLR permissions do not allow adequate
-        /// reflextion access to a cmdlet assembly.
+        /// reflection access to a cmdlet assembly.
         /// </exception>
         /// <exception cref="ThreadAbortException">
         /// The thread in which the command was executing was aborted.
@@ -2534,7 +2534,7 @@ namespace System.Management.Automation
         /// <exception cref="System.Security.SecurityException">
         /// A CLR security violation occurred.  Typically, this happens
         /// because the current CLR permissions do not allow adequate
-        /// reflextion access to a cmdlet assembly.
+        /// reflection access to a cmdlet assembly.
         /// </exception>
         /// <exception cref="ThreadAbortException">
         /// The thread in which the command was executing was aborted.
@@ -2604,7 +2604,7 @@ namespace System.Management.Automation
         /// <exception cref="System.Security.SecurityException">
         /// A CLR security violation occurred.  Typically, this happens
         /// because the current CLR permissions do not allow adequate
-        /// reflextion access to a cmdlet assembly.
+        /// reflection access to a cmdlet assembly.
         /// </exception>
         /// <exception cref="ThreadAbortException">
         /// The thread in which the command was executing was aborted.
@@ -2670,7 +2670,7 @@ namespace System.Management.Automation
         /// <exception cref="System.Security.SecurityException">
         /// A CLR security violation occurred.  Typically, this happens
         /// because the current CLR permissions do not allow adequate
-        /// reflextion access to a cmdlet assembly.
+        /// reflection access to a cmdlet assembly.
         /// </exception>
         /// <exception cref="ThreadAbortException">
         /// The thread in which the command was executing was aborted.
@@ -2744,7 +2744,7 @@ namespace System.Management.Automation
         /// <exception cref="System.Security.SecurityException">
         /// A CLR security violation occurred.  Typically, this happens
         /// because the current CLR permissions do not allow adequate
-        /// reflextion access to a cmdlet assembly.
+        /// reflection access to a cmdlet assembly.
         /// </exception>
         /// <exception cref="ThreadAbortException">
         /// The thread in which the command was executing was aborted.
@@ -4161,7 +4161,7 @@ namespace System.Management.Automation
         /// <exception cref="System.Security.SecurityException">
         /// A CLR security violation occurred.  Typically, this happens
         /// because the current CLR permissions do not allow adequate
-        /// reflextion access to a cmdlet assembly.
+        /// reflection access to a cmdlet assembly.
         /// </exception>
         /// <exception cref="ThreadAbortException">
         /// The thread in which the command was executing was aborted.
