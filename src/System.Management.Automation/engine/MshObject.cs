@@ -1648,7 +1648,7 @@ namespace System.Management.Automation
         ///     Greater than zero This instance is greater than obj.
         /// </returns>
         /// <exception cref="ExtendedTypeSystemException"> If <paramref name="obj"/> has a different type
-        /// than this intance's BaseObject or if the BaseObject does not implement IComparable.
+        /// than this instance's BaseObject or if the BaseObject does not implement IComparable.
         /// </exception>
         public int CompareTo(object obj)
         {

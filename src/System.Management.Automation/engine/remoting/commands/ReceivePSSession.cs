@@ -408,7 +408,7 @@ namespace Microsoft.PowerShell.Commands
         /// in a job object that is returned (OutTarget.Job).
         /// </summary>
         /// <param name="name">Name of session to find.</param>
-        /// <param name="instanceId">Instnace Id of session to find.</param>
+        /// <param name="instanceId">Instance Id of session to find.</param>
         private void QueryForAndConnectCommands(string name, Guid instanceId)
         {
             WSManConnectionInfo connectionInfo = GetConnectionObject();

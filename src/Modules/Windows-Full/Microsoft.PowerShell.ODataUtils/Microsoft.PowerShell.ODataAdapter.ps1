@@ -1779,7 +1779,7 @@ using System.Management.Automation;
      return $complexTypeMapping
 }
 
-# Creating a single instace of CSharpCodeProvider that would be used 
+# Creating a single instance of CSharpCodeProvider that would be used 
 # for Identifier validation in the ValidateComplexTypeIdentifier helper method.
 $cSharpCodeProvider = [Microsoft.CSharp.CSharpCodeProvider]::new()
 

@@ -384,7 +384,7 @@ namespace System.Management.Automation.Runspaces
         /// Constructor
         /// </summary>
         /// <param name="ownerId">
-        /// Instace Id of the pool creating this instance
+        /// Instance Id of the pool creating this instance
         /// </param>
         /// <param name="callback">
         /// Callback to call when the async operation completes.
@@ -433,7 +433,7 @@ namespace System.Management.Automation.Runspaces
         /// Constructor
         /// </summary>
         /// <param name="ownerId">
-        /// Instace Id of the pool creating this instance
+        /// Instance Id of the pool creating this instance
         /// </param>
         /// <param name="callback">
         /// Callback to call when the async operation completes.

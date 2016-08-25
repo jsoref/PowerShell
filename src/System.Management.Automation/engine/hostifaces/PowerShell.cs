@@ -529,7 +529,7 @@ namespace System.Management.Automation
         /// Constructor
         /// </summary>
         /// <param name="ownerId">
-        /// Instace Id of the Powershell object creating this instance
+        /// Instance Id of the Powershell object creating this instance
         /// </param>
         /// <param name="callback">
         /// Callback to call when the async operation completes.

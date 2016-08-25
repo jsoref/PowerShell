@@ -261,7 +261,7 @@ namespace Extensions
         }
 
         /// <summary>
-        /// Execute a CIM query and return only the first intance in the result.
+        /// Execute a CIM query and return only the first instance in the result.
         /// </summary>
         /// <param name="session">The CimSesson to be queried</param>
         /// <param name="nameSpace">A string containing the namespace to run the query against</param>
@@ -290,7 +290,7 @@ namespace Extensions
         }
 
         /// <summary>
-        /// Execute a CIM query and return only the first intance in the result.
+        /// Execute a CIM query and return only the first instance in the result.
         /// </summary>
         /// <param name="session">The CimSesson to be queried</param>
         /// <param name="query">A string containing the query to be run</param>

@@ -7874,7 +7874,7 @@ namespace System.Management.Automation.Language
         /// <param name="expression">The expression before the member access operator '.' or '::'.</param>
         /// <param name="member">The name or expression naming the member to access.</param>
         /// <param name="static">True if the '::' operator was used, false if '.' is used.
-        /// True if the member access is for a static member, using '::', false if accessing a member on an instace using '.'.
+        /// True if the member access is for a static member, using '::', false if accessing a member on an instance using '.'.
         /// </param>
         /// <exception cref="PSArgumentNullException">
         /// If <paramref name="extent"/>, <paramref name="expression"/>, or <paramref name="member"/> is null.
@@ -8164,7 +8164,7 @@ namespace System.Management.Automation.Language
         /// <param name="method">The method to invoke.</param>
         /// <param name="arguments">The arguments to pass to the method.</param>
         /// <param name="static">
-        /// True if the invocation is for a static method, using '::', false if invoking a method on an instace using '.'.
+        /// True if the invocation is for a static method, using '::', false if invoking a method on an instance using '.'.
         /// </param>
         /// <exception cref="PSArgumentNullException">
         /// If <paramref name="extent"/> is null.
