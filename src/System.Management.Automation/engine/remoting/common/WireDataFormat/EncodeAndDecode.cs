@@ -856,7 +856,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// This method generates a Remoting data structure handler message for 
-        /// that contains a repsonse to SetMaxRunspaces or SetMinRunspaces
+        /// that contains a response to SetMaxRunspaces or SetMinRunspaces
         /// </summary>
         /// <param name="clientRunspacePoolId">id of the clientRunspacePool</param>
         /// <param name="callId">call id of the call at client</param>

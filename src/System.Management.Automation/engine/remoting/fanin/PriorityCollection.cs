@@ -22,7 +22,7 @@ namespace System.Management.Automation.Remoting
         Default = 0,
 
         /// <summary>
-        /// PromptReponse may be sent with or without priority considerations.
+        /// PromptResponse may be sent with or without priority considerations.
         /// Large data objects will be fragmented so that each fragmented piece can
         /// fit into one message.
         /// </summary>

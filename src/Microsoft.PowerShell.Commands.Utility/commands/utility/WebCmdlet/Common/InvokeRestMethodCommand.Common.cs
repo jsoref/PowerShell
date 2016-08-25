@@ -155,7 +155,7 @@ namespace Microsoft.PowerShell.Commands
         public enum RestReturnType
         {
             /// <summary>
-            /// Return type not defined in reponse, 
+            /// Return type not defined in response, 
             /// best effort detect
             /// </summary>
             Detect,

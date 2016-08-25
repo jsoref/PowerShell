@@ -24,7 +24,7 @@ namespace Microsoft.PowerShell.Commands
         #region Virtual Method Overrides
 
         /// <summary>
-        /// Process the web reponse and output corresponding objects. 
+        /// Process the web response and output corresponding objects. 
         /// </summary>
         /// <param name="response"></param>
         internal override void ProcessResponse(HttpResponseMessage response)
