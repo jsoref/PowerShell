@@ -871,7 +871,7 @@ namespace System.Management.Automation.Runspaces
 
                     // this is shipped as part of V1. So disabling the warning here.
 #pragma warning disable 56500
-                    //Exception rasied in the eventhandler are not error in pipeline.
+                    //Exception raised in the eventhandler are not error in pipeline.
                     //silently ignore them.
                     if (stateChanged != null)
                     {

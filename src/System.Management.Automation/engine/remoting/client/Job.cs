@@ -1408,7 +1408,7 @@ namespace System.Management.Automation
                 }
 
 #pragma warning disable 56500
-                //Exception rasied in the eventhandler are not error in job.
+                //Exception raised in the eventhandler are not error in job.
                 //silently ignore them.
                 try
                 {

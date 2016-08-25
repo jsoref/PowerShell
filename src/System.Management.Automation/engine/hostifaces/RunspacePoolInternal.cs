@@ -340,7 +340,7 @@ namespace System.Management.Automation.Runspaces.Internal
         public event EventHandler<PSEventArgs> ForwardEvent;
 
         /// <summary>
-        /// Event rasied when a new Runspace is created by the pool.
+        /// Event raised when a new Runspace is created by the pool.
         /// </summary>
         internal event EventHandler<RunspaceCreatedEventArgs> RunspaceCreated;
 

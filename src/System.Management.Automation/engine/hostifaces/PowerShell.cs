@@ -1720,7 +1720,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Event rasied when PowerShell Execution State Changes.
+        /// Event raised when PowerShell Execution State Changes.
         /// </summary>
         public event EventHandler<PSInvocationStateChangedEventArgs> InvocationStateChanged;
 

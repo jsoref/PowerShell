@@ -835,7 +835,7 @@ namespace System.Management.Automation
                         _runspace.RaiseAvailabilityChangedEvent(queueItem.NewRunspaceAvailability);
                     }
 
-                    //Exception rasied in the eventhandler are not error in pipeline.
+                    //Exception raised in the eventhandler are not error in pipeline.
                     //silently ignore them.
                     if (stateChanged != null)
                     {
