@@ -503,7 +503,7 @@ namespace System.Management.Automation
                 // no need to listen for closing events as we are initiating the close
                 _transportManager.Closing -= HandleTransportClosing;
                 // if terminal state is reached close the transport manager instead of letting
-                // the client intiate the close.
+                // the client initiate the close.
                 _transportManager.Close(null);
             }
         }

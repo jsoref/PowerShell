@@ -2857,7 +2857,7 @@ namespace System.Management.Automation.Remoting.Client
                 new PrioritySendDataCollection.OnDataAvailableCallback(OnDataAvailableCallback);
             _sessnTm = sessnTM;
             // Suspend queue on robust connections initiated event.
-            sessnTM.RobustConnectionsInitiated += HandleRobustConnectionsIntiated;
+            sessnTM.RobustConnectionsInitiated += HandleRobustConnectionsInitiated;
 
             // Resume queue on robust connections completed event.
             sessnTM.RobustConnectionsCompleted += HandleRobusConnectionsCompleted;
@@ -2873,7 +2873,7 @@ namespace System.Management.Automation.Remoting.Client
 
         #region Internal Methods / Properties
 
-        private void HandleRobustConnectionsIntiated(object sender, EventArgs e)
+        private void HandleRobustConnectionsInitiated(object sender, EventArgs e)
         {
             SuspendQueue();
         }
@@ -3949,7 +3949,7 @@ namespace System.Management.Automation.Remoting.Client
             // unregister event handlers
             if (null != _sessnTm)
             {
-                _sessnTm.RobustConnectionsInitiated -= HandleRobustConnectionsIntiated;
+                _sessnTm.RobustConnectionsInitiated -= HandleRobustConnectionsInitiated;
                 _sessnTm.RobustConnectionsCompleted -= HandleRobusConnectionsCompleted;
             }
 
