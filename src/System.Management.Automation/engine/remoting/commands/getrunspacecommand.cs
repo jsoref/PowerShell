@@ -109,7 +109,7 @@ namespace Microsoft.PowerShell.Commands
         /// this is not set as well, then Microsoft.PowerShell is used.
         ///
         /// For VM/Container sessions:
-        /// If this parameter is not speficied then all sessions that match other filters are returned.
+        /// If this parameter is not specified then all sessions that match other filters are returned.
         /// </summary>
         [Parameter(ValueFromPipelineByPropertyName = true,
                            ParameterSetName = GetPSSessionCommand.ComputerNameParameterSet)]

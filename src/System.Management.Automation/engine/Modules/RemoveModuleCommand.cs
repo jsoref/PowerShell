@@ -69,7 +69,7 @@ namespace Microsoft.PowerShell.Commands
         private int _numberRemoved = 0;  // Maintains a count of the number of modules removed...
 
         /// <summary>
-        /// Remove the specified modules. Modules can be specifed either through a ModuleInfo or a name.
+        /// Remove the specified modules. Modules can be specified either through a ModuleInfo or a name.
         /// </summary>
         protected override void ProcessRecord()
         {

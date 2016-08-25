@@ -603,7 +603,7 @@ namespace Microsoft.PowerShell.Commands
         {
             List<RemoteRunspace> remoteRunspaces = new List<RemoteRunspace>();
 
-            // validate the runspaces specfied before processing them.
+            // validate the runspaces specified before processing them.
             // The function will result in terminating errors, if any
             // validation failure is encountered
             ValidateRemoteRunspacesSpecified();

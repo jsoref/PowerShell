@@ -2686,7 +2686,7 @@ namespace Microsoft.PowerShell.Commands
         }
 
         /// <summary>
-        /// Get cert objects or their name at the specifed path
+        /// Get cert objects or their name at the specified path
         /// </summary>
         ///
         /// <param name="path"> path to cert </param>

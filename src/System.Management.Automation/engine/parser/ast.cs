@@ -506,7 +506,7 @@ namespace System.Management.Automation.Language
         public Token Kind { get; private set; }
 
         /// <summary>
-        /// The flags specifid and their value. The value is null if it's not specified.
+        /// The flags specified and their value. The value is null if it's not specified.
         /// e.g. switch -regex -file c:\demo.txt  --->   regex -- null
         ///                                              file  -- { c:\demo.txt }
         /// </summary>

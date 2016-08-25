@@ -166,7 +166,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets
                     return false;
                 }
             }
-            //Error out for the case where multiple provider names with any version specififed
+            //Error out for the case where multiple provider names with any version specified
             if (Name.IsNullOrEmpty()) {
                 if ((!string.IsNullOrWhiteSpace(RequiredVersion)) || (!string.IsNullOrWhiteSpace(MinimumVersion)) || (!string.IsNullOrWhiteSpace(MaximumVersion))) {
                     Error(Constants.Errors.MultipleNamesWithVersionNotAllowed);

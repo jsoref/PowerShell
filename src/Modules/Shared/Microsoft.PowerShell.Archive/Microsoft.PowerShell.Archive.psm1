@@ -199,7 +199,7 @@ function Compress-Archive
     
         $sourcePath = $resolvedPaths;
 
-        # CSVHelper: This is a helper function used to append comma after each path specifid by
+        # CSVHelper: This is a helper function used to append comma after each path specified by
         # the $sourcePath array. The comma separated paths are displayed in the -WhatIf message.
         $sourcePathInCsvFormat = CSVHelper $sourcePath
         if($pscmdlet.ShouldProcess($sourcePathInCsvFormat))
@@ -890,7 +890,7 @@ function ValidateArchivePathHelper
     {
         $extension = [system.IO.Path]::GetExtension($archiveFile)
 
-        # Invalid file extension is specifed for the zip file.
+        # Invalid file extension is specified for the zip file.
         if($extension -ne $zipFileExtension)
         {
             $errorMessage = ($LocalizedData.InvalidZipFileExtensionError -f $extension, $zipFileExtension)
@@ -1111,7 +1111,7 @@ function ProgressBarHelper
 }
 
 <############################################################################################ 
-# CSVHelper: This is a helper function used to append comma after each path specifid by
+# CSVHelper: This is a helper function used to append comma after each path specified by
 # the SourcePath array. This helper function is used to display all the user supplied paths
 # in the WhatIf message.
 ############################################################################################>

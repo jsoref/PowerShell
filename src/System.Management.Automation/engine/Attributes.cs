@@ -690,7 +690,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Gets and sets the base name of the resource for a help message. When this field is speicifed, 
+        /// Gets and sets the base name of the resource for a help message. When this field is specified, 
         /// HelpMessageResourceId must also be specified.
         /// </summary>
         /// <exception cref="ArgumentException">for a null or empty value when setting</exception>
@@ -711,7 +711,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Gets and sets the Id of the resource for a help message. When this field is speicifed,
+        /// Gets and sets the Id of the resource for a help message. When this field is specified,
         /// HelpMessageBaseName must also be specified.
         /// </summary>
         /// <exception cref="ArgumentException">for a null or empty value when setting</exception>

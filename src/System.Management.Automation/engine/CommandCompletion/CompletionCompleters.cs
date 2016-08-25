@@ -4326,7 +4326,7 @@ namespace System.Management.Automation
                             }
                             catch (Exception e)
                             {
-                                // The object at the specifie path is not accessable, such as c:\hiberfil.sys (for hibernation) or c:\pagefile.sys (for paging)
+                                // The object at the specified path is not accessable, such as c:\hiberfil.sys (for hibernation) or c:\pagefile.sys (for paging)
                                 // We ignore those files
                                 CommandProcessorBase.CheckForSevereException(e);
                                 continue;

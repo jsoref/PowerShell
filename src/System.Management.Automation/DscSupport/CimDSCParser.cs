@@ -1748,7 +1748,7 @@ namespace Microsoft.PowerShell.DesiredStateConfiguration.Internal
 
                 if (LanguagePrimitives.TryConvertTo(moduleName, out moduleSpecifications))
                 {
-                    // if resourceNames are specifed then we can not specify multiple modules name 
+                    // if resourceNames are specified then we can not specify multiple modules name 
                     if (moduleSpecifications != null && moduleSpecifications.Length > 1 && resourceNames != null)
                     {
                         errorList.Add(new ParseError(moduleNameBindingResult.Value.Extent,
@@ -1756,7 +1756,7 @@ namespace Microsoft.PowerShell.DesiredStateConfiguration.Internal
                                                      string.Format(CultureInfo.CurrentCulture, ParserStrings.ImportDscResourceMultipleModulesNotSupportedWithName)));
                     }
 
-                    // if moduleversion is specifed then we can not specify multiple modules name 
+                    // if moduleversion is specified then we can not specify multiple modules name 
                     if (moduleSpecifications != null && moduleSpecifications.Length > 1 && moduleVersion != null)
                     {
                         errorList.Add(new ParseError(moduleNameBindingResult.Value.Extent,
@@ -1764,7 +1764,7 @@ namespace Microsoft.PowerShell.DesiredStateConfiguration.Internal
                                                      string.Format(CultureInfo.CurrentCulture, ParserStrings.ImportDscResourceNeedParams)));
                     }
 
-                    // if moduleversion is specifed then we can not specify another version in modulespecification object of ModuleName  
+                    // if moduleversion is specified then we can not specify another version in modulespecification object of ModuleName  
                     if (moduleSpecifications != null && (moduleSpecifications[0].Version != null || moduleSpecifications[0].MaximumVersion != null) && moduleVersion != null)
                     {
                         errorList.Add(new ParseError(moduleNameBindingResult.Value.Extent,

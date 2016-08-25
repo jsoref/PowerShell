@@ -154,7 +154,7 @@ namespace Microsoft.PowerShell.Commands
 
 
         /// <summary>
-        /// Skips the sepecified number of items from top when used with First,from end when used with Last
+        /// Skips the specified number of items from top when used with First,from end when used with Last
         /// </summary>
         /// <value></value>
         [Parameter(ParameterSetName = "DefaultParameter")]
