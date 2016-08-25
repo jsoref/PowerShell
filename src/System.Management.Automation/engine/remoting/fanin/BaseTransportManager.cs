@@ -1289,9 +1289,9 @@ namespace System.Management.Automation.Remoting.Server
                 // 3. The value of "zname" property is also huge
                 // 4. Notice the ascending order of property names. This is because serializer serializes properties in sort order
                 // ******************** End of repro ******************************************
-                // To fix the issue, I am creating a Queue and enqueuing the data objects if we are already serializaing another data object
+                // To fix the issue, I am creating a Queue and enqueuing the data objects if we are already serializing another data object
                 // Notice this is in lock() above. An object is serialized in its entirety in one thread. So, in my example above "name",
-                // "verbose","zname" properties are serialized in one thread. So lock() essentially protects from serialing other objects
+                // "verbose","zname" properties are serialized in one thread. So lock() essentially protects from serializing other objects
                 // and not this (parent)object.
                 RemoteDataObject dataToBeSent = RemoteDataObject.CreateFrom(data.Destination, data.DataType,
                                                                             data.RunspacePoolId, data.PowerShellId,
