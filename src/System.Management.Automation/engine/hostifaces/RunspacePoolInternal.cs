@@ -201,7 +201,7 @@ namespace System.Management.Automation.Runspaces.Internal
         #region Public Properties
 
         /// <summary>
-        /// Get unqiue id for this instance of runspace pool. It is primarily used 
+        /// Get unique id for this instance of runspace pool. It is primarily used 
         /// for logging purposes.
         /// </summary>
         public Guid InstanceId
