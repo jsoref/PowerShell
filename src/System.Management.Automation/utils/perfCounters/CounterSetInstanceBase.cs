@@ -131,7 +131,7 @@ namespace System.Management.Automation.PerformanceData
         /// <summary>
         /// If isNumerator is true, then updates the numerator component
         /// of target counter 'counterName' by a value given by 'stepAmount'. 
-        /// Otherwise, updaqtes the denominator component by 'stepAmount'.
+        /// Otherwise, updates the denominator component by 'stepAmount'.
         /// </summary>
         public abstract bool UpdateCounterByValue(
             string counterName,
