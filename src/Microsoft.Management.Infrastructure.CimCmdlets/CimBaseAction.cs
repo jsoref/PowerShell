@@ -27,7 +27,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
 
         /// <summary>
         /// <para>
-        /// Execute the write opration to given cmdlet object
+        /// Execute the write operation to given cmdlet object
         /// </para>
         /// </summary>
         /// <param name="cmdlet">

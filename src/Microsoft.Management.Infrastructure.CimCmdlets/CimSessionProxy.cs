@@ -691,7 +691,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         }
 
         /// <summary>
-        /// Add a new opertion to cache.
+        /// Add a new operation to cache.
         /// </summary>
         /// <param name="operation"></param>
         /// <param name="cancelObject"></param>
@@ -835,7 +835,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
 
         /// <summary>
         /// <para>
-        /// Write opertion start verbose message
+        /// Write operation start verbose message
         /// </para>
         /// </summary>
         /// <param name="operation"></param>
@@ -1534,7 +1534,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         private IObservable<object> operation;
 
         /// <summary>
-        /// the current opration name
+        /// the current operation name
         /// </summary>
         private string operationName;
 
@@ -1554,7 +1554,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         private int _cancelOperationDisposed = 0;
 
         /// <summary>
-        /// Dispose the cancel opreation
+        /// Dispose the cancel operation
         /// </summary>
         private void DisposeCancelOperation()
         {
@@ -1571,7 +1571,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         }
 
         /// <summary>
-        /// Set the cancel opreation
+        /// Set the cancel operation
         /// </summary>
         private IDisposable CancelOperation
         {

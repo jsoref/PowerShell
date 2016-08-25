@@ -2661,7 +2661,7 @@ namespace System.Management.Automation
             }
             else
             {
-                // Will have to raise OpertionComplete from here,
+                // Will have to raise OperationComplete from here,
                 // else ThrottleManager will have
                 SendStopComplete();
             }

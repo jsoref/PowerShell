@@ -3015,7 +3015,7 @@ namespace Microsoft.PowerShell.Commands
             }
             else
             {
-                // will have to raise OpertionComplete from here,
+                // will have to raise OperationComplete from here,
                 // else ThrottleManager will have
                 RaiseOperationCompleteEvent();
             }
@@ -3237,7 +3237,7 @@ namespace Microsoft.PowerShell.Commands
                     break;
                 case RunspaceState.Closed:
                     {
-                        // raise a OpertionComplete event with
+                        // raise a OperationComplete event with
                         // StopComplete message 
                         if (stateEventArgs.RunspaceStateInfo.Reason != null)
                         {

@@ -508,7 +508,7 @@ namespace System.Management.Automation.Remoting.Client
             /// </summary>
             WSMAN_OPTION_UNENCRYPTED_MESSAGES = 20,
             /// <summary>
-            /// int - 1 Send all network packets for remote operatons in UTF16; 0 - default is UTF8
+            /// int - 1 Send all network packets for remote operations in UTF16; 0 - default is UTF8
             /// </summary>
             WSMAN_OPTION_UTF16 = 21,
             /// <summary>

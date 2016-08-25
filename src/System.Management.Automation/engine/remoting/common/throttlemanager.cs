@@ -107,7 +107,7 @@ namespace System.Management.Automation.Remoting
         /// In the initial implementation of ThrottleManager stopping 
         /// individual operations was not supported. When the support 
         /// for stopping individual operations was added, there was 
-        /// the following problem - if an opertaion is not there in 
+        /// the following problem - if an operation is not there in 
         /// the pending queue and in the startOperationQueue as well, 
         /// then the following two scenarios are possible
         ///      (a) Operation was started and start completed
