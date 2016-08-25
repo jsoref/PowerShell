@@ -2834,11 +2834,11 @@ namespace Microsoft.PowerShell.Commands
         }
 
         /// <summary>
-        /// Write the maching runspace objects down the pipeline, or add to the list.
+        /// Write the matching runspace objects down the pipeline, or add to the list.
         /// </summary>
-        /// <param name="matchingRunspaceInfos">The maching runspaces</param>
+        /// <param name="matchingRunspaceInfos">The matching runspaces</param>
         /// <param name="writeobject">if true write the object down the pipeline. Otherwise, add to the list</param>
-        /// <param name="matches">The list we add the maching runspaces to</param>        
+        /// <param name="matches">The list we add the matching runspaces to</param>        
         private void WriteOrAddMatches(List<PSSession> matchingRunspaceInfos,
             bool writeobject,
             ref Dictionary<Guid, PSSession> matches)
