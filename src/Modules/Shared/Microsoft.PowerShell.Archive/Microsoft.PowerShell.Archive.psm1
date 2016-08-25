@@ -572,7 +572,7 @@ function CompressArchiveHelper
         }
     }
 
-    # The Soure Path contains one or more directory (this directory can have files under it) and no files to be compressed.
+    # The Source Path contains one or more directory (this directory can have files under it) and no files to be compressed.
     if($sourceFilePaths.Count -eq 0 -and $sourceDirPaths.Count -gt 0)
     {
         $currentSegmentWeight = 100/[double]$sourceDirPaths.Count
@@ -585,7 +585,7 @@ function CompressArchiveHelper
         }
     }
 
-    # The Soure Path contains only files to be compressed.
+    # The Source Path contains only files to be compressed.
     elseIf($sourceFilePaths.Count -gt 0 -and $sourceDirPaths.Count -eq 0)
     {
         # $previousSegmentWeight is equal to 0 as there are no prior segments.
@@ -595,7 +595,7 @@ function CompressArchiveHelper
 
         $numberOfItemsArchived = CompressFilesHelper $sourceFilePaths $destinationPath $compressionLevel $isUpdateMode $previousSegmentWeight $currentSegmentWeight
     }
-    # The Soure Path contains one or more files and one or more directories (this directory can have files under it) to be compressed.
+    # The Source Path contains one or more files and one or more directories (this directory can have files under it) to be compressed.
     elseif($sourceFilePaths.Count -gt 0 -and $sourceDirPaths.Count -gt 0)
     {
         # each directory is considered as an individual segments & all the individual files are clubed in to a separate segment.
