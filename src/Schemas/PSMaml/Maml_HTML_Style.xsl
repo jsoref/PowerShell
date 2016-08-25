@@ -163,7 +163,7 @@
 				<xsl:with-param name='attributeName'>charoff</xsl:with-param>
 			</xsl:call-template>
 			
-			<!-- handle verical alignment -->
+			<!-- handle vertical alignment -->
 			<xsl:variable name='valign' select='ancestor-or-self::*[@valign][1]/@valign'/>
 			<xsl:attribute name='valign'>
 				<xsl:choose>
