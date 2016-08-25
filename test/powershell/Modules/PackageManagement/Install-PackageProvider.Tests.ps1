@@ -519,8 +519,8 @@ Describe "install-packageprovider with Scope" -Tags "Feature" {
             $password = "password%1"
             #net user $userName /delete | Out-Null
             net user $userName $password /add
-            $secesurestring = ConvertTo-SecureString $password -AsPlainText -Force
-            $credential = new-object -typename System.Management.Automation.PSCredential -argumentlist $userName, $secesurestring
+            $securestring = ConvertTo-SecureString $password -AsPlainText -Force
+            $credential = new-object -typename System.Management.Automation.PSCredential -argumentlist $userName, $securestring
         }
     }
     
