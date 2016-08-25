@@ -1621,7 +1621,7 @@ namespace System.Management.Automation.Language
                 catch (ParameterBindingException e)
                 {
                     // The parameterName is resolved to multiple parameters. The most possible scenario for this
-                    // would be the user typping tab to complete a parameter. In this case, we can ignore this 
+                    // would be the user typing tab to complete a parameter. In this case, we can ignore this 
                     // parameter safely.
 
                     // If the next item is a pure argument, we skip it so that it doesn't get bound
