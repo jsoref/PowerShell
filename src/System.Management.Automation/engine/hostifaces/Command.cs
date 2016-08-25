@@ -272,7 +272,7 @@ namespace System.Management.Automation.Runspaces
         internal PipelineResultTypes[] MergeInstructions { get; set; } = new PipelineResultTypes[MaxMergeType];
 
         /// <summary>
-        /// Merges this commands resutls
+        /// Merges this commands results
         /// </summary>
         /// 
         /// <param name="myResult">
