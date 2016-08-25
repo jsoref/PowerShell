@@ -47,7 +47,7 @@ namespace Microsoft.PowerShell.Commands
     {
         /// <summary>
         /// Determines whether objects should be sent to API consumers.
-        /// This command is automatically added to the pipeline when PowerShell is transcripting and
+        /// This command is automatically added to the pipeline when PowerShell is transcribing and
         /// invoked via API. This ensures that the objects pass through the formatting and output
         /// system, but can still make it to the API consumer.
         /// </summary>

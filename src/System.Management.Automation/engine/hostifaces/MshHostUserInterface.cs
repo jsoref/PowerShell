@@ -894,7 +894,7 @@ namespace System.Management.Automation.Host
             TranscriptionOption transcript = null;
 
             object keyValue = null;
-            if (settings.TryGetValue("EnableTranscripting", out keyValue))
+            if (settings.TryGetValue("EnableTranscribing", out keyValue))
             {
                 if (String.Equals(keyValue.ToString(), "1", StringComparison.OrdinalIgnoreCase))
                 {

@@ -1085,7 +1085,7 @@ namespace System.Management.Automation
                 // compare the command name to avoid breaking change.
                 if (String.Equals(outputProcessor.CommandInfo.Name, "Out-Default", StringComparison.OrdinalIgnoreCase))
                 {
-                    // Verify that this isn't an Out-Default added for transcripting
+                    // Verify that this isn't an Out-Default added for transcribing
                     if (!outputProcessor.Command.MyInvocation.BoundParameters.ContainsKey("Transcript"))
                     {
                         return true;
