@@ -1009,7 +1009,7 @@ namespace Microsoft.PowerShell
                 {
                     _singleton.ProcessOneKey(secondKey, secondKeyDispatchTable, ignoreIfNoAction: true, arg: arg);
                 }
-                else if (!IsNumberic(secondKey))
+                else if (!IsNumeric(secondKey))
                 {
                     _singleton.ProcessOneKey(secondKey, secondKeyDispatchTable, ignoreIfNoAction: true, arg: arg);
                 }
@@ -1018,7 +1018,7 @@ namespace Microsoft.PowerShell
                     var argBuffer = _singleton._statusBuffer;
                     argBuffer.Clear();
                     _singleton._statusLinePrompt = "digit-argument: ";
-                    while (IsNumberic(secondKey))
+                    while (IsNumeric(secondKey))
                     {
                         argBuffer.Append(secondKey.KeyChar);
                         _singleton.Render();
@@ -1039,7 +1039,7 @@ namespace Microsoft.PowerShell
             }
         }
 
-        private static bool IsNumberic(ConsoleKeyInfo key)
+        private static bool IsNumeric(ConsoleKeyInfo key)
         {
             return char.IsNumber(key.KeyChar);
         }
