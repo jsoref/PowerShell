@@ -6091,15 +6091,15 @@ namespace Microsoft.WSMan.Management
         /// </summary>
         internal const string containerService = "Service";
         /// <summary>
-        /// Auth Container - Under Client,Serive
+        /// Auth Container - Under Client,Service
         /// </summary>
         internal const string containerAuth = "Auth";
         /// <summary>
-        /// DefaultPorts Container - Under Client,Serive
+        /// DefaultPorts Container - Under Client,Service
         /// </summary>
         internal const string containerDefaultPorts = "DefaultPorts";
         /// <summary>
-        /// TrustedHosts Container - Under Client,Serive
+        /// TrustedHosts Container - Under Client,Service
         /// </summary>
         internal const string containerTrustedHosts = "TrustedHosts";
         /// <summary>

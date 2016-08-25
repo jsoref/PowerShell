@@ -532,7 +532,7 @@ function GenerateClientSideProxyModule
     #    the client side proxy complex types are created
     #    as C# class in ComplexTypeDefinitions.psm1 
     # 2. Creates proxy cmdlets for CRUD operations.
-    # 3. Creates proxy cmdlets for Serice action operations.
+    # 3. Creates proxy cmdlets for Service action operations.
     # 4. Creates module manifest.
 
     Write-Verbose ($LocalizedData.VerboseSavingModule -f $outputModule)
