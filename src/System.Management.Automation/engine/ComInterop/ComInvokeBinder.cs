@@ -249,7 +249,7 @@ namespace System.Management.Automation.ComInterop
                 }
                 else
                 {
-                    // Positial arguments are in reverse order at the tail of rgArgs
+                    // Positional arguments are in reverse order at the tail of rgArgs
                     variantIndex = reverseIndex;
                 }
                 VariantBuilder variantBuilder = _varEnumSelector.VariantBuilders[i];
