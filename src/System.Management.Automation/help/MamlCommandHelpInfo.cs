@@ -163,7 +163,7 @@ namespace System.Management.Automation
         //       particular component, role and functionality using parameters like
         //       -component, -role, -functionality.
         //    3. At runtime, help engine will match against component/role/functionality
-        //       criteria before returing help results.
+        //       criteria before returning help results.
         //
 
         private string _component = null;
