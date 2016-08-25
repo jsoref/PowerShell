@@ -349,7 +349,7 @@ namespace System.Management.Automation.Internal
 
                 commandProcessor.AddedToPipelineAlready = true;
             }
-            // 2003/08/11-JonN Subseqent commands must have predecessor
+            // 2003/08/11-JonN Subsequent commands must have predecessor
             else if (readFromCommand > _commands.Count || readFromCommand <= 0)
             {
                 // "invalid command number"
