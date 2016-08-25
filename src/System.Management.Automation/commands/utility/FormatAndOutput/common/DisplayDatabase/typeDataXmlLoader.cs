@@ -554,7 +554,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
             if (tableBody.header.columnHeaderDefinitionList.Count != 0)
             {
                 // CHECK: if there are headers in the list, their number has to match
-                // the default row definition intem count
+                // the default row definition item count
                 if (tableBody.header.columnHeaderDefinitionList.Count !=
                     tableBody.defaultDefinition.rowItemDefinitionList.Count)
                 {
