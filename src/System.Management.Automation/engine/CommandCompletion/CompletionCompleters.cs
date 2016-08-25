@@ -6251,7 +6251,7 @@ namespace System.Management.Automation
         {
             Diagnostics.Assert(ast.Keyword != null, "DynamicKeywordStatementAst.Keyword can never be null");
             List<CompletionResult> results = null;
-            var dynamicKeywordProperies = ast.Keyword.Properties;
+            var dynamicKeywordProperties = ast.Keyword.Properties;
             var memberPattern = completionContext.WordToComplete + "*";
 
             //
@@ -6269,10 +6269,10 @@ namespace System.Management.Automation
                 }
             }
 
-            if (dynamicKeywordProperies.Count > 0)
+            if (dynamicKeywordProperties.Count > 0)
             {
                 // Excludes existing properties in the hashtable statement
-                var tempProperties = dynamicKeywordProperies.Where(p => !propertiesName.Contains(p.Key, StringComparer.OrdinalIgnoreCase));
+                var tempProperties = dynamicKeywordProperties.Where(p => !propertiesName.Contains(p.Key, StringComparer.OrdinalIgnoreCase));
                 if (tempProperties != null && tempProperties.Any())
                 {
                     results = new List<CompletionResult>();

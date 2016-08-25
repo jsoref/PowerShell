@@ -333,7 +333,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// Given a PSObject, this method will traverse through the objects properties,
-        /// extracts content from properities that are of type System.String, appends them
+        /// extracts content from properties that are of type System.String, appends them
         /// together and returns.
         /// </summary>
         /// <param name="psObject"></param>

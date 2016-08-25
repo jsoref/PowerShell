@@ -562,7 +562,7 @@ namespace Microsoft.PowerShell.Commands
         /// If the passed in object is a custom object (not a simple object, not a dictionary, not a list, get processed in ProcessCustomObject method),
         /// we also take Adapted properties into account. Otherwise, we only consider the Extended properties.
         /// When the object is a pure PSObject, it also gets processed in "ProcessCustomObject" before reaching this method, so we will
-        /// iterate both extended and adapted proerpties for it. Since it's a pure PSObject, there will be no adapted properties.
+        /// iterate both extended and adapted properties for it. Since it's a pure PSObject, there will be no adapted properties.
         /// </summary>
         /// <param name="psobj">The containing PSObject, or null if the base object was not contained in a PSObject</param>
         /// <param name="receiver">The dictionary to which any additional properties will be appended</param>

@@ -1272,7 +1272,7 @@ namespace System.Management.Automation.Remoting.Server
             {
                 // Win8: 491001 Icm -computername $env:COMPUTERNAME {Get-NetIpInterface} fails with Unexpected ObjectId
                 // This is because the output object has some extended script properties. Getter of one of the
-                // script proprties is calling write-progress. Write-Progress in turn results in a progress record
+                // script properties is calling write-progress. Write-Progress in turn results in a progress record
                 // being sent to client. This breaks the fragmentation rule when the original object (without progress)
                 // does not fit in fragmented packet.
                 // ******************** repro using powershell *********************************

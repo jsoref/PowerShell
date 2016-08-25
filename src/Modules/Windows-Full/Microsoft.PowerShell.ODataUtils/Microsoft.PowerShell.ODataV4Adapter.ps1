@@ -1940,7 +1940,7 @@ function SaveCDXMLRemoveCmdlet
             
         $xmlWriter.WriteEndElement()
 
-        $navigationPrperties | ? { $_ -ne $null } | % {
+        $navigationProperties | ? { $_ -ne $null } | % {
 
             $associatedType = GetAssociatedType $Metadata $GlobalMetadata $_
             $associatedEntitySet = GetEntitySetForEntityType $Metadata $associatedType
