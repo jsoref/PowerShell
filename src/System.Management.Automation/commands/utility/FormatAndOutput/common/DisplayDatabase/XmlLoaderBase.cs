@@ -247,7 +247,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
         }
 
         /// <summary>
-        /// get the list of logg entries
+        /// get the list of log entries
         /// </summary>
         /// <value>list of entries logged during a load</value>
         internal List<XmlLoaderLoggerEntry> LogEntries
