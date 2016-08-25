@@ -714,7 +714,7 @@ namespace System.Management.Automation
             else
             {
                 // If this assertion fires, the command name is determined incorrectly.
-                Diagnostics.Assert(commandNameAst is CommandParameterAst, "Unxpected element not handled correctly.");
+                Diagnostics.Assert(commandNameAst is CommandParameterAst, "Unexpected element not handled correctly.");
                 commandName = commandNameAst.Extent.Text;
             }
 
