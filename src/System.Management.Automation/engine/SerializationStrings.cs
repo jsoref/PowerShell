@@ -34,7 +34,7 @@ namespace System.Management.Automation
         /// </summary>
         internal const string TypeNamesTag = "TN";
         /// <summary>
-        /// Tag for type item in typeanmes
+        /// Tag for type item in typenames
         /// </summary>
         internal const string TypeNamesItemTag = "T";
         /// <summary>
