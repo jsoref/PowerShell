@@ -2290,7 +2290,7 @@ namespace Microsoft.PowerShell.ScheduledJob
 
     #endregion
 
-    #region Utililites
+    #region Utilities
 
     /// <summary>
     /// Simple string formatting helper.
