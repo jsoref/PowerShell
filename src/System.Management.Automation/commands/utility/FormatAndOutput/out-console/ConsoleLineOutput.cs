@@ -379,7 +379,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
             if (_disableLineWrittenEvent)
                 return;
 
-            // if there is no promting, we are done
+            // if there is no prompting, we are done
             if (_prompt == null)
                 return;
 
@@ -574,7 +574,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
 
         /// <summary>
         /// handler to prompt the user for page breaks
-        /// if this handler is not null, we have promting
+        /// if this handler is not null, we have prompting
         /// </summary>
         private PromptHandler _prompt = null;
 
@@ -584,7 +584,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
         private long _linesWritten = 0;
 
         /// <summary>
-        /// flag to avoid renetrancy on promting
+        /// flag to avoid renetrancy on prompting
         /// </summary>
         private bool _disableLineWrittenEvent = false;
 
