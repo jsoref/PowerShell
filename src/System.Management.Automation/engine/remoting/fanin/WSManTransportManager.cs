@@ -3315,7 +3315,7 @@ namespace System.Management.Automation.Remoting.Client
                 }
             }
 
-            // Send remaing cmd / parameter fragments.
+            // Send remaining cmd / parameter fragments.
             lock (cmdTM.syncObject)
             {
                 cmdTM._isCreateCallbackReceived = true;
