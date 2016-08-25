@@ -3219,15 +3219,15 @@ namespace Microsoft.PowerShell.Commands
                 // If the items see if we need to check the age of the file...
                 if (result && itemExistsDynamicParameters != null)
                 {
-                    DateTime lastWrtiteTime = File.GetLastWriteTime(path);
+                    DateTime lastWriteTime = File.GetLastWriteTime(path);
 
                     if (itemExistsDynamicParameters.OlderThan.HasValue)
                     {
-                        result = lastWrtiteTime < itemExistsDynamicParameters.OlderThan.Value;
+                        result = lastWriteTime < itemExistsDynamicParameters.OlderThan.Value;
                     }
                     if (itemExistsDynamicParameters.NewerThan.HasValue)
                     {
-                        result = lastWrtiteTime > itemExistsDynamicParameters.NewerThan.Value;
+                        result = lastWriteTime > itemExistsDynamicParameters.NewerThan.Value;
                     }
                 }
             }
