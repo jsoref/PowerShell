@@ -214,7 +214,7 @@ Describe "ConsoleHost unit tests" -tags "Feature" {
         $nl = [Environment]::Newline
 
         # All of the following tests replace the prompt (either via an initial command or interactively)
-        # so that we can read StandardOutput and realiably know exactly what the prompt is.
+        # so that we can read StandardOutput and reliably know exactly what the prompt is.
 
         It "Interactive redirected input" {
             $si = NewProcessStartInfo "-noprofile -nologo" -RedirectStdIn
