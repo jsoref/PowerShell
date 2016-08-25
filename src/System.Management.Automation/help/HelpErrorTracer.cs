@@ -44,7 +44,7 @@ namespace System.Management.Automation
         /// TraceFrame instance exists in a scope governed by using statement. It is possible
         /// that a new TraceFrame instance will be created in the scope of another TraceFrame
         /// instance. The scopes of various live TraceFrame instances form a stack which is 
-        /// similiar to call stacks of normal C# functions. This is why we call this class
+        /// similar to call stacks of normal C# functions. This is why we call this class
         /// a "TraceFrame"
         /// 
         /// TraceFrame itself implements IDisposable interface to guarantee a chance to 

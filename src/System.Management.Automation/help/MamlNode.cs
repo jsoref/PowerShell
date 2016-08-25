@@ -805,7 +805,7 @@ namespace System.Management.Automation
         /// two properties,
         ///        a. tag=" 1. " or " 2. "
         ///        b. text="text for list item 1" or "text for list item 2"
-        /// In the case of unordered list, similiar PSObject will created with type to be "MamlUnorderedListText" and tag="*"
+        /// In the case of unordered list, similar PSObject will created with type to be "MamlUnorderedListText" and tag="*"
         /// 
         /// </summary>
         /// <param name="xmlNode"></param>
