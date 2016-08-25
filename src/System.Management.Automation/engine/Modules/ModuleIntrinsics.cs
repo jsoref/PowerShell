@@ -185,7 +185,7 @@ namespace System.Management.Automation
                     ast = ast.Parent;
                 }
 
-                // The variables set in the interpretted case get set by InvokeWithPipe in the compiled case.
+                // The variables set in the interpreted case get set by InvokeWithPipe in the compiled case.
                 Diagnostics.Assert(_context.SessionState.Internal.CurrentScope.LocalsTuple == null,
                                     "No locals tuple should have been created yet.");
 
