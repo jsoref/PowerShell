@@ -2115,7 +2115,7 @@ namespace System.Management.Automation.Language
 
         private bool ScanAfterHereStringHeader(string header)
         {
-            // On entry, we've see the header.  We allow whitepace and require a newline before the actual string starts
+            // On entry, we've see the header.  We allow whitespace and require a newline before the actual string starts
             int headerOffset = _currentIndex - 2;
 
             char c;
