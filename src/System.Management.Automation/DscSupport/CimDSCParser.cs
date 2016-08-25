@@ -1870,7 +1870,7 @@ namespace Microsoft.PowerShell.DesiredStateConfiguration.Internal
                     {
                         if (mandatoryPropertiesNames.Remove(presentName) && mandatoryPropertiesNames.Count == 0)
                         {
-                            // optimization, once all mandotory properties are specified, we can safely exit.
+                            // optimization, once all mandatory properties are specified, we can safely exit.
                             return null;
                         }
                     }
