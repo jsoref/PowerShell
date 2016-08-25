@@ -1110,7 +1110,7 @@ namespace System.Management.Automation
                     break;
                 case SpecialFolder.LocalApplicationData:
                     folderPath = System.Environment.GetEnvironmentVariable("LOCALAPPDATA");
-                    // When powershell gets executed in SetupComplete.cmd during NanoSrever's first boot, 'LOCALAPPDATA' won't be set yet.
+                    // When powershell gets executed in SetupComplete.cmd during NanoServer's first boot, 'LOCALAPPDATA' won't be set yet.
                     // In this case, we need to return an alternate path, so that module auto-loading can continue to work properly.
                     if (folderPath == null)
                     {
