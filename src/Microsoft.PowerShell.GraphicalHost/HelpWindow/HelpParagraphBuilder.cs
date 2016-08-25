@@ -421,22 +421,22 @@ namespace Microsoft.Management.UI.Internal
                         parameterNameOptionalCloseBrace = "]";
                     }
 
-                    string paramterPrefix = String.Format(
+                    string parameterPrefix = String.Format(
                         CultureInfo.CurrentCulture,
                         "{0}{1}-",
                         parameterOptionalOpenBrace,
                         parameterNameOptionalOpenBrace);
 
-                    this.AddText(paramterPrefix, false);
+                    this.AddText(parameterPrefix, false);
                     this.AddText(parameterName, true);
 
-                    string paramterSuffix = String.Format(
+                    string parameterSuffix = String.Format(
                         CultureInfo.CurrentCulture,
                         "{0} {1}{2} ",
                         parameterNameOptionalCloseBrace,
                         parameterType,
                         parameterOptionalCloseBrace);
-                    this.AddText(paramterSuffix, false);
+                    this.AddText(parameterSuffix, false);
                 }
 
                 string commonParametersText = String.Format(
@@ -683,7 +683,7 @@ namespace Microsoft.Management.UI.Internal
                         {
                             parameterType = GetPropertyString(parameterTypeData, "name");
 
-                            //If there is no type for the paramter, we expect it is System.Object
+                            //If there is no type for the parameter, we expect it is System.Object
                             if (String.IsNullOrEmpty(parameterType))
                                 parameterType = "object";
                         }

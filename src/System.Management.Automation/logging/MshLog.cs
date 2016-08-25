@@ -222,7 +222,7 @@ namespace System.Management.Automation
         /// LogEngineHealthEvent: Log an engine health event. If engine state is changed, a engine 
         /// lifecycle event will be logged also.
         /// 
-        /// This is the basic form of EngineHealthEvent logging api, in which all paramters are provided.
+        /// This is the basic form of EngineHealthEvent logging api, in which all parameters are provided.
         /// 
         /// Variant form of this function is defined below, which will make parameters additionalInfo 
         /// and newEngineState optional.
@@ -382,7 +382,7 @@ namespace System.Management.Automation
         /// <summary>
         /// LogEngineLifecycleEvent: Log an engine lifecycle event. 
         /// 
-        /// This is the basic form of EngineLifecycleEvent logging api, in which all paramters are provided.
+        /// This is the basic form of EngineLifecycleEvent logging api, in which all parameters are provided.
         /// 
         /// Variant form of this function is defined below, which will make parameter additionalInfo 
         /// optional.

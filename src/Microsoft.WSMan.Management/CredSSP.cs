@@ -547,7 +547,7 @@ namespace Microsoft.WSMan.Management
                 return dynamicParameters;
             }
 
-            // Construct attributes for the DelegateComputer paramter
+            // Construct attributes for the DelegateComputer parameter
             Collection<Attribute> delegateComputerAttributeCollection = new Collection<Attribute>();
             ParameterAttribute paramAttribute = new ParameterAttribute();
             paramAttribute.Mandatory = true;

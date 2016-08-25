@@ -1723,7 +1723,7 @@ namespace System.Management.Automation.Language
                         catch (ParameterBindingException)
                         {
                             // The next parameter name is ambiguous. We just set
-                            // a fake argument for the current paramter.
+                            // a fake argument for the current parameter.
                             FakePair newArg = new FakePair(argument.Parameter);
                             result.Add(newArg);
                         }

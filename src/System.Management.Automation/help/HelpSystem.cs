@@ -48,7 +48,7 @@ namespace System.Management.Automation
     /// Help Api:
     ///     Help Api is the function to be called by get-help commandlet. 
     /// 
-    ///     Following information needs to be provided in Help Api paramters, 
+    ///     Following information needs to be provided in Help Api parameters, 
     ///         1. search target: (which can be one or multiple strings)
     ///         2. help type: limit the type of help to be searched.
     ///         3. included fields: the fields to be included in the help info

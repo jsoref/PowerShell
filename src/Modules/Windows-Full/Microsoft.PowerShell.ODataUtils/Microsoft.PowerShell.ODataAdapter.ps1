@@ -363,7 +363,7 @@ function VerifyMetaData
         $callerPSCmdlet.ThrowTerminatingError($errorRecord)
     }
     
-    # All the generated proxy cmdlets would have the following paramters added.
+    # All the generated proxy cmdlets would have the following parameters added.
     # The ODataAdapter has the default implementation on how to handle the 
     # scenario when these parameters are used during proxy invocations.
     # The default implementation can be overridden using adapter derivation model. 

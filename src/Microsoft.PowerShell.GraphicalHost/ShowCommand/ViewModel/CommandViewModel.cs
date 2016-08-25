@@ -592,7 +592,7 @@ namespace Microsoft.PowerShell.Commands.ShowCommandInternal
         /// <summary>
         /// Compares source and target by being the default parameter set and then by name
         /// </summary>
-        /// <param name="source">source paremeterset</param>
+        /// <param name="source">source parameterset</param>
         /// <param name="target">target parameterset</param>
         /// <returns>0 if they are the same, -1 if source is smaller, 1 if source is larger</returns>
         private int Compare(ParameterSetViewModel source, ParameterSetViewModel target)

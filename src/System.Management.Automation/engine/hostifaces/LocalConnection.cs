@@ -604,7 +604,7 @@ namespace System.Management.Automation.Runspaces
         /// Open the runspace
         /// </summary>
         /// <param name="syncCall">
-        /// paramter which control if Open is done synchronously or asynchronously
+        /// parameter which control if Open is done synchronously or asynchronously
         /// </param>
         protected override void OpenHelper(bool syncCall)
         {

@@ -1233,11 +1233,11 @@ namespace Microsoft.PowerShell.Commands
             if (fspDynamicParam != null)
             {
                 evaluator = fspDynamicParam.Attributes;
-                switchEvaluator = FormatAttributeSwitchParamters();
+                switchEvaluator = FormatAttributeSwitchParameters();
             }
 
             bool filterHidden = false;           // "Hidden" is specified somewhere in the expression
-            bool switchFilterHidden = false;     // "Hidden" is specified somewhere in the paramters
+            bool switchFilterHidden = false;     // "Hidden" is specified somewhere in the parameters
 
             if (null != evaluator)
             {
@@ -1248,7 +1248,7 @@ namespace Microsoft.PowerShell.Commands
                 switchFilterHidden = switchEvaluator.ExistsInExpression(FileAttributes.Hidden);
             }
 
-            // if "Hidden" is specified in the attribute filter dynamic paramters
+            // if "Hidden" is specified in the attribute filter dynamic parameters
             // also return the object
             if (exists && !directory && (!hidden || Force || showHidden || filterHidden || switchFilterHidden))
             {
@@ -1274,7 +1274,7 @@ namespace Microsoft.PowerShell.Commands
                         directoryObj.FullName,
                         StringComparison.OrdinalIgnoreCase) == 0;
 
-                // if "Hidden" is specified in the attribute filter dynamic paramters
+                // if "Hidden" is specified in the attribute filter dynamic parameters
                 // also return the object
                 if (exists && (isRootPath || !hidden || Force || showHidden || filterHidden || switchFilterHidden))
                 {
@@ -1525,13 +1525,13 @@ namespace Microsoft.PowerShell.Commands
                     if (fspDynamicParam != null)
                     {
                         evaluator = fspDynamicParam.Attributes;
-                        switchEvaluator = FormatAttributeSwitchParamters();
+                        switchEvaluator = FormatAttributeSwitchParameters();
                     }
 
                     bool attributeFilter = true;
                     bool switchAttributeFilter = true;
                     bool filterHidden = false;           // "Hidden" is specified somewhere in the expression
-                    bool switchFilterHidden = false;     // "Hidden" is specified somewhere in the paramters
+                    bool switchFilterHidden = false;     // "Hidden" is specified somewhere in the parameters
 
                     if (null != evaluator)
                     {
@@ -1540,7 +1540,7 @@ namespace Microsoft.PowerShell.Commands
                     }
                     if (null != switchEvaluator)
                     {
-                        switchAttributeFilter = switchEvaluator.Evaluate(fileInfo.Attributes);  // switch paramters
+                        switchAttributeFilter = switchEvaluator.Evaluate(fileInfo.Attributes);  // switch parameters
                         switchFilterHidden = switchEvaluator.ExistsInExpression(FileAttributes.Hidden);
                     }
 
@@ -1632,7 +1632,7 @@ namespace Microsoft.PowerShell.Commands
                 if (fspDynamicParam != null)
                 {
                     evaluator = fspDynamicParam.Attributes;
-                    switchEvaluator = FormatAttributeSwitchParamters();
+                    switchEvaluator = FormatAttributeSwitchParameters();
                 }
 
                 // Write out the items
@@ -1661,7 +1661,7 @@ namespace Microsoft.PowerShell.Commands
                         }
                         if (null != switchEvaluator)
                         {
-                            switchAttributeFilter = switchEvaluator.Evaluate(filesystemInfo.Attributes);  // switch paramters
+                            switchAttributeFilter = switchEvaluator.Evaluate(filesystemInfo.Attributes);  // switch parameters
                             switchFilterHidden = switchEvaluator.ExistsInExpression(FileAttributes.Hidden);
                         }
 
@@ -1758,7 +1758,7 @@ namespace Microsoft.PowerShell.Commands
 
         /// <summary>
         /// Create an enum expression evaluator for user-specified attribute filtering
-        /// switch paramters. 
+        /// switch parameters. 
         /// </summary>
         /// <returns>
         /// If any attribute filtering switch parameters are set,
@@ -1766,7 +1766,7 @@ namespace Microsoft.PowerShell.Commands
         /// Otherwise,
         /// returns NULL
         /// </returns>
-        private FlagsExpression<FileAttributes> FormatAttributeSwitchParamters()
+        private FlagsExpression<FileAttributes> FormatAttributeSwitchParameters()
         {
             FlagsExpression<FileAttributes> switchParamEvaluator = null;
             StringBuilder sb = new StringBuilder();
@@ -7067,7 +7067,7 @@ namespace Microsoft.PowerShell.Commands
             /// The username used to get connected to network resource.
             /// </param>
             /// <param name="flags">
-            /// The flags paramter is used to indicate if the created network 
+            /// The flags parameter is used to indicate if the created network 
             /// resource has to be persisted or not.
             /// </param>
             /// <returns>If connection is established to the network resource 

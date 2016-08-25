@@ -367,7 +367,7 @@ namespace Microsoft.PowerShell
             if (filterOutNonConsoleCultures)
             {
                 // Filter out languages that do not support console.
-                // The third paramter should be null otherwise this API will not 
+                // The third parameter should be null otherwise this API will not 
                 // set Console CodePage filter.
                 // The MSDN documentation does not call this out explicitly. Opened
                 // Bug 950 (Windows Developer Content) to track this.

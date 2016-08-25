@@ -585,7 +585,7 @@ namespace Microsoft.PowerShell.Commands
             }
             else if (parameters.Length == 1 && !parameterCollectionProcessed)
             {
-                // If the paramter collection is just the $PSBoundParameters
+                // If the parameter collection is just the $PSBoundParameters
                 // i.e. did not come through the PSParameterCollection list
                 // then just we can use it as is since it's already been processed through the parameter
                 // binder...
@@ -1341,7 +1341,7 @@ namespace Microsoft.PowerShell.Commands
                             $validated
                         }
 
-                        # If there was no '*' collection, added the paramter defaults
+                        # If there was no '*' collection, added the parameter defaults
                         # to each individual collection if the parameter isn't already there... 
                         if (-not $PSParameterCollectionDefaultsMember)
                         {

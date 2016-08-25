@@ -6627,7 +6627,7 @@ namespace System.Management.Automation.Language
             cea.Add(new CommandParameterAst(LCurlyToken.Extent, "InstanceName", new VariableExpressionAst(LCurlyToken.Extent, "InstanceName", false), LCurlyToken.Extent));
 
             //
-            // copy the configuration paramter to the new function parameter
+            // copy the configuration parameter to the new function parameter
             // the new set-item created function will have below parameters
             //    [cmdletbinding()]
             //    param(
@@ -7225,7 +7225,7 @@ namespace System.Management.Automation.Language
                         LCurly.Extent));
 
                 //
-                // Add the -SourceMetadata parametere
+                // Add the -SourceMetadata parameter
                 //
                 string sourceMetadata = FunctionName.Extent.File
                                         + "::" + FunctionName.Extent.StartLineNumber

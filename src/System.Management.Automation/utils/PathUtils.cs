@@ -453,7 +453,7 @@ namespace System.Management.Automation
         internal const string OEM = "oem";
 
         /// <summary>
-        /// retrieve the encoding paramater from the command line
+        /// retrieve the encoding parameter from the command line
         /// it throws if the encoding does not match the known ones
         /// </summary>
         /// <returns>a System.Text.Encoding object (null if no encoding specified)</returns>

@@ -1390,7 +1390,7 @@ namespace Microsoft.PowerShell.Commands
                     continue;
                 }
 
-                //Set the NoWait paramater to false since we are not adding this switch to this cmdlet.
+                //Set the NoWait parameter to false since we are not adding this switch to this cmdlet.
                 List<ServiceController> stoppedServices = DoStopService(serviceController, Force, true);
 
                 if (stoppedServices.Count > 0)

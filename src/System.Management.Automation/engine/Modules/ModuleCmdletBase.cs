@@ -170,25 +170,25 @@ namespace Microsoft.PowerShell.Commands
 
         /// <summary>
         /// The minimum version number to check the module against. Used the underlying property
-        /// for derived cmdlet paramters.
+        /// for derived cmdlet parameters.
         /// </summary>
         internal Version BaseMinimumVersion { get; set; }
 
         /// <summary>
         /// The maximum version number to check the module against. Used the underlying property
-        /// for derived cmdlet paramters.
+        /// for derived cmdlet parameters.
         /// </summary>
         internal Version BaseMaximumVersion { get; set; }
 
         /// <summary>
         /// The version number to check the module against. Used the underlying property
-        /// for derived cmdlet paramters.
+        /// for derived cmdlet parameters.
         /// </summary>
         internal Version BaseRequiredVersion { get; set; }
 
         /// <summary>
         /// The Guid to check the module against. Used the underlying property
-        /// for derived cmdlet paramters.
+        /// for derived cmdlet parameters.
         /// </summary>
         internal Guid? BaseGuid { get; set; }
 

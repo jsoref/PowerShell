@@ -691,7 +691,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
         /// <summary>
         /// Positional parameter for properties, property sets and table sets
         /// specified on the command line.
-        /// The paramater is optional, since the defaults
+        /// The parameter is optional, since the defaults
         /// will be determined using property sets, etc.
         /// </summary>
         [Parameter(Position = 0)]

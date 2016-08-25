@@ -57,7 +57,7 @@ namespace Microsoft.PowerShell.Commands
         private PSModuleInfo[] _moduleInfo = Utils.EmptyArray<PSModuleInfo>();
 
         /// <summary>
-        /// If provided, this paramter will allow readonly modules to be removed.
+        /// If provided, this parameter will allow readonly modules to be removed.
         /// </summary>
         [Parameter]
         public SwitchParameter Force

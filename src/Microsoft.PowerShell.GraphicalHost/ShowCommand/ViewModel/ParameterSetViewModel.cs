@@ -233,12 +233,12 @@ namespace Microsoft.PowerShell.Commands.ShowCommandInternal
         #endregion
         
         /// <summary>
-        /// Gets the delimited poarameter if it needs delimitation and is not delimited
+        /// Gets the delimited parameter if it needs delimitation and is not delimited
         /// </summary>
         /// <param name="parameterValue">value needing delimitation</param>
         /// <param name="openDelimiter">open delimitation</param>
         /// <param name="closeDelimiter">close delimitation</param>
-        /// <returns>the delimited poarameter if it needs delimitation and is not delimited</returns>
+        /// <returns>the delimited parameter if it needs delimitation and is not delimited</returns>
         private static string GetDelimitedParameter(string parameterValue, string openDelimiter, string closeDelimiter)
         {
             string parameterValueTrimmed = parameterValue.Trim();

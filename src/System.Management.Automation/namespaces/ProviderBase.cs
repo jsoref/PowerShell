@@ -226,7 +226,7 @@ namespace System.Management.Automation.Provider
             Context = cmdletProviderContext;
 
             return StartDynamicParameters();
-        } // StartDynamicParmaters
+        } // StartDynamicParameter
 
         /// <summary>
         /// Called when the provider is being removed. It sets the context

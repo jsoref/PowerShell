@@ -267,7 +267,7 @@ namespace Microsoft.PowerShell.Commands
                 }
                 else
                 {
-                    //if last paramater is not mentioned,remove the objects and decrement the skip
+                    //if last parameter is not mentioned,remove the objects and decrement the skip
                     if (_last == 0)
                     {
                         Dequeue();

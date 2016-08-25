@@ -11,7 +11,7 @@
     ArchiveFileIsEmpty=The archive file {0} is empty.
     CompressProgressBarText=The archive file '{0}' creation is in progress...
     ExpandProgressBarText=The archive file '{0}' expansion is in progress...
-    AppendArchiveFileExtensionMessage=The archive file path '{0}' supplied to the DestinationPath patameter does not include .zip extension. Hence .zip is appended to the supplied DestinationPath path and the archive file would be created at '{1}'.
+    AppendArchiveFileExtensionMessage=The archive file path '{0}' supplied to the DestinationPath parameter does not include .zip extension. Hence .zip is appended to the supplied DestinationPath path and the archive file would be created at '{1}'.
     AddItemtoArchiveFile=Adding '{0}'.
     CreateFileAtExpandedPath=Created '{0}'.
     InvalidArchiveFilePathError=The archive file path '{0}' specified as input to the {1} parameter is resolving to multiple file system paths. Provide a unique path to the {2} parameter where the archive file has to be created.
@@ -986,7 +986,7 @@ function ExpandArchiveHelper
                         if(!(Test-Path -LiteralPath $currentArchiveEntryFileInfo.DirectoryName -PathType Container))
                         {
                             # The directory referred by $currentArchiveEntryFileInfo.DirectoryName was not successfully created.
-                            # This could be because the user has specified -Confirm paramter when Expand-Archive was invoked
+                            # This could be because the user has specified -Confirm parameter when Expand-Archive was invoked
                             # and authorization was not provided when confirmation was prompted. In such a scenario, 
                             # we skip the current file in the archive and continue with the remaining archive file contents.
                             Continue
@@ -1012,7 +1012,7 @@ function ExpandArchiveHelper
                             if(Test-Path -LiteralPath $currentArchiveEntryFileInfo.FullName -PathType Leaf)
                             {
                                 # The file referred by $currentArchiveEntryFileInfo.FullName was not successfully removed.
-                                # This could be because the user has specified -Confirm paramter when Expand-Archive was invoked
+                                # This could be because the user has specified -Confirm parameter when Expand-Archive was invoked
                                 # and authorization was not provided when confirmation was prompted. In such a scenario, 
                                 # we skip the current file in the archive and continue with the remaining archive file contents.
                                 Continue

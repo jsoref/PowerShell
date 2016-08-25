@@ -48,7 +48,7 @@ SkipEntitySetConflictCommandCreation=CDXML module creation has been skipped for 
 EntitySetConflictCommandCreationWithWarning=CDXML module creation for the Entity Set '{0}' succeeded but contains a command '{1}' that collides with the inbox command.
 SkipConflictServiceActionCommandCreation=CDXML module creation has been skipped for the Service Action '{0}' because the exported command '{1}' conflicts with the inbox command.
 ConflictServiceActionCommandCreationWithWarning=CDXML module creation for the Service Action '{0}' succeeded but contains a command '{1}' that collides with the inbox command.
-AllowUnsecureConnectionMessage=The cmdlet '{0}' is trying to establish an Unsecure connection with the OData endpoint through the URI '{1}'. Either supply a secure URI to the -{2} parameter or use -AllowUnsecureConnection switch paramter if you intend to use the current URI.
+AllowUnsecureConnectionMessage=The cmdlet '{0}' is trying to establish an Unsecure connection with the OData endpoint through the URI '{1}'. Either supply a secure URI to the -{2} parameter or use -AllowUnsecureConnection switch parameter if you intend to use the current URI.
 ProgressBarMessage=Creating proxy for the OData endpoint at the URI '{0}'.
 ###PSLOC
 

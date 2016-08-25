@@ -82,7 +82,7 @@ namespace System.Management.Automation
         public string Name { get; private set; }
 
         /// <summary>
-        /// Gets whether the parameer set is the default parameter set.
+        /// Gets whether the parameter set is the default parameter set.
         /// </summary>
         public bool IsDefault { get; private set; }
 

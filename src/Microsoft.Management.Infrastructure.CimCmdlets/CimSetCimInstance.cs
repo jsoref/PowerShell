@@ -56,7 +56,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
         private IDictionary property;
 
         /// <summary>
-        /// <para>prameter set name</para>
+        /// <para>parameter set name</para>
         /// </summary>
         internal string ParameterSetName
         {

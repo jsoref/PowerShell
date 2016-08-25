@@ -323,7 +323,7 @@ namespace System.Management.Automation
 
             foreach (MergedCompiledCommandParameter parameter in UnboundParameters)
             {
-                // If a prarameter doesn't take pipeline input at all, we can skip it
+                // If a parameter doesn't take pipeline input at all, we can skip it
                 if (!parameter.Parameter.IsPipelineParameterInSomeParameterSet)
                 {
                     continue;
@@ -2932,7 +2932,7 @@ namespace System.Management.Automation
         } // AtLeastOneValidParameterSetTakesPipelineInput
 
         /// <summary>
-        /// Checks for unbound mandatory paramters. If any are found, an exception is thrown.
+        /// Checks for unbound mandatory parameters. If any are found, an exception is thrown.
         /// </summary>
         /// 
         /// <param name="missingMandatoryParameters">
@@ -2953,7 +2953,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Checks for unbound mandatory paramters. If any are found and promptForMandatory is true,
+        /// Checks for unbound mandatory parameters. If any are found and promptForMandatory is true,
         /// the user will be prompted for the missing mandatory parameters.
         /// </summary>
         /// 

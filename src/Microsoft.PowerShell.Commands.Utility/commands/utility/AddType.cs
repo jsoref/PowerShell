@@ -1441,7 +1441,7 @@ namespace Microsoft.PowerShell.Commands
                 return;
             }
 
-            // Generate if user has specified CompilerParmeters and
+            // Generate if user has specified CompilerParameters and
             // (referencedAssemblies | ignoreWarnings | outputAssembly | outputType)
             if (null != CompilerParameters)
             {

@@ -181,7 +181,7 @@ unsigned int ConstructPowerShellVersion(int iPSMajorVersion,
 static PwrshCommon sPwrshCommon;
 
 // Gets the CLR Version for a given PowerShell Version. PowerShell Version is
-// supplied with 2 paramaters iPSMajorVersion (PowerShell major version) and
+// supplied with 2 parameters iPSMajorVersion (PowerShell major version) and
 // iPSMinorVersion (PowerShell minor version). The CLR version is returned through
 // pwszRuntimeVersion and pRuntimeVersionLength represents the size of pwszRuntimeVersion.
 // returns: 0 on success, non-zero on failure.

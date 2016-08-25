@@ -173,7 +173,7 @@ namespace Microsoft.PowerShell.Commands
             // Win8: 176403: ScriptCmdlets sets the global WhatIf and Confirm preferences
             // This effects the new W8 foreach-object cmdlet with -whatif and -confirm
             // implemented. -whatif and -confirm needed only for PropertyAndMethodSet
-            // parmaeter set. So erring out in cases where these are used with ScriptBlockSet.
+            // parameter set. So erring out in cases where these are used with ScriptBlockSet.
             // Not using MshCommandRuntime, as those variables will be affected by ScriptCmdlet
             // infrastructure (wherein ScriptCmdlet modifies the global preferences).
             Dictionary<string, object> psBoundParameters = this.MyInvocation.BoundParameters;

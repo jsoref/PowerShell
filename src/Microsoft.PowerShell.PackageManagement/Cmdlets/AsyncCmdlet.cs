@@ -682,7 +682,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets {
             }
         }
 
-        #region Dynamic Paramters
+        #region Dynamic Parameters
 
         public virtual RuntimeDefinedParameterDictionary DynamicParameterDictionary {
             get {

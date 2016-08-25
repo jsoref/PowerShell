@@ -283,7 +283,7 @@ namespace System.Management.Automation
             // Parameter validation is done in the session state object
 
             return _sessionState.GetItemDynamicParameters(path, context);
-        } // GetItemDynamicParamters
+        } // GetItemDynamicParameters
 
         #endregion GetItem
 

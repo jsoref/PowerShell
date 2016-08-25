@@ -431,7 +431,7 @@ namespace Microsoft.PowerShell.Commands
                     WildcardPattern commandPattern = WildcardPattern.Get(command, WildcardOptions.IgnoreCase);
                     string jobCommand = job.Command.Trim();
                     // Win8: 469830
-                    // Win7 code does not have commandPattern.IsMatch. We added wildcard support for Command parmaeterset
+                    // Win7 code does not have commandPattern.IsMatch. We added wildcard support for Command parameterset
                     // in Win8 which breaks scenarios where the actual command has wildcards.)
                     if (jobCommand.Equals(command.Trim(), StringComparison.OrdinalIgnoreCase) || commandPattern.IsMatch(jobCommand))
                     {
