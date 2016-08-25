@@ -154,7 +154,7 @@ namespace System.Management.Automation.Remoting
             transportManager.ReceivedDataCollection.MaximumReceivedObjectSize =
                 BaseTransportManager.MaximumReceivedObjectSize;
 
-            // session transport manager can recieve unlimited data..however each object is limited
+            // session transport manager can receive unlimited data..however each object is limited
             // by maxRecvdObjectSize. this is to allow clients to use a session for an unlimited time..
             // also the messages that can be sent to a session are limited and very controlled.
             // However a command transport manager can be restricted to receive only a fixed amount of data

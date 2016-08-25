@@ -329,7 +329,7 @@ namespace System.Management.Automation.Remoting.Client
         [SuppressMessage("Microsoft.Reliability", "CA2006:UseSafeHandleToEncapsulateNativeResources")]
         private IntPtr _wsManShellOperationHandle;
         [SuppressMessage("Microsoft.Reliability", "CA2006:UseSafeHandleToEncapsulateNativeResources")]
-        private IntPtr _wsManRecieveOperationHandle;
+        private IntPtr _wsManReceiveOperationHandle;
         [SuppressMessage("Microsoft.Reliability", "CA2006:UseSafeHandleToEncapsulateNativeResources")]
         private IntPtr _wsManSendOperationHandle;
         // this is used with WSMan callbacks to represent a session transport manager.
@@ -576,7 +576,7 @@ namespace System.Management.Automation.Remoting.Client
             dataToBeSent.Fragmentor = base.Fragmentor;
             _sessionName = sessionName;
 
-            // session transport manager can recieve unlimited data..however each object is limited
+            // session transport manager can receive unlimited data..however each object is limited
             // by maxRecvdObjectSize. this is to allow clients to use a session for an unlimited time..
             // also the messages that can be sent to a session are limited and very controlled.
             // However a command transport manager can be restricted to receive only a fixed amount of data
@@ -1018,7 +1018,7 @@ namespace System.Management.Automation.Remoting.Client
                 _receivedFromRemote = new WSManNativeApi.WSManShellAsync(new IntPtr(_sessionContextID), s_sessionReceiveCallback);
                 WSManNativeApi.WSManReceiveShellOutputEx(_wsManShellOperationHandle,
                     IntPtr.Zero, 0, WSManAPIData.OutputStreamSet, _receivedFromRemote,
-                    ref _wsManRecieveOperationHandle);
+                    ref _wsManReceiveOperationHandle);
             }
         }
 
@@ -1675,10 +1675,10 @@ namespace System.Management.Automation.Remoting.Client
                 // clearing for receive..Clear only when the end of operation is reached.
                 if (flags == (int)WSManNativeApi.WSManCallbackFlags.WSMAN_FLAG_CALLBACK_END_OF_OPERATION)
                 {
-                    if (IntPtr.Zero != _wsManRecieveOperationHandle)
+                    if (IntPtr.Zero != _wsManReceiveOperationHandle)
                     {
-                        WSManNativeApi.WSManCloseOperation(_wsManRecieveOperationHandle, 0);
-                        _wsManRecieveOperationHandle = IntPtr.Zero;
+                        WSManNativeApi.WSManCloseOperation(_wsManReceiveOperationHandle, 0);
+                        _wsManReceiveOperationHandle = IntPtr.Zero;
                     }
 
                     if (null != _receivedFromRemote)
@@ -2719,7 +2719,7 @@ namespace System.Management.Automation.Remoting.Client
         [SuppressMessage("Microsoft.Reliability", "CA2006:UseSafeHandleToEncapsulateNativeResources")]
         private IntPtr _cmdSignalOperationHandle;
         [SuppressMessage("Microsoft.Reliability", "CA2006:UseSafeHandleToEncapsulateNativeResources")]
-        private IntPtr _wsManRecieveOperationHandle;
+        private IntPtr _wsManReceiveOperationHandle;
         [SuppressMessage("Microsoft.Reliability", "CA2006:UseSafeHandleToEncapsulateNativeResources")]
         private IntPtr _wsManSendOperationHandle;
         // this is used with WSMan callbacks to represent a command transport manager.
@@ -3210,10 +3210,10 @@ namespace System.Management.Automation.Remoting.Client
                 // clearing for receive..Clear only when the end of operation is reached.
                 if (flags == (int)WSManNativeApi.WSManCallbackFlags.WSMAN_FLAG_CALLBACK_END_OF_OPERATION)
                 {
-                    if (IntPtr.Zero != _wsManRecieveOperationHandle)
+                    if (IntPtr.Zero != _wsManReceiveOperationHandle)
                     {
-                        WSManNativeApi.WSManCloseOperation(_wsManRecieveOperationHandle, 0);
-                        _wsManRecieveOperationHandle = IntPtr.Zero;
+                        WSManNativeApi.WSManCloseOperation(_wsManReceiveOperationHandle, 0);
+                        _wsManReceiveOperationHandle = IntPtr.Zero;
                     }
 
                     if (null != _receivedFromRemote)
@@ -3925,12 +3925,12 @@ namespace System.Management.Automation.Remoting.Client
                 }
 
                 receiveDataInitiated = true;
-                // recive callback
+                // receive callback
                 _receivedFromRemote = new WSManNativeApi.WSManShellAsync(new IntPtr(_cmdContextId), s_cmdReceiveCallback);
                 WSManNativeApi.WSManReceiveShellOutputEx(_wsManShellOperationHandle,
                     _wsManCmdOperationHandle, startInDisconnectedMode ? (int)WSManNativeApi.WSManShellFlag.WSMAN_FLAG_RECEIVE_DELAY_OUTPUT_STREAM : 0,
                    _sessnTm.WSManAPIData.OutputStreamSet,
-                   _receivedFromRemote, ref _wsManRecieveOperationHandle);
+                   _receivedFromRemote, ref _wsManReceiveOperationHandle);
             }
         }
 

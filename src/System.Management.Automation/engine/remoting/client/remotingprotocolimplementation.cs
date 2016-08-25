@@ -135,7 +135,7 @@ namespace System.Management.Automation.Remoting
         private void HandleConnectComplete(object sender, EventArgs args)
         {
             //No-OP. Once the negotiation messages are exchanged and the session gets into established state,
-            //it will take care of spawning the receieve operation on the connected session
+            //it will take care of spawning the receive operation on the connected session
             // There is however a caveat. 
             // A rouge remote server if it does not send the required negotiation data in the Connect Response,
             // then the state machine can never get into the established state and the runspace can never get into a opened state
