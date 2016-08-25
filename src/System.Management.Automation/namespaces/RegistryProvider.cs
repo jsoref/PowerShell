@@ -4995,7 +4995,7 @@ namespace Microsoft.PowerShell.Commands
         /// 
         /// <param name="kind"> output for the RegistryValueKind for the string</param>
         /// <returns>
-        /// true if the conversion succeded
+        /// true if the conversion succeeded
         /// </returns>
         private bool ParseKind(string type, out RegistryValueKind kind)
         {
