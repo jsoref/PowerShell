@@ -1831,7 +1831,7 @@ namespace System.Management.Automation
                             }
 
                             // we know the value is not negative, so this conversion
-                            // always succede
+                            // always succeed
                             allValues |= Convert.ToUInt64(value, CultureInfo.CurrentCulture);
                         }
                     }
