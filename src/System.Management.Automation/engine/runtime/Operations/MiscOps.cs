@@ -1538,7 +1538,7 @@ namespace System.Management.Automation
         /// <param name="context">The execution context</param>
         /// <returns>The preference the user selected</returns>
         /// <remarks>
-        /// Error action is decided by error action preference. If preferenc is inquire, we will
+        /// Error action is decided by error action preference. If preference is inquire, we will
         /// prompt user for their preference. 
         /// </remarks>
         internal static ActionPreference QueryForAction(RuntimeException rte, string message, ExecutionContext context)

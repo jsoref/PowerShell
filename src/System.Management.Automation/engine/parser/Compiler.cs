@@ -2647,7 +2647,7 @@ namespace System.Management.Automation.Language
                     //     "Should continue here"
                     // In this example, the trap just continues, but we want to continue after the 'if' statement, not after
                     // the 'throw' statement.
-                    // We push null onto the active trap handlers to let ExceptionHandlingOps.CheckActionPrefence know it
+                    // We push null onto the active trap handlers to let ExceptionHandlingOps.CheckActionPreference know it
                     // shouldn't process traps (but should still query the user if appropriate), and just rethrow so we can
                     // unwind to the block with the trap.
 

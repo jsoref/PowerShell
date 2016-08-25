@@ -424,7 +424,7 @@ namespace System.Management.Automation.Internal.Host
         /// </exception>
         /// <exception cref="ArgumentException">
         /// 
-        /// If the debug preference is not a valid ActionPrefernce value.
+        /// If the debug preference is not a valid ActionPreference value.
         /// 
         /// </exception>
 
