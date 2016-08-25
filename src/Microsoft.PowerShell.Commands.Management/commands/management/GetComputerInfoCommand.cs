@@ -4605,7 +4605,7 @@ namespace Microsoft.PowerShell.Commands
 
     /// <summary>
     /// Specifies the type of the computer in use, such as laptop, desktop, or Tablet.
-    /// This is an extended verion of PCSystemType
+    /// This is an extended version of PCSystemType
     /// </summary>
     //TODO: conflate these two enums???
     public enum PCSystemTypeEx

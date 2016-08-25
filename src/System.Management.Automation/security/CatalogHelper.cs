@@ -103,7 +103,7 @@ namespace System.Management.Automation
             }
             // One Windows 7 this API sent version information as decimal 1 not hex (0X100 = 256)
             // so we are checking for that value as well. Reason we are not checking for version 2 above in
-            // this scenario because catalog verion 2 is not supported on win7. 
+            // this scenario because catalog version 2 is not supported on win7. 
             else if ((catalogInfo.dwPublicVersion == catalogVersion1) || (catalogInfo.dwPublicVersion == 1))
             {
                 catalogVersion = 1;

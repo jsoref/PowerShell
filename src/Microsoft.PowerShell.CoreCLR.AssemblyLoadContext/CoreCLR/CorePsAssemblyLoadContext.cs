@@ -205,7 +205,7 @@ namespace System.Management.Automation
             // We let the default context load the assemblies included in the type catalog as there
             // appears to be a bug in .NET with method resolution with system libraries loaded by our
             // context and not the default. We use the short name because some packages have inconsistent
-            // verions between reference and runtime assemblies.
+            // versions between reference and runtime assemblies.
             if (_tpaSet.Contains(assemblyName.Name))
                 return null;
 

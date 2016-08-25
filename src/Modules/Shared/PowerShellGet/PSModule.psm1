@@ -12826,7 +12826,7 @@ function Update-ModuleManifest
     {
         $params.Add("ProcessorArchitecture",$ProcessorArchitecture)
     }
-    #Check if ProcessorArchitecture has a value and is not 'None' on lower verison PS
+    #Check if ProcessorArchitecture has a value and is not 'None' on lower version PS
     elseif($moduleInfo.ProcessorArchitecture -and $moduleInfo.ProcessorArchitecture -ne 'None')
     {
         $params.Add("ProcessorArchitecture",$moduleInfo.ProcessorArchitecture)

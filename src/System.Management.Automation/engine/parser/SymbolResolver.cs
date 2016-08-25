@@ -423,7 +423,7 @@ namespace System.Management.Automation.Language
 
         /// <summary>
         /// Resolves using module to a collection of PSModuleInfos. Doesn't throw.
-        /// PSModuleInfo objects are returned in the right order: i.e. if multiply verions of the module
+        /// PSModuleInfo objects are returned in the right order: i.e. if multiply versions of the module
         /// is presented on the system and user didn't specify version, we will return all of them, but newer one would go first.
         /// </summary>
         /// <param name="usingStatementAst">using statement</param>

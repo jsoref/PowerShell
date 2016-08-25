@@ -747,13 +747,13 @@ Describe "install-packageprovider Error Cases" -Tags "Feature" {
     }
  
 
-   It "EXPECTED:  returns an error when asking for a provider with RequiredVersoin and MinimumVersion" {
+   It "EXPECTED:  returns an error when asking for a provider with RequiredVersion and MinimumVersion" {
         $Error.Clear()
         install-packageprovider -name NOT_EXISTS -Scope CurrentUser -RequiredVersion 1.0 -MinimumVersion 2.0  -warningaction:silentlycontinue -ea silentlycontinue
         $ERROR[0].FullyQualifiedErrorId | should be "VersionRangeAndRequiredVersionCannotBeSpecifiedTogether,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackageProvider"
     }
 
-   It "EXPECTED:  returns an error when asking for a provider with RequiredVersoin and MaximumVersion" {
+   It "EXPECTED:  returns an error when asking for a provider with RequiredVersion and MaximumVersion" {
         $Error.Clear()
         install-packageprovider -name NOT_EXISTS -Scope CurrentUser -RequiredVersion 1.0 -MaximumVersion 2.0  -warningaction:silentlycontinue -ea silentlycontinue
         $ERROR[0].FullyQualifiedErrorId | should be "VersionRangeAndRequiredVersionCannotBeSpecifiedTogether,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackageProvider"
