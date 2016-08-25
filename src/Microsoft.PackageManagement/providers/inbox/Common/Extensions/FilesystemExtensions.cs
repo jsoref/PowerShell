@@ -213,7 +213,7 @@ namespace Microsoft.PackageManagement.Provider.Utility {
                     //    }
                    // }
                 }
-                // not a remote (or resovably-remote) path or
+                // not a remote (or resolvable-remote) path or
                 // it is already a path that is in it's correct form (via localpath)
                 return pathUri.LocalPath;
             } catch (UriFormatException) {
