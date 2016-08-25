@@ -106,7 +106,7 @@ namespace System.Management.Automation.Language
     }
 
     /// <summary>
-    /// A few utilty functions for script positions.
+    /// A few utility functions for script positions.
     /// </summary>
     internal static class PositionUtilities
     {
