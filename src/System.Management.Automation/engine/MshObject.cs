@@ -2147,7 +2147,7 @@ namespace System.Management.Automation
         /// 3. This will fix v1.0 ADSI adapter where most of the complaints were about
         ///    discovering original .net members.
         /// 
-        /// Use of this class will allow us to customize the utlitmate .net member lookup.
+        /// Use of this class will allow us to customize the ultimate .net member lookup.
         /// For example, XML adapter already exposes .net methods. 
         /// Using this class you can choose exact .net adapter to support .net
         /// member lookup and avoid lookup duplication.
