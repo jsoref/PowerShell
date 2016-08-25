@@ -2009,7 +2009,7 @@ namespace System.Management.Automation
 
                 // This will resolve $GLOBAL, and $LOCAL as needed.
                 // This throws DriveNotFoundException if a drive of the specified
-                // name does not exist. Just let the exception propogate out.
+                // name does not exist. Just let the exception propagate out.
                 try
                 {
                     workingDriveForPath = _sessionState.Drive.Get(driveName);

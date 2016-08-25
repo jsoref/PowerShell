@@ -24,7 +24,7 @@ namespace Microsoft.PowerShell.Commands
     /// 
     /// <remarks>
     /// Note, this class does no specific error handling. All errors are allowed to
-    /// propogate to the caller so that they can be written to the error pipeline
+    /// propagate to the caller so that they can be written to the error pipeline
     /// if necessary.
     /// </remarks>
     /// 

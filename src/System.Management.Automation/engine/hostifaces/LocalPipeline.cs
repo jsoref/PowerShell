@@ -1437,7 +1437,7 @@ namespace System.Management.Automation.Runspaces
                     {
                         _stack.Peek().ExecutionFailed = true;
                     }
-                    // If this is the last pipeline processor on the stack, then propigate it's execution status
+                    // If this is the last pipeline processor on the stack, then propagate it's execution status
                     if (_stack.Count == 1 && _localPipeline != null)
                     {
                         _localPipeline.SetHadErrors(oldPipe.ExecutionFailed);
@@ -1460,7 +1460,7 @@ namespace System.Management.Automation.Runspaces
                 copyStack = _stack.ToArray();
             }
 
-            // Propigate error from the toplevel operation through to enclosing the LocalPipeline.
+            // Propagate error from the toplevel operation through to enclosing the LocalPipeline.
             if (copyStack.Length > 0)
             {
                 PipelineProcessor topLevel = copyStack[copyStack.Length - 1];
