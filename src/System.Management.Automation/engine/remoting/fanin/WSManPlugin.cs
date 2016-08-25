@@ -159,7 +159,7 @@ namespace System.Management.Automation.Remoting
         static WSManPluginInstance()
         {
             // NOTE - the order is important here:
-            // because handler from WindowsErrorReporting is going to terminate the proces
+            // because handler from WindowsErrorReporting is going to terminate the process
             // we want it to fire last
 
 #if !CORECLR

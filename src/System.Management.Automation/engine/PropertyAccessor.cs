@@ -131,7 +131,7 @@ namespace System.Management.Automation
         /// <summary>
         /// Lock used to enable multiple concurrent readers and singular write locks within a
         /// single process.
-        /// TODO: This solution only works for IO from a single process. A more robust solution is needed to enable ReaderWriterLockSlim behavior between proceses.
+        /// TODO: This solution only works for IO from a single process. A more robust solution is needed to enable ReaderWriterLockSlim behavior between processes.
         /// </summary>
         private ReaderWriterLockSlim fileLock = new ReaderWriterLockSlim();
 

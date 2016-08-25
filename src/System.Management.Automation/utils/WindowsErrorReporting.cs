@@ -172,7 +172,7 @@ namespace System.Management.Automation
             /// <summary>
             /// Spawn another process to submit the report and return from this function call immediately. Note that the contents of the pSubmitResult parameter are undefined and there is no way to query when the reporting completes or the completion status.
             /// </summary>
-            OutOfProcesAsync = 1024,
+            OutOfProcessAsync = 1024,
 
             BypassDataThrottling = 2048,
             ArchiveParametersOnly = 4096,
@@ -932,7 +932,7 @@ namespace System.Management.Automation
             }
             finally
             {
-                // FailFast if something went wrong and SubmitReport didn't terminate the proces
+                // FailFast if something went wrong and SubmitReport didn't terminate the process
                 // (or simply if not registered)
                 Environment.FailFast((null != exception) ? exception.Message : string.Empty);
             }

@@ -339,7 +339,7 @@ namespace Microsoft.PowerShell.Workflow
                 if (_busy) return;
 
                 // Mark this process for removal and set it as busy so that this process will not be assigned to any new activity.
-                // Marking for removal will ensure that servicing thread will remove this object from host processs collection.
+                // Marking for removal will ensure that servicing thread will remove this object from host process collection.
                 //
                 _busy = true;
                 _markForRemoval = true;

@@ -4776,27 +4776,27 @@ namespace Microsoft.PowerShell.Commands
         Other = 1,
 
         /// <summary>
-        /// Proccessor type is 
+        /// Processor type is 
         /// </summary>
         Unknown = 2,
 
         /// <summary>
-        /// Proccessor is a Central Processing Unit (CPU)
+        /// Processor is a Central Processing Unit (CPU)
         /// </summary>
         CentralProcessor = 3,
 
         /// <summary>
-        /// Proccessor is a Math processor
+        /// Processor is a Math processor
         /// </summary>
         MathProcessor = 4,
 
         /// <summary>
-        /// Proccessor is a Digital Signal processor (DSP)
+        /// Processor is a Digital Signal processor (DSP)
         /// </summary>
         DSPProcessor = 5,
 
         /// <summary>
-        /// Proccessor is a Video processor
+        /// Processor is a Video processor
         /// </summary>
         VideoProcessor = 6
     }
