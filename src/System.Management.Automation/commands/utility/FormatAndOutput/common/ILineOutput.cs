@@ -138,7 +138,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
     internal abstract class LineOutput
     {
         /// <summary>
-        /// whether the device requres full buffering of formatting
+        /// whether the device requires full buffering of formatting
         /// objects before any processing
         /// </summary>
         internal virtual bool RequiresBuffering { get { return false; } }
