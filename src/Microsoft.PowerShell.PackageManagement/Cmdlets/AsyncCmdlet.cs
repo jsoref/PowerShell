@@ -88,7 +88,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets {
 #endif
 
         /// <summary>
-        ///     Manages the re-entrancy lock for cmdlets
+        ///     Manages the reentrancy lock for cmdlets
         ///     This is abstracted here because (at this point)
         ///     we need this to be static, but per-cmdlet class.
         /// </summary>

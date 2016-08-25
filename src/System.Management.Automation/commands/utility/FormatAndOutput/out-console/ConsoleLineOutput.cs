@@ -374,7 +374,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
         /// </summary>
         private void LineWrittenEvent()
         {
-            // check to avoid reeentrancy from the prompt handler
+            // check to avoid reentrancy from the prompt handler
             // writing during the PromptUser() call
             if (_disableLineWrittenEvent)
                 return;
@@ -584,7 +584,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
         private long _linesWritten = 0;
 
         /// <summary>
-        /// flag to avoid renetrancy on prompting
+        /// flag to avoid reentrancy on prompting
         /// </summary>
         private bool _disableLineWrittenEvent = false;
 

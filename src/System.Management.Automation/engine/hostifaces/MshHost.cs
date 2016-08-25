@@ -291,7 +291,7 @@ namespace System.Management.Automation.Host
         /// 
         /// If the host is using an in-process Runspace, then the BaseObject property can be a non-null value  a live object. 
         /// No guarantees are made as to the app domain or thread that the BaseObject is accessed if it is accessed in the 
-        /// runspace. No guarantees of threadsafety or re-entrancy are made.  The object set in the BaseObject property of
+        /// runspace. No guarantees of threadsafety or reentrancy are made.  The object set in the BaseObject property of
         /// the value returned by this method is responsible for ensuring its own threadsafety and re-entrance safety.
         /// Note that thread(s) accessing that object may not necessarily be the same from one access to the next.
         /// 
