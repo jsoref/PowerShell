@@ -1312,7 +1312,7 @@ namespace System.Management.Automation
         /// --------------------------------------------------------------------------------------
         /// | D |    TI     |  RPID  |   PID   |   Action   |      Data     |        Type         |
         /// --------------------------------------------------------------------------------------
-        /// | S |PowerShell | CRPID  |   CPID  |    Data    |  intput data  |   PowerShellInput   |
+        /// | S |PowerShell | CRPID  |   CPID  |    Data    |  input data  |   PowerShellInput   |
         /// |   |           |        |         |            |               |                     |
         /// --------------------------------------------------------------------------------------
         internal static RemoteDataObject GeneratePowerShellInput(object data, Guid clientRemoteRunspacePoolId,
