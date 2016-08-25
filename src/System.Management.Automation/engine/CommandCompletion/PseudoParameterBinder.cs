@@ -1285,7 +1285,7 @@ namespace System.Management.Automation.Language
                             context.CurrentCommandProcessor = commandProcessor;
                             commandProcessor.SetCurrentScopeToExecutionScope();
                             // Run method "BindCommandLineParametersNoValidation" to get all available parameters, including the dynamic
-                            // parameters (some of them, not necessarilly all. Since we don't do the actual binding, some dynamic parameters
+                            // parameters (some of them, not necessarily all. Since we don't do the actual binding, some dynamic parameters
                             // might not be retrieved). 
                             if (!retryWithNoArgs)
                             {
