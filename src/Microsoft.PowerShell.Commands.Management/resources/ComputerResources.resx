@@ -399,7 +399,7 @@
   <data name="RenameCommandWsmanAuthParamConflict" xml:space="preserve">
     <value>Parameter WsmanAuthentication cannot be specified with the DCOM protocol. Parameter WSManAuthentication is valid only when the WSMan protocol is used.</value>
   </data>
-  <data name="StopCommandAuthProtcolConflict" xml:space="preserve">
+  <data name="StopCommandAuthProtocolConflict" xml:space="preserve">
     <value>Parameters DcomAuthentication and Impersonation cannot be specified with the WSMan protocol. {0}</value>
   </data>
   <data name="StopCommandParamMessage" xml:space="preserve">
@@ -408,7 +408,7 @@
   <data name="StopCommandParamWSManAuthConflict" xml:space="preserve">
     <value>Parameter WsmanAuthentication cannot be specified with DcomAuthentication or Impersonation parameters. {0}</value>
   </data>
-  <data name="StopCommandWSManAuthProtcolConflict" xml:space="preserve">
+  <data name="StopCommandWSManAuthProtocolConflict" xml:space="preserve">
     <value>Parameter WsmanAuthentication cannot be specified with the DCOM protocol. {0}</value>
   </data>
   <data name="InvalidParameterDCOMNotSupported" xml:space="preserve">

@@ -275,7 +275,7 @@ namespace Microsoft.PowerShell.Commands
 
             if ((_transportProtocol == TransportProtocol.DCOM) && haveWsmanAuthenticationParam)
             {
-                string errMsg = StringUtil.Format(ComputerResources.StopCommandWSManAuthProtcolConflict, ComputerResources.StopCommandParamMessage);
+                string errMsg = StringUtil.Format(ComputerResources.StopCommandWSManAuthProtocolConflict, ComputerResources.StopCommandParamMessage);
                 ThrowTerminatingError(
                     new ErrorRecord(
                         new PSArgumentException(errMsg),
@@ -286,7 +286,7 @@ namespace Microsoft.PowerShell.Commands
 
             if ((_transportProtocol == TransportProtocol.WSMan) && (haveDcomAuthenticationParam || haveDcomImpersonation))
             {
-                string errMsg = StringUtil.Format(ComputerResources.StopCommandAuthProtcolConflict, ComputerResources.StopCommandParamMessage);
+                string errMsg = StringUtil.Format(ComputerResources.StopCommandAuthProtocolConflict, ComputerResources.StopCommandParamMessage);
                 ThrowTerminatingError(
                     new ErrorRecord(
                         new PSArgumentException(errMsg),
@@ -3368,7 +3368,7 @@ $result
 
             if ((_transportProtocol == TransportProtocol.DCOM) && haveWsmanAuthenticationParam)
             {
-                string errMsg = StringUtil.Format(ComputerResources.StopCommandWSManAuthProtcolConflict, ComputerResources.StopCommandParamMessage);
+                string errMsg = StringUtil.Format(ComputerResources.StopCommandWSManAuthProtocolConflict, ComputerResources.StopCommandParamMessage);
                 ThrowTerminatingError(
                     new ErrorRecord(
                         new PSArgumentException(errMsg),
@@ -3379,7 +3379,7 @@ $result
 
             if ((_transportProtocol == TransportProtocol.WSMan) && (haveDcomAuthenticationParam || haveDcomImpersonation))
             {
-                string errMsg = StringUtil.Format(ComputerResources.StopCommandAuthProtcolConflict, ComputerResources.StopCommandParamMessage);
+                string errMsg = StringUtil.Format(ComputerResources.StopCommandAuthProtocolConflict, ComputerResources.StopCommandParamMessage);
                 ThrowTerminatingError(
                     new ErrorRecord(
                         new PSArgumentException(errMsg),
