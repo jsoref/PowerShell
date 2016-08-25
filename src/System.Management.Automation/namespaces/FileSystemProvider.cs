@@ -5344,7 +5344,7 @@ namespace Microsoft.PowerShell.Commands
         } // TokenizePathToStack
 
         /// <summary>
-        /// Given the tokenized path, the relative pathing elements are removed.
+        /// Given the tokenized path, the relative path elements are removed.
         /// </summary>
         /// 
         /// <param name="basepath">
@@ -5359,7 +5359,7 @@ namespace Microsoft.PowerShell.Commands
         /// 
         /// <returns>
         /// A stack in reverse order with the path elements normalized and all relative
-        /// pathing tokens removed.
+        /// path tokens removed.
         /// </returns>
         /// 
         private Stack<string> NormalizeThePath(string basepath, Stack<string> tokenizedPathStack)
