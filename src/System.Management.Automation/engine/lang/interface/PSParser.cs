@@ -55,7 +55,7 @@ namespace System.Management.Automation
     //  3. Parsing Logic
     //  
     //  Script parsing is done through instances of PSParser object. Each PSParser object 
-    //  wraps an interal Parser object. It is PSParser object's responsibility to 
+    //  wraps an internal Parser object. It is PSParser object's responsibility to 
     //      a. setup local runspace and retrieve internal Parser object from it. 
     //      b. call internal parser for actual parsing
     //      c. translate parsing result from internal Token and RuntimeException type
