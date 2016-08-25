@@ -6083,7 +6083,7 @@ namespace Microsoft.PowerShell.Activities
         /// <summary>
         /// Generic version of the function to handle value types
         /// </summary>
-        /// <typeparam name="T">THe type of the intended argument</typeparam>
+        /// <typeparam name="T">The type of the intended argument</typeparam>
         /// <param name="parameterName"></param>
         /// <param name="parameterDefaults"></param>
         /// <returns></returns>

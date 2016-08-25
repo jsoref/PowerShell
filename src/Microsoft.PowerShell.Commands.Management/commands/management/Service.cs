@@ -411,7 +411,7 @@ namespace Microsoft.PowerShell.Commands
         /// <returns></returns>
         /// <remarks>
         /// We do not use the ServiceController(string serviceName)
-        /// constructor variant, since thr resultant
+        /// constructor variant, since the resultant
         /// ServiceController.ServiceName is the provided serviceName
         /// even when that differs from the real ServiceName by case.
         /// </remarks>

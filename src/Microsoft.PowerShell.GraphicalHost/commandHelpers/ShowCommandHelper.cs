@@ -26,7 +26,7 @@ namespace Microsoft.PowerShell.Commands.ShowCommandInternal
     using Microsoft.PowerShell.Commands.ShowCommandExtension;
 
     /// <summary>
-    /// Implements thw WPF window part of the show-command cmdlet
+    /// Implements the WPF window part of the show-command cmdlet
     /// </summary>
     internal class ShowCommandHelper : IDisposable
     {
