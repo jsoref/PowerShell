@@ -43,7 +43,7 @@ function Start-PSBuild {
         [switch]$TypeGen,
         [switch]$Clean,
 
-        # this switch will re-build only System.Mangement.Automation.dll
+        # this switch will re-build only System.Management.Automation.dll
         # it's useful for development, to do a quick changes in the engine
         [switch]$SMAOnly,
 

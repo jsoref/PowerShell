@@ -928,7 +928,7 @@ namespace System.Management.Automation
     /// <summary>
     /// Deals with ManagementClass objects.
     /// Adapts only static methods and SystemProperties of a 
-    /// ManagemetnClass object.
+    /// ManagementClass object.
     /// </summary>
     internal class ManagementClassApdapter : BaseWMIAdapter
     {

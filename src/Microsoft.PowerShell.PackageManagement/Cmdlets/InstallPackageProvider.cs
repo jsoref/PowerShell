@@ -216,7 +216,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets
         protected override IHostApi GetProviderSpecificOption(PackageProvider pv) {
             var host = this.ProviderSpecific(pv);
             var host1 = host;
-            //add filterontag for finding providers.  Provider keys are: PackageManagment and Providers
+            //add filterontag for finding providers.  Provider keys are: PackageManagement and Providers
             host = host.Extend<IRequest>(
                 new {
                     GetOptionValues = new Func<string, IEnumerable<string>>(key => {

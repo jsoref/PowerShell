@@ -130,7 +130,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets
         {
             var host = this.ProviderSpecific(pv);
             var host1 = host;
-            //add filterontag for finding providers.  Provider keys are: PackageManagment and Provider
+            //add filterontag for finding providers.  Provider keys are: PackageManagement and Provider
             host = host.Extend<IRequest>(
                 new
                 {
