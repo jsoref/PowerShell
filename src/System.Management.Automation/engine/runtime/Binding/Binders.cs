@@ -2520,7 +2520,7 @@ namespace System.Management.Automation.Language
         }
 
         /// <summary>
-        /// Use the tokenzier to scan a number and convert it to a number of any type.
+        /// Use the tokenizer to scan a number and convert it to a number of any type.
         /// </summary>
         /// <param name="expr">
         /// The expression that refers to a string to be converted to a number of any type.
