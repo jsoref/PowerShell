@@ -91,7 +91,7 @@ namespace System.Management.Automation.Remoting
 
         /// <summary>
         /// Event which will be triggered when the operation is complete. It is
-        /// assumed that all the operations perfomed by StartOperation and 
+        /// assumed that all the operations performed by StartOperation and 
         /// StopOperation are asynchronous. The submitter of operations may 
         /// subscribe to this event to know when its complete (or it can handle 
         /// the synchronization with its scheduler) and the throttle 
