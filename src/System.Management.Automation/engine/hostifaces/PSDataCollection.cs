@@ -316,7 +316,7 @@ namespace System.Management.Automation
         /// as the data buffer.
         /// </summary>
         /// <param name="listToUse">
-        /// buffer wherer the elements are stored
+        /// buffer where the elements are stored
         /// </param>
         /// <remarks>
         /// Using this constructor will make the data buffer a wrapper on
