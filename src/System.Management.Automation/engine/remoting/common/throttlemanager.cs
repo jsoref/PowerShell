@@ -64,7 +64,7 @@ namespace System.Management.Automation.Remoting
     internal abstract class IThrottleOperation
     {
         /// <summary>
-        /// This method should handle the actual operation whcih need to be
+        /// This method should handle the actual operation which need to be
         /// controlled and performed. Examples of this can be Opening remote
         /// runspace, invoking expression in a remote runspace, etc. Once 
         /// an event is successfully received as a result of this function,
