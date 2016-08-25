@@ -520,7 +520,7 @@ namespace System.Management.Automation.Internal
         /// Default constructor
         /// </summary>
         /// <remarks>
-        /// Constructs a stream with a miximum size of Int32.Max
+        /// Constructs a stream with a maximum size of Int32.Max
         /// </remarks>
         internal ObjectStream()
             : this(Int32.MaxValue)
