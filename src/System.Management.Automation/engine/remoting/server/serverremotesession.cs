@@ -947,7 +947,7 @@ namespace System.Management.Automation.Remoting
         }
 
         /// <summary>
-        /// Handle session closing event to close runspace pool drivers this sesion is hosting.
+        /// Handle session closing event to close runspace pool drivers this session is hosting.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="eventArgs"></param>

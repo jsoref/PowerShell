@@ -1483,7 +1483,7 @@ namespace Microsoft.PowerShell.Commands
                     }
 
                     //
-                    // store the default sesion 
+                    // store the default session 
                     //
                     Dbg.Assert(moduleInfo.ModuleType == ModuleType.Manifest, "Remote discovery should always produce a 'manifest' module");
                     Dbg.Assert(moduleInfo.NestedModules != null, "Remote discovery should always produce a 'manifest' module with nested modules entry");

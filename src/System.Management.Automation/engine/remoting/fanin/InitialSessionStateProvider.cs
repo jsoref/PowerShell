@@ -356,7 +356,7 @@ namespace System.Management.Automation.Remoting
         #region public interfaces
 
         /// <summary>
-        /// Derived classes must override this to supply an InitialSesionState
+        /// Derived classes must override this to supply an InitialSessionState
         /// to be used to construct a Runspace for the user
         /// </summary>
         /// <param name="senderInfo">

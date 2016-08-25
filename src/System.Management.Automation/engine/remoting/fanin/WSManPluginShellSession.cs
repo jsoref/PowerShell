@@ -712,7 +712,7 @@ namespace System.Management.Automation.Remoting
             if (!isRcvOp)
             {
                 // Initiate close on the active command sessions and then clear the internal
-                // Command Sesison dictionary
+                // Command Session dictionary
                 CloseAndClearCommandSessions(reasonForClose);
                 // raise session closed event and let dependent code to release resources.
                 // null check is not performed here because the handler will take care of this.

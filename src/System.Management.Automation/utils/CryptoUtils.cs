@@ -512,7 +512,7 @@ namespace System.Management.Automation.Internal
         }
 
         /// <summary>
-        /// Generates an AEX-256 sessin key if one is not already generated
+        /// Generates an AEX-256 session key if one is not already generated
         /// </summary>
         internal void GenerateSessionKey()
         {
@@ -1392,7 +1392,7 @@ namespace System.Management.Automation.Internal
         /// <returns></returns>
         internal bool ImportEncryptedSessionKey(string encryptedSessionKey)
         {
-            Dbg.Assert(!String.IsNullOrEmpty(encryptedSessionKey), "encrypted sessoin key passed in cannot be null");
+            Dbg.Assert(!String.IsNullOrEmpty(encryptedSessionKey), "encrypted session key passed in cannot be null");
 
             try
             {

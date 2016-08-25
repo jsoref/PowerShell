@@ -1521,7 +1521,7 @@ namespace System.Management.Automation.Runspaces
             allowedCommands.Add("Measure-Object"); // used to have nice progress bars when import/export-pssession is running
             // required by interactive remoting
             allowedCommands.Add("Out-Default"); // appended to every command line
-            allowedCommands.Add("Exit-PSSession"); // used by the user to exit the sesion
+            allowedCommands.Add("Exit-PSSession"); // used by the user to exit the session
 
             // We don't remove these entries so that they can be called by commands in the runspace.
             // Setting them to 'Private' ensures that the user can't call them.
@@ -2528,7 +2528,7 @@ namespace System.Management.Automation.Runspaces
 
                 // If the initial session state made some commands private by way of
                 // VisibleCmdlets / etc., then change the default command visibility for
-                // the sesssion state so that newly imported modules aren't exposed accidentally.
+                // the session state so that newly imported modules aren't exposed accidentally.
                 if (DefaultCommandVisibility == SessionStateEntryVisibility.Private)
                 {
                     ss.DefaultCommandVisibility = SessionStateEntryVisibility.Private;
