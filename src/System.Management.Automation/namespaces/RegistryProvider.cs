@@ -4048,7 +4048,7 @@ namespace Microsoft.PowerShell.Commands
 
             switch (valueKind)
             {
-                // NOTICE: we assume that an unkown type is treated as
+                // NOTICE: we assume that an unknown type is treated as
                 // the same as a binary blob
                 case RegistryValueKind.Binary:
                 case RegistryValueKind.Unknown:

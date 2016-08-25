@@ -134,7 +134,7 @@ namespace System.Management.Automation.Runspaces.Internal
             this.instanceId = instanceId;
 
             // This indicates that this is a disconnected remote runspace pool and min/max values
-            // are currently unkown. These values will be updated once the object is connected.
+            // are currently unknown. These values will be updated once the object is connected.
             this.minPoolSz = -1;
             this.maxPoolSz = -1;
 

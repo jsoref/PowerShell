@@ -3624,8 +3624,8 @@ namespace System.Management.Automation
                     }
                     else
                     {
-                        //We have an unknwon tag
-                        s_trace.WriteLine("Unknwon tag {0} encountered", _reader.LocalName);
+                        //We have an unknown tag
+                        s_trace.WriteLine("Unknown tag {0} encountered", _reader.LocalName);
                         if (UnknownTagsAllowed)
                         {
                             Skip();
