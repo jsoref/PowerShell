@@ -237,7 +237,7 @@ namespace System.Management.Automation.Host
         // 
         // Ideally, this would be associated with the host instance, but remoting recycles host instances
         // for each command that gets invoked (so that it can keep track of the order of commands and their
-        // output.) Therefore, we store this transcripton data in the runspace. However, the
+        // output.) Therefore, we store this transcription data in the runspace. However, the
         // Runspace.DefaultRunspace property isn't always available (i.e.: when the pipeline is being set up),
         // so we have to cache it the first time it becomes available.
         private TranscriptionData TranscriptionData

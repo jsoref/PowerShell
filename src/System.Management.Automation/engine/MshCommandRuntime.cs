@@ -825,7 +825,7 @@ namespace System.Management.Automation
                     }
                     else
                     {
-                        // Only transcribe informational messages here. Transcripton of PSHost-targeted messages is done in the InternalUI.Write* methods.
+                        // Only transcribe informational messages here. Transcription of PSHost-targeted messages is done in the InternalUI.Write* methods.
                         CBhost.InternalUI.TranscribeResult(StringUtil.Format(InternalHostUserInterfaceStrings.InformationFormatString, record.ToString()));
                     }
                 }
