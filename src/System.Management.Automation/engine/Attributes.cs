@@ -604,7 +604,7 @@ namespace System.Management.Automation
     public sealed class ParameterAttribute : ParsingBaseAttribute
     {
         /// <summary>
-        /// ParameterSetName refering to all ParameterSets
+        /// ParameterSetName referring to all ParameterSets
         /// </summary>
         public const string AllParameterSets = "__AllParameterSets";
 
