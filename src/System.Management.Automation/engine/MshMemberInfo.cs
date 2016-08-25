@@ -43,7 +43,7 @@ namespace System.Management.Automation
         /// </summary>
         Property = 4,
         /// <summary>
-        /// A prorperty defined by a Name-Value pair
+        /// A property defined by a Name-Value pair
         /// </summary>
         NoteProperty = 8,
         /// <summary>
@@ -1010,7 +1010,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Constructs this proprerty
+        /// Constructs this property
         /// </summary>
         /// <param name="name">name of the property</param>
         /// <param name="adapter">adapter used in DoGetProperty</param>
@@ -2687,7 +2687,7 @@ namespace System.Management.Automation
         internal object baseObject;
 
         /// <summary>
-        /// Constructs this parameterized proprerty
+        /// Constructs this parameterized property
         /// </summary>
         /// <param name="name">name of the property</param>
         /// <param name="adapter">adapter used in DoGetMethod</param>

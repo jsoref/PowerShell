@@ -364,7 +364,7 @@ namespace System.Management.Automation.Host
         /// <summary>
         /// Used by hosting applications to notify PowerShell engine that it is
         /// being hosted in a console based application and the Pipeline execution
-        /// thread should call SetThreadUILanguage(0). This propery is currently
+        /// thread should call SetThreadUILanguage(0). This property is currently
         /// used by ConsoleHost only and in future releases we may consider 
         /// exposing this publicly.
         /// </summary>

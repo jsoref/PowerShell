@@ -1495,7 +1495,7 @@ namespace Microsoft.PowerShell.Commands
                                                        "ValueNotSpecifiedForWhereObject", null));
                 }
 
-                // The binary operation needs to be specified if the user specifies both the -Propery and -Value
+                // The binary operation needs to be specified if the user specifies both the -Property and -Value
                 if (!_valueNotSpecified && (_binaryOperator == TokenKind.Ieq && _forceBooleanEvaluation))
                 {
                     // The -Property and -Value are specified explicitly by the user but the binary operation is not

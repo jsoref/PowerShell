@@ -314,7 +314,7 @@ namespace System.Management.Automation
                     // Adapter engine resolve's members in the following steps:
                     //  1. Extended members -> 2. Adapted members -> 3. Dotnet members
                     // We cannot say from DirectoryEntryAdapter if a method with name "memberName"
-                    // is available. So check if a DotNet proeperty with the same name is available
+                    // is available. So check if a DotNet property with the same name is available
                     // If yes, return null from the adapted view and let adapter engine
                     // take care of DotNet member resolution. If not, assume memberName method
                     // is available on native adsi object.

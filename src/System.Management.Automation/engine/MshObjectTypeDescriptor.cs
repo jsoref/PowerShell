@@ -520,7 +520,7 @@ namespace System.Management.Automation
 
             if (defaultProperty != null)
             {
-                // There is a defaultPropery, but let's check if it is actually one of the properties we are
+                // There is a defaultProperty, but let's check if it is actually one of the properties we are
                 // returning in GetProperties
                 foreach (PropertyDescriptor descriptor in properties)
                 {

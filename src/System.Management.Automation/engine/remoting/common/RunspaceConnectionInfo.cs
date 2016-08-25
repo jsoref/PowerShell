@@ -1089,7 +1089,7 @@ namespace System.Management.Automation.Runspaces
 
         /// <summary>
         /// Converts <paramref name="rsCI"/> to a WSManConnectionInfo. If conversion succeeds extracts
-        /// the propery..otherwise returns default value
+        /// the property..otherwise returns default value
         /// </summary>
         /// <param name="rsCI"></param>
         /// <param name="property"></param>

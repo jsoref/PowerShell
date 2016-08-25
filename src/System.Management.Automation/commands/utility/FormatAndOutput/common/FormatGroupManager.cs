@@ -19,7 +19,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
         /// <summary>
         /// Initialize with the grouping property data
         /// </summary>
-        /// <param name="groupingExpression">name of the grouping porperty</param>
+        /// <param name="groupingExpression">name of the grouping property</param>
         /// <param name="displayLabel">display name of the property</param>
         internal void Initialize(MshExpression groupingExpression, string displayLabel)
         {

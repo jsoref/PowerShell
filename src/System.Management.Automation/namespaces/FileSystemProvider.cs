@@ -6115,7 +6115,7 @@ namespace Microsoft.PowerShell.Commands
         } // GetProperty
 
         /// <summary>
-        /// Gets the dynamic propery parameters required by the get-itemproperty cmdlet.
+        /// Gets the dynamic property parameters required by the get-itemproperty cmdlet.
         /// This feature is not required by the File System provider.
         /// </summary>
         /// 
@@ -6317,7 +6317,7 @@ namespace Microsoft.PowerShell.Commands
         } // SetProperty
 
         /// <summary>
-        /// Gets the dynamic propery parameters required by the set-itemproperty cmdlet.
+        /// Gets the dynamic property parameters required by the set-itemproperty cmdlet.
         /// This feature is not required by the File System provider.
         /// </summary>
         /// 
@@ -6450,7 +6450,7 @@ namespace Microsoft.PowerShell.Commands
         } // ClearProperty
 
         /// <summary>
-        /// Gets the dynamic propery parameters required by the clear-itemproperty cmdlet.
+        /// Gets the dynamic property parameters required by the clear-itemproperty cmdlet.
         /// This feature is not required by the File System provider.
         /// </summary>
         /// 
@@ -6622,7 +6622,7 @@ namespace Microsoft.PowerShell.Commands
         } // GetContentReader
 
         /// <summary>
-        /// Gets the dynamic propery parameters required by the get-content cmdlet.
+        /// Gets the dynamic property parameters required by the get-content cmdlet.
         /// </summary>
         /// 
         /// <param name="path">
@@ -6744,7 +6744,7 @@ namespace Microsoft.PowerShell.Commands
         } // GetContentWriter
 
         /// <summary>
-        /// Gets the dynamic propery parameters required by the set-content and
+        /// Gets the dynamic property parameters required by the set-content and
         /// add-content cmdlets.
         /// </summary>
         /// 
@@ -6915,7 +6915,7 @@ namespace Microsoft.PowerShell.Commands
         } // ClearContent
 
         /// <summary>
-        /// Gets the dynamic propery parameters required by the clear-content cmdlet.
+        /// Gets the dynamic property parameters required by the clear-content cmdlet.
         /// </summary>
         /// 
         /// <param name="path">
