@@ -375,7 +375,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
         private void LineWrittenEvent()
         {
             // check to avoid reeentrancy from the prompt handler
-            // writing during the PropmtUser() call
+            // writing during the PromptUser() call
             if (_disableLineWrittenEvent)
                 return;
 
@@ -420,7 +420,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
         /// <summary>
         /// check if we need to put out a prompt
         /// </summary>
-        /// <value>true if we need to promp</value>
+        /// <value>true if we need to prompt</value>
         private bool NeedToPrompt
         {
             get
