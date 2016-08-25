@@ -2143,7 +2143,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
                     return match;
                 }
             }
-            DebugHelper.WriteLog("CimClass '{0}' is qulified.", 1, cimClass.CimSystemProperties.ClassName);
+            DebugHelper.WriteLog("CimClass '{0}' is qualified.", 1, cimClass.CimSystemProperties.ClassName);
             return true;
         }
         #endregion

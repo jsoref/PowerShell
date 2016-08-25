@@ -3016,7 +3016,7 @@ namespace Microsoft.WSMan.Management
                 if (!prop.Value.ToString().Equals(WSManStringLiterals.ContainerChildValue))
                 {
                     // This path is used by WriteItemObject to construct PSPath.
-                    // PSPath is a provider quailified path and we dont need to specify
+                    // PSPath is a provider qualified path and we dont need to specify
                     // provider root in this path..So I am trying to eliminate provider root
                     // in this case.
                     string pathToUse = WSManStringLiterals.rootpath.Equals(path, StringComparison.OrdinalIgnoreCase) ?
@@ -3027,7 +3027,7 @@ namespace Microsoft.WSMan.Management
                 else
                 {
                     // This path is used by WriteItemObject to construct PSPath.
-                    // PSPath is a provider quailified path and we dont need to specify
+                    // PSPath is a provider qualified path and we dont need to specify
                     // provider root in this path..So I am trying to eliminate provider root
                     // in this case.
                     string pathToUse = WSManStringLiterals.rootpath.Equals(path, StringComparison.OrdinalIgnoreCase) ?

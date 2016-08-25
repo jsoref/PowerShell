@@ -82,7 +82,7 @@ class Bar : Foo.Foo {}
     It "can use modules with classes collision" {
         # we use 3 classes with name Foo at the same time
         # two of them come from 'using module' and one is defined in the scriptblock itself.
-        # we should be able to use first two of them by the module-quilified name and the third one it's name.
+        # we should be able to use first two of them by the module-qualified name and the third one it's name.
         $fooModuleName = [scriptblock]::Create(@"
 using module Foo
 using module FooWithManifest

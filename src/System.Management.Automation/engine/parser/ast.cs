@@ -7068,7 +7068,7 @@ namespace System.Management.Automation.Language
 
             //
             // First add the name of the command to call. If a module name has been provided
-            // then use the module-quilified form of the command name..
+            // then use the module-qualified form of the command name..
             //
             if (string.IsNullOrEmpty(Keyword.ImplementingModule))
             {
