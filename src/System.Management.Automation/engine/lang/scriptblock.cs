@@ -769,7 +769,7 @@ namespace System.Management.Automation
 
         internal object InvokeAsDelegateHelper(object dollarUnder, object dollarThis, object[] args)
         {
-            // Retrive context and current runspace to ensure that we throw exception, if this is non-default runspace.
+            // Retrieve context and current runspace to ensure that we throw exception, if this is non-default runspace.
             ExecutionContext context = GetContextFromTLS();
             RunspaceBase runspace = (RunspaceBase)context.CurrentRunspace;
 

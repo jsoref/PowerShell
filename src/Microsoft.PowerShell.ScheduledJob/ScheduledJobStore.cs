@@ -15,8 +15,8 @@ namespace Microsoft.PowerShell.ScheduledJob
 {
     /// <summary>
     /// This class encapsulates the work of determining the file location where
-    /// a job definition will be stored and retreived and where job runs will
-    /// be stored and retreived.  Scheduled job definitions are stored in a 
+    /// a job definition will be stored and retrieved and where job runs will
+    /// be stored and retrieved.  Scheduled job definitions are stored in a 
     /// location based on the current user.  Job runs are stored in the 
     /// corresponding scheduled job definition location under an "Output" 
     /// directory, where each run will have a subdirectory with a name derived

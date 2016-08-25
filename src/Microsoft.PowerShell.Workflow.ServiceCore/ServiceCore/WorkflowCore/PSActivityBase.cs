@@ -2646,7 +2646,7 @@ namespace Microsoft.PowerShell.Activities
         }
 
         /// <summary>
-        /// Retrievs all of the default arguments from the type and its parents.
+        /// Retrieve all of the default arguments from the type and its parents.
         /// </summary>
         /// <returns>All of the default arguments from the type and its parents</returns>
         protected IEnumerable<PSActivityArgumentInfo> GetActivityArguments()

@@ -568,7 +568,7 @@ namespace Microsoft.PowerShell
                 {
                     int err = Marshal.GetLastWin32Error();
 
-                    HostException e = CreateHostException(err, "RetreiveInputConsoleHandle",
+                    HostException e = CreateHostException(err, "RetrieveInputConsoleHandle",
                                                             ErrorCategory.ResourceUnavailable,
                                                             ConsoleControlStrings.GetInputModeExceptionTemplate);
                     throw e;
@@ -602,7 +602,7 @@ namespace Microsoft.PowerShell
                 {
                     int err = Marshal.GetLastWin32Error();
 
-                    HostException e = CreateHostException(err, "RetreiveActiveScreenBufferConsoleHandle",
+                    HostException e = CreateHostException(err, "RetrieveActiveScreenBufferConsoleHandle",
                         ErrorCategory.ResourceUnavailable, ConsoleControlStrings.GetActiveScreenBufferHandleExceptionTemplate);
                     throw e;
                 }

@@ -143,7 +143,7 @@ namespace System.Management.Automation
         /// Retrieve help info that exactly match the target.
         /// </summary>
         /// <param name="helpRequest">help request object</param>
-        /// <returns>List of HelpInfo objects retrived</returns>
+        /// <returns>List of HelpInfo objects retrieved</returns>
         internal abstract IEnumerable<HelpInfo> ExactMatchHelp(HelpRequest helpRequest);
 
         /// <summary>

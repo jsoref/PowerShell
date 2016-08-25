@@ -126,7 +126,7 @@ namespace System.Management.Automation
         /// <remarks>
         /// This will, 
         ///     a. use _sessionState object to get a list of alias that match the target.
-        ///     b. for each alias, retrive help info as in ExactMatchHelp.
+        ///     b. for each alias, retrieve help info as in ExactMatchHelp.
         /// </remarks>
         /// <param name="helpRequest">help request object</param>   
         /// <param name="searchOnlyContent">

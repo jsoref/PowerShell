@@ -276,7 +276,7 @@ namespace System.Management.Automation
         /// <summary>
         /// Merge the provider specific help with current command help. 
         /// 
-        /// The cmdletHelp and dynamicParameterHelp is normally retrived from ProviderHelpProvider.
+        /// The cmdletHelp and dynamicParameterHelp is normally retrieved from ProviderHelpProvider.
         /// </summary>
         /// <remarks>
         /// A new MamlCommandHelpInfo is created to avoid polluting the provider help cache.

@@ -511,7 +511,7 @@ namespace System.Management.Automation
         /// <summary>
         /// Constructs a ManagementClass object from the supplied mgmtBaseObject.
         /// ManagementObject has scope, options, path which need to be carried over to the ManagementClass for
-        /// retreiveing method/property/parameter metadata
+        /// retrieveing method/property/parameter metadata
         /// </summary>
         /// <param name="mgmtBaseObject"></param>
         /// <returns></returns>

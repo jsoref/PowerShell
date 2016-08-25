@@ -745,7 +745,7 @@ namespace System.Management.Automation
             {
                 try
                 {
-                    // note that we have tried to retrived parent id once.
+                    // note that we have tried to retrieved parent id once.
                     // retreiving parent id might throw exceptions..so
                     // setting this to -1 so that we dont try again to
                     // get the parent id.
