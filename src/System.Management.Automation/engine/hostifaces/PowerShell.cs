@@ -567,7 +567,7 @@ namespace System.Management.Automation
     /// <code>
     ///    Powershell.Create("get-process").Invoke();
     /// </code>
-    /// The above statetement creates a local runspace using default
+    /// The above statement creates a local runspace using default
     /// configuration, executes the command and then closes the runspace.
     /// 
     /// Using RunspacePool property, the caller can provide the runspace
