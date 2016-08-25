@@ -412,7 +412,7 @@ namespace System.Management.Automation
         /// If null, the current user credential is used.
         /// </param>
         /// <param name="displayRoot">
-        /// The network path of the drive. This field would be populted only if PSDriveInfo
+        /// The network path of the drive. This field would be populated only if PSDriveInfo
         /// is targeting the network drive or else this filed is null for local drives.
         /// </param>
         /// 
