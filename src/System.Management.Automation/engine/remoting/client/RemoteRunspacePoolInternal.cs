@@ -518,7 +518,7 @@ namespace System.Management.Automation.Runspaces.Internal
 
             if (raiseEvents)
             {
-                // Private application data is senter after (post) connect.  We need
+                // Private application data is sent after (post) connect.  We need
                 // to wait for application data before raising the state change
                 // Connecting -> Opened event.
                 ThreadPool.QueueUserWorkItem(WaitAndRaiseConnectEventsProc, info);
