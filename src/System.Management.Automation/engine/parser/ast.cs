@@ -5808,7 +5808,7 @@ namespace System.Management.Automation.Language
         }
 
         /// <summary>
-        /// If this command was synthesiszed out of a dynamic keyword, this property will point to the DynamicKeyword
+        /// If this command was synthesized out of a dynamic keyword, this property will point to the DynamicKeyword
         /// data structure that was used to create this command.
         /// </summary>
         public DynamicKeyword DefiningKeyword { get; set; }
