@@ -38,7 +38,7 @@ Describe "Out-File" -Tags "CI" {
 	$actual | Should Be $expectedContent
     }
 
-    It "Should be able to accept string input via the InputObject swictch" {
+    It "Should be able to accept string input via the InputObject switch" {
 	{ Out-File -FilePath $testfile -InputObject $expectedContent } | Should Not Throw
 
 	$actual = Get-Content $testfile
