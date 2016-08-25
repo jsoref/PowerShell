@@ -2011,7 +2011,7 @@ namespace System.Management.Automation.Language
                 }
             }
 
-            // We preserve all posibilities
+            // We preserve all possibilities
             if (bindingSuccessful && localParameterSetFlag != 0)
                 _currentParameterSetFlag &= localParameterSetFlag;
             return bindingSuccessful;
