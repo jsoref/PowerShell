@@ -2204,7 +2204,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// Initializes a new instance of the RemoteException 
-        /// with a specified error message, serialzed Exception and 
+        /// with a specified error message, serialized Exception and 
         /// serialized InvocationInfo
         /// </summary>
         /// <param name="message">The message that describes the error. </param>

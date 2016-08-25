@@ -2049,7 +2049,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Gets the exception if any from the serializaed state info object
+        /// Gets the exception if any from the serialized state info object
         /// </summary>
         /// <param name="stateInfo"></param>
         /// <returns></returns>
