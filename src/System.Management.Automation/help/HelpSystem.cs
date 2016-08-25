@@ -145,7 +145,7 @@ namespace System.Management.Automation
             InitializeHelpProviders();
         }
 
-        #endregion Initalization
+        #endregion Initialization
 
         #region Help API
 

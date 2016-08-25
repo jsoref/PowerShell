@@ -1948,7 +1948,7 @@ namespace System.Management.Automation
         {
             get
             {
-                // this is kind of our own lazy initization logic here.
+                // this is kind of our own lazy initialization logic here.
                 if (_typeResolutionState == null)
                 {
                     if (this.Parent != null)

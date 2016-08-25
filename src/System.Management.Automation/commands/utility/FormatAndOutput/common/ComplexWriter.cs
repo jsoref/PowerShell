@@ -17,7 +17,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
     internal sealed class ComplexWriter
     {
         /// <summary>
-        /// initalization method to be called before any other operation
+        /// initialization method to be called before any other operation
         /// </summary>
         /// <param name="lineOutput">LineOutput interfaces to write to</param>
         /// <param name="numberOfTextColumns">number of columns used to write out</param>
