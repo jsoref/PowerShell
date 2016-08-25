@@ -520,7 +520,7 @@ namespace System.Management.Automation
                     var locals = MutableTuple.MakeTuple(Compiler.DottedLocalsTupleType,
                                                         Compiler.DottedLocalsNameIndexMap);
                     object[] remainingArgs =
-                        ScriptBlock.BindArgumentsForScripblockInvoke(
+                        ScriptBlock.BindArgumentsForScriptblockInvoke(
                             (RuntimeDefinedParameter[])scriptBlock.RuntimeDefinedParameters.Data,
                             args, context, false, null, locals);
                     locals.SetAutomaticVariable(AutomaticVariable.Args, remainingArgs, context);

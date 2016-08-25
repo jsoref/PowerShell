@@ -1173,7 +1173,7 @@ namespace System.Management.Automation.Language
         public override AstVisitAction VisitConfigurationDefinition(ConfigurationDefinitionAst configurationDefinitionAst)
         {
             //
-            // Check if the ScirptBlockAst contains NamedBlockAst other than the End block
+            // Check if the ScriptBlockAst contains NamedBlockAst other than the End block
             //
             ScriptBlockAst configBody = configurationDefinitionAst.Body.ScriptBlock;
             if (configBody.BeginBlock != null || configBody.ProcessBlock != null || configBody.DynamicParamBlock != null)

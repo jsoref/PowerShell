@@ -1393,7 +1393,7 @@ All WinRM sessions connected to Windows PowerShell session configurations, such 
     <value>The job cannot be debugged because there is no host UI available.  Make sure you are running this command in a PowerShell host that implements PSHostUserInterface.</value>
   </data>
   <data name="CannotDebugJobInvalidDebuggerMode" xml:space="preserve">
-    <value>The job cannot be debugged because the host debugger mode is set to None or Default.  The host debugger mode must be LocalScript and/or RemoteSript.</value>
+    <value>The job cannot be debugged because the host debugger mode is set to None or Default.  The host debugger mode must be LocalScript and/or RemoteScript.</value>
   </data>
   <data name="FoundMultipleJobsWithId" xml:space="preserve">
     <value>Multiple jobs were found with Id {0}.  Debug-Job can debug only one job at a time.</value>

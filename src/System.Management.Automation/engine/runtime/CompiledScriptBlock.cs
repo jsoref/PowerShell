@@ -1011,7 +1011,7 @@ namespace System.Management.Automation
                     context.LanguageMode = newLanguageMode.Value;
                 }
 
-                args = BindArgumentsForScripblockInvoke(
+                args = BindArgumentsForScriptblockInvoke(
                     (RuntimeDefinedParameter[])RuntimeDefinedParameters.Data,
                     args, context, !createLocalScope, backupWhenDotting, locals);
                 locals.SetAutomaticVariable(AutomaticVariable.Args, args, context);
@@ -1106,7 +1106,7 @@ namespace System.Management.Automation
             return locals;
         }
 
-        internal static object[] BindArgumentsForScripblockInvoke(
+        internal static object[] BindArgumentsForScriptblockInvoke(
             RuntimeDefinedParameter[] parameters,
             object[] args,
             ExecutionContext context,
