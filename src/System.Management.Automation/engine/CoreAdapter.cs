@@ -1214,7 +1214,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Return the best method out of overlaoded methods.
+        /// Return the best method out of overloaded methods.
         /// The best has the smallest type distance between the method's parameters and the given arguments.
         /// </summary>
         /// <param name="methods">different overloads for a method</param>
