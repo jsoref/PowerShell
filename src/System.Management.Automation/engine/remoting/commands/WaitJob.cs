@@ -270,7 +270,7 @@ namespace Microsoft.PowerShell.Commands
             }
         }
 
-        private void CleanUpTimoutTracking()
+        private void CleanUpTimeoutTracking()
         {
             lock (_timerLock)
             {
@@ -420,7 +420,7 @@ namespace Microsoft.PowerShell.Commands
                     {
                         _isDisposed = true;
 
-                        this.CleanUpTimoutTracking();
+                        this.CleanUpTimeoutTracking();
                         this.CleanUpJobChangesTracking();
                         this.CleanUpEndProcessing(); // <- has to be last
                     }
