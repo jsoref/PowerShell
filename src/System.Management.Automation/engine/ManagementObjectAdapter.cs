@@ -961,7 +961,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Invokes method reperesented by <paramref name="mdata"/> using supplied arguments.
+        /// Invokes method represented by <paramref name="mdata"/> using supplied arguments.
         /// </summary>
         /// <param name="wmiObject">ManagementObject on which the method is invoked.</param>
         /// <param name="methodName">Method data.</param>
@@ -1118,7 +1118,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// Invokes method reperesented by <paramref name="mdata"/> using supplied arguments.
+        /// Invokes method represented by <paramref name="mdata"/> using supplied arguments.
         /// </summary>
         /// <param name="obj">ManagementObject on which the method is invoked.</param>
         /// <param name="methodName">Method data.</param>

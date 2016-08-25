@@ -228,7 +228,7 @@ namespace Microsoft.PowerShell.Commands
             get { return _propertySerializationSet; }
         }
 
-        // These members are represeted as NoteProperty in types.ps1xml
+        // These members are represented as NoteProperty in types.ps1xml
         private string _serializationMethod;
         private Type _targetTypeForDeserialization;
         private int _serializationDepth = int.MinValue;

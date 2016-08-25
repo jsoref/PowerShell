@@ -1557,7 +1557,7 @@ namespace System.Management.Automation
         ///                                                 string representation of valueToConvert.
         ///     - to ADSI                               -   returns DirectoryEntry  represented by the
         ///                                                 string representation of valueToConvert.
-        ///     - to ADSISearcher                       -   return DirectorySearcher representd by the
+        ///     - to ADSISearcher                       -   return DirectorySearcher represented by the
         ///                                                 string representation of valueToConvert.
         /// 
         /// If none of the cases above is true, the following is considered in order:
