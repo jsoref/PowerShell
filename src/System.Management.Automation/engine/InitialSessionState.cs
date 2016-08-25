@@ -404,7 +404,7 @@ namespace System.Management.Automation.Runspaces
 
         /// <summary>
         /// Create a named entry for the assembly to load, specifying
-        /// just the nanme
+        /// just the name
         /// </summary>
         /// <param name="name">The name of the assembly to load</param>
         public SessionStateAssemblyEntry(string name)

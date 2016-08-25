@@ -276,7 +276,7 @@ namespace System.Management.Automation.SecurityAccountsManager
             /// being used.
             /// </summary>
             [SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-            public string TypeNamne
+            public string TypeName
             {
                 get { return type.ToString(); }
             }

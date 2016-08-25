@@ -761,7 +761,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <param name="name">name of the property</param>
         /// <param name="getterCodeReference">This should be a public static non void method taking one PSObject parameter.</param>
-        /// <exception cref="ArgumentException">if namme is null or empty or getterCodeReference is null</exception>
+        /// <exception cref="ArgumentException">if name is null or empty or getterCodeReference is null</exception>
         /// <exception cref="ExtendedTypeSystemException">if getterCodeReference doesn't have the right format.</exception>
         public PSCodeProperty(string name, MethodInfo getterCodeReference)
         {
