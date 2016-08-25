@@ -5284,7 +5284,7 @@ namespace System.Management.Automation
 #if DEBUG
                 Dbg.Assert(
                     _typeParametersOfTheMethod.Contains(parameterType),
-                    "Only uninstantinated generic type parameters encountered in real life, should be the ones coming from the method");
+                    "Only uninstantiated generic type parameters encountered in real life, should be the ones coming from the method");
 #endif
 
                 HashSet<Type> inferenceCandidates = _typeParameterIndexToSetOfInferenceCandidates[parameterType.GenericParameterPosition];
