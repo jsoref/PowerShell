@@ -644,7 +644,7 @@ $result
                 results.Add(controlPanelItem);
             }
 
-            // Sort the reuslts by Canonical Name
+            // Sort the results by Canonical Name
             results.Sort(CompareControlPanelItems);
             foreach (ControlPanelItem controlPanelItem in results)
             {
