@@ -3708,7 +3708,7 @@ namespace Microsoft.PowerShell.DesiredStateConfiguration.Internal
         }
         else
         {
-# If there are prerequsite resources, validate that the references are well-formed strings
+# If there are prerequisite resources, validate that the references are well-formed strings
 # This routine also adds the resource to the global node resources table.
             Test-DependsOn
 
