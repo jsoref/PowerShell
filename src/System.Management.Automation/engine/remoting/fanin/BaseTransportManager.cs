@@ -1275,7 +1275,7 @@ namespace System.Management.Automation.Remoting.Server
                 // script proprties is calling write-progress. Write-Progress in turn results in a progress record
                 // being sent to client. This breaks the fragmentation rule when the original object (without progress)
                 // does not fit in fragmented packet.
-                // ******************** repro using powershll *********************************
+                // ******************** repro using powershell *********************************
                 //  icm . {
                 //        $a = new-object psobject
                 //        $a.pstypenames.Insert(0, "Microsoft.PowerShell.Test.Bug491001")
