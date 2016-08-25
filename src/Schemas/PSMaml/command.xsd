@@ -29,7 +29,7 @@
 					name : moved to commandDetails
 					verb : moved to commandDetails
 					noun : moved to commandDetails
-					? Synposis : mapped to commandDetails.CommandDescription
+					? Synopsis : mapped to commandDetails.CommandDescription
 				-->
 				<!-- [gxie] items added:
 					keywords
