@@ -78,7 +78,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <remarks> 
         /// Script command processor created from a script file is special
-        /// in following two perspect, 
+        /// in following two perspectives, 
         /// 
         ///     1. New scope created needs to be a 'script' scope in the 
         ///        sense that it needs to handle $script: variables. 
