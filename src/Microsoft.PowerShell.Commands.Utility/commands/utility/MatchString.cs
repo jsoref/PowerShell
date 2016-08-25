@@ -721,7 +721,7 @@ namespace Microsoft.PowerShell.Commands
             // Essentially, the buffer is separated into regions:
             // | prectxt region  (older entries, length = precontext)  |
             // | match region    (length = 1)                          |
-            // | postctxt region (newer entries, length = postcontext) |
+            // | postcontext region (newer entries, length = postcontext) |
             //
             // When context entries containing a match reach the "middle"
             // (the position between the pre/post context regions)
