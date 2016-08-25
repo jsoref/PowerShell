@@ -261,7 +261,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets {
 
                 // if we are anywhere but the end of the pipeline, the delegate here would block on stuff later in the pipe
                 // and since we're blocking *that* based on the the resolution of this, we're better off just skipping
-                // the message resoluion for things earlier in the pipeline.
+                // the message resolution for things earlier in the pipeline.
                 _messageResolverNotResponding = !ExecuteOnMainThread(() =>{
                     result = MessageResolver(messageText, defaultText);
                     if (string.IsNullOrWhiteSpace(result)) {

@@ -847,7 +847,7 @@ namespace System.Management.Automation
         /// to the dictionary will not affect PowerShell scripts in any way.  Use
         /// <see cref="TypeAccelerators.Add"/> and
         /// <see cref="TypeAccelerators.Remove"/> to
-        /// affect the type resolutin in PowerShell scripts.
+        /// affect the type resolution in PowerShell scripts.
         /// </remarks>
         public static Dictionary<string, Type> Get
         {
