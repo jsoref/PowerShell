@@ -2289,7 +2289,7 @@ namespace System.Management.Automation.Runspaces
         /// Add a list of modules to import when the runspace is created.
         /// </summary>
         /// <param name="modules">
-        /// The modules, whose specificiations are specified by <paramref name="modules"/>,
+        /// The modules, whose specifications are specified by <paramref name="modules"/>,
         /// to add.
         /// </param>
         public void ImportPSModule(IEnumerable<ModuleSpecification> modules)
