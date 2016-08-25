@@ -529,7 +529,7 @@ namespace System.Management.Automation.Runspaces
                     }
                     else
                     {
-                        // For wahtever reason, cache is corrupted. Hence override the cache content.
+                        // For whatever reason, cache is corrupted. Hence override the cache content.
                         if (enable)
                         {
                             debugPreferenceCache = new Hashtable();
