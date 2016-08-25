@@ -207,7 +207,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
             get
             {
                 CheckStopProcessing();
-                // just return the default singelton implementation
+                // just return the default singleton implementation
                 return _displayCellsDefault;
             }
         }
