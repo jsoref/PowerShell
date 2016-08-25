@@ -352,7 +352,7 @@ namespace Microsoft.PowerShell
         /// the UI languages a user has chosen.
         /// </summary>
         /// <returns>
-        /// List of ThredPreferredUILanguages.
+        /// List of ThreadPreferredUILanguages.
         /// </returns>
         /// <remarks>
         /// This method will work only on Vista and later.
