@@ -613,7 +613,7 @@ namespace System.Management.Automation.Remoting
         /// <summary>
         /// Returns a byte[] which holds data of fragment size (or) serialized data of
         /// one object, which ever is greater. If data is not currently available, then
-        /// the callback is registerd and called whenever the data is available.
+        /// the callback is registered and called whenever the data is available.
         /// </summary>
         /// <param name="callback">
         /// callback to call once the data becomes available.

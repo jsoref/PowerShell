@@ -6655,7 +6655,7 @@ function Set-ModuleSourcesVariable
             }
         }
 
-        # Already registed repositories may not have the ScriptSourceLocation property, try to populate it from the existing SourceLocation
+        # Already registered repositories may not have the ScriptSourceLocation property, try to populate it from the existing SourceLocation
         # Also populate the PublishLocation and ScriptPublishLocation from the SourceLocation if PublishLocation is empty/null.
         # 
         $script:PSGetModuleSources.Keys | Microsoft.PowerShell.Core\ForEach-Object { 
