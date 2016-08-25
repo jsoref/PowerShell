@@ -402,7 +402,7 @@ namespace System.Management.Automation
         /// 
         /// <remarks>
         /// ExactMatchHelp is overridden instead of DoExactMatchHelp to make sure 
-        /// all help item retrival will go through command discovery. Because each 
+        /// all help item retrieval will go through command discovery. Because each 
         /// help file can contain multiple help items for different commands. Directly
         /// retrieve help cache can result in a invalid command to contain valid
         /// help item. Forcing each ExactMatchHelp to go through command discovery 
@@ -801,7 +801,7 @@ namespace System.Management.Automation
                     if (null != newMamlHelpInfo)
                     {
                         // caching the changed help content under the prefixed name for faster
-                        // retreival later.
+                        // retrieval later.
                         AddToCommandCache(helpFileIdentifier, commandInfo.Name, newMamlHelpInfo);
                         return newMamlHelpInfo;
                     }
@@ -845,7 +845,7 @@ namespace System.Management.Automation
                         }
 
                         // caching the changed help content under the prefixed name for faster
-                        // retreival later.
+                        // retrieval later.
                         AddToCommandCache(cmdletInfo.ModuleName, cmdletInfo.Name, newMamlHelpInfo);
                         return newMamlHelpInfo;
                     }
