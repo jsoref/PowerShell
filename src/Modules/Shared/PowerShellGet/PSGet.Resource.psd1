@@ -208,8 +208,8 @@ ConvertFrom-StringData @'
         PublishLocation=Publish Location:'{0}'.
         ScriptPATHPromptCaption=PATH Environment Variable Change
         ScriptPATHPromptQuery=Your system has not been configured with a default script installation path yet, which means you can only run a script by specifying the full path to the script file. This action places the script into the folder '{0}', and adds that folder to your PATH environment variable. Do you want to add the script installation path '{0}' to the PATH environment variable?
-        AddedScopePathToProcessSpecificPATHVariable=Added scripts installation location '{0}' for '{1}' scope to process specific PATH environment varaible.
-        AddedScopePathToPATHVariable=Added scripts installation location '{0}' for '{1}' scope to PATH environment varaible. 
+        AddedScopePathToProcessSpecificPATHVariable=Added scripts installation location '{0}' for '{1}' scope to process specific PATH environment variable.
+        AddedScopePathToPATHVariable=Added scripts installation location '{0}' for '{1}' scope to PATH environment variable. 
         FilePathInFileListNotWithinModuleBase=Path '{0}' defined in FileList is not within module base '{1}'. Provide the correct FileList parameters and then try again.
         ManifestFileReadWritePermissionDenied=The current user does not have read-write permissions for the file:'{0}'. Check the file permissions and then try again.
         MissingTheRequiredPathOrPassThruParameter=The Path or PassThru parameter is required for creating the script file info. A new script file will be created with the script file info when the Path parameter is specified. Script file info will be returned if the PassThru parameter is specified. Try again after specifying the required parameter.

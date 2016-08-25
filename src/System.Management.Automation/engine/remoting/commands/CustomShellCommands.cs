@@ -4786,7 +4786,7 @@ param(
             if ($pa -eq ""x86"")
             {{
                 # on 64-bit platforms, wow64 bit process has the correct architecture
-                # available in processor_architew6432 varialbe
+                # available in processor_architew6432 variable
                 $pa = $env:PROCESSOR_ARCHITEW6432
             }}
             if ((($pa -eq ""amd64"")) -and (test-path $env:windir\syswow64\pwrshplugin.dll))

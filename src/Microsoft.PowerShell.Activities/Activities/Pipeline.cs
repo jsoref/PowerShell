@@ -285,7 +285,7 @@ namespace Microsoft.PowerShell.Activities
         /// </summary>
         /// <param name="context">The activity context.</param>
         /// <param name="variable">The variable which needs to set.</param>
-        /// <param name="value">The value for the vriable.</param>
+        /// <param name="value">The value for the variable.</param>
         private void SetData(ActivityContext context, Variable<PSDataCollection<PSObject>> variable, PSDataCollection<PSObject> value)
         {
             PropertyDescriptor prop = context.DataContext.GetProperties()[variable.Name];

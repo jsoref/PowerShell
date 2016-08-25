@@ -1916,7 +1916,7 @@ namespace Microsoft.PowerShell.Workflow
                 
                 // saving the workflow application handle into the temporary variable
                 // then unregistering the workflow application handle
-                // temporary varialbe will be used to call abort if workflow is in running state
+                // temporary variable will be used to call abort if workflow is in running state
                 WorkflowApplication wf = this.workflowApplication;
                 DisposeWorkflowApplication();
 

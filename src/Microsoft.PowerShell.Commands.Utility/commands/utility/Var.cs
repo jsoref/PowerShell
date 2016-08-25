@@ -336,7 +336,7 @@ namespace Microsoft.PowerShell.Commands
         #endregion parameters
 
         /// <summary>
-        /// Implements ProcessRecord() method for get-variabit's le command.
+        /// Implements ProcessRecord() method for get-variable's command.
         /// </summary>
         protected override void ProcessRecord()
         {
