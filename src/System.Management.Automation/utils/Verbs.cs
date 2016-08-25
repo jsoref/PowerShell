@@ -452,7 +452,7 @@ namespace System.Management.Automation
     public static class VerbsDiagnostic
     {
         /// <summary>
-        /// Interatively interact with a resource or activity for the purpose finding a flaw or better understanding of what is occurring.
+        /// Iteratively interact with a resource or activity for the purpose finding a flaw or better understanding of what is occurring.
         /// </summary>
         public const string Debug = "Debug";
 
