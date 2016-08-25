@@ -393,7 +393,7 @@ namespace System.Management.Automation
         } // Events
 
         /// <summary>
-        /// Repostiory for jobs 
+        /// Repository for jobs 
         /// </summary>
         public JobRepository JobRepository
         {

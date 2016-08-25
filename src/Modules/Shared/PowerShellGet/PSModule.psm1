@@ -8930,7 +8930,7 @@ function Add-PackageSource
 
     if($Name -eq $Script:PSGalleryModuleSource)
     {
-        # Add or update the PSGallery repostory
+        # Add or update the PSGallery repository
         $repository = Set-PSGalleryRepository -Trusted:$Trusted
 
         if($repository)
