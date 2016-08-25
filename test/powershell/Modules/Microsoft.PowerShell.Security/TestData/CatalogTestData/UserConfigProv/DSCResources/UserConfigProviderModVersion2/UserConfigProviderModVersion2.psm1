@@ -2,7 +2,7 @@
 
 # The Get-TargetResource cmdlet is used to fetch the desired state of the DSC managed node through a powershell script.
 # This cmdlet executes the user supplied script (i.e., the script is responsible for validating the desired state of the 
-# DSC managed node). The result of the script execution is in the form of a hashtable containing all the inormation 
+# DSC managed node). The result of the script execution is in the form of a hashtable containing all the information 
 # gathered from the GetScript execution.
 function Get-TargetResource 
 {

@@ -1085,7 +1085,7 @@ namespace System.Management.Automation.Remoting.Client
         }
 
         /// <summary>
-        /// Option set struct used to pass optional infromation
+        /// Option set struct used to pass optional information
         /// with WSManCreateShellEx
         /// </summary>
         internal struct WSManOptionSet : IDisposable

@@ -500,7 +500,7 @@ namespace System.Management.Automation.Runspaces
         ///   1. SerializationMethod
         ///   2. SerailizationDepth
         ///   3. SpecificSerializationProperties
-        /// TypeTable has the following inforamtion used by deserializer:
+        /// TypeTable has the following information used by deserializer:
         ///   1. TargetTypeForDeserializaiton
         ///   2. TypeConverter
         /// 
@@ -547,7 +547,7 @@ namespace System.Management.Automation.Runspaces
         ///   1. SerializationMethod
         ///   2. SerailizationDepth
         ///   3. SpecificSerializationProperties
-        /// TypeTable has the following inforamtion used by deserializer:
+        /// TypeTable has the following information used by deserializer:
         ///   1. TargetTypeForDeserializaiton
         ///   2. TypeConverter
         /// 
@@ -602,7 +602,7 @@ namespace System.Management.Automation.Runspaces
         ///   1. SerializationMethod
         ///   2. SerailizationDepth
         ///   3. SpecificSerializationProperties
-        /// TypeTable has the following inforamtion used by deserializer:
+        /// TypeTable has the following information used by deserializer:
         ///   1. TargetTypeForDeserializaiton
         ///   2. TypeConverter
         /// </param>
@@ -623,7 +623,7 @@ namespace System.Management.Automation.Runspaces
         ///   1. SerializationMethod
         ///   2. SerailizationDepth
         ///   3. SpecificSerializationProperties
-        /// TypeTable has the following inforamtion used by deserializer:
+        /// TypeTable has the following information used by deserializer:
         ///   1. TargetTypeForDeserializaiton
         ///   2. TypeConverter
         /// </param>
@@ -649,7 +649,7 @@ namespace System.Management.Automation.Runspaces
         ///   1. SerializationMethod
         ///   2. SerailizationDepth
         ///   3. SpecificSerializationProperties
-        /// TypeTable has the following inforamtion used by deserializer:
+        /// TypeTable has the following information used by deserializer:
         ///   1. TargetTypeForDeserializaiton
         ///   2. TypeConverter
         /// </param>
