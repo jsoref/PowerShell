@@ -1330,7 +1330,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// Launch a method on an object. This will handle .NET native methods, COM 
-        /// methods and ScriptBlock notes. Native methods currently take precidence over notes...
+        /// methods and ScriptBlock notes. Native methods currently take precedence over notes...
         /// </summary>
         /// <param name="errorPosition">The position to use for error reporting.</param>
         /// <param name="target">The object to call the method on. It shouldn't be an msh object</param>

@@ -404,7 +404,7 @@ namespace Microsoft.PowerShell.Commands.Internal.Format
                 return tableBody.defaultDefinition.rowItemDefinitionList;
             }
 
-            // the overriding row definition takes the precendence
+            // the overriding row definition takes the precedence
             if (matchingRowDefinition.multiLine)
                 multiLine = matchingRowDefinition.multiLine;
 

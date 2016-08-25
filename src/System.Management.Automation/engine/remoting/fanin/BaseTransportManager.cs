@@ -927,7 +927,7 @@ namespace System.Management.Automation.Remoting.Client
         internal class CallbackNotificationInformation
         {
             // only one of the following 2 should be present..
-            // anyway transportException takes precendence over remoteObject.
+            // anyway transportException takes precedence over remoteObject.
             internal RemoteDataObject<PSObject> remoteObject;
             internal TransportErrorOccuredEventArgs transportError;
             // Used by ServicePendingCallbacks to give the control to derived classes for

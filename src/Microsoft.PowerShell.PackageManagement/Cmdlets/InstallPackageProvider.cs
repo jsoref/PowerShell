@@ -352,7 +352,7 @@ namespace Microsoft.PowerShell.PackageManagement.Cmdlets
                     }
                 } else {
                     //Handling a case where the multiple providers match one package
-                    //In this case, both bootstrap and PowerShellGet found the same package, let's take PowerShellGet as a presendence
+                    //In this case, both bootstrap and PowerShellGet found the same package, let's take PowerShellGet as a precedence
                     foreach (var subset in pkgSet) {
                         if (subset.ProviderName.EqualsIgnoreCase(PowerShellGet)) {
                             //find the match
