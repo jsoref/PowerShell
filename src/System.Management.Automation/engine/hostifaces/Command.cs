@@ -358,7 +358,7 @@ namespace System.Management.Automation.Runspaces
         void
         SetMergeSettingsOnCommandProcessor(CommandProcessorBase commandProcessor)
         {
-            Dbg.Assert(commandProcessor != null, "caller should valiadate the parameter");
+            Dbg.Assert(commandProcessor != null, "caller should validate the parameter");
 
             MshCommandRuntime mcr = commandProcessor.Command.commandRuntime as MshCommandRuntime;
 
