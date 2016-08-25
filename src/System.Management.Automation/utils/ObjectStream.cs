@@ -1342,7 +1342,7 @@ namespace System.Management.Automation.Internal
                 foreach (object o in enumerable)
                 {
                     // 879023-2003/10/28-JonN
-                    //  Outputting stops when recieving a AutomationNull.Value
+                    //  Outputting stops when receiving a AutomationNull.Value
                     // 2003/10/28-JonN There is a window where another
                     //  thread could modify the array to contain
                     //  AutomationNull.Value, but I'm not going to deal with it.
@@ -1833,7 +1833,7 @@ namespace System.Management.Automation.Internal
             {
                 foreach (object o in enumerable)
                 {
-                    //  Outputting stops when recieving a AutomationNull.Value
+                    //  Outputting stops when receiving a AutomationNull.Value
                     //  There is a window where another thread could modify the 
                     //  array to contain AutomationNull.Value, 
                     //  but I'm not going to deal with it.

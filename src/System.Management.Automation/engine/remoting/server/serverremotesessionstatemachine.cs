@@ -921,7 +921,7 @@ namespace System.Management.Automation.Remoting
             //***TODO*** Deal with this on the client side. Key exchange packets should have additional information
             //that identify the context of negotiation. Just like callId in SetMax and SetMinRunspaces messages
             Dbg.Assert(_state >= RemoteSessionState.Established,
-                "Key Receving can only be raised after reaching the Established state");
+                "Key Receiving can only be raised after reaching the Established state");
 
             switch (eventArgs.StateEvent)
             {
