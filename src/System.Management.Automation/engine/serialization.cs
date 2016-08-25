@@ -3056,7 +3056,7 @@ namespace System.Management.Automation
             // In above example, V1 serializer will ignore <IPAddress> element and read
             // properties from <Properties>
             // V2 serializer can read <IPAddress> tag and ignore properties.
-            // Read serializion note doc for information.
+            // Read serialization note doc for information.
 
             //Now validate the major version number is 1
             if (_version.Major != 1)

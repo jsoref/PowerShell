@@ -41,10 +41,10 @@ namespace System.Management.Automation.Runspaces.Internal
         /// The TypeTable to use while deserializing/serializing remote objects.
         /// TypeTable has the following information used by serializer:
         ///   1. SerializationMethod
-        ///   2. SerailizationDepth
+        ///   2. SerializationDepth
         ///   3. SpecificSerializationProperties
         /// TypeTable has the following information used by deserializer:
-        ///   1. TargetTypeForDeserializaiton
+        ///   1. TargetTypeForDeserialization
         ///   2. TypeConverter
         /// </param>
         /// <param name="host">Host associated with this runspacepool</param>
