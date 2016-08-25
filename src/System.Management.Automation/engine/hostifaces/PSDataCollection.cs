@@ -2006,7 +2006,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <param name="psInstanceId">
         /// Guid of Powershell instance creating this buffers.
-        /// Whenver an item is added to one of the buffers, this id is
+        /// Whenever an item is added to one of the buffers, this id is
         /// used to notify the buffer about the PowerShell instance adding
         /// this data.
         /// </param>

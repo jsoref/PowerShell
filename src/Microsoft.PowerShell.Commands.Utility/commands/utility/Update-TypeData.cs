@@ -753,7 +753,7 @@ namespace Microsoft.PowerShell.Commands
             { return; }
 
             string action = UpdateDataStrings.UpdateTypeDataAction;
-            // Load the resource once and format it whenver a new target
+            // Load the resource once and format it whenever a new target
             // filename is available
             string target = UpdateDataStrings.UpdateTarget;
 
@@ -927,7 +927,7 @@ namespace Microsoft.PowerShell.Commands
 
             string action = UpdateDataStrings.UpdateFormatDataAction;
 
-            // Load the resource once and format it whenver a new target
+            // Load the resource once and format it whenever a new target
             // filename is available
             string target = UpdateDataStrings.UpdateTarget;
 
