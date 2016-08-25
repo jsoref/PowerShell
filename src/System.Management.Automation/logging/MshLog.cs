@@ -32,7 +32,7 @@ namespace System.Management.Automation
     /// 
     /// Msh Log Engine provides features in following areas, 
     ///   1. Loading and managing logging providers. Based on some "Provider Catalog", engine will try to 
-    ///      load providers. First provider that is sucessfully loaded will be used for low level logging.
+    ///      load providers. First provider that is successfully loaded will be used for low level logging.
     ///      If no providers can be loaded, a dummy provider will be used, which will essentially do nothing.
     ///   2. Implementation of logging api functions. These api functions is implemented by calling corresponding 
     ///      functions in provider interface. 

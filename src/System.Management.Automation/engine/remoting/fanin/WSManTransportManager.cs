@@ -3035,7 +3035,7 @@ namespace System.Management.Automation.Remoting.Client
                 }
 
                 // WSMan API do not allow a signal/input/receive be sent until RunShellCommand is
-                // successfull (ie., callback is received)..so note that a signal is to be sent
+                // successful (ie., callback is received)..so note that a signal is to be sent
                 // here and return.
                 if (!_isCreateCallbackReceived)
                 {
@@ -3350,7 +3350,7 @@ namespace System.Management.Automation.Remoting.Client
                 cmdTM.SendOneItem();
 
                 // WSMan API does not allow a signal/input/receive be sent until RunShellCommand is
-                // successfull (ie., callback is received)
+                // successful (ie., callback is received)
                 if (cmdTM._isStopSignalPending)
                 {
                     cmdTM.SendStopSignal();

@@ -287,7 +287,7 @@ namespace Microsoft.PackageManagement.PackageSourceListProvider
                     }
                     else
                     {
-                        request.Verbose(Resources.Messages.HashValidationSuccessfull);
+                        request.Verbose(Resources.Messages.HashValidationSuccessful);
                     }
                 }
             }

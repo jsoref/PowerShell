@@ -477,7 +477,7 @@ namespace System.Management.Automation.Remoting.Client
         internal event EventHandler<EventArgs> CloseCompleted;
 
         /// <summary>
-        /// Indicated successfull completion of a connect operation on transport
+        /// Indicated successful completion of a connect operation on transport
         /// 
         /// Errors are reported through WSManTransportErrorOccured
         /// event.
@@ -485,7 +485,7 @@ namespace System.Management.Automation.Remoting.Client
         internal event EventHandler<EventArgs> ConnectCompleted;
 
         /// <summary>
-        /// Indicated successfull completion of a disconnect operation on transport
+        /// Indicated successful completion of a disconnect operation on transport
         /// 
         /// Errors are reported through WSManTransportErrorOccured
         /// event.
@@ -493,7 +493,7 @@ namespace System.Management.Automation.Remoting.Client
         internal event EventHandler<EventArgs> DisconnectCompleted;
 
         /// <summary>
-        /// Indicated successfull completion of a reconnect operation on transport
+        /// Indicated successful completion of a reconnect operation on transport
         /// 
         /// Errors are reported through WSManTransportErrorOccured
         /// event.

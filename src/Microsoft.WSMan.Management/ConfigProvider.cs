@@ -3298,7 +3298,7 @@ namespace Microsoft.WSMan.Management
         /// </summary>
         /// <param name="path"></param>
         /// <returns>
-        /// A PSObject representing the contents of the path if successfull,
+        /// A PSObject representing the contents of the path if successful,
         /// Otherwise null.
         /// </returns>
         /// <exception cref="ArgumentException">

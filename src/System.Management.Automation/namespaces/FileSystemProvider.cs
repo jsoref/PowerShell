@@ -4117,7 +4117,7 @@ namespace Microsoft.PowerShell.Commands
             {
                 bool result = PerformCopyFileFromRemoteSession(sourceFileFullName, destinationFile, destinationPath, force, ps, fileSize, false, null);
 
-                // Copying the file from the remote session completed sucessfully
+                // Copying the file from the remote session completed successfully
                 if (result)
                 {
                     // Check if the remote source file has any alternate data streams
@@ -4610,7 +4610,7 @@ namespace Microsoft.PowerShell.Commands
 
             bool targetSupportsAlternateStreams = RemoteTargetSupportsAlternateStreams(ps, remoteFilePath);
 
-            // Once the file is copied sucessfully, check if the file has any alternate data streams
+            // Once the file is copied successfully, check if the file has any alternate data streams
             if (result && targetSupportsAlternateStreams)
             {
                 foreach (AlternateStreamData stream in AlternateDataStreamUtilities.GetStreams(file.FullName))

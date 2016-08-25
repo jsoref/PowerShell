@@ -505,7 +505,7 @@ namespace Microsoft.PowerShell.Commands
             /// </summary>
             /// <param name="str">string to add to console input buffer</param>
             /// <param name="newLine">true to add Enter after the string</param>
-            /// <returns>true if it was succesfull in adding all characters to console input buffer</returns>
+            /// <returns>true if it was successful in adding all characters to console input buffer</returns>
             internal static bool AddToConsoleInputBuffer(string str, bool newLine)
             {
                 IntPtr handle = ConsoleInputWithNativeMethods.GetStdHandle(ConsoleInputWithNativeMethods.STD_INPUT_HANDLE);
