@@ -83,7 +83,7 @@ namespace Microsoft.PowerShell.Commands
         private static string s_verbActionOpenName = null;
 
         /// <summary>
-        /// Canonical name of the control panel item used as a refernece to fetch the verb
+        /// Canonical name of the control panel item used as a reference to fetch the verb
         /// action Open string. This control panel item exists on all SKU's.
         /// </summary>
         private const string RegionCanonicalName = "Microsoft.RegionAndLanguage";

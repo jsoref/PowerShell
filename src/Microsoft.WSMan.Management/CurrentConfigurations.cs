@@ -41,7 +41,7 @@ namespace Microsoft.WSMan.Management
         private XmlDocument rootDocument;
 
         /// <summary>
-        /// Holds the referance to the current document element.
+        /// Holds the reference to the current document element.
         /// </summary>
         private XmlElement documentElement;
 
