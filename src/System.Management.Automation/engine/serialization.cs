@@ -7400,7 +7400,7 @@ namespace Microsoft.PowerShell
         private static PSControl RehydratePSControl(PSObject deserializedControl)
         {
             // Earlier versions of PowerShell did not have all of the possible properties in a control, so we must
-            // use MisingPropertyOk to allow for connections to those older endpoints.
+            // use MissingPropertyOk to allow for connections to those older endpoints.
             PSControl result;
             if (Deserializer.IsDeserializedInstanceOfType(deserializedControl, typeof(TableControl)))
             {
