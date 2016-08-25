@@ -1836,7 +1836,7 @@ namespace System.Management.Automation
         /// true to make this PSObject as the owner of the memberset.
         /// </param>
         /// <param name="ownerObject">
-        /// PSObject to be used while replicating the owner for PSMemeberSet
+        /// PSObject to be used while replicating the owner for PSMemberSet
         /// </param>
         /// <returns></returns>
         internal static object GetNoteSettingValue(PSMemberSet settings, string noteName,

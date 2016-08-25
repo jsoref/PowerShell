@@ -539,7 +539,7 @@ namespace System.Management.Automation
             // First try to invoke method on the native adsi object. If the method
             // call fails, try to invoke dotnet method with same name, if one available.
             // This will ensure dotnet methods are exposed for DE objects.
-            // The problem is in GetMemeber<T>(), DE adapter cannot check if a requested
+            // The problem is in GetMember<T>(), DE adapter cannot check if a requested
             // method is available as it doesn't have access to native adsi object's
             // method metadata. So GetMember<T> returns PSMethod assuming a method
             // is available. This behavior will never give a chance to dotnet adapter
