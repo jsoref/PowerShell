@@ -821,7 +821,7 @@ namespace System.Management.Automation.Runspaces
         private PipelineStopper _stopper;
 
         /// <summary>
-        /// Gets PipelineStopper object which maitains stack of PipelineProcessor
+        /// Gets PipelineStopper object which maintains stack of PipelineProcessor
         /// for this pipeline
         /// </summary>
         /// <value></value>
