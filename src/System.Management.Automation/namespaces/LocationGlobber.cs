@@ -1794,7 +1794,7 @@ namespace System.Management.Automation
         private SessionState _sessionState;
 
         /// <summary>
-        /// Removs the back tick "`" from any of the glob characters in the path.
+        /// Removes the back tick "`" from any of the glob characters in the path.
         /// </summary>
         /// 
         /// <param name="path">
