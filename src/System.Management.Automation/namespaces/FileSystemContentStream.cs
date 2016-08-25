@@ -556,7 +556,7 @@ namespace Microsoft.PowerShell.Commands
                             // If the delimiter is at the end of the file, we need to read one more
                             // to get to the right position. For example:
                             //      ua123ua456ua -- -Tail 1
-                            // If we read backward only once, we get 'ua', and cannot get to the rigth position
+                            // If we read backward only once, we get 'ua', and cannot get to the right position
                             // So we read one more time, get 'ua456ua', and then we can get the right position
                             lastDelimiterMatch = (string)blocks[0];
                             if (currentBlock == 0 && lastDelimiterMatch.Equals(actualDelimiter, StringComparison.Ordinal))
