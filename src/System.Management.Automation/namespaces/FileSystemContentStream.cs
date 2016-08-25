@@ -643,7 +643,7 @@ namespace Microsoft.PowerShell.Commands
             // dealing with a "find the substring" algorithm, but with
             // the additional restriction that we cannot read past the
             // end of the delimiter.  If we read past the end of the delimiter,
-            // then we'll eat up bytes that we nede from the filestream.
+            // then we'll eat up bytes that we need from the filestream.
             // The solution is a modified Boyer-Moore string search algorithm.
             // This version retains the sub-linear search performance (via the 
             // lookup tables,) but offloads much of the dirty work to the
