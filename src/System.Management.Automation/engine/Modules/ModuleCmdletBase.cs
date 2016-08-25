@@ -433,7 +433,7 @@ namespace Microsoft.PowerShell.Commands
         }
 
         /// <summary>
-        /// Extra variables that are allowed to be referenced in moudle manifest file
+        /// Extra variables that are allowed to be referenced in module manifest file
         /// </summary>
         private static readonly string[] s_extraAllowedVariables = new string[] { "PSScriptRoot", "PSEdition" };
 
@@ -762,12 +762,12 @@ namespace Microsoft.PowerShell.Commands
                             Version version;
                             if (Version.TryParse(subdirName, out version))
                             {
-                                var modueBaseWithoutVersion = Path.GetDirectoryName(tempModuleInfoFromVerification.ModuleBase);
+                                var moduleBaseWithoutVersion = Path.GetDirectoryName(tempModuleInfoFromVerification.ModuleBase);
 
                                 modulePath = new string[]
                                 {
-                                    Path.GetDirectoryName(modueBaseWithoutVersion),
-                                    modueBaseWithoutVersion
+                                    Path.GetDirectoryName(moduleBaseWithoutVersion),
+                                    moduleBaseWithoutVersion
                                 };
                             }
                             else
@@ -960,7 +960,7 @@ namespace Microsoft.PowerShell.Commands
                         }
                         else
                         {
-                            // Given path is a directory, we first check if it is end with moudle version.
+                            // Given path is a directory, we first check if it is end with module version.
                             Version version;
                             if (Version.TryParse(moduleName, out version))
                             {
@@ -2892,7 +2892,7 @@ namespace Microsoft.PowerShell.Commands
                             null, //SessionState
                             nestedModuleOptions,
                             manifestProcessingFlags,
-                            false, // addToParentModueIfFound
+                            false, // addToParentModuleIfFound
                             out found);
                     }
                     else
@@ -3627,7 +3627,7 @@ namespace Microsoft.PowerShell.Commands
         private readonly string _serviceCoreAssemblyFullName = "Microsoft.Powershell.Workflow.ServiceCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL";
         private readonly string _serviceCoreAssemblyShortName = "Microsoft.Powershell.Workflow.ServiceCore";
 
-        private PSModuleInfo LoadServiceCoreModule(PSModuleInfo parentModule, string moduleBase, SessionState ss, ImportModuleOptions nestedModuleOptions, ManifestProcessingFlags manifestProcessingFlags, bool addToParentModueIfFound, out bool found)
+        private PSModuleInfo LoadServiceCoreModule(PSModuleInfo parentModule, string moduleBase, SessionState ss, ImportModuleOptions nestedModuleOptions, ManifestProcessingFlags manifestProcessingFlags, bool addToParentModuleIfFound, out bool found)
         {
             SessionStateInternal oldSessionState = Context.EngineSessionState;
 
@@ -3663,7 +3663,7 @@ namespace Microsoft.PowerShell.Commands
                 // If found, add it to the parent's list of NestedModules
                 if (found)
                 {
-                    if (addToParentModueIfFound)
+                    if (addToParentModuleIfFound)
                     {
                         parentModule.AddNestedModule(nestedModule);
                     }
