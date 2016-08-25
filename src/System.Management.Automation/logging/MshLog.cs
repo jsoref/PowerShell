@@ -473,7 +473,7 @@ namespace System.Management.Automation
         #region Command Lifecycle Event Logging Api
 
         /// <summary>
-        /// LogCommandLifecycleEvent: Log a command lifecyle event.
+        /// LogCommandLifecycleEvent: Log a command lifecycle event.
         /// 
         /// This is the only form of CommandLifecycleEvent logging api.
         /// </summary>
@@ -513,7 +513,7 @@ namespace System.Management.Automation
         }
 
         /// <summary>
-        /// LogCommandLifecycleEvent: Log a command lifecyle event.
+        /// LogCommandLifecycleEvent: Log a command lifecycle event.
         /// 
         /// This is a form of CommandLifecycleEvent which takes a commandName instead
         /// of invocationInfo. It is likely that invocationInfo is not available if 
@@ -665,7 +665,7 @@ namespace System.Management.Automation
         #region Provider Lifecycle Event Logging Api
 
         /// <summary>
-        /// LogProviderLifecycleEvent: Log a provider lifecyle event.
+        /// LogProviderLifecycleEvent: Log a provider lifecycle event.
         /// 
         /// This is the only form of ProviderLifecycleEvent logging api.
         /// </summary>

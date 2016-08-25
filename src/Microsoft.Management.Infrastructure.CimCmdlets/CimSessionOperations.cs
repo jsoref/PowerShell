@@ -747,7 +747,7 @@ namespace Microsoft.Management.Infrastructure.CimCmdlets
     /// <para>
     /// Base class of all session operation classes.
     /// All sessions created will be held in a ConcurrentDictionary:cimSessions.
-    /// It manages the lifecyclye of the sessions being created for each
+    /// It manages the lifecycle of the sessions being created for each
     /// runspace according to the state of the runspace.
     /// </para>
     /// </summary>
