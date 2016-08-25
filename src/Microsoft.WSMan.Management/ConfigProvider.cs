@@ -391,7 +391,7 @@ namespace Microsoft.WSMan.Management
                 /* 
                 WsMan Config Can be divided in to Four Fixed Regions to Check Whether it has Child Items.
                 
-                 * 1. Branch in to Listerners (winrm/config/listener)
+                 * 1. Branch in to Listeners (winrm/config/listener)
                  * 2. Branch in to CertMapping (winrm/config/service/certmapping)
                  * 3. Branch in to Plugin (winrm/config/plugin) - Plugin is subdivided in Resources,Security & InitParams
                  * 4. Rest all the branches like Client, Shell(WinRS) ,Service
@@ -406,7 +406,7 @@ namespace Microsoft.WSMan.Management
                     if (xmlListeners != null)
                     {
                         Hashtable KeyCache, ListenerObjCache;
-                        ProcessListernerObjects(xmlListeners, out ListenerObjCache, out KeyCache);
+                        ProcessListenerObjects(xmlListeners, out ListenerObjCache, out KeyCache);
                         if (ListenerObjCache.Count > 0)
                         {
                             return true;
@@ -1427,7 +1427,7 @@ namespace Microsoft.WSMan.Management
                 /* 
                 WsMan Config Can be divided in to Four Fixed Regions to Check Whether Item is Container
                 
-                 * 1. Branch in to Listerners (winrm/config/listener)
+                 * 1. Branch in to Listeners (winrm/config/listener)
                  * 2. Branch in to CertMapping (winrm/config/service/certmapping)
                  * 3. Branch in to Plugin (winrm/config/plugin) - Plugin is subdivided in Resources,Security & InitParams
                  * 4. Rest all the branches like Client, Shell(WinRS) ,Service
@@ -1448,7 +1448,7 @@ namespace Microsoft.WSMan.Management
                     if (xmlListeners != null)
                     {
                         Hashtable KeyCache, ListenerObjCache;
-                        ProcessListernerObjects(xmlListeners, out ListenerObjCache, out KeyCache);
+                        ProcessListenerObjects(xmlListeners, out ListenerObjCache, out KeyCache);
                         if (KeyCache.Contains(childname))
                         {
                             return true;
@@ -1962,7 +1962,7 @@ namespace Microsoft.WSMan.Management
             }
             else if (ContainerListenerOrCertMapping.Equals(WSManStringLiterals.containerListener))
             {
-                ProcessListernerObjects(xmlResource, out CCache, out kCache);
+                ProcessListenerObjects(xmlResource, out CCache, out kCache);
             }
             if (CCache != null && CCache.Count > 0)
             {
@@ -2292,7 +2292,7 @@ namespace Microsoft.WSMan.Management
 
             if (ResourceURI.EndsWith(WSManStringLiterals.containerListener, StringComparison.OrdinalIgnoreCase))
             {
-                ProcessListernerObjects(xmlResource, out objcache, out Keyscache);
+                ProcessListenerObjects(xmlResource, out objcache, out Keyscache);
             }
             else if (ResourceURI.EndsWith(WSManStringLiterals.containerCertMapping, StringComparison.OrdinalIgnoreCase))
             {
@@ -3604,7 +3604,7 @@ namespace Microsoft.WSMan.Management
             }
             else if (ListenerOrCerMapping.Equals(WSManStringLiterals.containerListener))
             {
-                ProcessListernerObjects(xmlResource, out Objcache, out Keyscache);
+                ProcessListenerObjects(xmlResource, out Objcache, out Keyscache);
             }
             else
             { return; }
@@ -3665,7 +3665,7 @@ namespace Microsoft.WSMan.Management
             Hashtable Objcache, Keyscache;
             if (ContainerListenerOrClientCert.Equals(WSManStringLiterals.containerListener, StringComparison.OrdinalIgnoreCase))
             {
-                ProcessListernerObjects(xmlResource, out Objcache, out Keyscache);
+                ProcessListenerObjects(xmlResource, out Objcache, out Keyscache);
             }
             else if (ContainerListenerOrClientCert.Equals(WSManStringLiterals.containerClientCertificate, StringComparison.OrdinalIgnoreCase))
             {
@@ -3695,7 +3695,7 @@ namespace Microsoft.WSMan.Management
         }
 
         /// <summary>
-        /// Removes a Listerner or ClientCertificate object. Used by Remove-Item cmdlets.
+        /// Removes a Listener or ClientCertificate object. Used by Remove-Item cmdlets.
         /// </summary>
         /// <param name="sessionobj"></param>
         /// <param name="WsManUri"></param>
@@ -3715,7 +3715,7 @@ namespace Microsoft.WSMan.Management
                 }
                 else
                 {
-                    ProcessListernerObjects(xmlresources, out ResourcesCache, out KeysCache);
+                    ProcessListenerObjects(xmlresources, out ResourcesCache, out KeysCache);
                 }
                 if (KeysCache.Contains(childname))
                 {
@@ -3950,7 +3950,7 @@ namespace Microsoft.WSMan.Management
             }
             else
             {
-                ProcessListernerObjects(outxml, out objcache, out KeysCache);
+                ProcessListenerObjects(outxml, out objcache, out KeysCache);
             }
 
             String PathChecked = host + WSManStringLiterals.DefaultPathSeparator + parentListenerOrCert;
@@ -4644,7 +4644,7 @@ namespace Microsoft.WSMan.Management
             Keyscache = kCache;
         }
 
-        private void ProcessListernerObjects(XmlDocument xmlListeners, out Hashtable listenercache, out Hashtable Keyscache)
+        private void ProcessListenerObjects(XmlDocument xmlListeners, out Hashtable listenercache, out Hashtable Keyscache)
         {
             Hashtable lCache = new Hashtable();
             Hashtable kCache = new Hashtable();

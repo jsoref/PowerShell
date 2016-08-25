@@ -503,7 +503,7 @@ namespace System.Management.Automation.Remoting
             s_syncObject = new object();
 
             // All PowerShell instances will start with the named pipe
-            // and listner created and running.
+            // and listener created and running.
             if (Platform.IsWindows)
             {
                 IPCNamedPipeServerEnabled = true;
@@ -579,10 +579,10 @@ namespace System.Management.Automation.Remoting
                 IsListenerRunning = true;
 
                 // Create listener thread.
-                Thread listenterThread = new Thread(ProcessListeningThread);
-                listenterThread.Name = _threadName;
-                listenterThread.IsBackground = true;
-                listenterThread.Start(clientConnectCallback);
+                Thread listenerThread = new Thread(ProcessListeningThread);
+                listenerThread.Name = _threadName;
+                listenerThread.IsBackground = true;
+                listenerThread.Start(clientConnectCallback);
             } // Lock _syncObject.
         }
 
