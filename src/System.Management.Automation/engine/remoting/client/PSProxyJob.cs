@@ -1128,7 +1128,7 @@ namespace System.Management.Automation
                         }
                         catch (Exception e)
                         {
-                            // Trasfer exception via event arguments.
+                            // Transfer exception via event arguments.
                             OnStopJobCompleted(new AsyncCompletedEventArgs(e, false, null));
                         }
                         break;
