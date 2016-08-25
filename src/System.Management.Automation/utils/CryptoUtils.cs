@@ -371,7 +371,7 @@ namespace System.Management.Automation.Internal
         /// Constructor with inner exception
         /// </summary>
         /// <param name="message">error message</param>
-        /// <param name="innerException">innter exception</param>
+        /// <param name="innerException">inner exception</param>
         /// <remarks>This constructor is currently not called 
         /// explicitly from crypto utils</remarks>
         public PSCryptoException(string message, Exception innerException) :
