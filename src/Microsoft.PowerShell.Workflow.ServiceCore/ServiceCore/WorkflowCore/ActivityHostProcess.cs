@@ -448,7 +448,7 @@ namespace Microsoft.PowerShell.Workflow
                 }
 
                 // Prepare phase is completed without any issues. 
-                // setupSucceeded flag is used in HandleTranportError method to enqueue the current activity for retry. 
+                // setupSucceeded flag is used in HandleTransportError method to enqueue the current activity for retry. 
                 // If there is any PSRemotingTransportException during InvokePowershell current activity will not be enqueued to setup failed requests in ActivityHostManager.
                 //
                 setupSucceeded = true;

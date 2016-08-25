@@ -55,11 +55,11 @@ namespace System.Management.Automation.Remoting
 
         protected WSManPluginServerSession(
             WSManNativeApi.WSManPluginRequest creationRequestDetails,
-            WSManPluginServerTransportManager trnsprtMgr)
+            WSManPluginServerTransportManager transportMgr)
         {
             _syncObject = new Object();
             this.creationRequestDetails = creationRequestDetails;
-            this.transportMgr = trnsprtMgr;
+            this.transportMgr = transportMgr;
 
             transportMgr.PrepareCalled +=
                 new EventHandler<EventArgs>(this.HandlePrepareFromTransportManager);
@@ -323,7 +323,7 @@ namespace System.Management.Automation.Remoting
             Close(reasonForClose);
         }
 
-        // handle prepare from tranport by reporting context to WSMan.
+        // handle prepare from transport by reporting context to WSMan.
         internal void HandlePrepareFromTransportManager(Object sender, EventArgs eventArgs)
         {
             ReportContext();
@@ -416,10 +416,10 @@ namespace System.Management.Automation.Remoting
         #region Constructor
         internal WSManPluginShellSession(
             WSManNativeApi.WSManPluginRequest creationRequestDetails,
-            WSManPluginServerTransportManager trnsprtMgr,
+            WSManPluginServerTransportManager transportMgr,
             ServerRemoteSession remoteSession,
             WSManPluginOperationShutdownContext shutDownContext)
-            : base(creationRequestDetails, trnsprtMgr)
+            : base(creationRequestDetails, transportMgr)
         {
             _remoteSession = remoteSession;
             _remoteSession.Closed +=
@@ -744,9 +744,9 @@ namespace System.Management.Automation.Remoting
 
         internal WSManPluginCommandSession(
             WSManNativeApi.WSManPluginRequest creationRequestDetails,
-            WSManPluginServerTransportManager trnsprtMgr,
+            WSManPluginServerTransportManager transportMgr,
             ServerRemoteSession remoteSession)
-            : base(creationRequestDetails, trnsprtMgr)
+            : base(creationRequestDetails, transportMgr)
         {
             _remoteSession = remoteSession;
             cmdSyncObject = new System.Object();

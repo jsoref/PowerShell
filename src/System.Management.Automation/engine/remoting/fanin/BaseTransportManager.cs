@@ -228,7 +228,7 @@ namespace System.Management.Automation.Remoting
         /// This may be null..in which case type rehydration does not happen.
         /// At construction time we may not have typetable (server runspace
         /// is created only when a request from the client)..so this is
-        /// a property on the base tranpsort manager to allow for setting at
+        /// a property on the base transport manager to allow for setting at
         /// a later time.
         /// </summary>
         internal TypeTable TypeTable
@@ -524,7 +524,7 @@ namespace System.Management.Automation.Remoting.Client
         #region Properties
 
         /// <summary>
-        /// Gets the data collection which is used by this tranport manager to send
+        /// Gets the data collection which is used by this transport manager to send
         /// data to the server.
         /// </summary>
         internal PrioritySendDataCollection DataToBeSentCollection
@@ -996,7 +996,7 @@ namespace System.Management.Automation.Remoting.Client
 
                 try
                 {
-                    // looks like Dispose is not called for this tranpsort manager
+                    // looks like Dispose is not called for this transport manager
                     // try closing the transport manager.
                     CloseAsync();
                 }

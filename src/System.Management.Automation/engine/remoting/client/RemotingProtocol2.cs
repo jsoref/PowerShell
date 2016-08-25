@@ -209,12 +209,12 @@ namespace System.Management.Automation.Internal
         internal ClientPowerShellDataStructureHandler CreatePowerShellDataStructureHandler(
             ClientRemotePowerShell shell)
         {
-            BaseClientCommandTransportManager clientTrsptMgr =
+            BaseClientCommandTransportManager clientTransportMgr =
                 RemoteSession.SessionDataStructureHandler.
                     CreateClientCommandTransportManager(shell, shell.NoInput);
 
             return new ClientPowerShellDataStructureHandler(
-                clientTrsptMgr, _clientRunspacePoolId, shell.InstanceId);
+                clientTransportMgr, _clientRunspacePoolId, shell.InstanceId);
         }
 
         /// <summary>
@@ -1351,7 +1351,7 @@ namespace System.Management.Automation.Internal
         }
 
         /// <summary>
-        /// Closes tranport manager.
+        /// Closes transport manager.
         /// </summary>
         internal void CloseConnectionAsync(Exception sessionCloseReason)
         {
@@ -1411,7 +1411,7 @@ namespace System.Management.Automation.Internal
         /// This does not ensure that the corresponding session/runspacepool is in connected stated
         /// Its the caller responsiblity to ensure that this is the case
         /// At the protocols layers, this logic is delegated to the transport layer.
-        /// WSMan tranport ensures that WinRS commands cannot be reconnected when the parent shell is not in connected state
+        /// WSMan transport ensures that WinRS commands cannot be reconnected when the parent shell is not in connected state
         /// </summary>
         internal void ReconnectAsync()
         {
