@@ -561,7 +561,7 @@ namespace System.Management.Automation
                     //
                     // Handle following scenario, cursor is in next line and after a command call,
                     // we need to skip the command call autocompletion if there is no backtick character
-                    // in the end of the prevous line, since backtick means command call continues to the next line
+                    // in the end of the previous line, since backtick means command call continues to the next line
                     //
                     // Configuration config
                     // {

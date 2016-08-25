@@ -623,7 +623,7 @@ namespace System.Management.Automation
             // Possible solutions are to not cache the provider instance, or to maintain
             // a CmdletProviderContext stack in ProviderBase.  Each method invocation pushes
             // the current context and the last action of the method pops back to the
-            // previos context.
+            // previous context.
 #if USE_TLS
             // Next see if we already have an instance in thread local storage
 
