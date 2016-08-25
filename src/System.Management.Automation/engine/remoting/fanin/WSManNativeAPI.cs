@@ -2494,7 +2494,7 @@ namespace System.Management.Automation.Remoting.Client
         /// callback to notify when the create operation completes.
         /// </param>
         /// <param name="shellOperationHandle">
-        /// An out parameter referening a WSMan shell operation handle
+        /// An out parameter referencing a WSMan shell operation handle
         /// for this shell.
         /// </param>
         /// <returns></returns>
@@ -2596,7 +2596,7 @@ namespace System.Management.Automation.Remoting.Client
         /// callback to notify when the operation completes.
         /// </param>
         /// <param name="commandOperationHandle">
-        /// An out parameter referening a WSMan shell operation handle
+        /// An out parameter referencing a WSMan shell operation handle
         /// for this command.
         /// </param>
         [DllImport(WSManNativeApi.WSManClientApiDll, EntryPoint = "WSManRunShellCommandEx", SetLastError = false, CharSet = CharSet.Unicode)]
