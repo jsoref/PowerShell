@@ -9417,7 +9417,7 @@ namespace System.Management.Automation.Language
                                 {
                                     // Assume (because we're looking at $_ and we're inside a script block that is an
                                     // argument to some command) that the type we're getting is actually unrolled.
-                                    // This might not be right in all cases, but with our simple analysis, it'r
+                                    // This might not be right in all cases, but with our simple analysis, it's
                                     // right more often than it's wrong.
                                     if (result.Type.IsArray)
                                     {
