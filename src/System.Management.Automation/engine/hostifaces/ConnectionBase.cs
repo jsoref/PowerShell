@@ -545,7 +545,7 @@ namespace System.Management.Automation.Runspaces
         /// </summary>
         /// <param name="command">A valid command string</param>
         /// <returns>
-        /// A pipline pre-filled with Commands specified in commandString.
+        /// A pipeline pre-filled with Commands specified in commandString.
         /// </returns>
         /// <exception cref="ArgumentNullException">
         /// command is null
@@ -566,7 +566,7 @@ namespace System.Management.Automation.Runspaces
         /// <param name="command">A valid command string</param>
         /// <param name="addToHistory">if true command is added to history</param>
         /// <returns>
-        /// A pipline pre-filled with Commands specified in commandString.
+        /// A pipeline pre-filled with Commands specified in commandString.
         /// </returns>
         /// <exception cref="ArgumentNullException">
         /// command is null
@@ -600,7 +600,7 @@ namespace System.Management.Automation.Runspaces
         /// <param name="command">A valid command string</param>
         /// <param name="addToHistory">if true command is added to history</param>
         /// <returns>
-        /// A pipline pre-filled with Commands specified in commandString.
+        /// A pipeline pre-filled with Commands specified in commandString.
         /// </returns>
         /// <exception cref="ArgumentNullException">
         /// command is null
@@ -623,7 +623,7 @@ namespace System.Management.Automation.Runspaces
         /// <param name="addToHistory">if true command is added to history</param>
         /// <param name="isNested">True for nested pipeline</param>
         /// <returns>
-        /// A pipline pre-filled with Commands specified in commandString.
+        /// A pipeline pre-filled with Commands specified in commandString.
         /// </returns>
         protected abstract Pipeline CoreCreatePipeline(string command, bool addToHistory, bool isNested);
 

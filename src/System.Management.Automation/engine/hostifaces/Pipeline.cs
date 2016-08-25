@@ -115,7 +115,7 @@ namespace System.Management.Automation.Runspaces
         }
 
         /// <summary>
-        /// State of pipleine when exception was thrown.
+        /// State of pipeline when exception was thrown.
         /// </summary>
         [NonSerialized]
         private PipelineState _currentState = 0;

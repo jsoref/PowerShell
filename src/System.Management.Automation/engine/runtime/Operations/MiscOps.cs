@@ -576,7 +576,7 @@ namespace System.Management.Automation
 
                 // For nicer error reporting, we want to make it look like errors in the steppable pipeline point back to
                 // the caller of the proxy.  We don't want errors pointing to the script block created in the proxy.
-                // Here we assume (in a safe way) that GetSteppablePipline is called from script.  If that isn't the case,
+                // Here we assume (in a safe way) that GetSteppablePipeline is called from script.  If that isn't the case,
                 // we won't crash, but the error reporting might be a little misleading.
                 var callStack = context.Debugger.GetCallStack().ToArray();
                 if (callStack.Length > 0 && Regex.IsMatch(callStack[0].Position.Text, "GetSteppablePipeline", RegexOptions.IgnoreCase))

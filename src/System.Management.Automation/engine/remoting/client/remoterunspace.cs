@@ -1041,7 +1041,7 @@ namespace System.Management.Automation
         /// </summary>
         /// <param name="command">A valid command string</param>
         /// <returns>
-        /// A pipline pre-filled with Commands specified in commandString.
+        /// A pipeline pre-filled with Commands specified in commandString.
         /// </returns>
         /// <exception cref="ArgumentNullException">
         /// command is null
@@ -1062,7 +1062,7 @@ namespace System.Management.Automation
         /// <param name="command">A valid command string</param>
         /// <param name="addToHistory">if true command is added to history</param>
         /// <returns>
-        /// A pipline pre-filled with Commands specified in commandString.
+        /// A pipeline pre-filled with Commands specified in commandString.
         /// </returns>
         /// <exception cref="ArgumentNullException">
         /// command is null
@@ -1098,7 +1098,7 @@ namespace System.Management.Automation
         /// <param name="command">A valid command string</param>
         /// <param name="addToHistory">if true command is added to history</param>
         /// <returns>
-        /// A pipline pre-filled with Commands specified in commandString.
+        /// A pipeline pre-filled with Commands specified in commandString.
         /// </returns>
         /// <exception cref="PSNotSupportedException">Not supported in remoting
         /// scenarios</exception>
@@ -1719,7 +1719,7 @@ namespace System.Management.Automation
 
         /// <summary>
         /// Keeps track of the current invoke command executing 
-        /// within the current local pipline
+        /// within the current local pipeline
         /// </summary>
         /// <param name="invokeCommand">reference to invoke command
         /// which is currently being processed</param>

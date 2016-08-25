@@ -206,9 +206,9 @@ function Compress-Archive
         {
             try
             {
-                # StopProcessing is not available in Script cmdlets. However the pipleline execution
+                # StopProcessing is not available in Script cmdlets. However the pipeline execution
                 # is terminated when ever 'CTRL + C' is entered by user to terminate the cmdlet execution.
-                # The finally block is executed whenever pipleline is terminated. 
+                # The finally block is executed whenever pipeline is terminated. 
                 # $isArchiveFileProcessingComplete variable is used to track if 'CTRL + C' is entered by the
                 # user. 
                 $isArchiveFileProcessingComplete = $false
@@ -370,9 +370,9 @@ function Expand-Archive
 
             try
             {
-                # StopProcessing is not available in Script cmdlets. However the pipleline execution
+                # StopProcessing is not available in Script cmdlets. However the pipeline execution
                 # is terminated when ever 'CTRL + C' is entered by user to terminate the cmdlet execution.
-                # The finally block is executed whenever pipleline is terminated. 
+                # The finally block is executed whenever pipeline is terminated. 
                 # $isArchiveFileProcessingComplete variable is used to track if 'CTRL + C' is entered by the
                 # user. 
                 $isArchiveFileProcessingComplete = $false

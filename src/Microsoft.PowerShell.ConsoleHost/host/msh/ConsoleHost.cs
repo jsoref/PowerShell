@@ -372,7 +372,7 @@ namespace Microsoft.PowerShell
 
         /// <summary>
         /// 
-        /// Spin up a new thread to cancel the current pipline.  This will allow subsequent break interrupts to be received even
+        /// Spin up a new thread to cancel the current pipeline.  This will allow subsequent break interrupts to be received even
         /// if the cancellation is blocked (which can be the case when the pipeline blocks and nothing implements Cmdlet.Stop
         /// properly).  That is because the OS will not inject another thread when a break event occurs if one has already been
         /// injected and is running.

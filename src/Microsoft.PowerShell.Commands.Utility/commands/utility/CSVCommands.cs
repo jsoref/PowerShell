@@ -89,7 +89,7 @@ namespace Microsoft.PowerShell.Commands
 
 
         /// <summary>
-        /// Write the string to a file or pipelin
+        /// Write the string to a file or pipeline
         /// </summary>
         public virtual void WriteCsvLine(string line)
         {

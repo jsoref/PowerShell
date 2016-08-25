@@ -1002,7 +1002,7 @@ namespace System.Management.Automation.Internal
                 // Generate new Activity Id for the thread
                 Guid pipelineActivityId = EtwActivity.CreateActivityId();
 
-                // commandProcess.PieplineActivityId = new Activity id
+                // commandProcess.PipelineActivityId = new Activity id
                 EtwActivity.SetActivityId(pipelineActivityId);
                 commandProcessor.PipelineActivityId = pipelineActivityId;
 
