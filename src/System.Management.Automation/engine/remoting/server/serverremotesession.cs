@@ -664,7 +664,7 @@ namespace System.Management.Automation.Remoting
 
             //we currently dont support adjusting runspace count on a connect operation.
             //there is a potential race here where in the runspace pool driver is still yet to process a queued
-            //setMax or setMinrunspacees request. 
+            //setMax or setMinrunspaces request. 
             //TODO: resolve this race.. probably by letting the runspace pool consume all messages before we execute this.
             if (clientRequestedRunspaceCount
                 && (_runspacePoolDriver.RunspacePool.GetMaxRunspaces() != clientRequestedMaxRunspaces)
