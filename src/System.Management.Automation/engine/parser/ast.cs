@@ -757,7 +757,7 @@ namespace System.Management.Automation.Language
         public ReadOnlyCollection<string> RequiredAssemblies { get; internal set; }
 
         /// <summary>
-        /// Specifies if this script requires elevated privelges, specified like:
+        /// Specifies if this script requires elevated privileges, specified like:
         ///     <code>#requires -RunAsAdministrator</code>
         /// If nothing is specified, this property is false.
         /// </summary>
