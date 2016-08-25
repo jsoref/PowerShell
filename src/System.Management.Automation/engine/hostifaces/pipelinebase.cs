@@ -389,7 +389,7 @@ namespace System.Management.Automation.Runspaces
             if (SyncInvokeCall)
             {
                 //Raise the pipeline completion events. These events are set in
-                //pipeline execution thread. However for Synchornous execution
+                //pipeline execution thread. However for Synchronous execution
                 //we raise the event in the main thread.
                 RaisePipelineStateEvents();
             }

@@ -4081,7 +4081,7 @@ namespace System.Management.Automation
 
     /// <summary>
     /// This job is used for running as a job the results from multiple
-    /// pipelines. This is used in synchronouse Invoke-Expression execution
+    /// pipelines. This is used in synchronous Invoke-Expression execution
     /// </summary>
     /// <remarks>
     /// TODO: I am not sure whether to change this internal to just InvokeExpressionSyncJob.
