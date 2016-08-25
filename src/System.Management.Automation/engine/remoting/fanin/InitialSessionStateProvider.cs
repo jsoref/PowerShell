@@ -2068,7 +2068,7 @@ namespace System.Management.Automation.Remoting
                                     // Win8: 627752 Cannot load microsoft.powershell.core module as part of DISC
                                     // Convert Microsoft.PowerShell.Core module -> Microsoft.PowerShell.Core snapin.
                                     // Doing this Import only in SessionType.Empty case, because other cases already do this.
-                                    // In V3, Micorosft.PowerShell.Core module is not installed externally.
+                                    // In V3, Microsoft.PowerShell.Core module is not installed externally.
                                     iss.ImportCorePSSnapIn();
                                 }
                                 // silently ignore Microsoft.PowerShell.Core for other cases ie., SessionType.RestrictedRemoteServer && SessionType.Default
