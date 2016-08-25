@@ -1053,7 +1053,7 @@ namespace System.Management.Automation
         /// </param>
         /// 
         /// <returns>
-        /// A provider specifc path that the Msh path represents.
+        /// A provider specific path that the Msh path represents.
         /// </returns>
         /// 
         /// <exception cref="ArgumentNullException">
@@ -1114,7 +1114,7 @@ namespace System.Management.Automation
         /// </param>
         /// 
         /// <returns>
-        /// A provider specifc path that the Msh path represents.
+        /// A provider specific path that the Msh path represents.
         /// </returns>
         /// 
         /// <exception cref="ArgumentNullException">
@@ -1198,7 +1198,7 @@ namespace System.Management.Automation
         /// </param>
         /// 
         /// <returns>
-        /// A provider specifc path that the Msh path represents.
+        /// A provider specific path that the Msh path represents.
         /// </returns>
         /// 
         /// <exception cref="ArgumentNullException">

@@ -4,7 +4,7 @@
 **
 ** Purpose: 
 ** Defines a session for Event Log operations.  The session can 
-** be configured for a remote machine and can use specfic
+** be configured for a remote machine and can use specific
 ** user credentials.
 ============================================================*/
 
