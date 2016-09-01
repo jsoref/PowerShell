@@ -1153,56 +1153,56 @@ namespace Microsoft.PowerShell.Commands.Internal
 
         public void SetValue(string name, object value)
         {
-            throw new NotImplementedException("SetValue(string name, obj value) is not implemented. TransactedRegistry related APIs should not be hitten.");
+            throw new NotImplementedException("SetValue(string name, obj value) is not implemented. TransactedRegistry related APIs should not be hidden.");
         }
 
         public void SetValue(string name, object value, RegistryValueKind valueKind)
         {
-            throw new NotImplementedException("SetValue(string name, obj value, RegistryValueKind valueKind) is not implemented. TransactedRegistry related APIs should not be hitten.");
+            throw new NotImplementedException("SetValue(string name, obj value, RegistryValueKind valueKind) is not implemented. TransactedRegistry related APIs should not be hidden.");
         }
         public string[] GetValueNames()
         {
-            throw new NotImplementedException("GetValueNames() is not implemented. TransactedRegistry related APIs should not be hitten.");
+            throw new NotImplementedException("GetValueNames() is not implemented. TransactedRegistry related APIs should not be hidden.");
         }
 
         public void DeleteValue(string name)
         {
-            throw new NotImplementedException("DeleteValue(string name) is not implemented. TransactedRegistry related APIs should not be hitten.");
+            throw new NotImplementedException("DeleteValue(string name) is not implemented. TransactedRegistry related APIs should not be hidden.");
         }
 
         public string[] GetSubKeyNames()
         {
-            throw new NotImplementedException("GetSubKeyNames() is not implemented. TransactedRegistry related APIs should not be hitten.");
+            throw new NotImplementedException("GetSubKeyNames() is not implemented. TransactedRegistry related APIs should not be hidden.");
         }
 
         public TransactedRegistryKey CreateSubKey(string subkey)
         {
-            throw new NotImplementedException("CreateSubKey(string subkey) is not implemented. TransactedRegistry related APIs should not be hitten.");
+            throw new NotImplementedException("CreateSubKey(string subkey) is not implemented. TransactedRegistry related APIs should not be hidden.");
         }
 
         public TransactedRegistryKey OpenSubKey(string name, bool writable)
         {
-            throw new NotImplementedException("OpenSubKey(string name, bool writeable) is not implemented. TransactedRegistry related APIs should not be hitten.");
+            throw new NotImplementedException("OpenSubKey(string name, bool writeable) is not implemented. TransactedRegistry related APIs should not be hidden.");
         }
 
         public void DeleteSubKeyTree(string subkey)
         {
-            throw new NotImplementedException("DeleteSubKeyTree(string subkey) is not implemented. TransactedRegistry related APIs should not be hitten.");
+            throw new NotImplementedException("DeleteSubKeyTree(string subkey) is not implemented. TransactedRegistry related APIs should not be hidden.");
         }
 
         public object GetValue(string name)
         {
-            throw new NotImplementedException("GetValue(string name) is not implemented. TransactedRegistry related APIs should not be hitten.");
+            throw new NotImplementedException("GetValue(string name) is not implemented. TransactedRegistry related APIs should not be hidden.");
         }
 
         public object GetValue(string name, object defaultValue, RegistryValueOptions options)
         {
-            throw new NotImplementedException("GetValue(string name, object defaultValue, RegistryValueOptions options) is not implemented. TransactedRegistry related APIs should not be hitten.");
+            throw new NotImplementedException("GetValue(string name, object defaultValue, RegistryValueOptions options) is not implemented. TransactedRegistry related APIs should not be hidden.");
         }
 
         public RegistryValueKind GetValueKind(string name)
         {
-            throw new NotImplementedException("GetValueKind(string name) is not implemented. TransactedRegistry related APIs should not be hitten.");
+            throw new NotImplementedException("GetValueKind(string name) is not implemented. TransactedRegistry related APIs should not be hidden.");
         }
 
         public void Close()
